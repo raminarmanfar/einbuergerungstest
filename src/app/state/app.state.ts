@@ -7,7 +7,7 @@ import {Observable, of} from 'rxjs';
 import {TranslateService} from '@ngx-translate/core';
 
 export const stateDefaultValues: AppStateModel = {
-  activeLanguage: Language.DE
+  activeLanguage: Language.EN
 };
 
 @State<AppStateModel>({

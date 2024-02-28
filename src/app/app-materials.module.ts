@@ -5,6 +5,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatCardModule} from '@angular/material/card';
 
 export const materials = [
   MatButtonModule,
@@ -12,7 +13,8 @@ export const materials = [
   MatIconModule,
   MatToolbarModule,
   MatTooltipModule,
-  MatMenuModule
+  MatMenuModule,
+  MatCardModule
 ];
 
 @NgModule({imports: materials, exports: materials})
