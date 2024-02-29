@@ -1,7 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; margin: 0}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 
 .mat-mdc-tooltip {
@@ -13,6 +22,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   //border: 1px solid #333!important;
   //background: lightyellow!important;
   //color: black!important;
-  font-size: large!important;
-  padding: 10px!important;
+  font-size: large !important;
+  padding: 10px !important;
 }
