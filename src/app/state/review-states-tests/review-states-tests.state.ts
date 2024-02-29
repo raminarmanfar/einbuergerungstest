@@ -5,7 +5,8 @@ import {ReviewStatesTestsStateModel} from '../models/review-states-tests-state.m
 import {SetCurrentQuestionNo} from './review-states-tests.action';
 
 export const stateDefaultValues: ReviewStatesTestsStateModel = {
-  currentQuestionNo: 0
+  currentStateIndex: 0,
+  currentQuestionIndex: 0
 };
 
 @State<ReviewStatesTestsStateModel>({name: 'ReviewStatesTestsStateModel', defaults: stateDefaultValues})
@@ -14,11 +15,11 @@ export class ReviewStatesTestsState {
 
   @Selector()
   static getCurrentQuestionNo(state: ReviewStatesTestsStateModel): number {
-    return state.currentQuestionNo;
+    return state.currentQuestionIndex;
   }
 
   @Action(SetCurrentQuestionNo)
   setActiveLanguage(ctx: StateContext<ReviewStatesTestsStateModel>, {payload}: SetCurrentQuestionNo): Observable<ReviewStatesTestsStateModel> {
-    return of(ctx.patchState({currentQuestionNo: payload}));
+    return of(ctx.patchState({currentQuestionIndex: payload}));
   }
 }

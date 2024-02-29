@@ -9,12 +9,12 @@ import {SetCurrentQuestionNo} from './review-states-tests.action';
 })
 export class ReviewStatesTestsStateService {
 
-  @Select(ReviewStatesTestsState.getCurrentQuestionNo) getCurrentQuestionNo$!: Observable<number>;
+  @Select(ReviewStatesTestsState.getCurrentQuestionNo) getCurrentQuestionIndex$!: Observable<number>;
 
   constructor(private store: Store) {
   }
 
-  setCurrentQuestionNo(currentQuestionNo: number): void {
+  setCurrentQuestionIndex(currentQuestionNo: number): void {
     this.store.dispatch(new SetCurrentQuestionNo(currentQuestionNo));
   }
 }

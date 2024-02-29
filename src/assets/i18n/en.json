@@ -6,7 +6,7 @@
   },
   "general": {
     "german-states": {
-      "baden_wurttemberg": {
+      "baden-wuerttemberg": {
         "state": "Baden-Württemberg",
         "capital": "Stuttgart"
       },
@@ -34,19 +34,19 @@
         "state": "Hesse",
         "capital": "Wiesbaden"
       },
-      "lower_saxony": {
+      "lower-saxony": {
         "state": "Lower Saxony",
         "capital": "Hanover"
       },
-      "mecklenburg_vorpommern": {
+      "mecklenburg-vorpommern": {
         "state": "Mecklenburg-Vorpommern",
         "capital": "Schwerin"
       },
-      "north_rhine_westphalia": {
+      "north-rhine-westphalia": {
         "state": "North Rhine-Westphalia",
         "capital": "Düsseldorf"
       },
-      "rhineland_palatinate": {
+      "rhineland-palatinate": {
         "state": "Rhineland-Palatinate",
         "capital": "Mainz"
       },
@@ -58,11 +58,11 @@
         "state": "Saxony",
         "capital": "Dresden"
       },
-      "saxony_anhalt": {
+      "saxony-anhalt": {
         "state": "Saxony-Anhalt",
         "capital": "Magdeburg"
       },
-      "schleswig_holstein": {
+      "schleswig-holstein": {
         "state": "Schleswig-Holstein",
         "capital": "Kiel"
       },

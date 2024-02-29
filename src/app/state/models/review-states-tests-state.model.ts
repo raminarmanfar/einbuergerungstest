@@ -1,3 +1,4 @@
 export interface ReviewStatesTestsStateModel {
-  currentQuestionNo: number;
+  currentStateIndex: number;
+  currentQuestionIndex: number;
 }

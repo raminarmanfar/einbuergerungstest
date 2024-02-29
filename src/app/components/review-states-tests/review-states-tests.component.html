@@ -1,24 +1,36 @@
 <div class="container">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <mat-form-field style="width: 250px">
+        <mat-label>{{'state-name' | translate}}</mat-label>
+        <mat-select (selectionChange)="onStateSelectChange($event.value)">
+          <mat-option *ngFor="let state of germanStates" [value]="state">
+            {{trPrefix + state.name + '.state' | translate}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
   <mat-accordion>
-    <mat-expansion-panel *ngFor="let item of bavariaStateQuestions; let i=index"
-                         [expanded]="step === i"
-                         (opened)="reviewStatesTestsStateService.setCurrentQuestionNo(0)">
+    <mat-expansion-panel *ngFor="let item of germanStates[currentStateIndex].stateTests; let i=index"
+                         [expanded]="currentQuestionIndex === i">
 
       <mat-expansion-panel-header>
         <mat-panel-title>{{ item.id }}- {{ trPrefix + (i + 1) + '.question' | translate }}</mat-panel-title>
       </mat-expansion-panel-header>
 
       <img *ngIf="item.questionImageUrl" [src]="item.questionImageUrl" [alt]="item.questionImageUrl">
-      <div *ngFor="let answer of [1, 2, 3, 4]; let j=index">
+      <div *ngFor="let answerId of [1, 2, 3, 4]">
         <mat-checkbox
-          [checked]="item.correctAnswer - 1 === j">{{ trPrefix + (i + 1) + '.answers.' + (j + 1) | translate }}
+          [checked]="item.correctAnswer === answerId">{{ trPrefix + (i + 1) + '.answers.' + answerId | translate }}
         </mat-checkbox>
       </div>
 
       <mat-action-row>
-        <button mat-button color="warn" (click)="reviewStatesTestsStateService.setCurrentQuestionNo(step - 1)">Previous
+        <button mat-button color="warn" (click)="reviewStatesTestsStateService.setCurrentQuestionIndex(currentQuestionIndex - 1)">Previous
         </button>
-        <button mat-button color="primary" (click)="reviewStatesTestsStateService.setCurrentQuestionNo(step + 1)">End
+        <button mat-button color="primary" (click)="reviewStatesTestsStateService.setCurrentQuestionIndex(currentQuestionIndex + 1)">Next
         </button>
       </mat-action-row>
     </mat-expansion-panel>

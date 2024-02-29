@@ -11,6 +11,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSelectModule} from "@angular/material/select";
 
 export const materials = [
   MatButtonModule,
@@ -24,7 +25,8 @@ export const materials = [
   MatExpansionModule,
   MatFormFieldModule,
   MatInputModule,
-  MatCheckboxModule
+  MatCheckboxModule,
+  MatSelectModule
 ];
 
 @NgModule({imports: materials, exports: materials})

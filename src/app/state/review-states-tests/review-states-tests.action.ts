@@ -1,5 +1,5 @@
 export class SetCurrentQuestionNo {
-  public static type = '[ReviewAppQuestionsState] Set Current Question No';
+  public static type = '[ReviewStatesTests] Set Current Question No';
 
   constructor(public payload: number) {
   }
