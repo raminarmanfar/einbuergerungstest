@@ -12,7 +12,8 @@ export const stateDefaultValues: AppStateModel = {
 
 @State<AppStateModel>({
   name: 'AppState',
-  defaults: stateDefaultValues
+  defaults: stateDefaultValues,
+  children: []
 })
 @Injectable()
 export class AppState {

@@ -1,0 +1,26 @@
+<div class="container">
+  <mat-accordion>
+    <mat-expansion-panel *ngFor="let item of bavariaStateQuestions; let i=index"
+                         [expanded]="step === i"
+                         (opened)="reviewStatesTestsStateService.setCurrentQuestionNo(0)">
+
+      <mat-expansion-panel-header>
+        <mat-panel-title>{{ item.id }}- {{ trPrefix + (i + 1) + '.question' | translate }}</mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <img *ngIf="item.questionImageUrl" [src]="item.questionImageUrl" [alt]="item.questionImageUrl">
+      <div *ngFor="let answer of [1, 2, 3, 4]; let j=index">
+        <mat-checkbox
+          [checked]="item.correctAnswer - 1 === j">{{ trPrefix + (i + 1) + '.answers.' + (j + 1) | translate }}
+        </mat-checkbox>
+      </div>
+
+      <mat-action-row>
+        <button mat-button color="warn" (click)="reviewStatesTestsStateService.setCurrentQuestionNo(step - 1)">Previous
+        </button>
+        <button mat-button color="primary" (click)="reviewStatesTestsStateService.setCurrentQuestionNo(step + 1)">End
+        </button>
+      </mat-action-row>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

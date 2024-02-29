@@ -1,14 +1,94 @@
 {
   "title": "German citizenship test",
   "header": {
-    "active-language": "English"
+    "active-language": "English",
+    "go-home": "Go Home"
+  },
+  "general": {
+    "german-states": {
+      "baden_wurttemberg": {
+        "state": "Baden-Württemberg",
+        "capital": "Stuttgart"
+      },
+      "bavaria": {
+        "state": "Bavaria",
+        "capital": "Munich"
+      },
+      "berlin": {
+        "state": "Berlin",
+        "capital": "Berlin"
+      },
+      "brandenburg": {
+        "state": "Brandenburg",
+        "capital": "Potsdam"
+      },
+      "bremen": {
+        "state": "Bremen",
+        "capital": "Bremen"
+      },
+      "hamburg": {
+        "state": "Hamburg",
+        "capital": "Hamburg"
+      },
+      "hesse": {
+        "state": "Hesse",
+        "capital": "Wiesbaden"
+      },
+      "lower_saxony": {
+        "state": "Lower Saxony",
+        "capital": "Hanover"
+      },
+      "mecklenburg_vorpommern": {
+        "state": "Mecklenburg-Vorpommern",
+        "capital": "Schwerin"
+      },
+      "north_rhine_westphalia": {
+        "state": "North Rhine-Westphalia",
+        "capital": "Düsseldorf"
+      },
+      "rhineland_palatinate": {
+        "state": "Rhineland-Palatinate",
+        "capital": "Mainz"
+      },
+      "saarland": {
+        "state": "Saarland",
+        "capital": "Saarbrücken"
+      },
+      "saxony": {
+        "state": "Saxony",
+        "capital": "Dresden"
+      },
+      "saxony_anhalt": {
+        "state": "Saxony-Anhalt",
+        "capital": "Magdeburg"
+      },
+      "schleswig_holstein": {
+        "state": "Schleswig-Holstein",
+        "capital": "Kiel"
+      },
+      "thuringia": {
+        "state": "Thuringia",
+        "capital": "Erfurt"
+      }
+    },
+    "states-questions": {
+      "1": {
+        "question": "",
+        "answers": {
+          "1": "",
+          "2": "",
+          "3": "",
+          "4": ""
+        }
+      }
+    }
   },
   "home": {
     "menu": {
-      "btn-all-tests": "Review all Tests",
-      "btn-state-tests": "Review state tests",
-      "btn-demo-all-tests": "Demo exam all tests",
-      "btn-sample-demo-test": "Take a demo test",
+      "btn-review-all-tests": "Review all Tests",
+      "btn-review-states-tests": "Review states' tests",
+      "btn-all-tests-demo-exam": "All tests demo exam",
+      "btn-take-demo-test": "Take a demo test",
       "btn-about-me": "About me"
     }
   }

@@ -13,6 +13,8 @@ import {AppComponent} from './components/app/app.component';
 import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
 import {HomeComponent} from './components/home/home.component';
+import { ReviewAllTestsComponent } from './components/review-all-tests/review-all-tests.component';
+import { ReviewStatesTestsComponent } from './components/review-states-tests/review-states-tests.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -23,7 +25,9 @@ export function createTranslateLoader(http: HttpClient) {
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ReviewAllTestsComponent,
+    ReviewStatesTestsComponent
   ],
   imports: [
     BrowserModule,

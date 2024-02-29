@@ -6,6 +6,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 export const materials = [
   MatButtonModule,
@@ -14,7 +19,12 @@ export const materials = [
   MatToolbarModule,
   MatTooltipModule,
   MatMenuModule,
-  MatCardModule
+  MatCardModule,
+  MatTableModule,
+  MatExpansionModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatCheckboxModule
 ];
 
 @NgModule({imports: materials, exports: materials})

@@ -2,7 +2,11 @@
   <div class="menu-container">
     <mat-card>
       <mat-card-content>
-        <button mat-fab extended color="primary" class="btn-menu" *ngFor="let item of menuItems">
+        <button mat-fab extended color="primary" class="btn-menu"
+                *ngFor="let item of menuItems"
+                [routerLink]="item.route"
+                [matTooltip]="'home.menu.btn-' + item.label | translate"
+                matTooltipPosition="right">
           <mat-icon class="icon">{{ item.icon }}</mat-icon>
           {{ 'home.menu.btn-' + item.label | translate }}
         </button>
