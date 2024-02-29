@@ -1,11 +1,12 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span>{{'header.title' | translate}}</span>
+    <span>{{ 'title' | translate }}</span>
     <span class="example-spacer"></span>
     <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
       <mat-icon>home</mat-icon>
     </button>
-    <button mat-icon-button [matTooltip]="'header.active-language' | translate" [matMenuTriggerFor]="menu" class="active-language-btn">
+    <button mat-icon-button [matTooltip]="'header.active-language' | translate" [matMenuTriggerFor]="menu"
+            class="active-language-btn">
       <span [class]="'active-language fi fi-' + countryName"></span>
       <mat-menu #menu="matMenu">
         <button mat-menu-item (click)="changeActiveLanguage(Language.DE)">

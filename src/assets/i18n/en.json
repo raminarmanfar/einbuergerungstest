@@ -1,14 +1,14 @@
 {
+  "title": "German citizenship test",
   "header": {
-    "title": "German citizenship test",
     "active-language": "English"
   },
   "home": {
     "menu": {
-      "btn-all-tests": "All Tests",
-      "btn-demo-all-tests": "Demo Exam All Test",
-      "btn-state-tests": "Demo Exam All Test",
-      "btn-sample-demo-test": "Sample Demo Test",
+      "btn-all-tests": "Review all Tests",
+      "btn-state-tests": "Review state tests",
+      "btn-demo-all-tests": "Demo exam all tests",
+      "btn-sample-demo-test": "Take a demo test",
       "btn-about-me": "About me"
     }
   }
