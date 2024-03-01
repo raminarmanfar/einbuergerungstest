@@ -3,17 +3,18 @@ import {Action, Selector, State, StateContext} from '@ngxs/store';
 import {Observable, of} from 'rxjs';
 import {ReviewStatesTestsStateModel} from '../models/review-states-tests-state.model';
 import {
-  SetCollapseAllQuestionsOnStateChange,
   SetCurrentQuestionIndex,
   SetShowAnswersKeys,
+  SetStateChangeExpansionPanelBehavior,
   SetStateIndex
 } from './review-states-tests.action';
+import {StateChangeExpansionPanelBehaviorEnum} from '../../models/enums/state-change-expansion-panel-behavior.enum';
 
 export const stateDefaultValues: ReviewStatesTestsStateModel = {
   currentQuestionIndex: -1,
   selectedStateIndex: -1,
   showAnswersKeys: true,
-  collapseAllQuestionsOnStateChange: false
+  stateChangeExpansionPanelBehavior: StateChangeExpansionPanelBehaviorEnum.SHOW_CURRENT_QUESTION
 };
 
 @State<ReviewStatesTestsStateModel>({name: 'ReviewStatesTestsStateModel', defaults: stateDefaultValues})
@@ -55,8 +56,8 @@ export class ReviewStatesTestsState {
     return of(ctx.patchState({showAnswersKeys: payload}));
   }
 
-  @Action(SetCollapseAllQuestionsOnStateChange)
-  setCollapseAllQuestionsOnStateChange(ctx: StateContext<ReviewStatesTestsStateModel>, {payload}: SetCollapseAllQuestionsOnStateChange): Observable<ReviewStatesTestsStateModel> {
-    return of(ctx.patchState({collapseAllQuestionsOnStateChange: payload}));
+  @Action(SetStateChangeExpansionPanelBehavior)
+  setStateChangeExpansionPanelBehavior(ctx: StateContext<ReviewStatesTestsStateModel>, {payload}: SetStateChangeExpansionPanelBehavior): Observable<ReviewStatesTestsStateModel> {
+    return of(ctx.patchState({stateChangeExpansionPanelBehavior: payload}));
   }
 }

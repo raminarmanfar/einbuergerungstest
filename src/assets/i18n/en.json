@@ -7,8 +7,7 @@
   "general": {
     "next": "Next",
     "previous": "Previous",
-    "show-answer-keys": "Show answer keys",
-    "collapse-all-questions-on-state-change": "Collapse all questions on state change"
+    "show-answer-keys": "Show answer keys"
   },
   "home": {
     "menu": {
@@ -21,6 +20,10 @@
   },
   "review-states-tests": {
     "select-state": "Select a state",
+    "expansion-panel-state-message": "What to do on state change?",
+    "show-current-question": "Show current question",
+    "show-first-question": "Show first question",
+    "collapse-all-questions": "Collapse all questions",
     "german-states": {
       "baden-wuerttemberg": {
         "state": "Baden-Württemberg",

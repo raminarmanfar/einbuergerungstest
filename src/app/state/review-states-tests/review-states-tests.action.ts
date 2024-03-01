@@ -1,3 +1,5 @@
+import {StateChangeExpansionPanelBehaviorEnum} from '../../models/enums/state-change-expansion-panel-behavior.enum';
+
 export class SetCurrentQuestionIndex {
   public static type = '[ReviewStatesTests] Set Current Test Index';
 
@@ -19,9 +21,9 @@ export class SetShowAnswersKeys {
   }
 }
 
-export class SetCollapseAllQuestionsOnStateChange {
-  public static type = '[ReviewStatesTests] Set Collapse All Questions On State Change';
+export class SetStateChangeExpansionPanelBehavior {
+  public static type = '[ReviewStatesTests] Set State Change Expansion Panel Behavior';
 
-  constructor(public payload: boolean) {
+  constructor(public payload: StateChangeExpansionPanelBehaviorEnum) {
   }
 }

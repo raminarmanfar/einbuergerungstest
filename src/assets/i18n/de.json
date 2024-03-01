@@ -7,8 +7,7 @@
   "general": {
     "next": "Weiter",
     "previous": "Zurück",
-    "show-answer-keys": "Antwortschlüssel anzeigen",
-    "collapse-all-questions-on-state-change": "Alle Fragen bei Staatsänderung zusammenfalten"
+    "show-answer-keys": "Antwortschlüssel anzeigen"
   },
   "home": {
     "menu": {
@@ -21,6 +20,10 @@
   },
   "review-states-tests": {
     "select-state": "Wähle einen Staat",
+    "expansion-panel-state-message": "Was tun bei einem Regierungswechsel?",
+    "show-current-question": "Aktuelle Frage anzeigen",
+    "show-first-question": "Erste Frage anzeigen",
+    "collapse-all-questions": "Alle Fragen minimieren",
     "german-states": {
       "baden-wuerttemberg": {
         "state": "Baden-Württemberg",

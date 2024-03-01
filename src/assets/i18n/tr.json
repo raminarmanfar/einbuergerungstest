@@ -22,6 +22,10 @@
   },
   "review-states-tests": {
     "select-state": "Bir Eyalet Seçin",
+    "expansion-panel-state-message": "What to do on state change?",
+    "show-current-question": "Geçerli soruyu göster",
+    "show-first-question": "İlk soruyu göster",
+    "collapse-all-questions": "Tüm soruları daralt",
     "german-states": {
       "baden-wuerttemberg": {
         "state": "Baden-Württemberg",

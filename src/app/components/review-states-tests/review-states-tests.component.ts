@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ReviewStatesTestsStateService} from '../../state/review-states-tests/review-states-tests-state.service';
 import {ConstantValues} from '../../utils/constant-values';
 import {StateInfoModel} from '../../models/state-info.model';
+import {StateChangeExpansionPanelBehaviorEnum} from '../../models/enums/state-change-expansion-panel-behavior.enum';
 
 @Component({
   selector: 'app-review-states-tests',
@@ -12,7 +13,7 @@ export class ReviewStatesTestsComponent implements OnInit {
   currentQuestionIndex = 0;
   selectedState: StateInfoModel | undefined = undefined;
   showAnswersKeys = true;
-  collapseAllQuestionsOnStateChange = true;
+  stateChangeExpansionPanelBehavior = StateChangeExpansionPanelBehaviorEnum.SHOW_CURRENT_QUESTION;
   readonly germanStates = ConstantValues.GERMAN_STATES;
   readonly trPrefix = 'review-states-tests.german-states.';
 
@@ -28,7 +29,7 @@ export class ReviewStatesTestsComponent implements OnInit {
       this.currentQuestionIndex = allSubState.currentQuestionIndex;
       this.selectedState = allSubState.selectedStateIndex >= 0 ? this.germanStates[allSubState.selectedStateIndex] : undefined;
       this.showAnswersKeys = allSubState.showAnswersKeys;
-      this.collapseAllQuestionsOnStateChange = allSubState.collapseAllQuestionsOnStateChange;
+      this.stateChangeExpansionPanelBehavior = allSubState.stateChangeExpansionPanelBehavior;
     });
   }
 
@@ -41,8 +42,15 @@ export class ReviewStatesTestsComponent implements OnInit {
   }
 
   onStateSelectChange(selectedState: StateInfoModel): void {
-    if (this.collapseAllQuestionsOnStateChange) {
-      this.reviewStatesTestsStateService.setCurrentQuestionIndex(-1);
+    switch (this.stateChangeExpansionPanelBehavior) {
+      case StateChangeExpansionPanelBehaviorEnum.SHOW_CURRENT_QUESTION:
+        break;
+      case StateChangeExpansionPanelBehaviorEnum.SHOW_FIRST_QUESTION:
+        this.reviewStatesTestsStateService.setCurrentQuestionIndex(0);
+        break;
+      case StateChangeExpansionPanelBehaviorEnum.COLLAPSE_ALL_QUESTIONS:
+        this.reviewStatesTestsStateService.setCurrentQuestionIndex(-1);
+        break;
     }
     this.reviewStatesTestsStateService.setStateIndex(this.germanStates.indexOf(selectedState));
   }
@@ -52,4 +60,6 @@ export class ReviewStatesTestsComponent implements OnInit {
       this.reviewStatesTestsStateService.setStateIndex(-1);
     }
   }
+
+  protected readonly StateChangeExpansionPanelBehaviorEnum = StateChangeExpansionPanelBehaviorEnum;
 }

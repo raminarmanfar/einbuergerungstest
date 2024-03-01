@@ -7,8 +7,7 @@
   "general": {
     "next": "بعدی",
     "previous": "قبلی",
-    "show-answer-keys": "نمایش کلید پاسخها",
-    "collapse-all-questions-on-state-change": "با تغییر ایالت تمام سوالات از دید جمع شوند"
+    "show-answer-keys": "نمایش کلید پاسخها"
   },
   "home": {
     "menu": {
@@ -21,6 +20,10 @@
   },
   "review-states-tests": {
     "select-state": "یک ایالت انتخاب کنید",
+    "expansion-panel-state-message": "وقتی ایالت عوض شد فرم سوالات چه شود؟",
+    "show-current-question": "نمایش سوال جاری",
+    "show-first-question": "نمایش اولین سوال",
+    "collapse-all-questions": "جمع سازی همه سوالها",
     "german-states": {
       "baden-wuerttemberg": {
         "state": "بادن-وورتمبرگ",
