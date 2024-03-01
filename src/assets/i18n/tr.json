@@ -6,7 +6,9 @@
   },
   "general": {
     "next": "İleri",
-    "previous": "Geri"
+    "previous": "Geri",
+    "show-answer-keys": "Cevapların anahtarlarını göster",
+    "collapse-all-questions-on-state-change": "Eyalet değişikliğinde tüm soruları daralt"
   }
 ,
   "home": {
@@ -28,10 +30,10 @@
           "1": {
             "question": "Baden-Württemberg eyaletine ait arması hangisidir?",
             "answers": {
-              "1": "1",
-              "2": "2",
-              "3": "3",
-              "4": "4"
+              "1": "Resim 1",
+              "2": "Resim 2",
+              "3": "Resim 3",
+              "4": "Resim 4"
             }
           },
           "2": {
@@ -124,10 +126,10 @@
           "1": {
             "question": "Bavyera Özgür Devleti'ne hangi armalar aittir?",
             "answers": {
-              "1": "1",
-              "2": "2",
-              "3": "3",
-              "4": "4"
+              "1": "Resim 1",
+              "2": "Resim 2",
+              "3": "Resim 3",
+              "4": "Resim 4"
             }
           },
           "2": {
@@ -215,59 +217,528 @@
       },
       "berlin": {
         "state": "Berlin",
-        "capital": "Berlin"
+        "capital": "Berlin",
+        "tests": {
+          "1": {
+            "question": "Berlin eyaletinin arması nedir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "2": {
+            "question": "Berlin'in bir ilçesi hangisidir?",
+            "answers": {
+              "1": "Altona",
+              "2": "Prignitz",
+              "3": "Pankow",
+              "4": "Mecklenburgische Seenplatte"
+            }
+          },
+          "3": {
+            "question": "Berlin'deki eyalet parlamentosu kaç yıl için seçilir?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Berlin'de belediye seçimlerinde kaç yaşında oy kullanabilirsiniz (ilçe konseyi seçimi)?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Berlin'in eyalet bayrağının renkleri nelerdir?",
+            "answers": {
+              "1": "mavi-beyaz-kırmızı",
+              "2": "beyaz-kırmızı",
+              "3": "yeşil-beyaz-kırmızı",
+              "4": "siyah-altın"
+            }
+          },
+          "6": {
+            "question": "Berlin'de siyasi konularda nereden bilgi alabilirsiniz?",
+            "answers": {
+              "1": "yerel düzenleme ofisinde",
+              "2": "kiliselerde",
+              "3": "tüketici merkezinde",
+              "4": "siyasi eğitim için eyalet merkezinde"
+            }
+          },
+          "7": {
+            "question": "Hangi federasyon eyaleti bir şehir devletidir?",
+            "answers": {
+              "1": "Berlin",
+              "2": "Saarland",
+              "3": "Brandenburg",
+              "4": "Hessen"
+            }
+          },
+          "8": {
+            "question": "Berlin hangi federasyon eyaletidir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Berlin şehir devletinin başbakanının unvanı nedir?",
+            "answers": {
+              "1": "Başbakan",
+              "2": "Belediye Başkanı",
+              "3": "Senato Başkanı",
+              "4": "Vali"
+            }
+          },
+          "10": {
+            "question": "Berlin hangi senatöre sahip değildir?",
+            "answers": {
+              "1": "Maliye Senatörü",
+              "2": "İçişleri Senatörü",
+              "3": "Dış İlişkiler Senatörü",
+              "4": "Adalet Senatörü"
+            }
+          }
+        }
       },
       "brandenburg": {
         "state": "Brandenburg",
-        "capital": "Potsdam"
+        "capital": "Potsdam",
+        "tests": {
+          "1": {
+            "question": "Brandenburg eyaletine hangi arma aittir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "2": {
+            "question": "Brandenburg'ta bir ilçe hangisidir?",
+            "answers": {
+              "1": "Prignitz",
+              "2": "Rhein-Sieg-Kreis",
+              "3": "Vogtlandkreis",
+              "4": "Amberg-Sulzbach"
+            }
+          },
+          "3": {
+            "question": "Brandenburg'ta eyalet parlamentosu kaç yıl için seçilir?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Brandenburg'ta yerel seçimlerde hangi yaşta oy kullanabilirsiniz?",
+            "answers": {
+              "1": "14",
+              "2": "18",
+              "3": "16",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Brandenburg bayrağının renkleri nelerdir?",
+            "answers": {
+              "1": "mavi-beyaz-kırmızı",
+              "2": "kırmızı-beyaz",
+              "3": "yeşil-beyaz-kırmızı",
+              "4": "siyah-sarı"
+            }
+          },
+          "6": {
+            "question": "Brandenburg'ta siyasi konularda nereden bilgi alabilirsiniz?",
+            "answers": {
+              "1": "kiliselerde",
+              "2": "yerel düzenleme ofisinde",
+              "3": "Siyasi Eğitim Devlet Merkezi'nde",
+              "4": "tüketici merkezinde"
+            }
+          },
+          "7": {
+            "question": "Brandenburg'un başkenti şu şekildedir...",
+            "answers": {
+              "1": "Potsdam.",
+              "2": "Cottbus.",
+              "3": "Brandenburg.",
+              "4": "Frankfurt/Oder."
+            }
+          },
+          "8": {
+            "question": "Brandenburg hangi federal eyalettir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Brandenburg'daki hükümetin başı hangi unvanı taşır?",
+            "answers": {
+              "1": "Birinci Bakan",
+              "2": "Başbakan",
+              "3": "Belediye Başkanı",
+              "4": "Başbakan"
+            }
+          },
+          "10": {
+            "question": "Brandenburg'ta hangi bakan bulunmaz?",
+            "answers": {
+              "1": "Adalet Bakanı",
+              "2": "Dışişleri Bakanı",
+              "3": "Maliye Bakanı",
+              "4": "İçişleri Bakanı"
+            }
+          }
+        }
       },
       "bremen": {
         "state": "Bremen",
-        "capital": "Bremen"
+        "capital": "Bremen",
+        "tests": {
+          "1": {
+            "question": "Bremen Özgür Hanseatic Şehri arması nedir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "2": {
+            "question": "Bremen'in bir semti hangisidir?",
+            "answers": {
+              "1": "Altona",
+              "2": "Hemelingen",
+              "3": "Pankow",
+              "4": "Babelsberg"
+            }
+          },
+          "3": {
+            "question": "Bremen'deki devlet parlamentosu kaç yıl için seçilir?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Bremen'deki vatandaşlık (eyalet parlamentosu) seçimlerinde hangi yaşta oy kullanılabilir?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Bremen'in devlet bayrağının renkleri nelerdir?",
+            "answers": {
+              "1": "mavi-beyaz-kırmızı",
+              "2": "kırmızı-beyaz",
+              "3": "yeşil-beyaz-kırmızı",
+              "4": "siyah-altın"
+            }
+          },
+          "6": {
+            "question": "Bremen'de siyasi konularda nereden bilgi alabilirsiniz?",
+            "answers": {
+              "1": "belediye düzenleme ofisinde",
+              "2": "siyasi eğitim için devlet merkezinde",
+              "3": "kiliselerde",
+              "4": "tüketici merkezinde"
+            }
+          },
+          "7": {
+            "question": "Alman bir şehir-devleti nedir?",
+            "answers": {
+              "1": "Bremen",
+              "2": "Münih",
+              "3": "Frankfurt",
+              "4": "Erfurt"
+            }
+          },
+          "8": {
+            "question": "Bremen hangi eyaletin merkezidir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Bremen şehir-devletinin başbakanının/valisinin adı nedir?",
+            "answers": {
+              "1": "Başbakan",
+              "2": "Birinci Belediye Başkanı",
+              "3": "Senato Başkanı",
+              "4": "Vali"
+            }
+          },
+          "10": {
+            "question": "Hangi senatör Bremen'de bulunmaz?",
+            "answers": {
+              "1": "Dış İlişkiler Senatörü",
+              "2": "Maliye Senatörü",
+              "3": "Adalet Senatörü",
+              "4": "İçişleri Senatörü"
+            }
+          }
+        }
       },
       "hamburg": {
         "state": "Hamburg",
-        "capital": "Hamburg"
+        "capital": "Hamburg",
+        "tests": {
+          "1": {
+            "question": "Hür ve Hanseatic Hamburg Şehri arması hangisine aittir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "2": {
+            "question": "Hamburg'un bir semti hangisidir?",
+            "answers": {
+              "1": "Altona",
+              "2": "Hemelingen",
+              "3": "Pankow",
+              "4": "Mecklenburgische Seenplatte"
+            }
+          },
+          "3": {
+            "question": "Hamburg'da eyalet parlamentosu kaç yıl için seçilir?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Hamburg'da yerel seçimlerde (ilçe meclisleri seçimi) hangi yaşta oy kullanabilirsiniz?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Hamburg'un devlet bayrağının renkleri nelerdir?",
+            "answers": {
+              "1": "mavi-beyaz-kırmızı",
+              "2": "beyaz-kırmızı",
+              "3": "yeşil-beyaz-kırmızı",
+              "4": "siyah-sarı"
+            }
+          },
+          "6": {
+            "question": "Hamburg'da siyasi konularda nereden bilgi alabilirsiniz?",
+            "answers": {
+              "1": "belediye düzenleme ofisinde",
+              "2": "tüketici merkezinde",
+              "3": "kiliselerde",
+              "4": "siyasi eğitim için eyalet merkezinde"
+            }
+          },
+          "7": {
+            "question": "Hangi eyalet bir şehir devletidir?",
+            "answers": {
+              "1": "Hamburg",
+              "2": "Saksonya",
+              "3": "Bavyera",
+              "4": "Türingiya"
+            }
+          },
+          "8": {
+            "question": "Hamburg hangi eyalettir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Şehir devleti Hamburg'un başbakanının/adının tam olarak ne olduğu nedir?",
+            "answers": {
+              "1": "Başbakan",
+              "2": "İlk Belediye Başkanı",
+              "3": "Düzenleme Senatörü",
+              "4": "Belediye Başkanı"
+            }
+          },
+          "10": {
+            "question": "Hangi senatör Hamburg'da bulunmamaktadır?",
+            "answers": {
+              "1": "Adalet Senatörü",
+              "2": "Dış İlişkiler Senatörü",
+              "3": "Maliye Senatörü",
+              "4": "İçişleri Senatörü"
+            }
+          }
+        }
       },
       "hesse": {
         "state": "Hessen",
-        "capital": "Wiesbaden"
+        "capital": "Wiesbaden",
+        "tests": {
+          "1": {
+            "question": "Hessen eyaletine ait olan arması hangisidir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "2": {
+            "question": "Hessen'de bir ilçe hangisidir?",
+            "answers": {
+              "1": "Ammerland",
+              "2": "Altötting",
+              "3": "Prignitz",
+              "4": "Main-Taunus-Kreis"
+            }
+          },
+          "3": {
+            "question": "Hessen eyaletinde parlamentonun seçim süresi kaç yıldır?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Hessen'de yerel seçimlerde kaç yaşında oy kullanabilirsiniz?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Hessen eyalet bayrağının renkleri nelerdir?",
+            "answers": {
+              "1": "mavi-beyaz-kırmızı",
+              "2": "kırmızı-beyaz",
+              "3": "siyah-altın",
+              "4": "yeşil-beyaz-kırmızı"
+            }
+          },
+          "6": {
+            "question": "Hessen'de siyasi konularda nereden bilgi alabilirsiniz?",
+            "answers": {
+              "1": "siyasi eğitim için eyalet merkezinde",
+              "2": "Tüketici Merkezi'nde",
+              "3": "mahalli yönetim ofisinde",
+              "4": "kiliselerde"
+            }
+          },
+          "7": {
+            "question": "Hessen'in başkenti nedir?",
+            "answers": {
+              "1": "Kassel",
+              "2": "Darmstadt",
+              "3": "Frankfurt",
+              "4": "Wiesbaden"
+            }
+          },
+          "8": {
+            "question": "Hessen hangi eyalettir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Hessen'de hükümetin başı nasıl adlandırılır?",
+            "answers": {
+              "1": "İlk Bakan",
+              "2": "Başbakan",
+              "3": "Belediye Başkanı",
+              "4": "Başbakan"
+            }
+          },
+          "10": {
+            "question": "Hessen'de hangi bakan bulunmamaktadır?",
+            "answers": {
+              "1": "Adalet Bakanı",
+              "2": "Dışişleri Bakanı",
+              "3": "Maliye Bakanı",
+              "4": "İçişleri Bakanı"
+            }
+          }
+        }
       },
-      "lower_saxony": {
+      "lower-saxony": {
         "state": "Aşağı Saksonya",
-        "capital": "Hannover"
+        "capital": "Hannover",
+        "tests": {}
       },
       "mecklenburg-vorpommern": {
         "state": "Mecklenburg-Vorpommern",
-        "capital": "Schwerin"
+        "capital": "Schwerin",
+        "tests": {}
       },
       "north-rhine-westphalia": {
         "state": "Kuzey Ren-Vestfalya",
-        "capital": "Düsseldorf"
+        "capital": "Düsseldorf",
+        "tests": {}
       },
       "rhineland-palatinate": {
         "state": "Rhineland-Palatinate",
-        "capital": "Mainz"
+        "capital": "Mainz",
+        "tests": {}
       },
       "saarland": {
         "state": "Saarland",
-        "capital": "Saarbrücken"
+        "capital": "Saarbrücken",
+        "tests": {}
       },
       "saxony": {
         "state": "Saksonya",
-        "capital": "Dresden"
+        "capital": "Dresden",
+        "tests": {}
       },
       "saxony-anhalt": {
         "state": "Saksonya-Anhalt",
-        "capital": "Magdeburg"
+        "capital": "Magdeburg",
+        "tests": {}
       },
       "schleswig-holstein": {
         "state": "Schleswig-Holstein",
-        "capital": "Kiel"
+        "capital": "Kiel",
+        "tests": {}
       },
       "thuringia": {
         "state": "Thuringia",
-        "capital": "Erfurt"
+        "capital": "Erfurt",
+        "tests": {}
       }
     }
   }

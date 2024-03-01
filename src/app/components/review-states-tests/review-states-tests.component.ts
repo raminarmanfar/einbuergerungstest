@@ -11,6 +11,8 @@ import {StateInfoModel} from '../../models/state-info.model';
 export class ReviewStatesTestsComponent implements OnInit {
   currentQuestionIndex = 0;
   selectedState: StateInfoModel | undefined = undefined;
+  showAnswersKeys = true;
+  collapseAllQuestionsOnStateChange = true;
   readonly germanStates = ConstantValues.GERMAN_STATES;
   readonly trPrefix = 'review-states-tests.german-states.';
 
@@ -22,11 +24,12 @@ export class ReviewStatesTestsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.reviewStatesTestsStateService.currentQuestionIndex$.subscribe(currentQuestionIndex =>
-      this.currentQuestionIndex = currentQuestionIndex);
-    this.reviewStatesTestsStateService.selectedStateIndex$.subscribe(selectedStateIndex =>
-      this.selectedState = selectedStateIndex >= 0 ? this.germanStates[selectedStateIndex] : undefined
-    );
+    this.reviewStatesTestsStateService.allSubState$.subscribe(allSubState => {
+      this.currentQuestionIndex = allSubState.currentQuestionIndex;
+      this.selectedState = allSubState.selectedStateIndex >= 0 ? this.germanStates[allSubState.selectedStateIndex] : undefined;
+      this.showAnswersKeys = allSubState.showAnswersKeys;
+      this.collapseAllQuestionsOnStateChange = allSubState.collapseAllQuestionsOnStateChange;
+    });
   }
 
   getQuestionTrPrefix(stateNameLabel: string, questionIndex: number): string {
@@ -38,7 +41,9 @@ export class ReviewStatesTestsComponent implements OnInit {
   }
 
   onStateSelectChange(selectedState: StateInfoModel): void {
-    this.reviewStatesTestsStateService.setCurrentQuestionIndex(-1);
+    if (this.collapseAllQuestionsOnStateChange) {
+      this.reviewStatesTestsStateService.setCurrentQuestionIndex(-1);
+    }
     this.reviewStatesTestsStateService.setStateIndex(this.germanStates.indexOf(selectedState));
   }
 

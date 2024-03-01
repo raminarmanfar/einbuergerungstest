@@ -28,6 +28,66 @@ export class ConstantValues {
     {id: 9, stateId: 2, correctAnswer: 4, questionImagesName: []},
     {id: 10, stateId: 2, correctAnswer: 2, questionImagesName: []}
   ];
+  public static readonly BERLIN_STATE_QUESTIONS: StateQuestionModel[] = [
+    {id: 1, stateId: 3, correctAnswer: 4, questionImagesName: ['q1_1.png']},
+    {id: 2, stateId: 3, correctAnswer: 3, questionImagesName: []},
+    {id: 3, stateId: 3, correctAnswer: 3, questionImagesName: []},
+    {id: 4, stateId: 3, correctAnswer: 2, questionImagesName: []},
+    {id: 5, stateId: 3, correctAnswer: 2, questionImagesName: []},
+    {id: 6, stateId: 3, correctAnswer: 4, questionImagesName: []},
+    {id: 7, stateId: 3, correctAnswer: 1, questionImagesName: []},
+    {id: 8, stateId: 3, correctAnswer: 4, questionImagesName: ['q8_1.png']},
+    {id: 9, stateId: 3, correctAnswer: 4, questionImagesName: []},
+    {id: 10, stateId: 3, correctAnswer: 3, questionImagesName: []}
+  ];
+  public static readonly BRANDENBURG_STATE_QUESTIONS: StateQuestionModel[] = [
+    {id: 1, stateId: 3, correctAnswer: 1, questionImagesName: ['q1_1.png']},
+    {id: 2, stateId: 3, correctAnswer: 1, questionImagesName: []},
+    {id: 3, stateId: 3, correctAnswer: 3, questionImagesName: []},
+    {id: 4, stateId: 3, correctAnswer: 3, questionImagesName: []},
+    {id: 5, stateId: 3, correctAnswer: 2, questionImagesName: []},
+    {id: 6, stateId: 3, correctAnswer: 3, questionImagesName: []},
+    {id: 7, stateId: 3, correctAnswer: 1, questionImagesName: []},
+    {id: 8, stateId: 3, correctAnswer: 4, questionImagesName: ['q8_1.png']},
+    {id: 9, stateId: 3, correctAnswer: 4, questionImagesName: []},
+    {id: 10, stateId: 3, correctAnswer: 2, questionImagesName: []}
+  ];
+  public static readonly BREMEN_STATE_QUESTIONS: StateQuestionModel[] = [
+    {id: 1, stateId: 4, correctAnswer: 3, questionImagesName: ['q1_1.png']},
+    {id: 2, stateId: 4, correctAnswer: 2, questionImagesName: []},
+    {id: 3, stateId: 4, correctAnswer: 2, questionImagesName: []},
+    {id: 4, stateId: 4, correctAnswer: 2, questionImagesName: []},
+    {id: 5, stateId: 4, correctAnswer: 2, questionImagesName: []},
+    {id: 6, stateId: 4, correctAnswer: 2, questionImagesName: []},
+    {id: 7, stateId: 4, correctAnswer: 1, questionImagesName: []},
+    {id: 8, stateId: 4, correctAnswer: 1, questionImagesName: ['q8_1.png']},
+    {id: 9, stateId: 4, correctAnswer: 3, questionImagesName: []},
+    {id: 10, stateId: 4, correctAnswer: 1, questionImagesName: []}
+  ];
+  public static readonly HAMBURG_STATE_QUESTIONS: StateQuestionModel[] = [
+    {id: 1, stateId: 5, correctAnswer: 2, questionImagesName: ['q1_1.png']},
+    {id: 2, stateId: 5, correctAnswer: 1, questionImagesName: []},
+    {id: 3, stateId: 5, correctAnswer: 3, questionImagesName: []},
+    {id: 4, stateId: 5, correctAnswer: 2, questionImagesName: []},
+    {id: 5, stateId: 5, correctAnswer: 2, questionImagesName: []},
+    {id: 6, stateId: 5, correctAnswer: 4, questionImagesName: []},
+    {id: 7, stateId: 5, correctAnswer: 1, questionImagesName: []},
+    {id: 8, stateId: 5, correctAnswer: 3, questionImagesName: ['q8_1.png']},
+    {id: 9, stateId: 5, correctAnswer: 2, questionImagesName: []},
+    {id: 10, stateId: 5, correctAnswer: 2, questionImagesName: []}
+  ];
+  public static readonly HESSE_STATE_QUESTIONS: StateQuestionModel[] = [
+    {id: 1, stateId: 7, correctAnswer: 1, questionImagesName: ['q1_1.png']},
+    {id: 2, stateId: 7, correctAnswer: 4, questionImagesName: []},
+    {id: 3, stateId: 7, correctAnswer: 3, questionImagesName: []},
+    {id: 4, stateId: 7, correctAnswer: 2, questionImagesName: []},
+    {id: 5, stateId: 7, correctAnswer: 2, questionImagesName: []},
+    {id: 6, stateId: 7, correctAnswer: 1, questionImagesName: []},
+    {id: 7, stateId: 7, correctAnswer: 4, questionImagesName: []},
+    {id: 8, stateId: 7, correctAnswer: 3, questionImagesName: ['q8_1.png']},
+    {id: 9, stateId: 7, correctAnswer: 4, questionImagesName: []},
+    {id: 10, stateId: 7, correctAnswer: 2, questionImagesName: []}
+  ];
 
   public static readonly GERMAN_STATES: StateInfoModel[] = [
     {
@@ -44,28 +104,40 @@ export class ConstantValues {
       population: 0,
       stateTests: ConstantValues.BAVARIA_STATE_QUESTIONS
     },
-    {id: 3, name: GermanStatesEnum.BERLIN, capital: GermanStatesCapitalCityEnum.BERLIN, population: 0, stateTests: []},
+    {
+      id: 3,
+      name: GermanStatesEnum.BERLIN,
+      capital: GermanStatesCapitalCityEnum.BERLIN,
+      population: 0,
+      stateTests: ConstantValues.BERLIN_STATE_QUESTIONS
+    },
     {
       id: 4,
       name: GermanStatesEnum.BRANDENBURG,
       capital: GermanStatesCapitalCityEnum.POTSDAM,
       population: 0,
-      stateTests: []
+      stateTests: ConstantValues.BRANDENBURG_STATE_QUESTIONS
     },
-    {id: 5, name: GermanStatesEnum.BREMEN, capital: GermanStatesCapitalCityEnum.BREMEN, population: 0, stateTests: []},
+    {
+      id: 5,
+      name: GermanStatesEnum.BREMEN,
+      capital: GermanStatesCapitalCityEnum.BREMEN,
+      population: 0,
+      stateTests: ConstantValues.BREMEN_STATE_QUESTIONS
+    },
     {
       id: 6,
       name: GermanStatesEnum.HAMBURG,
       capital: GermanStatesCapitalCityEnum.HAMBURG,
       population: 0,
-      stateTests: []
+      stateTests: ConstantValues.HAMBURG_STATE_QUESTIONS
     },
     {
       id: 7,
       name: GermanStatesEnum.HESSE,
       capital: GermanStatesCapitalCityEnum.WIESBADEN,
       population: 0,
-      stateTests: []
+      stateTests: ConstantValues.HESSE_STATE_QUESTIONS
     },
     {
       id: 8,

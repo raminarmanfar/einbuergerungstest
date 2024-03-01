@@ -2,15 +2,23 @@ import {Injectable} from '@angular/core';
 import {Select, Store} from '@ngxs/store';
 import {Observable} from 'rxjs';
 import {ReviewStatesTestsState} from './review-states-tests.state';
-import {SetCurrentQuestionIndex, SetStateIndex} from './review-states-tests.action';
+import {
+  SetCollapseAllQuestionsOnStateChange,
+  SetCurrentQuestionIndex,
+  SetShowAnswersKeys,
+  SetStateIndex
+} from './review-states-tests.action';
+import {ReviewStatesTestsStateModel} from '../models/review-states-tests-state.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ReviewStatesTestsStateService {
 
+  @Select(ReviewStatesTestsState.getAllSubState) allSubState$!: Observable<ReviewStatesTestsStateModel>;
   @Select(ReviewStatesTestsState.getCurrentQuestionIndex) currentQuestionIndex$!: Observable<number>;
   @Select(ReviewStatesTestsState.getSelectedStateIndex) selectedStateIndex$!: Observable<number>;
+  @Select(ReviewStatesTestsState.getShowAnswersKeys) showAnswersKeys$!: Observable<boolean>;
 
   constructor(private store: Store) {
   }
@@ -21,5 +29,13 @@ export class ReviewStatesTestsStateService {
 
   setStateIndex(selectedStateIndex: number): void {
     this.store.dispatch(new SetStateIndex(selectedStateIndex));
+  }
+
+  setShowAnswersKeys(showAnswersKeys: boolean): void {
+    this.store.dispatch(new SetShowAnswersKeys(showAnswersKeys));
+  }
+
+  setCollapseAllQuestionsOnStateChange(collapseAllQuestionsOnStateChange: boolean): void {
+    this.store.dispatch(new SetCollapseAllQuestionsOnStateChange(collapseAllQuestionsOnStateChange));
   }
 }

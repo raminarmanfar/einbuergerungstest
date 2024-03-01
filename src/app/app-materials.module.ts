@@ -13,6 +13,10 @@ import {MatInputModule} from '@angular/material/input';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSelectModule} from "@angular/material/select";
 import {MatRadioModule} from '@angular/material/radio';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
 
 export const materials = [
   MatButtonModule,
@@ -28,7 +32,11 @@ export const materials = [
   MatInputModule,
   MatCheckboxModule,
   MatSelectModule,
-  MatRadioModule
+  MatRadioModule,
+  MatSlideToggleModule,
+  MatGridListModule,
+  MatDividerModule,
+  MatListModule
 ];
 
 @NgModule({imports: materials, exports: materials})

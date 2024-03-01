@@ -6,7 +6,9 @@
   },
   "general": {
     "next": "Next",
-    "previous": "Previous"
+    "previous": "Previous",
+    "show-answer-keys": "Show answer keys",
+    "collapse-all-questions-on-state-change": "Collapse all questions on state change"
   },
   "home": {
     "menu": {
@@ -27,10 +29,10 @@
           "1": {
             "question": "Which coat of arms belongs to the state of Baden-Württemberg?",
             "answers": {
-              "1": "1",
-              "2": "2",
-              "3": "3",
-              "4": "4"
+              "1": "Picture 1",
+              "2": "Picture 2",
+              "3": "Picture 3",
+              "4": "Picture 4"
             }
           },
           "2": {
@@ -123,10 +125,10 @@
           "1": {
             "question": "Which coat of arms belongs to the Free State of Bavaria?",
             "answers": {
-              "1": "1",
-              "2": "2",
-              "3": "3",
-              "4": "4"
+              "1": "Picture 1",
+              "2": "Picture 2",
+              "3": "Picture 3",
+              "4": "Picture 4"
             }
           },
           "2": {
@@ -214,59 +216,528 @@
       },
       "berlin": {
         "state": "Berlin",
-        "capital": "Berlin"
+        "capital": "Berlin",
+        "tests": {
+          "1": {
+            "question": "What coat of arms belongs to the state of Berlin?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "2": {
+            "question": "Which one is a district of Berlin?",
+            "answers": {
+              "1": "Altona",
+              "2": "Prignitz",
+              "3": "Pankow",
+              "4": "Mecklenburgische Seenplatte"
+            }
+          },
+          "3": {
+            "question": "For how many years is the state parliament in Berlin elected?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "From what age can one vote in Berlin municipal elections (election of the district council)?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "What colors does the state flag of Berlin have?",
+            "answers": {
+              "1": "blue-white-red",
+              "2": "white-red",
+              "3": "green-white-red",
+              "4": "black-gold"
+            }
+          },
+          "6": {
+            "question": "Where can you get information on political issues in Berlin?",
+            "answers": {
+              "1": "at the local regulatory office",
+              "2": "at the churches",
+              "3": "at the consumer center",
+              "4": "at the state center for political education"
+            }
+          },
+          "7": {
+            "question": "Which federal state is a city-state?",
+            "answers": {
+              "1": "Berlin",
+              "2": "Saarland",
+              "3": "Brandenburg",
+              "4": "Hessen"
+            }
+          },
+          "8": {
+            "question": "Which federal state is Berlin?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "What is the title of the head of government of the city-state of Berlin?",
+            "answers": {
+              "1": "Prime Minister",
+              "2": "Mayor",
+              "3": "President of the Senate",
+              "4": "Governor"
+            }
+          },
+          "10": {
+            "question": "Which Senator does Berlin not have?",
+            "answers": {
+              "1": "Finance Senator",
+              "2": "Interior Senator",
+              "3": "Senator for External Relations",
+              "4": "Justice Senator"
+            }
+          }
+        }
       },
       "brandenburg": {
         "state": "Brandenburg",
-        "capital": "Potsdam"
+        "capital": "Potsdam",
+        "tests": {
+          "1": {
+            "question": "Which coat of arms belongs to the state of Brandenburg?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "2": {
+            "question": "Which is a district in Brandenburg?",
+            "answers": {
+              "1": "Prignitz",
+              "2": "Rhein-Sieg-Kreis",
+              "3": "Vogtlandkreis",
+              "4": "Amberg-Sulzbach"
+            }
+          },
+          "3": {
+            "question": "For how many years is the state parliament in Brandenburg elected?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "From what age can you vote in municipal elections in Brandenburg?",
+            "answers": {
+              "1": "14",
+              "2": "18",
+              "3": "16",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "What are the colors of the flag of Brandenburg?",
+            "answers": {
+              "1": "blue-white-red",
+              "2": "red-white",
+              "3": "green-white-red",
+              "4": "black-yellow"
+            }
+          },
+          "6": {
+            "question": "Where can you get information on political topics in Brandenburg?",
+            "answers": {
+              "1": "at the churches",
+              "2": "at the local regulatory office",
+              "3": "at the State Center for Political Education",
+              "4": "at the consumer center"
+            }
+          },
+          "7": {
+            "question": "The capital of Brandenburg is called...",
+            "answers": {
+              "1": "Potsdam.",
+              "2": "Cottbus.",
+              "3": "Brandenburg.",
+              "4": "Frankfurt/Oder."
+            }
+          },
+          "8": {
+            "question": "Which federal state is Brandenburg?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "What is the title of the head of government in Brandenburg?",
+            "answers": {
+              "1": "First Minister",
+              "2": "Prime Minister",
+              "3": "Mayor",
+              "4": "Minister-President"
+            }
+          },
+          "10": {
+            "question": "Which minister does Brandenburg not have?",
+            "answers": {
+              "1": "Minister of Justice",
+              "2": "Foreign Minister",
+              "3": "Finance Minister",
+              "4": "Interior Minister"
+            }
+          }
+        }
       },
       "bremen": {
         "state": "Bremen",
-        "capital": "Bremen"
+        "capital": "Bremen",
+        "tests": {
+          "1": {
+            "question": "What is the coat of arms of the Free Hanseatic City of Bremen?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "2": {
+            "question": "Which is a district of Bremen?",
+            "answers": {
+              "1": "Altona",
+              "2": "Hemelingen",
+              "3": "Pankow",
+              "4": "Babelsberg"
+            }
+          },
+          "3": {
+            "question": "For how many years is the state parliament in Bremen elected?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "From what age can one vote in the elections for the citizenship (state parliament) in Bremen?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "What are the colors of the state flag of Bremen?",
+            "answers": {
+              "1": "blue-white-red",
+              "2": "red-white",
+              "3": "green-white-red",
+              "4": "black-gold"
+            }
+          },
+          "6": {
+            "question": "Where can you get information on political topics in Bremen?",
+            "answers": {
+              "1": "at the municipal regulatory office",
+              "2": "at the state center for political education",
+              "3": "at the churches",
+              "4": "at the consumer center"
+            }
+          },
+          "7": {
+            "question": "What is a German city-state?",
+            "answers": {
+              "1": "Bremen",
+              "2": "Munich",
+              "3": "Frankfurt",
+              "4": "Erfurt"
+            }
+          },
+          "8": {
+            "question": "Which federal state is Bremen?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "What is the name of the head of government of the city-state of Bremen?",
+            "answers": {
+              "1": "Prime Minister",
+              "2": "First Mayor",
+              "3": "President of the Senate",
+              "4": "Governor"
+            }
+          },
+          "10": {
+            "question": "Which senator does Bremen not have?",
+            "answers": {
+              "1": "Senator for Foreign Relations",
+              "2": "Finance Senator",
+              "3": "Justice Senator",
+              "4": "Interior Senator"
+            }
+          }
+        }
       },
       "hamburg": {
         "state": "Hamburg",
-        "capital": "Hamburg"
+        "capital": "Hamburg",
+        "tests": {
+          "1": {
+            "question": "Which coat of arms belongs to the Free and Hanseatic City of Hamburg?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "2": {
+            "question": "Which is a district of Hamburg?",
+            "answers": {
+              "1": "Altona",
+              "2": "Hemelingen",
+              "3": "Pankow",
+              "4": "Mecklenburgische Seenplatte"
+            }
+          },
+          "3": {
+            "question": "For how many years is the state parliament in Hamburg elected?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "From what age can one vote in the elections for the city councils (election of district assemblies) in Hamburg?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "What are the colors of the state flag of Hamburg?",
+            "answers": {
+              "1": "blue-white-red",
+              "2": "white-red",
+              "3": "green-white-red",
+              "4": "black-yellow"
+            }
+          },
+          "6": {
+            "question": "Where can you get information on political topics in Hamburg?",
+            "answers": {
+              "1": "at the municipal regulatory office",
+              "2": "at the consumer center",
+              "3": "at the churches",
+              "4": "at the state center for political education"
+            }
+          },
+          "7": {
+            "question": "Which federal state is a city-state?",
+            "answers": {
+              "1": "Hamburg",
+              "2": "Saxony",
+              "3": "Bavaria",
+              "4": "Thuringia"
+            }
+          },
+          "8": {
+            "question": "Which federal state is Hamburg?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "What is the name of the head of government of the city-state of Hamburg?",
+            "answers": {
+              "1": "Prime Minister",
+              "2": "First Mayor",
+              "3": "Regulating Senator",
+              "4": "Mayor"
+            }
+          },
+          "10": {
+            "question": "Which senator does Hamburg not have?",
+            "answers": {
+              "1": "Justice Senator",
+              "2": "Senator for Foreign Relations",
+              "3": "Finance Senator",
+              "4": "Interior Senator"
+            }
+          }
+        }
       },
       "hesse": {
         "state": "Hesse",
-        "capital": "Wiesbaden"
+        "capital": "Wiesbaden",
+        "tests": {
+          "1": {
+            "question": "Which coat of arms belongs to the state of Hesse?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "2": {
+            "question": "Which is a district in Hesse?",
+            "answers": {
+              "1": "Ammerland",
+              "2": "Altötting",
+              "3": "Prignitz",
+              "4": "Main-Taunus-Kreis"
+            }
+          },
+          "3": {
+            "question": "For how many years is the state parliament in Hesse elected?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "From what age can you vote in municipal elections in Hesse?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "What colors does the state flag of Hesse have?",
+            "answers": {
+              "1": "blue-white-red",
+              "2": "red-white",
+              "3": "black-gold",
+              "4": "green-white-red"
+            }
+          },
+          "6": {
+            "question": "Where can you get information on political issues in Hesse?",
+            "answers": {
+              "1": "at the State Center for Political Education",
+              "2": "at the Consumer Center",
+              "3": "at the local government office",
+              "4": "at the churches"
+            }
+          },
+          "7": {
+            "question": "The capital of Hesse is called...",
+            "answers": {
+              "1": "Kassel",
+              "2": "Darmstadt",
+              "3": "Frankfurt",
+              "4": "Wiesbaden"
+            }
+          },
+          "8": {
+            "question": "Which federal state is Hesse?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "What is the name of the head of government in Hesse?",
+            "answers": {
+              "1": "First Minister",
+              "2": "Prime Minister",
+              "3": "Mayor",
+              "4": "Minister President"
+            }
+          },
+          "10": {
+            "question": "Which minister does Hesse not have?",
+            "answers": {
+              "1": "Justice Minister",
+              "2": "Foreign Minister",
+              "3": "Finance Minister",
+              "4": "Interior Minister"
+            }
+          }
+        }
       },
-      "lower_saxony": {
+      "lower-saxony": {
         "state": "Lower Saxony",
-        "capital": "Hanover"
+        "capital": "Hanover",
+        "tests": {}
       },
       "mecklenburg-vorpommern": {
         "state": "Mecklenburg-Vorpommern",
-        "capital": "Schwerin"
+        "capital": "Schwerin",
+        "tests": {}
       },
       "north-rhine-westphalia": {
         "state": "North Rhine-Westphalia",
-        "capital": "Dusseldorf"
+        "capital": "Dusseldorf",
+        "tests": {}
       },
       "rhineland-palatinate": {
         "state": "Rhineland-Palatinate",
-        "capital": "Mainz"
+        "capital": "Mainz",
+        "tests": {}
       },
       "saarland": {
         "state": "Saarland",
-        "capital": "Saarbrücken"
+        "capital": "Saarbrücken",
+        "tests": {}
       },
       "saxony": {
         "state": "Saxony",
-        "capital": "Dresden"
+        "capital": "Dresden",
+        "tests": {}
       },
       "saxony-anhalt": {
         "state": "Saxony-Anhalt",
-        "capital": "Magdeburg"
+        "capital": "Magdeburg",
+        "tests": {}
       },
       "schleswig-holstein": {
         "state": "Schleswig-Holstein",
-        "capital": "Kiel"
+        "capital": "Kiel",
+        "tests": {}
       },
       "thuringia": {
         "state": "Thuringia",
-        "capital": "Erfurt"
+        "capital": "Erfurt",
+        "tests": {}
       }
     }
   }
