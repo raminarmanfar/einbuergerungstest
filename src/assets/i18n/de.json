@@ -5,14 +5,120 @@
     "go-home": "Geh nach Hause"
   },
   "general": {
+    "next": "Weiter",
+    "previous": "Zurück"
+  },
+  "home": {
+    "menu": {
+      "btn-review-all-tests": "Sehen Sie sich alle Tests an",
+      "btn-review-states-tests": "Überprüfen Sie die Tests der Staaten",
+      "btn-all-tests-demo-exam": "Alle Tests Demo-Prüfung",
+      "btn-take-demo-test": "Machen Sie einen Demotest",
+      "btn-about-me": "Über mich"
+    }
+  },
+  "review-states-tests": {
+    "select-state": "Wähle einen Staat",
     "german-states": {
       "baden-wuerttemberg": {
         "state": "Baden-Württemberg",
-        "capital": "Stuttgart"
+        "capital": "Stuttgart",
+        "tests": {
+          "1": {
+            "question": "Welches Wappen gehört zum Bundesland Baden-Württemberg?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "2": {
+            "question": "Welches ist ein Landkreis in Baden-Württemberg?",
+            "answers": {
+              "1": "Mecklenburgische Seenplatte",
+              "2": "Neckar-Odenwald-Kreis",
+              "3": "Nordfriesland",
+              "4": "Altötting"
+            }
+          },
+          "3": {
+            "question": "Für wie viele Jahre wird der Landtag in Baden-Württemberg gewählt?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Ab welchem Alter darf man in Baden-Württemberg bei Kommunalwahlen wählen?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Welche Farben hat die Landesflagge von Baden-Württemberg?",
+            "answers": {
+              "1": "blau-weiß-rot",
+              "2": "schwarz-gold",
+              "3": "weiß-blau",
+              "4": "grün-weiß-rot"
+            }
+          },
+          "6": {
+            "question": "Wo können Sie sich in Baden-Württemberg über politische Themen informieren?",
+            "answers": {
+              "1": "beim Ordnungsamt der Gemeinde",
+              "2": "bei der Verbraucherzentrale",
+              "3": "bei der Landeszentrale für politische Bildung",
+              "4": "bei den Kirchen"
+            }
+          },
+          "7": {
+            "question": "Die Landeshauptstadt von Baden-Württemberg heißt ...",
+            "answers": {
+              "1": "Heidelberg",
+              "2": "Stuttgart",
+              "3": "Karlsruhe",
+              "4": "Mannheim"
+            }
+          },
+          "8": {
+            "question": "Welches Bundesland ist Baden-Württemberg?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Wie nennt man den Regierungschef / die Regierungschefin in Baden-Württemberg?",
+            "answers": {
+              "1": "Erster Minister / Erste Ministerin",
+              "2": "Premierminister / Premierministerin",
+              "3": "Bürgermeister / Bürgermeisterin",
+              "4": "Ministerpräsident / Ministerpräsidentin"
+            }
+          },
+          "10": {
+            "question": "Welchen Minister / welche Ministerin hat Baden-Württemberg nicht?",
+            "answers": {
+              "1": "Finanzminister / Finanzministerin",
+              "2": "Justizminister / Justizministerin",
+              "3": "Innenminister / Innenministerin",
+              "4": "Außenminister / Außenministerin"
+            }
+          }
+        }
       },
       "bavaria": {
-        "state": "Bavaria",
-        "capital": "Munich",
+        "state": "Bayern",
+        "capital": "München",
         "tests": {
           "1": {
             "question": "Welches Wappen gehört zum Freistaat Bayern?",
@@ -69,39 +175,39 @@
             }
           },
           "7": {
-            "question": "Welches ist ein Landkreis in Bayern?",
+            "question": "Die Landeshauptstadt von Bayern heißt ...",
             "answers": {
-              "1": "3",
-              "2": "4",
-              "3": "5",
-              "4": "6"
+              "1": "Ingolstadt",
+              "2": "Regensburg",
+              "3": "Nürnberg",
+              "4": "München"
             }
           },
           "8": {
-            "question": "Welches ist ein Landkreis in Bayern?",
+            "question": "Welches Bundesland ist Bayern?",
             "answers": {
-              "1": "3",
-              "2": "4",
-              "3": "5",
-              "4": "6"
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
             }
           },
           "9": {
-            "question": "Welches ist ein Landkreis in Bayern?",
+            "question": "Wie nennt man den Regierungschef / die Regierungschefin in Bayern?",
             "answers": {
-              "1": "3",
-              "2": "4",
-              "3": "5",
-              "4": "6"
+              "1": "Erster Minister / Erste Ministerin",
+              "2": "Premierminister / Premierministerin",
+              "3": "Bürgermeister / Bürgermeisterin",
+              "4": "Ministerpräsident / Ministerpräsidentin"
             }
           },
           "10": {
-            "question": "Welches ist ein Landkreis in Bayern?",
+            "question": "Welchen Minister / welche Ministerin hat Bayern nicht?",
             "answers": {
-              "1": "3",
-              "2": "4",
-              "3": "5",
-              "4": "6"
+              "1": "Justizminister / Justizministerin",
+              "2": "Außenminister / Außenministerin",
+              "3": "Finanzminister / Finanzministerin",
+              "4": "Innenminister / Innenministerin"
             }
           }
         }
@@ -123,23 +229,23 @@
         "capital": "Hamburg"
       },
       "hesse": {
-        "state": "Hesse",
+        "state": "Hessen",
         "capital": "Wiesbaden"
       },
       "lower_saxony": {
-        "state": "Lower Saxony",
-        "capital": "Hanover"
+        "state": "Niedersachsen",
+        "capital": "Hannover"
       },
       "mecklenburg-vorpommern": {
         "state": "Mecklenburg-Vorpommern",
         "capital": "Schwerin"
       },
       "north-rhine-westphalia": {
-        "state": "North Rhine-Westphalia",
+        "state": "Nordrhein-Westfalen",
         "capital": "Düsseldorf"
       },
       "rhineland-palatinate": {
-        "state": "Rhineland-Palatinate",
+        "state": "Rheinland-Pfalz",
         "capital": "Mainz"
       },
       "saarland": {
@@ -147,11 +253,11 @@
         "capital": "Saarbrücken"
       },
       "saxony": {
-        "state": "Saxony",
+        "state": "Sachsen",
         "capital": "Dresden"
       },
       "saxony-anhalt": {
-        "state": "Saxony-Anhalt",
+        "state": "Sachsen-Anhalt",
         "capital": "Magdeburg"
       },
       "schleswig-holstein": {
@@ -159,18 +265,9 @@
         "capital": "Kiel"
       },
       "thuringia": {
-        "state": "Thuringia",
+        "state": "Thüringen",
         "capital": "Erfurt"
       }
-    }
-  },
-  "home": {
-    "menu": {
-      "btn-review-all-tests": "Sehen Sie sich alle Tests an",
-      "btn-review-states-tests": "Überprüfen Sie die Tests der Staaten",
-      "btn-all-tests-demo-exam": "Alle Tests Demo-Prüfung",
-      "btn-take-demo-test": "Machen Sie einen Demotest",
-      "btn-about-me": "Über mich"
     }
   }
 }

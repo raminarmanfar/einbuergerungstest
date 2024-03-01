@@ -1,5 +1,5 @@
 export interface TestQuestionModel {
   id: number;
-  questionImageUrl?: string;
+  questionImagesName: string[];
   correctAnswer: number;
 }

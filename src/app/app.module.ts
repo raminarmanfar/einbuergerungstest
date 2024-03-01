@@ -15,6 +15,7 @@ import {FooterComponent} from './components/footer/footer.component';
 import {HomeComponent} from './components/home/home.component';
 import { ReviewAllTestsComponent } from './components/review-all-tests/review-all-tests.component';
 import { ReviewStatesTestsComponent } from './components/review-states-tests/review-states-tests.component';
+import {NgOptimizedImage} from '@angular/common';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -42,7 +43,8 @@ export function createTranslateLoader(http: HttpClient) {
       }
     }),
     AppRoutingModule,
-    AppMaterialsModule
+    AppMaterialsModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]

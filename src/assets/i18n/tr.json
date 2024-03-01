@@ -1,7 +1,274 @@
 {
-  "title": "Alman vatandaşlık testi",
+  "title": "Alman Vatandaşlık Sınavı",
   "header": {
-    "active-language": "Türkce",
-    "go-home": "Ana sayfaya git"
+    "active-language": "Almanca",
+    "go-home": "Ana Sayfa"
+  },
+  "general": {
+    "next": "İleri",
+    "previous": "Geri"
+  }
+,
+  "home": {
+    "menu": {
+      "btn-review-all-tests": "Tüm Sınavları İncele",
+      "btn-review-states-tests": "Eyalet Sınavlarını İncele",
+      "btn-all-tests-demo-exam": "Tüm Sınavlar Demo Sınavı",
+      "btn-take-demo-test": "Demo Sınavı Yap",
+      "btn-about-me": "Hakkımda"
+    }
+  },
+  "review-states-tests": {
+    "select-state": "Bir Eyalet Seçin",
+    "german-states": {
+      "baden-wuerttemberg": {
+        "state": "Baden-Württemberg",
+        "capital": "Stuttgart",
+        "tests": {
+          "1": {
+            "question": "Baden-Württemberg eyaletine ait arması hangisidir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "2": {
+            "question": "Baden-Württemberg'de hangi ilçe bulunmaktadır?",
+            "answers": {
+              "1": "Mecklenburg Göl Platosu",
+              "2": "Neckar-Odenwald-Kreis",
+              "3": "Kuzey Frizya",
+              "4": "Altötting"
+            }
+          },
+          "3": {
+            "question": "Baden-Württemberg'de parlamento kaç yılda bir seçilir?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Baden-Württemberg'de yerel seçimlerde kaç yaşında oy kullanabilirsiniz?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Baden-Württemberg bayrağının renkleri nelerdir?",
+            "answers": {
+              "1": "mavi-beyaz-kırmızı",
+              "2": "siyah-altın",
+              "3": "beyaz-mavi",
+              "4": "yeşil-beyaz-kırmızı"
+            }
+          },
+          "6": {
+            "question": "Baden-Württemberg'de siyasi konularda nereden bilgi alabilirsiniz?",
+            "answers": {
+              "1": "belediye düzenleme ofisinde",
+              "2": "tüketici danışma merkezinde",
+              "3": "siyasi eğitim için eyalet merkezinde",
+              "4": "kiliselerde"
+            }
+          },
+          "7": {
+            "question": "Baden-Württemberg'in başkenti hangisidir?",
+            "answers": {
+              "1": "Heidelberg",
+              "2": "Stuttgart",
+              "3": "Karlsruhe",
+              "4": "Mannheim"
+            }
+          },
+          "8": {
+            "question": "Baden-Württemberg hangi federal eyalettir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Baden-Württemberg'de hükümetin başkanına ne denir?",
+            "answers": {
+              "1": "Birinci Bakan",
+              "2": "Başbakan",
+              "3": "Belediye Başkanı",
+              "4": "Başbakan"
+            }
+          },
+          "10": {
+            "question": "Baden-Württemberg'de hangi bakan bulunmamaktadır?",
+            "answers": {
+              "1": "Maliye Bakanı",
+              "2": "Adalet Bakanı",
+              "3": "İçişleri Bakanı",
+              "4": "Dışişleri Bakanı"
+            }
+          }
+        }
+      },
+      "bavaria": {
+        "state": "Bavyera",
+        "capital": "Münih",
+        "tests": {
+          "1": {
+            "question": "Bavyera Özgür Devleti'ne hangi armalar aittir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "2": {
+            "question": "Bavyera'da bir ilçe hangisidir?",
+            "answers": {
+              "1": "Prignitz",
+              "2": "Rhein-Sieg-Kreis",
+              "3": "Nordfriesland",
+              "4": "Altötting"
+            }
+          },
+          "3": {
+            "question": "Bavyera'da Eyalet Meclisi kaç yıl için seçilir?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Bavyera'da yerel seçimlerde kaç yaşında oy kullanılabilir?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Bavyera'nın bayrağında hangi renkler bulunur?",
+            "answers": {
+              "1": "mavi-beyaz-kırmızı",
+              "2": "beyaz-mavi",
+              "3": "yeşil-beyaz-kırmızı",
+              "4": "siyah-sarı"
+            }
+          },
+          "6": {
+            "question": "Bavyera'da siyasi konularda nereden bilgi alabilirsiniz?",
+            "answers": {
+              "1": "Belediye düzenleme ofisinde",
+              "2": "Siyasi Eğitim Merkezi'nde",
+              "3": "Tüketici Koruma Merkezi'nde",
+              "4": "Kiliselerde"
+            }
+          },
+          "7": {
+            "question": "Bavyera'nın başkenti hangi şehirdir?",
+            "answers": {
+              "1": "Ingolstadt",
+              "2": "Regensburg",
+              "3": "Nürnberg",
+              "4": "Münih"
+            }
+          },
+          "8": {
+            "question": "Bavyera hangi federal eyalettir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Bavyera'da hükümet başkanına ne denir?",
+            "answers": {
+              "1": "Birinci Bakan",
+              "2": "Başbakan",
+              "3": "Belediye Başkanı",
+              "4": "Başbakan"
+            }
+          },
+          "10": {
+            "question": "Bavyera'da hangi bakan bulunmamaktadır?",
+            "answers": {
+              "1": "Adalet Bakanı",
+              "2": "Dışişleri Bakanı",
+              "3": "Maliye Bakanı",
+              "4": "İçişleri Bakanı"
+            }
+          }
+        }
+      },
+      "berlin": {
+        "state": "Berlin",
+        "capital": "Berlin"
+      },
+      "brandenburg": {
+        "state": "Brandenburg",
+        "capital": "Potsdam"
+      },
+      "bremen": {
+        "state": "Bremen",
+        "capital": "Bremen"
+      },
+      "hamburg": {
+        "state": "Hamburg",
+        "capital": "Hamburg"
+      },
+      "hesse": {
+        "state": "Hessen",
+        "capital": "Wiesbaden"
+      },
+      "lower_saxony": {
+        "state": "Aşağı Saksonya",
+        "capital": "Hannover"
+      },
+      "mecklenburg-vorpommern": {
+        "state": "Mecklenburg-Vorpommern",
+        "capital": "Schwerin"
+      },
+      "north-rhine-westphalia": {
+        "state": "Kuzey Ren-Vestfalya",
+        "capital": "Düsseldorf"
+      },
+      "rhineland-palatinate": {
+        "state": "Rhineland-Palatinate",
+        "capital": "Mainz"
+      },
+      "saarland": {
+        "state": "Saarland",
+        "capital": "Saarbrücken"
+      },
+      "saxony": {
+        "state": "Saksonya",
+        "capital": "Dresden"
+      },
+      "saxony-anhalt": {
+        "state": "Saksonya-Anhalt",
+        "capital": "Magdeburg"
+      },
+      "schleswig-holstein": {
+        "state": "Schleswig-Holstein",
+        "capital": "Kiel"
+      },
+      "thuringia": {
+        "state": "Thuringia",
+        "capital": "Erfurt"
+      }
+    }
   }
 }

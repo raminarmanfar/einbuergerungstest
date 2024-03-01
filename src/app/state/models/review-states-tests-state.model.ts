@@ -1,4 +1,4 @@
 export interface ReviewStatesTestsStateModel {
-  currentStateIndex: number;
+  selectedStateIndex: number;
   currentQuestionIndex: number;
 }

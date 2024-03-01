@@ -4,17 +4,29 @@ import {GermanStatesCapitalCityEnum} from '../models/enums/german-states-capital
 import {StateQuestionModel} from '../models/state-question.model';
 
 export class ConstantValues {
+  public static readonly BADEN_WUERTTEMBERG_STATE_QUESTIONS: StateQuestionModel[] = [
+    {id: 1, stateId: 1, correctAnswer: 1, questionImagesName: ['q1_1.png']},
+    {id: 2, stateId: 1, correctAnswer: 2, questionImagesName: []},
+    {id: 3, stateId: 1, correctAnswer: 3, questionImagesName: []},
+    {id: 4, stateId: 1, correctAnswer: 2, questionImagesName: []},
+    {id: 5, stateId: 1, correctAnswer: 2, questionImagesName: []},
+    {id: 6, stateId: 1, correctAnswer: 3, questionImagesName: []},
+    {id: 7, stateId: 1, correctAnswer: 2, questionImagesName: []},
+    {id: 8, stateId: 1, correctAnswer: 2, questionImagesName: ['q8_1.png']},
+    {id: 9, stateId: 1, correctAnswer: 4, questionImagesName: []},
+    {id: 10, stateId: 1, correctAnswer: 4, questionImagesName: []}
+  ];
   public static readonly BAVARIA_STATE_QUESTIONS: StateQuestionModel[] = [
-    {id: 1, stateId: 2, correctAnswer: 2, questionImageUrl: 'q1-image'},
-    {id: 2, stateId: 2, correctAnswer: 4},
-    {id: 3, stateId: 2, correctAnswer: 3},
-    {id: 4, stateId: 2, correctAnswer: 3},
-    {id: 5, stateId: 2, correctAnswer: 2},
-    {id: 6, stateId: 2, correctAnswer: 2},
-    {id: 7, stateId: 2, correctAnswer: 4},
-    {id: 8, stateId: 2, correctAnswer: 4, questionImageUrl: 'q8-image'},
-    {id: 9, stateId: 2, correctAnswer: 4},
-    {id: 10, stateId: 2, correctAnswer: 2}
+    {id: 1, stateId: 2, correctAnswer: 2, questionImagesName: ['q1_1.png']},
+    {id: 2, stateId: 2, correctAnswer: 4, questionImagesName: []},
+    {id: 3, stateId: 2, correctAnswer: 3, questionImagesName: []},
+    {id: 4, stateId: 2, correctAnswer: 3, questionImagesName: []},
+    {id: 5, stateId: 2, correctAnswer: 2, questionImagesName: []},
+    {id: 6, stateId: 2, correctAnswer: 2, questionImagesName: []},
+    {id: 7, stateId: 2, correctAnswer: 4, questionImagesName: []},
+    {id: 8, stateId: 2, correctAnswer: 4, questionImagesName: ['q8_1.png']},
+    {id: 9, stateId: 2, correctAnswer: 4, questionImagesName: []},
+    {id: 10, stateId: 2, correctAnswer: 2, questionImagesName: []}
   ];
 
   public static readonly GERMAN_STATES: StateInfoModel[] = [
@@ -23,7 +35,7 @@ export class ConstantValues {
       name: GermanStatesEnum.BADEN_WUERTTEMBERG,
       capital: GermanStatesCapitalCityEnum.STUTTGART,
       population: 0,
-      stateTests: []
+      stateTests: ConstantValues.BADEN_WUERTTEMBERG_STATE_QUESTIONS
     },
     {
       id: 2,

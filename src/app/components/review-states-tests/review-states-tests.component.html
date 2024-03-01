@@ -1,36 +1,50 @@
 <div class="container">
-  <mat-toolbar color="primary">
-    <mat-toolbar-row>
+  <mat-card class="card-container">
+    <mat-card-content>
       <mat-form-field style="width: 250px">
-        <mat-label>{{'state-name' | translate}}</mat-label>
-        <mat-select (selectionChange)="onStateSelectChange($event.value)">
+        <mat-label>{{ 'review-states-tests.select-state' | translate }}</mat-label>
+        <mat-select [matTooltip]="(selectedState ? trPrefix + selectedState.name + '.state' : 'review-states-tests.select-state') | translate"
+                    [(value)]="selectedState" (selectionChange)="onStateSelectChange($event.value)">
+          <mat-option>{{ 'review-states-tests.select-state' | translate }}</mat-option>
           <mat-option *ngFor="let state of germanStates" [value]="state">
-            {{trPrefix + state.name + '.state' | translate}}
+            {{ trPrefix + state.name + '.state' | translate }}
           </mat-option>
         </mat-select>
       </mat-form-field>
-    </mat-toolbar-row>
-  </mat-toolbar>
+    </mat-card-content>
+  </mat-card>
 
-  <mat-accordion>
-    <mat-expansion-panel *ngFor="let item of germanStates[currentStateIndex].stateTests; let i=index"
-                         [expanded]="currentQuestionIndex === i">
+  <mat-accordion *ngIf="selectedState">
+    <mat-expansion-panel *ngFor="let state of selectedState.stateTests; let i=index"
+                         [expanded]="currentQuestionIndex === i"
+                         (opened)="reviewStatesTestsStateService.setCurrentQuestionIndex(i)">
 
       <mat-expansion-panel-header>
-        <mat-panel-title>{{ item.id }}- {{ trPrefix + (i + 1) + '.question' | translate }}</mat-panel-title>
+        <mat-panel-title>{{ i + 1 }}- {{ getQuestionTrPrefix(selectedState.name, i) | translate }}</mat-panel-title>
       </mat-expansion-panel-header>
 
-      <img *ngIf="item.questionImageUrl" [src]="item.questionImageUrl" [alt]="item.questionImageUrl">
-      <div *ngFor="let answerId of [1, 2, 3, 4]">
-        <mat-checkbox
-          [checked]="item.correctAnswer === answerId">{{ trPrefix + (i + 1) + '.answers.' + answerId | translate }}
-        </mat-checkbox>
+      <div *ngIf="state.questionImagesName.length > 0">
+        <img *ngFor="let imageName of state.questionImagesName" class="img"
+             [src]="'assets/images/states-tests/' + selectedState.name + '/' + imageName"
+             [alt]="imageName">
       </div>
 
+      <mat-radio-group>
+        <mat-radio-button *ngFor="let answerId of [1, 2, 3, 4]"
+                          [value]="answerId" class="radio-btn"
+                          [checked]="state.correctAnswer === answerId">
+          {{ getAnswerTrPrefix(selectedState.name, i, answerId) | translate }}
+        </mat-radio-button>
+      </mat-radio-group>
+
       <mat-action-row>
-        <button mat-button color="warn" (click)="reviewStatesTestsStateService.setCurrentQuestionIndex(currentQuestionIndex - 1)">Previous
+        <button *ngIf="currentQuestionIndex > 0"
+                mat-button color="warn"
+                (click)="currentQuestionIndex = currentQuestionIndex - 1;">{{'general.previous' | translate}}
         </button>
-        <button mat-button color="primary" (click)="reviewStatesTestsStateService.setCurrentQuestionIndex(currentQuestionIndex + 1)">Next
+        <button *ngIf="currentQuestionIndex + 1 < selectedState.stateTests.length"
+                mat-button color="primary"
+                (click)="currentQuestionIndex = currentQuestionIndex + 1;">{{'general.next' | translate}}
         </button>
       </mat-action-row>
     </mat-expansion-panel>

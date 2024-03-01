@@ -1,18 +1,216 @@
 {
-  "title": "German citizenship test",
+  "title": "German Naturalization Test",
   "header": {
-    "active-language": "English",
+    "active-language": "German",
     "go-home": "Go Home"
   },
   "general": {
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "home": {
+    "menu": {
+      "btn-review-all-tests": "Review All Tests",
+      "btn-review-states-tests": "Review State Tests",
+      "btn-all-tests-demo-exam": "All Tests Demo Exam",
+      "btn-take-demo-test": "Take a Demo Test",
+      "btn-about-me": "About Me"
+    }
+  },
+  "review-states-tests": {
+    "select-state": "Select a state",
     "german-states": {
       "baden-wuerttemberg": {
         "state": "Baden-Württemberg",
-        "capital": "Stuttgart"
+        "capital": "Stuttgart",
+        "tests": {
+          "1": {
+            "question": "Which coat of arms belongs to the state of Baden-Württemberg?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "2": {
+            "question": "Which is a district in Baden-Württemberg?",
+            "answers": {
+              "1": "Mecklenburg Lake District",
+              "2": "Neckar-Odenwald-Kreis",
+              "3": "North Frisia",
+              "4": "Altötting"
+            }
+          },
+          "3": {
+            "question": "For how many years is the parliament elected in Baden-Württemberg?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "From what age is one allowed to vote in local elections in Baden-Württemberg?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "What are the colors of the state flag of Baden-Württemberg?",
+            "answers": {
+              "1": "blue-white-red",
+              "2": "black-gold",
+              "3": "white-blue",
+              "4": "green-white-red"
+            }
+          },
+          "6": {
+            "question": "Where can you get information on political issues in Baden-Württemberg?",
+            "answers": {
+              "1": "at the municipal regulatory office",
+              "2": "at the consumer advice center",
+              "3": "at the state center for political education",
+              "4": "at the churches"
+            }
+          },
+          "7": {
+            "question": "The capital city of Baden-Württemberg is called...",
+            "answers": {
+              "1": "Heidelberg",
+              "2": "Stuttgart",
+              "3": "Karlsruhe",
+              "4": "Mannheim"
+            }
+          },
+          "8": {
+            "question": "Which federal state is Baden-Württemberg?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "What is the title of the head of government in Baden-Württemberg?",
+            "answers": {
+              "1": "First Minister",
+              "2": "Prime Minister",
+              "3": "Mayor",
+              "4": "Minister-President"
+            }
+          },
+          "10": {
+            "question": "Which minister does Baden-Württemberg not have?",
+            "answers": {
+              "1": "Finance Minister",
+              "2": "Justice Minister",
+              "3": "Interior Minister",
+              "4": "Foreign Minister"
+            }
+          }
+        }
       },
       "bavaria": {
         "state": "Bavaria",
-        "capital": "Munich"
+        "capital": "Munich",
+        "tests": {
+          "1": {
+            "question": "Which coat of arms belongs to the Free State of Bavaria?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "2": {
+            "question": "Which is a district in Bavaria?",
+            "answers": {
+              "1": "Prignitz",
+              "2": "Rhein-Sieg-Kreis",
+              "3": "Nordfriesland",
+              "4": "Altötting"
+            }
+          },
+          "3": {
+            "question": "For how many years is the State Parliament in Bavaria elected?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "From what age is one allowed to vote in municipal elections in Bavaria?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "What are the colors of the state flag of Bavaria?",
+            "answers": {
+              "1": "blue-white-red",
+              "2": "white-blue",
+              "3": "green-white-red",
+              "4": "black-yellow"
+            }
+          },
+          "6": {
+            "question": "Where can you get information on political issues in Bavaria?",
+            "answers": {
+              "1": "at the local government office",
+              "2": "at the State Center for Political Education",
+              "3": "at the Consumer Protection Center",
+              "4": "at the churches"
+            }
+          },
+          "7": {
+            "question": "The capital city of Bavaria is called...",
+            "answers": {
+              "1": "Ingolstadt",
+              "2": "Regensburg",
+              "3": "Nuremberg",
+              "4": "Munich"
+            }
+          },
+          "8": {
+            "question": "Which federal state is Bavaria?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "What is the title of the head of government in Bavaria?",
+            "answers": {
+              "1": "First Minister",
+              "2": "Prime Minister",
+              "3": "Mayor",
+              "4": "Minister-President"
+            }
+          },
+          "10": {
+            "question": "Which minister does Bavaria not have?",
+            "answers": {
+              "1": "Justice Minister",
+              "2": "Foreign Minister",
+              "3": "Finance Minister",
+              "4": "Interior Minister"
+            }
+          }
+        }
       },
       "berlin": {
         "state": "Berlin",
@@ -34,7 +232,7 @@
         "state": "Hesse",
         "capital": "Wiesbaden"
       },
-      "lower-saxony": {
+      "lower_saxony": {
         "state": "Lower Saxony",
         "capital": "Hanover"
       },
@@ -44,7 +242,7 @@
       },
       "north-rhine-westphalia": {
         "state": "North Rhine-Westphalia",
-        "capital": "Düsseldorf"
+        "capital": "Dusseldorf"
       },
       "rhineland-palatinate": {
         "state": "Rhineland-Palatinate",
@@ -70,26 +268,6 @@
         "state": "Thuringia",
         "capital": "Erfurt"
       }
-    },
-    "states-questions": {
-      "1": {
-        "question": "",
-        "answers": {
-          "1": "",
-          "2": "",
-          "3": "",
-          "4": ""
-        }
-      }
-    }
-  },
-  "home": {
-    "menu": {
-      "btn-review-all-tests": "Review all Tests",
-      "btn-review-states-tests": "Review states' tests",
-      "btn-all-tests-demo-exam": "All tests demo exam",
-      "btn-take-demo-test": "Take a demo test",
-      "btn-about-me": "About me"
     }
   }
 }

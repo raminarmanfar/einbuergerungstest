@@ -2,11 +2,11 @@ import {Injectable} from '@angular/core';
 import {Action, Selector, State, StateContext} from '@ngxs/store';
 import {Observable, of} from 'rxjs';
 import {ReviewStatesTestsStateModel} from '../models/review-states-tests-state.model';
-import {SetCurrentQuestionNo} from './review-states-tests.action';
+import {SetCurrentQuestionIndex, SetStateIndex} from './review-states-tests.action';
 
 export const stateDefaultValues: ReviewStatesTestsStateModel = {
-  currentStateIndex: 0,
-  currentQuestionIndex: 0
+  currentQuestionIndex: -1,
+  selectedStateIndex: -1
 };
 
 @State<ReviewStatesTestsStateModel>({name: 'ReviewStatesTestsStateModel', defaults: stateDefaultValues})
@@ -14,12 +14,22 @@ export const stateDefaultValues: ReviewStatesTestsStateModel = {
 export class ReviewStatesTestsState {
 
   @Selector()
-  static getCurrentQuestionNo(state: ReviewStatesTestsStateModel): number {
+  static getCurrentQuestionIndex(state: ReviewStatesTestsStateModel): number {
     return state.currentQuestionIndex;
   }
 
-  @Action(SetCurrentQuestionNo)
-  setActiveLanguage(ctx: StateContext<ReviewStatesTestsStateModel>, {payload}: SetCurrentQuestionNo): Observable<ReviewStatesTestsStateModel> {
+  @Selector()
+  static getSelectedStateIndex(state: ReviewStatesTestsStateModel): number {
+    return state.selectedStateIndex;
+  }
+
+  @Action(SetCurrentQuestionIndex)
+  setCurrentQuestionIndex(ctx: StateContext<ReviewStatesTestsStateModel>, {payload}: SetCurrentQuestionIndex): Observable<ReviewStatesTestsStateModel> {
     return of(ctx.patchState({currentQuestionIndex: payload}));
+  }
+
+  @Action(SetStateIndex)
+  setStateIndex(ctx: StateContext<ReviewStatesTestsStateModel>, {payload}: SetStateIndex): Observable<ReviewStatesTestsStateModel> {
+    return of(ctx.patchState({selectedStateIndex: payload}));
   }
 }
