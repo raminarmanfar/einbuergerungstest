@@ -6,7 +6,7 @@ import {NgxsReduxDevtoolsPluginModule} from '@ngxs/devtools-plugin';
 import {NgxsLoggerPluginModule} from '@ngxs/logger-plugin';
 import {AppState} from './app.state';
 import {ReviewStatesTestsState} from './review-states-tests/review-states-tests.state';
-import {ReviewDeutschlandQuestionsState} from './review-deutschland-questions/review-all-questions.state';
+import {ReviewDeutschlandQuestionsState} from './review-deutschland-questions/review-deutschland-questions.state';
 
 
 @NgModule({

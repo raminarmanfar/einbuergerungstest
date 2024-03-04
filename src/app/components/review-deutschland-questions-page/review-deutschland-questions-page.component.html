@@ -1,1 +1,12 @@
-<p>review-deutschland-tests works!</p>
+<div class="container">
+  <app-questionnaire-list
+    *ngIf="selectedStateInfo"
+    [currentQuestionIndex]="reviewDeutschlandQuestionsStateService.currentQuestionIndex$ | async"
+    [paginatorData]="reviewDeutschlandQuestionsStateService.paginatorData$ | async"
+    [stateInfo]="selectedStateInfo"
+    [showAnswersKeys]="showAnswersKeys"
+    [trPrefix]="'review-deutschland-tests.'"
+    (expansionPanelOpen)="reviewDeutschlandQuestionsStateService.setCurrentQuestionIndex($event)"
+    (paginatorDataChange)="reviewDeutschlandQuestionsStateService.setPaginatorData($event)">
+  </app-questionnaire-list>
+</div>

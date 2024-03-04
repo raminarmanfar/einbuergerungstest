@@ -3,6 +3,7 @@ import {ConstantValues} from '../../utils/constant-values';
 import {StateInfoModel} from '../../models/state-info.model';
 import {StateChangeExpansionPanelBehaviorEnum} from '../../models/enums/state-change-expansion-panel-behavior.enum';
 import {ReviewStatesTestsStateService} from '../../state/review-states-tests/review-states-tests-state.service';
+import {PageEvent} from '@angular/material/paginator';
 
 @Component({
   selector: 'app-review-states-tests',
@@ -10,36 +11,29 @@ import {ReviewStatesTestsStateService} from '../../state/review-states-tests/rev
   styleUrls: ['./review-states-questions-page.component.scss']
 })
 export class ReviewStatesQuestionsPageComponent implements OnInit {
-  currentQuestionIndex = 0;
-  selectedState: StateInfoModel | undefined = undefined;
+  selectedStateInfo: StateInfoModel | undefined = undefined;
   showAnswersKeys = true;
   stateChangeExpansionPanelBehavior = StateChangeExpansionPanelBehaviorEnum.SHOW_CURRENT_QUESTION;
-  readonly germanStates = ConstantValues.GERMAN_STATES;
-  readonly trPrefix = 'review-states-tests.german-states.';
+  protected readonly StateChangeExpansionPanelBehaviorEnum = StateChangeExpansionPanelBehaviorEnum;
+  protected readonly germanStates = ConstantValues.GERMAN_STATES;
+  protected readonly trPrefix = 'review-states-tests.german-states.';
+  protected readonly paginatorData: PageEvent = {
+    pageSize: 10,
+    pageIndex: 0,
+    length: 10
+  };
 
   constructor(public reviewStatesTestsStateService: ReviewStatesTestsStateService) {
   }
 
-  private getTestTrPrefix(stateNameLabel: string, questionIndex: number): string {
-    return this.trPrefix + stateNameLabel + '.tests.' + (questionIndex + 1);
-  }
-
   ngOnInit(): void {
-    this.reviewStatesTestsStateService.allSubState$.subscribe(allSubState => {
-      this.currentQuestionIndex = allSubState.currentQuestionIndex;
-      this.selectedState = allSubState.selectedStateIndex >= 0 ? this.germanStates[allSubState.selectedStateIndex] : undefined;
-      this.showAnswersKeys = allSubState.showAnswersKeys;
-      this.stateChangeExpansionPanelBehavior = allSubState.stateChangeExpansionPanelBehavior;
+    this.reviewStatesTestsStateService.allSubState$.subscribe(allSubStateData => {
+      this.selectedStateInfo = allSubStateData.selectedStateIndex >= 0 ? this.germanStates[allSubStateData.selectedStateIndex] : undefined;
+      this.showAnswersKeys = allSubStateData.showAnswersKeys;
+      this.stateChangeExpansionPanelBehavior = allSubStateData.stateChangeExpansionPanelBehavior;
     });
   }
 
-  getQuestionTrPrefix(stateNameLabel: string, questionIndex: number): string {
-    return this.getTestTrPrefix(stateNameLabel, questionIndex) + '.question';
-  }
-
-  getAnswerTrPrefix(stateNameLabel: string, questionIndex: number, answerId: number): string {
-    return this.getTestTrPrefix(stateNameLabel, questionIndex) + '.answers.' + answerId;
-  }
 
   onStateSelectChange(selectedState: StateInfoModel): void {
     switch (this.stateChangeExpansionPanelBehavior) {
@@ -60,6 +54,4 @@ export class ReviewStatesQuestionsPageComponent implements OnInit {
       this.reviewStatesTestsStateService.setStateIndex(-1);
     }
   }
-
-  protected readonly StateChangeExpansionPanelBehaviorEnum = StateChangeExpansionPanelBehaviorEnum;
 }

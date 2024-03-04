@@ -14,5 +14,5 @@ export enum GermanStatesCapitalCityEnum {
   DRESDEN = 'dresden',
   MAGDEBURG = 'magdeburg',
   KIEL = 'kiel',
-  ERFURT = 'erfurt',
+  ERFURT = 'erfurt'
 }

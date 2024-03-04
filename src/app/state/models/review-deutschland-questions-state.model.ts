@@ -1,3 +1,6 @@
+import {PageEvent} from '@angular/material/paginator';
+
 export interface ReviewDeutschlandQuestionsStateModel {
-  currentQuestionNo: number;
+  currentQuestionIndex: number;
+  paginatorData: PageEvent;
 }

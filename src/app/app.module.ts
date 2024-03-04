@@ -16,6 +16,7 @@ import {FooterComponent} from './components/footer/footer.component';
 import {HomePageComponent} from './components/home-page/home-page.component';
 import { ReviewDeutschlandQuestionsPageComponent } from './components/review-deutschland-questions-page/review-deutschland-questions-page.component';
 import { ReviewStatesQuestionsPageComponent } from './components/review-states-questions-page/review-states-questions-page.component';
+import { QuestionnaireListComponent } from './components/questionnaire-list/questionnaire-list.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -29,7 +30,8 @@ export function createTranslateLoader(http: HttpClient) {
     HomePageComponent,
     ReviewDeutschlandQuestionsPageComponent,
     ReviewStatesQuestionsPageComponent,
-    ReviewDeutschlandQuestionsPageComponent
+    ReviewDeutschlandQuestionsPageComponent,
+    QuestionnaireListComponent
   ],
   imports: [
     BrowserModule,

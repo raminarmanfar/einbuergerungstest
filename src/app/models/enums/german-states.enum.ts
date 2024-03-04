@@ -15,4 +15,5 @@ export enum GermanStatesEnum {
   SAXONY_ANHALT = 'saxony-anhalt',
   SCHLESWIG_HOLSTEIN = 'schleswig-holstein',
   THURINGIA = 'thuringia',
+  DEUTSCHLAND = 'deutschland'
 }

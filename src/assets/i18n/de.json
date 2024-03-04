@@ -19,140 +19,818 @@
     }
   },
   "review-deutschland-tests": {
-    "tests": {
-      "1": {
-        "question": "In Deutschland dürfen Menschen offen etwas gegen die Regierung sagen, weil …",
-        "answers": {
-          "1": "hier Religionsfreiheit gilt.",
-          "2": "die Menschen Steuern zahlen.",
-          "3": "die Menschen das Wahlrecht haben.",
-          "4": "hier Meinungsfreiheit gilt."
-        }
-      },
-      "2": {
-        "question": "In Deutschland können Eltern bis zum 14. Lebensjahr ihres Kindes entscheiden, ob es in der Schule am …",
-        "answers": {
-          "1": "Geschichtsunterricht teilnimmt.",
-          "2": "Religionsunterricht teilnimmt.",
-          "3": "Politikunterricht teilnimmt.",
-          "4": "Sprachunterricht teilnimmt."
-        }
-      },
-      "3": {
-        "question": "Deutschland ist ein Rechtsstaat. Was ist damit gemeint?",
-        "answers": {
-          "1": "Alle Einwohner / Einwohnerinnen und der Staat müssen sich an die Gesetze halten.",
-          "2": "Der Staat muss sich nicht an die Gesetze halten.",
-          "3": "Nur Deutsche müssen die Gesetze befolgen.",
-          "4": "Die Gerichte machen die Gesetze."
-        }
-      },
-      "4": {
-        "question": "Welches Recht gehört zu den Grundrechten in Deutschland?",
-        "answers": {
-          "1": "Waffenbesitz",
-          "2": "Faustrecht",
-          "3": "Meinungsfreiheit",
-          "4": "Selbstjustiz"
-        }
-      },
-      "5": {
-        "question": "Wahlen in Deutschland sind frei. Was bedeutet das?",
-        "answers": {
-          "1": "Man darf Geld annehmen, wenn man dafür einen bestimmten Kandidaten / eine bestimmte Kandidatin wählt.",
-          "2": "Der Wähler darf bei der Wahl weder beeinflusst noch zu einer bestimmten Stimmabgabe gezwungen werden und keine Nachteile durch die Wahl haben.",
-          "3": "Nur Personen, die noch nie im Gefängnis waren, dürfen wählen.",
-          "4": "Alle wahlberechtigten Personen müssen wählen."
-        }
-      },
-      "6": {
-        "question": "Wie heißt die deutsche Verfassung?",
-        "answers": {
-          "1": "Volksgesetz",
-          "2": "Bundesgesetz",
-          "3": "Deutsches Gesetz",
-          "4": "Grundgesetz"
-        }
-      },
-      "7": {
-        "question": "Welches Recht gehört zu den Grundrechten, die nach der deutschen Verfassung garantiert werden? Das Recht auf …",
-        "answers": {
-          "1": "Glaubens- und Gewissensfreiheit.",
-          "2": "Unterhaltung.",
-          "3": "Arbeit.",
-          "4": "Wohnung."
-        }
-      },
-      "8": {
-        "question": "Was steht nicht im Grundgesetz von Deutschland?",
-        "answers": {
-          "1": "Die Würde des Menschen ist unantastbar.",
-          "2": "Alle sollen gleich viel Geld haben.",
-          "3": "Jeder Mensch darf seine Meinung sagen.",
-          "4": "Alle sind vor dem Gesetz gleich."
-        }
-      },
-      "9": {
-        "question": "Welches Grundrecht gilt in Deutschland nur für Ausländer / Ausländerinnen? Das Grundrecht auf …",
-        "answers": {
-          "1": "Schutz der Familie",
-          "2": "Menschenwürde",
-          "3": "Asyl",
-          "4": "Meinungsfreiheit"
-        }
-      },
-      "10": {
-        "question": "Was ist mit dem deutschen Grundgesetz vereinbar?",
-        "answers": {
-          "1": "die Prügelstrafe",
-          "2": "die Folter",
-          "3": "die Todesstrafe",
-          "4": "die Geldstrafe"
-        }
-      },
-      "11": {
-        "question": "Wie wird die Verfassung der Bundesrepublik Deutschland genannt?",
-        "answers": {
-          "1": "Grundgesetz",
-          "2": "Bundesverfassung",
-          "3": "Gesetzbuch",
-          "4": "Verfassungsvertrag"
-        }
-      },
-      "12": {
-        "question": "Eine Partei im Deutschen Bundestag will die Pressefreiheit abschaffen. Ist das möglich?",
-        "answers": {
-          "1": "Ja, wenn mehr als die Hälfte der Abgeordneten im Bundestag dafür sind.",
-          "2": "Ja, aber dazu müssen zwei Drittel der Abgeordneten im Bundestag dafür sein.",
-          "3": "Nein, denn die Pressefreiheit ist ein Grundrecht. Sie kann nicht abgeschafft werden.",
-          "4": "Nein, denn nur der Bundesrat kann die Pressefreiheit abschaffen."
-        }
-      },
-      "13": {
-        "question": "Im Parlament steht der Begriff „Opposition“ für…",
-        "answers": {
-          "1": "die regierenden Parteien.",
-          "2": "alle Abgeordneten, die nicht zu der Regierungspartei/den Regierungsparteien gehören.",
-          "3": "die Fraktion mit den meisten Abgeordneten.",
-          "4": "alle Parteien, die bei der letzten Wahl die 5%-Hürde erreichen konnten."
-        }
-      },
-      "14": {
-        "question": "Meinungsfreiheit in Deutschland heißt, dass ich …",
-        "answers": {
-          "1": "Passanten auf der Straße beschimpfen darf.",
-          "2": "meine Meinung in Leserbriefen äußern kann.",
-          "3": "Nazi-Symbole tragen darf.",
-          "4": "meine Meinung sagen darf, solange ich der Regierung nicht widerspreche."
-        }
-      },
-      "15": {
-        "question": "Was verbietet das deutsche Grundgesetz?",
-        "answers": {
-          "1": "Militärdienst",
-          "2": "Zwangsarbeit",
-          "3": "freie Berufswahl",
-          "4": "Arbeit im Ausland"
+    "deutschland": {
+      "tests": {
+        "1": {
+          "question": "In Deutschland dürfen Menschen offen etwas gegen die Regierung sagen, weil …",
+          "answers": {
+            "1": "hier Religionsfreiheit gilt.",
+            "2": "die Menschen Steuern zahlen.",
+            "3": "die Menschen das Wahlrecht haben.",
+            "4": "hier Meinungsfreiheit gilt."
+          }
+        },
+        "2": {
+          "question": "In Deutschland können Eltern bis zum 14. Lebensjahr ihres Kindes entscheiden, ob es in der Schule am …",
+          "answers": {
+            "1": "Geschichtsunterricht teilnimmt.",
+            "2": "Religionsunterricht teilnimmt.",
+            "3": "Politikunterricht teilnimmt.",
+            "4": "Sprachunterricht teilnimmt."
+          }
+        },
+        "3": {
+          "question": "Deutschland ist ein Rechtsstaat. Was ist damit gemeint?",
+          "answers": {
+            "1": "Alle Einwohner / Einwohnerinnen und der Staat müssen sich an die Gesetze halten.",
+            "2": "Der Staat muss sich nicht an die Gesetze halten.",
+            "3": "Nur Deutsche müssen die Gesetze befolgen.",
+            "4": "Die Gerichte machen die Gesetze."
+          }
+        },
+        "4": {
+          "question": "Welches Recht gehört zu den Grundrechten in Deutschland?",
+          "answers": {
+            "1": "Waffenbesitz",
+            "2": "Faustrecht",
+            "3": "Meinungsfreiheit",
+            "4": "Selbstjustiz"
+          }
+        },
+        "5": {
+          "question": "Wahlen in Deutschland sind frei. Was bedeutet das?",
+          "answers": {
+            "1": "Man darf Geld annehmen, wenn man dafür einen bestimmten Kandidaten / eine bestimmte Kandidatin wählt.",
+            "2": "Der Wähler darf bei der Wahl weder beeinflusst noch zu einer bestimmten Stimmabgabe gezwungen werden und keine Nachteile durch die Wahl haben.",
+            "3": "Nur Personen, die noch nie im Gefängnis waren, dürfen wählen.",
+            "4": "Alle wahlberechtigten Personen müssen wählen."
+          }
+        },
+        "6": {
+          "question": "Wie heißt die deutsche Verfassung?",
+          "answers": {
+            "1": "Volksgesetz",
+            "2": "Bundesgesetz",
+            "3": "Deutsches Gesetz",
+            "4": "Grundgesetz"
+          }
+        },
+        "7": {
+          "question": "Welches Recht gehört zu den Grundrechten, die nach der deutschen Verfassung garantiert werden? Das Recht auf …",
+          "answers": {
+            "1": "Glaubens- und Gewissensfreiheit.",
+            "2": "Unterhaltung.",
+            "3": "Arbeit.",
+            "4": "Wohnung."
+          }
+        },
+        "8": {
+          "question": "Was steht nicht im Grundgesetz von Deutschland?",
+          "answers": {
+            "1": "Die Würde des Menschen ist unantastbar.",
+            "2": "Alle sollen gleich viel Geld haben.",
+            "3": "Jeder Mensch darf seine Meinung sagen.",
+            "4": "Alle sind vor dem Gesetz gleich."
+          }
+        },
+        "9": {
+          "question": "Welches Grundrecht gilt in Deutschland nur für Ausländer / Ausländerinnen? Das Grundrecht auf …",
+          "answers": {
+            "1": "Schutz der Familie",
+            "2": "Menschenwürde",
+            "3": "Asyl",
+            "4": "Meinungsfreiheit"
+          }
+        },
+        "10": {
+          "question": "Was ist mit dem deutschen Grundgesetz vereinbar?",
+          "answers": {
+            "1": "die Prügelstrafe",
+            "2": "die Folter",
+            "3": "die Todesstrafe",
+            "4": "die Geldstrafe"
+          }
+        },
+        "11": {
+          "question": "Wie wird die Verfassung der Bundesrepublik Deutschland genannt?",
+          "answers": {
+            "1": "Grundgesetz",
+            "2": "Bundesverfassung",
+            "3": "Gesetzbuch",
+            "4": "Verfassungsvertrag"
+          }
+        },
+        "12": {
+          "question": "Eine Partei im Deutschen Bundestag will die Pressefreiheit abschaffen. Ist das möglich?",
+          "answers": {
+            "1": "Ja, wenn mehr als die Hälfte der Abgeordneten im Bundestag dafür sind.",
+            "2": "Ja, aber dazu müssen zwei Drittel der Abgeordneten im Bundestag dafür sein.",
+            "3": "Nein, denn die Pressefreiheit ist ein Grundrecht. Sie kann nicht abgeschafft werden.",
+            "4": "Nein, denn nur der Bundesrat kann die Pressefreiheit abschaffen."
+          }
+        },
+        "13": {
+          "question": "Im Parlament steht der Begriff „Opposition“ für…",
+          "answers": {
+            "1": "die regierenden Parteien.",
+            "2": "alle Abgeordneten, die nicht zu der Regierungspartei/den Regierungsparteien gehören.",
+            "3": "die Fraktion mit den meisten Abgeordneten.",
+            "4": "alle Parteien, die bei der letzten Wahl die 5%-Hürde erreichen konnten."
+          }
+        },
+        "14": {
+          "question": "Meinungsfreiheit in Deutschland heißt, dass ich …",
+          "answers": {
+            "1": "Passanten auf der Straße beschimpfen darf.",
+            "2": "meine Meinung in Leserbriefen äußern kann.",
+            "3": "Nazi-Symbole tragen darf.",
+            "4": "meine Meinung sagen darf, solange ich der Regierung nicht widerspreche."
+          }
+        },
+        "15": {
+          "question": "Was verbietet das deutsche Grundgesetz?",
+          "answers": {
+            "1": "Militärdienst",
+            "2": "Zwangsarbeit",
+            "3": "freie Berufswahl",
+            "4": "Arbeit im Ausland"
+          }
+        },
+        "16": {
+          "question": "Wann ist die Meinungsfreiheit in Deutschland eingeschränkt?",
+          "answers": {
+            "1": "bei der öffentlichen Verbreitung falscher Behauptungen über einzelne Personen",
+            "2": "bei Meinungsäußerungen über die Bundesregierung",
+            "3": "bei Diskussionen über Religionen",
+            "4": "bei Kritik am Staat"
+          }
+        },
+        "17": {
+          "question": "Die deutschen Gesetze verbieten …",
+          "answers": {
+            "1": "Meinungsfreiheit der Einwohner und Einwohnerinnen.",
+            "2": "Petitionen der Bürger und Bürgerinnen.",
+            "3": "Versammlungsfreiheit der Einwohner und Einwohnerinnen.",
+            "4": "Ungleichbehandlung der Bürger und Bürgerinnen durch den Staat."
+          }
+        },
+        "18": {
+          "question": "Welches Grundrecht ist in Artikel 1 des Grundgesetzes der Bundesrepublik Deutschland garantiert?",
+          "answers": {
+            "1": "die Unantastbarkeit der Menschenwürde",
+            "2": "das Recht auf Leben",
+            "3": "Religionsfreiheit",
+            "4": "Meinungsfreiheit"
+          }
+        },
+        "19": {
+          "question": "Was versteht man unter dem Recht der „Freizügigkeit“ in Deutschland?",
+          "answers": {
+            "1": "Man darf sich seinen Wohnort selbst aussuchen.",
+            "2": "Man kann seinen Beruf wechseln.",
+            "3": "Man darf sich für eine andere Religion entscheiden.",
+            "4": "Man darf sich in der Öffentlichkeit nur leicht bekleidet bewegen."
+          }
+        },
+        "20": {
+          "question": "Eine Partei in Deutschland verfolgt das Ziel, eine Diktatur zu errichten. Sie ist dann …",
+          "answers": {
+            "1": "tolerant.",
+            "2": "rechtsstaatlich orientiert.",
+            "3": "gesetzestreu.",
+            "4": "verfassungswidrig."
+          }
+        },
+        "21": {
+          "question": "Welches ist das Wappen der Bundesrepublik Deutschland?",
+          "answers": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        },
+        "22": {
+          "question": "Was für eine Staatsform hat Deutschland?",
+          "answers": {
+            "1": "Monarchie",
+            "2": "Diktatur",
+            "3": "Republik",
+            "4": "Fürstentum"
+          }
+        },
+        "23": {
+          "question": "In Deutschland sind die meisten Erwerbstätigen …",
+          "answers": {
+            "1": "bei einer Firma oder Behörde beschäftigt.",
+            "2": "in kleinen Familienunternehmen beschäftigt.",
+            "3": "ehrenamtlich für ein Bundesland tätig.",
+            "4": "selbständig mit einer eigenen Firma tätig."
+          }
+        },
+        "24": {
+          "question": "Wie viele Bundesländer hat die Bundesrepublik Deutschland?",
+          "answers": {
+            "1": "14",
+            "2": "15",
+            "3": "16",
+            "4": "17"
+          }
+        },
+        "25": {
+          "question": "Was ist kein Bundesland der Bundesrepublik Deutschland?",
+          "answers": {
+            "1": "Nordrhein-Westfalen",
+            "2": "Elsass-Lothringen",
+            "3": "Mecklenburg-Vorpommern",
+            "4": "Sachsen-Anhalt"
+          }
+        },
+        "26": {
+          "question": "Deutschland ist …",
+          "answers": {
+            "1": "eine kommunistische Republik.",
+            "2": "ein demokratischer und sozialer Bundesstaat.",
+            "3": "eine kapitalistische und soziale Monarchie.",
+            "4": "ein sozialer und sozialistischer Bundesstaat."
+          }
+        },
+        "27": {
+          "question": "Deutschland ist …",
+          "answers": {
+            "1": "ein sozialistischer Staat.",
+            "2": "ein Bundesstaat.",
+            "3": "eine Diktatur.",
+            "4": "eine Monarchie."
+          }
+        },
+        "28": {
+          "question": "Wer wählt in Deutschland die Abgeordneten zum Bundestag?",
+          "answers": {
+            "1": "das Militär",
+            "2": "die Wirtschaft",
+            "3": "das wahlberechtigte Volk",
+            "4": "die Verwaltung"
+          }
+        },
+        "29": {
+          "question": "Welches Tier ist das Wappentier der Bundesrepublik Deutschland?",
+          "answers": {
+            "1": "Löwe",
+            "2": "Adler",
+            "3": "Bär",
+            "4": "Pferd"
+          }
+        },
+        "30": {
+          "question": "Was ist kein Merkmal unserer Demokratie?",
+          "answers": {
+            "1": "regelmäßige Wahlen",
+            "2": "Pressezensur",
+            "3": "Meinungsfreiheit",
+            "4": "verschiedene Parteien"
+          }
+        },
+        "31": {
+          "question": "Die Zusammenarbeit von Parteien zur Bildung einer Regierung nennt man in Deutschland …",
+          "answers": {
+            "1": "Einheit.",
+            "2": "Koalition.",
+            "3": "Ministerium.",
+            "4": "Fraktion."
+          }
+        },
+        "32": {
+          "question": "Was ist keine staatliche Gewalt in Deutschland?",
+          "answers": {
+            "1": "Gesetzgebung",
+            "2": "Regierung",
+            "3": "Presse",
+            "4": "Rechtsprechung"
+          }
+        },
+        "33": {
+          "question": "Welche Aussage ist richtig? In Deutschland …",
+          "answers": {
+            "1": "sind Staat und Religionsgemeinschaften voneinander getrennt.",
+            "2": "bilden die Religionsgemeinschaften den Staat.",
+            "3": "ist der Staat abhängig von den Religionsgemeinschaften.",
+            "4": "bilden Staat und Religionsgemeinschaften eine Einheit."
+          }
+        },
+        "34": {
+          "question": "Was ist Deutschland nicht?",
+          "answers": {
+            "1": "eine Demokratie",
+            "2": "ein Rechtsstaat",
+            "3": "eine Monarchie",
+            "4": "ein Sozialstaat"
+          }
+        },
+        "35": {
+          "question": "Womit finanziert der deutsche Staat die Sozialversicherung?",
+          "answers": {
+            "1": "Kirchensteuern",
+            "2": "Sozialabgaben",
+            "3": "Spendengeldern",
+            "4": "Vereinsbeiträgen"
+          }
+        },
+        "36": {
+          "question": "Welche Maßnahme schafft in Deutschland soziale Sicherheit?",
+          "answers": {
+            "1": "die Krankenversicherung",
+            "2": "die Autoversicherung",
+            "3": "die Gebäudeversicherung",
+            "4": "die Haftpflichtversicherung"
+          }
+        },
+        "37": {
+          "question": "Wie werden die Regierungschefs / Regierungschefinnen der meisten Bundesländer in Deutschland genannt?",
+          "answers": {
+            "1": "Erster Minister / Erste Ministerin",
+            "2": "Premierminister / Premierministerin",
+            "3": "Senator / Senatorin",
+            "4": "Ministerpräsident / Ministerpräsidentin"
+          }
+        },
+        "38": {
+          "question": "Die Bundesrepublik Deutschland ist ein demokratischer und sozialer …",
+          "answers": {
+            "1": "Staatenverbund.",
+            "2": "Bundesstaat.",
+            "3": "Staatenbund.",
+            "4": "Zentralstaat."
+          }
+        },
+        "39": {
+          "question": "Was hat jedes deutsche Bundesland?",
+          "answers": {
+            "1": "einen eigenen Außenminister / eine eigene Außenministerin",
+            "2": "eine eigene Währung",
+            "3": "eine eigene Armee",
+            "4": "eine eigene Regierung"
+          }
+        },
+        "40": {
+          "question": "Mit welchen Worten beginnt die deutsche Nationalhymne?",
+          "answers": {
+            "1": "Völker, hört die Signale …",
+            "2": "Einigkeit und Recht und Freiheit …",
+            "3": "Freude schöner Götterfunken …",
+            "4": "Deutschland einig Vaterland …"
+          }
+        },
+        "41": {
+          "question": "Warum gibt es in einer Demokratie mehr als eine Partei?",
+          "answers": {
+            "1": "weil dadurch die unterschiedlichen Meinungen der Bürger und Bürgerinnen vertreten werden",
+            "2": "damit Bestechung in der Politik begrenzt wird",
+            "3": "um politische Demonstrationen zu verhindern",
+            "4": "um wirtschaftlichen Wettbewerb anzuregen"
+          }
+        },
+        "42": {
+          "question": "Wer beschließt in Deutschland ein neues Gesetz?",
+          "answers": {
+            "1": "die Regierung",
+            "2": "das Parlament",
+            "3": "die Gerichte",
+            "4": "die Polizei"
+          }
+        },
+        "43": {
+          "question": "Wann kann in Deutschland eine Partei verboten werden?",
+          "answers": {
+            "1": "wenn ihr Wahlkampf zu teuer ist",
+            "2": "wenn sie gegen die Verfassung kämpft",
+            "3": "wenn sie Kritik am Staatsoberhaupt äußert",
+            "4": "wenn ihr Programm eine neue Richtung vorschlägt"
+          }
+        },
+        "44": {
+          "question": "Wen kann man als Bürger / Bürgerin in Deutschland nicht direkt wählen?",
+          "answers": {
+            "1": "Abgeordnete des EU-Parlaments",
+            "2": "den Bundespräsidenten / die Bundespräsidentin",
+            "3": "Landtagsabgeordnete",
+            "4": "Bundestagsabgeordnete"
+          }
+        },
+        "45": {
+          "question": "Zu welcher Versicherung gehört die Pflegeversicherung?",
+          "answers": {
+            "1": "Sozialversicherung",
+            "2": "Unfallversicherung",
+            "3": "Hausratversicherung",
+            "4": "Haftpflicht- und Feuerversicherung"
+          }
+        },
+        "46": {
+          "question": "Der deutsche Staat hat viele Aufgaben. Welche Aufgabe gehört dazu?",
+          "answers": {
+            "1": "Er baut Straßen und Schulen.",
+            "2": "Er verkauft Lebensmittel und Kleidung.",
+            "3": "Er versorgt alle Einwohner und Einwohnerinnen kostenlos mit Zeitungen.",
+            "4": "Er produziert Autos und Busse."
+          }
+        },
+        "47": {
+          "question": "Der deutsche Staat hat viele Aufgaben. Welche Aufgabe gehört nicht dazu?",
+          "answers": {
+            "1": "Er bezahlt für alle Staatsangehörigen Urlaubsreisen.",
+            "2": "Er zahlt Kindergeld.",
+            "3": "Er unterstützt Museen.",
+            "4": "Er fördert Sportler und Sportlerinnen."
+          }
+        },
+        "48": {
+          "question": "Welches Organ gehört nicht zu den Verfassungsorganen Deutschlands?",
+          "answers": {
+            "1": "der Bundesrat",
+            "2": "der Bundespräsident / die Bundespräsidentin",
+            "3": "die Bürgerversammlung",
+            "4": "die Regierung"
+          }
+        },
+        "49": {
+          "question": "Wer bestimmt in Deutschland die Schulpolitik?",
+          "answers": {
+            "1": "die Lehrer und Lehrerinnen",
+            "2": "die Bundesländer",
+            "3": "das Familienministerium",
+            "4": "die Universitäten"
+          }
+        },
+        "50": {
+          "question": "Die Wirtschaftsform in Deutschland nennt man …",
+          "answers": {
+            "1": "freie Zentralwirtschaft.",
+            "2": "soziale Marktwirtschaft.",
+            "3": "gelenkte Zentralwirtschaft.",
+            "4": "Planwirtschaft."
+          }
+        },
+        "51": {
+          "question": "Zu einem demokratischen Rechtsstaat gehört es nicht, dass …",
+          "answers": {
+            "1": "Menschen sich kritisch über die Regierung äußern können.",
+            "2": "Bürger friedlich demonstrieren gehen dürfen.",
+            "3": "Menschen von einer Privatpolizei ohne Grund verhaftet werden.",
+            "4": "jemand ein Verbrechen begeht und deshalb verhaftet wird."
+          }
+        },
+        "52": {
+          "question": "Was bedeutet „Volkssouveränität“? Alle Staatsgewalt geht vom …",
+          "answers": {
+            "1": "Volke aus.",
+            "2": "Bundestag aus.",
+            "3": "preußischen König aus.",
+            "4": "Bundesverfassungsgericht aus."
+          }
+        },
+        "53": {
+          "question": "Was bedeutet „Rechtsstaat“ in Deutschland?",
+          "answers": {
+            "1": "Der Staat hat Recht.",
+            "2": "Es gibt nur rechte Parteien.",
+            "3": "Die Bürger und Bürgerinnen entscheiden über Gesetze.",
+            "4": "Der Staat muss die Gesetze einhalten."
+          }
+        },
+        "54": {
+          "question": "Was ist keine staatliche Gewalt in Deutschland?",
+          "answers": {
+            "1": "Legislative",
+            "2": "Judikative",
+            "3": "Exekutive",
+            "4": "Direktive"
+          }
+        },
+        "55": {
+          "question": "Was zeigt dieses Bild?",
+          "image": "/img/fragen/055.png",
+          "answers": {
+            "1": "den Bundestagssitz in Berlin",
+            "2": "das Bundesverfassungsgericht in Karlsruhe",
+            "3": "das Bundesratsgebäude in Berlin",
+            "4": "das Bundeskanzleramt in Berlin"
+          }
+        },
+        "56": {
+          "question": "Welches Amt gehört in Deutschland zur Gemeindeverwaltung?",
+          "answers": {
+            "1": "Pfarramt",
+            "2": "Ordnungsamt",
+            "3": "Finanzamt",
+            "4": "Auswärtiges Amt"
+          }
+        },
+        "57": {
+          "question": "Wer wird meistens zum Präsidenten / zur Präsidentin des Deutschen Bundestages gewählt?",
+          "answers": {
+            "1": "der / die älteste Abgeordnete im Parlament",
+            "2": "der Ministerpräsident / die Ministerpräsidentin des größten Bundeslandes",
+            "3": "ein Abgeordneter / eine Abgeordnete der stärksten Fraktion",
+            "4": "ein ehemaliger Bundeskanzler / eine ehemalige Bundeskanzlerin"
+          }
+        },
+        "58": {
+          "question": "Wer ernennt in Deutschland die Minister / die Ministerinnen der Bundesregierung?",
+          "answers": {
+            "1": "der Präsident / die Präsidentin des Bundesverfassungsgerichtes",
+            "2": "der Bundespräsident / die Bundespräsidentin",
+            "3": "der Bundesratspräsident / die Bundesratspräsidentin",
+            "4": "der Bundestagspräsident / die Bundestagspräsidentin"
+          }
+        },
+        "59": {
+          "question": "Welche Parteien wurden in Deutschland 2007 zur Partei „Die Linke“?",
+          "answers": {
+            "1": "CDU und SSW",
+            "2": "PDS und WASG",
+            "3": "CSU und FDP",
+            "4": "Bündnis 90/Die Grünen und SPD"
+          }
+        },
+        "60": {
+          "question": "In Deutschland gehören der Bundestag und der Bundesrat zur …",
+          "answers": {
+            "1": "Exekutive.",
+            "2": "Legislative.",
+            "3": "Direktive.",
+            "4": "Judikative."
+          }
+        },
+        "61": {
+          "question": "Was bedeutet „Volkssouveränität“?",
+          "answers": {
+            "1": "Der König / die Königin herrscht über das Volk.",
+            "2": "Das Bundesverfassungsgericht steht über der Verfassung.",
+            "3": "Die Interessenverbände üben die Souveränität zusammen mit der Regierung aus.",
+            "4": "Die Staatsgewalt geht vom Volke aus."
+          }
+        },
+        "62": {
+          "question": "Wenn das Parlament eines deutschen Bundeslandes gewählt wird, nennt man das …",
+          "answers": {
+            "1": "Kommunalwahl.",
+            "2": "Landtagswahl.",
+            "3": "Europawahl.",
+            "4": "Bundestagswahl."
+          }
+        },
+        "63": {
+          "question": "Was gehört in Deutschland nicht zur Exekutive?",
+          "answers": {
+            "1": "die Polizei",
+            "2": "die Gerichte",
+            "3": "das Finanzamt",
+            "4": "die Ministerien"
+          }
+        },
+        "64": {
+          "question": "Die Bundesrepublik Deutschland ist heute gegliedert in …",
+          "answers": {
+            "1": "vier Besatzungszonen.",
+            "2": "einen Oststaat und einen Weststaat.",
+            "3": "16 Kantone.",
+            "4": "Bund, Länder und Kommunen."
+          }
+        },
+        "65": {
+          "question": "Es gehört nicht zu den Aufgaben des Deutschen Bundestages, …",
+          "answers": {
+            "1": "Gesetze zu entwerfen.",
+            "2": "die Bundesregierung zu kontrollieren.",
+            "3": "den Bundeskanzler / die Bundeskanzlerin zu wählen.",
+            "4": "das Bundeskabinett zu bilden."
+          }
+        },
+        "66": {
+          "question": "Wer schrieb den Text zur deutschen Nationalhymne?",
+          "answers": {
+            "1": "Friedrich von Schiller",
+            "2": "Clemens Brentano",
+            "3": "Johann Wolfgang von Goethe",
+            "4": "Heinrich Hoffmann von Fallersleben"
+          }
+        },
+        "67": {
+          "question": "Was ist in Deutschland vor allem eine Aufgabe der Bundesländer?",
+          "answers": {
+            "1": "Verteidigungspolitik",
+            "2": "Außenpolitik",
+            "3": "Wirtschaftspolitik",
+            "4": "Schulpolitik"
+          }
+        },
+        "68": {
+          "question": "Warum kontrolliert der Staat in Deutschland das Schulwesen?",
+          "answers": {
+            "1": "weil es in Deutschland nur staatliche Schulen gibt",
+            "2": "weil alle Schüler und Schülerinnen einen Schulabschluss haben müssen",
+            "3": "weil es in den Bundesländern verschiedene Schulen gibt",
+            "4": "weil es nach dem Grundgesetz seine Aufgabe ist"
+          }
+        },
+        "69": {
+          "question": "Die Bundesrepublik Deutschland hat einen dreistufigen Verwaltungsaufbau. Wie heißt die unterste politische Stufe?",
+          "answers": {
+            "1": "Stadträte",
+            "2": "Landräte",
+            "3": "Gemeinden",
+            "4": "Bezirksämter"
+          }
+        },
+        "70": {
+          "question": "Der deutsche Bundespräsident Gustav Heinemann gibt Helmut Schmidt 1974 die Ernennungsurkunde zum deutschen Bundeskanzler. Was gehört zu den Aufgaben des deutschen Bundespräsidenten / der deutschen Bundespräsidentin?",
+          "answers": {
+            "1": "Er / Sie führt die Regierungsgeschäfte.",
+            "2": "Er / Sie kontrolliert die Regierungspartei.",
+            "3": "Er / Sie wählt die Minister / Ministerinnen aus.",
+            "4": "Er / Sie schlägt den Kanzler / die Kanzlerin zur Wahl vor."
+          }
+        },
+        "71": {
+          "question": "Wo hält sich der deutsche Bundeskanzler / die deutsche Bundeskanzlerin am häufigsten auf? Am häufigsten ist er / sie …",
+          "answers": {
+            "1": "in Bonn, weil sich dort das Bundeskanzleramt und der Bundestag befinden.",
+            "2": "in Berlin, weil sich dort das Bundeskanzleramt und der Bundestag befinden.",
+            "3": "auf Schloss Meseberg, dem Gästehaus der Bundesregierung, um Staatsgäste zu empfangen.",
+            "4": "auf Schloss Bellevue, dem Amtssitz des Bundespräsidenten / der Bundespräsidentin, um Staatsgäste zu empfangen."
+          }
+        },
+        "72": {
+          "question": "Wie heißt der jetzige Bundeskanzler / die jetzige Bundeskanzlerin von Deutschland?",
+          "answers": {
+            "1": "Gerhard Schröder",
+            "2": "Angela Merkel",
+            "3": "Franziska Giffey",
+            "4": "Olaf Scholz"
+          }
+        },
+        "73": {
+          "question": "Die beiden größten Fraktionen im Deutschen Bundestag heißen zurzeit …",
+          "answers": {
+            "1": "CDU/CSU und SPD.",
+            "2": "Die Linke und Bündnis 90/Die Grünen.",
+            "3": "FDP und SPD.",
+            "4": "Die Linke und FDP."
+          }
+        },
+        "74": {
+          "question": "Wie heißt das Parlament für ganz Deutschland?",
+          "answers": {
+            "1": "Bundesversammlung",
+            "2": "Volkskammer",
+            "3": "Bundestag",
+            "4": "Bundesgerichtshof"
+          }
+        },
+        "75": {
+          "question": "Wie heißt Deutschlands heutiges Staatsoberhaupt?",
+          "answers": {
+            "1": "Frank-Walter Steinmeier",
+            "2": "Bärbel Bas",
+            "3": "Bodo Ramelow",
+            "4": "Joachim Gauck"
+          }
+        },
+        "76": {
+          "question": "Was bedeutet die Abkürzung CDU in Deutschland?",
+          "answers": {
+            "1": "Christliche Deutsche Union",
+            "2": "Club Deutscher Unternehmer",
+            "3": "Christlicher Deutscher Umweltschutz",
+            "4": "Christlich Demokratische Union"
+          }
+        },
+        "77": {
+          "question": "Was ist die Bundeswehr?",
+          "answers": {
+            "1": "die deutsche Polizei",
+            "2": "ein deutscher Hafen",
+            "3": "eine deutsche Bürgerinitiative",
+            "4": "die deutsche Armee"
+          }
+        },
+        "78": {
+          "question": "Was bedeutet die Abkürzung SPD?",
+          "answers": {
+            "1": "Sozialistische Partei Deutschlands",
+            "2": "Sozialpolitische Partei Deutschlands",
+            "3": "Sozialdemokratische Partei Deutschlands",
+            "4": "Sozialgerechte Partei Deutschlands"
+          }
+        },
+        "79": {
+          "question": "Was bedeutet die Abkürzung FDP in Deutschland?",
+          "answers": {
+            "1": "Friedliche Demonstrative Partei",
+            "2": "Freie Deutschland Partei",
+            "3": "Führende Demokratische Partei",
+            "4": "Freie Demokratische Partei"
+          }
+        },
+        "80": {
+          "question": "Welches Gericht in Deutschland ist zuständig für die Auslegung des Grundgesetzes?",
+          "answers": {
+            "1": "Oberlandesgericht",
+            "2": "Amtsgericht",
+            "3": "Bundesverfassungsgericht",
+            "4": "Verwaltungsgericht"
+          }
+        },
+        "81": {
+          "question": "Wer wählt den Bundeskanzler / die Bundeskanzlerin in Deutschland?",
+          "answers": {
+            "1": "der Bundesrat",
+            "2": "die Bundesversammlung",
+            "3": "das Volk",
+            "4": "der Bundestag"
+          }
+        },
+        "82": {
+          "question": "Wer leitet das deutsche Bundeskabinett?",
+          "answers": {
+            "1": "der Bundestagspräsident / die Bundestagspräsidentin",
+            "2": "der Bundespräsident / die Bundespräsidentin",
+            "3": "der Bundeskanzler / die Bundeskanzlerin",
+            "4": "der Bundesratspräsident / die Bundesratspräsidentin"
+          }
+        },
+        "83": {
+          "question": "Wer wählt den deutschen Bundeskanzler / die deutsche Bundeskanzlerin?",
+          "answers": {
+            "1": "das Volk",
+            "2": "die Bundesversammlung",
+            "3": "der Bundestag",
+            "4": "die Bundesregierung"
+          }
+        },
+        "84": {
+          "question": "Welche Hauptaufgabe hat der deutsche Bundespräsident / die deutsche Bundespräsidentin? Er / Sie …",
+          "answers": {
+            "1": "regiert das Land.",
+            "2": "entwirft die Gesetze.",
+            "3": "repräsentiert das Land.",
+            "4": "überwacht die Einhaltung der Gesetze."
+          }
+        },
+        "85": {
+          "question": "Wer bildet den deutschen Bundesrat?",
+          "answers": {
+            "1": "die Abgeordneten des Bundestages",
+            "2": "die Minister und Ministerinnen der Bundesregierung",
+            "3": "die Regierungsvertreter der Bundesländer",
+            "4": "die Parteimitglieder"
+          }
+        },
+        "86": {
+          "question": "Wer wählt in Deutschland den Bundespräsidenten / die Bundespräsidentin?",
+          "answers": {
+            "1": "die Bundesversammlung",
+            "2": "der Bundesrat",
+            "3": "das Bundesparlament",
+            "4": "das Bundesverfassungsgericht"
+          }
+        },
+        "87": {
+          "question": "Wer ist das Staatsoberhaupt der Bundesrepublik Deutschland?",
+          "answers": {
+            "1": "der Bundeskanzler / die Bundeskanzlerin",
+            "2": "der Bundespräsident / die Bundespräsidentin",
+            "3": "der Bundesratspräsident / die Bundesratspräsidentin",
+            "4": "der Bundestagspräsident / die Bundestagspräsidentin"
+          }
+        },
+        "88": {
+          "question": "Die parlamentarische Opposition im Deutschen Bundestag …",
+          "answers": {
+            "1": "kontrolliert die Regierung.",
+            "2": "entscheidet, wer Bundesminister / Bundesministerin wird.",
+            "3": "bestimmt, wer im Bundesrat sitzt.",
+            "4": "schlägt die Regierungschefs / Regierungschefinnen der Länder vor."
+          }
+        },
+        "89": {
+          "question": "Wie nennt man in Deutschland die Vereinigung von Abgeordneten einer Partei im Parlament?",
+          "answers": {
+            "1": "Verband",
+            "2": "Ältestenrat",
+            "3": "Fraktion",
+            "4": "Opposition"
+          }
+        },
+        "90": {
+          "question": "Die deutschen Bundesländer wirken an der Gesetzgebung des Bundes mit durch …",
+          "answers": {
+            "1": "den Bundesrat.",
+            "2": "die Bundesversammlung.",
+            "3": "den Bundestag.",
+            "4": "die Bundesregierung."
+          }
         }
       }
     }

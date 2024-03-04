@@ -1,0 +1,47 @@
+<div *ngIf="paginatorData">
+  <mat-accordion *ngIf="currentQuestionIndex !== null">
+    <mat-expansion-panel *ngFor="let test of stateInfo.stateTests|slice:
+             (paginator.pageIndex*paginator.pageSize):
+             ((paginator.pageIndex+1)*paginator.pageSize); let i=index"
+                         [expanded]="currentQuestionIndex === i"
+                         (opened)="expansionPanelOpen.emit(i)">
+
+      <mat-expansion-panel-header>
+        <mat-panel-title>{{ test.id }}- {{ getQuestionTrPrefix(stateInfo.name, i) | translate }}</mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <div *ngIf="test.questionImagesName && test.questionImagesName.length > 0">
+        <img *ngFor="let imageName of test.questionImagesName" class="img"
+             [src]="'assets/images/states-tests/' + stateInfo.name + '_' + imageName"
+             [alt]="stateInfo.name + '_' + imageName">
+      </div>
+
+      <mat-radio-group>
+        <mat-radio-button *ngFor="let answerId of [1, 2, 3, 4]"
+                          [value]="answerId" class="radio-btn"
+                          [checked]="showAnswersKeys && test.correctAnswer === answerId">
+          {{ getAnswerTrPrefix(stateInfo.name, i, answerId) | translate }}
+        </mat-radio-button>
+      </mat-radio-group>
+
+      <mat-action-row>
+        <button *ngIf="currentQuestionIndex > 0"
+                mat-button color="warn"
+                (click)="expansionPanelOpen.emit(currentQuestionIndex - 1)">{{ 'general.previous' | translate }}
+        </button>
+        <button *ngIf="currentQuestionIndex + 1 < stateInfo.stateTests.length"
+                mat-button color="primary"
+                (click)="expansionPanelOpen.emit(currentQuestionIndex + 1)">{{ 'general.next' | translate }}
+        </button>
+      </mat-action-row>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <mat-paginator #paginator
+                 [length]="paginatorData.length"
+                 [pageIndex]="paginatorData.pageIndex"
+                 [pageSize]="paginatorData.pageSize"
+                 [pageSizeOptions]="paginatorData.length > 10 ? [30, 60, 100, 150, 300] : [10]"
+                 (page)="paginatorDataChange.emit($event)">
+  </mat-paginator>
+</div>

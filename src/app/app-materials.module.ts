@@ -17,6 +17,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 export const materials = [
   MatButtonModule,
@@ -36,7 +37,8 @@ export const materials = [
   MatSlideToggleModule,
   MatGridListModule,
   MatDividerModule,
-  MatListModule
+  MatListModule,
+  MatPaginatorModule
 ];
 
 @NgModule({imports: materials, exports: materials})

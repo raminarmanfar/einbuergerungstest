@@ -6,8 +6,8 @@
           <mat-form-field class="select-form-field">
             <mat-label>{{ 'review-states-tests.select-state' | translate }}</mat-label>
             <mat-select
-              [matTooltip]="(selectedState ? trPrefix + selectedState.name + '.state' : 'review-states-tests.select-state') | translate"
-              [(value)]="selectedState" (selectionChange)="onStateSelectChange($event.value)">
+              [matTooltip]="(selectedStateInfo ? trPrefix + selectedStateInfo.name + '.state' : 'review-states-tests.select-state') | translate"
+              [(value)]="selectedStateInfo" (selectionChange)="onStateSelectChange($event.value)">
               <mat-option>{{ 'review-states-tests.select-state' | translate }}</mat-option>
               <mat-option *ngFor="let state of germanStates" [value]="state">
                 {{ trPrefix + state.name + '.state' | translate }}
@@ -17,7 +17,8 @@
         </mat-list-item>
         <mat-divider [vertical]="true"></mat-divider>
         <mat-list-item>
-          <mat-slide-toggle [checked]="showAnswersKeys" (change)="reviewStatesTestsStateService.setShowAnswersKeys($event.checked)">
+          <mat-slide-toggle [checked]="showAnswersKeys"
+                            (change)="reviewStatesTestsStateService.setShowAnswersKeys($event.checked)">
             {{ 'general.show-answer-keys' | translate }}
           </mat-slide-toggle>
         </mat-list-item>
@@ -47,39 +48,12 @@
     </mat-card-content>
   </mat-card>
 
-  <mat-accordion *ngIf="selectedState">
-    <mat-expansion-panel *ngFor="let state of selectedState.stateTests; let i=index"
-                         [expanded]="currentQuestionIndex === i"
-                         (opened)="reviewStatesTestsStateService.setCurrentQuestionIndex(i)">
-
-      <mat-expansion-panel-header>
-        <mat-panel-title>{{ i + 1 }}- {{ getQuestionTrPrefix(selectedState.name, i) | translate }}</mat-panel-title>
-      </mat-expansion-panel-header>
-
-      <div *ngIf="state.questionImagesName.length > 0">
-        <img *ngFor="let imageName of state.questionImagesName" class="img"
-             [src]="'assets/images/states-tests/' + selectedState.name + '_' + imageName"
-             [alt]="imageName">
-      </div>
-
-      <mat-radio-group>
-        <mat-radio-button *ngFor="let answerId of [1, 2, 3, 4]"
-                          [value]="answerId" class="radio-btn"
-                          [checked]="showAnswersKeys && state.correctAnswer === answerId">
-          {{ getAnswerTrPrefix(selectedState.name, i, answerId) | translate }}
-        </mat-radio-button>
-      </mat-radio-group>
-
-      <mat-action-row>
-        <button *ngIf="currentQuestionIndex > 0"
-                mat-button color="warn"
-                (click)="currentQuestionIndex = currentQuestionIndex - 1;">{{ 'general.previous' | translate }}
-        </button>
-        <button *ngIf="currentQuestionIndex + 1 < selectedState.stateTests.length"
-                mat-button color="primary"
-                (click)="currentQuestionIndex = currentQuestionIndex + 1;">{{ 'general.next' | translate }}
-        </button>
-      </mat-action-row>
-    </mat-expansion-panel>
-  </mat-accordion>
+  <app-questionnaire-list *ngIf="selectedStateInfo"
+                          [currentQuestionIndex]="(reviewStatesTestsStateService.currentQuestionIndex$ | async)"
+                          [stateInfo]="selectedStateInfo"
+                          [showAnswersKeys]="showAnswersKeys"
+                          [paginatorData]="paginatorData"
+                          [trPrefix]="trPrefix"
+                          (expansionPanelOpen)="reviewStatesTestsStateService.setCurrentQuestionIndex($event)">
+  </app-questionnaire-list>
 </div>
