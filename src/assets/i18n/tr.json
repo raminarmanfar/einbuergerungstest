@@ -9,15 +9,153 @@
     "previous": "Geri",
     "show-answer-keys": "Cevapların anahtarlarını göster",
     "collapse-all-questions-on-state-change": "Eyalet değişikliğinde tüm soruları daralt"
-  }
-,
+  },
   "home": {
     "menu": {
-      "btn-review-all-tests": "Tüm Sınavları İncele",
+      "btn-review-deutschland-tests": "Almanya'nın Testlerini İncele",
       "btn-review-states-tests": "Eyalet Sınavlarını İncele",
       "btn-all-tests-demo-exam": "Tüm Sınavlar Demo Sınavı",
       "btn-take-demo-test": "Demo Sınavı Yap",
       "btn-about-me": "Hakkımda"
+    }
+  },
+  "review-deutschland-tests": {
+    "tests": {
+      "1": {
+        "question": "Almanya'da insanlar, hükümete karşı açıkça görüşlerini ifade etmelerine izin verilir, çünkü...",
+        "answers": {
+          "1": "burada dini özgürlük geçerlidir.",
+          "2": "insanlar vergi öder.",
+          "3": "insanlar oy hakkına sahiptir.",
+          "4": "konuşma özgürlüğü burada geçerlidir."
+        }
+      },
+      "2": {
+        "question": "Almanya'da ebeveynler, çocuklarının 14 yaşına kadar okulda hangi derslere katılacağına karar verebilir...",
+        "answers": {
+          "1": "tarih dersi.",
+          "2": "dini eğitim.",
+          "3": "siyasi eğitim.",
+          "4": "dil eğitimi."
+        }
+      },
+      "3": {
+        "question": "Almanya bir hukuk devletidir. Bu ne anlama gelir?",
+        "answers": {
+          "1": "Tüm sakinler ve devlet yasalara uymak zorundadır.",
+          "2": "Devlet yasalara uymak zorunda değildir.",
+          "3": "Sadece Almanlar yasalara uymak zorundadır.",
+          "4": "Mahkemeler yasaları yapar."
+        }
+      },
+      "4": {
+        "question": "Almanya'daki temel haklardan hangisi vardır?",
+        "answers": {
+          "1": "Silah taşıma hakkı.",
+          "2": "Kendi başına adalet hakkı.",
+          "3": "Konuşma özgürlüğü.",
+          "4": "Kendi başına yargı yetkisi hakkı."
+        }
+      },
+      "5": {
+        "question": "Almanya'da seçimler özgürdür. Bu ne anlama gelir?",
+        "answers": {
+          "1": "Bir kişi belirli bir adayı seçmek karşılığında para alabilir.",
+          "2": "Seçmenler belirli bir şekilde oy kullanmaya zorlanamaz ve oylarından dezavantaj yaşamamalıdır.",
+          "3": "Yalnızca hapiste hiç bulunmamış bireyler oy kullanabilir.",
+          "4": "Tüm seçmenler oy kullanmak zorundadır."
+        }
+      },
+      "6": {
+        "question": "Almanya'nın anayasasının adı nedir?",
+        "answers": {
+          "1": "Halk Kanunu.",
+          "2": "Federal Kanun.",
+          "3": "Alman Kanunu.",
+          "4": "Temel Kanun."
+        }
+      },
+      "7": {
+        "question": "Alman anayasası tarafından garanti edilen temel haklardan hangisi aittir? Hakkı...",
+        "answers": {
+          "1": "İnanç ve vicdan özgürlüğü.",
+          "2": "Eğlence.",
+          "3": "İş.",
+          "4": "Konut."
+        }
+      },
+      "8": {
+        "question": "Alman Temel Yasası'nda neler yazmaz?",
+        "answers": {
+          "1": "Bireyin haysiyeti dokunulmazdır.",
+          "2": "Herkesin aynı miktarda paraya sahip olması gerektir.",
+          "3": "Herkesin kendi görüşünü ifade etme hakkı vardır.",
+          "4": "Herkes yasa önünde eşittir."
+        }
+      },
+      "9": {
+        "question": "Almanya'da hangi temel hak sadece yabancılara aittir? Hak...",
+        "answers": {
+          "1": "Aile koruma hakkı.",
+          "2": "İnsanlık hakkı.",
+          "3": "Sığınma hakkı.",
+          "4": "Konuşma özgürlüğü."
+        }
+      },
+      "10": {
+        "question": "Alman Temel Yasası ile uyumlu olan nedir?",
+        "answers": {
+          "1": "Dayak cezası.",
+          "2": "İşkence.",
+          "3": "Ölüm cezası.",
+          "4": "Maddi ceza."
+        }
+      },
+      "11": {
+        "question": "Federal Almanya Cumhuriyeti'nin anayasasının adı nedir?",
+        "answers": {
+          "1": "Temel Kanun.",
+          "2": "Federal Anayasa.",
+          "3": "Hukuk Kanunu.",
+          "4": "Anayasa Antlaşması."
+        }
+      },
+      "12": {
+        "question": "Alman Bundestag'ındaki bir parti basın özgürlüğünü kaldırmak isterse, bu mümkün müdür?",
+        "answers": {
+          "1": "Evet, Bundestag üyelerinin yarısından fazlası lehte ise.",
+          "2": "Evet, ancak Bundestag üyelerinin üçte ikisi lehte olmalıdır.",
+          "3": "Hayır, çünkü basın özgürlüğü temel bir haktır. Kaldırılamaz.",
+          "4": "Hayır, sadece Bundesrat basın özgürlüğünü kaldırabilir."
+        }
+      },
+      "13": {
+        "question": "Parlamentoda 'Muhalefet' terimi neyi temsil eder…",
+        "answers": {
+          "1": "hükümet partileri.",
+          "2": "hükümet partisine/ partilerine ait olmayan tüm üyeler.",
+          "3": "en fazla üyeye sahip fraksiyon.",
+          "4": "geçmiş seçimde %5 barajını aşan tüm partiler."
+        }
+      },
+      "14": {
+        "question": "Almanya'da konuşma özgürlüğü, benim için şunları yapmamı sağlar...",
+        "answers": {
+          "1": "sokakta geçenlere hakaret etmek.",
+          "2": "fikirlerimi mektuplarla ifade etmek.",
+          "3": "Nazi sembolleri takmak.",
+          "4": "fikirlerimi hükümete aykırı olmadıkça ifade etmek."
+        }
+      },
+      "15": {
+        "question": "Alman Temel Yasası neyi yasaklar?",
+        "answers": {
+          "1": "Askerlik hizmeti.",
+          "2": "Zorunlu çalışma.",
+          "3": "meslek seçimini serbest bırakma.",
+          "4": "yurtdışında çalışma."
+        }
+      }
     }
   },
   "review-states-tests": {

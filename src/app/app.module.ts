@@ -1,4 +1,5 @@
 import {NgModule} from '@angular/core';
+import {NgOptimizedImage} from '@angular/common';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
@@ -12,10 +13,9 @@ import {AppMaterialsModule} from './app-materials.module';
 import {AppComponent} from './components/app/app.component';
 import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
-import {HomeComponent} from './components/home/home.component';
-import { ReviewAllTestsComponent } from './components/review-all-tests/review-all-tests.component';
-import { ReviewStatesTestsComponent } from './components/review-states-tests/review-states-tests.component';
-import {NgOptimizedImage} from '@angular/common';
+import {HomePageComponent} from './components/home-page/home-page.component';
+import { ReviewDeutschlandQuestionsPageComponent } from './components/review-deutschland-questions-page/review-deutschland-questions-page.component';
+import { ReviewStatesQuestionsPageComponent } from './components/review-states-questions-page/review-states-questions-page.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -26,9 +26,10 @@ export function createTranslateLoader(http: HttpClient) {
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent,
-    ReviewAllTestsComponent,
-    ReviewStatesTestsComponent
+    HomePageComponent,
+    ReviewDeutschlandQuestionsPageComponent,
+    ReviewStatesQuestionsPageComponent,
+    ReviewDeutschlandQuestionsPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,15 +1,15 @@
 import {Component, OnInit} from '@angular/core';
-import {ReviewStatesTestsStateService} from '../../state/review-states-tests/review-states-tests-state.service';
 import {ConstantValues} from '../../utils/constant-values';
 import {StateInfoModel} from '../../models/state-info.model';
 import {StateChangeExpansionPanelBehaviorEnum} from '../../models/enums/state-change-expansion-panel-behavior.enum';
+import {ReviewStatesTestsStateService} from '../../state/review-states-tests/review-states-tests-state.service';
 
 @Component({
   selector: 'app-review-states-tests',
-  templateUrl: './review-states-tests.component.html',
-  styleUrls: ['./review-states-tests.component.scss']
+  templateUrl: './review-states-questions-page.component.html',
+  styleUrls: ['./review-states-questions-page.component.scss']
 })
-export class ReviewStatesTestsComponent implements OnInit {
+export class ReviewStatesQuestionsPageComponent implements OnInit {
   currentQuestionIndex = 0;
   selectedState: StateInfoModel | undefined = undefined;
   showAnswersKeys = true;

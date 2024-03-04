@@ -6,16 +6,16 @@ import {NgxsReduxDevtoolsPluginModule} from '@ngxs/devtools-plugin';
 import {NgxsLoggerPluginModule} from '@ngxs/logger-plugin';
 import {AppState} from './app.state';
 import {ReviewStatesTestsState} from './review-states-tests/review-states-tests.state';
-import {ReviewAllQuestionsState} from './review-all-questions/review-all-questions.state';
+import {ReviewDeutschlandQuestionsState} from './review-deutschland-questions/review-all-questions.state';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    NgxsModule.forRoot([AppState, ReviewAllQuestionsState, ReviewStatesTestsState]),
+    NgxsModule.forRoot([AppState, ReviewDeutschlandQuestionsState, ReviewStatesTestsState]),
     NgxsStoragePluginModule.forRoot({
-      key: [AppState, ReviewAllQuestionsState, ReviewStatesTestsState],
+      key: [AppState, ReviewDeutschlandQuestionsState, ReviewStatesTestsState],
       storage: StorageOption.SessionStorage
     }),
     NgxsReduxDevtoolsPluginModule.forRoot(),

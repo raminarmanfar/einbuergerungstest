@@ -11,11 +11,150 @@
   },
   "home": {
     "menu": {
-      "btn-review-all-tests": "Sehen Sie sich alle Tests an",
+      "btn-review-deutschland-tests": "Überprüfen Sie Deutschlands Tests",
       "btn-review-states-tests": "Überprüfen Sie die Tests der Staaten",
       "btn-all-tests-demo-exam": "Alle Tests Demo-Prüfung",
       "btn-take-demo-test": "Machen Sie einen Demotest",
       "btn-about-me": "Über mich"
+    }
+  },
+  "review-deutschland-tests": {
+    "tests": {
+      "1": {
+        "question": "In Deutschland dürfen Menschen offen etwas gegen die Regierung sagen, weil …",
+        "answers": {
+          "1": "hier Religionsfreiheit gilt.",
+          "2": "die Menschen Steuern zahlen.",
+          "3": "die Menschen das Wahlrecht haben.",
+          "4": "hier Meinungsfreiheit gilt."
+        }
+      },
+      "2": {
+        "question": "In Deutschland können Eltern bis zum 14. Lebensjahr ihres Kindes entscheiden, ob es in der Schule am …",
+        "answers": {
+          "1": "Geschichtsunterricht teilnimmt.",
+          "2": "Religionsunterricht teilnimmt.",
+          "3": "Politikunterricht teilnimmt.",
+          "4": "Sprachunterricht teilnimmt."
+        }
+      },
+      "3": {
+        "question": "Deutschland ist ein Rechtsstaat. Was ist damit gemeint?",
+        "answers": {
+          "1": "Alle Einwohner / Einwohnerinnen und der Staat müssen sich an die Gesetze halten.",
+          "2": "Der Staat muss sich nicht an die Gesetze halten.",
+          "3": "Nur Deutsche müssen die Gesetze befolgen.",
+          "4": "Die Gerichte machen die Gesetze."
+        }
+      },
+      "4": {
+        "question": "Welches Recht gehört zu den Grundrechten in Deutschland?",
+        "answers": {
+          "1": "Waffenbesitz",
+          "2": "Faustrecht",
+          "3": "Meinungsfreiheit",
+          "4": "Selbstjustiz"
+        }
+      },
+      "5": {
+        "question": "Wahlen in Deutschland sind frei. Was bedeutet das?",
+        "answers": {
+          "1": "Man darf Geld annehmen, wenn man dafür einen bestimmten Kandidaten / eine bestimmte Kandidatin wählt.",
+          "2": "Der Wähler darf bei der Wahl weder beeinflusst noch zu einer bestimmten Stimmabgabe gezwungen werden und keine Nachteile durch die Wahl haben.",
+          "3": "Nur Personen, die noch nie im Gefängnis waren, dürfen wählen.",
+          "4": "Alle wahlberechtigten Personen müssen wählen."
+        }
+      },
+      "6": {
+        "question": "Wie heißt die deutsche Verfassung?",
+        "answers": {
+          "1": "Volksgesetz",
+          "2": "Bundesgesetz",
+          "3": "Deutsches Gesetz",
+          "4": "Grundgesetz"
+        }
+      },
+      "7": {
+        "question": "Welches Recht gehört zu den Grundrechten, die nach der deutschen Verfassung garantiert werden? Das Recht auf …",
+        "answers": {
+          "1": "Glaubens- und Gewissensfreiheit.",
+          "2": "Unterhaltung.",
+          "3": "Arbeit.",
+          "4": "Wohnung."
+        }
+      },
+      "8": {
+        "question": "Was steht nicht im Grundgesetz von Deutschland?",
+        "answers": {
+          "1": "Die Würde des Menschen ist unantastbar.",
+          "2": "Alle sollen gleich viel Geld haben.",
+          "3": "Jeder Mensch darf seine Meinung sagen.",
+          "4": "Alle sind vor dem Gesetz gleich."
+        }
+      },
+      "9": {
+        "question": "Welches Grundrecht gilt in Deutschland nur für Ausländer / Ausländerinnen? Das Grundrecht auf …",
+        "answers": {
+          "1": "Schutz der Familie",
+          "2": "Menschenwürde",
+          "3": "Asyl",
+          "4": "Meinungsfreiheit"
+        }
+      },
+      "10": {
+        "question": "Was ist mit dem deutschen Grundgesetz vereinbar?",
+        "answers": {
+          "1": "die Prügelstrafe",
+          "2": "die Folter",
+          "3": "die Todesstrafe",
+          "4": "die Geldstrafe"
+        }
+      },
+      "11": {
+        "question": "Wie wird die Verfassung der Bundesrepublik Deutschland genannt?",
+        "answers": {
+          "1": "Grundgesetz",
+          "2": "Bundesverfassung",
+          "3": "Gesetzbuch",
+          "4": "Verfassungsvertrag"
+        }
+      },
+      "12": {
+        "question": "Eine Partei im Deutschen Bundestag will die Pressefreiheit abschaffen. Ist das möglich?",
+        "answers": {
+          "1": "Ja, wenn mehr als die Hälfte der Abgeordneten im Bundestag dafür sind.",
+          "2": "Ja, aber dazu müssen zwei Drittel der Abgeordneten im Bundestag dafür sein.",
+          "3": "Nein, denn die Pressefreiheit ist ein Grundrecht. Sie kann nicht abgeschafft werden.",
+          "4": "Nein, denn nur der Bundesrat kann die Pressefreiheit abschaffen."
+        }
+      },
+      "13": {
+        "question": "Im Parlament steht der Begriff „Opposition“ für…",
+        "answers": {
+          "1": "die regierenden Parteien.",
+          "2": "alle Abgeordneten, die nicht zu der Regierungspartei/den Regierungsparteien gehören.",
+          "3": "die Fraktion mit den meisten Abgeordneten.",
+          "4": "alle Parteien, die bei der letzten Wahl die 5%-Hürde erreichen konnten."
+        }
+      },
+      "14": {
+        "question": "Meinungsfreiheit in Deutschland heißt, dass ich …",
+        "answers": {
+          "1": "Passanten auf der Straße beschimpfen darf.",
+          "2": "meine Meinung in Leserbriefen äußern kann.",
+          "3": "Nazi-Symbole tragen darf.",
+          "4": "meine Meinung sagen darf, solange ich der Regierung nicht widerspreche."
+        }
+      },
+      "15": {
+        "question": "Was verbietet das deutsche Grundgesetz?",
+        "answers": {
+          "1": "Militärdienst",
+          "2": "Zwangsarbeit",
+          "3": "freie Berufswahl",
+          "4": "Arbeit im Ausland"
+        }
+      }
     }
   },
   "review-states-tests": {

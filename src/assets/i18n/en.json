@@ -11,11 +11,150 @@
   },
   "home": {
     "menu": {
-      "btn-review-all-tests": "Review All Tests",
+      "btn-review-deutschland-tests": "Review Germany's Tests",
       "btn-review-states-tests": "Review State Tests",
       "btn-all-tests-demo-exam": "All Tests Demo Exam",
       "btn-take-demo-test": "Take a Demo Test",
       "btn-about-me": "About Me"
+    }
+  },
+  "review-deutschland-tests": {
+    "tests": {
+      "1": {
+        "question": "In Germany, people are allowed to openly express their opinions against the government because …",
+        "answers": {
+          "1": "here religious freedom applies.",
+          "2": "people pay taxes.",
+          "3": "people have the right to vote.",
+          "4": "freedom of speech applies here."
+        }
+      },
+      "2": {
+        "question": "In Germany, parents can decide until the age of 14 whether their child participates in school in …",
+        "answers": {
+          "1": "history class.",
+          "2": "religious education.",
+          "3": "political education.",
+          "4": "language education."
+        }
+      },
+      "3": {
+        "question": "Germany is a constitutional state. What does that mean?",
+        "answers": {
+          "1": "All residents and the state must adhere to the laws.",
+          "2": "The state does not have to adhere to the laws.",
+          "3": "Only Germans must follow the laws.",
+          "4": "The courts make the laws."
+        }
+      },
+      "4": {
+        "question": "Which right belongs to the fundamental rights in Germany?",
+        "answers": {
+          "1": "Right to bear arms.",
+          "2": "Vigilante justice.",
+          "3": "Freedom of speech.",
+          "4": "Right to self-justice."
+        }
+      },
+      "5": {
+        "question": "Elections in Germany are free. What does that mean?",
+        "answers": {
+          "1": "One can accept money in exchange for voting for a specific candidate.",
+          "2": "Voters must not be influenced or forced to vote in a certain way and should not suffer disadvantages from their vote.",
+          "3": "Only individuals who have never been in prison can vote.",
+          "4": "All eligible voters must vote."
+        }
+      },
+      "6": {
+        "question": "What is the name of the German constitution?",
+        "answers": {
+          "1": "People's Law.",
+          "2": "Federal Law.",
+          "3": "German Law.",
+          "4": "Basic Law."
+        }
+      },
+      "7": {
+        "question": "Which right, guaranteed by the German constitution, belongs to fundamental rights? The right to …",
+        "answers": {
+          "1": "Freedom of belief and conscience.",
+          "2": "Entertainment.",
+          "3": "Work.",
+          "4": "Housing."
+        }
+      },
+      "8": {
+        "question": "What is not mentioned in the Basic Law of Germany?",
+        "answers": {
+          "1": "The dignity of the individual is inviolable.",
+          "2": "Everyone should have the same amount of money.",
+          "3": "Everyone has the right to express their opinion.",
+          "4": "All are equal before the law."
+        }
+      },
+      "9": {
+        "question": "Which fundamental right in Germany applies only to foreigners? The right to …",
+        "answers": {
+          "1": "Family protection.",
+          "2": "Human dignity.",
+          "3": "Asylum.",
+          "4": "Freedom of speech."
+        }
+      },
+      "10": {
+        "question": "What is compatible with the German Basic Law?",
+        "answers": {
+          "1": "Corporal punishment.",
+          "2": "Torture.",
+          "3": "Death penalty.",
+          "4": "Monetary fine."
+        }
+      },
+      "11": {
+        "question": "What is the name of the constitution of the Federal Republic of Germany?",
+        "answers": {
+          "1": "Basic Law.",
+          "2": "Federal Constitution.",
+          "3": "Legal Code.",
+          "4": "Constitutional Treaty."
+        }
+      },
+      "12": {
+        "question": "Can a party in the German Bundestag abolish freedom of the press?",
+        "answers": {
+          "1": "Yes, if more than half of the members of the Bundestag are in favor.",
+          "2": "Yes, but two-thirds of the members of the Bundestag must be in favor.",
+          "3": "No, because freedom of the press is a fundamental right. It cannot be abolished.",
+          "4": "No, only the Bundesrat can abolish freedom of the press."
+        }
+      },
+      "13": {
+        "question": "In parliament, the term 'Opposition' stands for …",
+        "answers": {
+          "1": "the ruling parties.",
+          "2": "all members who do not belong to the government party/parties.",
+          "3": "the faction with the most members.",
+          "4": "all parties that reached the 5% threshold in the last election."
+        }
+      },
+      "14": {
+        "question": "Freedom of speech in Germany means that I can …",
+        "answers": {
+          "1": "insult passersby on the street.",
+          "2": "express my opinions in letters to the editor.",
+          "3": "wear Nazi symbols.",
+          "4": "express my opinions as long as I do not contradict the government."
+        }
+      },
+      "15": {
+        "question": "What does the German Basic Law prohibit?",
+        "answers": {
+          "1": "Military service.",
+          "2": "Forced labor.",
+          "3": "free choice of profession.",
+          "4": "working abroad."
+        }
+      }
     }
   },
   "review-states-tests": {

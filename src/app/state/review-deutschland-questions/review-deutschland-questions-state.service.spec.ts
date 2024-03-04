@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ReviewAllQuestionsStateService } from './review-all-questions-state.service';
+import { ReviewDeutschlandQuestionsStateService } from './review-deutschland-questions-state.service';
 
 describe('ReviewAllQuestionsStateService', () => {
-  let service: ReviewAllQuestionsStateService;
+  let service: ReviewDeutschlandQuestionsStateService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ReviewAllQuestionsStateService);
+    service = TestBed.inject(ReviewDeutschlandQuestionsStateService);
   });
 
   it('should be created', () => {
