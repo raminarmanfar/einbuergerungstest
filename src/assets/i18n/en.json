@@ -224,10 +224,10 @@
           "1": {
             "question": "What coat of arms belongs to the state of Berlin?",
             "answers": {
-              "1": "1",
-              "2": "2",
-              "3": "3",
-              "4": "4"
+              "1": "Picture 1",
+              "2": "Picture 2",
+              "3": "Picture 3",
+              "4": "Picture 4"
             }
           },
           "2": {
@@ -320,10 +320,10 @@
           "1": {
             "question": "Which coat of arms belongs to the state of Brandenburg?",
             "answers": {
-              "1": "1",
-              "2": "2",
-              "3": "3",
-              "4": "4"
+              "1": "Picture 1",
+              "2": "Picture 2",
+              "3": "Picture 3",
+              "4": "Picture 4"
             }
           },
           "2": {
@@ -416,10 +416,10 @@
           "1": {
             "question": "What is the coat of arms of the Free Hanseatic City of Bremen?",
             "answers": {
-              "1": "1",
-              "2": "2",
-              "3": "3",
-              "4": "4"
+              "1": "Picture 1",
+              "2": "Picture 2",
+              "3": "Picture 3",
+              "4": "Picture 4"
             }
           },
           "2": {
@@ -512,10 +512,10 @@
           "1": {
             "question": "Which coat of arms belongs to the Free and Hanseatic City of Hamburg?",
             "answers": {
-              "1": "1",
-              "2": "2",
-              "3": "3",
-              "4": "4"
+              "1": "Picture 1",
+              "2": "Picture 2",
+              "3": "Picture 3",
+              "4": "Picture 4"
             }
           },
           "2": {
@@ -601,17 +601,17 @@
           }
         }
       },
-      "hesse": {
+      "hessen": {
         "state": "Hesse",
         "capital": "Wiesbaden",
         "tests": {
           "1": {
             "question": "Which coat of arms belongs to the state of Hesse?",
             "answers": {
-              "1": "1",
-              "2": "2",
-              "3": "3",
-              "4": "4"
+              "1": "Picture 1",
+              "2": "Picture 2",
+              "3": "Picture 3",
+              "4": "Picture 4"
             }
           },
           "2": {
@@ -697,50 +697,869 @@
           }
         }
       },
-      "lower-saxony": {
-        "state": "Lower Saxony",
-        "capital": "Hanover",
-        "tests": {}
-      },
       "mecklenburg-vorpommern": {
         "state": "Mecklenburg-Vorpommern",
         "capital": "Schwerin",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Which coat of arms belongs to the state of Mecklenburg-Vorpommern?",
+            "answers": {
+              "1": "Picture 1",
+              "2": "Picture 2",
+              "3": "Picture 3",
+              "4": "Picture 4"
+            }
+          },
+          "2": {
+            "question": "Which is a district in Mecklenburg-Vorpommern?",
+            "answers": {
+              "1": "Prignitz",
+              "2": "Mecklenburgische Seenplatte",
+              "3": "Vogtlandkreis",
+              "4": "Rhein-Sieg-Kreis"
+            }
+          },
+          "3": {
+            "question": "For how many years is the state parliament in Mecklenburg-Vorpommern elected?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "From what age can one vote in local elections in Mecklenburg-Vorpommern?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "What are the colors of the state flag of Mecklenburg-Vorpommern?",
+            "answers": {
+              "1": "black-red-gold",
+              "2": "blue-white-yellow-red",
+              "3": "green-white-red",
+              "4": "black-yellow"
+            }
+          },
+          "6": {
+            "question": "Where can you get information about political issues in Mecklenburg-Vorpommern?",
+            "answers": {
+              "1": "at the State Center for Political Education",
+              "2": "at the churches",
+              "3": "at the local government's office",
+              "4": "at the Consumer Protection Center"
+            }
+          },
+          "7": {
+            "question": "The capital of Mecklenburg-Vorpommern is...",
+            "answers": {
+              "1": "Greifswald",
+              "2": "Schwerin",
+              "3": "Rostock",
+              "4": "Wismar"
+            }
+          },
+          "8": {
+            "question": "Which state is Mecklenburg-Vorpommern?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "What is the title of the head of government in Mecklenburg-Vorpommern?",
+            "answers": {
+              "1": "First Minister",
+              "2": "Prime Minister",
+              "3": "Mayor",
+              "4": "Minister President"
+            }
+          },
+          "10": {
+            "question": "Which minister does Mecklenburg-Vorpommern not have?",
+            "answers": {
+              "1": "Justice Minister",
+              "2": "Foreign Minister",
+              "3": "Finance Minister",
+              "4": "Interior Minister"
+            }
+          }
+        }
+      },
+      "niedersachsen": {
+        "state": "Lower Saxony",
+        "capital": "Hanover",
+        "tests": {
+          "1": {
+            "question": "Which coat of arms belongs to the federal state of Lower Saxony?",
+            "answers": {
+              "1": "Picture 1",
+              "2": "Picture 2",
+              "3": "Picture 3",
+              "4": "Picture 4"
+            }
+          },
+          "2": {
+            "question": "Which is a district in Lower Saxony?",
+            "answers": {
+              "1": "Ammerland",
+              "2": "Rhein-Sieg-Kreis",
+              "3": "Nordfriesland",
+              "4": "Vogtlandkreis"
+            }
+          },
+          "3": {
+            "question": "For how many years is the Lower Saxony state parliament elected?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "From what age is one allowed to vote in municipal elections in Lower Saxony?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "What are the colors of the flag of Lower Saxony?",
+            "answers": {
+              "1": "white-blue",
+              "2": "black-red-gold",
+              "3": "black-yellow",
+              "4": "blue-white-red"
+            }
+          },
+          "6": {
+            "question": "Where can you get information on political issues in Lower Saxony?",
+            "answers": {
+              "1": "at the State Center for Political Education",
+              "2": "at the local government office",
+              "3": "at the consumer center",
+              "4": "at the churches"
+            }
+          },
+          "7": {
+            "question": "The capital of Lower Saxony is called …",
+            "answers": {
+              "1": "Hanover.",
+              "2": "Braunschweig.",
+              "3": "Wolfsburg.",
+              "4": "Osnabrück."
+            }
+          },
+          "8": {
+            "question": "Which federal state is Lower Saxony?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "What is the name of the head of government in Lower Saxony?",
+            "answers": {
+              "1": "First Minister",
+              "2": "Prime Minister",
+              "3": "Mayor",
+              "4": "Minister-President"
+            }
+          },
+          "10": {
+            "question": "Which minister does Lower Saxony not have?",
+            "answers": {
+              "1": "Minister of Justice",
+              "2": "Foreign Minister",
+              "3": "Finance Minister",
+              "4": "Interior Minister"
+            }
+          }
+        }
       },
       "north-rhine-westphalia": {
         "state": "North Rhine-Westphalia",
         "capital": "Dusseldorf",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Which coat of arms belongs to the state of North Rhine-Westphalia?",
+            "answers": {
+              "1": "Picture 1",
+              "2": "Picture 2",
+              "3": "Picture 3",
+              "4": "Picture 4"
+            }
+          },
+          "2": {
+            "question": "Which is a district in North Rhine-Westphalia?",
+            "answers": {
+              "1": "Ammerland",
+              "2": "Rhein-Sieg-Kreis",
+              "3": "Nordfriesland",
+              "4": "Vogtlandkreis"
+            }
+          },
+          "3": {
+            "question": "For how many years is the parliament in North Rhine-Westphalia elected?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "From what age can one vote in local elections in North Rhine-Westphalia?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "What are the colors of the state flag of North Rhine-Westphalia?",
+            "answers": {
+              "1": "red-white",
+              "2": "green-white-red",
+              "3": "black-gold",
+              "4": "blue-white-red"
+            }
+          },
+          "6": {
+            "question": "Where can you get information on political topics in North Rhine-Westphalia?",
+            "answers": {
+              "1": "at the churches",
+              "2": "at the local ordinance office",
+              "3": "at the consumer center",
+              "4": "at the state center for political education"
+            }
+          },
+          "7": {
+            "question": "The capital of North Rhine-Westphalia is...",
+            "answers": {
+              "1": "Cologne",
+              "2": "Bonn",
+              "3": "Dusseldorf",
+              "4": "Dortmund"
+            }
+          },
+          "8": {
+            "question": "Which federal state is North Rhine-Westphalia?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "What is the name of the head of government in North Rhine-Westphalia?",
+            "answers": {
+              "1": "First Minister",
+              "2": "Prime Minister",
+              "3": "Mayor",
+              "4": "Minister President"
+            }
+          },
+          "10": {
+            "question": "Which minister does North Rhine-Westphalia not have?",
+            "answers": {
+              "1": "Justice Minister",
+              "2": "Foreign Minister",
+              "3": "Finance Minister",
+              "4": "Interior Minister"
+            }
+          }
+        }
       },
       "rhineland-palatinate": {
         "state": "Rhineland-Palatinate",
         "capital": "Mainz",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Which coat of arms belongs to the state of Rhineland-Palatinate?",
+            "answers": {
+              "1": "Picture 1",
+              "2": "Picture 2",
+              "3": "Picture 3",
+              "4": "Picture 4"
+            }
+          },
+          "2": {
+            "question": "Which is a district in Rhineland-Palatinate?",
+            "answers": {
+              "1": "Westerwaldkreis",
+              "2": "Altötting",
+              "3": "Emsland",
+              "4": "Prignitz"
+            }
+          },
+          "3": {
+            "question": "For how many years is the state parliament in Rhineland-Palatinate elected?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "From what age can one vote in municipal elections in Rhineland-Palatinate?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "What are the colors of the state flag of Rhineland-Palatinate?",
+            "answers": {
+              "1": "white-red",
+              "2": "black-red-gold",
+              "3": "black-yellow",
+              "4": "green-white-red"
+            }
+          },
+          "6": {
+            "question": "Where can you get information on political issues in Rhineland-Palatinate?",
+            "answers": {
+              "1": "at the churches",
+              "2": "at the consumer advice center",
+              "3": "at the local regulatory office",
+              "4": "at the state center for political education"
+            }
+          },
+          "7": {
+            "question": "The capital of Rhineland-Palatinate is...",
+            "answers": {
+              "1": "Mainz",
+              "2": "Kaiserslautern",
+              "3": "Ludwigshafen",
+              "4": "Koblenz"
+            }
+          },
+          "8": {
+            "question": "Which federal state is Rhineland-Palatinate?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "What is the title of the head of government in Rhineland-Palatinate?",
+            "answers": {
+              "1": "First Minister",
+              "2": "Prime Minister",
+              "3": "Mayor",
+              "4": "Minister-President"
+            }
+          },
+          "10": {
+            "question": "Which minister does Rhineland-Palatinate not have?",
+            "answers": {
+              "1": "Minister of Justice",
+              "2": "Foreign Minister",
+              "3": "Finance Minister",
+              "4": "Interior Minister"
+            }
+          }
+        }
       },
       "saarland": {
         "state": "Saarland",
         "capital": "Saarbrücken",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Which coat of arms belongs to the state of Saarland?",
+            "answers": {
+              "1": "Picture 1",
+              "2": "Picture 2",
+              "3": "Picture 3",
+              "4": "Picture 4"
+            }
+          },
+          "2": {
+            "question": "Which is a district in Saarland?",
+            "answers": {
+              "1": "Mecklenburgische Seenplatte",
+              "2": "Altötting",
+              "3": "Rhein-Sieg-Kreis",
+              "4": "Neunkirchen"
+            }
+          },
+          "3": {
+            "question": "For how many years is the Saarland state parliament elected?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "From what age can one vote in local elections in Saarland?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "What colors does the flag of Saarland have?",
+            "answers": {
+              "1": "white-blue",
+              "2": "black-red-gold",
+              "3": "black-yellow",
+              "4": "green-white-red"
+            }
+          },
+          "6": {
+            "question": "Where can you inform yourself about political topics in Saarland?",
+            "answers": {
+              "1": "at the churches",
+              "2": "at the State Center for Political Education",
+              "3": "at the Consumer Center",
+              "4": "at the municipal regulatory office"
+            }
+          },
+          "7": {
+            "question": "The capital of Saarland is called...",
+            "answers": {
+              "1": "Neunkirchen.",
+              "2": "Homburg.",
+              "3": "Saarbrücken.",
+              "4": "Völklingen."
+            }
+          },
+          "8": {
+            "question": "Which federal state is Saarland?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "What is the name of the head of government in Saarland?",
+            "answers": {
+              "1": "First Minister",
+              "2": "Prime Minister",
+              "3": "Mayor",
+              "4": "Minister President"
+            }
+          },
+          "10": {
+            "question": "Which minister does Saarland not have?",
+            "answers": {
+              "1": "Justice Minister",
+              "2": "Foreign Minister",
+              "3": "Finance Minister",
+              "4": "Interior Minister"
+            }
+          }
+        }
       },
       "saxony": {
         "state": "Saxony",
         "capital": "Dresden",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Which coat of arms belongs to the Free State of Saxony?",
+            "answers": {
+              "1": "Picture 1",
+              "2": "Picture 2",
+              "3": "Picture 3",
+              "4": "Picture 4"
+            }
+          },
+          "2": {
+            "question": "Which is a district in Saxony?",
+            "answers": {
+              "1": "Vogtlandkreis",
+              "2": "Altötting",
+              "3": "Uckermark",
+              "4": "Nordfriesland"
+            }
+          },
+          "3": {
+            "question": "For how many years is the State Parliament in Saxony elected?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "From what age can one vote in local elections in Saxony?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "What are the colors of the state flag of Saxony?",
+            "answers": {
+              "1": "blue-white-red",
+              "2": "white-green",
+              "3": "green-white-red",
+              "4": "black-yellow"
+            }
+          },
+          "6": {
+            "question": "Where can you get information on political topics in Saxony?",
+            "answers": {
+              "1": "at the State Center for Political Education",
+              "2": "at the Municipal Regulatory Office",
+              "3": "at the churches",
+              "4": "at the Consumer Center"
+            }
+          },
+          "7": {
+            "question": "The capital of Saxony is called...",
+            "answers": {
+              "1": "Leipzig.",
+              "2": "Dresden.",
+              "3": "Chemnitz.",
+              "4": "Zwickau."
+            }
+          },
+          "8": {
+            "question": "Which federal state is Saxony?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "What is the name of the head of government in Saxony?",
+            "answers": {
+              "1": "First Minister",
+              "2": "Prime Minister",
+              "3": "Mayor",
+              "4": "Minister President"
+            }
+          },
+          "10": {
+            "question": "Which minister does Saxony not have?",
+            "answers": {
+              "1": "Minister of Justice",
+              "2": "Foreign Minister",
+              "3": "Finance Minister",
+              "4": "Interior Minister"
+            }
+          }
+        }
       },
       "saxony-anhalt": {
         "state": "Saxony-Anhalt",
         "capital": "Magdeburg",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Which coat of arms belongs to the state of Saxony-Anhalt?",
+            "answers": {
+              "1": "Picture 1",
+              "2": "Picture 2",
+              "3": "Picture 3",
+              "4": "Picture 4"
+            }
+          },
+          "2": {
+            "question": "Which is a district in Saxony-Anhalt?",
+            "answers": {
+              "1": "Ammerland",
+              "2": "Altötting",
+              "3": "Uckermark",
+              "4": "Börde"
+            }
+          },
+          "3": {
+            "question": "For how many years is the state parliament in Saxony-Anhalt elected?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "From what age is one allowed to vote in local elections in Saxony-Anhalt?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "What colors does the state flag of Saxony-Anhalt have?",
+            "answers": {
+              "1": "blue-white-red",
+              "2": "yellow-black",
+              "3": "green-white-red",
+              "4": "white-red"
+            }
+          },
+          "6": {
+            "question": "Where can you get information on political issues in Saxony-Anhalt?",
+            "answers": {
+              "1": "at the churches",
+              "2": "at the State Center for Political Education",
+              "3": "at the municipal regulatory office",
+              "4": "at the Consumer Protection Center"
+            }
+          },
+          "7": {
+            "question": "The capital city of Saxony-Anhalt is called...",
+            "answers": {
+              "1": "Halle",
+              "2": "Dessau",
+              "3": "Magdeburg",
+              "4": "Wittenberg"
+            }
+          },
+          "8": {
+            "question": "Which federal state is Saxony-Anhalt?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "What is the title of the head of government in Saxony-Anhalt?",
+            "answers": {
+              "1": "First Minister",
+              "2": "Prime Minister",
+              "3": "Mayor",
+              "4": "Minister-President"
+            }
+          },
+          "10": {
+            "question": "Which minister does Saxony-Anhalt not have?",
+            "answers": {
+              "1": "Minister of Justice",
+              "2": "Foreign Minister",
+              "3": "Finance Minister",
+              "4": "Interior Minister"
+            }
+          }
+        }
       },
       "schleswig-holstein": {
         "state": "Schleswig-Holstein",
         "capital": "Kiel",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Which coat of arms belongs to the federal state of Schleswig-Holstein?",
+            "answers": {
+              "1": "Picture 1",
+              "2": "Picture 2",
+              "3": "Picture 3",
+              "4": "Picture 4"
+            }
+          },
+          "2": {
+            "question": "Which is a district in Schleswig-Holstein?",
+            "answers": {
+              "1": "Ammerland",
+              "2": "Mecklenburg Lake District",
+              "3": "North Frisia",
+              "4": "Rhein-Sieg District"
+            }
+          },
+          "3": {
+            "question": "For how many years is the state parliament in Schleswig-Holstein elected?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "From what age can one vote in local elections in Schleswig-Holstein?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "What are the colors of the state flag of Schleswig-Holstein?",
+            "answers": {
+              "1": "white-blue",
+              "2": "blue-white-red",
+              "3": "white-red",
+              "4": "green-white-red"
+            }
+          },
+          "6": {
+            "question": "Where can you get information on political issues in Schleswig-Holstein?",
+            "answers": {
+              "1": "at the Consumer Center",
+              "2": "at the municipal regulatory office",
+              "3": "at the State Commissioner for Political Education",
+              "4": "at the churches"
+            }
+          },
+          "7": {
+            "question": "The capital of Schleswig-Holstein is...",
+            "answers": {
+              "1": "Husum",
+              "2": "Flensburg",
+              "3": "Lübeck",
+              "4": "Kiel"
+            }
+          },
+          "8": {
+            "question": "Which federal state is Schleswig-Holstein?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "What is the title for the head of government in Schleswig-Holstein?",
+            "answers": {
+              "1": "First Minister",
+              "2": "Prime Minister",
+              "3": "Mayor",
+              "4": "Minister President"
+            }
+          },
+          "10": {
+            "question": "Which ministry is not present in Schleswig-Holstein?",
+            "answers": {
+              "1": "Ministry of Justice",
+              "2": "Foreign Ministry",
+              "3": "Ministry of Finance",
+              "4": "Ministry of the Interior"
+            }
+          }
+        }
       },
       "thuringia": {
         "state": "Thuringia",
         "capital": "Erfurt",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Which coat of arms belongs to the Free State of Thuringia?",
+            "answers": {
+              "1": "Picture 1",
+              "2": "Picture 2",
+              "3": "Picture 3",
+              "4": "Picture 4"
+            }
+          },
+          "2": {
+            "question": "Which is a district in Thuringia?",
+            "answers": {
+              "1": "Ammerland",
+              "2": "Altötting",
+              "3": "Nordfriesland",
+              "4": "Wartburgkreis"
+            }
+          },
+          "3": {
+            "question": "For how many years is the State Parliament in Thuringia elected?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "From what age can one vote in Thuringia's municipal elections?",
+            "answers": {
+              "1": "14",
+              "2": "18",
+              "3": "16",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "What colors does the state flag of Thuringia have?",
+            "answers": {
+              "1": "blue-white-red",
+              "2": "white-red",
+              "3": "green-white-red",
+              "4": "black-gold"
+            }
+          },
+          "6": {
+            "question": "Where can you inform yourself about political topics in Thuringia?",
+            "answers": {
+              "1": "at the churches",
+              "2": "at the Consumer Center",
+              "3": "at the State Center for Political Education",
+              "4": "at the Municipal Order Office"
+            }
+          },
+          "7": {
+            "question": "The capital of Thuringia is called …",
+            "answers": {
+              "1": "Eisenach",
+              "2": "Erfurt",
+              "3": "Gera",
+              "4": "Jena"
+            }
+          },
+          "8": {
+            "question": "Which federal state is Thuringia?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "What is the title for the head of the government in Thuringia?",
+            "answers": {
+              "1": "First Minister",
+              "2": "Premier Minister",
+              "3": "Mayor",
+              "4": "Minister President"
+            }
+          },
+          "10": {
+            "question": "Which minister does Thuringia not have?",
+            "answers": {
+              "1": "Justice Minister",
+              "2": "Foreign Minister",
+              "3": "Finance Minister",
+              "4": "Interior Minister"
+            }
+          }
+        }
       }
     }
   }

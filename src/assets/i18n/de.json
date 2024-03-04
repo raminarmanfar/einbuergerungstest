@@ -224,10 +224,10 @@
           "1": {
             "question": "Welches Wappen gehört zum Bundesland Berlin?",
             "answers": {
-              "1": "1",
-              "2": "2",
-              "3": "3",
-              "4": "4"
+              "1": "Bild 1",
+              "2": "Bild 2",
+              "3": "Bild 3",
+              "4": "Bild 4"
             }
           },
           "2": {
@@ -320,10 +320,10 @@
           "1": {
             "question": "Welches Wappen gehört zum Bundesland Brandenburg?",
             "answers": {
-              "1": "1",
-              "2": "2",
-              "3": "3",
-              "4": "4"
+              "1": "Bild 1",
+              "2": "Bild 2",
+              "3": "Bild 3",
+              "4": "Bild 4"
             }
           },
           "2": {
@@ -416,10 +416,10 @@
           "1": {
             "question": "Welches Wappen gehört zur Freien Hansestadt Bremen?",
             "answers": {
-              "1": "1",
-              "2": "2",
-              "3": "3",
-              "4": "4"
+              "1": "Bild 1",
+              "2": "Bild 2",
+              "3": "Bild 3",
+              "4": "Bild 4"
             }
           },
           "2": {
@@ -512,10 +512,10 @@
           "1": {
             "question": "Welches Wappen gehört zur Freien und Hansestadt Hamburg?",
             "answers": {
-              "1": "1",
-              "2": "2",
-              "3": "3",
-              "4": "4"
+              "1": "Bild 1",
+              "2": "Bild 2",
+              "3": "Bild 3",
+              "4": "Bild 4"
             }
           },
           "2": {
@@ -601,17 +601,17 @@
           }
         }
       },
-      "hesse": {
+      "hessen": {
         "state": "Hessen",
         "capital": "Wiesbaden",
         "tests": {
           "1": {
             "question": "Welches Wappen gehört zum Bundesland Hessen?",
             "answers": {
-              "1": "1",
-              "2": "2",
-              "3": "3",
-              "4": "4"
+              "1": "Bild 1",
+              "2": "Bild 2",
+              "3": "Bild 3",
+              "4": "Bild 4"
             }
           },
           "2": {
@@ -697,50 +697,869 @@
           }
         }
       },
-      "lower-saxony": {
-        "state": "Niedersachsen",
-        "capital": "Hannover",
-        "tests": {}
-      },
       "mecklenburg-vorpommern": {
         "state": "Mecklenburg-Vorpommern",
         "capital": "Schwerin",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Welches Wappen gehört zum Bundesland Mecklenburg-Vorpommern?",
+            "answers": {
+              "1": "Bild 1",
+              "2": "Bild 2",
+              "3": "Bild 3",
+              "4": "Bild 4"
+            }
+          },
+          "2": {
+            "question": "Welches ist ein Landkreis in Mecklenburg-Vorpommern?",
+            "answers": {
+              "1": "Prignitz",
+              "2": "Mecklenburgische Seenplatte",
+              "3": "Vogtlandkreis",
+              "4": "Rhein-Sieg-Kreis"
+            }
+          },
+          "3": {
+            "question": "Für wie viele Jahre wird der Landtag in Mecklenburg-Vorpommern gewählt?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Ab welchem Alter darf man in Mecklenburg-Vorpommern bei Kommunalwahlen wählen?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Welche Farben hat die Landesflagge von Mecklenburg-Vorpommern?",
+            "answers": {
+              "1": "schwarz-rot-gold",
+              "2": "blau-weiß-gelb-rot",
+              "3": "grün-weiß-rot",
+              "4": "schwarz-gelb"
+            }
+          },
+          "6": {
+            "question": "Wo können Sie sich in Mecklenburg-Vorpommern über politische Themen informieren?",
+            "answers": {
+              "1": "bei der Landeszentrale für politische Bildung",
+              "2": "bei den Kirchen",
+              "3": "beim Ordnungsamt der Gemeinde",
+              "4": "bei der Verbraucherzentrale"
+            }
+          },
+          "7": {
+            "question": "Die Landeshauptstadt von Mecklenburg-Vorpommern heißt ...",
+            "answers": {
+              "1": "Greifswald",
+              "2": "Schwerin",
+              "3": "Rostock",
+              "4": "Wismar"
+            }
+          },
+          "8": {
+            "question": "Welches Bundesland ist Mecklenburg-Vorpommern?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Wie nennt man den Regierungschef / die Regierungschefin in Mecklenburg-Vorpommern?",
+            "answers": {
+              "1": "Erster Minister / Erste Ministerin",
+              "2": "Premierminister / Premierministerin",
+              "3": "Bürgermeister / Bürgermeisterin",
+              "4": "Ministerpräsident / Ministerpräsidentin"
+            }
+          },
+          "10": {
+            "question": "Welchen Minister / welche Ministerin hat Mecklenburg-Vorpommern nicht?",
+            "answers": {
+              "1": "Justizminister / Justizministerin",
+              "2": "Außenminister / Außenministerin",
+              "3": "Finanzminister / Finanzministerin",
+              "4": "Innenminister / Innenministerin"
+            }
+          }
+        }
+      },
+      "niedersachsen": {
+        "state": "Niedersachsen",
+        "capital": "Hannover",
+        "tests": {
+          "1": {
+            "question": "Welches Wappen gehört zum Bundesland Niedersachsen?",
+            "answers": {
+              "1": "Bild 1",
+              "2": "Bild 2",
+              "3": "Bild 3",
+              "4": "Bild 4"
+            }
+          },
+          "2": {
+            "question": "Welches ist ein Landkreis in Niedersachsen?",
+            "answers": {
+              "1": "Ammerland",
+              "2": "Rhein-Sieg-Kreis",
+              "3": "Nordfriesland",
+              "4": "Vogtlandkreis"
+            }
+          },
+          "3": {
+            "question": "Für wie viele Jahre wird der Landtag in Niedersachsen gewählt?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Ab welchem Alter darf man in Niedersachsen bei Kommunalwahlen wählen?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Welche Farben hat die Landesflagge von Niedersachsen?",
+            "answers": {
+              "1": "weiß-blau",
+              "2": "schwarz-rot-gold",
+              "3": "schwarz-gelb",
+              "4": "blau-weiß-rot"
+            }
+          },
+          "6": {
+            "question": "Wo können Sie sich in Niedersachsen über politische Themen informieren?",
+            "answers": {
+              "1": "bei der Landeszentrale für politische Bildung",
+              "2": "beim Ordnungsamt der Gemeinde",
+              "3": "bei der Verbraucherzentrale",
+              "4": "bei den Kirchen"
+            }
+          },
+          "7": {
+            "question": "Die Landeshauptstadt von Niedersachsen heißt …",
+            "answers": {
+              "1": "Hannover.",
+              "2": "Braunschweig.",
+              "3": "Wolfsburg.",
+              "4": "Osnabrück."
+            }
+          },
+          "8": {
+            "question": "Welches Bundesland ist Niedersachsen?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Wie nennt man den Regierungschef / die Regierungschefin in Niedersachsen?",
+            "answers": {
+              "1": "Erster Minister / Erste Ministerin",
+              "2": "Premierminister / Premierministerin",
+              "3": "Bürgermeister / Bürgermeisterin",
+              "4": "Ministerpräsident / Ministerpräsidentin"
+            }
+          },
+          "10": {
+            "question": "Welchen Minister / welche Ministerin hat Niedersachsen nicht?",
+            "answers": {
+              "1": "Justizminister / Justizministerin",
+              "2": "Außenminister / Außenministerin",
+              "3": "Finanzminister / Finanzministerin",
+              "4": "Innenminister / Innenministerin"
+            }
+          }
+        }
       },
       "north-rhine-westphalia": {
         "state": "Nordrhein-Westfalen",
         "capital": "Düsseldorf",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Welches Wappen gehört zum Bundesland Nordrhein-Westfalen?",
+            "answers": {
+              "1": "Bild 1",
+              "2": "Bild 2",
+              "3": "Bild 3",
+              "4": "Bild 4"
+            }
+          },
+          "2": {
+            "question": "Welches ist ein Landkreis in Nordrhein-Westfalen?",
+            "answers": {
+              "1": "Ammerland",
+              "2": "Rhein-Sieg-Kreis",
+              "3": "Nordfriesland",
+              "4": "Vogtlandkreis"
+            }
+          },
+          "3": {
+            "question": "Für wie viele Jahre wird der Landtag in Nordrhein-Westfalen gewählt?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Ab welchem Alter darf man in Nordrhein-Westfalen bei Kommunalwahlen wählen?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Welche Farben hat die Landesflagge von Nordrhein-Westfalen?",
+            "answers": {
+              "1": "rot-weiß",
+              "2": "grün-weiß-rot",
+              "3": "schwarz-gold",
+              "4": "blau-weiß-rot"
+            }
+          },
+          "6": {
+            "question": "Wo können Sie sich in Nordrhein-Westfalen über politische Themen informieren?",
+            "answers": {
+              "1": "bei den Kirchen",
+              "2": "beim Ordnungsamt der Gemeinde",
+              "3": "bei der Verbraucherzentrale",
+              "4": "bei der Landeszentrale für politische Bildung"
+            }
+          },
+          "7": {
+            "question": "Die Landeshauptstadt von Nordrhein-Westfalen heißt …",
+            "answers": {
+              "1": "Köln",
+              "2": "Bonn",
+              "3": "Düsseldorf",
+              "4": "Dortmund"
+            }
+          },
+          "8": {
+            "question": "Welches Bundesland ist Nordrhein-Westfalen?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Wie nennt man den Regierungschef / die Regierungschefin in Nordrhein-Westfalen?",
+            "answers": {
+              "1": "Erster Minister / Erste Ministerin",
+              "2": "Premierminister / Premierministerin",
+              "3": "Bürgermeister / Bürgermeisterin",
+              "4": "Ministerpräsident / Ministerpräsidentin"
+            }
+          },
+          "10": {
+            "question": "Welchen Minister / welche Ministerin hat Nordrhein-Westfalen nicht?",
+            "answers": {
+              "1": "Justizminister / Justizministerin",
+              "2": "Außenminister / Außenministerin",
+              "3": "Finanzminister / Finanzministerin",
+              "4": "Innenminister / Innenministerin"
+            }
+          }
+        }
       },
       "rhineland-palatinate": {
         "state": "Rheinland-Pfalz",
         "capital": "Mainz",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Welches Wappen gehört zum Bundesland Rheinland-Pfalz?",
+            "answers": {
+              "1": "Bild 1",
+              "2": "Bild 2",
+              "3": "Bild 3",
+              "4": "Bild 4"
+            }
+          },
+          "2": {
+            "question": "Welches ist ein Landkreis in Rheinland-Pfalz?",
+            "answers": {
+              "1": "Westerwaldkreis",
+              "2": "Altötting",
+              "3": "Emsland",
+              "4": "Prignitz"
+            }
+          },
+          "3": {
+            "question": "Für wie viele Jahre wird der Landtag in Rheinland-Pfalz gewählt?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Ab welchem Alter darf man in Rheinland-Pfalz bei Kommunalwahlen wählen?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Welche Farben hat die Landesflagge von Rheinland-Pfalz?",
+            "answers": {
+              "1": "weiß-rot",
+              "2": "schwarz-rot-gold",
+              "3": "schwarz-gelb",
+              "4": "grün-weiß-rot"
+            }
+          },
+          "6": {
+            "question": "Wo können Sie sich in Rheinland-Pfalz über politische Themen informieren?",
+            "answers": {
+              "1": "bei den Kirchen",
+              "2": "bei der Verbraucherzentrale",
+              "3": "beim Ordnungsamt der Gemeinde",
+              "4": "bei der Landeszentrale für politische Bildung"
+            }
+          },
+          "7": {
+            "question": "Die Landeshauptstadt von Rheinland-Pfalz heißt …",
+            "answers": {
+              "1": "Mainz",
+              "2": "Kaiserslautern",
+              "3": "Ludwigshafen",
+              "4": "Koblenz"
+            }
+          },
+          "8": {
+            "question": "Welches Bundesland ist Rheinland-Pfalz?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Wie nennt man den Regierungschef / die Regierungschefin in Rheinland-Pfalz?",
+            "answers": {
+              "1": "Erster Minister / Erste Ministerin",
+              "2": "Premierminister / Premierministerin",
+              "3": "Bürgermeister / Bürgermeisterin",
+              "4": "Ministerpräsident / Ministerpräsidentin"
+            }
+          },
+          "10": {
+            "question": "Welchen Minister / welche Ministerin hat Rheinland-Pfalz nicht?",
+            "answers": {
+              "1": "Justizminister / Justizministerin",
+              "2": "Außenminister / Außenministerin",
+              "3": "Finanzminister / Finanzministerin",
+              "4": "Innenminister / Innenministerin"
+            }
+          }
+        }
       },
       "saarland": {
         "state": "Saarland",
         "capital": "Saarbrücken",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Welches Wappen gehört zum Bundesland Saarland?",
+            "answers": {
+              "1": "Bild 1",
+              "2": "Bild 2",
+              "3": "Bild 3",
+              "4": "Bild 4"
+            }
+          },
+          "2": {
+            "question": "Welches ist ein Landkreis im Saarland?",
+            "answers": {
+              "1": "Mecklenburgische Seenplatte",
+              "2": "Altötting",
+              "3": "Rhein-Sieg-Kreis",
+              "4": "Neunkirchen"
+            }
+          },
+          "3": {
+            "question": "Für wie viele Jahre wird der Landtag des Saarlandes gewählt?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Ab welchem Alter darf man im Saarland bei Kommunalwahlen wählen?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Welche Farben hat die Landesflagge des Saarlandes?",
+            "answers": {
+              "1": "weiß-blau",
+              "2": "schwarz-rot-gold",
+              "3": "schwarz-gelb",
+              "4": "grün-weiß-rot"
+            }
+          },
+          "6": {
+            "question": "Wo können Sie sich im Saarland über politische Themen informieren?",
+            "answers": {
+              "1": "bei den Kirchen",
+              "2": "bei der Landeszentrale für politische Bildung",
+              "3": "bei der Verbraucherzentrale",
+              "4": "beim Ordnungsamt der Gemeinde"
+            }
+          },
+          "7": {
+            "question": "Die Landeshauptstadt des Saarlandes heißt …",
+            "answers": {
+              "1": "Neunkirchen.",
+              "2": "Homburg.",
+              "3": "Saarbrücken.",
+              "4": "Völklingen."
+            }
+          },
+          "8": {
+            "question": "Welches Bundesland ist das Saarland?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Wie nennt man den Regierungschef / die Regierungschefin des Saarlandes?",
+            "answers": {
+              "1": "Erster Minister / Erste Ministerin",
+              "2": "Premierminister / Premierministerin",
+              "3": "Bürgermeister / Bürgermeisterin",
+              "4": "Ministerpräsident / Ministerpräsidentin"
+            }
+          },
+          "10": {
+            "question": "Welchen Minister / welche Ministerin hat das Saarland nicht?",
+            "answers": {
+              "1": "Justizminister / Justizministerin",
+              "2": "Außenminister / Außenministerin",
+              "3": "Finanzminister / Finanzministerin",
+              "4": "Innenminister / Innenministerin"
+            }
+          }
+        }
       },
       "saxony": {
         "state": "Sachsen",
         "capital": "Dresden",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Welches Wappen gehört zum Freistaat Sachsen?",
+            "answers": {
+              "1": "Bild 1",
+              "2": "Bild 2",
+              "3": "Bild 3",
+              "4": "Bild 4"
+            }
+          },
+          "2": {
+            "question": "Welches ist ein Landkreis in Sachsen?",
+            "answers": {
+              "1": "Vogtlandkreis",
+              "2": "Altötting",
+              "3": "Uckermark",
+              "4": "Nordfriesland"
+            }
+          },
+          "3": {
+            "question": "Für wie viele Jahre wird der Landtag in Sachsen gewählt?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Ab welchem Alter darf man in Sachsen bei Kommunalwahlen wählen?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Welche Farben hat die Landesflagge von Sachsen?",
+            "answers": {
+              "1": "blau-weiß-rot",
+              "2": "weiß-grün",
+              "3": "grün-weiß-rot",
+              "4": "schwarz-gelb"
+            }
+          },
+          "6": {
+            "question": "Wo können Sie sich in Sachsen über politische Themen informieren?",
+            "answers": {
+              "1": "bei der Landeszentrale für politische Bildung",
+              "2": "beim Ordnungsamt der Gemeinde",
+              "3": "bei den Kirchen",
+              "4": "bei der Verbraucherzentrale"
+            }
+          },
+          "7": {
+            "question": "Die Landeshauptstadt von Sachsen heißt …",
+            "answers": {
+              "1": "Leipzig.",
+              "2": "Dresden.",
+              "3": "Chemnitz.",
+              "4": "Zwickau."
+            }
+          },
+          "8": {
+            "question": "Welches Bundesland ist Sachsen?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Wie nennt man den Regierungschef / die Regierungschefin in Sachsen?",
+            "answers": {
+              "1": "Erster Minister / Erste Ministerin",
+              "2": "Premierminister / Premierministerin",
+              "3": "Bürgermeister / Bürgermeisterin",
+              "4": "Ministerpräsident / Ministerpräsidentin"
+            }
+          },
+          "10": {
+            "question": "Welchen Minister / welche Ministerin hat Sachsen nicht?",
+            "answers": {
+              "1": "Justizminister / Justizministerin",
+              "2": "Außenminister / Außenministerin",
+              "3": "Finanzminister / Finanzministerin",
+              "4": "Innenminister / Innenministerin"
+            }
+          }
+        }
       },
       "saxony-anhalt": {
         "state": "Sachsen-Anhalt",
         "capital": "Magdeburg",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Welches Wappen gehört zum Bundesland Sachsen-Anhalt?",
+            "answers": {
+              "1": "Bild 1",
+              "2": "Bild 2",
+              "3": "Bild 3",
+              "4": "Bild 4"
+            }
+          },
+          "2": {
+            "question": "Welches ist ein Landkreis in Sachsen-Anhalt?",
+            "answers": {
+              "1": "Ammerland",
+              "2": "Altötting",
+              "3": "Uckermark",
+              "4": "Börde"
+            }
+          },
+          "3": {
+            "question": "Für wie viele Jahre wird der Landtag in Sachsen-Anhalt gewählt?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Ab welchem Alter darf man in Sachsen-Anhalt bei Kommunalwahlen wählen?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Welche Farben hat die Landesflagge von Sachsen-Anhalt?",
+            "answers": {
+              "1": "blau-weiß-rot",
+              "2": "gelb-schwarz",
+              "3": "grün-weiß-rot",
+              "4": "weiß-rot"
+            }
+          },
+          "6": {
+            "question": "Wo können Sie sich in Sachsen-Anhalt über politische Themen informieren?",
+            "answers": {
+              "1": "bei den Kirchen",
+              "2": "bei der Landeszentrale für politische Bildung",
+              "3": "beim Ordnungsamt der Gemeinde",
+              "4": "bei der Verbraucherzentrale"
+            }
+          },
+          "7": {
+            "question": "Die Landeshauptstadt von Sachsen-Anhalt heißt …",
+            "answers": {
+              "1": "Halle",
+              "2": "Dessau",
+              "3": "Magdeburg",
+              "4": "Wittenberg"
+            }
+          },
+          "8": {
+            "question": "Welches Bundesland ist Sachsen-Anhalt?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Wie nennt man den Regierungschef / die Regierungschefin in Sachsen-Anhalt?",
+            "answers": {
+              "1": "Erster Minister / Erste Ministerin",
+              "2": "Premierminister / Premierministerin",
+              "3": "Bürgermeister / Bürgermeisterin",
+              "4": "Ministerpräsident / Ministerpräsidentin"
+            }
+          },
+          "10": {
+            "question": "Welchen Minister / welche Ministerin hat Sachsen-Anhalt nicht?",
+            "answers": {
+              "1": "Justizminister / Justizministerin",
+              "2": "Außenminister / Außenministerin",
+              "3": "Finanzminister / Finanzministerin",
+              "4": "Innenminister / Innenministerin"
+            }
+          }
+        }
       },
       "schleswig-holstein": {
         "state": "Schleswig-Holstein",
         "capital": "Kiel",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Welches Wappen gehört zum Bundesland Schleswig-Holstein?",
+            "answers": {
+              "1": "Bild 1",
+              "2": "Bild 2",
+              "3": "Bild 3",
+              "4": "Bild 4"
+            }
+          },
+          "2": {
+            "question": "Welches ist ein Landkreis in Schleswig-Holstein?",
+            "answers": {
+              "1": "Ammerland",
+              "2": "Mecklenburgische Seenplatte",
+              "3": "Nordfriesland",
+              "4": "Rhein-Sieg-Kreis"
+            }
+          },
+          "3": {
+            "question": "Für wie viele Jahre wird der Landtag in Schleswig-Holstein gewählt?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Ab welchem Alter darf man in Schleswig-Holstein bei Kommunalwahlen wählen?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Welche Farben hat die Landesflagge von Schleswig-Holstein?",
+            "answers": {
+              "1": "weiß-blau",
+              "2": "blau-weiß-rot",
+              "3": "weiß-rot",
+              "4": "grün-weiß-rot"
+            }
+          },
+          "6": {
+            "question": "Wo können Sie sich in Schleswig-Holstein über politische Themen informieren?",
+            "answers": {
+              "1": "bei der Verbraucherzentrale",
+              "2": "beim Ordnungsamt der Gemeinde",
+              "3": "bei dem/der Landesbeauftragten für politische Bildung",
+              "4": "bei den Kirchen"
+            }
+          },
+          "7": {
+            "question": "Die Landeshauptstadt von Schleswig-Holstein heißt …",
+            "answers": {
+              "1": "Husum.",
+              "2": "Flensburg.",
+              "3": "Lübeck.",
+              "4": "Kiel."
+            }
+          },
+          "8": {
+            "question": "Welches Bundesland ist Schleswig-Holstein?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Wie nennt man den Regierungschef / die Regierungschefin in Schleswig-Holstein?",
+            "answers": {
+              "1": "Erster Minister / Erste Ministerin",
+              "2": "Premierminister / Premierministerin",
+              "3": "Bürgermeister / Bürgermeisterin",
+              "4": "Ministerpräsident / Ministerpräsidentin"
+            }
+          },
+          "10": {
+            "question": "Welchen Minister / welche Ministerin hat Schleswig-Holstein nicht?",
+            "answers": {
+              "1": "Justizminister / Justizministerin",
+              "2": "Außenminister / Außenministerin",
+              "3": "Finanzminister / Finanzministerin",
+              "4": "Innenminister / Innenministerin"
+            }
+          }
+        }
       },
       "thuringia": {
         "state": "Thüringen",
         "capital": "Erfurt",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Welches Wappen gehört zum Freistaat Thüringen?",
+            "answers": {
+              "1": "Bild 1",
+              "2": "Bild 2",
+              "3": "Bild 3",
+              "4": "Bild 4"
+            }
+          },
+          "2": {
+            "question": "Welches ist ein Landkreis in Thüringen?",
+            "answers": {
+              "1": "Ammerland",
+              "2": "Altötting",
+              "3": "Nordfriesland",
+              "4": "Wartburgkreis"
+            }
+          },
+          "3": {
+            "question": "Für wie viele Jahre wird der Landtag in Thüringen gewählt?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Ab welchem Alter darf man in Thüringen bei Kommunalwahlen wählen?",
+            "answers": {
+              "1": "14",
+              "2": "18",
+              "3": "16",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Welche Farben hat die Landesflagge von Thüringen?",
+            "answers": {
+              "1": "blau-weiß-rot",
+              "2": "weiß-rot",
+              "3": "grün-weiß-rot",
+              "4": "schwarz-gold"
+            }
+          },
+          "6": {
+            "question": "Wo können Sie sich in Thüringen über politische Themen informieren?",
+            "answers": {
+              "1": "bei den Kirchen",
+              "2": "bei der Verbraucherzentrale",
+              "3": "bei der Landeszentrale für politische Bildung",
+              "4": "beim Ordnungsamt der Gemeinde"
+            }
+          },
+          "7": {
+            "question": "Die Landeshauptstadt von Thüringen heißt …",
+            "answers": {
+              "1": "Eisenach",
+              "2": "Erfurt",
+              "3": "Gera",
+              "4": "Jena"
+            }
+          },
+          "8": {
+            "question": "Welches Bundesland ist Thüringen?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Wie nennt man den Regierungschef / die Regierungschefin in Thüringen?",
+            "answers": {
+              "1": "Erster Minister / Erste Ministerin",
+              "2": "Premierminister / Premierministerin",
+              "3": "Bürgermeister / Bürgermeisterin",
+              "4": "Ministerpräsident / Ministerpräsidentin"
+            }
+          },
+          "10": {
+            "question": "Welchen Minister / welche Ministerin hat Thüringen nicht?",
+            "answers": {
+              "1": "Justizminister / Justizministerin",
+              "2": "Außenminister / Außenministerin",
+              "3": "Finanzminister / Finanzministerin",
+              "4": "Innenminister / Innenministerin"
+            }
+          }
+        }
       }
     }
   }

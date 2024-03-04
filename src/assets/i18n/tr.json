@@ -226,10 +226,10 @@
           "1": {
             "question": "Berlin eyaletinin arması nedir?",
             "answers": {
-              "1": "1",
-              "2": "2",
-              "3": "3",
-              "4": "4"
+              "1": "Resim 1",
+              "2": "Resim 2",
+              "3": "Resim 3",
+              "4": "Resim 4"
             }
           },
           "2": {
@@ -322,10 +322,10 @@
           "1": {
             "question": "Brandenburg eyaletine hangi arma aittir?",
             "answers": {
-              "1": "1",
-              "2": "2",
-              "3": "3",
-              "4": "4"
+              "1": "Resim 1",
+              "2": "Resim 2",
+              "3": "Resim 3",
+              "4": "Resim 4"
             }
           },
           "2": {
@@ -418,10 +418,10 @@
           "1": {
             "question": "Bremen Özgür Hanseatic Şehri arması nedir?",
             "answers": {
-              "1": "1",
-              "2": "2",
-              "3": "3",
-              "4": "4"
+              "1": "Resim 1",
+              "2": "Resim 2",
+              "3": "Resim 3",
+              "4": "Resim 4"
             }
           },
           "2": {
@@ -514,10 +514,10 @@
           "1": {
             "question": "Hür ve Hanseatic Hamburg Şehri arması hangisine aittir?",
             "answers": {
-              "1": "1",
-              "2": "2",
-              "3": "3",
-              "4": "4"
+              "1": "Resim 1",
+              "2": "Resim 2",
+              "3": "Resim 3",
+              "4": "Resim 4"
             }
           },
           "2": {
@@ -603,17 +603,17 @@
           }
         }
       },
-      "hesse": {
+      "hessen": {
         "state": "Hessen",
         "capital": "Wiesbaden",
         "tests": {
           "1": {
             "question": "Hessen eyaletine ait olan arması hangisidir?",
             "answers": {
-              "1": "1",
-              "2": "2",
-              "3": "3",
-              "4": "4"
+              "1": "Resim 1",
+              "2": "Resim 2",
+              "3": "Resim 3",
+              "4": "Resim 4"
             }
           },
           "2": {
@@ -699,50 +699,869 @@
           }
         }
       },
-      "lower-saxony": {
-        "state": "Aşağı Saksonya",
-        "capital": "Hannover",
-        "tests": {}
-      },
       "mecklenburg-vorpommern": {
         "state": "Mecklenburg-Vorpommern",
         "capital": "Schwerin",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Mecklenburg-Vorpommern eyaletine ait arması hangisidir?",
+            "answers": {
+              "1": "Resim 1",
+              "2": "Resim 2",
+              "3": "Resim 3",
+              "4": "Resim 4"
+            }
+          },
+          "2": {
+            "question": "Mecklenburg-Vorpommern'de bir ilçe hangisidir?",
+            "answers": {
+              "1": "Prignitz",
+              "2": "Mecklenburgische Seenplatte",
+              "3": "Vogtlandkreis",
+              "4": "Rhein-Sieg-Kreis"
+            }
+          },
+          "3": {
+            "question": "Mecklenburg-Vorpommern eyalet parlamentosu kaç yılda bir seçilir?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Mecklenburg-Vorpommern'de yerel seçimlerde kaç yaşında oy kullanılabilir?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Mecklenburg-Vorpommern eyalet bayrağının renkleri nelerdir?",
+            "answers": {
+              "1": "siyah-kırmızı-altın",
+              "2": "mavi-beyaz-sarı-kırmızı",
+              "3": "yeşil-beyaz-kırmızı",
+              "4": "siyah-sarı"
+            }
+          },
+          "6": {
+            "question": "Mecklenburg-Vorpommern'de siyasi konularda nereden bilgi alabilirsiniz?",
+            "answers": {
+              "1": "Siyasi Eğitim için Eyalet Merkezi'nde",
+              "2": "kiliselerde",
+              "3": "yerel yönetim ofisinde",
+              "4": "Tüketici Koruma Merkezi'nde"
+            }
+          },
+          "7": {
+            "question": "Mecklenburg-Vorpommern'in başkenti nedir?",
+            "answers": {
+              "1": "Greifswald",
+              "2": "Schwerin",
+              "3": "Rostock",
+              "4": "Wismar"
+            }
+          },
+          "8": {
+            "question": "Mecklenburg-Vorpommern hangi eyalettir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Mecklenburg-Vorpommern'de hükümet başkanına ne denir?",
+            "answers": {
+              "1": "Birinci Bakan",
+              "2": "Başbakan",
+              "3": "Belediye Başkanı",
+              "4": "Başbakan"
+            }
+          },
+          "10": {
+            "question": "Mecklenburg-Vorpommern'de hangi bakan bulunmaz?",
+            "answers": {
+              "1": "Adalet Bakanı",
+              "2": "Dışişleri Bakanı",
+              "3": "Maliye Bakanı",
+              "4": "İçişleri Bakanı"
+            }
+          }
+        }
+      },
+      "niedersachsen": {
+        "state": "Aşağı Saksonya",
+        "capital": "Hannover",
+        "tests": {
+          "1": {
+            "question": "Aşağı Saksonya'nın arması hangisidir?",
+            "answers": {
+              "1": "Resim 1",
+              "2": "Resim 2",
+              "3": "Resim 3",
+              "4": "Resim 4"
+            }
+          },
+          "2": {
+            "question": "Aşağı Saksonya'da bir ilçe hangisidir?",
+            "answers": {
+              "1": "Ammerland",
+              "2": "Rhein-Sieg-Kreis",
+              "3": "Nordfriesland",
+              "4": "Vogtlandkreis"
+            }
+          },
+          "3": {
+            "question": "Aşağı Saksonya eyalet parlamentosu kaç yıl için seçilir?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Aşağı Saksonya'da belediye seçimlerinde kaç yaşında oy kullanabilirsiniz?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Aşağı Saksonya'nın bayrağı hangi renklerdedir?",
+            "answers": {
+              "1": "beyaz-mavi",
+              "2": "siyah-kırmızı-altın",
+              "3": "siyah-sarı",
+              "4": "mavi-beyaz-kırmızı"
+            }
+          },
+          "6": {
+            "question": "Aşağı Saksonya'da siyasi konularda nereden bilgi alabilirsiniz?",
+            "answers": {
+              "1": "Siyasi Eğitim Merkezi'nde",
+              "2": "Belediye düzenleme ofisinde",
+              "3": "Tüketici Merkezi'nde",
+              "4": "Kiliselerde"
+            }
+          },
+          "7": {
+            "question": "Aşağı Saksonya'nın başkenti nedir?",
+            "answers": {
+              "1": "Hanover.",
+              "2": "Braunschweig.",
+              "3": "Wolfsburg.",
+              "4": "Osnabrück."
+            }
+          },
+          "8": {
+            "question": "Aşağı Saksonya hangi eyalettir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Aşağı Saksonya'da hükümetin başı / başkanı ne adlandırılır?",
+            "answers": {
+              "1": "Birinci Bakan",
+              "2": "Başbakan",
+              "3": "Belediye Başkanı",
+              "4": "Başbakan"
+            }
+          },
+          "10": {
+            "question": "Hangi bakanı Aşağı Saksonya'da bulamazsınız?",
+            "answers": {
+              "1": "Adalet Bakanı",
+              "2": "Dışişleri Bakanı",
+              "3": "Maliye Bakanı",
+              "4": "İçişleri Bakanı"
+            }
+          }
+        }
       },
       "north-rhine-westphalia": {
         "state": "Kuzey Ren-Vestfalya",
         "capital": "Düsseldorf",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Kuzey Ren-Vestfalya'nın arması hangisidir?",
+            "answers": {
+              "1": "Resim 1",
+              "2": "Resim 2",
+              "3": "Resim 3",
+              "4": "Resim 4"
+            }
+          },
+          "2": {
+            "question": "Kuzey Ren-Vestfalya'da bir ilçe hangisidir?",
+            "answers": {
+              "1": "Ammerland",
+              "2": "Rhein-Sieg-Kreis",
+              "3": "Nordfriesland",
+              "4": "Vogtlandkreis"
+            }
+          },
+          "3": {
+            "question": "Kuzey Ren-Vestfalya'da parlamento kaç yıl için seçilir?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Kuzey Ren-Vestfalya'da yerel seçimlerde hangi yaşta oy kullanılabilir?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Kuzey Ren-Vestfalya'nın bayrağının renkleri nelerdir?",
+            "answers": {
+              "1": "kırmızı-beyaz",
+              "2": "yeşil-beyaz-kırmızı",
+              "3": "siyah-altın",
+              "4": "mavi-beyaz-kırmızı"
+            }
+          },
+          "6": {
+            "question": "Kuzey Ren-Vestfalya'da siyasi konularda nereden bilgi alabilirsiniz?",
+            "answers": {
+              "1": "kiliselerde",
+              "2": "belediye düzenleme ofisinde",
+              "3": "tüketici merkezinde",
+              "4": "siyasi eğitim için devlet merkezinde"
+            }
+          },
+          "7": {
+            "question": "Kuzey Ren-Vestfalya'nın başkenti...",
+            "answers": {
+              "1": "Köln",
+              "2": "Bonn",
+              "3": "Düsseldorf",
+              "4": "Dortmund"
+            }
+          },
+          "8": {
+            "question": "Kuzey Ren-Vestfalya hangi eyalettir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Kuzey Ren-Vestfalya'da hükümet başkanına ne denir?",
+            "answers": {
+              "1": "İlk Bakan",
+              "2": "Başbakan",
+              "3": "Belediye Başkanı",
+              "4": "Başbakan"
+            }
+          },
+          "10": {
+            "question": "Kuzey Ren-Vestfalya'nın hangi bakanı yoktur?",
+            "answers": {
+              "1": "Adalet Bakanı",
+              "2": "Dışişleri Bakanı",
+              "3": "Maliye Bakanı",
+              "4": "İçişleri Bakanı"
+            }
+          }
+        }
       },
       "rhineland-palatinate": {
         "state": "Rhineland-Palatinate",
         "capital": "Mainz",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Rheinland-Pfalz eyaletine ait hangi armağan?",
+            "answers": {
+              "1": "Resim 1",
+              "2": "Resim 2",
+              "3": "Resim 3",
+              "4": "Resim 4"
+            }
+          },
+          "2": {
+            "question": "Rheinland-Pfalz'da bir ilçe hangisidir?",
+            "answers": {
+              "1": "Westerwaldkreis",
+              "2": "Altötting",
+              "3": "Emsland",
+              "4": "Prignitz"
+            }
+          },
+          "3": {
+            "question": "Rheinland-Pfalz eyalet meclisi kaç yıl için seçilir?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Rheinland-Pfalz'da belediye seçimlerinde hangi yaşta oy kullanılabilir?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Rheinland-Pfalz eyalet bayrağının renkleri nelerdir?",
+            "answers": {
+              "1": "beyaz-kırmızı",
+              "2": "siyah-kırmızı-altın",
+              "3": "siyah-sarı",
+              "4": "yeşil-beyaz-kırmızı"
+            }
+          },
+          "6": {
+            "question": "Rheinland-Pfalz'da siyasi konularda nereden bilgi alabilirsiniz?",
+            "answers": {
+              "1": "kiliselerde",
+              "2": "tüketici danışma merkezinde",
+              "3": "yerel düzenleme ofisinde",
+              "4": "siyasi eğitim için eyalet merkezinde"
+            }
+          },
+          "7": {
+            "question": "Rheinland-Pfalz'ın başkenti...",
+            "answers": {
+              "1": "Mainz",
+              "2": "Kaiserslautern",
+              "3": "Ludwigshafen",
+              "4": "Koblenz"
+            }
+          },
+          "8": {
+            "question": "Rheinland-Pfalz hangi federal eyalettir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Rheinland-Pfalz'da hükümetin başı ne olarak adlandırılır?",
+            "answers": {
+              "1": "Birinci Bakan",
+              "2": "Başbakan",
+              "3": "Belediye Başkanı",
+              "4": "Bakan Başkanı"
+            }
+          },
+          "10": {
+            "question": "Rheinland-Pfalz hangi bakanı bulundurmaz?",
+            "answers": {
+              "1": "Adalet Bakanı",
+              "2": "Dışişleri Bakanı",
+              "3": "Maliye Bakanı",
+              "4": "İçişleri Bakanı"
+            }
+          }
+        }
       },
       "saarland": {
         "state": "Saarland",
         "capital": "Saarbrücken",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Saarland'a hangi armalar aittir?",
+            "answers": {
+              "1": "Resim 1",
+              "2": "Resim 2",
+              "3": "Resim 3",
+              "4": "Resim 4"
+            }
+          },
+          "2": {
+            "question": "Saarland'da bir ilçe hangisidir?",
+            "answers": {
+              "1": "Mecklenburgische Seenplatte",
+              "2": "Altötting",
+              "3": "Rhein-Sieg-Kreis",
+              "4": "Neunkirchen"
+            }
+          },
+          "3": {
+            "question": "Saarland eyalet parlamentosu kaç yıl için seçilir?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Saarland'da yerel seçimlerde kaç yaşında oy kullanılabilir?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Saarland bayrağının renkleri nelerdir?",
+            "answers": {
+              "1": "beyaz-mavi",
+              "2": "siyah-kırmızı-altın",
+              "3": "siyah-sarı",
+              "4": "yeşil-beyaz-kırmızı"
+            }
+          },
+          "6": {
+            "question": "Saarland'da siyasi konularda nereden bilgi alabilirsiniz?",
+            "answers": {
+              "1": "kiliselerde",
+              "2": "Politik Eğitim için Eyalet Merkezi'nde",
+              "3": "Tüketici Merkezi'nde",
+              "4": "belediye düzenleme ofisinde"
+            }
+          },
+          "7": {
+            "question": "Saarland'ın başkenti ne adıyla anılır...",
+            "answers": {
+              "1": "Neunkirchen.",
+              "2": "Homburg.",
+              "3": "Saarbrücken.",
+              "4": "Völklingen."
+            }
+          },
+          "8": {
+            "question": "Saarland hangi federal eyalettir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Saarland'ın başbakanının adı nedir?",
+            "answers": {
+              "1": "Birinci Bakan",
+              "2": "Başbakan",
+              "3": "Belediye Başkanı",
+              "4": "Başbakan"
+            }
+          },
+          "10": {
+            "question": "Saarland'da hangi bakan bulunmamaktadır?",
+            "answers": {
+              "1": "Adalet Bakanı",
+              "2": "Dışişleri Bakanı",
+              "3": "Maliye Bakanı",
+              "4": "İçişleri Bakanı"
+            }
+          }
+        }
       },
       "saxony": {
         "state": "Saksonya",
         "capital": "Dresden",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Saksonya Özgür Devleti'nin arması hangisidir?",
+            "answers": {
+              "1": "Resim 1",
+              "2": "Resim 2",
+              "3": "Resim 3",
+              "4": "Resim 4"
+            }
+          },
+          "2": {
+            "question": "Saksonya'da bir ilçe hangisidir?",
+            "answers": {
+              "1": "Vogtlandkreis",
+              "2": "Altötting",
+              "3": "Uckermark",
+              "4": "Nordfriesland"
+            }
+          },
+          "3": {
+            "question": "Saksonya'da Devlet Parlamentosu kaç yıl boyunca seçilir?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Saksonya'da yerel seçimlerde kaç yaşında oy kullanabilirsiniz?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Saksonya'nın devlet bayrağı hangi renklere sahiptir?",
+            "answers": {
+              "1": "mavi-beyaz-kırmızı",
+              "2": "beyaz-yeşil",
+              "3": "yeşil-beyaz-kırmızı",
+              "4": "siyah-sarı"
+            }
+          },
+          "6": {
+            "question": "Saksonya'da siyasi konularda nereden bilgi alabilirsiniz?",
+            "answers": {
+              "1": "Siyasi Eğitim İçin Devlet Merkezi'nde",
+              "2": "Belediye Düzenleme Ofisi'nde",
+              "3": "kiliselerde",
+              "4": "Tüketici Merkezi'nde"
+            }
+          },
+          "7": {
+            "question": "Saksonya'nın başkenti nedir?",
+            "answers": {
+              "1": "Leipzig.",
+              "2": "Dresden.",
+              "3": "Chemnitz.",
+              "4": "Zwickau."
+            }
+          },
+          "8": {
+            "question": "Saksonya hangi federal devlettir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Saksonya'da hükümetin başı ne adlandırılır?",
+            "answers": {
+              "1": "Birinci Bakan",
+              "2": "Başbakan",
+              "3": "Belediye Başkanı",
+              "4": "Başbakan"
+            }
+          },
+          "10": {
+            "question": "Saksonya'nın hangi bakanı yoktur?",
+            "answers": {
+              "1": "Adalet Bakanı",
+              "2": "Dışişleri Bakanı",
+              "3": "Maliye Bakanı",
+              "4": "İçişleri Bakanı"
+            }
+          }
+        }
       },
       "saxony-anhalt": {
         "state": "Saksonya-Anhalt",
         "capital": "Magdeburg",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Sachsen-Anhalt eyaletine ait olan arması hangisidir?",
+            "answers": {
+              "1": "Resim 1",
+              "2": "Resim 2",
+              "3": "Resim 3",
+              "4": "Resim 4"
+            }
+          },
+          "2": {
+            "question": "Sachsen-Anhalt'ta bir ilçe hangisidir?",
+            "answers": {
+              "1": "Ammerland",
+              "2": "Altötting",
+              "3": "Uckermark",
+              "4": "Börde"
+            }
+          },
+          "3": {
+            "question": "Sachsen-Anhalt eyaletinde devlet parlamentosu kaç yılda bir seçilir?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Sachsen-Anhalt'ta yerel seçimlerde kaç yaşında oy kullanmaya izin verilir?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Sachsen-Anhalt eyalet bayrağının renkleri nelerdir?",
+            "answers": {
+              "1": "mavi-beyaz-kırmızı",
+              "2": "sarı-siyah",
+              "3": "yeşil-beyaz-kırmızı",
+              "4": "beyaz-kırmızı"
+            }
+          },
+          "6": {
+            "question": "Sachsen-Anhalt'ta siyasi konularda nereden bilgi alabilirsiniz?",
+            "answers": {
+              "1": "kiliselerde",
+              "2": "Politik Eğitim için Eyalet Merkezi'nde",
+              "3": "belediye düzenleme ofisinde",
+              "4": "Tüketici Koruma Merkezi'nde"
+            }
+          },
+          "7": {
+            "question": "Sachsen-Anhalt'ın başkenti hangisidir?",
+            "answers": {
+              "1": "Halle",
+              "2": "Dessau",
+              "3": "Magdeburg",
+              "4": "Wittenberg"
+            }
+          },
+          "8": {
+            "question": "Sachsen-Anhalt hangi federal eyalettir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Sachsen-Anhalt'ta hükümet başkanına ne ad verilir?",
+            "answers": {
+              "1": "Birinci Bakan",
+              "2": "Başbakan",
+              "3": "Belediye Başkanı",
+              "4": "Bakan Başkanı"
+            }
+          },
+          "10": {
+            "question": "Sachsen-Anhalt'ta hangi bakan bulunmamaktadır?",
+            "answers": {
+              "1": "Adalet Bakanı",
+              "2": "Dışişleri Bakanı",
+              "3": "Maliye Bakanı",
+              "4": "İçişleri Bakanı"
+            }
+          }
+        }
       },
       "schleswig-holstein": {
         "state": "Schleswig-Holstein",
         "capital": "Kiel",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Schleswig-Holstein eyaletine ait arması hangisidir?",
+            "answers": {
+              "1": "Resim 1",
+              "2": "Resim 2",
+              "3": "Resim 3",
+              "4": "Resim 4"
+            }
+          },
+          "2": {
+            "question": "Schleswig-Holstein'de bir ilçe hangisidir?",
+            "answers": {
+              "1": "Ammerland",
+              "2": "Mecklenburg Göl Bölgesi",
+              "3": "North Frisia",
+              "4": "Rhein-Sieg İlçesi"
+            }
+          },
+          "3": {
+            "question": "Schleswig-Holstein'de devlet parlamentosu kaç yıl için seçilir?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Hangi yaşta Schleswig-Holstein'de yerel seçimlerde oy kullanılabilir?",
+            "answers": {
+              "1": "14",
+              "2": "16",
+              "3": "18",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Schleswig-Holstein devlet bayrağının renkleri nelerdir?",
+            "answers": {
+              "1": "beyaz-mavi",
+              "2": "mavi-beyaz-kırmızı",
+              "3": "beyaz-kırmızı",
+              "4": "yeşil-beyaz-kırmızı"
+            }
+          },
+          "6": {
+            "question": "Schleswig-Holstein'de politik konularda nereden bilgi alabilirsiniz?",
+            "answers": {
+              "1": "Tüketici Merkezi'nde",
+              "2": "Belediye düzenleme ofisinde",
+              "3": "Politik Eğitim için Eyalet Komiseri'nde",
+              "4": "kiliselerde"
+            }
+          },
+          "7": {
+            "question": "Schleswig-Holstein'in başkenti...",
+            "answers": {
+              "1": "Husum",
+              "2": "Flensburg",
+              "3": "Lübeck",
+              "4": "Kiel"
+            }
+          },
+          "8": {
+            "question": "Schleswig-Holstein hangi federal eyalettir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Schleswig-Holstein'deki hükümet başkanına hangi unvan verilir?",
+            "answers": {
+              "1": "Birinci Bakan",
+              "2": "Başbakan",
+              "3": "Belediye Başkanı",
+              "4": "Bakan Başkanı"
+            }
+          },
+          "10": {
+            "question": "Schleswig-Holstein'de hangi bakanlık bulunmamaktadır?",
+            "answers": {
+              "1": "Adalet Bakanlığı",
+              "2": "Dışişleri Bakanlığı",
+              "3": "Maliye Bakanlığı",
+              "4": "İçişleri Bakanlığı"
+            }
+          }
+        }
       },
       "thuringia": {
         "state": "Thuringia",
         "capital": "Erfurt",
-        "tests": {}
+        "tests": {
+          "1": {
+            "question": "Thüringen Özgür Devleti arması hangisidir?",
+            "answers": {
+              "1": "Resim 1",
+              "2": "Resim 2",
+              "3": "Resim 3",
+              "4": "Resim 4"
+            }
+          },
+          "2": {
+            "question": "Thüringen'deki bir ilçe hangisidir?",
+            "answers": {
+              "1": "Ammerland",
+              "2": "Altötting",
+              "3": "Nordfriesland",
+              "4": "Wartburgkreis"
+            }
+          },
+          "3": {
+            "question": "Thüringen'deki Landtag kaç yıl için seçilir?",
+            "answers": {
+              "1": "3",
+              "2": "4",
+              "3": "5",
+              "4": "6"
+            }
+          },
+          "4": {
+            "question": "Thüringen'deki yerel seçimlerde hangi yaşta oy kullanılabilir?",
+            "answers": {
+              "1": "14",
+              "2": "18",
+              "3": "16",
+              "4": "20"
+            }
+          },
+          "5": {
+            "question": "Thüringen'in bayrağında hangi renkler bulunur?",
+            "answers": {
+              "1": "mavi-beyaz-kırmızı",
+              "2": "beyaz-kırmızı",
+              "3": "yeşil-beyaz-kırmızı",
+              "4": "siyah-altın"
+            }
+          },
+          "6": {
+            "question": "Thüringen'de siyasi konularda nereden bilgi alabilirsiniz?",
+            "answers": {
+              "1": "kiliselerde",
+              "2": "Tüketici Derneği'nde",
+              "3": "siyasi eğitim için Thüringen Eyalet Merkezi'nde",
+              "4": "Belediye Düzenleme Ofisi'nde"
+            }
+          },
+          "7": {
+            "question": "Thüringen'in başkenti hangisidir?",
+            "answers": {
+              "1": "Eisenach",
+              "2": "Erfurt",
+              "3": "Gera",
+              "4": "Jena"
+            }
+          },
+          "8": {
+            "question": "Thüringen hangi eyalettir?",
+            "answers": {
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          "9": {
+            "question": "Thüringen'de hükümet başkanı kimdir?",
+            "answers": {
+              "1": "Birinci Bakan / Birinci Bakanlık",
+              "2": "Başbakan / Başbakanlık",
+              "3": "Belediye Başkanı / Belediye Başkanlık",
+              "4": "Başbakan / Başbakanlık"
+            }
+          },
+          "10": {
+            "question": "Thüringen'de hangi bakan / bakanlık yoktur?",
+            "answers": {
+              "1": "Adalet Bakanı / Adalet Bakanlığı",
+              "2": "Dışişleri Bakanı / Dışişleri Bakanlığı",
+              "3": "Maliye Bakanı / Maliye Bakanlığı",
+              "4": "İçişleri Bakanı / İçişleri Bakanlığı"
+            }
+          }
+        }
       }
     }
   }
