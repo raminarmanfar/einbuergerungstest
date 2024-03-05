@@ -23,6 +23,7 @@ import {
   ReviewStatesQuestionsPageComponent
 } from './components/review-states-questions-page/review-states-questions-page.component';
 import {QuestionnaireListComponent} from './components/questionnaire-list/questionnaire-list.component';
+import {FlexLayoutModule} from "@angular/flex-layout";
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -54,7 +55,8 @@ export function createTranslateLoader(http: HttpClient) {
     }),
     AppRoutingModule,
     AppMaterialsModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    FlexLayoutModule
   ],
   providers: [
     // {
