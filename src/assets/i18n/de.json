@@ -831,6 +831,1894 @@
             "3": "den Bundestag.",
             "4": "die Bundesregierung."
           }
+        },
+        "91": {
+          "question": "In Deutschland kann ein Regierungswechsel in einem Bundesland Auswirkungen auf die Bundespolitik haben. Das Regieren wird …",
+          "answers": {
+            "1": "schwieriger, wenn sich dadurch die Mehrheit im Bundestag ändert.",
+            "2": "leichter, wenn dadurch neue Parteien in den Bundesrat kommen.",
+            "3": "schwieriger, wenn dadurch die Mehrheit im Bundesrat verändert wird.",
+            "4": "leichter, wenn es sich um ein reiches Bundesland handelt."
+          }
+        },
+        "92": {
+          "question": "Was bedeutet die Abkürzung CSU in Deutschland?",
+          "answers": {
+            "1": "Christlich Sichere Union",
+            "2": "Christlich Süddeutsche Union",
+            "3": "Christlich Sozialer Unternehmerverband",
+            "4": "Christlich Soziale Union"
+          }
+        },
+        "93": {
+          "question": "Je mehr „Zweitstimmen“ eine Partei bei einer Bundestagswahl bekommt, desto …",
+          "answers": {
+            "1": "mehr Sitze erhält die Partei im Parlament.",
+            "2": "weniger Erststimmen kann sie haben.",
+            "3": "mehr Direktkandidaten der Partei ziehen ins Parlament ein.",
+            "4": "größer ist das Risiko, eine Koalition bilden zu müssen."
+          }
+        },
+        "94": {
+          "question": "Ab welchem Alter darf man in Deutschland an der Wahl zum Deutschen Bundestag teilnehmen?",
+          "answers": {
+            "1": "16",
+            "2": "18",
+            "3": "21",
+            "4": "23"
+          }
+        },
+        "95": {
+          "question": "Was gilt für die meisten Kinder in Deutschland?",
+          "answers": {
+            "1": "Wahlpflicht",
+            "2": "Schulpflicht",
+            "3": "Schweigepflicht",
+            "4": "Religionspflicht"
+          }
+        },
+        "96": {
+          "question": "Was muss jeder deutsche Staatsbürger / jede deutsche Staatsbürgerin ab dem 16. Lebensjahr besitzen?",
+          "answers": {
+            "1": "einen Reisepass",
+            "2": "einen Personalausweis",
+            "3": "einen Sozialversicherungsausweis",
+            "4": "einen Führerschein"
+          }
+        },
+        "97": {
+          "question": "Was bezahlt man in Deutschland automatisch, wenn man fest angestellt ist?",
+          "answers": {
+            "1": "Sozialversicherung",
+            "2": "Sozialhilfe",
+            "3": "Kindergeld",
+            "4": "Wohngeld"
+          }
+        },
+        "98": {
+          "question": "Wenn Abgeordnete im Deutschen Bundestag ihre Fraktion wechseln, ...",
+          "answers": {
+            "1": "kann die Regierung ihre Mehrheit verlieren.",
+            "2": "dürfen sie nicht mehr an den Sitzungen des Parlaments teilnehmen.",
+            "3": "muss der Bundespräsident / die Bundespräsidentin zuvor sein / ihr Einverständnis geben.",
+            "4": "dürfen die Wähler / Wählerinnen dieser Abgeordneten noch einmal wählen."
+          }
+        },
+        "99": {
+          "question": "Wer bezahlt in Deutschland die Sozialversicherungen?",
+          "answers": {
+            "1": "Arbeitgeber / Arbeitgeberinnen und Arbeitnehmer / Arbeitnehmerinnen",
+            "2": "nur Arbeitnehmer / Arbeitnehmerinnen",
+            "3": "alle Staatsangehörigen",
+            "4": "nur Arbeitgeber / Arbeitgeberinnen"
+          }
+        },
+        "100": {
+          "question": "Was gehört nicht zur gesetzlichen Sozialversicherung?",
+          "answers": {
+            "1": "die gesetzliche Rentenversicherung",
+            "2": "die Lebensversicherung",
+            "3": "die Arbeitslosenversicherung",
+            "4": "die Pflegeversicherung"
+          }
+        },
+        "101": {
+          "question": "Gewerkschaften sind Interessenverbände der …",
+          "answers": {
+            "1": "Jugendlichen.",
+            "2": "Arbeitnehmer und Arbeitnehmerinnen.",
+            "3": "Rentner und Rentnerinnen.",
+            "4": "Arbeitgeber und Arbeitgeberinnen."
+          }
+        },
+        "102": {
+          "question": "Womit kann man in der Bundesrepublik Deutschland geehrt werden, wenn man auf politischem, wirtschaftlichem, kulturellem, geistigem oder sozialem Gebiet eine besondere Leistung erbracht hat? Mit dem …",
+          "answers": {
+            "1": "Bundesadler.",
+            "2": "Bundesverdienstkreuz.",
+            "3": "Vaterländischen Verdienstorden.",
+            "4": "Ehrentitel „Held der Deutschen Demokratischen Republik“."
+          }
+        },
+        "103": {
+          "question": "Was wird in Deutschland als „Ampelkoalition“ bezeichnet? Die Zusammenarbeit …",
+          "answers": {
+            "1": "der Bundestagsfraktionen von CDU und CSU",
+            "2": "von SPD, FDP und Bündnis 90/Die Grünen in einer Regierung",
+            "3": "von CSU, Die LINKE und Bündnis 90/Die Grünen in einer Regierung",
+            "4": "der Bundestagsfraktionen von CDU und SPD"
+          }
+        },
+        "104": {
+          "question": "Eine Frau in Deutschland verliert ihre Arbeit. Was darf nicht der Grund für diese Entlassung sein?",
+          "answers": {
+            "1": "Die Frau ist lange krank und arbeitsunfähig.",
+            "2": "Die Frau kam oft zu spät zur Arbeit.",
+            "3": "Die Frau erledigt private Sachen während der Arbeitszeit.",
+            "4": "Die Frau bekommt ein Kind und ihr Chef weiß das."
+          }
+        },
+        "105": {
+          "question": "Was ist eine Aufgabe von Wahlhelfern / Wahlhelferinnen in Deutschland?",
+          "answers": {
+            "1": "Sie helfen alten Menschen bei der Stimmabgabe in der Wahlkabine.",
+            "2": "Sie schreiben die Wahlbenachrichtigungen vor der Wahl.",
+            "3": "Sie geben Zwischenergebnisse an die Medien weiter.",
+            "4": "Sie zählen die Stimmen nach dem Ende der Wahl."
+          }
+        },
+        "106": {
+          "question": "In Deutschland helfen ehrenamtliche Wahlhelfer und Wahlhelferinnen bei den Wahlen. Was ist eine Aufgabe von Wahlhelfern / Wahlhelferinnen?",
+          "answers": {
+            "1": "Sie helfen Kindern und alten Menschen beim Wählen.",
+            "2": "Sie schreiben Karten und Briefe mit der Angabe des Wahllokals.",
+            "3": "Sie geben Zwischenergebnisse an Journalisten weiter.",
+            "4": "Sie zählen die Stimmen nach dem Ende der Wahl."
+          }
+        },
+        "107": {
+          "question": "Für wie viele Jahre wird der Bundestag in Deutschland gewählt?",
+          "answers": {
+            "1": "2 Jahre",
+            "2": "4 Jahre",
+            "3": "6 Jahre",
+            "4": "8 Jahre"
+          }
+        },
+        "108": {
+          "question": "Bei einer Bundestagswahl in Deutschland darf jeder wählen, der …",
+          "answers": {
+            "1": "in der Bundesrepublik Deutschland wohnt und wählen möchte.",
+            "2": "Bürger / Bürgerin der Bundesrepublik Deutschland ist und mindestens 18 Jahre alt ist.",
+            "3": "seit mindestens 3 Jahren in der Bundesrepublik Deutschland lebt.",
+            "4": "Bürger / Bürgerin der Bundesrepublik Deutschland ist und mindestens 21 Jahre alt ist."
+          }
+        },
+        "109": {
+          "question": "Wie oft gibt es normalerweise Bundestagswahlen in Deutschland?",
+          "answers": {
+            "1": "alle drei Jahre",
+            "2": "alle vier Jahre",
+            "3": "alle fünf Jahre",
+            "4": "alle sechs Jahre"
+          }
+        },
+        "110": {
+          "question": "Für wie viele Jahre wird der Bundestag in Deutschland gewählt?",
+          "answers": {
+            "1": "2 Jahre",
+            "2": "3 Jahre",
+            "3": "4 Jahre",
+            "4": "5 Jahre"
+          }
+        },
+        "111": {
+          "question": "In Deutschland darf man wählen. Was bedeutet das?",
+          "answers": {
+            "1": "Nur verheiratete Personen dürfen wählen.",
+            "2": "Nur Personen mit einem festen Arbeitsplatz dürfen wählen.",
+            "3": "Alle Einwohner und Einwohnerinnen in Deutschland müssen wählen.",
+            "4": "Alle deutschen Staatsangehörigen dürfen wählen, wenn sie das Mindestalter erreicht haben."
+          }
+        },
+        "112": {
+          "question": "Die Wahlen in Deutschland sind …",
+          "answers": {
+            "1": "speziell.",
+            "2": "geheim.",
+            "3": "berufsbezogen.",
+            "4": "geschlechtsabhängig."
+          }
+        },
+        "113": {
+          "question": "Wahlen in Deutschland gewinnt die Partei, die …",
+          "answers": {
+            "1": "die meisten Stimmen bekommt.",
+            "2": "die meisten Männer mehrheitlich gewählt haben.",
+            "3": "die meisten Stimmen bei den Arbeitern / Arbeiterinnen bekommen hat.",
+            "4": "die meisten Erststimmen für ihren Kanzlerkandidaten / ihre Kanzlerkandidatin erhalten hat."
+          }
+        },
+        "114": {
+          "question": "An demokratischen Wahlen in Deutschland teilzunehmen ist …",
+          "answers": {
+            "1": "eine Pflicht.",
+            "2": "ein Recht.",
+            "3": "ein Zwang.",
+            "4": "eine Last."
+          }
+        },
+        "115": {
+          "question": "Was bedeutet „aktives Wahlrecht“ in Deutschland?",
+          "answers": {
+            "1": "Man kann gewählt werden.",
+            "2": "Man muss wählen gehen.",
+            "3": "Man kann wählen.",
+            "4": "Man muss zur Auszählung der Stimmen gehen."
+          }
+        },
+        "116": {
+          "question": "Wenn Sie bei einer Bundestagswahl in Deutschland wählen dürfen, heißt das …",
+          "answers": {
+            "1": "aktive Wahlkampagne.",
+            "2": "aktives Wahlverfahren.",
+            "3": "aktiver Wahlkampf.",
+            "4": "aktives Wahlrecht."
+          }
+        },
+        "117": {
+          "question": "Wie viel Prozent der Zweitstimmen müssen Parteien mindestens bekommen, um in den Deutschen Bundestag gewählt zu werden?",
+          "answers": {
+            "1": "3 %",
+            "2": "4 %",
+            "3": "5 %",
+            "4": "6 %"
+          }
+        },
+        "118": {
+          "question": "Was regelt das Wahlrecht in Deutschland?",
+          "answers": {
+            "1": "Wer wählen darf, muss wählen.",
+            "2": "Alle die wollen, können wählen.",
+            "3": "Wer nicht wählt, verliert das Recht zu wählen.",
+            "4": "Wer wählen darf, kann wählen."
+          }
+        },
+        "119": {
+          "question": "Wahlen in Deutschland sind frei. Was bedeutet das?",
+          "answers": {
+            "1": "Alle verurteilten Straftäter / Straftäterinnen dürfen nicht wählen.",
+            "2": "Wenn ich wählen gehen möchte, muss mein Arbeitgeber / meine Arbeitgeberin mir frei geben.",
+            "3": "Jede Person kann ohne Zwang entscheiden, ob sie wählen möchte und wen sie wählen möchte.",
+            "4": "Ich kann frei entscheiden, wo ich wählen gehen möchte."
+          }
+        },
+        "120": {
+          "question": "Das Wahlsystem in Deutschland ist ein …",
+          "answers": {
+            "1": "Zensuswahlrecht.",
+            "2": "Dreiklassenwahlrecht.",
+            "3": "Mehrheits- und Verhältniswahlrecht.",
+            "4": "allgemeines Männerwahlrecht."
+          }
+        },
+        "121": {
+          "question": "Eine Partei möchte in den Deutschen Bundestag. Sie muss aber einen Mindestanteil an Wählerstimmen haben. Das heißt …",
+          "answers": {
+            "1": "5 %-Hürde.",
+            "2": "Zulassungsgrenze.",
+            "3": "Basiswert.",
+            "4": "Richtlinie."
+          }
+        },
+        "122": {
+          "question": "Welchem Grundsatz unterliegen Wahlen in Deutschland? Wahlen in Deutschland sind …",
+          "answers": {
+            "1": "frei, gleich, geheim.",
+            "2": "offen, sicher, frei.",
+            "3": "geschlossen, gleich, sicher.",
+            "4": "sicher, offen, freiwillig."
+          }
+        },
+        "123": {
+          "question": "Was ist in Deutschland die „5 %-Hürde“?",
+          "answers": {
+            "1": "Abstimmungsregelung im Bundestag für kleine Parteien",
+            "2": "Anwesenheitskontrolle im Bundestag für Abstimmungen",
+            "3": "Mindestanteil an Wählerstimmen, um ins Parlament zu kommen",
+            "4": "Anwesenheitskontrolle im Bundesrat für Abstimmungen"
+          }
+        },
+        "124": {
+          "question": "Die Bundestagswahl in Deutschland ist die Wahl …",
+          "answers": {
+            "1": "des Bundeskanzlers / der Bundeskanzlerin.",
+            "2": "der Parlamente der Länder.",
+            "3": "des Parlaments für Deutschland.",
+            "4": "des Bundespräsidenten / der Bundespräsidentin."
+          }
+        },
+        "125": {
+          "question": "In einer Demokratie ist eine Funktion von regelmäßigen Wahlen, …",
+          "answers": {
+            "1": "die Bürger und Bürgerinnen zu zwingen, ihre Stimme abzugeben.",
+            "2": "nach dem Willen der Wählermehrheit den Wechsel der Regierung zu ermöglichen.",
+            "3": "im Land bestehende Gesetze beizubehalten.",
+            "4": "den Armen mehr Macht zu geben."
+          }
+        },
+        "126": {
+          "question": "Was bekommen wahlberechtigte Bürger und Bürgerinnen in Deutschland vor einer Wahl?",
+          "answers": {
+            "1": "eine Wahlbenachrichtigung von der Gemeinde",
+            "2": "eine Wahlerlaubnis vom Bundespräsidenten / von der Bundespräsidentin",
+            "3": "eine Benachrichtigung von der Bundesversammlung",
+            "4": "eine Benachrichtigung vom Pfarramt"
+          }
+        },
+        "127": {
+          "question": "Warum gibt es die 5 %-Hürde im Wahlgesetz der Bundesrepublik Deutschland? Es gibt sie, weil …",
+          "answers": {
+            "1": "die Programme von vielen kleinen Parteien viele Gemeinsamkeiten haben.",
+            "2": "die Bürger und Bürgerinnen bei vielen kleinen Parteien die Orientierung verlieren können.",
+            "3": "viele kleine Parteien die Regierungsbildung erschweren.",
+            "4": "die kleinen Parteien nicht so viel Geld haben, um die Politiker und Politikerinnen zu bezahlen."
+          }
+        },
+        "128": {
+          "question": "Parlamentsmitglieder, die von den Bürgern und Bürgerinnen gewählt werden, nennt man …",
+          "answers": {
+            "1": "Abgeordnete.",
+            "2": "Kanzler / Kanzlerinnen.",
+            "3": "Botschafter / Botschafterinnen.",
+            "4": "Ministerpräsidenten / Ministerpräsidentinnen."
+          }
+        },
+        "129": {
+          "question": "Vom Volk gewählt wird in Deutschland …",
+          "answers": {
+            "1": "der Bundeskanzler / die Bundeskanzlerin.",
+            "2": "der Ministerpräsident / die Ministerpräsidentin eines Bundeslandes.",
+            "3": "der Bundestag.",
+            "4": "der Bundespräsident / die Bundespräsidentin."
+          }
+        },
+        "130": {
+          "question": "Welcher Stimmzettel wäre bei einer Bundestagswahl gültig?",
+          "answers": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        },
+        "131": {
+          "question": "In Deutschland ist ein Bürgermeister / eine Bürgermeisterin …",
+          "answers": {
+            "1": "der Leiter / die Leiterin einer Schule.",
+            "2": "der Chef / die Chefin einer Bank.",
+            "3": "das Oberhaupt einer Gemeinde.",
+            "4": "der / die Vorsitzende einer Partei."
+          }
+        },
+        "132": {
+          "question": "Viele Menschen in Deutschland arbeiten in ihrer Freizeit ehrenamtlich. Was bedeutet das?",
+          "answers": {
+            "1": "Sie arbeiten als Soldaten / Soldatinnen.",
+            "2": "Sie arbeiten freiwillig und unbezahlt in Vereinen und Verbänden.",
+            "3": "Sie arbeiten in der Bundesregierung.",
+            "4": "Sie arbeiten in einem Krankenhaus und verdienen dabei Geld."
+          }
+        },
+        "133": {
+          "question": "Was ist bei Bundestags- und Landtagswahlen in Deutschland erlaubt?",
+          "answers": {
+            "1": "Der Ehemann wählt für seine Frau mit.",
+            "2": "Man kann durch Briefwahl seine Stimme abgeben.",
+            "3": "Man kann am Wahltag telefonisch seine Stimme abgeben.",
+            "4": "Kinder ab dem Alter von 14 Jahren dürfen wählen."
+          }
+        },
+        "134": {
+          "question": "Man will die Buslinie abschaffen, mit der Sie immer zur Arbeit fahren. Was können Sie machen, um die Buslinie zu erhalten?",
+          "answers": {
+            "1": "Ich beteilige mich an einer Bürgerinitiative für die Erhaltung der Buslinie oder gründe selber eine Initiative.",
+            "2": "Ich werde Mitglied in einem Sportverein und trainiere Radfahren.",
+            "3": "Ich wende mich an das Finanzamt, weil ich als Steuerzahler / Steuerzahlerin ein Recht auf die Buslinie habe.",
+            "4": "Ich schreibe einen Brief an das Forstamt und bitte um Unterstützung."
+          }
+        },
+        "135": {
+          "question": "Wen vertreten die Gewerkschaften in Deutschland?",
+          "answers": {
+            "1": "Die Arbeitgeber.",
+            "2": "Die Interessen der Arbeitnehmer und Arbeitnehmerinnen.",
+            "3": "Die Interessen von Arbeitslosen.",
+            "4": "Die Interessen der Unternehmer und Unternehmerinnen."
+          }
+        },
+        "136": {
+          "question": "Sie gehen in Deutschland zum Arbeitsgericht bei …",
+          "answers": {
+            "1": "falscher Nebenkostenabrechnung.",
+            "2": "ungerechtfertigter Kündigung durch Ihren Chef / Ihre Chefin.",
+            "3": "Problemen mit den Nachbarn / Nachbarinnen.",
+            "4": "Schwierigkeiten nach einem Verkehrsunfall."
+          }
+        },
+        "137": {
+          "question": "Welches Gericht ist in Deutschland bei Konflikten in der Arbeitswelt zuständig?",
+          "answers": {
+            "1": "das Familiengericht",
+            "2": "das Strafgericht",
+            "3": "das Arbeitsgericht",
+            "4": "das Amtsgericht"
+          }
+        },
+        "138": {
+          "question": "Was kann ich in Deutschland machen, wenn mir mein Arbeitgeber / meine Arbeitgeberin zu Unrecht gekündigt hat?",
+          "answers": {
+            "1": "weiter arbeiten und freundlich zum Chef / zur Chefin sein",
+            "2": "ein Mahnverfahren gegen den Arbeitgeber / die Arbeitgeberin führen",
+            "3": "Kündigungsschutzklage erheben",
+            "4": "den Arbeitgeber / die Arbeitgeberin bei der Polizei anzeigen"
+          }
+        },
+        "139": {
+          "question": "Wann kommt es in Deutschland zu einem Prozess vor Gericht? Wenn jemand …",
+          "answers": {
+            "1": "zu einer anderen Religion übertritt.",
+            "2": "eine Straftat begangen hat und angeklagt wird.",
+            "3": "eine andere Meinung als die der Regierung vertritt.",
+            "4": "sein Auto falsch geparkt hat und es abgeschleppt wird."
+          }
+        },
+        "140": {
+          "question": "Was macht ein Schöffe / eine Schöffin in Deutschland? Er / Sie …",
+          "answers": {
+            "1": "entscheidet mit Richtern / Richterinnen über Schuld und Strafe.",
+            "2": "gibt Bürgern / Bürgerinnen rechtlichen Rat.",
+            "3": "stellt Urkunden aus.",
+            "4": "verteidigt den Angeklagten / die Angeklagte."
+          }
+        },
+        "141": {
+          "question": "Wer berät in Deutschland Personen bei Rechtsfragen und vertritt sie vor Gericht?",
+          "answers": {
+            "1": "ein Rechtsanwalt / eine Rechtsanwältin",
+            "2": "ein Richter / eine Richterin",
+            "3": "ein Schöffe / eine Schöffin",
+            "4": "ein Staatsanwalt / eine Staatsanwältin"
+          }
+        },
+        "142": {
+          "question": "Was ist die Hauptaufgabe eines Richters / einer Richterin in Deutschland? Ein Richter / eine Richterin …",
+          "answers": {
+            "1": "vertritt Bürger und Bürgerinnen vor einem Gericht.",
+            "2": "arbeitet an einem Gericht und spricht Urteile.",
+            "3": "ändert Gesetze.",
+            "4": "betreut Jugendliche vor Gericht."
+          }
+        },
+        "143": {
+          "question": "Ein Richter / eine Richterin in Deutschland gehört zur …",
+          "answers": {
+            "1": "Judikative.",
+            "2": "Exekutive.",
+            "3": "Operative.",
+            "4": "Legislative."
+          }
+        },
+        "144": {
+          "question": "Ein Richter / eine Richterin gehört in Deutschland zur …",
+          "answers": {
+            "1": "vollziehenden Gewalt.",
+            "2": "rechtsprechenden Gewalt.",
+            "3": "planenden Gewalt.",
+            "4": "gesetzgebenden Gewalt."
+          }
+        },
+        "145": {
+          "question": "In Deutschland wird die Staatsgewalt geteilt. Für welche Staatsgewalt arbeitet ein Richter / eine Richterin? Für die …",
+          "answers": {
+            "1": "Judikative.",
+            "2": "Exekutive.",
+            "3": "Presse.",
+            "4": "Legislative."
+          }
+        },
+        "146": {
+          "question": "Wie nennt man in Deutschland ein Verfahren vor einem Gericht?",
+          "answers": {
+            "1": "Programm",
+            "2": "Prozedur",
+            "3": "Protokoll",
+            "4": "Prozess"
+          }
+        },
+        "147": {
+          "question": "Was ist die Arbeit eines Richters / einer Richterin in Deutschland?",
+          "answers": {
+            "1": "Deutschland regieren",
+            "2": "Recht sprechen",
+            "3": "Pläne erstellen",
+            "4": "Gesetze erlassen"
+          }
+        },
+        "148": {
+          "question": "Was ist eine Aufgabe der Polizei in Deutschland?",
+          "answers": {
+            "1": "das Land zu verteidigen",
+            "2": "die Bürgerinnen und Bürger abzuhören",
+            "3": "die Gesetze zu beschließen",
+            "4": "die Einhaltung von Gesetzen zu überwachen"
+          }
+        },
+        "149": {
+          "question": "Wer kann Gerichtsschöffe / Gerichtsschöffin in Deutschland werden?",
+          "answers": {
+            "1": "alle in Deutschland geborenen Einwohner / Einwohnerinnen über 18 Jahre",
+            "2": "alle deutschen Staatsangehörigen älter als 24 und jünger als 70 Jahre",
+            "3": "alle Personen, die seit mindestens 5 Jahren in Deutschland leben",
+            "4": "nur Personen mit einem abgeschlossenen Jurastudium"
+          }
+        },
+        "150": {
+          "question": "Ein Gerichtsschöffe / eine Gerichtsschöffin in Deutschland ist …",
+          "answers": {
+            "1": "der Stellvertreter / die Stellvertreterin des Stadtoberhaupts.",
+            "2": "ein ehrenamtlicher Richter / eine ehrenamtliche Richterin.",
+            "3": "ein Mitglied eines Gemeinderats.",
+            "4": "eine Person, die Jura studiert hat."
+          }
+        },
+        "151": {
+          "question": "Wer baute die Mauer in Berlin?",
+          "answers": {
+            "1": "Großbritannien",
+            "2": "die Bundesrepublik Deutschland",
+            "3": "die DDR",
+            "4": "die USA"
+          }
+        },
+        "152": {
+          "question": "Wann waren die Nationalsozialisten mit Adolf Hitler in Deutschland an der Macht?",
+          "answers": {
+            "1": "1918 bis 1923",
+            "2": "1932 bis 1950",
+            "3": "1933 bis 1945",
+            "4": "1945 bis 1989"
+          }
+        },
+        "153": {
+          "question": "Was war am 8. Mai 1945?",
+          "answers": {
+            "1": "Tod Adolf Hitlers",
+            "2": "Beginn des Berliner Mauerbaus",
+            "3": "Wahl von Konrad Adenauer zum Bundeskanzler",
+            "4": "Ende des Zweiten Weltkriegs in Europa"
+          }
+        },
+        "154": {
+          "question": "Wann war der Zweite Weltkrieg zu Ende?",
+          "answers": {
+            "1": "1933",
+            "2": "1945",
+            "3": "1949",
+            "4": "1961"
+          }
+        },
+        "155": {
+          "question": "Wann waren die Nationalsozialisten in Deutschland an der Macht?",
+          "answers": {
+            "1": "1888 bis 1918",
+            "2": "1921 bis 1934",
+            "3": "1933 bis 1945",
+            "4": "1949 bis 1963"
+          }
+        },
+        "156": {
+          "question": "In welchem Jahr wurde Hitler Reichskanzler?",
+          "answers": {
+            "1": "1923",
+            "2": "1927",
+            "3": "1933",
+            "4": "1936"
+          }
+        },
+        "157": {
+          "question": "Die Nationalsozialisten mit Adolf Hitler errichteten 1933 in Deutschland …",
+          "answers": {
+            "1": "eine Diktatur.",
+            "2": "einen demokratischen Staat.",
+            "3": "eine Monarchie.",
+            "4": "ein Fürstentum."
+          }
+        },
+        "158": {
+          "question": "Das „Dritte Reich“ war eine …",
+          "answers": {
+            "1": "Diktatur.",
+            "2": "Demokratie.",
+            "3": "Monarchie.",
+            "4": "Räterepublik."
+          }
+        },
+        "159": {
+          "question": "Was gab es in Deutschland nicht während der Zeit des Nationalsozialismus?",
+          "answers": {
+            "1": "freie Wahlen",
+            "2": "Pressezensur",
+            "3": "willkürliche Verhaftungen",
+            "4": "Verfolgung der Juden"
+          }
+        },
+        "160": {
+          "question": "Welcher Krieg dauerte von 1939 bis 1945?",
+          "answers": {
+            "1": "der Erste Weltkrieg",
+            "2": "der Zweite Weltkrieg",
+            "3": "der Vietnamkrieg",
+            "4": "der Golfkrieg"
+          }
+        },
+        "161": {
+          "question": "Was kennzeichnete den NS-Staat? Eine Politik …",
+          "answers": {
+            "1": "des staatlichen Rassismus",
+            "2": "der Meinungsfreiheit",
+            "3": "der allgemeinen Religionsfreiheit",
+            "4": "der Entwicklung der Demokratie"
+          }
+        },
+        "162": {
+          "question": "Claus Schenk Graf von Stauffenberg wurde bekannt durch …",
+          "answers": {
+            "1": "eine Goldmedaille bei den Olympischen Spielen 1936.",
+            "2": "den Bau des Reichstagsgebäudes.",
+            "3": "den Aufbau der Wehrmacht.",
+            "4": "das Attentat auf Hitler am 20. Juli 1944."
+          }
+        },
+        "163": {
+          "question": "In welchem Jahr zerstörten die Nationalsozialisten Synagogen und jüdische Geschäfte in Deutschland?",
+          "answers": {
+            "1": "1925",
+            "2": "1930",
+            "3": "1938",
+            "4": "1945"
+          }
+        },
+        "164": {
+          "question": "Was passierte am 9. November 1938 in Deutschland?",
+          "answers": {
+            "1": "Mit dem Angriff auf Polen beginnt der Zweite Weltkrieg.",
+            "2": "Die Nationalsozialisten verlieren eine Wahl und lösen den Reichstag auf.",
+            "3": "Jüdische Geschäfte und Synagogen werden durch Nationalsozialisten und ihre Anhänger zerstört.",
+            "4": "Hitler wird Reichspräsident und lässt alle Parteien verbieten."
+          }
+        },
+        "165": {
+          "question": "Wie hieß der erste Bundeskanzler der Bundesrepublik Deutschland?",
+          "answers": {
+            "1": "Konrad Adenauer",
+            "2": "Kurt Georg Kiesinger",
+            "3": "Helmut Schmidt",
+            "4": "Willy Brandt"
+          }
+        },
+        "166": {
+          "question": "Bei welchen Demonstrationen in Deutschland riefen die Menschen „Wir sind das Volk“?",
+          "answers": {
+            "1": "bei den Montagsdemonstrationen 1989 in der DDR",
+            "2": "beim Arbeiteraufstand 1953 in der DDR",
+            "3": "bei den Demonstrationen 1968 in der Bundesrepublik Deutschland",
+            "4": "bei den Anti-Atomkraft-Demonstrationen 1985 in der Bundesrepublik Deutschland"
+          }
+        },
+        "167": {
+          "question": "Welche Länder wurden nach dem Zweiten Weltkrieg in Deutschland als „Alliierte Besatzungsmächte“ bezeichnet?",
+          "answers": {
+            "1": "Sowjetunion, Großbritannien, Polen, Schweden",
+            "2": "Frankreich, Sowjetunion, Italien, Japan",
+            "3": "USA, Sowjetunion, Spanien, Portugal",
+            "4": "USA, Sowjetunion, Großbritannien, Frankreich"
+          }
+        },
+        "168": {
+          "question": "Welches Land war keine „Alliierte Besatzungsmacht“ in Deutschland?",
+          "answers": {
+            "1": "USA",
+            "2": "Sowjetunion",
+            "3": "Frankreich",
+            "4": "Japan"
+          }
+        },
+        "169": {
+          "question": "Wann wurde die Bundesrepublik Deutschland gegründet?",
+          "answers": {
+            "1": "1939",
+            "2": "1945",
+            "3": "1949",
+            "4": "1951"
+          }
+        },
+        "170": {
+          "question": "Was gab es während der Zeit des Nationalsozialismus in Deutschland?",
+          "answers": {
+            "1": "das Recht zur freien Entfaltung der Persönlichkeit",
+            "2": "Pressefreiheit",
+            "3": "das Verbot von Parteien",
+            "4": "den Schutz der Menschenwürde"
+          }
+        },
+        "171": {
+          "question": "Soziale Marktwirtschaft bedeutet, die Wirtschaft …",
+          "answers": {
+            "1": "steuert sich allein nach Angebot und Nachfrage.",
+            "2": "wird vom Staat geplant und gesteuert, Angebot und Nachfrage werden nicht berücksichtigt.",
+            "3": "richtet sich nach der Nachfrage im Ausland.",
+            "4": "richtet sich nach Angebot und Nachfrage, aber der Staat sorgt für einen sozialen Ausgleich."
+          }
+        },
+        "172": {
+          "question": "In welcher Besatzungszone wurde die DDR gegründet? In der …",
+          "answers": {
+            "1": "amerikanischen Besatzungszone.",
+            "2": "französischen Besatzungszone.",
+            "3": "britischen Besatzungszone.",
+            "4": "sowjetischen Besatzungszone."
+          }
+        },
+        "173": {
+          "question": "Die Bundesrepublik Deutschland ist ein Gründungsmitglied …",
+          "answers": {
+            "1": "des Nordatlantikpakts (NATO).",
+            "2": "der Vereinten Nationen (VN).",
+            "3": "der Europäischen Union (EU).",
+            "4": "des Warschauer Pakts."
+          }
+        },
+        "174": {
+          "question": "Wann wurde die DDR gegründet?",
+          "answers": {
+            "1": "1947",
+            "2": "1949",
+            "3": "1953",
+            "4": "1956"
+          }
+        },
+        "175": {
+          "question": "Wie viele Besatzungszonen gab es in Deutschland nach dem Zweiten Weltkrieg?",
+          "answers": {
+            "1": "3",
+            "2": "4",
+            "3": "5",
+            "4": "6"
+          }
+        },
+        "176": {
+          "question": "Wie waren die Besatzungszonen Deutschlands nach 1945 verteilt?",
+          "answers": {
+            "1": "1=Großbritannien, 2=Sowjetunion, 3=Frankreich, 4=USA",
+            "2": "1=Sowjetunion, 2=Großbritannien, 3=USA, 4=Frankreich",
+            "3": "1=Großbritannien, 2=Sowjetunion, 3=USA, 4=Frankreich",
+            "4": "1=Großbritannien, 2=USA, 3=Sowjetunion, 4=Frankreich"
+          }
+        },
+        "177": {
+          "question": "Welche deutsche Stadt wurde nach dem Zweiten Weltkrieg in vier Sektoren aufgeteilt?",
+          "answers": {
+            "1": "München",
+            "2": "Berlin",
+            "3": "Dresden",
+            "4": "Frankfurt/Oder"
+          }
+        },
+        "178": {
+          "question": "Vom Juni 1948 bis zum Mai 1949 wurden die Bürger und Bürgerinnen von West-Berlin durch eine Luftbrücke versorgt. Welcher Umstand war dafür verantwortlich?",
+          "answers": {
+            "1": "Für Frankreich war eine Versorgung der West-Berliner Bevölkerung mit dem Flugzeug kostengünstiger.",
+            "2": "Die amerikanischen Soldaten / Soldatinnen hatten beim Landtransport Angst vor Überfällen.",
+            "3": "Für Großbritannien war die Versorgung über die Luftbrücke schneller.",
+            "4": "Die Sowjetunion unterbrach den gesamten Verkehr auf dem Landwege."
+          }
+        },
+        "179": {
+          "question": "Wie endete der Zweite Weltkrieg in Europa offiziell?",
+          "answers": {
+            "1": "mit dem Tod Adolf Hitlers",
+            "2": "durch die bedingungslose Kapitulation Deutschlands",
+            "3": "mit dem Rückzug der Deutschen aus den besetzten Gebieten",
+            "4": "durch eine Revolution in Deutschland"
+          }
+        },
+        "180": {
+          "question": "Der erste Bundeskanzler der Bundesrepublik Deutschland war …",
+          "answers": {
+            "1": "Ludwig Erhard.",
+            "2": "Willy Brandt.",
+            "3": "Konrad Adenauer.",
+            "4": "Gerhard Schröder."
+          }
+        },
+        "181": {
+          "question": "Was wollte Willy Brandt mit seinem Kniefall 1970 im ehemaligen jüdischen Ghetto in Warschau ausdrücken?",
+          "answers": {
+            "1": "Er hat sich den ehemaligen Alliierten unterworfen.",
+            "2": "Er bat Polen und die polnischen Juden um Vergebung.",
+            "3": "Er zeigte seine Demut vor dem Warschauer Pakt.",
+            "4": "Er sprach ein Gebet am Grab des Unbekannten Soldaten."
+          }
+        },
+        "182": {
+          "question": "Welche Parteien wurden 1946 zwangsweise zur SED vereint, der Einheitspartei der späteren DDR?",
+          "answers": {
+            "1": "KPD und SPD",
+            "2": "SPD und CDU",
+            "3": "CDU und FDP",
+            "4": "KPD und CSU"
+          }
+        },
+        "183": {
+          "question": "Wann war in der Bundesrepublik Deutschland das „Wirtschaftswunder“?",
+          "answers": {
+            "1": "40er Jahre",
+            "2": "50er Jahre",
+            "3": "70er Jahre",
+            "4": "80er Jahre"
+          }
+        },
+        "184": {
+          "question": "Was nannten die Menschen in Deutschland sehr lange „Die Stunde Null“?",
+          "answers": {
+            "1": "Damit wird die Zeit nach der Wende im Jahr 1989 bezeichnet.",
+            "2": "Damit wurde der Beginn des Zweiten Weltkrieges bezeichnet.",
+            "3": "Darunter verstand man das Ende des Zweiten Weltkrieges und den Beginn des Wiederaufbaus.",
+            "4": "Damit ist die Stunde gemeint, in der die Uhr von der Sommerzeit auf die Winterzeit umgestellt wird."
+          }
+        },
+        "185": {
+          "question": "Wofür stand der Ausdruck „Eiserner Vorhang“? Für die Abschottung …",
+          "answers": {
+            "1": "des Warschauer Pakts gegen den Westen.",
+            "2": "Norddeutschlands gegen Süddeutschland.",
+            "3": "Nazi-Deutschlands gegen die Alliierten.",
+            "4": "Europas gegen die USA."
+          }
+        },
+        "186": {
+          "question": "Im Jahr 1953 gab es in der DDR einen Aufstand, an den lange Zeit in der Bundesrepublik Deutschland ein Feiertag erinnerte. Wann war das?",
+          "answers": {
+            "1": "1. Mai",
+            "2": "17. Juni",
+            "3": "20. Juli",
+            "4": "9. November"
+          }
+        },
+        "187": {
+          "question": "Welcher deutsche Staat hatte eine schwarz-rot-goldene Flagge mit Hammer, Zirkel und Ährenkranz?",
+          "answers": {
+            "1": "Preußen",
+            "2": "Bundesrepublik Deutschland",
+            "3": "DDR",
+            "4": "„Drittes Reich“"
+          }
+        },
+        "188": {
+          "question": "In welchem Jahr wurde die Mauer in Berlin gebaut?",
+          "answers": {
+            "1": "1953",
+            "2": "1956",
+            "3": "1959",
+            "4": "1961"
+          }
+        },
+        "189": {
+          "question": "Wann baute die DDR die Mauer in Berlin?",
+          "answers": {
+            "1": "1919",
+            "2": "1933",
+            "3": "1961",
+            "4": "1990"
+          }
+        },
+        "190": {
+          "question": "Was bedeutet die Abkürzung DDR?",
+          "answers": {
+            "1": "Dritter Deutscher Rundfunk",
+            "2": "Die Deutsche Republik",
+            "3": "Dritte Deutsche Republik",
+            "4": "Deutsche Demokratische Republik"
+          }
+        },
+        "191": {
+          "question": "Wann wurde die Mauer in Berlin für alle geöffnet?",
+          "answers": {
+            "1": "1987",
+            "2": "1989",
+            "3": "1992",
+            "4": "1995"
+          }
+        },
+        "192": {
+          "question": "Welches heutige deutsche Bundesland gehörte früher zum Gebiet der DDR?",
+          "answers": {
+            "1": "Brandenburg",
+            "2": "Bayern",
+            "3": "Saarland",
+            "4": "Hessen"
+          }
+        },
+        "193": {
+          "question": "Von 1961 bis 1989 war Berlin …",
+          "answers": {
+            "1": "ohne Bürgermeister.",
+            "2": "ein eigener Staat.",
+            "3": "durch eine Mauer geteilt.",
+            "4": "nur mit dem Flugzeug erreichbar."
+          }
+        },
+        "194": {
+          "question": "Am 3. Oktober feiert man in Deutschland den Tag der Deutschen …",
+          "answers": {
+            "1": "Einheit.",
+            "2": "Nation.",
+            "3": "Bundesländer.",
+            "4": "Städte."
+          }
+        },
+        "195": {
+          "question": "Welches heutige deutsche Bundesland gehörte früher zum Gebiet der DDR?",
+          "answers": {
+            "1": "Hessen",
+            "2": "Sachsen-Anhalt",
+            "3": "Nordrhein-Westfalen",
+            "4": "Saarland"
+          }
+        },
+        "196": {
+          "question": "Warum nennt man die Zeit im Herbst 1989 in der DDR „Die Wende“? In dieser Zeit veränderte sich die DDR politisch …",
+          "answers": {
+            "1": "von einer Diktatur zur Demokratie.",
+            "2": "von einer liberalen Marktwirtschaft zum Sozialismus.",
+            "3": "von einer Monarchie zur Sozialdemokratie.",
+            "4": "von einem religiösen Staat zu einem kommunistischen Staat."
+          }
+        },
+        "197": {
+          "question": "Welches heutige deutsche Bundesland gehörte früher zum Gebiet der DDR?",
+          "answers": {
+            "1": "Thüringen",
+            "2": "Hessen",
+            "3": "Bayern",
+            "4": "Bremen"
+          }
+        },
+        "198": {
+          "question": "Welches heutige deutsche Bundesland gehörte früher zum Gebiet der DDR?",
+          "answers": {
+            "1": "Bayern",
+            "2": "Niedersachsen",
+            "3": "Sachsen",
+            "4": "Baden-Württemberg"
+          }
+        },
+        "199": {
+          "question": "Mit der Abkürzung „Stasi“ meinte man in der DDR …",
+          "answers": {
+            "1": "das Parlament.",
+            "2": "das Ministerium für Staatssicherheit.",
+            "3": "eine regierende Partei.",
+            "4": "das Ministerium für Volksbildung."
+          }
+        },
+        "200": {
+          "question": "Welches heutige deutsche Bundesland gehörte früher zum Gebiet der DDR?",
+          "answers": {
+            "1": "Hessen",
+            "2": "Schleswig-Holstein",
+            "3": "Mecklenburg-Vorpommern",
+            "4": "Saarland"
+          }
+        },
+        "201": {
+          "question": "Welche der folgenden Auflistungen enthält nur Bundesländer, die zum Gebiet der früheren DDR gehörten?",
+          "answers": {
+            "1": "Niedersachsen, Nordrhein-Westfalen, Hessen, Schleswig-Holstein, Brandenburg",
+            "2": "Mecklenburg-Vorpommern, Brandenburg, Sachsen, Sachsen-Anhalt, Thüringen",
+            "3": "Bayern, Baden-Württemberg, Rheinland-Pfalz, Thüringen, Sachsen",
+            "4": "Sachsen, Thüringen, Hessen, Niedersachsen, Brandenburg"
+          }
+        },
+        "202": {
+          "question": "Zu wem gehörte die DDR im „Kalten Krieg“?",
+          "answers": {
+            "1": "zu den Westmächten",
+            "2": "zum Warschauer Pakt",
+            "3": "zur NATO",
+            "4": "zu den blockfreien Staaten"
+          }
+        },
+        "203": {
+          "question": "Wie hieß das Wirtschaftssystem der DDR?",
+          "answers": {
+            "1": "Marktwirtschaft",
+            "2": "Planwirtschaft",
+            "3": "Angebot und Nachfrage",
+            "4": "Kapitalismus"
+          }
+        },
+        "204": {
+          "question": "Wie wurden die Bundesrepublik Deutschland und die DDR zu einem Staat?",
+          "answers": {
+            "1": "Die Bundesrepublik Deutschland hat die DDR besetzt.",
+            "2": "Die heutigen fünf östlichen Bundesländer sind der Bundesrepublik Deutschland beigetreten.",
+            "3": "Die westlichen Bundesländer sind der DDR beigetreten.",
+            "4": "Die DDR hat die Bundesrepublik Deutschland besetzt."
+          }
+        },
+        "205": {
+          "question": "Mit dem Beitritt der DDR zur Bundesrepublik Deutschland gehören die neuen Bundesländer nun auch …",
+          "answers": {
+            "1": "zur Europäischen Union.",
+            "2": "zum Warschauer Pakt.",
+            "3": "zur OPEC.",
+            "4": "zur Europäischen Verteidigungsgemeinschaft."
+          }
+        },
+        "206": {
+          "question": "Was bedeutete im Jahr 1989 in Deutschland das Wort „Montagsdemonstration“?",
+          "answers": {
+            "1": "In der Bundesrepublik waren Demonstrationen nur am Montag erlaubt.",
+            "2": "Montags waren Demonstrationen gegen das DDR-Regime.",
+            "3": "Am ersten Montag im Monat trafen sich in der Bundesrepublik Deutschland Demonstranten.",
+            "4": "Montags demonstrierte man in der DDR gegen den Westen."
+          }
+        },
+        "207": {
+          "question": "In welchem Militärbündnis war die DDR Mitglied?",
+          "answers": {
+            "1": "in der NATO",
+            "2": "im Rheinbund",
+            "3": "im Warschauer Pakt",
+            "4": "im Europabündnis"
+          }
+        },
+        "208": {
+          "question": "Was war die „Stasi“?",
+          "answers": {
+            "1": "der Geheimdienst im „Dritten Reich“",
+            "2": "eine berühmte deutsche Gedenkstätte",
+            "3": "der Geheimdienst der DDR",
+            "4": "ein deutscher Sportverein während des Zweiten Weltkrieges"
+          }
+        },
+        "209": {
+          "question": "Welches war das Wappen der Deutschen Demokratischen Republik?",
+          "answers": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        },
+        "210": {
+          "question": "Was ereignete sich am 17. Juni 1953 in der DDR?",
+          "answers": {
+            "1": "der feierliche Beitritt zum Warschauer Pakt",
+            "2": "landesweite Streiks und ein Volksaufstand",
+            "3": "der 1. SED-Parteitag",
+            "4": "der erste Besuch Fidel Castros"
+          }
+        },
+        "211": {
+          "question": "Welcher Politiker steht für die „Ostverträge“?",
+          "answers": {
+            "1": "Helmut Kohl",
+            "2": "Willy Brandt",
+            "3": "Michail Gorbatschow",
+            "4": "Ludwig Erhard"
+          }
+        },
+        "212": {
+          "question": "Wie heißt Deutschland mit vollem Namen?",
+          "answers": {
+            "1": "Bundesstaat Deutschland",
+            "2": "Bundesländer Deutschland",
+            "3": "Bundesrepublik Deutschland",
+            "4": "Bundesbezirk Deutschland"
+          }
+        },
+        "213": {
+          "question": "Wie viele Einwohner hat Deutschland?",
+          "answers": {
+            "1": "70 Millionen",
+            "2": "78 Millionen",
+            "3": "83 Millionen",
+            "4": "90 Millionen"
+          }
+        },
+        "214": {
+          "question": "Welche Farben hat die deutsche Flagge?",
+          "answers": {
+            "1": "schwarz-rot-gold",
+            "2": "rot-weiß-schwarz",
+            "3": "schwarz-rot-grün",
+            "4": "schwarz-gelb-rot"
+          }
+        },
+        "215": {
+          "question": "Wer wird als „Kanzler der Deutschen Einheit“ bezeichnet?",
+          "answers": {
+            "1": "Gerhard Schröder",
+            "2": "Helmut Kohl",
+            "3": "Konrad Adenauer",
+            "4": "Helmut Schmidt"
+          }
+        },
+        "216": {
+          "question": "Welches Symbol ist im Plenarsaal des Deutschen Bundestages zu sehen?",
+          "answers": {
+            "1": "die Fahne der Stadt Berlin",
+            "2": "der Bundesadler",
+            "3": "der Reichsadler",
+            "4": "die Reichskrone"
+          }
+        },
+        "217": {
+          "question": "In welchem Zeitraum gab es die Deutsche Demokratische Republik (DDR)?",
+          "answers": {
+            "1": "1919 bis 1927",
+            "2": "1933 bis 1945",
+            "3": "1949 bis 1990",
+            "4": "1945 bis 1961"
+          }
+        },
+        "218": {
+          "question": "Wie viele Bundesländer kamen bei der Wiedervereinigung 1990 zur Bundesrepublik Deutschland hinzu?",
+          "answers": {
+            "1": "4",
+            "2": "5",
+            "3": "6",
+            "4": "7"
+          }
+        },
+        "219": {
+          "question": "Die Bundesrepublik Deutschland hat die Grenzen von heute seit …",
+          "answers": {
+            "1": "1933.",
+            "2": "1949.",
+            "3": "1971.",
+            "4": "1990."
+          }
+        },
+        "220": {
+          "question": "Der 27. Januar ist in Deutschland ein offizieller Gedenktag. Woran erinnert dieser Tag?",
+          "answers": {
+            "1": "an das Ende des Zweiten Weltkrieges",
+            "2": "an die Verabschiedung des Grundgesetzes",
+            "3": "an die Wiedervereinigung Deutschlands",
+            "4": "an die Opfer des Nationalsozialismus"
+          }
+        },
+        "221": {
+          "question": "Deutschland ist Mitglied des Schengener Abkommens. Was bedeutet das?",
+          "answers": {
+            "1": "Deutsche können in viele Länder Europas ohne Passkontrolle reisen.",
+            "2": "Alle Menschen können ohne Personenkontrolle in Deutschland einreisen.",
+            "3": "Deutsche können ohne Passkontrolle in jedes Land reisen.",
+            "4": "Deutsche können in jedem Land mit dem Euro bezahlen."
+          }
+        },
+        "222": {
+          "question": "Welches Land ist ein Nachbarland von Deutschland?",
+          "answers": {
+            "1": "Ungarn",
+            "2": "Portugal",
+            "3": "Spanien",
+            "4": "Schweiz"
+          }
+        },
+        "223": {
+          "question": "Welches Land ist ein Nachbarland von Deutschland?",
+          "answers": {
+            "1": "Rumänien",
+            "2": "Bulgarien",
+            "3": "Polen",
+            "4": "Griechenland"
+          }
+        },
+        "224": {
+          "question": "Was bedeutet die Abkürzung EU?",
+          "answers": {
+            "1": "Europäische Unternehmen",
+            "2": "Europäische Union",
+            "3": "Einheitliche Union",
+            "4": "Euro Union"
+          }
+        },
+        "225": {
+          "question": "In welchem anderen Land gibt es eine große deutschsprachige Bevölkerung?",
+          "answers": {
+            "1": "Tschechien",
+            "2": "Norwegen",
+            "3": "Spanien",
+            "4": "Österreich"
+          }
+        },
+        "226": {
+          "question": "Welche ist die Flagge der Europäischen Union?",
+          "answers": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        },
+        "227": {
+          "question": "Welches Land ist ein Nachbarland von Deutschland?",
+          "answers": {
+            "1": "Finnland",
+            "2": "Dänemark",
+            "3": "Norwegen",
+            "4": "Schweden"
+          }
+        },
+        "228": {
+          "question": "Wie wird der Beitritt der DDR zur Bundesrepublik Deutschland im Jahr 1990 allgemein genannt?",
+          "answers": {
+            "1": "NATO-Osterweiterung",
+            "2": "EU-Osterweiterung",
+            "3": "Europäische Gemeinschaft",
+            "4": "Deutsche Wiedervereinigung"
+          }
+        },
+        "229": {
+          "question": "Welches Land ist ein Nachbarland von Deutschland?",
+          "answers": {
+            "1": "Spanien",
+            "2": "Bulgarien",
+            "3": "Norwegen",
+            "4": "Luxemburg"
+          }
+        },
+        "230": {
+          "question": "Das Europäische Parlament wird regelmäßig gewählt, nämlich alle …",
+          "answers": {
+            "1": "5 Jahre.",
+            "2": "6 Jahre.",
+            "3": "7 Jahre.",
+            "4": "8 Jahre."
+          }
+        },
+        "231": {
+          "question": "Was bedeutet der Begriff „europäische Integration“?",
+          "answers": {
+            "1": "Damit sind amerikanische Einwanderer in Europa gemeint.",
+            "2": "Der Begriff meint den Einwanderungsstopp nach Europa.",
+            "3": "Damit sind europäische Auswanderer in den USA gemeint.",
+            "4": "Der Begriff meint den Zusammenschluss europäischer Staaten zur EU."
+          }
+        },
+        "232": {
+          "question": "Wer wird bei der Europawahl gewählt?",
+          "answers": {
+            "1": "die Europäische Kommission",
+            "2": "die Länder, die in die EU eintreten dürfen",
+            "3": "die europäische Verfassung",
+            "4": "die Abgeordneten des Europäischen Parlaments"
+          }
+        },
+        "233": {
+          "question": "Welches Land ist ein Nachbarland von Deutschland?",
+          "answers": {
+            "1": "Tschechien",
+            "2": "Bulgarien",
+            "3": "Griechenland",
+            "4": "Portugal"
+          }
+        },
+        "234": {
+          "question": "Wo ist der Sitz des Europäischen Parlaments?",
+          "answers": {
+            "1": "London",
+            "2": "Paris",
+            "3": "Berlin",
+            "4": "Straßburg"
+          }
+        },
+        "235": {
+          "question": "Der französische Staatspräsident François Mitterrand und der deutsche Bundeskanzler Helmut Kohl gedenken in Verdun gemeinsam der Toten beider Weltkriege. Welches Ziel der Europäischen Union wird bei diesem Treffen deutlich?",
+          "answers": {
+            "1": "Freundschaft zwischen England und Deutschland",
+            "2": "Reisefreiheit in alle Länder der EU",
+            "3": "Frieden und Sicherheit in den Ländern der EU",
+            "4": "Einheitliche Feiertage in den Ländern der EU"
+          }
+        },
+        "236": {
+          "question": "Wie viele Mitgliedstaaten hat die EU heute?",
+          "answers": {
+            "1": "21",
+            "2": "23",
+            "3": "25",
+            "4": "27"
+          }
+        },
+        "237": {
+          "question": "2007 wurde das 50-jährige Jubiläum der „Römischen Verträge“ gefeiert. Was war der Inhalt der Verträge?",
+          "answers": {
+            "1": "Beitritt Deutschlands zur NATO",
+            "2": "Gründung der Europäischen Wirtschaftsgemeinschaft (EWG)",
+            "3": "Verpflichtung Deutschlands zu Reparationsleistungen",
+            "4": "Festlegung der Oder-Neiße-Linie als Ostgrenze"
+          }
+        },
+        "238": {
+          "question": "An welchen Orten arbeitet das Europäische Parlament?",
+          "answers": {
+            "1": "Paris, London und Den Haag",
+            "2": "Straßburg, Luxemburg und Brüssel",
+            "3": "Rom, Bern und Wien",
+            "4": "Bonn, Zürich und Mailand"
+          }
+        },
+        "239": {
+          "question": "Durch welche Verträge schloss sich die Bundesrepublik Deutschland mit anderen Staaten zur Europäischen Wirtschaftsgemeinschaft zusammen?",
+          "answers": {
+            "1": "durch die „Hamburger Verträge“",
+            "2": "durch die „Römischen Verträge“",
+            "3": "durch die „Pariser Verträge“",
+            "4": "durch die „Londoner Verträge“"
+          }
+        },
+        "240": {
+          "question": "Seit wann bezahlt man in Deutschland mit dem Euro in bar?",
+          "answers": {
+            "1": "1995",
+            "2": "1998",
+            "3": "2002",
+            "4": "2005"
+          }
+        },
+        "241": {
+          "question": "Frau Seger bekommt ein Kind. Was muss sie tun, um Elterngeld zu erhalten?",
+          "answers": {
+            "1": "Sie muss an ihre Krankenkasse schreiben.",
+            "2": "Sie muss nichts tun, denn sie bekommt automatisch Elterngeld.",
+            "3": "Sie muss einen Antrag bei der Elterngeldstelle stellen.",
+            "4": "Sie muss das Arbeitsamt um Erlaubnis bitten."
+          }
+        },
+        "242": {
+          "question": "Wer entscheidet, ob ein Kind in Deutschland in den Kindergarten geht?",
+          "answers": {
+            "1": "der Staat",
+            "2": "die Bundesländer",
+            "3": "die Eltern / die Erziehungsberechtigten",
+            "4": "die Schulen"
+          }
+        },
+        "243": {
+          "question": "Maik und Sybille wollen mit Freunden an ihrem deutschen Wohnort eine Demonstration auf der Straße abhalten. Was müssen sie vorher tun?",
+          "answers": {
+            "1": "Sie müssen nichts tun. Man darf in Deutschland jederzeit überall demonstrieren.",
+            "2": "Sie müssen die Demonstration anmelden.",
+            "3": "Sie können gar nichts tun, denn Demonstrationen sind in Deutschland grundsätzlich verboten.",
+            "4": "Maik und Sybille müssen einen neuen Verein gründen, weil nur Vereine demonstrieren dürfen."
+          }
+        },
+        "244": {
+          "question": "Welchen Schulabschluss braucht man normalerweise, um an einer Universität in Deutschland ein Studium zu beginnen?",
+          "answers": {
+            "1": "das Abitur",
+            "2": "ein Diplom",
+            "3": "die Prokura",
+            "4": "eine Gesellenprüfung"
+          }
+        },
+        "245": {
+          "question": "Wer darf in Deutschland nicht als Paar zusammenleben?",
+          "answers": {
+            "1": "Hans (20 Jahre) und Marie (19 Jahre)",
+            "2": "Tom (20 Jahre) und Klaus (45 Jahre)",
+            "3": "Sofie (35 Jahre) und Lisa (40 Jahre)",
+            "4": "Anne (13 Jahre) und Tim (25 Jahre)"
+          }
+        },
+        "246": {
+          "question": "Ab welchem Alter ist man in Deutschland volljährig?",
+          "answers": {
+            "1": "16",
+            "2": "18",
+            "3": "19",
+            "4": "21"
+          }
+        },
+        "247": {
+          "question": "Eine Frau ist schwanger. Sie ist kurz vor und nach der Geburt ihres Kindes vom Gesetz besonders beschützt. Wie heißt dieser Schutz?",
+          "answers": {
+            "1": "Elternzeit",
+            "2": "Geburtsvorbereitung",
+            "3": "Mutterschutz",
+            "4": "Wochenbett"
+          }
+        },
+        "248": {
+          "question": "Die Erziehung der Kinder ist in Deutschland vor allem Aufgabe …",
+          "answers": {
+            "1": "des Staates.",
+            "2": "der Eltern.",
+            "3": "der Großeltern.",
+            "4": "der Schulen."
+          }
+        },
+        "249": {
+          "question": "Wer ist in Deutschland hauptsächlich verantwortlich für die Kindererziehung?",
+          "answers": {
+            "1": "der Staat",
+            "2": "die Eltern",
+            "3": "die Verwandten",
+            "4": "die Schulen"
+          }
+        },
+        "250": {
+          "question": "In Deutschland hat man die besten Chancen auf einen gut bezahlten Arbeitsplatz, wenn man …",
+          "answers": {
+            "1": "katholisch ist.",
+            "2": "gut ausgebildet ist.",
+            "3": "eine Frau ist.",
+            "4": "Mitglied einer Partei ist."
+          }
+        },
+        "251": {
+          "question": "Wenn man in Deutschland ein Kind schlägt, …",
+          "answers": {
+            "1": "geht das niemanden etwas an.",
+            "2": "geht das nur die Familie etwas an.",
+            "3": "kann man dafür nicht bestraft werden.",
+            "4": "kann man dafür bestraft werden."
+          }
+        },
+        "252": {
+          "question": "In Deutschland …",
+          "answers": {
+            "1": "darf man zur gleichen Zeit nur mit einem Partner / einer Partnerin verheiratet sein.",
+            "2": "kann man mehrere Ehepartner / Ehepartnerinnen gleichzeitig haben.",
+            "3": "darf man nicht wieder heiraten, wenn man einmal verheiratet war.",
+            "4": "darf eine Frau nicht wieder heiraten, wenn ihr Mann gestorben ist."
+          }
+        },
+        "253": {
+          "question": "Wo müssen Sie sich anmelden, wenn Sie in Deutschland umziehen?",
+          "answers": {
+            "1": "beim Einwohnermeldeamt",
+            "2": "beim Standesamt",
+            "3": "beim Ordnungsamt",
+            "4": "beim Gewerbeamt"
+          }
+        },
+        "254": {
+          "question": "In Deutschland dürfen Ehepaare sich scheiden lassen. Meistens müssen sie dazu das „Trennungsjahr“ einhalten. Was bedeutet das?",
+          "answers": {
+            "1": "Der Scheidungsprozess dauert ein Jahr.",
+            "2": "Mann und Frau sind ein Jahr verheiratet, dann ist die Scheidung möglich.",
+            "3": "Das Besuchsrecht für die Kinder gilt ein Jahr.",
+            "4": "Mann und Frau führen mindestens ein Jahr getrennt ihr eigenes Leben. Danach ist die Scheidung möglich."
+          }
+        },
+        "255": {
+          "question": "Bei Erziehungsproblemen können Eltern in Deutschland Hilfe erhalten vom …",
+          "answers": {
+            "1": "Ordnungsamt.",
+            "2": "Schulamt.",
+            "3": "Jugendamt.",
+            "4": "Gesundheitsamt."
+          }
+        },
+        "256": {
+          "question": "Ein Ehepaar möchte in Deutschland ein Restaurant eröffnen. Was braucht es dazu unbedingt?",
+          "answers": {
+            "1": "eine Erlaubnis der Polizei",
+            "2": "eine Genehmigung einer Partei",
+            "3": "eine Genehmigung des Einwohnermeldeamts",
+            "4": "eine Gaststättenerlaubnis von der zuständigen Behörde"
+          }
+        },
+        "257": {
+          "question": "Eine erwachsene Frau möchte in Deutschland das Abitur nachholen. Das kann sie an …",
+          "answers": {
+            "1": "einer Hochschule.",
+            "2": "einem Abendgymnasium.",
+            "3": "einer Hauptschule.",
+            "4": "einer Privatuniversität."
+          }
+        },
+        "258": {
+          "question": "Was darf das Jugendamt in Deutschland?",
+          "answers": {
+            "1": "Es entscheidet, welche Schule das Kind besucht.",
+            "2": "Es kann ein Kind, das geschlagen wird oder hungern muss, aus der Familie nehmen.",
+            "3": "Es bezahlt das Kindergeld an die Eltern.",
+            "4": "Es kontrolliert, ob das Kind einen Kindergarten besucht."
+          }
+        },
+        "259": {
+          "question": "Das Berufsinformationszentrum BIZ bei der Bundesagentur für Arbeit in Deutschland hilft bei der …",
+          "answers": {
+            "1": "Rentenberechnung.",
+            "2": "Lehrstellensuche.",
+            "3": "Steuererklärung.",
+            "4": "Krankenversicherung."
+          }
+        },
+        "260": {
+          "question": "In Deutschland hat ein Kind in der Schule …",
+          "answers": {
+            "1": "Recht auf unbegrenzte Freizeit.",
+            "2": "Wahlfreiheit für alle Fächer.",
+            "3": "Anspruch auf Schulgeld.",
+            "4": "Anwesenheitspflicht."
+          }
+        },
+        "261": {
+          "question": "Ein Mann möchte mit 30 Jahren in Deutschland sein Abitur nachholen. Wo kann er das tun? An …",
+          "answers": {
+            "1": "einer Hochschule",
+            "2": "einem Abendgymnasium",
+            "3": "einer Hauptschule",
+            "4": "einer Privatuniversität"
+          }
+        },
+        "262": {
+          "question": "Was bedeutet in Deutschland der Grundsatz der Gleichbehandlung?",
+          "answers": {
+            "1": "Niemand darf z.B. wegen einer Behinderung benachteiligt werden.",
+            "2": "Man darf andere Personen benachteiligen, wenn ausreichende persönliche Gründe hierfür vorliegen.",
+            "3": "Niemand darf gegen Personen klagen, wenn sie benachteiligt wurden.",
+            "4": "Es ist für alle Gesetz, benachteiligten Gruppen jährlich Geld zu spenden."
+          }
+        },
+        "263": {
+          "question": "In Deutschland sind Jugendliche ab 14 Jahren strafmündig. Das bedeutet: Jugendliche, die 14 Jahre und älter sind und gegen Strafgesetze verstoßen, …",
+          "answers": {
+            "1": "werden bestraft.",
+            "2": "werden wie Erwachsene behandelt.",
+            "3": "teilen die Strafe mit ihren Eltern.",
+            "4": "werden nicht bestraft."
+          }
+        },
+        "264": {
+          "question": "Zu welchem Fest tragen Menschen in Deutschland bunte Kostüme und Masken?",
+          "answers": {
+            "1": "am Rosenmontag",
+            "2": "am Maifeiertag",
+            "3": "beim Oktoberfest",
+            "4": "an Pfingsten"
+          }
+        },
+        "265": {
+          "question": "Wohin muss man in Deutschland zuerst gehen, wenn man heiraten möchte?",
+          "answers": {
+            "1": "zum Einwohnermeldeamt",
+            "2": "zum Ordnungsamt",
+            "3": "zur Agentur für Arbeit",
+            "4": "zum Standesamt"
+          }
+        },
+        "266": {
+          "question": "Wann beginnt die gesetzliche Nachtruhe in Deutschland?",
+          "answers": {
+            "1": "wenn die Sonne untergeht",
+            "2": "um 22 Uhr",
+            "3": "wenn die Nachbarn schlafen gehen",
+            "4": "um 0 Uhr, Mitternacht"
+          }
+        },
+        "267": {
+          "question": "Eine junge Frau in Deutschland, 22 Jahre alt, lebt mit ihrem Freund zusammen. Die Eltern der Frau finden das nicht gut, weil ihnen der Freund nicht gefällt. Was können die Eltern tun?",
+          "answers": {
+            "1": "Sie müssen die Entscheidung der volljährigen Tochter respektieren.",
+            "2": "Sie haben das Recht, die Tochter in die elterliche Wohnung zurückzuholen.",
+            "3": "Sie können zur Polizei gehen und die Tochter anzeigen.",
+            "4": "Sie suchen einen anderen Mann für die Tochter."
+          }
+        },
+        "268": {
+          "question": "Eine junge Frau will den Führerschein machen. Sie hat Angst vor der Prüfung, weil ihre Muttersprache nicht Deutsch ist. Was ist richtig?",
+          "answers": {
+            "1": "Sie muss mindestens zehn Jahre in Deutschland leben, bevor sie den Führerschein machen kann.",
+            "2": "Sie kann die Theorie-Prüfung vielleicht in ihrer Muttersprache machen. Es gibt mehr als zehn Sprachen zur Auswahl.",
+            "3": "Wenn sie kein Deutsch kann, darf sie keinen Führerschein haben.",
+            "4": "Sie muss den Führerschein in dem Land machen, in dem man ihre Sprache spricht."
+          }
+        },
+        "269": {
+          "question": "In Deutschland haben Kinder ab dem Alter von drei Jahren bis zur Ersteinschulung einen Anspruch auf …",
+          "answers": {
+            "1": "monatliches Taschengeld.",
+            "2": "einen Kindergartenplatz.",
+            "3": "einen Platz in einem Sportverein.",
+            "4": "einen Ferienpass."
+          }
+        },
+        "270": {
+          "question": "Die Volkshochschule in Deutschland ist eine Einrichtung …",
+          "answers": {
+            "1": "für den Religionsunterricht.",
+            "2": "nur für Jugendliche.",
+            "3": "zur Weiterbildung.",
+            "4": "nur für Rentner und Rentnerinnen."
+          }
+        },
+        "271": {
+          "question": "Was ist in Deutschland ein Brauch zu Weihnachten?",
+          "answers": {
+            "1": "bunte Eier verstecken",
+            "2": "einen Tannenbaum schmücken",
+            "3": "sich mit Masken und Kostümen verkleiden",
+            "4": "Kürbisse vor die Tür stellen"
+          }
+        },
+        "272": {
+          "question": "Welche Lebensform ist in Deutschland nicht erlaubt?",
+          "answers": {
+            "1": "Mann und Frau sind geschieden und leben mit neuen Partnern zusammen.",
+            "2": "Zwei Frauen leben zusammen.",
+            "3": "Ein alleinerziehender Vater lebt mit seinen zwei Kindern zusammen.",
+            "4": "Ein Mann ist mit zwei Frauen zur selben Zeit verheiratet."
+          }
+        },
+        "273": {
+          "question": "Bei Erziehungsproblemen gehen Sie in Deutschland …",
+          "answers": {
+            "1": "zum Arzt / zur Ärztin.",
+            "2": "zum Gesundheitsamt.",
+            "3": "zum Einwohnermeldeamt.",
+            "4": "zum Jugendamt."
+          }
+        },
+        "274": {
+          "question": "Sie haben in Deutschland absichtlich einen Brief geöffnet, der an eine andere Person adressiert ist. Was haben Sie nicht beachtet?",
+          "answers": {
+            "1": "das Schweigerecht",
+            "2": "das Briefgeheimnis",
+            "3": "die Schweigepflicht",
+            "4": "die Meinungsfreiheit"
+          }
+        },
+        "275": {
+          "question": "Was braucht man in Deutschland für eine Ehescheidung?",
+          "answers": {
+            "1": "die Einwilligung der Eltern",
+            "2": "ein Attest eines Arztes / einer Ärztin",
+            "3": "die Einwilligung der Kinder",
+            "4": "die Unterstützung eines Anwalts / einer Anwältin"
+          }
+        },
+        "276": {
+          "question": "Was sollten Sie tun, wenn Sie von Ihrem Ansprechpartner / Ihrer Ansprechpartnerin in einer deutschen Behörde schlecht behandelt werden?",
+          "answers": {
+            "1": "Ich kann nichts tun.",
+            "2": "Ich muss mir diese Behandlung gefallen lassen.",
+            "3": "Ich drohe der Person.",
+            "4": "Ich kann mich beim Behördenleiter / bei der Behördenleiterin beschweren."
+          }
+        },
+        "277": {
+          "question": "Eine Frau, die ein zweijähriges Kind hat, bewirbt sich in Deutschland um eine Stelle. Was ist ein Beispiel für Diskriminierung? Sie bekommt die Stelle nur deshalb nicht, weil sie …",
+          "answers": {
+            "1": "kein Englisch spricht.",
+            "2": "zu hohe Gehaltsvorstellungen hat.",
+            "3": "keine Erfahrungen in diesem Beruf hat.",
+            "4": "Mutter ist."
+          }
+        },
+        "278": {
+          "question": "Ein Mann im Rollstuhl hat sich auf eine Stelle als Buchhalter beworben. Was ist ein Beispiel für Diskriminierung? Er bekommt die Stelle nur deshalb nicht, weil er …",
+          "answers": {
+            "1": "im Rollstuhl sitzt.",
+            "2": "keine Erfahrung hat.",
+            "3": "zu hohe Gehaltsvorstellungen hat.",
+            "4": "kein Englisch spricht."
+          }
+        },
+        "279": {
+          "question": "In den meisten Mietshäusern in Deutschland gibt es eine „Hausordnung“. Was steht in einer solchen „Hausordnung“? Sie nennt …",
+          "answers": {
+            "1": "Regeln für die Benutzung öffentlicher Verkehrsmittel.",
+            "2": "alle Mieter und Mieterinnen im Haus.",
+            "3": "Regeln, an die sich alle Bewohner und Bewohnerinnen halten müssen.",
+            "4": "die Adresse des nächsten Ordnungsamtes."
+          }
+        },
+        "280": {
+          "question": "Wenn Sie sich in Deutschland gegen einen falschen Steuerbescheid wehren wollen, müssen Sie …",
+          "answers": {
+            "1": "nichts machen.",
+            "2": "den Bescheid wegwerfen.",
+            "3": "Einspruch einlegen.",
+            "4": "warten, bis ein anderer Bescheid kommt."
+          }
+        },
+        "281": {
+          "question": "Zwei Freunde wollen in ein öffentliches Schwimmbad in Deutschland. Beide haben eine dunkle Hautfarbe und werden deshalb nicht hineingelassen. Welches Recht wird in dieser Situation verletzt? Das Recht auf …",
+          "answers": {
+            "1": "Meinungsfreiheit.",
+            "2": "Gleichbehandlung.",
+            "3": "Versammlungsfreiheit.",
+            "4": "Freizügigkeit."
+          }
+        },
+        "282": {
+          "question": "Welches Ehrenamt müssen deutsche Staatsbürger / Staatsbürgerinnen übernehmen, wenn sie dazu aufgefordert werden?",
+          "answers": {
+            "1": "Vereinstrainer / Vereinstrainerin",
+            "2": "Bibliotheksaufsicht",
+            "3": "Wahlhelfer / Wahlhelferin",
+            "4": "Lehrer / Lehrerin"
+          }
+        },
+        "283": {
+          "question": "Was tun Sie, wenn Sie eine falsche Rechnung von einer deutschen Behörde bekommen?",
+          "answers": {
+            "1": "Ich lasse die Rechnung liegen.",
+            "2": "Ich lege Widerspruch bei der Behörde ein.",
+            "3": "Ich schicke die Rechnung an die Behörde zurück.",
+            "4": "Ich gehe mit der Rechnung zum Finanzamt."
+          }
+        },
+        "284": {
+          "question": "Was man für die Arbeit können muss, ändert sich in der Zukunft sehr schnell. Was kann man tun?",
+          "answers": {
+            "1": "Es ist egal, was man lernt.",
+            "2": "Kinder lernen in der Schule alles, was im Beruf wichtig ist. Nach der Schule muss man nicht weiter lernen.",
+            "3": "Erwachsene müssen auch nach der Ausbildung immer weiter lernen.",
+            "4": "Alle müssen früher aufhören zu arbeiten."
+          }
+        },
+        "285": {
+          "question": "Sie müssen in einer Gaststätte in Deutschland auf die Toilette. Was muss der Wirt / die Wirtin Ihnen geben?",
+          "answers": {
+            "1": "einen Gutschein für ein Getränk [zum Beispiel für Kaff bei McDonald Affee85 Hochstraße].",
+            "2": "einen Kafffeg [zum Beispiel für Kaff bei McDonald]."
+          }
+        },
+        "286": {
+          "question": "Welche Organisation in einer Firma hilft den Arbeitnehmern und Arbeitnehmerinnen bei Problemen mit dem Arbeitgeber / der Arbeitgeberin?",
+          "answers": {
+            "1": "der Betriebsprüfer / die Betriebsprüferin",
+            "2": "die Betriebsgruppe",
+            "3": "das Betriebsmanagement",
+            "4": "der Betriebsrat"
+          }
+        },
+        "287": {
+          "question": "Sie möchten bei einer Firma in Deutschland Ihr Arbeitsverhältnis beenden. Was müssen Sie beachten?",
+          "answers": {
+            "1": "die Gehaltszahlungen",
+            "2": "die Arbeitszeit",
+            "3": "die Kündigungsfrist",
+            "4": "die Versicherungspflicht"
+          }
+        },
+        "288": {
+          "question": "Bei welchem Amt muss man in Deutschland in der Regel seinen Hund anmelden?",
+          "answers": {
+            "1": "beim Finanzamt",
+            "2": "beim Einwohnermeldeamt",
+            "3": "bei der Kommune (Stadt oder Gemeinde)",
+            "4": "beim Gesundheitsamt"
+          }
+        },
+        "289": {
+          "question": "Ein Mann mit dunkler Hautfarbe bewirbt sich um eine Stelle als Kellner in einem Restaurant in Deutschland. Was ist ein Beispiel für Diskriminierung? Er bekommt die Stelle nur deshalb nicht, weil …",
+          "answers": {
+            "1": "seine Deutschkenntnisse zu gering sind.",
+            "2": "er zu hohe Gehaltsvorstellungen hat.",
+            "3": "er eine dunkle Haut hat.",
+            "4": "er keine Erfahrungen im Beruf hat."
+          }
+        },
+        "290": {
+          "question": "Sie haben in Deutschland einen Fernseher gekauft. Zu Hause packen Sie den Fernseher aus, doch er funktioniert nicht. Der Fernseher ist kaputt. Was können Sie machen?",
+          "answers": {
+            "1": "eine Anzeige schreiben",
+            "2": "den Fernseher reklamieren",
+            "3": "das Gerät ungefragt austauschen",
+            "4": "die Garantie verlängern"
+          }
+        },
+        "291": {
+          "question": "Warum muss man in Deutschland bei der Steuererklärung aufschreiben, ob man zu einer Kirche gehört oder nicht? Weil …",
+          "answers": {
+            "1": "das für die Statistik in Deutschland wichtig ist.",
+            "2": "es eine Kirchensteuer gibt, die an die Einkommen- und Lohnsteuer geknüpft ist.",
+            "3": "man mehr Steuern zahlen muss, wenn man nicht zu einer Kirche gehört.",
+            "4": "die Kirche für die Steuererklärung verantwortlich ist."
+          }
+        },
+        "292": {
+          "question": "Die Menschen in Deutschland leben nach dem Grundsatz der religiösen Toleranz. Was bedeutet das?",
+          "answers": {
+            "1": "Es dürfen keine Moscheen gebaut werden.",
+            "2": "Alle Menschen glauben an Gott.",
+            "3": "Jeder kann glauben, was er möchte.",
+            "4": "Der Staat entscheidet, an welchen Gott die Menschen glauben."
+          }
+        },
+        "293": {
+          "question": "Was ist in Deutschland ein Brauch an Ostern?",
+          "answers": {
+            "1": "Kürbisse vor die Tür stellen",
+            "2": "einen Tannenbaum schmücken",
+            "3": "Eier bemalen",
+            "4": "Raketen in die Luft schießen"
+          }
+        },
+        "294": {
+          "question": "Pfingsten ist ein …",
+          "answers": {
+            "1": "christlicher Feiertag.",
+            "2": "deutscher Gedenktag.",
+            "3": "internationaler Trauertag.",
+            "4": "bayerischer Brauch."
+          }
+        },
+        "295": {
+          "question": "Welche Religion hat die europäische und deutsche Kultur geprägt?",
+          "answers": {
+            "1": "der Hinduismus",
+            "2": "das Christentum",
+            "3": "der Buddhismus",
+            "4": "der Islam"
+          }
+        },
+        "296": {
+          "question": "In Deutschland nennt man die letzten vier Wochen vor Weihnachten …",
+          "answers": {
+            "1": "den Buß- und Bettag.",
+            "2": "das Erntedankfest.",
+            "3": "die Adventszeit.",
+            "4": "Allerheiligen."
+          }
+        },
+        "297": {
+          "question": "Aus welchem Land sind die meisten Migranten / Migrantinnen nach Deutschland gekommen?",
+          "answers": {
+            "1": "Italien",
+            "2": "Polen",
+            "3": "Marokko",
+            "4": "Türkei"
+          }
+        },
+        "298": {
+          "question": "In der DDR lebten vor allem Migranten aus …",
+          "answers": {
+            "1": "Vietnam, Polen, Mosambik.",
+            "2": "Frankreich, Rumänien, Somalia.",
+            "3": "Chile, Ungarn, Simbabwe.",
+            "4": "Nordkorea, Mexiko, Ägypten."
+          }
+        },
+        "299": {
+          "question": "Ausländische Arbeitnehmer und Arbeitnehmerinnen, die in den 50er und 60er Jahren von der Bundesrepublik Deutschland angeworben wurden, nannte man …",
+          "answers": {
+            "1": "Schwarzarbeiter / Schwarzarbeiterinnen.",
+            "2": "Gastarbeiter / Gastarbeiterinnen.",
+            "3": "Zeitarbeiter / Zeitarbeiterinnen.",
+            "4": "Schichtarbeiter / Schichtarbeiterinnen."
+          }
+        },
+        "300": {
+          "question": "Aus welchem Land kamen die ersten Gastarbeiter / Gastarbeiterinnen in die Bundesrepublik Deutschland?",
+          "answers": {
+            "1": "Italien",
+            "2": "Spanien",
+            "3": "Portugal",
+            "4": "Türkei"
+          }
         }
       }
     }
