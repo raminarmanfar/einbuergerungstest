@@ -1,4 +1,17 @@
 <div class="container">
+  <mat-card class="card-container">
+    <mat-card-content>
+      <mat-list class="horizontal-list">
+        <mat-list-item>
+          <mat-slide-toggle [checked]="showAnswersKeys"
+                            (change)="reviewDeutschlandQuestionsStateService.setShowAnswersKeys($event.checked)">
+            {{ 'general.show-answer-keys' | translate }}
+          </mat-slide-toggle>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+  </mat-card>
+
   <app-questionnaire-list
     *ngIf="selectedStateInfo"
     [currentQuestionIndex]="reviewDeutschlandQuestionsStateService.currentQuestionIndex$ | async"

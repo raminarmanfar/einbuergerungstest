@@ -22,6 +22,276 @@
   "review-deutschland-tests": {
     "deutschland": {
       "tests": {
+        "1": {
+          "question": "Almanya'da, halk hükümete açıkça karşı bir şey ifade edebilir çünkü...",
+          "answers": {
+            "1": "burada dini özgürlük garanti edilmiştir.",
+            "2": "insanlar vergi öder.",
+            "3": "insanların oy kullanma hakkı vardır.",
+            "4": "burada ifade özgürlüğü garanti edilmiştir."
+          }
+        },
+        "2": {
+          "question": "Almanya'da, ebeveynler çocukları 14 yaşına gelene kadar okuldaki katılımına karar verebilir çünkü...",
+          "answers": {
+            "1": "tarih dersleridir.",
+            "2": "dini derslerdir.",
+            "3": "siyasi derslerdir.",
+            "4": "dil dersleridir."
+          }
+        },
+        "3": {
+          "question": "Almanya bir anayasal devlettir. Bu ne anlama gelir?",
+          "answers": {
+            "1": "Tüm sakinler ve devlet yasalara uymak zorundadır.",
+            "2": "Devletin yasalara uyma zorunluluğu yoktur.",
+            "3": "Sadece Almanlar yasalara uymak zorundadır.",
+            "4": "Mahkemeler yasaları oluşturur."
+          }
+        },
+        "4": {
+          "question": "Almanya'da hangi hak temel bir hak olarak kabul edilir?",
+          "answers": {
+            "1": "silah taşıma hakkı",
+            "2": "öz yargı",
+            "3": "ifade özgürlüğü",
+            "4": "öz savunma hakkı"
+          }
+        },
+        "5": {
+          "question": "Almanya'da seçimler özgürdür. Bu ne anlama gelir?",
+          "answers": {
+            "1": "Bir adayı desteklemek karşılığında para alabilirsiniz.",
+            "2": "Seçmenler etkileneemez veya belirli bir şekilde oy kullanmaya zorlanamazlar ve tercihlerinden dolayı herhangi bir olumsuzlukla karşılaşmamalıdırlar.",
+            "3": "Sadece hiç hapis cezasına çarptırılmamış bireyler oy kullanabilir.",
+            "4": "Tüm uygun seçmenlerin oy kullanması zorunludur."
+          }
+        },
+        "6": {
+          "question": "Alman anayasasının adı nedir?",
+          "answers": {
+            "1": "Halkın Hukuku",
+            "2": "Federal Hukuk",
+            "3": "Alman Hukuku",
+            "4": "Temel Kanun"
+          }
+        },
+        "7": {
+          "question": "Alman anayasası tarafından temel bir hak olarak garanti edilen hak nedir? ...",
+          "answers": {
+            "1": "inanç ve vicdan özgürlüğü.",
+            "2": "eğlence.",
+            "3": "istihdam.",
+            "4": "konut."
+          }
+        },
+        "8": {
+          "question": "Almanya Temel Kanunu'nda belirtilmeyen nedir?",
+          "answers": {
+            "1": "İnsan onuru dokunulmazdır.",
+            "2": "Herkesin eşit miktarda paraya sahip olması gerekmektedir.",
+            "3": "Her birey görüşünü ifade etme hakkına sahiptir.",
+            "4": "Herkes yasa önünde eşittir."
+          }
+        },
+        "9": {
+          "question": "Almanya'da hangi temel hak sadece yabancılara uygulanır? ...",
+          "answers": {
+            "1": "aile koruması",
+            "2": "insan onuru",
+            "3": "sığınma",
+            "4": "ifade özgürlüğü"
+          }
+        },
+        "10": {
+          "question": "Alman Temel Kanunu ile uyumlu olan nedir?",
+          "answers": {
+            "1": "bedensel ceza",
+            "2": "işkence",
+            "3": "ölüm cezası",
+            "4": "mali ceza"
+          }
+        },
+        "11": {
+          "question": "Federal Almanya Cumhuriyeti Anayasası'na ne denir?",
+          "answers": {
+            "1": "Temel Kanun",
+            "2": "Federal Anayasa",
+            "3": "Hukuk Kanunu",
+            "4": "Anayasal Antlaşma"
+          }
+        },
+        "12": {
+          "question": "Alman Bundestag'da bir parti basın özgürlüğünü kaldırmak istiyor. Bu mümkün mü?",
+          "answers": {
+            "1": "Evet, Bundestag'ın üyelerinin yarısından fazlası lehineyse.",
+            "2": "Evet, ancak Bundestag'ın üyelerinin üçte ikisi lehine olmalıdır.",
+            "3": "Hayır, çünkü basın özgürlüğü temel bir haktır. Kaldırılamaz.",
+            "4": "Hayır, sadece Federal Konsey basın özgürlüğünü kaldırabilir."
+          }
+        },
+        "13": {
+          "question": "Parlamentoda 'Muhalefet' terimi neyi ifade eder?",
+          "answers": {
+            "1": "hükümet partileri.",
+            "2": "hükümet partisi/partilerine üye olmayan tüm üyeler.",
+            "3": "en çok üyeye sahip fraksiyon.",
+            "4": "geçmiş seçimde %5'lik eşiği geçebilecek tüm partiler."
+          }
+        },
+        "14": {
+          "question": "Almanya'da ifade özgürlüğü, ben...",
+          "answers": {
+            "1": "sokaktaki insanları hakaret edebilirim.",
+            "2": "gazete editörüne mektuplarda fikirimi ifade edebilirim.",
+            "3": "Nazi sembollerini taşıyabilirim.",
+            "4": "fikrim hükümete aykırı olmadığı sürece fikrimi ifade edebilirim."
+          }
+        },
+        "15": {
+          "question": "Alman Temel Kanunu neyi yasaklar?",
+          "answers": {
+            "1": "askerlik hizmeti",
+            "2": "zorunlu çalışma",
+            "3": "meslek seçme özgürlüğü",
+            "4": "yurtdışında çalışma"
+          }
+        },
+        "16": {
+          "question": "Almanya'da ifade özgürlüğü ne zaman kısıtlanır?",
+          "answers": {
+            "1": "kamuoyuna bireyler hakkında yanlış iddialar yayıldığında",
+            "2": "federal hükümet hakkında görüş ifade edildiğinde",
+            "3": "dinlerle ilgili tartışmalar sırasında",
+            "4": "devleti eleştirdiğinde"
+          }
+        },
+        "17": {
+          "question": "Alman yasaları neyi yasaklar?",
+          "answers": {
+            "1": "sakinler için ifade özgürlüğü.",
+            "2": "vatandaşların dilekçeleri.",
+            "3": "sakinler için toplantı özgürlüğü.",
+            "4": "devlet tarafından vatandaşların ayrımcılığı."
+          }
+        },
+        "18": {
+          "question": "Federal Almanya Cumhuriyeti Temel Kanunu'nun 1. Maddesinde hangi temel hak garanti edilir?",
+          "answers": {
+            "1": "insan onurunun dokunulmazlığı",
+            "2": "yaşam hakkı",
+            "3": "din özgürlüğü",
+            "4": "ifade özgürlüğü"
+          }
+        },
+        "19": {
+          "question": "Almanya'da 'hürriyet of movement' hakkı ne anlama gelir?",
+          "answers": {
+            "1": "Kendi ikamet yerini seçebilirsin.",
+            "2": "Mesleğini değiştirebilirsin.",
+            "3": "Farklı bir din seçebilirsin.",
+            "4": "Açık alanlarda sadece hafif giyinmiş olarak hareket edebilirsin."
+          }
+        },
+        "20": {
+          "question": "Bir parti Almanya'da bir diktatörlük kurmayı amaçlıyor. Bu durumda...",
+          "answers": {
+            "1": "toleranslıdır.",
+            "2": "hukuk devletine yöneliktir.",
+            "3": "hukuk kurallarına uyar.",
+            "4": "anayasaya aykırıdır."
+          }
+        },
+        "21": {
+          "question": "Federal Almanya Cumhuriyeti'nin arması nedir?",
+          "answers": {
+            "1": "Aslan",
+            "2": "Kartal",
+            "3": "Ayı",
+            "4": "At"
+          }
+        },
+        "22": {
+          "question": "Almanya'nın hangi yönetim şekli vardır?",
+          "answers": {
+            "1": "Monarşi",
+            "2": "Diktatörlük",
+            "3": "Cumhuriyet",
+            "4": "Prenslik"
+          }
+        },
+        "23": {
+          "question": "Almanya'da çoğu çalışan kişi...",
+          "answers": {
+            "1": "bir şirkette veya devlet kurumunda çalışır.",
+            "2": "küçük aile işletmelerinde çalışır.",
+            "3": "bir federal devlet için gönüllü çalışır.",
+            "4": "kendi işi olan serbest çalışanlardır."
+          }
+        },
+        "24": {
+          "question": "Federal Almanya Cumhuriyeti kaç federal eyalete sahiptir?",
+          "answers": {
+            "1": "14",
+            "2": "15",
+            "3": "16",
+            "4": "17"
+          }
+        },
+        "25": {
+          "question": "Federal Almanya Cumhuriyeti'nin hangi eyaleti değildir?",
+          "answers": {
+            "1": "Kuzey Ren-Vestfalya",
+            "2": "Alsas-Loren",
+            "3": "Mecklenburg-Vorpommern",
+            "4": "Saksonya-Anhalt"
+          }
+        },
+        "26": {
+          "question": "Almanya...",
+          "answers": {
+            "1": "bir komünist cumhuriyettir.",
+            "2": "demokratik ve sosyal federal bir devlettir.",
+            "3": "kapitalist ve sosyal monarşi.",
+            "4": "sosyal ve sosyalist federal bir devlettir."
+          }
+        },
+        "27": {
+          "question": "Almanya...",
+          "answers": {
+            "1": "bir sosyalist devlettir.",
+            "2": "bir federal devlettir.",
+            "3": "bir diktatörlüktür.",
+            "4": "bir monarşidir."
+          }
+        },
+        "28": {
+          "question": "Almanya'da Bundestag üyelerini kim seçer?",
+          "answers": {
+            "1": "askeri",
+            "2": "ekonomi",
+            "3": "seçilmiş seçmenler",
+            "4": "idare"
+          }
+        },
+        "29": {
+          "question": "Federal Almanya Cumhuriyeti'nin arması nedir?",
+          "answers": {
+            "1": "Aslan",
+            "2": "Kartal",
+            "3": "Ayı",
+            "4": "At"
+          }
+        },
+        "30": {
+          "question": "Demokrasimizin özelliklerinden biri değil nedir?",
+          "answers": {
+            "1": "düzenli seçimler",
+            "2": "basın sansürü",
+            "3": "ifade özgürlüğü",
+            "4": "çeşitli partiler"
+          }
+        },
         "31": {
           "question": "Almanya'da bir hükümet kurmak için partilerin işbirliğine ne denir?",
           "answers": {
@@ -1100,6 +1370,456 @@
             "2": "Onursal bir yargıç.",
             "3": "Bir belediye konseyi üyesi.",
             "4": "Hukuk okumuş bir kişi."
+          }
+        },
+        "151": {
+          "question": "Berlin Duvarını kim inşa etti?",
+          "answers": {
+            "1": "Büyük Britanya",
+            "2": "Almanya Federal Cumhuriyeti",
+            "3": "DDR",
+            "4": "ABD"
+          }
+        },
+        "152": {
+          "question": "Ulusal Sosyalistler Adolf Hitler ile Almanya'da ne zaman iktidara geldi?",
+          "answers": {
+            "1": "1918-1923",
+            "2": "1932-1950",
+            "3": "1933-1945",
+            "4": "1945-1989"
+          }
+        },
+        "153": {
+          "question": "8 Mayıs 1945'te ne oldu?",
+          "answers": {
+            "1": "Adolf Hitler'ın ölümü",
+            "2": "Berlin Duvarı'nın inşasının başlangıcı",
+            "3": "Konrad Adenauer'ın Federal Şansölye seçimi",
+            "4": "Avrupa'da İkinci Dünya Savaşı'nın sonu"
+          }
+        },
+        "154": {
+          "question": "İkinci Dünya Savaşı ne zaman bitti?",
+          "answers": {
+            "1": "1933",
+            "2": "1945",
+            "3": "1949",
+            "4": "1961"
+          }
+        },
+        "155": {
+          "question": "Ulusal Sosyalistler Almanya'da ne zaman iktidardaydı?",
+          "answers": {
+            "1": "1888-1918",
+            "2": "1921-1934",
+            "3": "1933-1945",
+            "4": "1949-1963"
+          }
+        },
+        "156": {
+          "question": "Hitler ne zaman Reich Şansölyesi oldu?",
+          "answers": {
+            "1": "1923",
+            "2": "1927",
+            "3": "1933",
+            "4": "1936"
+          }
+        },
+        "157": {
+          "question": "Ulusal Sosyalistler Adolf Hitler ile 1933'te Almanya'da ...",
+          "answers": {
+            "1": "bir diktatörlük kurdu.",
+            "2": "bir demokratik devlet kurdu.",
+            "3": "bir monarşi kurdu.",
+            "4": "bir prenslik kurdu."
+          }
+        },
+        "158": {
+          "question": "‘Üçüncü Reich’ bir ... idi",
+          "answers": {
+            "1": "Diktatörlük",
+            "2": "Demokrasi",
+            "3": "Monarşi",
+            "4": "Sovyet Cumhuriyeti"
+          }
+        },
+        "159": {
+          "question": "Ulusal Sosyalizm döneminde Almanya'da neler yoktu?",
+          "answers": {
+            "1": "özgür seçimler",
+            "2": "basın sansürü",
+            "3": "keyfi tutuklamalar",
+            "4": "Yahudi zulmü"
+          }
+        },
+        "160": {
+          "question": "1939-1945 yılları arasında hangi savaş yaşandı?",
+          "answers": {
+            "1": "Birinci Dünya Savaşı",
+            "2": "İkinci Dünya Savaşı",
+            "3": "Vietnam Savaşı",
+            "4": "Körfez Savaşı"
+          }
+        },
+        "161": {
+          "question": "NS Devletini ne belirtti? Bir politika ...",
+          "answers": {
+            "1": "devlet ırkçılığı",
+            "2": "ifade özgürlüğü",
+            "3": "genel din özgürlüğü",
+            "4": "demokrasinin gelişimi"
+          }
+        },
+        "162": {
+          "question": "Claus Schenk Graf von Stauffenberg hangi olayla tanındı?",
+          "answers": {
+            "1": "1936 Olimpiyat Oyunları'nda altın madalya",
+            "2": "Reichstag binasının inşası",
+            "3": "Wehrmacht'ın kuruluşu",
+            "4": "20 Temmuz 1944'teki Hitler suikastı"
+          }
+        },
+        "163": {
+          "question": "Ulusal Sosyalistler Almanya'da sinagogları ve Yahudi işyerlerini hangi yılda yok etti?",
+          "answers": {
+            "1": "1925",
+            "2": "1930",
+            "3": "1938",
+            "4": "1945"
+          }
+        },
+        "164": {
+          "question": "Almanya'da 9 Kasım 1938'de ne oldu?",
+          "answers": {
+            "1": "Polonya'ya saldırı ile İkinci Dünya Savaşı başladı.",
+            "2": "Ulusal Sosyalistler bir seçimi kaybetti ve Reichstag'ı feshetti.",
+            "3": "Ulusal Sosyalistler ve destekçileri Yahudi işyerlerini ve sinagogları yok etti.",
+            "4": "Hitler Reichspräsident oldu ve tüm partileri yasakladı."
+          }
+        },
+        "165": {
+          "question": "Bundesrepublik Almanya'nın ilk başbakanının adı neydi?",
+          "answers": {
+            "1": "Konrad Adenauer",
+            "2": "Kurt Georg Kiesinger",
+            "3": "Helmut Schmidt",
+            "4": "Willy Brandt"
+          }
+        },
+        "166": {
+          "question": "Almanya'da hangi gösterilerde insanlar 'Biz halkız' diye bağırdı?",
+          "answers": {
+            "1": "1989'daki DDR Pazartesi gösterileri",
+            "2": "1953 DDR işçi ayaklanması",
+            "3": "1968'deki Federal Almanya gösterileri",
+            "4": "1985'teki Federal Almanya Atom Karşıtı Gösterileri"
+          }
+        },
+        "167": {
+          "question": "İkinci Dünya Savaşı'ndan sonra Almanya'da hangi ülkeler 'Müttefik İşgal Güçleri' olarak adlandırıldı?",
+          "answers": {
+            "1": "Sovyetler Birliği, Büyük Britanya, Polonya, İsveç",
+            "2": "Fransa, Sovyetler Birliği, İtalya, Japonya",
+            "3": "ABD, Sovyetler Birliği, İspanya, Portekiz",
+            "4": "ABD, Sovyetler Birliği, Büyük Britanya, Fransa"
+          }
+        },
+        "168": {
+          "question": "Almanya'da hangi ülke 'Müttefik İşgal Güçleri' olarak kabul edilmedi?",
+          "answers": {
+            "1": "ABD",
+            "2": "Sovyetler Birliği",
+            "3": "Fransa",
+            "4": "Japonya"
+          }
+        },
+        "169": {
+          "question": "Bundesrepublik Almanya ne zaman kuruldu?",
+          "answers": {
+            "1": "1939",
+            "2": "1945",
+            "3": "1949",
+            "4": "1951"
+          }
+        },
+        "170": {
+          "question": "Ulusal Sosyalizm döneminde Almanya'da neler vardı?",
+          "answers": {
+            "1": "kişisel gelişim özgürlüğü hakkı",
+            "2": "basın özgürlüğü",
+            "3": "parti yasağı",
+            "4": "insan onuru koruması"
+          }
+        },
+        "171": {
+          "question": "Sosyal Piyasa Ekonomisi, ekonominin ...",
+          "answers": {
+            "1": "sadece talep ve arza göre kendi kendini yönlendirdiği",
+            "2": "devlet tarafından planlandığı ve kontrol edildiği, talep ve arz dikkate alınmadı",
+            "3": "uluslararası talebe göre düzenlendiği",
+            "4": "talep ve arza göre düzenlendiği, ancak devlet sosyal bir denge sağlar."
+          }
+        },
+        "172": {
+          "question": "DDR hangi işgal bölgesinde kuruldu? ...",
+          "answers": {
+            "1": "Amerikan işgal bölgesi",
+            "2": "Fransız işgal bölgesi",
+            "3": "İngiliz işgal bölgesi",
+            "4": "Sovyet işgal bölgesi"
+          }
+        },
+        "173": {
+          "question": "Bundesrepublik Almanya, ...'nın kurucu üyesidir",
+          "answers": {
+            "1": "Kuzey Atlantik Paktı (NATO)",
+            "2": "Birleşmiş Milletler (BM)",
+            "3": "Avrupa Birliği (AB)",
+            "4": "Varşova Paktı"
+          }
+        },
+        "174": {
+          "question": "DDR ne zaman kuruldu?",
+          "answers": {
+            "1": "1947",
+            "2": "1949",
+            "3": "1953",
+            "4": "1956"
+          }
+        },
+        "175": {
+          "question": "İkinci Dünya Savaşı'ndan sonra Almanya'da kaç işgal bölgesi vardı?",
+          "answers": {
+            "1": "3",
+            "2": "4",
+            "3": "5",
+            "4": "6"
+          }
+        },
+        "176": {
+          "question": "Almanya'nın işgal bölgeleri 1945'ten sonraki dağılımı nasıldı?",
+          "answers": {
+            "1": "1=Büyük Britanya, 2=Sovyetler Birliği, 3=Fransa, 4=ABD",
+            "2": "1=Sovyetler Birliği, 2=Büyük Britanya, 3=ABD, 4=Fransa",
+            "3": "1=Büyük Britanya, 2=Sovyetler Birliği, 3=ABD, 4=Fransa",
+            "4": "1=Büyük Britanya, 2=ABD, 3=Sovyetler Birliği, 4=Fransa"
+          }
+        },
+        "177": {
+          "question": "Hangi Alman şehri İkinci Dünya Savaşı'ndan sonra dört sektöre ayrıldı?",
+          "answers": {
+            "1": "Münih",
+            "2": "Berlin",
+            "3": "Dresden",
+            "4": "Frankfurt/Oder"
+          }
+        },
+        "178": {
+          "question": "Haziran 1948'den Mayıs 1949'a kadar Batı Berlin sakinleri bir hava köprüsü ile beslendi. Bu durumdan sorumlu olan nedir?",
+          "answers": {
+            "1": "Fransa için uçakla beslenme maliyet açısından daha uygun",
+            "2": "Amerikan askerleri nakliye sırasında saldırı korkusu",
+            "3": "İngiltere için demiryolu ulaşımının kesilmesi",
+            "4": "Sovyetler Birliği tarafından kara yolunun kesilmesi"
+          }
+        },
+        "179": {
+          "question": "İkinci Dünya Savaşı Avrupa'da resmi olarak nasıl sona erdi?",
+          "answers": {
+            "1": "Adolf Hitler'ın ölümü ile",
+            "2": "Almanya'nın koşulsuz teslim olmasıyla",
+            "3": "Almanların işgal edilmiş bölgelerden çekilmesiyle",
+            "4": "Almanya'da bir devrimle"
+          }
+        },
+        "180": {
+          "question": "Federal Almanya Cumhuriyeti'nin ilk Şansölyesi kimdi?",
+          "answers": {
+            "1": "Ludwig Erhard.",
+            "2": "Willy Brandt.",
+            "3": "Konrad Adenauer.",
+            "4": "Gerhard Schröder."
+          }
+        },
+        "181": {
+          "question": "Willy Brandt, 1970 yılında eski Yahudi gettosunda Varşova'da diz çökerek ne ifade etmek istedi?",
+          "answers": {
+            "1": "Eski Müttefiklere boyun eğdi.",
+            "2": "Polonya ve Polonyalı Yahudilerden af diledi.",
+            "3": "Varşova Paktı önünde alçakgönüllülüğünü gösterdi.",
+            "4": "Bilinmeyen Askerin Mezarı'nda dua etti."
+          }
+        },
+        "182": {
+          "question": "1946'da Alman Demokratik Cumhuriyeti'nin (GDR) birleşik partisi olan SED'yi oluşturmak için zorla birleştirilen hangi partilerdi?",
+          "answers": {
+            "1": "KPD ve SPD",
+            "2": "SPD ve CDU",
+            "3": "CDU ve FDP",
+            "4": "KPD ve CSU"
+          }
+        },
+        "183": {
+          "question": "Federal Almanya Cumhuriyeti'nde 'ekonomik mucize' ne zaman oldu?",
+          "answers": {
+            "1": "40'lar",
+            "2": "50'ler",
+            "3": "70'ler",
+            "4": "80'ler"
+          }
+        },
+        "184": {
+          "question": "Almanya'da insanlar uzun bir süre 'Saat Sıfır' dedikleri şeyi ne olarak adlandırdılar?",
+          "answers": {
+            "1": "Bu, 1989'daki dönüşten sonraki zamana atıfta bulunur.",
+            "2": "Bu, İkinci Dünya Savaşı'nın başlangıcına atıfta bulunur.",
+            "3": "Bu, İkinci Dünya Savaşı'nın sonu ve yeniden yapılanmanın başlangıcına atıfta bulunur.",
+            "4": "Bu, saat ayarı yaz saati uygulamasından standart saate geçildiğinde meydana gelen saat."
+          }
+        },
+        "185": {
+          "question": "'Demir Perde' terimi neyi simgeliyordu? ...",
+          "answers": {
+            "1": "Varşova Paktı'nın Batı'ya karşı izolasyonu.",
+            "2": "Almanya'nın kuzeyinin Almanya'nın güneyine karşı izolasyonu.",
+            "3": "Nazi Almanya'sının Müttefiklere karşı izolasyonu.",
+            "4": "Avrupa'nın ABD'ye karşı izolasyonu."
+          }
+        },
+        "186": {
+          "question": "1953 yılında GDR'de bir ayaklanma oldu ve uzun bir süre Federal Almanya Cumhuriyeti'nde bir kamu tatili olarak anıldı. Bu ne zaman oldu?",
+          "answers": {
+            "1": "1 Mayıs",
+            "2": "17 Haziran",
+            "3": "20 Temmuz",
+            "4": "9 Kasım"
+          }
+        },
+        "187": {
+          "question": "Hangi Alman eyaletinin siyah-kırmızı-altın bayrağında çekiç, pergel ve başak çelenk vardı?",
+          "answers": {
+            "1": "Prusya",
+            "2": "Federal Almanya Cumhuriyeti",
+            "3": "GDR",
+            "4": "'Üçüncü Reich'"
+          }
+        },
+        "188": {
+          "question": "Berlin Duvarı ne zaman inşa edildi?",
+          "answers": {
+            "1": "1953",
+            "2": "1956",
+            "3": "1959",
+            "4": "1961"
+          }
+        },
+        "189": {
+          "question": "GDR ne zaman Berlin Duvarı'nı inşa etti?",
+          "answers": {
+            "1": "1919",
+            "2": "1933",
+            "3": "1961",
+            "4": "1990"
+          }
+        },
+        "190": {
+          "question": "GDR kısaltması ne anlama geliyor?",
+          "answers": {
+            "1": "Üçüncü Alman Yayını",
+            "2": "Alman Cumhuriyeti",
+            "3": "Üçüncü Alman Cumhuriyeti",
+            "4": "Alman Demokratik Cumhuriyeti"
+          }
+        },
+        "191": {
+          "question": "Berlin Duvarı herkese ne zaman açıldı?",
+          "answers": {
+            "1": "1987",
+            "2": "1989",
+            "3": "1992",
+            "4": "1995"
+          }
+        },
+        "192": {
+          "question": "Hangi mevcut Alman federal eyaleti, GDR'nin topraklarına aitti?",
+          "answers": {
+            "1": "Brandenburg",
+            "2": "Bavyera",
+            "3": "Saarland",
+            "4": "Hessen"
+          }
+        },
+        "193": {
+          "question": "1961'den 1989'a kadar Berlin...",
+          "answers": {
+            "1": "bir belediye başkanı olmadan.",
+            "2": "kendi devleti.",
+            "3": "bir duvar tarafından bölünmüş.",
+            "4": "sadece uçakla ulaşılabilir."
+          }
+        },
+        "194": {
+          "question": "Almanya 3 Ekim'de Alman ... gününü kutlar.",
+          "answers": {
+            "1": "Birlik.",
+            "2": "Millet.",
+            "3": "Eyaletler.",
+            "4": "Şehirler."
+          }
+        },
+        "195": {
+          "question": "Hangi mevcut Alman federal eyaleti, GDR'nin topraklarına aitti?",
+          "answers": {
+            "1": "Hessen",
+            "2": "Saksonya-Anhalt",
+            "3": "Kuzey Ren-Vestfalya",
+            "4": "Saarland"
+          }
+        },
+        "196": {
+          "question": "1989'un sonbaharındaki zaman neden 'Dönüş' olarak adlandırılır? Bu süre zarfında GDR siyasi açıdan nasıl değişti...",
+          "answers": {
+            "1": "Bir diktatörlükten demokrasiye.",
+            "2": "Liberal bir piyasa ekonomisinden sosyalizme.",
+            "3": "Monarşiden sosyal demokrasiye.",
+            "4": "Dini bir devletten komünist bir devlete."
+          }
+        },
+        "197": {
+          "question": "Hangi mevcut Alman federal eyaleti, GDR'nin topraklarına aitti?",
+          "answers": {
+            "1": "Türingya",
+            "2": "Hessen",
+            "3": "Bavyera",
+            "4": "Bremen"
+          }
+        },
+        "198": {
+          "question": "Hangi mevcut Alman federal eyaleti, GDR'nin topraklarına aitti?",
+          "answers": {
+            "1": "Bavyera",
+            "2": "Aşağı Saksonya",
+            "3": "Saksonya",
+            "4": "Baden-Württemberg"
+          }
+        },
+        "199": {
+          "question": "GDR'deki 'Stasi' terimi ne anlama geliyordu...",
+          "answers": {
+            "1": "parlamento.",
+            "2": "Devlet Güvenlik Bakanlığı.",
+            "3": "hükümet partisi.",
+            "4": "Halk Eğitim Bakanlığı."
+          }
+        },
+        "200": {
+          "question": "Hangi mevcut Alman federal eyaleti, GDR'nin topraklarına aitti?",
+          "answers": {
+            "1": "Hessen",
+            "2": "Schleswig-Holstein",
+            "3": "Mecklenburg-Vorpommern",
+            "4": "Saarland"
           }
         }
       }

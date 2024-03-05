@@ -13,3 +13,10 @@ export class SetPaginatorData {
   constructor(public payload: PageEvent) {
   }
 }
+
+export class SetShowAnswersKeys {
+  public static type = '[ReviewDeutschlandQuestionsState] Set Show Answers Keys';
+
+  constructor(public payload: boolean) {
+  }
+}

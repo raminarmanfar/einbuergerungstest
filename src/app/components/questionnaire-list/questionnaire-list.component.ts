@@ -1,6 +1,7 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {MatPaginatorIntl, PageEvent} from '@angular/material/paginator';
 import {StateInfoModel} from '../../models/state-info.model';
-import {PageEvent} from '@angular/material/paginator';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-questionnaire-list',
@@ -18,6 +19,20 @@ export class QuestionnaireListComponent {
   @Output() expansionPanelOpen = new EventEmitter<number>();
   @Output() paginatorDataChange = new EventEmitter<PageEvent>();
 
+  constructor(private translate: TranslateService,private paginator: MatPaginatorIntl) {
+    translate.onLangChange.subscribe(currentLang => {
+      console.log('>>>>>', currentLang);
+      translate.get('general.next').subscribe(res => {
+        console.log('>>>>lang changed')
+        paginator.itemsPerPageLabel = res;
+        paginator.changes.subscribe(res2 => {
+          console.log('>>>>>>>>>>>>>>>>>>>>', res2)
+        });
+      });
+      console.log('>>>>', paginator);
+    });
+  }
+
   private getTestTrPrefix(stateNameLabel: string, questionIndex: number): string {
     return this.trPrefix + stateNameLabel + '.tests.' + (questionIndex + 1);
   }
@@ -29,5 +44,4 @@ export class QuestionnaireListComponent {
   getAnswerTrPrefix(stateNameLabel: string, questionIndex: number, answerId: number): string {
     return this.getTestTrPrefix(stateNameLabel, questionIndex) + '.answers.' + answerId;
   }
-
 }

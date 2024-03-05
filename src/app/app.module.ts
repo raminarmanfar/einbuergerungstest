@@ -10,14 +10,19 @@ import {StateModule} from './state/state.module';
 import {AppRoutingModule} from './app-routing.module';
 import {AppMaterialsModule} from './app-materials.module';
 
+import {PersianNumberPipe} from './utils/persian-number.pipe';
+
 import {AppComponent} from './components/app/app.component';
 import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
 import {HomePageComponent} from './components/home-page/home-page.component';
-import { ReviewDeutschlandQuestionsPageComponent } from './components/review-deutschland-questions-page/review-deutschland-questions-page.component';
-import { ReviewStatesQuestionsPageComponent } from './components/review-states-questions-page/review-states-questions-page.component';
-import { QuestionnaireListComponent } from './components/questionnaire-list/questionnaire-list.component';
-import { PersianNumberPipe } from './utils/persian-number.pipe';
+import {
+  ReviewDeutschlandQuestionsPageComponent
+} from './components/review-deutschland-questions-page/review-deutschland-questions-page.component';
+import {
+  ReviewStatesQuestionsPageComponent
+} from './components/review-states-questions-page/review-states-questions-page.component';
+import {QuestionnaireListComponent} from './components/questionnaire-list/questionnaire-list.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -25,6 +30,7 @@ export function createTranslateLoader(http: HttpClient) {
 
 @NgModule({
   declarations: [
+    PersianNumberPipe,
     AppComponent,
     HeaderComponent,
     FooterComponent,
@@ -32,8 +38,7 @@ export function createTranslateLoader(http: HttpClient) {
     ReviewDeutschlandQuestionsPageComponent,
     ReviewStatesQuestionsPageComponent,
     ReviewDeutschlandQuestionsPageComponent,
-    QuestionnaireListComponent,
-    PersianNumberPipe
+    QuestionnaireListComponent
   ],
   imports: [
     BrowserModule,
@@ -51,7 +56,12 @@ export function createTranslateLoader(http: HttpClient) {
     AppMaterialsModule,
     NgOptimizedImage
   ],
-  providers: [],
+  providers: [
+    // {
+    //   provide: MatPaginatorIntl, deps: [TranslateService],
+    //   useFactory: (translateService: TranslateService) => new PaginatorI18n(translateService).getPaginatorIntl()
+    // }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
