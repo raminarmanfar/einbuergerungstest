@@ -509,7 +509,6 @@
         },
         "55": {
           "question": "Was zeigt dieses Bild?",
-          "image": "/img/fragen/055.png",
           "answers": {
             "1": "den Bundestagssitz in Berlin",
             "2": "das Bundesverfassungsgericht in Karlsruhe",
@@ -2050,10 +2049,10 @@
         "226": {
           "question": "Welche ist die Flagge der Europäischen Union?",
           "answers": {
-            "1": "1",
-            "2": "2",
-            "3": "3",
-            "4": "4"
+            "1": "2",
+            "2": "1",
+            "3": "4",
+            "4": "3"
           }
         },
         "227": {

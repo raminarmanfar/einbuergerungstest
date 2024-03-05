@@ -20,140 +20,1087 @@
     }
   },
   "review-deutschland-tests": {
-    "tests": {
-      "1": {
-        "question": "Almanya'da insanlar, hükümete karşı açıkça görüşlerini ifade etmelerine izin verilir, çünkü...",
-        "answers": {
-          "1": "burada dini özgürlük geçerlidir.",
-          "2": "insanlar vergi öder.",
-          "3": "insanlar oy hakkına sahiptir.",
-          "4": "konuşma özgürlüğü burada geçerlidir."
-        }
-      },
-      "2": {
-        "question": "Almanya'da ebeveynler, çocuklarının 14 yaşına kadar okulda hangi derslere katılacağına karar verebilir...",
-        "answers": {
-          "1": "tarih dersi.",
-          "2": "dini eğitim.",
-          "3": "siyasi eğitim.",
-          "4": "dil eğitimi."
-        }
-      },
-      "3": {
-        "question": "Almanya bir hukuk devletidir. Bu ne anlama gelir?",
-        "answers": {
-          "1": "Tüm sakinler ve devlet yasalara uymak zorundadır.",
-          "2": "Devlet yasalara uymak zorunda değildir.",
-          "3": "Sadece Almanlar yasalara uymak zorundadır.",
-          "4": "Mahkemeler yasaları yapar."
-        }
-      },
-      "4": {
-        "question": "Almanya'daki temel haklardan hangisi vardır?",
-        "answers": {
-          "1": "Silah taşıma hakkı.",
-          "2": "Kendi başına adalet hakkı.",
-          "3": "Konuşma özgürlüğü.",
-          "4": "Kendi başına yargı yetkisi hakkı."
-        }
-      },
-      "5": {
-        "question": "Almanya'da seçimler özgürdür. Bu ne anlama gelir?",
-        "answers": {
-          "1": "Bir kişi belirli bir adayı seçmek karşılığında para alabilir.",
-          "2": "Seçmenler belirli bir şekilde oy kullanmaya zorlanamaz ve oylarından dezavantaj yaşamamalıdır.",
-          "3": "Yalnızca hapiste hiç bulunmamış bireyler oy kullanabilir.",
-          "4": "Tüm seçmenler oy kullanmak zorundadır."
-        }
-      },
-      "6": {
-        "question": "Almanya'nın anayasasının adı nedir?",
-        "answers": {
-          "1": "Halk Kanunu.",
-          "2": "Federal Kanun.",
-          "3": "Alman Kanunu.",
-          "4": "Temel Kanun."
-        }
-      },
-      "7": {
-        "question": "Alman anayasası tarafından garanti edilen temel haklardan hangisi aittir? Hakkı...",
-        "answers": {
-          "1": "İnanç ve vicdan özgürlüğü.",
-          "2": "Eğlence.",
-          "3": "İş.",
-          "4": "Konut."
-        }
-      },
-      "8": {
-        "question": "Alman Temel Yasası'nda neler yazmaz?",
-        "answers": {
-          "1": "Bireyin haysiyeti dokunulmazdır.",
-          "2": "Herkesin aynı miktarda paraya sahip olması gerektir.",
-          "3": "Herkesin kendi görüşünü ifade etme hakkı vardır.",
-          "4": "Herkes yasa önünde eşittir."
-        }
-      },
-      "9": {
-        "question": "Almanya'da hangi temel hak sadece yabancılara aittir? Hak...",
-        "answers": {
-          "1": "Aile koruma hakkı.",
-          "2": "İnsanlık hakkı.",
-          "3": "Sığınma hakkı.",
-          "4": "Konuşma özgürlüğü."
-        }
-      },
-      "10": {
-        "question": "Alman Temel Yasası ile uyumlu olan nedir?",
-        "answers": {
-          "1": "Dayak cezası.",
-          "2": "İşkence.",
-          "3": "Ölüm cezası.",
-          "4": "Maddi ceza."
-        }
-      },
-      "11": {
-        "question": "Federal Almanya Cumhuriyeti'nin anayasasının adı nedir?",
-        "answers": {
-          "1": "Temel Kanun.",
-          "2": "Federal Anayasa.",
-          "3": "Hukuk Kanunu.",
-          "4": "Anayasa Antlaşması."
-        }
-      },
-      "12": {
-        "question": "Alman Bundestag'ındaki bir parti basın özgürlüğünü kaldırmak isterse, bu mümkün müdür?",
-        "answers": {
-          "1": "Evet, Bundestag üyelerinin yarısından fazlası lehte ise.",
-          "2": "Evet, ancak Bundestag üyelerinin üçte ikisi lehte olmalıdır.",
-          "3": "Hayır, çünkü basın özgürlüğü temel bir haktır. Kaldırılamaz.",
-          "4": "Hayır, sadece Bundesrat basın özgürlüğünü kaldırabilir."
-        }
-      },
-      "13": {
-        "question": "Parlamentoda 'Muhalefet' terimi neyi temsil eder…",
-        "answers": {
-          "1": "hükümet partileri.",
-          "2": "hükümet partisine/ partilerine ait olmayan tüm üyeler.",
-          "3": "en fazla üyeye sahip fraksiyon.",
-          "4": "geçmiş seçimde %5 barajını aşan tüm partiler."
-        }
-      },
-      "14": {
-        "question": "Almanya'da konuşma özgürlüğü, benim için şunları yapmamı sağlar...",
-        "answers": {
-          "1": "sokakta geçenlere hakaret etmek.",
-          "2": "fikirlerimi mektuplarla ifade etmek.",
-          "3": "Nazi sembolleri takmak.",
-          "4": "fikirlerimi hükümete aykırı olmadıkça ifade etmek."
-        }
-      },
-      "15": {
-        "question": "Alman Temel Yasası neyi yasaklar?",
-        "answers": {
-          "1": "Askerlik hizmeti.",
-          "2": "Zorunlu çalışma.",
-          "3": "meslek seçimini serbest bırakma.",
-          "4": "yurtdışında çalışma."
+    "deutschland": {
+      "tests": {
+        "31": {
+          "question": "Almanya'da bir hükümet kurmak için partilerin işbirliğine ne denir?",
+          "answers": {
+            "1": "Birlik.",
+            "2": "Koalisyon.",
+            "3": "Bakanlık.",
+            "4": "Fraksiyon."
+          }
+        },
+        "32": {
+          "question": "Almanya'da devlet güçlerinden hangisi değildir?",
+          "answers": {
+            "1": "Yasama",
+            "2": "Hükümet",
+            "3": "Basın",
+            "4": "Yargı"
+          }
+        },
+        "33": {
+          "question": "Hangi ifade doğrudur? Almanya'da...",
+          "answers": {
+            "1": "Devlet ve dini topluluklar birbirinden ayrıdır.",
+            "2": "Dini topluluklar devleti oluşturur.",
+            "3": "Devlet dini topluluklara bağımlıdır.",
+            "4": "Devlet ve dini topluluklar bir bütün oluşturur."
+          }
+        },
+        "34": {
+          "question": "Almanya ne değildir?",
+          "answers": {
+            "1": "Bir demokrasi",
+            "2": "Bir hukuk devleti",
+            "3": "Bir monarşi",
+            "4": "Bir sosyal devlet"
+          }
+        },
+        "35": {
+          "question": "Alman devleti sosyal sigortayı nasıl finanse eder?",
+          "answers": {
+            "1": "Kilise vergileri",
+            "2": "Sosyal katkılar",
+            "3": "Bağışlar",
+            "4": "Dernek üyelik ücretleri"
+          }
+        },
+        "36": {
+          "question": "Almanya'da sosyal güvenlik sağlayan önlem hangisidir?",
+          "answers": {
+            "1": "Sağlık sigortası",
+            "2": "Araç sigortası",
+            "3": "Bina sigortası",
+            "4": "Sorumluluk sigortası"
+          }
+        },
+        "37": {
+          "question": "Almanya'nın çoğu eyaletinin hükümet başkanlarına genellikle ne ad verilir?",
+          "answers": {
+            "1": "Birinci Bakan",
+            "2": "Başbakan",
+            "3": "Senatör",
+            "4": "Bakan Başkanı"
+          }
+        },
+        "38": {
+          "question": "Alman Federal Cumhuriyeti demokratik ve sosyal bir...",
+          "answers": {
+            "1": "Devletler birliği.",
+            "2": "Birleşik devlet.",
+            "3": "Devletler birliği.",
+            "4": "Merkezi devlet."
+          }
+        },
+        "39": {
+          "question": "Her Alman federal eyaletinin ne gibi bir özelliği vardır?",
+          "answers": {
+            "1": "Kendi Dışişleri Bakanı",
+            "2": "Ayrı bir para birimi",
+            "3": "Kendi ordusu",
+            "4": "Ayrı bir hükümet"
+          }
+        },
+        "40": {
+          "question": "Alman milli marşı hangi kelimelerle başlar?",
+          "answers": {
+            "1": "Halk, işaretleri duyun...",
+            "2": "Birlik ve adalet ve özgürlük...",
+            "3": "Sevinç, güzel tanrı kıvılcımı...",
+            "4": "Almanya, birleşik vatan..."
+          }
+        },
+        "41": {
+          "question": "Neden bir demokraside birden fazla parti bulunur?",
+          "answers": {
+            "1": "Bu şekilde vatandaşların farklı görüşleri temsil edilir.",
+            "2": "Politikada rüşveti sınırlamak için",
+            "3": "Politik gösterileri önlemek için",
+            "4": "Ekonomik rekabeti teşvik etmek için"
+          }
+        },
+        "42": {
+          "question": "Almanya'da yeni bir yasa kim tarafından kararlaştırılır?",
+          "answers": {
+            "1": "Hükümet",
+            "2": "Parlamento",
+            "3": "Mahkemeler",
+            "4": "Polis"
+          }
+        },
+        "43": {
+          "question": "Almanya'da bir parti ne zaman yasaklanabilir?",
+          "answers": {
+            "1": "Seçim kampanyası çok pahalı olduğunda",
+            "2": "Anayasa'ya karşı savaştığında",
+            "3": "Devlet başkanına eleştiri getirdiğinde",
+            "4": "Programı yeni bir yöne işaret ettiğinde"
+          }
+        },
+        "44": {
+          "question": "Almanya'da vatandaşlar doğrudan kimi seçemez?",
+          "answers": {
+            "1": "AB Parlamentosu üyeleri",
+            "2": "Federal Cumhurbaşkanı",
+            "3": "Eyalet parlamento üyeleri",
+            "4": "Federal parlamento üyeleri"
+          }
+        },
+        "45": {
+          "question": "Bakım sigortası hangi sigortaya aittir?",
+          "answers": {
+            "1": "Sosyal sigorta",
+            "2": "Kaza sigortası",
+            "3": "Ev sigortası",
+            "4": "Sorumluluk ve yangın sigortası"
+          }
+        },
+        "46": {
+          "question": "Alman devletinin birçok görevi vardır. Hangi görev ona aittir?",
+          "answers": {
+            "1": "Yolları ve okulları inşa eder.",
+            "2": "Gıda ve giysi satar.",
+            "3": "Tüm sakinlere ücretsiz gazete sağlar.",
+            "4": "Araba ve otobüs üretir."
+          }
+        },
+        "47": {
+          "question": "Alman devletinin birçok görevi vardır. Hangi görev ona ait değildir?",
+          "answers": {
+            "1": "Tüm vatandaşların tatilini öder.",
+            "2": "Çocuk parası öder.",
+            "3": "Müzeleri destekler.",
+            "4": "Sporcuları teşvik eder."
+          }
+        },
+        "48": {
+          "question": "Hangi organ Almanya'nın anayasal organlarından biri değildir?",
+          "answers": {
+            "1": "Federal Konsey",
+            "2": "Federal Cumhurbaşkanı",
+            "3": "Vatandaşlar Meclisi",
+            "4": "Hükümet"
+          }
+        },
+        "49": {
+          "question": "Almanya'da eğitim politikasını kim belirler?",
+          "answers": {
+            "1": "Öğretmenler",
+            "2": "Bundesländer",
+            "3": "Aile Bakanlığı",
+            "4": "Üniversiteler"
+          }
+        },
+        "50": {
+          "question": "Almanya'daki ekonomik sistem ne denir?",
+          "answers": {
+            "1": "Serbest merkezi planlı ekonomi.",
+            "2": "Sosyal piyasa ekonomisi.",
+            "3": "Merkezi planlı ekonomi.",
+            "4": "Planlı ekonomi."
+          }
+        },
+        "51": {
+          "question": "Demokratik bir hukuk devletine şu öğelerden hangisi ait değildir?",
+          "answers": {
+            "1": "İnsanlar hükümet hakkında eleştiri yapabilir.",
+            "2": "Vatandaşlar barışçıl bir şekilde gösteri yapabilir.",
+            "3": "İnsanlar neden belirtmeksizin özel bir polis tarafından tutuklanabilir.",
+            "4": "Biri suç işler ve bu nedenle tutuklanır."
+          }
+        },
+        "52": {
+          "question": "‘Halk egemenliği’ ne anlama gelir? Tüm devlet gücü...",
+          "answers": {
+            "1": "Halktan gelir.",
+            "2": "Bundestag'dan gelir.",
+            "3": "Prusya kralından gelir.",
+            "4": "Federal Anayasa Mahkemesi'nden gelir."
+          }
+        },
+        "53": {
+          "question": "Almanya'da 'hukuk devleti' ne anlama gelir?",
+          "answers": {
+            "1": "Devletin hakkı vardır.",
+            "2": "Sadece sağcı partiler vardır.",
+            "3": "Vatandaşlar yasalara karar verir.",
+            "4": "Devlet yasalara uymak zorundadır."
+          }
+        },
+        "54": {
+          "question": "Almanya'da devlet güçlerinden hangisi değildir?",
+          "answers": {
+            "1": "Yasama",
+            "2": "Yargı",
+            "3": "Yürütme",
+            "4": "Direktif"
+          }
+        },
+        "55": {
+          "question": "Bu resim neyi gösteriyor?",
+          "answers": {
+            "1": "Berlin'deki Bundestag binası",
+            "2": "Karlsruhe'deki Federal Anayasa Mahkemesi",
+            "3": "Berlin'deki Bundesrat binası",
+            "4": "Berlin'deki Federal Şansölyelik"
+          }
+        },
+        "56": {
+          "question": "Almanya'da belediye yönetimine hangi görev aittir?",
+          "answers": {
+            "1": "Papazlık",
+            "2": "Düzenleme ofisi",
+            "3": "Vergi dairesi",
+            "4": "Dışişleri Bakanlığı"
+          }
+        },
+        "57": {
+          "question": "Alman Bundestag Başkanı genellikle kim seçilir?",
+          "answers": {
+            "1": "Parlamento üyeleri arasında en yaşlı olan",
+            "2": "En büyük federal eyaletin Başbakanı",
+            "3": "En güçlü fraksiyon üyesi",
+            "4": "Eski bir Şansölye"
+          }
+        },
+        "58": {
+          "question": "Almanya'da federal hükümetin bakanlarını kim atar?",
+          "answers": {
+            "1": "Federal Anayasa Mahkemesi Başkanı",
+            "2": "Federal Cumhurbaşkanı",
+            "3": "Federal Konsey Başkanı",
+            "4": "Bundestag Başkanı"
+          }
+        },
+        "59": {
+          "question": "Almanya'da 2007 yılında 'Die Linke' partisini oluşturan hangi partiler birleşti?",
+          "answers": {
+            "1": "CDU ve SSW",
+            "2": "PDS ve WASG",
+            "3": "CSU ve FDP",
+            "4": "Bündnis 90/Die Grünen ve SPD"
+          }
+        },
+        "60": {
+          "question": "Almanya'da Bundestag ve Bundesrat hangi organlara aittir?",
+          "answers": {
+            "1": "Yürütme.",
+            "2": "Yasama.",
+            "3": "Direktif.",
+            "4": "Yargı."
+          }
+        },
+        "61": {
+          "question": "\"Halk egemenliği\" ne anlama gelir?",
+          "answers": {
+            "1": "Kral/kraliçe halkın üzerinde hüküm sürer.",
+            "2": "Federal Anayasa Mahkemesi, anayasa üzerinde yer alır.",
+            "3": "Çıkar grupları, egemenliği hükümetle birlikte uygular.",
+            "4": "Devlet gücü halktan gelir."
+          }
+        },
+        "62": {
+          "question": "Bir Alman federal eyaletinin parlamentosu seçildiğinde, buna ne denir?",
+          "answers": {
+            "1": "Yerel seçim.",
+            "2": "Eyalet seçimi.",
+            "3": "Avrupa seçimi.",
+            "4": "Federal seçim."
+          }
+        },
+        "63": {
+          "question": "Almanya'da yürütme organının bir parçası değil olan nedir?",
+          "answers": {
+            "1": "Polis.",
+            "2": "Mahkemeler.",
+            "3": "Vergi dairesi.",
+            "4": "Bakanlıklar."
+          }
+        },
+        "64": {
+          "question": "Almanya Federal Cumhuriyeti şu anda hangi birimlere bölünmüştür?",
+          "answers": {
+            "1": "Dört işgal bölgesi.",
+            "2": "Bir Doğu devleti ve bir Batı devleti.",
+            "3": "16 kanton.",
+            "4": "Birlik, eyaletler ve belediyeler."
+          }
+        },
+        "65": {
+          "question": "Alman Bundestag'ın görevlerinden biri değildir...",
+          "answers": {
+            "1": "Yasaları tasarlamak.",
+            "2": "Federal hükümeti denetlemek.",
+            "3": "Şansölyeyi seçmek.",
+            "4": "Federal kabineyi oluşturmak."
+          }
+        },
+        "66": {
+          "question": "Alman ulusal marşının metnini kim yazdı?",
+          "answers": {
+            "1": "Friedrich von Schiller.",
+            "2": "Clemens Brentano.",
+            "3": "Johann Wolfgang von Goethe.",
+            "4": "Heinrich Hoffmann von Fallersleben."
+          }
+        },
+        "67": {
+          "question": "Almanya'da federal eyaletlerin başlıca görevi nedir?",
+          "answers": {
+            "1": "Savunma politikası.",
+            "2": "Dış politika.",
+            "3": "Ekonomi politikası.",
+            "4": "Eğitim politikası."
+          }
+        },
+        "68": {
+          "question": "Almanya'da devlet neden eğitimi kontrol eder?",
+          "answers": {
+            "1": "Almanya'da sadece devlet okulları olduğu için.",
+            "2": "Tüm öğrencilerin bir okul diplomasına sahip olması gerektiği için.",
+            "3": "Bundesländer'da farklı okullar olduğu için.",
+            "4": "Bu, Temel Kanun'a göre görevidir."
+          }
+        },
+        "69": {
+          "question": "Alman Federal Cumhuriyeti'nin üç aşamalı bir yönetim yapısı vardır. En düşük siyasi seviye nasıl adlandırılır?",
+          "answers": {
+            "1": "Şehir meclisleri.",
+            "2": "İlçe meclisleri.",
+            "3": "Belediyeler.",
+            "4": "Bölge idareleri."
+          }
+        },
+        "70": {
+          "question": "Alman Federal Cumhurbaşkanı Gustav Heinemann, 1974'te Helmut Schmidt'e Almanya Şansölyesi atanma belgesini veriyor. Alman Federal Cumhurbaşkanının görevleri nelerdir?",
+          "answers": {
+            "1": "Hükümet işlerini yönetir.",
+            "2": "Hükümet partisini kontrol eder.",
+            "3": "Bakanları seçer.",
+            "4": "Şansölyeyi seçim için önerir."
+          }
+        },
+        "71": {
+          "question": "Alman Şansölyesi en sık nerede bulunur? En sık olarak, o/şu...",
+          "answers": {
+            "1": "Bonn'da, çünkü Federal Şansölyelik ve Bundestag orada bulunur.",
+            "2": "Berlin'de, çünkü Federal Şansölyelik ve Bundestag orada bulunur.",
+            "3": "Hükümetin konuk evi olan Schloss Meseberg'de, yabancı misafirleri ağırlamak için.",
+            "4": "Federal Cumhurbaşkanının resmi ikametgahı olan Schloss Bellevue'de, yabancı misafirleri ağırlamak için."
+          }
+        },
+        "72": {
+          "question": "Almanya'nın şu anki Şansölyesi kimdir?",
+          "answers": {
+            "1": "Gerhard Schröder.",
+            "2": "Angela Merkel.",
+            "3": "Franziska Giffey.",
+            "4": "Olaf Scholz."
+          }
+        },
+        "73": {
+          "question": "Alman Bundestag'daki iki en büyük fraksi şu anda...",
+          "answers": {
+            "1": "CDU/CSU ve SPD.",
+            "2": "Die Linke ve Bündnis 90/Die Grünen.",
+            "3": "FDP ve SPD.",
+            "4": "Die Linke ve FDP."
+          }
+        },
+        "74": {
+          "question": "Almanya'nın tümü için parlamento ne olarak adlandırılır?",
+          "answers": {
+            "1": "Federal Meclis.",
+            "2": "Halk Meclisi.",
+            "3": "Bundestag.",
+            "4": "Federal Yargıtay."
+          }
+        },
+        "75": {
+          "question": "Almanya'nın şu anki devlet başkanına ne ad verilir?",
+          "answers": {
+            "1": "Frank-Walter Steinmeier.",
+            "2": "Bärbel Bas.",
+            "3": "Bodo Ramelow.",
+            "4": "Joachim Gauck."
+          }
+        },
+        "76": {
+          "question": "Almanya'da CDU kısaltması ne anlama gelir?",
+          "answers": {
+            "1": "Hristiyan Alman Birliği.",
+            "2": "Alman Girişimciler Kulübü.",
+            "3": "Hristiyan Alman Çevre Koruma.",
+            "4": "Hristiyan Demokrat Birliği."
+          }
+        },
+        "77": {
+          "question": "Bundeswehr Almanya'da nedir?",
+          "answers": {
+            "1": "Alman polisi.",
+            "2": "Alman bir limanı.",
+            "3": "Alman bir vatandaş girişimi.",
+            "4": "Alman ordusu."
+          }
+        },
+        "78": {
+          "question": "SPD kısaltması ne anlama gelir?",
+          "answers": {
+            "1": "Almanya Sosyalist Partisi.",
+            "2": "Almanya Sosyal Politika Partisi.",
+            "3": "Almanya Sosyal Demokrat Partisi.",
+            "4": "Almanya Sosyal Adalet Partisi."
+          }
+        },
+        "79": {
+          "question": "Almanya'da FDP kısaltması ne anlama gelir?",
+          "answers": {
+            "1": "Barışçıl Göstergeci Parti.",
+            "2": "Özgür Almanya Partisi.",
+            "3": "Lider Demokratik Parti.",
+            "4": "Özgür Demokrat Parti."
+          }
+        },
+        "80": {
+          "question": "Almanya'da Anayasa'nın yorumlanması için hangi mahkeme sorumludur?",
+          "answers": {
+            "1": "Yüksek Bölge Mahkemesi.",
+            "2": "Asliye Mahkemesi.",
+            "3": "Federal Anayasa Mahkemesi.",
+            "4": "İdare Mahkemesi."
+          }
+        },
+        "81": {
+          "question": "Almanya'da Şansölye kim tarafından seçilir?",
+          "answers": {
+            "1": "Bundesrat.",
+            "2": "Federal Meclis.",
+            "3": "Halk.",
+            "4": "Bundestag."
+          }
+        },
+        "82": {
+          "question": "Alman federal kabinesini kim yönetir?",
+          "answers": {
+            "1": "Bundestag Başkanı.",
+            "2": "Federal Cumhurbaşkanı.",
+            "3": "Şansölye.",
+            "4": "Bundesrat Başkanı."
+          }
+        },
+        "83": {
+          "question": "Alman Şansölyesi kim tarafından seçilir?",
+          "answers": {
+            "1": "Halk.",
+            "2": "Federal Meclis.",
+            "3": "Bundestag.",
+            "4": "Federal hükümet."
+          }
+        },
+        "84": {
+          "question": "Alman Federal Cumhurbaşkanının başlıca görevi nedir? O/Şu...",
+          "answers": {
+            "1": "Ülkeyi yönetir.",
+            "2": "Yasaları tasarlar.",
+            "3": "Ülkeyi temsil eder.",
+            "4": "Yasalara uygunluğu denetler."
+          }
+        },
+        "85": {
+          "question": "Almanya Federal Konseyi'ni kim oluşturur?",
+          "answers": {
+            "1": "Bundestag üyeleri.",
+            "2": "Federal hükümetin bakanları.",
+            "3": "Federal eyaletlerin hükümet temsilcileri.",
+            "4": "Parti üyeleri."
+          }
+        },
+        "86": {
+          "question": "Almanya Federal Cumhurbaşkanını kim seçer?",
+          "answers": {
+            "1": "Federal Meclis.",
+            "2": "Federal Konsey.",
+            "3": "Federal parlamento.",
+            "4": "Federal Anayasa Mahkemesi."
+          }
+        },
+        "87": {
+          "question": "Federal Almanya Cumhuriyeti'nin devlet başkanı kimdir?",
+          "answers": {
+            "1": "Şansölye.",
+            "2": "Federal Cumhurbaşkanı.",
+            "3": "Federal Konsey Başkanı.",
+            "4": "Bundestag Başkanı."
+          }
+        },
+        "88": {
+          "question": "Alman Bundestag'daki muhalefet...",
+          "answers": {
+            "1": "Hükümeti kontrol eder.",
+            "2": "Kimin Federal Bakan olacağına karar verir.",
+            "3": "Eyalet başkanlarını kimin seçeceğini belirler.",
+            "4": "Eyalet hükümetlerinin başkanlarını önerir."
+          }
+        },
+        "89": {
+          "question": "Almanya'da bir partinin parlamentodaki üyelerinin birliği ne olarak adlandırılır?",
+          "answers": {
+            "1": "Dernek.",
+            "2": "Elders' Konseyi.",
+            "3": "Fraksiyon.",
+            "4": "Muhalefet."
+          }
+        },
+        "90": {
+          "question": "Alman federal eyaletleri, federal düzeyde yasama sürecine nasıl katılır?",
+          "answers": {
+            "1": "Federal Konsey.",
+            "2": "Federal Meclis.",
+            "3": "Bundestag.",
+            "4": "Federal hükümet."
+          }
+        },
+        "91": {
+          "question": "Almanya'da bir eyalette hükümet değişikliği, federal politikayı etkileyebilir. Yönetmek daha ...",
+          "answers": {
+            "1": "zorlaşır, çünkü Bundestag'daki çoğunluk değişirse.",
+            "2": "kolaylaşır, çünkü yeni partiler Bundesrat'a gelirse.",
+            "3": "zorlaşır, çünkü Bundesrat'taki çoğunluk değişirse.",
+            "4": "kolaylaşır, eğer zengin bir eyaletse."
+          }
+        },
+        "92": {
+          "question": "Almanya'da CSU kısaltması ne anlama gelir?",
+          "answers": {
+            "1": "Hristiyan Güvenli Birlik",
+            "2": "Hristiyan Güney Alman Birliği",
+            "3": "Hristiyan Sosyal Girişimciler Birliği",
+            "4": "Hristiyan Sosyal Birlik"
+          }
+        },
+        "93": {
+          "question": "Bir parti bir Federal Meclis seçiminde daha fazla 'ikinci oy' alırsa, o kadar...",
+          "answers": {
+            "1": "parti parlamentoda daha fazla koltuk alır.",
+            "2": "daha az birinci oy alabilir.",
+            "3": "partinin daha fazla doğrudan adayı parlamentoya girer.",
+            "4": "koalisyon oluşturma riski daha büyük olur."
+          }
+        },
+        "94": {
+          "question": "Almanya'da Federal Meclis seçimine hangi yaşta katılabilmek mümkündür?",
+          "answers": {
+            "1": "16",
+            "2": "18",
+            "3": "21",
+            "4": "23"
+          }
+        },
+        "95": {
+          "question": "Almanya'daki çoğu çocuk için ne geçerlidir?",
+          "answers": {
+            "1": "Zorunlu oy",
+            "2": "Zorunlu eğitim",
+            "3": "Gizlilik yükümlülüğü",
+            "4": "Din yükümlülüğü"
+          }
+        },
+        "96": {
+          "question": "Alman vatandaşı herkesin 16 yaşından itibaren sahip olması gereken nedir?",
+          "answers": {
+            "1": "bir pasaport",
+            "2": "bir kimlik kartı",
+            "3": "bir sosyal güvenlik kartı",
+            "4": "bir sürücü belgesi"
+          }
+        },
+        "97": {
+          "question": "Almanya'da sürekli olarak çalışıyorsanız otomatik olarak ne ödersiniz?",
+          "answers": {
+            "1": "Sosyal güvenlik katkıları",
+            "2": "Sosyal yardım",
+            "3": "Çocuk parası",
+            "4": "Konut yardımı"
+          }
+        },
+        "98": {
+          "question": "Almanya'daki Federal Meclis üyeleri parti değiştirdiklerinde...",
+          "answers": {
+            "1": "hükümet çoğunluğunu kaybedebilir.",
+            "2": "artık parlamento oturumlarına katılamazlar.",
+            "3": "Cumhurbaşkanı önceden onay vermelidir.",
+            "4": "bu milletvekillerinin seçmenleri tekrar oy kullanabilir."
+          }
+        },
+        "99": {
+          "question": "Almanya'da sosyal sigortaları kim öder?",
+          "answers": {
+            "1": "İşverenler ve işçiler",
+            "2": "Sadece işçiler",
+            "3": "Tüm vatandaşlar",
+            "4": "Sadece işverenler"
+          }
+        },
+        "100": {
+          "question": "Hangisi yasal sosyal sigortaya ait değildir?",
+          "answers": {
+            "1": "Yasal emeklilik sigortası",
+            "2": "Hayat sigortası",
+            "3": "İşsizlik sigortası",
+            "4": "Bakım sigortası"
+          }
+        },
+        "101": {
+          "question": "Sendikalar, hangi grubun çıkarlarını temsil eder?",
+          "answers": {
+            "1": "Gençlerin.",
+            "2": "İşçilerin.",
+            "3": "Emeklilerin.",
+            "4": "İşverenlerin."
+          }
+        },
+        "102": {
+          "question": "Federal Almanya'da siyasi, ekonomik, kültürel, zihinsel veya sosyal alanlarda özel bir başarı elde edenlere hangi ödülle onurlandırılabilir? ...",
+          "answers": {
+            "1": "Federal Kartal.",
+            "2": "Federal Liyakat Haçı.",
+            "3": "Vatanseverlik Liyakat Nişanı.",
+            "4": "Alman Demokratik Cumhuriyeti'nin Kahramanı unvanı."
+          }
+        },
+        "103": {
+          "question": "Almanya'da 'trafik lambası koalisyonu' olarak adlandırılan nedir? İşbirliği...",
+          "answers": {
+            "1": "CDU ve CSU'nun Bundestag fraksiyonlarının işbirliği",
+            "2": "SPD, FDP ve Yeşiller/Bündnis 90'ın hükümetteki işbirliği",
+            "3": "CSU, Die LINKE ve Yeşiller/Bündnis 90'ın hükümetteki işbirliği",
+            "4": "CDU ve SPD'nin Bundestag fraksiyonlarının işbirliği"
+          }
+        },
+        "104": {
+          "question": "Almanya'da bir kadın işini kaybeder. Bu işten çıkarma nedeni olmamalıdır?",
+          "answers": {
+            "1": "Kadın uzun süre hasta ve iş göremez durumda.",
+            "2": "Kadın sık sık işe geç kalır.",
+            "3": "Kadın iş saatlerinde kişisel işleri halleder.",
+            "4": "Kadın bir çocuk bekliyor ve patronu bunu biliyor."
+          }
+        },
+        "105": {
+          "question": "Almanya'da seçim görevlilerinin görevlerinden biri nedir?",
+          "answers": {
+            "1": "Yaşlı insanlara oy verme kabini içinde yardım etmek.",
+            "2": "Seçim öncesinde oy tebliğlerini yazmak.",
+            "3": "Medya ile ara sonuçları paylaşmak.",
+            "4": "Seçimin sonunda oyları saymak."
+          }
+        },
+        "106": {
+          "question": "Almanya'da gönüllü seçim görevlileri seçimlerde nasıl yardımcı olurlar? Seçim görevlilerinin görevlerinden biri nedir?",
+          "answers": {
+            "1": "Çocuklara ve yaşlılara oy kullanmalarında yardımcı olurlar.",
+            "2": "Seçmen kartı ve mektuplarını yazma.",
+            "3": "Ara sonuçları gazetecilere iletmek.",
+            "4": "Seçimin sonunda oyları saymak."
+          }
+        },
+        "107": {
+          "question": "Almanya'da Bundestag kaç yıl için seçilir?",
+          "answers": {
+            "1": "2 yıl",
+            "2": "4 yıl",
+            "3": "6 yıl",
+            "4": "8 yıl"
+          }
+        },
+        "108": {
+          "question": "Almanya'da Federal Meclis seçiminde herkes oy kullanabilir mi?",
+          "answers": {
+            "1": "Federal Cumhuriyeti'nde yaşayan ve oy kullanmak isteyen herkes.",
+            "2": "Federal Cumhuriyeti vatandaşı olan ve en az 18 yaşında olan herkes.",
+            "3": "En az 3 yıldır Federal Cumhuriyeti'nde yaşayan herkes.",
+            "4": "Federal Cumhuriyeti vatandaşı olan ve en az 21 yaşında olan herkes."
+          }
+        },
+        "109": {
+          "question": "Almanya'da federal seçimler genellikle ne kadar sürede bir yapılır?",
+          "answers": {
+            "1": "her üç yılda bir",
+            "2": "her dört yılda bir",
+            "3": "her beş yılda bir",
+            "4": "her altı yılda bir"
+          }
+        },
+        "110": {
+          "question": "Almanya'da Federal Meclis kaç yıl için seçilir?",
+          "answers": {
+            "1": "2 yıl",
+            "2": "3 yıl",
+            "3": "4 yıl",
+            "4": "5 yıl"
+          }
+        },
+        "111": {
+          "question": "Almanya'da oy kullanmak izin anlamına gelir. Bu ne anlama gelir?",
+          "answers": {
+            "1": "Sadece evli kişilere oy verilir.",
+            "2": "Sadece sabit bir işi olan kişilere oy verilir.",
+            "3": "Almanya'da yaşayan tüm sakinler oy kullanmalıdır.",
+            "4": "Alman vatandaşları, en az yaşa geldiklerinde oy kullanabilirler."
+          }
+        },
+        "112": {
+          "question": "Almanya'da seçimler...",
+          "answers": {
+            "1": "belirli.",
+            "2": "gizli.",
+            "3": "işleme dayalı.",
+            "4": "cinsiyete bağlı."
+          }
+        },
+        "113": {
+          "question": "Almanya'da seçimler hangi parti tarafından kazanılır?",
+          "answers": {
+            "1": "en fazla oyu alan parti.",
+            "2": "erkeklerin çoğunluğuna sahip olan parti.",
+            "3": "işçiler arasında en çok oy alan parti.",
+            "4": "şansölye adayları için en çok ilk oy alan parti."
+          }
+        },
+        "114": {
+          "question": "Almanya'da demokratik seçimlere katılmak...",
+          "answers": {
+            "1": "bir yükümlülüktür.",
+            "2": "bir haktır.",
+            "3": "zorunludur.",
+            "4": "bir yüktür."
+          }
+        },
+        "115": {
+          "question": "'Aktif oy hakkı' Almanya'da ne anlama gelir?",
+          "answers": {
+            "1": "Seçilebilirsiniz.",
+            "2": "Oy kullanmak zorundasınız.",
+            "3": "Oy kullanabilirsiniz.",
+            "4": "Oy sayımına gitmek zorundasınız."
+          }
+        },
+        "116": {
+          "question": "Eğer Almanya'da federal seçimde oy kullanmaya izin verilirse, bu ne anlama gelir?",
+          "answers": {
+            "1": "aktif seçim kampanyası.",
+            "2": "aktif seçim süreci.",
+            "3": "aktif seçim kampanyası.",
+            "4": "aktif oy hakkı."
+          }
+        },
+        "117": {
+          "question": "Partilerin Alman Bundestag'ına seçilebilmesi için en az kaç yüzde ikinci oy almalıdır?",
+          "answers": {
+            "1": "3%",
+            "2": "4%",
+            "3": "5%",
+            "4": "6%"
+          }
+        },
+        "118": {
+          "question": "Almanya'da seçim yasası neyi düzenler?",
+          "answers": {
+            "1": "Oy kullanabilenler oy kullanmalıdır.",
+            "2": "Oy isteyen herkes oy kullanabilir.",
+            "3": "Eğer oy kullanmazsanız, oy hakkınızı kaybedersiniz.",
+            "4": "Oy kullanabilenler oy kullanabilir."
+          }
+        },
+        "119": {
+          "question": "Almanya'da seçimler özgürdür. Bu ne anlama gelir?",
+          "answers": {
+            "1": "Tüm mahkum suçlular oy kullanamaz.",
+            "2": "Oy kullanmak istiyorsam işverenim bana izin vermelidir.",
+            "3": "Her kişi, oy kullanmak isteyip istemediğine ve kime oy vereceğine zorlamadan karar verebilir.",
+            "4": "Oy kullanacağım yer konusunda özgürce karar verebilirim."
+          }
+        },
+        "120": {
+          "question": "Almanya'daki seçim sistemi...",
+          "answers": {
+            "1": "Sayım oy hakkı.",
+            "2": "Üç sınıf oy hakkı.",
+            "3": "Çoğunluk ve orantılı oy hakkı.",
+            "4": "Genel erkek oy hakkı."
+          }
+        },
+        "121": {
+          "question": "Bir parti Almanya Federal Meclisi'ne girmek istiyor. Ancak, belirli bir oy oranına sahip olmalıdır. Bu ne adlandırılır?",
+          "answers": {
+            "1": "5% eşiği.",
+            "2": "Kabul limiti.",
+            "3": "Temel değer.",
+            "4": "Rehberlik."
+          }
+        },
+        "122": {
+          "question": "Almanya'daki seçimler hangi ilkeye uyar? Almanya'daki seçimler...",
+          "answers": {
+            "1": "özgür, eşit, gizli.",
+            "2": "açık, güvenli, özgür.",
+            "3": "kapalı, eşit, güvenli.",
+            "4": "güvenli, açık, gönüllü."
+          }
+        },
+        "123": {
+          "question": "Almanya'da '5% eşiği' nedir?",
+          "answers": {
+            "1": "Küçük partiler için Federal Meclis'te oy verme düzenlemesi",
+            "2": "Oy kontrolü için Federal Meclis'teki katılım kontrolü",
+            "3": "Parlamenter olmak için minimum oy payı",
+            "4": "Federal Konsey'deki oylar için katılım kontrolü"
+          }
+        },
+        "124": {
+          "question": "Almanya Federal Meclisi seçimi, aşağıdakilerden hangisinin seçimidir?",
+          "answers": {
+            "1": "Federal Şansölye'nin seçimi.",
+            "2": "Eyalet parlamentolarının seçimi.",
+            "3": "Almanya için parlamentonun seçimi.",
+            "4": "Federal Cumhurbaşkanı'nın seçimi."
+          }
+        },
+        "125": {
+          "question": "Demokraside düzenli seçimlerin bir işlevi nedir?",
+          "answers": {
+            "1": "Vatandaşları oy kullanmaya zorlamak.",
+            "2": "Hükümet değişikliğini çoğunluğun isteğine göre mümkün kılmak.",
+            "3": "Ülkedeki mevcut yasaları korumak.",
+            "4": "Fakirleri güçlendirmek."
+          }
+        },
+        "126": {
+          "question": "Almanya'da bir seçimden önce seçmenlere ne verilir?",
+          "answers": {
+            "1": "Belediyeden seçim bildirimi.",
+            "2": "Federal Başkan'dan oy kullanma izni.",
+            "3": "Federal Meclis'ten bildirim.",
+            "4": "Piskoposluktan bildirim."
+          }
+        },
+        "127": {
+          "question": "Almanya Federal Cumhuriyeti seçim yasasında neden 5% eşiği var? Bu var çünkü...",
+          "answers": {
+            "1": "Birçok küçük partinin programları birbirine çok benzer.",
+            "2": "Vatandaşlar birçok küçük parti arasında yönlendiklerini kaybedebilir.",
+            "3": "Birçok küçük parti hükümet oluşturmayı karmaşıklaştırır.",
+            "4": "Küçük partilerin politikacılara yeterince para ödememesi."
+          }
+        },
+        "128": {
+          "question": "Vatandaşlar tarafından seçilen parlamento üyelerine ne denir?",
+          "answers": {
+            "1": "Parlamento Üyeleri.",
+            "2": "Şansölyeler.",
+            "3": "Büyükelçiler.",
+            "4": "Başbakanlar."
+          }
+        },
+        "129": {
+          "question": "Almanya'da aşağıdakiler halk tarafından seçilir...",
+          "answers": {
+            "1": "Federal Şansölye.",
+            "2": "Bir federal eyaletin Başbakanı.",
+            "3": "Bundestag.",
+            "4": "Federal Cumhurbaşkanı."
+          }
+        },
+        "130": {
+          "question": "Bir Bundestag seçiminde hangi oy geçerli olur?",
+          "answers": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        },
+        "131": {
+          "question": "Almanya'da bir belediye başkanı...",
+          "answers": {
+            "1": "Bir okulun başı.",
+            "2": "Bir bankanın başı.",
+            "3": "Bir belediyenin başı.",
+            "4": "Bir parti başkanının başkanı."
+          }
+        },
+        "132": {
+          "question": "Almanya'da birçok insan boş zamanlarında gönüllü olarak çalışır. Bu ne anlama gelir?",
+          "answers": {
+            "1": "Asker olarak çalışırlar.",
+            "2": "Derneklerde ve organizasyonlarda gönüllü ve ücretsiz çalışırlar.",
+            "3": "Federal hükümette çalışırlar.",
+            "4": "Bir hastanede çalışırlar ve para kazanırlar."
+          }
+        },
+        "133": {
+          "question": "Almanya'da federal ve eyalet seçimlerinde neler yapılabilir?",
+          "answers": {
+            "1": "Koca, eşi için oy kullanabilir.",
+            "2": "Posta yoluyla oy kullanabilirsiniz.",
+            "3": "Seçim günü telefonla oy kullanabilirsiniz.",
+            "4": "14 yaşından itibaren çocuklar oy kullanabilir."
+          }
+        },
+        "134": {
+          "question": "Her zaman işe gittiğiniz otobüs hattını kaldırmak istiyorlar. Otobüs hattını korumak için ne yapabilirsiniz?",
+          "answers": {
+            "1": "Vatandaş inisiyatifiyle katılırım veya kendi başıma bir tane başlatırım.",
+            "2": "Bir spor kulübüne katılır, bisiklet sürmeyi öğrenirim.",
+            "3": "Vergi dairesine başvururum çünkü bir vergi mükellefi olarak otobüs hakkına sahibim.",
+            "4": "Orman dairesine bir mektup yazar ve destek isterim."
+          }
+        },
+        "135": {
+          "question": "Almanya'da sendikalar kimleri temsil eder?",
+          "answers": {
+            "1": "İşverenleri.",
+            "2": "Çalışanların çıkarlarını.",
+            "3": "İşsizlerin çıkarlarını.",
+            "4": "Girişimcilerin çıkarlarını."
+          }
+        },
+        "136": {
+          "question": "Almanya'da iş mahkemesine ne zaman gidersiniz?",
+          "answers": {
+            "1": "Yanlış yan masraf beyanı.",
+            "2": "Patronunuzun haksız fesih kararı.",
+            "3": "Komşularla sorunlar.",
+            "4": "Trafik kazası sonrası zorluklar."
+          }
+        },
+        "137": {
+          "question": "Almanya'da işyerindeki çatışmalar için hangi mahkeme sorumludur?",
+          "answers": {
+            "1": "Aile mahkemesi",
+            "2": "Ceza mahkemesi",
+            "3": "İş mahkemesi",
+            "4": "Asliye mahkemesi"
+          }
+        },
+        "138": {
+          "question": "Almanya'da işverenim haksız bir şekilde beni işten çıkardıysa ne yapabilirim?",
+          "answers": {
+            "1": "Çalışmaya devam ederim ve patrona karşı dostça olurum.",
+            "2": "İşverenle karşıt bir hatırlatma prosedürü başlatırım.",
+            "3": "İşten çıkarma davası açarım.",
+            "4": "İşvereni polise şikayet ederim."
+          }
+        },
+        "139": {
+          "question": "Almanya'da mahkemede bir duruşma ne zaman yapılır? Birisi...",
+          "answers": {
+            "1": "Başka bir dine geçerse.",
+            "2": "Suç işler ve suçlanırsa.",
+            "3": "Hükümetten farklı bir görüşe sahipse.",
+            "4": "Aracını yanlış park eder ve çekilirse."
+          }
+        },
+        "140": {
+          "question": "Almanya'da bir yargıcın başlıca görevi nedir? Bir yargıç...",
+          "answers": {
+            "1": "Mahkemede vatandaşları temsil eder.",
+            "2": "Mahkemede çalışır ve hükümler açıklar.",
+            "3": "Laws in değiştirir.",
+            "4": "Mahkemede gençlerle ilgilenir."
+          }
+        },
+        "141": {
+          "question": "Almanya'da hukuki konularda bireylere kim danışmanlık ve temsil eder?",
+          "answers": {
+            "1": "Bir avukat",
+            "2": "Bir yargıç",
+            "3": "Bir lay yargıç",
+            "4": "Bir savcı"
+          }
+        },
+        "142": {
+          "question": "Almanya'da bir yargıcın başlıca görevi nedir? Bir yargıç...",
+          "answers": {
+            "1": "Mahkemede vatandaşları temsil eder.",
+            "2": "Mahkemede çalışır ve hükümler açıklar.",
+            "3": "Laws in değiştirir.",
+            "4": "Mahkemede gençlerle ilgilenir."
+          }
+        },
+        "143": {
+          "question": "Bir yargıç Almanya'da hangi kola aittir?",
+          "answers": {
+            "1": "Yargı.",
+            "2": "Yürütme.",
+            "3": "Operatif.",
+            "4": "Yasama."
+          }
+        },
+        "144": {
+          "question": "Almanya'da bir yargıç hangi kola aittir?",
+          "answers": {
+            "1": "Yürütme kolu.",
+            "2": "Yargı kolu.",
+            "3": "Planlama kolu.",
+            "4": "Yasama kolu."
+          }
+        },
+        "145": {
+          "question": "Almanya'da devlet gücü bölünmüştür. Bir yargıç hangi devlet gücü için çalışır?",
+          "answers": {
+            "1": "Yargı.",
+            "2": "Yürütme.",
+            "3": "Basın.",
+            "4": "Yasama."
+          }
+        },
+        "146": {
+          "question": "Almanya'da bir hukuki süreç ne adlandırılır?",
+          "answers": {
+            "1": "Program.",
+            "2": "Prosedür.",
+            "3": "Protokol.",
+            "4": "Proses."
+          }
+        },
+        "147": {
+          "question": "Almanya'da bir yargıcın çalışması nedir?",
+          "answers": {
+            "1": "Almanya'yı yönetmek.",
+            "2": "Adaleti yönetmek.",
+            "3": "Planlar yapmak.",
+            "4": "Yasaları yürütmek."
+          }
+        },
+        "148": {
+          "question": "Almanya'da polisin görevi nedir?",
+          "answers": {
+            "1": "Ülkeyi savunmak.",
+            "2": "Vatandaşları dinlemek.",
+            "3": "Yasaları yürütmek.",
+            "4": "Yasalara uyumu izlemek."
+          }
+        },
+        "149": {
+          "question": "Almanya'da bir lay yargıç kim olabilir?",
+          "answers": {
+            "1": "Almanya'da doğan 18 yaşından büyük tüm sakinler",
+            "2": "24 ila 70 yaş arasındaki tüm Alman vatandaşları",
+            "3": "En az 5 yıldır Almanya'da yaşamış olan tüm kişiler",
+            "4": "Yalnızca hukuk diplomasına sahip olan bireyler"
+          }
+        },
+        "150": {
+          "question": "Almanya'da bir lay yargıç...",
+          "answers": {
+            "1": "Şehir şefinin vekili.",
+            "2": "Onursal bir yargıç.",
+            "3": "Bir belediye konseyi üyesi.",
+            "4": "Hukuk okumuş bir kişi."
+          }
         }
       }
     }

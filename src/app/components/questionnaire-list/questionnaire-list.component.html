@@ -7,13 +7,13 @@
                          (opened)="expansionPanelOpen.emit(i)">
 
       <mat-expansion-panel-header>
-        <mat-panel-title>{{ test.id }}- {{ getQuestionTrPrefix(stateInfo.name, i) | translate }}</mat-panel-title>
+        <mat-panel-title>{{ test.id }}- {{ getQuestionTrPrefix(stateInfo.name, test.id - 1) | translate }}</mat-panel-title>
       </mat-expansion-panel-header>
 
-      <div *ngIf="test.questionImagesName && test.questionImagesName.length > 0">
-        <img *ngFor="let imageName of test.questionImagesName" class="img"
-             [src]="'assets/images/states-tests/' + stateInfo.name + '_' + imageName"
-             [alt]="stateInfo.name + '_' + imageName">
+      <div *ngIf="test.hasImage">
+        <img class="img"
+             [src]="'assets/images/states-tests/' + stateInfo.name + test.id + '.png'"
+             [alt]="stateInfo.name + test.id">
       </div>
 
       <mat-radio-group>
@@ -41,7 +41,7 @@
                  [length]="paginatorData.length"
                  [pageIndex]="paginatorData.pageIndex"
                  [pageSize]="paginatorData.pageSize"
-                 [pageSizeOptions]="paginatorData.length > 10 ? [30, 60, 100, 150, 300] : [10]"
+                 [pageSizeOptions]="paginatorData.length > 10 ? [10, 30, 60, 100, 150, 300] : [10]"
                  (page)="paginatorDataChange.emit($event)">
   </mat-paginator>
 </div>

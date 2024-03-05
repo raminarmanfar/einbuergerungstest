@@ -19,140 +19,1357 @@
     }
   },
   "review-deutschland-tests": {
-    "tests": {
-      "1": {
-        "question": "In Germany, people are allowed to openly express their opinions against the government because …",
-        "answers": {
-          "1": "here religious freedom applies.",
-          "2": "people pay taxes.",
-          "3": "people have the right to vote.",
-          "4": "freedom of speech applies here."
-        }
-      },
-      "2": {
-        "question": "In Germany, parents can decide until the age of 14 whether their child participates in school in …",
-        "answers": {
-          "1": "history class.",
-          "2": "religious education.",
-          "3": "political education.",
-          "4": "language education."
-        }
-      },
-      "3": {
-        "question": "Germany is a constitutional state. What does that mean?",
-        "answers": {
-          "1": "All residents and the state must adhere to the laws.",
-          "2": "The state does not have to adhere to the laws.",
-          "3": "Only Germans must follow the laws.",
-          "4": "The courts make the laws."
-        }
-      },
-      "4": {
-        "question": "Which right belongs to the fundamental rights in Germany?",
-        "answers": {
-          "1": "Right to bear arms.",
-          "2": "Vigilante justice.",
-          "3": "Freedom of speech.",
-          "4": "Right to self-justice."
-        }
-      },
-      "5": {
-        "question": "Elections in Germany are free. What does that mean?",
-        "answers": {
-          "1": "One can accept money in exchange for voting for a specific candidate.",
-          "2": "Voters must not be influenced or forced to vote in a certain way and should not suffer disadvantages from their vote.",
-          "3": "Only individuals who have never been in prison can vote.",
-          "4": "All eligible voters must vote."
-        }
-      },
-      "6": {
-        "question": "What is the name of the German constitution?",
-        "answers": {
-          "1": "People's Law.",
-          "2": "Federal Law.",
-          "3": "German Law.",
-          "4": "Basic Law."
-        }
-      },
-      "7": {
-        "question": "Which right, guaranteed by the German constitution, belongs to fundamental rights? The right to …",
-        "answers": {
-          "1": "Freedom of belief and conscience.",
-          "2": "Entertainment.",
-          "3": "Work.",
-          "4": "Housing."
-        }
-      },
-      "8": {
-        "question": "What is not mentioned in the Basic Law of Germany?",
-        "answers": {
-          "1": "The dignity of the individual is inviolable.",
-          "2": "Everyone should have the same amount of money.",
-          "3": "Everyone has the right to express their opinion.",
-          "4": "All are equal before the law."
-        }
-      },
-      "9": {
-        "question": "Which fundamental right in Germany applies only to foreigners? The right to …",
-        "answers": {
-          "1": "Family protection.",
-          "2": "Human dignity.",
-          "3": "Asylum.",
-          "4": "Freedom of speech."
-        }
-      },
-      "10": {
-        "question": "What is compatible with the German Basic Law?",
-        "answers": {
-          "1": "Corporal punishment.",
-          "2": "Torture.",
-          "3": "Death penalty.",
-          "4": "Monetary fine."
-        }
-      },
-      "11": {
-        "question": "What is the name of the constitution of the Federal Republic of Germany?",
-        "answers": {
-          "1": "Basic Law.",
-          "2": "Federal Constitution.",
-          "3": "Legal Code.",
-          "4": "Constitutional Treaty."
-        }
-      },
-      "12": {
-        "question": "Can a party in the German Bundestag abolish freedom of the press?",
-        "answers": {
-          "1": "Yes, if more than half of the members of the Bundestag are in favor.",
-          "2": "Yes, but two-thirds of the members of the Bundestag must be in favor.",
-          "3": "No, because freedom of the press is a fundamental right. It cannot be abolished.",
-          "4": "No, only the Bundesrat can abolish freedom of the press."
-        }
-      },
-      "13": {
-        "question": "In parliament, the term 'Opposition' stands for …",
-        "answers": {
-          "1": "the ruling parties.",
-          "2": "all members who do not belong to the government party/parties.",
-          "3": "the faction with the most members.",
-          "4": "all parties that reached the 5% threshold in the last election."
-        }
-      },
-      "14": {
-        "question": "Freedom of speech in Germany means that I can …",
-        "answers": {
-          "1": "insult passersby on the street.",
-          "2": "express my opinions in letters to the editor.",
-          "3": "wear Nazi symbols.",
-          "4": "express my opinions as long as I do not contradict the government."
-        }
-      },
-      "15": {
-        "question": "What does the German Basic Law prohibit?",
-        "answers": {
-          "1": "Military service.",
-          "2": "Forced labor.",
-          "3": "free choice of profession.",
-          "4": "working abroad."
+    "deutschland": {
+      "tests": {
+        "1": {
+          "question": "In Germany, people are allowed to openly express something against the government because...",
+          "answers": {
+            "1": "religious freedom is guaranteed here.",
+            "2": "people pay taxes.",
+            "3": "people have the right to vote.",
+            "4": "freedom of speech is guaranteed here."
+          }
+        },
+        "2": {
+          "question": "In Germany, parents can decide until their child is 14 years old whether it participates in school...",
+          "answers": {
+            "1": "history classes.",
+            "2": "religious classes.",
+            "3": "political classes.",
+            "4": "language classes."
+          }
+        },
+        "3": {
+          "question": "Germany is a constitutional state. What does that mean?",
+          "answers": {
+            "1": "All residents and the state must abide by the laws.",
+            "2": "The state is not required to follow the laws.",
+            "3": "Only Germans must follow the laws.",
+            "4": "The courts create the laws."
+          }
+        },
+        "4": {
+          "question": "Which right is considered a fundamental right in Germany?",
+          "answers": {
+            "1": "right to bear arms",
+            "2": "vigilante justice",
+            "3": "freedom of speech",
+            "4": "self-justice"
+          }
+        },
+        "5": {
+          "question": "Elections in Germany are free. What does this mean?",
+          "answers": {
+            "1": "One can accept money in exchange for voting for a specific candidate.",
+            "2": "Voters cannot be influenced or forced to vote in a certain way, and they should not face any disadvantages for their choice.",
+            "3": "Only individuals who have never been in prison are allowed to vote.",
+            "4": "All eligible voters must vote."
+          }
+        },
+        "6": {
+          "question": "What is the name of the German constitution?",
+          "answers": {
+            "1": "People's Law",
+            "2": "Federal Law",
+            "3": "German Law",
+            "4": "Basic Law"
+          }
+        },
+        "7": {
+          "question": "Which right is guaranteed by the German constitution as a fundamental right? The right to...",
+          "answers": {
+            "1": "freedom of belief and conscience.",
+            "2": "entertainment.",
+            "3": "employment.",
+            "4": "housing."
+          }
+        },
+        "8": {
+          "question": "What is not stated in the Basic Law of Germany?",
+          "answers": {
+            "1": "Human dignity is inviolable.",
+            "2": "Everyone should have an equal amount of money.",
+            "3": "Every person is allowed to express their opinion.",
+            "4": "All are equal before the law."
+          }
+        },
+        "9": {
+          "question": "Which fundamental right in Germany applies only to foreigners? The right to...",
+          "answers": {
+            "1": "protection of the family",
+            "2": "human dignity",
+            "3": "asylum",
+            "4": "freedom of speech"
+          }
+        },
+        "10": {
+          "question": "What is compatible with the German Basic Law?",
+          "answers": {
+            "1": "corporal punishment",
+            "2": "torture",
+            "3": "capital punishment",
+            "4": "monetary penalty"
+          }
+        },
+        "11": {
+          "question": "What is the Constitution of the Federal Republic of Germany called?",
+          "answers": {
+            "1": "Basic Law",
+            "2": "Federal Constitution",
+            "3": "Code of Law",
+            "4": "Constitutional Treaty"
+          }
+        },
+        "12": {
+          "question": "A party in the German Bundestag wants to abolish press freedom. Is this possible?",
+          "answers": {
+            "1": "Yes, if more than half of the members of the Bundestag are in favor.",
+            "2": "Yes, but two-thirds of the members of the Bundestag must be in favor.",
+            "3": "No, because press freedom is a fundamental right. It cannot be abolished.",
+            "4": "No, only the Federal Council can abolish press freedom."
+          }
+        },
+        "13": {
+          "question": "In parliament, the term 'Opposition' stands for...",
+          "answers": {
+            "1": "the ruling parties.",
+            "2": "all members who do not belong to the government party/parties.",
+            "3": "the faction with the most members.",
+            "4": "all parties that could reach the 5% threshold in the last election."
+          }
+        },
+        "14": {
+          "question": "Freedom of speech in Germany means that I...",
+          "answers": {
+            "1": "can insult passersby on the street.",
+            "2": "can express my opinion in letters to the editor.",
+            "3": "can wear Nazi symbols.",
+            "4": "can express my opinion as long as it does not contradict the government."
+          }
+        },
+        "15": {
+          "question": "What does the German Basic Law prohibit?",
+          "answers": {
+            "1": "military service",
+            "2": "forced labor",
+            "3": "free choice of profession",
+            "4": "working abroad"
+          }
+        },
+        "16": {
+          "question": "When is freedom of speech restricted in Germany?",
+          "answers": {
+            "1": "when publicly spreading false claims about individuals",
+            "2": "when expressing opinions about the federal government",
+            "3": "during discussions about religions",
+            "4": "when criticizing the state"
+          }
+        },
+        "17": {
+          "question": "German laws prohibit...",
+          "answers": {
+            "1": "freedom of speech for residents.",
+            "2": "petitions from citizens.",
+            "3": "freedom of assembly for residents.",
+            "4": "discrimination of citizens by the state."
+          }
+        },
+        "18": {
+          "question": "Which fundamental right is guaranteed in Article 1 of the Basic Law of the Federal Republic of Germany?",
+          "answers": {
+            "1": "the inviolability of human dignity",
+            "2": "the right to life",
+            "3": "freedom of religion",
+            "4": "freedom of speech"
+          }
+        },
+        "19": {
+          "question": "What is meant by the right of 'freedom of movement' in Germany?",
+          "answers": {
+            "1": "One can choose their place of residence.",
+            "2": "One can change their profession.",
+            "3": "One can choose a different religion.",
+            "4": "One can move in public only lightly dressed."
+          }
+        },
+        "20": {
+          "question": "A party in Germany aims to establish a dictatorship. It is then...",
+          "answers": {
+            "1": "tolerant.",
+            "2": "oriented towards the rule of law.",
+            "3": "law-abiding.",
+            "4": "unconstitutional."
+          }
+        },
+        "21": {
+          "question": "What is the coat of arms of the Federal Republic of Germany?",
+          "answers": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        },
+        "22": {
+          "question": "What form of government does Germany have?",
+          "answers": {
+            "1": "Monarchy",
+            "2": "Dictatorship",
+            "3": "Republic",
+            "4": "Principality"
+          }
+        },
+        "23": {
+          "question": "In Germany, most employed people...",
+          "answers": {
+            "1": "work for a company or government agency.",
+            "2": "work in small family businesses.",
+            "3": "volunteer for a federal state.",
+            "4": "are self-employed with their own business."
+          }
+        },
+        "24": {
+          "question": "How many federal states does the Federal Republic of Germany have?",
+          "answers": {
+            "1": "14",
+            "2": "15",
+            "3": "16",
+            "4": "17"
+          }
+        },
+        "25": {
+          "question": "What is not a federal state of the Federal Republic of Germany?",
+          "answers": {
+            "1": "North Rhine-Westphalia",
+            "2": "Alsace-Lorraine",
+            "3": "Mecklenburg-Vorpommern",
+            "4": "Saxony-Anhalt"
+          }
+        },
+        "26": {
+          "question": "Germany is...",
+          "answers": {
+            "1": "a communist republic.",
+            "2": "a democratic and social federal state.",
+            "3": "a capitalist and social monarchy.",
+            "4": "a social and socialist federal state."
+          }
+        },
+        "27": {
+          "question": "Germany is...",
+          "answers": {
+            "1": "a socialist state.",
+            "2": "a federal state.",
+            "3": "a dictatorship.",
+            "4": "a monarchy."
+          }
+        },
+        "28": {
+          "question": "Who elects the members of the Bundestag in Germany?",
+          "answers": {
+            "1": "the military",
+            "2": "the economy",
+            "3": "the eligible voters",
+            "4": "the administration"
+          }
+        },
+        "29": {
+          "question": "What is the heraldic animal of the Federal Republic of Germany?",
+          "answers": {
+            "1": "Lion",
+            "2": "Eagle",
+            "3": "Bear",
+            "4": "Horse"
+          }
+        },
+        "30": {
+          "question": "What is not a characteristic of our democracy?",
+          "answers": {
+            "1": "regular elections",
+            "2": "press censorship",
+            "3": "freedom of speech",
+            "4": "various parties"
+          }
+        },
+        "31": {
+          "question": "The collaboration of parties to form a government is called in Germany...",
+          "answers": {
+            "1": "Unity.",
+            "2": "Coalition.",
+            "3": "Ministry.",
+            "4": "Fraction."
+          }
+        },
+        "32": {
+          "question": "What is not a state power in Germany?",
+          "answers": {
+            "1": "Legislation",
+            "2": "Government",
+            "3": "Press",
+            "4": "Judiciary"
+          }
+        },
+        "33": {
+          "question": "Which statement is correct? In Germany...",
+          "answers": {
+            "1": "The state and religious communities are separate.",
+            "2": "Religious communities form the state.",
+            "3": "The state is dependent on religious communities.",
+            "4": "State and religious communities form a unity."
+          }
+        },
+        "34": {
+          "question": "What is Germany not?",
+          "answers": {
+            "1": "A democracy",
+            "2": "A constitutional state",
+            "3": "A monarchy",
+            "4": "A welfare state"
+          }
+        },
+        "35": {
+          "question": "How does the German state finance social insurance?",
+          "answers": {
+            "1": "Church taxes",
+            "2": "Social contributions",
+            "3": "Donations",
+            "4": "Association fees"
+          }
+        },
+        "36": {
+          "question": "Which measure creates social security in Germany?",
+          "answers": {
+            "1": "Health insurance",
+            "2": "Car insurance",
+            "3": "Building insurance",
+            "4": "Liability insurance"
+          }
+        },
+        "37": {
+          "question": "How are the heads of government of most federal states in Germany called?",
+          "answers": {
+            "1": "First Minister",
+            "2": "Prime Minister",
+            "3": "Senator",
+            "4": "Minister-President"
+          }
+        },
+        "38": {
+          "question": "The Federal Republic of Germany is a democratic and social...",
+          "answers": {
+            "1": "Union of states.",
+            "2": "Federal state.",
+            "3": "Union of states.",
+            "4": "Central state."
+          }
+        },
+        "39": {
+          "question": "What does each German federal state have?",
+          "answers": {
+            "1": "An own Foreign Minister",
+            "2": "A separate currency",
+            "3": "An own army",
+            "4": "A separate government"
+          }
+        },
+        "40": {
+          "question": "With which words does the German national anthem begin?",
+          "answers": {
+            "1": "People, hear the signals...",
+            "2": "Unity and justice and freedom...",
+            "3": "Joy, beautiful spark of divinity...",
+            "4": "Germany, united fatherland..."
+          }
+        },
+        "41": {
+          "question": "Why are there more than one party in a democracy?",
+          "answers": {
+            "1": "To represent the different opinions of citizens",
+            "2": "To limit bribery in politics",
+            "3": "To prevent political demonstrations",
+            "4": "To stimulate economic competition"
+          }
+        },
+        "42": {
+          "question": "Who decides on a new law in Germany?",
+          "answers": {
+            "1": "The government",
+            "2": "The parliament",
+            "3": "The courts",
+            "4": "The police"
+          }
+        },
+        "43": {
+          "question": "When can a party be banned in Germany?",
+          "answers": {
+            "1": "If its election campaign is too expensive",
+            "2": "If it fights against the constitution",
+            "3": "If it criticizes the head of state",
+            "4": "If its program proposes a new direction"
+          }
+        },
+        "44": {
+          "question": "Whom can citizens in Germany not directly elect?",
+          "answers": {
+            "1": "Members of the EU Parliament",
+            "2": "The Federal President",
+            "3": "State parliament members",
+            "4": "Federal parliament members"
+          }
+        },
+        "45": {
+          "question": "To which insurance does the nursing care insurance belong?",
+          "answers": {
+            "1": "Social insurance",
+            "2": "Accident insurance",
+            "3": "Household insurance",
+            "4": "Liability and fire insurance"
+          }
+        },
+        "46": {
+          "question": "The German state has many tasks. Which task belongs to it?",
+          "answers": {
+            "1": "It builds roads and schools.",
+            "2": "It sells food and clothing.",
+            "3": "It supplies all residents with newspapers for free.",
+            "4": "It produces cars and buses."
+          }
+        },
+        "47": {
+          "question": "The German state has many tasks. Which task does not belong to it?",
+          "answers": {
+            "1": "It pays for holidays for all citizens.",
+            "2": "It pays child benefit.",
+            "3": "It supports museums.",
+            "4": "It promotes athletes."
+          }
+        },
+        "48": {
+          "question": "Which organ is not part of Germany's constitutional organs?",
+          "answers": {
+            "1": "The Federal Council",
+            "2": "The Federal President",
+            "3": "The Citizens' Assembly",
+            "4": "The government"
+          }
+        },
+        "49": {
+          "question": "Who determines the education policy in Germany?",
+          "answers": {
+            "1": "Teachers",
+            "2": "The federal states",
+            "3": "The Family Ministry",
+            "4": "Universities"
+          }
+        },
+        "50": {
+          "question": "The economic system in Germany is called...",
+          "answers": {
+            "1": "Free centrally planned economy.",
+            "2": "Social market economy.",
+            "3": "Centrally planned economy.",
+            "4": "Planned economy."
+          }
+        },
+        "51": {
+          "question": "To a democratic constitutional state, it does not belong that...",
+          "answers": {
+            "1": "People can express criticism of the government.",
+            "2": "Citizens can peacefully demonstrate.",
+            "3": "People are arrested by a private police without reason.",
+            "4": "Someone commits a crime and is arrested as a result."
+          }
+        },
+        "52": {
+          "question": "What does 'people's sovereignty' mean? All state power comes from...",
+          "answers": {
+            "1": "The people.",
+            "2": "The Bundestag.",
+            "3": "The Prussian king.",
+            "4": "The Federal Constitutional Court."
+          }
+        },
+        "53": {
+          "question": "What does 'rule of law' mean in Germany?",
+          "answers": {
+            "1": "The state has the right.",
+            "2": "There are only right-wing parties.",
+            "3": "Citizens decide on laws.",
+            "4": "The state must adhere to the laws."
+          }
+        },
+        "54": {
+          "question": "What is not a state power in Germany?",
+          "answers": {
+            "1": "Legislative",
+            "2": "Judiciary",
+            "3": "Executive",
+            "4": "Directive"
+          }
+        },
+        "55": {
+          "question": "What does this picture show?",
+          "answers": {
+            "1": "The Bundestag seat in Berlin",
+            "2": "The Federal Constitutional Court in Karlsruhe",
+            "3": "The Bundesrat building in Berlin",
+            "4": "The Federal Chancellery in Berlin"
+          }
+        },
+        "56": {
+          "question": "Which office belongs to municipal administration in Germany?",
+          "answers": {
+            "1": "Parish office",
+            "2": "Order office",
+            "3": "Tax office",
+            "4": "Foreign office"
+          }
+        },
+        "57": {
+          "question": "Who is usually elected as the President of the German Bundestag?",
+          "answers": {
+            "1": "The oldest member of parliament",
+            "2": "The Prime Minister of the largest federal state",
+            "3": "A member of the strongest faction",
+            "4": "A former Chancellor"
+          }
+        },
+        "58": {
+          "question": "Who appoints the ministers of the federal government in Germany?",
+          "answers": {
+            "1": "The President of the Federal Constitutional Court",
+            "2": "The Federal President",
+            "3": "The President of the Federal Council",
+            "4": "The President of the Bundestag"
+          }
+        },
+        "59": {
+          "question": "Which parties merged to form the party 'Die Linke' in Germany in 2007?",
+          "answers": {
+            "1": "CDU and SSW",
+            "2": "PDS and WASG",
+            "3": "CSU and FDP",
+            "4": "Bündnis 90/Die Grünen and SPD"
+          }
+        },
+        "60": {
+          "question": "In Germany, the Bundestag and the Bundesrat belong to the...",
+          "answers": {
+            "1": "Executive.",
+            "2": "Legislative.",
+            "3": "Directive.",
+            "4": "Judiciary."
+          }
+        },
+        "61": {
+          "question": "What does 'popular sovereignty' mean?",
+          "answers": {
+            "1": "The king/queen rules over the people.",
+            "2": "The Federal Constitutional Court is above the constitution.",
+            "3": "Interest groups exercise sovereignty together with the government.",
+            "4": "State power emanates from the people."
+          }
+        },
+        "62": {
+          "question": "When the parliament of a German federal state is elected, it is called...",
+          "answers": {
+            "1": "Municipal election.",
+            "2": "State election.",
+            "3": "European election.",
+            "4": "Federal election."
+          }
+        },
+        "63": {
+          "question": "What is not part of the executive branch in Germany?",
+          "answers": {
+            "1": "The police.",
+            "2": "The courts.",
+            "3": "The tax office.",
+            "4": "The ministries."
+          }
+        },
+        "64": {
+          "question": "The Federal Republic of Germany is currently structured into...",
+          "answers": {
+            "1": "Four occupation zones.",
+            "2": "An East state and a West state.",
+            "3": "16 cantons.",
+            "4": "Federation, states, and municipalities."
+          }
+        },
+        "65": {
+          "question": "It is not the task of the German Bundestag to...",
+          "answers": {
+            "1": "Draft laws.",
+            "2": "Control the federal government.",
+            "3": "Elect the Chancellor.",
+            "4": "Form the federal cabinet."
+          }
+        },
+        "66": {
+          "question": "Who wrote the text for the German national anthem?",
+          "answers": {
+            "1": "Friedrich von Schiller.",
+            "2": "Clemens Brentano.",
+            "3": "Johann Wolfgang von Goethe.",
+            "4": "Heinrich Hoffmann von Fallersleben."
+          }
+        },
+        "67": {
+          "question": "What is primarily a task of the federal states in Germany?",
+          "answers": {
+            "1": "Defense policy.",
+            "2": "Foreign policy.",
+            "3": "Economic policy.",
+            "4": "Education policy."
+          }
+        },
+        "68": {
+          "question": "Why does the state control education in Germany?",
+          "answers": {
+            "1": "Because there are only state schools in Germany.",
+            "2": "Because all students must have a school diploma.",
+            "3": "Because there are different types of schools in the federal states.",
+            "4": "Because it is its task according to the Basic Law."
+          }
+        },
+        "69": {
+          "question": "The Federal Republic of Germany has a three-tier administrative structure. What is the lowest political level called?",
+          "answers": {
+            "1": "City councils.",
+            "2": "District councils.",
+            "3": "Municipalities.",
+            "4": "District offices."
+          }
+        },
+        "70": {
+          "question": "The German Federal President Gustav Heinemann gives Helmut Schmidt the appointment certificate for the German Chancellor in 1974. What are the tasks of the German Federal President?",
+          "answers": {
+            "1": "He/She leads the government affairs.",
+            "2": "He/She controls the government party.",
+            "3": "He/She selects the ministers.",
+            "4": "He/She proposes the Chancellor for election."
+          }
+        },
+        "71": {
+          "question": "Where does the German Chancellor most frequently stay? Most often, he/she is...",
+          "answers": {
+            "1": "In Bonn, because the Federal Chancellery and the Bundestag are located there.",
+            "2": "In Berlin, because the Federal Chancellery and the Bundestag are located there.",
+            "3": "At Schloss Meseberg, the government's guesthouse, to receive foreign guests.",
+            "4": "At Schloss Bellevue, the official residence of the Federal President, to receive foreign guests."
+          }
+        },
+        "72": {
+          "question": "Who is the current German Chancellor?",
+          "answers": {
+            "1": "Gerhard Schröder.",
+            "2": "Angela Merkel.",
+            "3": "Franziska Giffey.",
+            "4": "Olaf Scholz."
+          }
+        },
+        "73": {
+          "question": "The two largest factions in the German Bundestag are currently...",
+          "answers": {
+            "1": "CDU/CSU and SPD.",
+            "2": "The Left and Alliance 90/The Greens.",
+            "3": "FDP and SPD.",
+            "4": "The Left and FDP."
+          }
+        },
+        "74": {
+          "question": "What is the parliament for all of Germany called?",
+          "answers": {
+            "1": "Federal Assembly.",
+            "2": "People's Chamber.",
+            "3": "Bundestag.",
+            "4": "Federal Court of Justice."
+          }
+        },
+        "75": {
+          "question": "What is the current head of state in Germany called?",
+          "answers": {
+            "1": "Frank-Walter Steinmeier.",
+            "2": "Bärbel Bas.",
+            "3": "Bodo Ramelow.",
+            "4": "Joachim Gauck."
+          }
+        },
+        "76": {
+          "question": "What does the abbreviation CDU mean in Germany?",
+          "answers": {
+            "1": "Christian German Union.",
+            "2": "Club of German Entrepreneurs.",
+            "3": "Christian German Environmental Protection.",
+            "4": "Christian Democratic Union."
+          }
+        },
+        "77": {
+          "question": "What is the Bundeswehr in Germany?",
+          "answers": {
+            "1": "The German police.",
+            "2": "A German port.",
+            "3": "A German citizens' initiative.",
+            "4": "The German army."
+          }
+        },
+        "78": {
+          "question": "What does the abbreviation SPD mean?",
+          "answers": {
+            "1": "Socialist Party of Germany.",
+            "2": "Social Policy Party of Germany.",
+            "3": "Social Democratic Party of Germany.",
+            "4": "Socially Just Party of Germany."
+          }
+        },
+        "79": {
+          "question": "What does the abbreviation FDP mean in Germany?",
+          "answers": {
+            "1": "Peaceful Demonstrative Party.",
+            "2": "Free Germany Party.",
+            "3": "Leading Democratic Party.",
+            "4": "Free Democratic Party."
+          }
+        },
+        "80": {
+          "question": "Which court in Germany is responsible for interpreting the Basic Law?",
+          "answers": {
+            "1": "Higher Regional Court.",
+            "2": "District Court.",
+            "3": "Federal Constitutional Court.",
+            "4": "Administrative Court."
+          }
+        },
+        "81": {
+          "question": "Who elects the German Chancellor in Germany?",
+          "answers": {
+            "1": "The Federal Council.",
+            "2": "The Federal Assembly.",
+            "3": "The people.",
+            "4": "The Bundestag."
+          }
+        },
+        "82": {
+          "question": "Who leads the German federal cabinet?",
+          "answers": {
+            "1": "The President of the Bundestag.",
+            "2": "The Federal President.",
+            "3": "The Chancellor.",
+            "4": "The President of the Federal Council."
+          }
+        },
+        "83": {
+          "question": "Who elects the German Chancellor?",
+          "answers": {
+            "1": "The people.",
+            "2": "The Federal Assembly.",
+            "3": "The Bundestag.",
+            "4": "The federal government."
+          }
+        },
+        "84": {
+          "question": "What is the main task of the German Federal President? He/She...",
+          "answers": {
+            "1": "Govern the country.",
+            "2": "Draft laws.",
+            "3": "Represent the country.",
+            "4": "Oversee compliance with the laws."
+          }
+        },
+        "85": {
+          "question": "Who forms the German Federal Council?",
+          "answers": {
+            "1": "The members of the Bundestag.",
+            "2": "The ministers of the federal government.",
+            "3": "The government representatives of the federal states.",
+            "4": "The party members."
+          }
+        },
+        "86": {
+          "question": "Who elects the German Federal President?",
+          "answers": {
+            "1": "The Federal Assembly.",
+            "2": "The Federal Council.",
+            "3": "The federal parliament.",
+            "4": "The Federal Constitutional Court."
+          }
+        },
+        "87": {
+          "question": "Who is the head of state of the Federal Republic of Germany?",
+          "answers": {
+            "1": "The Chancellor.",
+            "2": "The Federal President.",
+            "3": "The President of the Federal Council.",
+            "4": "The President of the Bundestag."
+          }
+        },
+        "88": {
+          "question": "The parliamentary opposition in the German Bundestag...",
+          "answers": {
+            "1": "Controls the government.",
+            "2": "Decides who becomes Federal Minister.",
+            "3": "Determines who sits in the Federal Council.",
+            "4": "Proposes the heads of government for the states."
+          }
+        },
+        "89": {
+          "question": "What is the union of members of a party in parliament called in Germany?",
+          "answers": {
+            "1": "Association.",
+            "2": "Elders' Council.",
+            "3": "Fraction.",
+            "4": "Opposition."
+          }
+        },
+        "90": {
+          "question": "The German federal states participate in legislation at the federal level through...",
+          "answers": {
+            "1": "The Federal Council.",
+            "2": "The Federal Assembly.",
+            "3": "The Bundestag.",
+            "4": "The federal government."
+          }
+        },
+        "91": {
+          "question": "In Germany, a change of government in a federal state can have an impact on federal politics. Governing becomes...",
+          "answers": {
+            "1": "more difficult if it changes the majority in the Bundestag.",
+            "2": "easier if new parties come into the Bundesrat.",
+            "3": "more difficult if it changes the majority in the Bundesrat.",
+            "4": "easier if it is a wealthy federal state."
+          }
+        },
+        "92": {
+          "question": "What does the abbreviation CSU stand for in Germany?",
+          "answers": {
+            "1": "Christian Secure Union",
+            "2": "Christian South German Union",
+            "3": "Christian Social Entrepreneur Association",
+            "4": "Christian Social Union"
+          }
+        },
+        "93": {
+          "question": "The more 'second votes' a party receives in a federal election, the...",
+          "answers": {
+            "1": "more seats the party gets in parliament.",
+            "2": "fewer first votes it can have.",
+            "3": "more direct candidates of the party enter parliament.",
+            "4": "greater the risk of having to form a coalition."
+          }
+        },
+        "94": {
+          "question": "From what age is one allowed to participate in the election to the German Bundestag?",
+          "answers": {
+            "1": "16",
+            "2": "18",
+            "3": "21",
+            "4": "23"
+          }
+        },
+        "95": {
+          "question": "What applies to most children in Germany?",
+          "answers": {
+            "1": "Voting obligation",
+            "2": "Compulsory education",
+            "3": "Confidentiality obligation",
+            "4": "Religious obligation"
+          }
+        },
+        "96": {
+          "question": "What must every German citizen from the age of 16 possess?",
+          "answers": {
+            "1": "a passport",
+            "2": "an ID card",
+            "3": "a social security card",
+            "4": "a driver's license"
+          }
+        },
+        "97": {
+          "question": "What do you automatically pay in Germany if you are permanently employed?",
+          "answers": {
+            "1": "Social security contributions",
+            "2": "Welfare",
+            "3": "Child benefits",
+            "4": "Housing allowance"
+          }
+        },
+        "98": {
+          "question": "When members of the German Bundestag change their faction...",
+          "answers": {
+            "1": "the government may lose its majority.",
+            "2": "they are no longer allowed to participate in parliamentary sessions.",
+            "3": "the President must give his/her consent beforehand.",
+            "4": "the voters of these deputies can vote again."
+          }
+        },
+        "99": {
+          "question": "Who pays for social insurances in Germany?",
+          "answers": {
+            "1": "Employers and employees",
+            "2": "Only employees",
+            "3": "All citizens",
+            "4": "Only employers"
+          }
+        },
+        "100": {
+          "question": "What does not belong to statutory social insurance?",
+          "answers": {
+            "1": "Statutory pension insurance",
+            "2": "Life insurance",
+            "3": "Unemployment insurance",
+            "4": "Nursing care insurance"
+          }
+        },
+        "101": {
+          "question": "Trade unions are interest groups of...",
+          "answers": {
+            "1": "Youth.",
+            "2": "Employees.",
+            "3": "Retirees.",
+            "4": "Employers."
+          }
+        },
+        "102": {
+          "question": "What can one be honored with in the Federal Republic of Germany for outstanding achievements in political, economic, cultural, intellectual, or social fields? With the...",
+          "answers": {
+            "1": "Federal Eagle.",
+            "2": "Federal Cross of Merit.",
+            "3": "Patriotic Order of Merit.",
+            "4": "Honorific title 'Hero of the German Democratic Republic.'"
+          }
+        },
+        "103": {
+          "question": "What is referred to as the 'traffic light coalition' in Germany? The collaboration...",
+          "answers": {
+            "1": "of the Bundestag factions of CDU and CSU",
+            "2": "of SPD, FDP, and Alliance 90/The Greens in a government",
+            "3": "of CSU, The Left, and Alliance 90/The Greens in a government",
+            "4": "of the Bundestag factions of CDU and SPD"
+          }
+        },
+        "104": {
+          "question": "A woman in Germany loses her job. What must not be the reason for this dismissal?",
+          "answers": {
+            "1": "The woman is sick for a long time and unable to work.",
+            "2": "The woman is often late to work.",
+            "3": "The woman takes care of personal matters during working hours.",
+            "4": "The woman is having a child, and her boss knows that."
+          }
+        },
+        "105": {
+          "question": "What is a task of election helpers in Germany?",
+          "answers": {
+            "1": "They help elderly people with voting in the voting booth.",
+            "2": "They write the election notifications before the election.",
+            "3": "They provide interim results to the media.",
+            "4": "They count the votes after the end of the election."
+          }
+        },
+        "106": {
+          "question": "In Germany, voluntary election helpers assist in elections. What is a task of election helpers?",
+          "answers": {
+            "1": "They assist children and elderly people in voting.",
+            "2": "They write cards and letters indicating the polling place.",
+            "3": "They provide interim results to journalists.",
+            "4": "They count the votes after the end of the election."
+          }
+        },
+        "107": {
+          "question": "How many years is the Bundestag elected for in Germany?",
+          "answers": {
+            "1": "2 years",
+            "2": "4 years",
+            "3": "6 years",
+            "4": "8 years"
+          }
+        },
+        "108": {
+          "question": "In a federal election in Germany, anyone can vote who...",
+          "answers": {
+            "1": "resides in the Federal Republic of Germany and wants to vote.",
+            "2": "is a citizen of the Federal Republic of Germany and is at least 18 years old.",
+            "3": "has been living in the Federal Republic of Germany for at least 3 years.",
+            "4": "is a citizen of the Federal Republic of Germany and is at least 21 years old."
+          }
+        },
+        "109": {
+          "question": "How often are federal elections usually held in Germany?",
+          "answers": {
+            "1": "every three years",
+            "2": "every four years",
+            "3": "every five years",
+            "4": "every six years"
+          }
+        },
+        "110": {
+          "question": "For how many years is the Bundestag elected in Germany?",
+          "answers": {
+            "1": "2 years",
+            "2": "3 years",
+            "3": "4 years",
+            "4": "5 years"
+          }
+        },
+        "111": {
+          "question": "In Germany, one is allowed to vote. What does that mean?",
+          "answers": {
+            "1": "Only married persons are allowed to vote.",
+            "2": "Only persons with a fixed job are allowed to vote.",
+            "3": "All residents in Germany must vote.",
+            "4": "All German citizens are allowed to vote when they reach the minimum age."
+          }
+        },
+        "112": {
+          "question": "The elections in Germany are...",
+          "answers": {
+            "1": "specific.",
+            "2": "secret.",
+            "3": "job-related.",
+            "4": "gender-dependent."
+          }
+        },
+        "113": {
+          "question": "In Germany, elections are won by the party that...",
+          "answers": {
+            "1": "receives the most votes.",
+            "2": "has the majority of men voting.",
+            "3": "gets the most votes among workers.",
+            "4": "receives the most first votes for its chancellor candidate."
+          }
+        },
+        "114": {
+          "question": "Participating in democratic elections in Germany is...",
+          "answers": {
+            "1": "an obligation.",
+            "2": "a right.",
+            "3": "compulsory.",
+            "4": "a burden."
+          }
+        },
+        "115": {
+          "question": "What does 'active voting right' mean in Germany?",
+          "answers": {
+            "1": "One can be elected.",
+            "2": "One must go and vote.",
+            "3": "One can vote.",
+            "4": "One must go for the vote count."
+          }
+        },
+        "116": {
+          "question": "If you are allowed to vote in a federal election in Germany, that means...",
+          "answers": {
+            "1": "active election campaign.",
+            "2": "active election process.",
+            "3": "active election campaign.",
+            "4": "active voting right."
+          }
+        },
+        "117": {
+          "question": "How much percentage of the second votes must parties receive at least to be elected to the German Bundestag?",
+          "answers": {
+            "1": "3%",
+            "2": "4%",
+            "3": "5%",
+            "4": "6%"
+          }
+        },
+        "118": {
+          "question": "What does the electoral law regulate in Germany?",
+          "answers": {
+            "1": "Those who can vote must vote.",
+            "2": "Anyone who wants to can vote.",
+            "3": "If you don't vote, you lose the right to vote.",
+            "4": "Those who can vote may vote."
+          }
+        },
+        "119": {
+          "question": "Elections in Germany are free. What does that mean?",
+          "answers": {
+            "1": "All convicted criminals are not allowed to vote.",
+            "2": "If I want to vote, my employer must give me time off.",
+            "3": "Every person can decide without coercion whether they want to vote and whom they want to vote for.",
+            "4": "I can freely decide where I want to go to vote."
+          }
+        },
+        "120": {
+          "question": "The electoral system in Germany is a...",
+          "answers": {
+            "1": "Census voting right.",
+            "2": "Three-class voting right.",
+            "3": "Majority and proportional voting right.",
+            "4": "General male voting right."
+          }
+        },
+        "121": {
+          "question": "A party wants to enter the German Bundestag. However, it must have a minimum share of votes. This is called...",
+          "answers": {
+            "1": "5% threshold.",
+            "2": "Admission limit.",
+            "3": "Base value.",
+            "4": "Guideline."
+          }
+        },
+        "122": {
+          "question": "Which principle do elections in Germany adhere to? Elections in Germany are...",
+          "answers": {
+            "1": "free, equal, secret.",
+            "2": "open, secure, free.",
+            "3": "closed, equal, secure.",
+            "4": "secure, open, voluntary."
+          }
+        },
+        "123": {
+          "question": "What is the '5% threshold' in Germany?",
+          "answers": {
+            "1": "Voting regulation in the Bundestag for small parties",
+            "2": "Attendance check in the Bundestag for votes",
+            "3": "Minimum share of votes to enter parliament",
+            "4": "Attendance check in the Federal Council for votes"
+          }
+        },
+        "124": {
+          "question": "The German Bundestag election is the election...",
+          "answers": {
+            "1": "of the Federal Chancellor.",
+            "2": "of the parliaments of the states.",
+            "3": "of the parliament for Germany.",
+            "4": "of the Federal President."
+          }
+        },
+        "125": {
+          "question": "In a democracy, a function of regular elections is...",
+          "answers": {
+            "1": "forcing citizens to cast their votes.",
+            "2": "enabling the change of government according to the will of the majority of voters.",
+            "3": "maintaining existing laws in the country.",
+            "4": "empowering the poor."
+          }
+        },
+        "126": {
+          "question": "What do eligible voters in Germany receive before an election?",
+          "answers": {
+            "1": "an election notification from the municipality",
+            "2": "voting permission from the Federal President",
+            "3": "a notification from the Federal Assembly",
+            "4": "a notification from the parish office"
+          }
+        },
+        "127": {
+          "question": "Why is there a 5% threshold in the election law of the Federal Republic of Germany? It exists because...",
+          "answers": {
+            "1": "the programs of many small parties have many similarities.",
+            "2": "citizens may lose orientation with many small parties.",
+            "3": "many small parties complicate government formation.",
+            "4": "small parties do not have enough money to pay politicians."
+          }
+        },
+        "128": {
+          "question": "Parliament members elected by citizens are called...",
+          "answers": {
+            "1": "Members of Parliament.",
+            "2": "Chancellors.",
+            "3": "Ambassadors.",
+            "4": "Prime Ministers."
+          }
+        },
+        "129": {
+          "question": "In Germany, the following is elected by the people...",
+          "answers": {
+            "1": "the Federal Chancellor.",
+            "2": "the Minister President of a federal state.",
+            "3": "the Bundestag.",
+            "4": "the Federal President."
+          }
+        },
+        "130": {
+          "question": "Which ballot would be valid in a Bundestag election?",
+          "answers": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        },
+        "131": {
+          "question": "In Germany, a mayor is...",
+          "answers": {
+            "1": "the head of a school.",
+            "2": "the head of a bank.",
+            "3": "the head of a municipality.",
+            "4": "the chairman of a party."
+          }
+        },
+        "132": {
+          "question": "Many people in Germany work voluntarily in their free time. What does that mean?",
+          "answers": {
+            "1": "They work as soldiers.",
+            "2": "They work voluntarily and unpaid in associations and organizations.",
+            "3": "They work in the federal government.",
+            "4": "They work in a hospital and earn money."
+          }
+        },
+        "133": {
+          "question": "What is allowed in federal and state elections in Germany?",
+          "answers": {
+            "1": "The husband votes for his wife.",
+            "2": "You can vote by mail.",
+            "3": "You can vote by phone on election day.",
+            "4": "Children from the age of 14 are allowed to vote."
+          }
+        },
+        "134": {
+          "question": "They want to abolish the bus line you always take to work. What can you do to keep the bus line?",
+          "answers": {
+            "1": "I participate in a citizens' initiative to preserve the bus line or start one myself.",
+            "2": "I join a sports club and train cycling.",
+            "3": "I contact the tax office because as a taxpayer, I have a right to the bus line.",
+            "4": "I write a letter to the forestry office and ask for support."
+          }
+        },
+        "135": {
+          "question": "Who do the trade unions represent in Germany?",
+          "answers": {
+            "1": "The employers.",
+            "2": "The interests of employees.",
+            "3": "The interests of the unemployed.",
+            "4": "The interests of entrepreneurs."
+          }
+        },
+        "136": {
+          "question": "You go to the labor court in Germany for...",
+          "answers": {
+            "1": "incorrect ancillary cost statement.",
+            "2": "unjustified termination by your boss.",
+            "3": "problems with neighbors.",
+            "4": "difficulties after a traffic accident."
+          }
+        },
+        "137": {
+          "question": "Which court in Germany is responsible for conflicts in the workplace?",
+          "answers": {
+            "1": "the family court",
+            "2": "the criminal court",
+            "3": "the labor court",
+            "4": "the district court"
+          }
+        },
+        "138": {
+          "question": "What can I do in Germany if my employer has unjustly terminated me?",
+          "answers": {
+            "1": "continue working and be friendly to the boss.",
+            "2": "initiate a reminder procedure against the employer.",
+            "3": "file a protection against dismissal lawsuit.",
+            "4": "report the employer to the police."
+          }
+        },
+        "139": {
+          "question": "When does a trial in court take place in Germany? If someone...",
+          "answers": {
+            "1": "converts to another religion.",
+            "2": "has committed a criminal offense and is accused.",
+            "3": "holds a different opinion than the government.",
+            "4": "has parked his car incorrectly and it is towed away."
+          }
+        },
+        "140": {
+          "question": "What does a lay judge do in Germany? He/She...",
+          "answers": {
+            "1": "decides with judges on guilt and punishment.",
+            "2": "gives legal advice to citizens.",
+            "3": "issues certificates.",
+            "4": "defends the accused."
+          }
+        },
+        "141": {
+          "question": "Who advises and represents individuals in legal matters in Germany?",
+          "answers": {
+            "1": "a lawyer",
+            "2": "a judge",
+            "3": "a lay judge",
+            "4": "a prosecutor"
+          }
+        },
+        "142": {
+          "question": "What is the main task of a judge in Germany? A judge...",
+          "answers": {
+            "1": "represents citizens in court.",
+            "2": "works at a court and pronounces judgments.",
+            "3": "changes laws.",
+            "4": "takes care of juveniles in court."
+          }
+        },
+        "143": {
+          "question": "A judge in Germany belongs to the...",
+          "answers": {
+            "1": "Judiciary.",
+            "2": "Executive.",
+            "3": "Operative.",
+            "4": "Legislative."
+          }
+        },
+        "144": {
+          "question": "A judge in Germany belongs to the...",
+          "answers": {
+            "1": "executive branch.",
+            "2": "judicial branch.",
+            "3": "planning branch.",
+            "4": "legislative branch."
+          }
+        },
+        "145": {
+          "question": "In Germany, state power is divided. For which state power does a judge work?",
+          "answers": {
+            "1": "Judiciary.",
+            "2": "Executive.",
+            "3": "Press.",
+            "4": "Legislative."
+          }
+        },
+        "146": {
+          "question": "What is a legal proceeding called in Germany?",
+          "answers": {
+            "1": "Program.",
+            "2": "Procedure.",
+            "3": "Protocol.",
+            "4": "Process."
+          }
+        },
+        "147": {
+          "question": "What is the work of a judge in Germany?",
+          "answers": {
+            "1": "Governing Germany.",
+            "2": "Administering justice.",
+            "3": "Making plans.",
+            "4": "Enacting laws."
+          }
+        },
+        "148": {
+          "question": "What is a task of the police in Germany?",
+          "answers": {
+            "1": "Defending the country.",
+            "2": "Wiretapping citizens.",
+            "3": "Enacting laws.",
+            "4": "Monitoring compliance with laws."
+          }
+        },
+        "149": {
+          "question": "Who can become a lay judge in Germany?",
+          "answers": {
+            "1": "all residents born in Germany over 18 years old",
+            "2": "all German citizens aged 24 to 70",
+            "3": "all persons who have lived in Germany for at least 5 years",
+            "4": "only individuals with a completed law degree"
+          }
+        },
+        "150": {
+          "question": "A lay judge in Germany is...",
+          "answers": {
+            "1": "the deputy of the city chief.",
+            "2": "a honorary judge.",
+            "3": "a member of a municipal council.",
+            "4": "a person who has studied law."
+          }
         }
       }
     }
