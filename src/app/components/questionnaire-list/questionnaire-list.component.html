@@ -7,7 +7,10 @@
                          (opened)="expansionPanelOpen.emit(i)">
 
       <mat-expansion-panel-header>
-        <mat-panel-title>{{ test.id }}- {{ getQuestionTrPrefix(stateInfo.name, test.id - 1) | translate }}</mat-panel-title>
+        <mat-panel-title>
+          {{ test.id | persianNumber }}
+          - {{ getQuestionTrPrefix(stateInfo.name, test.id - 1) | translate | persianNumber }}
+        </mat-panel-title>
       </mat-expansion-panel-header>
 
       <div *ngIf="test.hasImage">
@@ -20,7 +23,7 @@
         <mat-radio-button *ngFor="let answerId of [1, 2, 3, 4]"
                           [value]="answerId" class="radio-btn"
                           [checked]="showAnswersKeys && test.correctAnswer === answerId">
-          {{ getAnswerTrPrefix(stateInfo.name, test.id - 1, answerId) | translate }}
+          {{ getAnswerTrPrefix(stateInfo.name, test.id - 1, answerId) | translate | persianNumber }}
         </mat-radio-button>
       </mat-radio-group>
 

@@ -18,6 +18,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {BidiModule} from '@angular/cdk/bidi';
 
 export const materials = [
   MatButtonModule,
@@ -38,7 +39,8 @@ export const materials = [
   MatGridListModule,
   MatDividerModule,
   MatListModule,
-  MatPaginatorModule
+  MatPaginatorModule,
+  BidiModule
 ];
 
 @NgModule({imports: materials, exports: materials})
