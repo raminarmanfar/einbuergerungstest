@@ -21,15 +21,8 @@ export class QuestionnaireListComponent {
 
   constructor(private translate: TranslateService,private paginator: MatPaginatorIntl) {
     translate.onLangChange.subscribe(currentLang => {
-      console.log('>>>>>', currentLang);
-      translate.get('general.next').subscribe(res => {
-        console.log('>>>>lang changed')
-        paginator.itemsPerPageLabel = res;
-        paginator.changes.subscribe(res2 => {
-          console.log('>>>>>>>>>>>>>>>>>>>>', res2)
-        });
-      });
-      console.log('>>>>', paginator);
+      console.log('>>>>', currentLang);
+      translate.get('general.ITEMS_PER_PAGE_LABEL').subscribe(res => paginator.itemsPerPageLabel = res);
     });
   }
 

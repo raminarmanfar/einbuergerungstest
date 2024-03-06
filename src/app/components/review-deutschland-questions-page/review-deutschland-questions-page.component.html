@@ -3,7 +3,7 @@
     <mat-card-content>
       <mat-list class="horizontal-list">
         <mat-list-item>
-          <mat-slide-toggle [checked]="showAnswersKeys"
+          <mat-slide-toggle class="mat-slide-toggle" [checked]="showAnswersKeys" [matTooltip]="'general.show-answer-keys' | translate"
                             (change)="reviewDeutschlandQuestionsStateService.setShowAnswersKeys($event.checked)">
             {{ 'general.show-answer-keys' | translate }}
           </mat-slide-toggle>

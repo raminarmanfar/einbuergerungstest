@@ -2,28 +2,21 @@
   <mat-toolbar-row>
     <span>{{ 'title' | translate }}</span>
     <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon favorite-icon" routerLink="/home" [matTooltip]="'header.go-home' | translate" matTooltipPosition="below">
+    <button mat-icon-button class="example-icon favorite-icon" routerLink="/home"
+            [matTooltip]="'header.go-home' | translate" matTooltipPosition="below">
       <mat-icon>home</mat-icon>
     </button>
     <button mat-icon-button [matTooltip]="'header.active-language' | translate" [matMenuTriggerFor]="menu"
             class="active-language-btn">
       <span [class]="'active-language fi fi-' + countryName"></span>
       <mat-menu #menu="matMenu">
-        <button mat-menu-item (click)="changeActiveLanguage(Language.DE)" matTooltip="Deutsch" matTooltipPosition="left">
-          <span class="fi fi-de flag"></span>
-          <span class="menu-item-text">Deutsch</span>
-        </button>
-        <button mat-menu-item (click)="changeActiveLanguage(Language.EN)" matTooltip="English" matTooltipPosition="left">
-          <span class="fi fi-gb flag"></span>
-          <span class="menu-item-text">English</span>
-        </button>
-        <button mat-menu-item (click)="changeActiveLanguage(Language.TR)" matTooltip="Türkce" matTooltipPosition="left">
-          <span class="fi fi-tr flag"></span>
-          <span class="menu-item-text">Türkce</span>
-        </button>
-        <button mat-menu-item (click)="changeActiveLanguage(Language.FA)" matTooltip="فارسی" matTooltipPosition="left">
-          <span class="fi fi-ir flag"></span>
-          <span class="menu-item-text">فارسی</span>
+        <button mat-menu-item
+                *ngFor="let item of languageList"
+                (click)="changeActiveLanguage(item.language)"
+                [matTooltip]="item.caption"
+                matTooltipPosition="left">
+          <span class="fi fi-{{item.country}} flag"></span>
+          <span class="menu-item-text">{{item.caption}}</span>
         </button>
       </mat-menu>
     </button>

@@ -1,14 +1,14 @@
 {
   "title": "German Naturalization Test",
   "header": {
-    "active-language": "German",
+    "active-language": "English",
     "go-home": "Go Home"
   },
   "general": {
     "next": "Next",
     "previous": "Previous",
     "show-answer-keys": "Show answer keys",
-    "ITEMS_PER_PAGE_LABEL": "Number of questions",
+    "ITEMS_PER_PAGE_LABEL": "Questions per page",
     "RANGE_PAGE_LABEL_1": "0 of {length}",
     "RANGE_PAGE_LABEL_2": "{{startIndex}} - {{endIndex}} of {{length}}"
   },
@@ -16,7 +16,7 @@
     "menu": {
       "btn-review-deutschland-tests": "Review Germany's Tests",
       "btn-review-states-tests": "Review State Tests",
-      "btn-all-tests-demo-exam": "All Tests Demo Exam",
+      "btn-demo-exams": "Demo Exams",
       "btn-take-demo-test": "Take a Demo Test",
       "btn-about-me": "About Me"
     }
@@ -1822,6 +1822,904 @@
             "2": "Schleswig-Holstein",
             "3": "Mecklenburg-Vorpommern",
             "4": "Saarland"
+          }
+        },
+        "201": {
+          "question": "Which of the following lists contains only federal states that belonged to the territory of the former GDR (East Germany)?",
+          "answers": {
+            "1": "Lower Saxony, North Rhine-Westphalia, Hesse, Schleswig-Holstein, Brandenburg",
+            "2": "Mecklenburg-Western Pomerania, Brandenburg, Saxony, Saxony-Anhalt, Thuringia",
+            "3": "Bavaria, Baden-Württemberg, Rhineland-Palatinate, Thuringia, Saxony",
+            "4": "Saxony, Thuringia, Hesse, Lower Saxony, Brandenburg"
+          }
+        },
+        "202": {
+          "question": "To which side did the GDR belong during the 'Cold War'?",
+          "answers": {
+            "1": "to the Western powers",
+            "2": "to the Warsaw Pact",
+            "3": "to NATO",
+            "4": "to the non-aligned states"
+          }
+        },
+        "203": {
+          "question": "What was the economic system of the GDR?",
+          "answers": {
+            "1": "Market economy",
+            "2": "Planned economy",
+            "3": "Supply and demand",
+            "4": "Capitalism"
+          }
+        },
+        "204": {
+          "question": "How did the Federal Republic of Germany and the GDR become one state?",
+          "answers": {
+            "1": "The Federal Republic of Germany occupied the GDR.",
+            "2": "The current five eastern states joined the Federal Republic of Germany.",
+            "3": "The western states joined the GDR.",
+            "4": "The GDR occupied the Federal Republic of Germany."
+          }
+        },
+        "205": {
+          "question": "With the accession of the GDR to the Federal Republic of Germany, the new federal states now also belong to...",
+          "answers": {
+            "1": "the European Union.",
+            "2": "the Warsaw Pact.",
+            "3": "OPEC.",
+            "4": "the European Defense Community."
+          }
+        },
+        "206": {
+          "question": "What did the term 'Monday demonstrations' mean in Germany in 1989?",
+          "answers": {
+            "1": "Demonstrations were only allowed on Mondays in the Federal Republic.",
+            "2": "On Mondays, demonstrations were against the GDR regime.",
+            "3": "On the first Monday of the month, protesters gathered in the Federal Republic of Germany.",
+            "4": "On Mondays, people in the GDR demonstrated against the West."
+          }
+        },
+        "207": {
+          "question": "In which military alliance was the GDR a member?",
+          "answers": {
+            "1": "NATO",
+            "2": "Rheinbund (Rhine Alliance)",
+            "3": "Warsaw Pact",
+            "4": "European Alliance"
+          }
+        },
+        "208": {
+          "question": "What was the 'Stasi'?",
+          "answers": {
+            "1": "The secret service in the 'Third Reich'",
+            "2": "A famous German memorial site",
+            "3": "The secret service of the GDR",
+            "4": "A German sports club during World War II"
+          }
+        },
+        "209": {
+          "question": "What was the emblem of the German Democratic Republic?",
+          "answers": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        },
+        "210": {
+          "question": "What happened on June 17, 1953, in the GDR?",
+          "answers": {
+            "1": "The solemn accession to the Warsaw Pact",
+            "2": "Nationwide strikes and a popular uprising",
+            "3": "The 1st SED Party Congress",
+            "4": "The first visit of Fidel Castro"
+          }
+        },
+        "211": {
+          "question": "Which politician is associated with the 'Ostpolitik'?",
+          "answers": {
+            "1": "Helmut Kohl",
+            "2": "Willy Brandt",
+            "3": "Mikhail Gorbachev",
+            "4": "Ludwig Erhard"
+          }
+        },
+        "212": {
+          "question": "What is Germany's full name?",
+          "answers": {
+            "1": "Federal State of Germany",
+            "2": "Federal States of Germany",
+            "3": "Federal Republic of Germany",
+            "4": "Federal District of Germany"
+          }
+        },
+        "213": {
+          "question": "How many inhabitants does Germany have?",
+          "answers": {
+            "1": "70 million",
+            "2": "78 million",
+            "3": "83 million",
+            "4": "90 million"
+          }
+        },
+        "214": {
+          "question": "What are the colors of the German flag?",
+          "answers": {
+            "1": "Black-red-gold",
+            "2": "Red-white-black",
+            "3": "Black-red-green",
+            "4": "Black-yellow-red"
+          }
+        },
+        "215": {
+          "question": "Who is known as the 'Chancellor of German Unity'?",
+          "answers": {
+            "1": "Gerhard Schröder",
+            "2": "Helmut Kohl",
+            "3": "Konrad Adenauer",
+            "4": "Helmut Schmidt"
+          }
+        },
+        "216": {
+          "question": "Which symbol is seen in the plenary hall of the German Bundestag?",
+          "answers": {
+            "1": "The flag of the city of Berlin",
+            "2": "The Federal Eagle",
+            "3": "The Imperial Eagle",
+            "4": "The Imperial Crown"
+          }
+        },
+        "217": {
+          "question": "In which period did the German Democratic Republic (GDR) exist?",
+          "answers": {
+            "1": "1919 to 1927",
+            "2": "1933 to 1945",
+            "3": "1949 to 1990",
+            "4": "1945 to 1961"
+          }
+        },
+        "218": {
+          "question": "How many federal states joined the Federal Republic of Germany during reunification in 1990?",
+          "answers": {
+            "1": "4",
+            "2": "5",
+            "3": "6",
+            "4": "7"
+          }
+        },
+        "219": {
+          "question": "Since when have the borders of the Federal Republic of Germany been as they are today?",
+          "answers": {
+            "1": "1933.",
+            "2": "1949.",
+            "3": "1971.",
+            "4": "1990."
+          }
+        },
+        "220": {
+          "question": "January 27 is an official memorial day in Germany. What does this day commemorate?",
+          "answers": {
+            "1": "The end of World War II",
+            "2": "The adoption of the Basic Law",
+            "3": "The reunification of Germany",
+            "4": "The victims of National Socialism"
+          }
+        },
+        "221": {
+          "question": "Germany is a member of the Schengen Agreement. What does this mean?",
+          "answers": {
+            "1": "Germans can travel to many European countries without passport control.",
+            "2": "Everyone can enter Germany without personal control.",
+            "3": "Germans can travel to any country without passport control.",
+            "4": "Germans can pay with the Euro in every country."
+          }
+        },
+        "222": {
+          "question": "Which country is a neighboring country of Germany?",
+          "answers": {
+            "1": "Hungary",
+            "2": "Portugal",
+            "3": "Spain",
+            "4": "Switzerland"
+          }
+        },
+        "223": {
+          "question": "Which country is a neighboring country of Germany?",
+          "answers": {
+            "1": "Romania",
+            "2": "Bulgaria",
+            "3": "Poland",
+            "4": "Greece"
+          }
+        },
+        "224": {
+          "question": "What does the abbreviation EU stand for?",
+          "answers": {
+            "1": "European Companies",
+            "2": "European Union",
+            "3": "Unified Union",
+            "4": "Euro Union"
+          }
+        },
+        "225": {
+          "question": "In which other country is there a large German-speaking population?",
+          "answers": {
+            "1": "Czech Republic",
+            "2": "Norway",
+            "3": "Spain",
+            "4": "Austria"
+          }
+        },
+        "226": {
+          "question": "What is the flag of the European Union?",
+          "answers": {
+            "1": "2",
+            "2": "1",
+            "3": "4",
+            "4": "3"
+          }
+        },
+        "227": {
+          "question": "Which country is a neighboring country of Germany?",
+          "answers": {
+            "1": "Finland",
+            "2": "Denmark",
+            "3": "Norway",
+            "4": "Sweden"
+          }
+        },
+        "228": {
+          "question": "What is the general term for the accession of the GDR to the Federal Republic of Germany in 1990?",
+          "answers": {
+            "1": "NATO Eastern Expansion",
+            "2": "EU Eastern Expansion",
+            "3": "European Community",
+            "4": "German reunification"
+          }
+        },
+        "229": {
+          "question": "Which country is a neighboring country of Germany?",
+          "answers": {
+            "1": "Spain",
+            "2": "Bulgaria",
+            "3": "Norway",
+            "4": "Luxembourg"
+          }
+        },
+        "230": {
+          "question": "The European Parliament is regularly elected, namely every...",
+          "answers": {
+            "1": "5 years.",
+            "2": "6 years.",
+            "3": "7 years.",
+            "4": "8 years."
+          }
+        },
+        "231": {
+          "question": "What does the term 'European integration' mean?",
+          "answers": {
+            "1": "It refers to American immigrants in Europe.",
+            "2": "The term means the immigration stop to Europe.",
+            "3": "It refers to European emigrants to the USA.",
+            "4": "The term means the alliance of European states into the EU."
+          }
+        },
+        "232": {
+          "question": "Who is elected in the European elections?",
+          "answers": {
+            "1": "The European Commission",
+            "2": "The countries allowed to join the EU",
+            "3": "The European Constitution",
+            "4": "The Members of the European Parliament"
+          }
+        },
+        "233": {
+          "question": "Which country is a neighboring country of Germany?",
+          "answers": {
+            "1": "Czech Republic",
+            "2": "Bulgaria",
+            "3": "Greece",
+            "4": "Portugal"
+          }
+        },
+        "234": {
+          "question": "Where is the seat of the European Parliament?",
+          "answers": {
+            "1": "London",
+            "2": "Paris",
+            "3": "Berlin",
+            "4": "Strasbourg"
+          }
+        },
+        "235": {
+          "question": "The French President François Mitterrand and the German Chancellor Helmut Kohl jointly commemorate the dead of both World Wars in Verdun. What goal of the European Union becomes clear at this meeting?",
+          "answers": {
+            "1": "Friendship between England and Germany",
+            "2": "Freedom of travel to all EU countries",
+            "3": "Peace and security in EU countries",
+            "4": "Uniform holidays in EU countries"
+          }
+        },
+        "236": {
+          "question": "How many member states does the EU have today?",
+          "answers": {
+            "1": "21",
+            "2": "23",
+            "3": "25",
+            "4": "27"
+          }
+        },
+        "237": {
+          "question": "In 2007, the 50th anniversary of the 'Treaties of Rome' was celebrated. What was the content of the treaties?",
+          "answers": {
+            "1": "Germany's accession to NATO",
+            "2": "Establishment of the European Economic Community (EEC)",
+            "3": "Germany's commitment to reparations",
+            "4": "Determination of the Oder-Neisse Line as the eastern border"
+          }
+        },
+        "238": {
+          "question": "Where does the European Parliament work?",
+          "answers": {
+            "1": "Paris, London, and The Hague",
+            "2": "Strasbourg, Luxembourg, and Brussels",
+            "3": "Rome, Bern, and Vienna",
+            "4": "Bonn, Zurich, and Milan"
+          }
+        },
+        "239": {
+          "question": "Through which treaties did the Federal Republic of Germany join other states to form the European Economic Community?",
+          "answers": {
+            "1": "Through the 'Hamburg Treaties'",
+            "2": "Through the 'Treaties of Rome'",
+            "3": "Through the 'Paris Treaties'",
+            "4": "Through the 'London Treaties'"
+          }
+        },
+        "240": {
+          "question": "Since when can you pay with the Euro in cash in Germany?",
+          "answers": {
+            "1": "1995",
+            "2": "1998",
+            "3": "2002",
+            "4": "2005"
+          }
+        },
+        "241": {
+          "question": "Mrs. Seger is expecting a child. What does she have to do to receive parental leave?",
+          "answers": {
+            "1": "She has to write to her health insurance.",
+            "2": "She doesn't have to do anything because she automatically receives parental leave.",
+            "3": "She has to apply to the parental leave office.",
+            "4": "She has to ask the labor office for permission."
+          }
+        },
+        "242": {
+          "question": "Who decides whether a child goes to kindergarten in Germany?",
+          "answers": {
+            "1": "The state",
+            "2": "The federal states",
+            "3": "The parents / legal guardians",
+            "4": "The schools"
+          }
+        },
+        "243": {
+          "question": "Maik and Sybille want to hold a demonstration on the street with friends at their German place of residence. What do they have to do beforehand?",
+          "answers": {
+            "1": "They don't have to do anything. You can demonstrate anywhere in Germany at any time.",
+            "2": "They have to register the demonstration.",
+            "3": "They can't do anything because demonstrations are generally prohibited in Germany.",
+            "4": "Maik and Sybille have to start a new association because only associations are allowed to demonstrate."
+          }
+        },
+        "244": {
+          "question": "What school leaving certificate do you usually need to start studying at a university in Germany?",
+          "answers": {
+            "1": "Abitur",
+            "2": "A diploma",
+            "3": "The procura",
+            "4": "A journeyman's examination"
+          }
+        },
+        "245": {
+          "question": "Who is not allowed to live together as a couple in Germany?",
+          "answers": {
+            "1": "Hans (20 years) and Marie (19 years)",
+            "2": "Tom (20 years) and Klaus (45 years)",
+            "3": "Sofie (35 years) and Lisa (40 years)",
+            "4": "Anne (13 years) and Tim (25 years)"
+          }
+        },
+        "246": {
+          "question": "At what age are you legally an adult in Germany?",
+          "answers": {
+            "1": "16",
+            "2": "18",
+            "3": "19",
+            "4": "21"
+          }
+        },
+        "247": {
+          "question": "A woman is pregnant. She is particularly protected by law shortly before and after the birth of her child. What is this protection called?",
+          "answers": {
+            "1": "Parental leave",
+            "2": "Birth preparation",
+            "3": "Maternity protection",
+            "4": "Postpartum"
+          }
+        },
+        "248": {
+          "question": "The education of children is primarily the responsibility of...",
+          "answers": {
+            "1": "The state",
+            "2": "The parents",
+            "3": "The grandparents",
+            "4": "The schools"
+          }
+        },
+        "249": {
+          "question": "Who is mainly responsible for the upbringing of children in Germany?",
+          "answers": {
+            "1": "The state",
+            "2": "The parents",
+            "3": "The relatives",
+            "4": "The schools"
+          }
+        },
+        "250": {
+          "question": "In Germany, you have the best chances of a well-paid job if you...",
+          "answers": {
+            "1": "Are Catholic",
+            "2": "Are well-educated",
+            "3": "Are a woman",
+            "4": "Are a member of a party"
+          }
+        },
+        "251": {
+          "question": "If someone in Germany hits a child, ...",
+          "answers": {
+            "1": "it's nobody's business.",
+            "2": "only the family's business.",
+            "3": "cannot be punished for it.",
+            "4": "can be punished for it."
+          }
+        },
+        "252": {
+          "question": "In Germany ...",
+          "answers": {
+            "1": "one is allowed to be married to only one partner at a time.",
+            "2": "one can have multiple spouses simultaneously.",
+            "3": "one is not allowed to remarry if one was married before.",
+            "4": "a woman is not allowed to remarry if her husband has died."
+          }
+        },
+        "253": {
+          "question": "Where do you have to register when you move in Germany?",
+          "answers": {
+            "1": "at the registration office",
+            "2": "at the civil registry office",
+            "3": "at the public order office",
+            "4": "at the trade office"
+          }
+        },
+        "254": {
+          "question": "In Germany, married couples are allowed to get divorced. Usually, they have to observe the 'separation year.' What does that mean?",
+          "answers": {
+            "1": "The divorce process takes one year.",
+            "2": "The man and woman are married for one year, then divorce is possible.",
+            "3": "The visitation rights for the children last for one year.",
+            "4": "The man and woman live separately for at least one year. After that, divorce is possible."
+          }
+        },
+        "255": {
+          "question": "In case of parenting problems, parents in Germany can receive help from the...",
+          "answers": {
+            "1": "public order office.",
+            "2": "school office.",
+            "3": "youth welfare office.",
+            "4": "health office."
+          }
+        },
+        "256": {
+          "question": "A married couple wants to open a restaurant in Germany. What do they absolutely need for this?",
+          "answers": {
+            "1": "permission from the police",
+            "2": "approval from a political party",
+            "3": "approval from the registration office",
+            "4": "a restaurant permit from the relevant authority"
+          }
+        },
+        "257": {
+          "question": "An adult woman in Germany wants to obtain the Abitur (high school diploma). She can do this at...",
+          "answers": {
+            "1": "a university.",
+            "2": "an evening high school.",
+            "3": "a secondary school.",
+            "4": "a private university."
+          }
+        },
+        "258": {
+          "question": "What can the youth welfare office do in Germany?",
+          "answers": {
+            "1": "It decides which school the child attends.",
+            "2": "It can take a child who is being abused or hungry away from the family.",
+            "3": "It pays child benefits to the parents.",
+            "4": "It checks if the child attends kindergarten."
+          }
+        },
+        "259": {
+          "question": "The Career Information Center (BIZ) at the Federal Employment Agency in Germany assists with...",
+          "answers": {
+            "1": "pension calculation.",
+            "2": "job search.",
+            "3": "tax declaration.",
+            "4": "health insurance."
+          }
+        },
+        "260": {
+          "question": "In Germany, a child in school has the right to...",
+          "answers": {
+            "1": "unlimited free time.",
+            "2": "freedom of choice for all subjects.",
+            "3": "entitlement to school fees.",
+            "4": "mandatory attendance."
+          }
+        },
+        "261": {
+          "question": "A man wants to obtain his Abitur in Germany at the age of 30. Where can he do this? At...",
+          "answers": {
+            "1": "a university",
+            "2": "an evening high school",
+            "3": "a secondary school",
+            "4": "a private university"
+          }
+        },
+        "262": {
+          "question": "What does the principle of equal treatment mean in Germany?",
+          "answers": {
+            "1": "No one should be discriminated against, for example, because of a disability.",
+            "2": "One can discriminate against others if there are sufficient personal reasons for it.",
+            "3": "No one can sue individuals if they have been discriminated against.",
+            "4": "It is a law for all to donate money annually to disadvantaged groups."
+          }
+        },
+        "263": {
+          "question": "In Germany, adolescents aged 14 and above are criminally responsible. This means that adolescents who are 14 years and older and violate criminal laws...",
+          "answers": {
+            "1": "will be punished.",
+            "2": "will be treated like adults.",
+            "3": "share the punishment with their parents.",
+            "4": "will not be punished."
+          }
+        },
+        "264": {
+          "question": "For which celebration do people in Germany wear colorful costumes and masks?",
+          "answers": {
+            "1": "on Rose Monday",
+            "2": "on May Day",
+            "3": "at Oktoberfest",
+            "4": "on Pentecost"
+          }
+        },
+        "265": {
+          "question": "In Germany, where must one go first if one wants to get married?",
+          "answers": {
+            "1": "to the registration office",
+            "2": "to the public order office",
+            "3": "to the employment agency",
+            "4": "to the civil registry office"
+          }
+        },
+        "266": {
+          "question": "When does the legally mandated nightly rest period begin in Germany?",
+          "answers": {
+            "1": "when the sun sets",
+            "2": "at 10 PM",
+            "3": "when the neighbors go to sleep",
+            "4": "at midnight, 12 AM"
+          }
+        },
+        "267": {
+          "question": "A young woman in Germany, 22 years old, lives with her boyfriend. The woman's parents disapprove because they don't like the boyfriend. What can the parents do?",
+          "answers": {
+            "1": "They must respect the decision of their adult daughter.",
+            "2": "They have the right to bring the daughter back to the parental home.",
+            "3": "They can go to the police and report their daughter.",
+            "4": "They look for another man for their daughter."
+          }
+        },
+        "268": {
+          "question": "A young woman wants to get a driver's license in Germany. She is afraid of the exam because her native language is not German. What is correct?",
+          "answers": {
+            "1": "She must live in Germany for at least ten years before getting a driver's license.",
+            "2": "She may be able to take the theory test in her native language. There are more than ten languages to choose from.",
+            "3": "If she doesn't know German, she is not allowed to have a driver's license.",
+            "4": "She must get the driver's license in the country where her language is spoken."
+          }
+        },
+        "269": {
+          "question": "In Germany, children aged three to the start of elementary school have a right to...",
+          "answers": {
+            "1": "monthly pocket money.",
+            "2": "a spot in kindergarten.",
+            "3": "a spot in a sports club.",
+            "4": "a holiday pass."
+          }
+        },
+        "270": {
+          "question": "The adult education center (Volkshochschule) in Germany is an institution...",
+          "answers": {
+            "1": "for religious instruction.",
+            "2": "only for young people.",
+            "3": "for further education.",
+            "4": "only for retirees."
+          }
+        },
+        "271": {
+          "question": "What is a Christmas tradition in Germany?",
+          "answers": {
+            "1": "hiding colored eggs",
+            "2": "decorating a Christmas tree",
+            "3": "dressing up with masks and costumes",
+            "4": "placing pumpkins outside the door"
+          }
+        },
+        "272": {
+          "question": "Which living arrangement is not allowed in Germany?",
+          "answers": {
+            "1": "A man and a woman are divorced and live with new partners.",
+            "2": "Two women live together.",
+            "3": "A single father lives with his two children.",
+            "4": "A man is married to two women at the same time."
+          }
+        },
+        "273": {
+          "question": "In case of parenting problems in Germany, you should go to...",
+          "answers": {
+            "1": "the doctor.",
+            "2": "the health office.",
+            "3": "the registration office.",
+            "4": "the youth welfare office."
+          }
+        },
+        "274": {
+          "question": "You deliberately opened a letter addressed to someone else in Germany. What did you not consider?",
+          "answers": {
+            "1": "the right to remain silent",
+            "2": "the privacy of correspondence",
+            "3": "professional confidentiality",
+            "4": "freedom of speech"
+          }
+        },
+        "275": {
+          "question": "What is required in Germany for a divorce?",
+          "answers": {
+            "1": "parental consent",
+            "2": "a doctor's certificate",
+            "3": "children's consent",
+            "4": "the support of a lawyer"
+          }
+        },
+        "276": {
+          "question": "What should you do if you are treated poorly by your contact person in a German authority?",
+          "answers": {
+            "1": "I can do nothing.",
+            "2": "I have to endure this treatment.",
+            "3": "I threaten the person.",
+            "4": "I can complain to the authority's supervisor."
+          }
+        },
+        "277": {
+          "question": "A woman with a two-year-old child applies for a position in Germany. What is an example of discrimination? She is not hired for the job only because she...",
+          "answers": {
+            "1": "does not speak English.",
+            "2": "has too high salary expectations.",
+            "3": "has no experience in that profession.",
+            "4": "is a mother."
+          }
+        },
+        "278": {
+          "question": "A man in a wheelchair has applied for a position as an accountant in Germany. What is an example of discrimination? He is not hired for the job only because he...",
+          "answers": {
+            "1": "sits in a wheelchair.",
+            "2": "has no experience.",
+            "3": "has too high salary expectations.",
+            "4": "does not speak English."
+          }
+        },
+        "279": {
+          "question": "In most apartment buildings in Germany, there is a 'house rules.' What does such 'house rules' include? It specifies...",
+          "answers": {
+            "1": "rules for using public transportation.",
+            "2": "all tenants in the building.",
+            "3": "rules that all residents must follow.",
+            "4": "the address of the nearest public order office."
+          }
+        },
+        "280": {
+          "question": "If you want to challenge an incorrect tax assessment in Germany, you must...",
+          "answers": {
+            "1": "do nothing.",
+            "2": "discard the assessment.",
+            "3": "file an objection.",
+            "4": "wait until another assessment arrives."
+          }
+        },
+        "281": {
+          "question": "Two friends want to go to a public swimming pool in Germany. Both have dark skin and are not allowed in because of that. Which right is violated in this situation? The right to...",
+          "answers": {
+            "1": "freedom of speech.",
+            "2": "equal treatment.",
+            "3": "freedom of assembly.",
+            "4": "freedom of movement."
+          }
+        },
+        "282": {
+          "question": "Which honorary position must German citizens take on if asked?",
+          "answers": {
+            "1": "club coach",
+            "2": "library supervisor",
+            "3": "election assistant",
+            "4": "teacher"
+          }
+        },
+        "283": {
+          "question": "What do you do if you receive an incorrect bill from a German authority?",
+          "answers": {
+            "1": "I leave the bill.",
+            "2": "I file a complaint with the authority.",
+            "3": "I send the bill back to the authority.",
+            "4": "I take the bill to the tax office."
+          }
+        },
+        "284": {
+          "question": "What changes rapidly in the future regarding work skills in Germany? What can one do?",
+          "answers": {
+            "1": "It doesn't matter what one learns.",
+            "2": "Children learn everything important for their jobs in school. After school, further learning is unnecessary.",
+            "3": "Adults must continue to learn even after completing their education.",
+            "4": "Everyone must stop working earlier."
+          }
+        },
+        "285": {
+          "question": "You need to use the restroom in a restaurant in Germany. What must the host/hostess give you?",
+          "answers": {
+            "1": "a voucher for a drink [for example, for coffee at McDonald's].",
+            "2": "a coffee voucher [for example, for coffee at McDonald's]."
+          }
+        },
+        "286": {
+          "question": "Which organization in a company in Germany helps employees with problems with the employer?",
+          "answers": {
+            "1": "the company auditor",
+            "2": "the company group",
+            "3": "the company management",
+            "4": "the works council"
+          }
+        },
+        "287": {
+          "question": "You want to terminate your employment with a company in Germany. What should you consider?",
+          "answers": {
+            "1": "salary payments",
+            "2": "working hours",
+            "3": "notice period",
+            "4": "insurance obligation"
+          }
+        },
+        "288": {
+          "question": "In Germany, where should you usually register your dog?",
+          "answers": {
+            "1": "at the tax office",
+            "2": "at the registration office",
+            "3": "at the municipality (city or community)",
+            "4": "at the health office"
+          }
+        },
+        "289": {
+          "question": "A man with dark skin applies for a position as a waiter in a restaurant in Germany. What is an example of discrimination? He is not hired for the job only because...",
+          "answers": {
+            "1": "his German skills are too low.",
+            "2": "he has too high salary expectations.",
+            "3": "he has dark skin.",
+            "4": "he has no experience in the profession."
+          }
+        },
+        "290": {
+          "question": "You bought a television in Germany. When you unpack it at home, it doesn't work. The television is broken. What can you do?",
+          "answers": {
+            "1": "write a report",
+            "2": "complain about the television",
+            "3": "exchange the device without asking",
+            "4": "extend the warranty"
+          }
+        },
+        "291": {
+          "question": "Why do you have to indicate in Germany's tax return whether you belong to a church or not? Because...",
+          "answers": {
+            "1": "it is important for statistics in Germany.",
+            "2": "there is a church tax linked to income and wage tax.",
+            "3": "you have to pay more taxes if you don't belong to a church.",
+            "4": "the church is responsible for the tax return."
+          }
+        },
+        "292": {
+          "question": "People in Germany live according to the principle of religious tolerance. What does that mean?",
+          "answers": {
+            "1": "Mosques cannot be built.",
+            "2": "Everyone believes in God.",
+            "3": "Everyone can believe what they want.",
+            "4": "The state decides which God people believe in."
+          }
+        },
+        "293": {
+          "question": "What is a tradition in Germany at Easter?",
+          "answers": {
+            "1": "placing pumpkins outside the door",
+            "2": "decorating a Christmas tree",
+            "3": "painting eggs",
+            "4": "shooting rockets into the air"
+          }
+        },
+        "294": {
+          "question": "Pentecost is a...",
+          "answers": {
+            "1": "Christian holiday.",
+            "2": "German memorial day.",
+            "3": "international day of mourning.",
+            "4": "Bavarian custom."
+          }
+        },
+        "295": {
+          "question": "Which religion has influenced European and German culture?",
+          "answers": {
+            "1": "Hinduism",
+            "2": "Christianity",
+            "3": "Buddhism",
+            "4": "Islam"
+          }
+        },
+        "296": {
+          "question": "In Germany, the last four weeks before Christmas are called...",
+          "answers": {
+            "1": "Repentance and Prayer Day.",
+            "2": "Harvest Thanksgiving.",
+            "3": "Advent season.",
+            "4": "All Saints' Day."
+          }
+        },
+        "297": {
+          "question": "Where did most migrants come from to Germany?",
+          "answers": {
+            "1": "Italy",
+            "2": "Poland",
+            "3": "Morocco",
+            "4": "Turkey"
+          }
+        },
+        "298": {
+          "question": "In the GDR, migrants mostly came from...",
+          "answers": {
+            "1": "Vietnam, Poland, Mozambique.",
+            "2": "France, Romania, Somalia.",
+            "3": "Chile, Hungary, Zimbabwe.",
+            "4": "North Korea, Mexico, Egypt."
+          }
+        },
+        "299": {
+          "question": "Foreign workers recruited by West Germany in the 50s and 60s were called...",
+          "answers": {
+            "1": "black workers.",
+            "2": "guest workers.",
+            "3": "temporary workers.",
+            "4": "shift workers."
+          }
+        },
+        "300": {
+          "question": "From which country did the first guest workers come to West Germany?",
+          "answers": {
+            "1": "Italy",
+            "2": "Spain",
+            "3": "Portugal",
+            "4": "Turkey"
           }
         }
       }

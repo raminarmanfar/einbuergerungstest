@@ -7,13 +7,14 @@
   "general": {
     "next": "Weiter",
     "previous": "Zurück",
-    "show-answer-keys": "Antwortschlüssel anzeigen"
+    "show-answer-keys": "Antwortschlüssel anzeigen",
+    "ITEMS_PER_PAGE_LABEL": "Fragen pro Seite"
   },
   "home": {
     "menu": {
       "btn-review-deutschland-tests": "Überprüfen Sie Deutschlands Tests",
       "btn-review-states-tests": "Überprüfen Sie die Tests der Staaten",
-      "btn-all-tests-demo-exam": "Alle Tests Demo-Prüfung",
+      "btn-demo-exams": "Demo-Prüfungen",
       "btn-take-demo-test": "Machen Sie einen Demotest",
       "btn-about-me": "Über mich"
     }

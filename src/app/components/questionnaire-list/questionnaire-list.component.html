@@ -20,8 +20,9 @@
       </div>
 
       <mat-radio-group>
-        <mat-radio-button *ngFor="let answerId of [1, 2, 3, 4]"
-                          [value]="answerId" class="radio-btn"
+        <mat-radio-button class="radio-btn"
+                          *ngFor="let answerId of [1, 2, 3, 4]"
+                          [value]="answerId"
                           [checked]="showAnswersKeys && test.correctAnswer === answerId">
           {{ getAnswerTrPrefix(stateInfo.name, test.id - 1, answerId) | translate | persianNumber }}
         </mat-radio-button>

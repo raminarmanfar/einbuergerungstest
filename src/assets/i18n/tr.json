@@ -1,21 +1,22 @@
 {
   "title": "Alman Vatandaşlık Sınavı",
   "header": {
-    "active-language": "Almanca",
+    "active-language": "Türkce",
     "go-home": "Ana Sayfa"
   },
   "general": {
     "next": "İleri",
     "previous": "Geri",
     "show-answer-keys": "Cevapların anahtarlarını göster",
-    "collapse-all-questions-on-state-change": "Eyalet değişikliğinde tüm soruları daralt"
+    "ITEMS_PER_PAGE_LABEL": "Sayfa başına sorular",
+    "RANGE_PAGE_LABEL_1": "0 of {length}",
+    "RANGE_PAGE_LABEL_2": "{{startIndex}} - {{endIndex}} of {{length}}"
   },
   "home": {
     "menu": {
       "btn-review-deutschland-tests": "Almanya'nın Testlerini İncele",
       "btn-review-states-tests": "Eyalet Sınavlarını İncele",
-      "btn-all-tests-demo-exam": "Tüm Sınavlar Demo Sınavı",
-      "btn-take-demo-test": "Demo Sınavı Yap",
+      "btn-demo-exams": "Örnek Sınavlar Listesi",
       "btn-about-me": "Hakkımda"
     }
   },
@@ -1820,6 +1821,904 @@
             "2": "Schleswig-Holstein",
             "3": "Mecklenburg-Vorpommern",
             "4": "Saarland"
+          }
+        },
+        "201": {
+          "question": "Aşağıdaki listelerden hangisi sadece eski GDR (Doğu Almanya) topraklarına ait olan federal eyaletleri içerir?",
+          "answers": {
+            "1": "Aşağı Saksonya, Kuzey Ren-Vestfalya, Hessen, Schleswig-Holstein, Brandenburg",
+            "2": "Mecklenburg-Batı Pomeranya, Brandenburg, Saksonya, Saksonya-Anhalt, Turingya",
+            "3": "Bavyera, Baden-Württemberg, Rheinland-Pfalz, Turingya, Saksonya",
+            "4": "Saksonya, Turingya, Hessen, Aşağı Saksonya, Brandenburg"
+          }
+        },
+        "202": {
+          "question": "'Soğuk Savaş' sırasında GDR hangi taraftaydı?",
+          "answers": {
+            "1": "Batı güçlerine",
+            "2": "Varşova Paktı'na",
+            "3": "NATO'ya",
+            "4": "Bağlantısız Devletlere"
+          }
+        },
+        "203": {
+          "question": "GDR'ın ekonomik sistemi nedir?",
+          "answers": {
+            "1": "Piyasa ekonomisi",
+            "2": "Planlı ekonomi",
+            "3": "Arz ve talep",
+            "4": "Kapitalizm"
+          }
+        },
+        "204": {
+          "question": "Batı Almanya ve GDR nasıl tek bir devlet haline geldi?",
+          "answers": {
+            "1": "Batı Almanya GDR'ı işgal etti.",
+            "2": "Mevcut beş doğu eyaleti Batı Almanya'ya katıldı.",
+            "3": "Batılı eyaletler GDR'a katıldı.",
+            "4": "GDR Batı Almanya'yı işgal etti."
+          }
+        },
+        "205": {
+          "question": "GDR'ın Federal Almanya'ya katılmasıyla, yeni federal eyaletler şimdi aynı zamanda ...",
+          "answers": {
+            "1": "Avrupa Birliği'ne.",
+            "2": "Varşova Paktı'na.",
+            "3": "OPEC'e.",
+            "4": "Avrupa Savunma Topluluğu'na."
+          }
+        },
+        "206": {
+          "question": "Almanya'da 1989'da 'Pazartesi gösterileri' terimi ne anlama geliyordu?",
+          "answers": {
+            "1": "Gösterilere sadece Federal Cumhuriyet'te pazartesileri izin verildi.",
+            "2": "Pazartesileri gösteriler GDR rejimine karşıydı.",
+            "3": "Her ayın ilk pazartesi günü protestocular Federal Cumhuriyet'te toplandı.",
+            "4": "Pazartesileri, GDR'daki insanlar Batı'ya karşı gösteri yaptı."
+          }
+        },
+        "207": {
+          "question": "GDR hangi askeri ittifakın üyesiydi?",
+          "answers": {
+            "1": "NATO",
+            "2": "Rheinbund (Ren İttifakı)",
+            "3": "Varşova Paktı",
+            "4": "Avrupa İttifakı"
+          }
+        },
+        "208": {
+          "question": "'Stasi' nedir?",
+          "answers": {
+            "1": "'Üçüncü Reich' gizli servisi",
+            "2": "Ünlü bir Alman anıt yeri",
+            "3": "GDR'ın gizli servisi",
+            "4": "II. Dünya Savaşı'nda bir Alman spor kulübü"
+          }
+        },
+        "209": {
+          "question": "Alman Demokratik Cumhuriyeti'nin amblemi nedir?",
+          "answers": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          }
+        },
+        "210": {
+          "question": "1953'te 17 Haziran'da GDR'da ne oldu?",
+          "answers": {
+            "1": "Varşova Paktı'na katılım töreni",
+            "2": "Ülke çapında grevler ve halk ayaklanması",
+            "3": "1. SED Parti Kongresi",
+            "4": "Fidel Castro'nun ilk ziyareti"
+          }
+        },
+        "211": {
+          "question": "'Ostpolitik' ile hangi politikacı ilişkilidir?",
+          "answers": {
+            "1": "Helmut Kohl",
+            "2": "Willy Brandt",
+            "3": "Mikhail Gorbachev",
+            "4": "Ludwig Erhard"
+          }
+        },
+        "212": {
+          "question": "Almanya'nın tam adı nedir?",
+          "answers": {
+            "1": "Almanya Federal Devleti",
+            "2": "Almanya Federal Devletleri",
+            "3": "Almanya Federal Cumhuriyeti",
+            "4": "Almanya Federal Bölgesi"
+          }
+        },
+        "213": {
+          "question": "Almanya'nın kaç nüfusu vardır?",
+          "answers": {
+            "1": "70 milyon",
+            "2": "78 milyon",
+            "3": "83 milyon",
+            "4": "90 milyon"
+          }
+        },
+        "214": {
+          "question": "Alman bayrağının renkleri nelerdir?",
+          "answers": {
+            "1": "Siyah-kırmızı-altın",
+            "2": "Kırmızı-beyaz-siyah",
+            "3": "Siyah-kırmızı-yeşil",
+            "4": "Siyah-sarı-kırmızı"
+          }
+        },
+        "215": {
+          "question": "'Alman Birliği Şansölyesi' olarak bilinen kim?",
+          "answers": {
+            "1": "Gerhard Schröder",
+            "2": "Helmut Kohl",
+            "3": "Konrad Adenauer",
+            "4": "Helmut Schmidt"
+          }
+        },
+        "216": {
+          "question": "Alman Bundestag'ın genel kurul salonunda hangi sembol görülür?",
+          "answers": {
+            "1": "Berlin şehri bayrağı",
+            "2": "Federal Kartal",
+            "3": "İmparatorluk Kartalı",
+            "4": "İmparatorluk Taç"
+          }
+        },
+        "217": {
+          "question": "Alman Demokratik Cumhuriyeti (GDR) hangi dönemde var oldu?",
+          "answers": {
+            "1": "1919'dan 1927'ye",
+            "2": "1933'ten 1945'e",
+            "3": "1949'dan 1990'a",
+            "4": "1945'ten 1961'e"
+          }
+        },
+        "218": {
+          "question": "Birleşme sırasında 1990'da Federal Almanya'ya kaç federal eyalet katıldı?",
+          "answers": {
+            "1": "4",
+            "2": "5",
+            "3": "6",
+            "4": "7"
+          }
+        },
+        "219": {
+          "question": "Federal Almanya'nın sınırları günümüzdeki gibi ne zamandan beri var?",
+          "answers": {
+            "1": "1933.",
+            "2": "1949.",
+            "3": "1971.",
+            "4": "1990."
+          }
+        },
+        "220": {
+          "question": "27 Ocak Almanya'da resmi bir anma günüdür. Bu gün neyi anar?",
+          "answers": {
+            "1": "II. Dünya Savaşı'nın sonu",
+            "2": "Temel Kanun'un kabulü",
+            "3": "Almanya'nın birleşmesi",
+            "4": "Ulusal Sosyalizmin kurbanları"
+          }
+        },
+        "221": {
+          "question": "Almanya, Schengen Anlaşması'nın üyesidir. Bu ne anlama gelir?",
+          "answers": {
+            "1": "Almanlar birçok Avrupa ülkesine pasaport kontrolü olmadan seyahat edebilir.",
+            "2": "Herkes Almanya'ya kişisel kontrol olmadan girebilir.",
+            "3": "Almanlar pasaport kontrolü olmadan herhangi bir ülkeye seyahat edebilir.",
+            "4": "Almanlar Euro ile her ülkede ödeme yapabilir."
+          }
+        },
+        "222": {
+          "question": "Almanya'nın hangi ülkenin komşusudur?",
+          "answers": {
+            "1": "Macaristan",
+            "2": "Portekiz",
+            "3": "İspanya",
+            "4": "İsviçre"
+          }
+        },
+        "223": {
+          "question": "Almanya'nın hangi ülkenin komşusudur?",
+          "answers": {
+            "1": "Romanya",
+            "2": "Bulgaristan",
+            "3": "Polonya",
+            "4": "Yunanistan"
+          }
+        },
+        "224": {
+          "question": "EU kısaltması neyi ifade eder?",
+          "answers": {
+            "1": "Avrupa Şirketleri",
+            "2": "Avrupa Birliği",
+            "3": "Birleşik Birlik",
+            "4": "Euro Birliği"
+          }
+        },
+        "225": {
+          "question": "Hangi diğer ülkede büyük bir Almanca konuşulan nüfus bulunmaktadır?",
+          "answers": {
+            "1": "Çek Cumhuriyeti",
+            "2": "Norveç",
+            "3": "İspanya",
+            "4": "Avusturya"
+          }
+        },
+        "226": {
+          "question": "Avrupa Birliği bayrağı nedir?",
+          "answers": {
+            "1": "2",
+            "2": "1",
+            "3": "4",
+            "4": "3"
+          }
+        },
+        "227": {
+          "question": "Almanya'nın hangi ülkenin komşusudur?",
+          "answers": {
+            "1": "Finlandiya",
+            "2": "Danimarka",
+            "3": "Norveç",
+            "4": "İsveç"
+          }
+        },
+        "228": {
+          "question": "GDR'ın 1990'da Federal Almanya'ya katılmasının genel terimi nedir?",
+          "answers": {
+            "1": "NATO Doğu Genişlemesi",
+            "2": "AB Doğu Genişlemesi",
+            "3": "Avrupa Topluluğu",
+            "4": "Alman birleşimi"
+          }
+        },
+        "229": {
+          "question": "Almanya'nın hangi ülkenin komşusudur?",
+          "answers": {
+            "1": "İspanya",
+            "2": "Bulgaristan",
+            "3": "Norveç",
+            "4": "Lüksemburg"
+          }
+        },
+        "230": {
+          "question": "Avrupa Parlamentosu ne sıklıkla seçilir, yani her...",
+          "answers": {
+            "1": "5 yıl.",
+            "2": "6 yıl.",
+            "3": "7 yıl.",
+            "4": "8 yıl."
+          }
+        },
+        "231": {
+          "question": "'Avrupa entegrasyonu' terimi ne anlama gelir?",
+          "answers": {
+            "1": "Avrupa'ya göç eden Amerikalı göçmenlere atıfta bulunur.",
+            "2": "Terim, Avrupa'ya göçün durmasını ifade eder.",
+            "3": "Terim, Avrupalı göçmenleri ABD'ye atıfta bulunur.",
+            "4": "Terim, Avrupa devletlerinin AB'ye birleşmesini ifade eder."
+          }
+        },
+        "232": {
+          "question": "Avrupa seçimlerinde kim seçilir?",
+          "answers": {
+            "1": "Avrupa Komisyonu",
+            "2": "AB'ye katılmaya izin verilen ülkeler",
+            "3": "Avrupa Anayasası",
+            "4": "Avrupa Parlamentosu Üyeleri"
+          }
+        },
+        "233": {
+          "question": "Almanya'nın hangi ülkenin komşusudur?",
+          "answers": {
+            "1": "Çek Cumhuriyeti",
+            "2": "Bulgaristan",
+            "3": "Yunanistan",
+            "4": "Portekiz"
+          }
+        },
+        "234": {
+          "question": "Avrupa Parlamentosu'nun merkezi nerede bulunmaktadır?",
+          "answers": {
+            "1": "Londra",
+            "2": "Paris",
+            "3": "Berlin",
+            "4": "Strasbourg"
+          }
+        },
+        "235": {
+          "question": "Fransız Devlet Başkanı François Mitterrand ve Alman Şansölyesi Helmut Kohl, Verdun'da her iki Dünya Savaşı'nın ölülerini ortaklaşa anıyorlar. Bu buluşmada AB'nin hangi hedefi açıkça ortaya çıkmaktadır?",
+          "answers": {
+            "1": "İngiltere ve Almanya arasındaki dostluk",
+            "2": "Tüm AB ülkelerine seyahat özgürlüğü",
+            "3": "AB ülkelerinde barış ve güvenlik",
+            "4": "AB ülkelerinde ortak tatiller"
+          }
+        },
+        "236": {
+          "question": "Bugün AB kaç üye devlete sahiptir?",
+          "answers": {
+            "1": "21",
+            "2": "23",
+            "3": "25",
+            "4": "27"
+          }
+        },
+        "237": {
+          "question": "2007'de 'Roma Antlaşmaları' 50. yıl dönümü kutlandı. Antlaşmaların içeriği nedir?",
+          "answers": {
+            "1": "Almanya'nın NATO'ya katılımı",
+            "2": "Avrupa Ekonomik Topluluğu'nun kurulması (AET)",
+            "3": "Almanya'nın tazminata bağlılığı",
+            "4": "Oder-Neisse Hattı'nın doğu sınır olarak belirlenmesi"
+          }
+        },
+        "238": {
+          "question": "Avrupa Parlamentosu nerede çalışır?",
+          "answers": {
+            "1": "Paris, Londra ve Lahey",
+            "2": "Strasbourg, Lüksemburg ve Brüksel",
+            "3": "Roma, Bern ve Viyana",
+            "4": "Bonn, Zürih ve Milano"
+          }
+        },
+        "239": {
+          "question": "Federal Almanya'nın diğer devletlere katılması için hangi antlaşmalar yapılmıştır?",
+          "answers": {
+            "1": "'Hamburg Antlaşmaları' ile",
+            "2": "'Roma Antlaşmaları' ile",
+            "3": "'Paris Antlaşmaları' ile",
+            "4": "'Londra Antlaşmaları' ile"
+          }
+        },
+        "240": {
+          "question": "Almanya'da Euro ile nakit ödeme ne zaman başladı?",
+          "answers": {
+            "1": "1995",
+            "2": "1998",
+            "3": "2002",
+            "4": "2005"
+          }
+        },
+        "241": {
+          "question": "Bayan Seger bir çocuk bekliyor. Anne izni almak için ne yapmalı?",
+          "answers": {
+            "1": "Sağlık sigortasına yazmalı.",
+            "2": "Hiçbir şey yapmaması gerekiyor çünkü otomatik olarak anne izni alır.",
+            "3": "Anne izni bürosuna başvurmalı.",
+            "4": "İzin için iş bürosundan izin almalıdır."
+          }
+        },
+        "242": {
+          "question": "Almanya'da üniversitede okumaya başlamak için genellikle hangi okul bitirme belgesine ihtiyacınız vardır?",
+          "answers": {
+            "1": "Abitur",
+            "2": "Diploma",
+            "3": "Procura",
+            "4": "Kalfa sınavı"
+          }
+        },
+        "243": {
+          "question": "Almanya'da bir çocuğun anaokuluna gitmesine kim karar verir?",
+          "answers": {
+            "1": "Devlet",
+            "2": "Bundesländer",
+            "3": "Ebeveynler / yasal vasiler",
+            "4": "Okullar"
+          }
+        },
+        "244": {
+          "question": "Maik ve Sybille Almanya'daki yerleşim yerinde arkadaşlarıyla birlikte sokakta gösteri yapmak istiyorlar. Önceden ne yapmaları gerekiyor?",
+          "answers": {
+            "1": "Hiçbir şey yapmaları gerekmiyor. Almanya'da sokak gösterileri serbesttir.",
+            "2": "Belediye izni almalılar.",
+            "3": "Yerel polise bildirmeliler.",
+            "4": "Mülkiyet sahiplerinden yazılı izin almalılar."
+          }
+        },
+        "245": {
+          "question": "Almanya'da trafikte araç kullanabilmek için neye ihtiyacınız vardır?",
+          "answers": {
+            "1": "Pasaport",
+            "2": "Alman vatandaşlığı",
+            "3": "Sürücü belgesi",
+            "4": "Sosyal güvenlik kartı"
+          }
+        },
+        "246": {
+          "question": "Almanya'da bir kişi kaç yaşına geldiğinde ehliyet alabilir?",
+          "answers": {
+            "1": "16 yaşında",
+            "2": "17 yaşında",
+            "3": "18 yaşında",
+            "4": "19 yaşında"
+          }
+        },
+        "247": {
+          "question": "Almanya'da sigorta primi ödeme zorunluluğu ne zaman başlar?",
+          "answers": {
+            "1": "Sosyal yardım alındığında",
+            "2": "16 yaşına gelindiğinde",
+            "3": "İlk kez çalışmaya başlandığında",
+            "4": "18 yaşına gelindiğinde"
+          }
+        },
+        "248": {
+          "question": "Almanya'da aile birleşimi için başvuru yapan kişi, Almanca bilgi seviyesini nasıl kanıtlamalıdır?",
+          "answers": {
+            "1": "Yazılı bir sınavla",
+            "2": "Sadece mülakat yoluyla",
+            "3": "Herhangi bir dil sertifikası göstermeden",
+            "4": "Belirli bir dil sertifikasıyla"
+          }
+        },
+        "249": {
+          "question": "Almanya'da çalışan bir kişi işten ayrıldığında ne olur?",
+          "answers": {
+            "1": "O zaman işsizlik maaşı alabilir.",
+            "2": "İşsizlik maaşı almaya hak kazanmaz.",
+            "3": "Sadece kısa vadeli işsizlik maaşı alabilir.",
+            "4": "Sadece emeklilik maaşı alabilir."
+          }
+        },
+        "250": {
+          "question": "Almanya'da iyi bir maaşlı bir işe sahip olmak istiyorsanız, en iyi şanslara sahip olursunuz...",
+          "answers": {
+            "1": "Katolik olmak",
+            "2": "İyi eğitimli olmak",
+            "3": "Bir kadın olmak",
+            "4": "Bir parti üyesi olmak"
+          }
+        },
+        "251": {
+          "question": "Almanya'da birisi bir çocuğa vurursa...",
+          "answers": {
+            "1": "Hiç kimsenin işi değil.",
+            "2": "Sadece ailenin işi.",
+            "3": "Bunu cezalandıramazlar.",
+            "4": "Bunu cezalandırabilirler."
+          }
+        },
+        "252": {
+          "question": "Almanya'da...",
+          "answers": {
+            "1": "Bir kez de bir eşe sahip olunabilir.",
+            "2": "Aynı anda birden fazla eşe sahip olunabilir.",
+            "3": "Eğer daha önce evlendiyseniz, tekrar evlenemezsiniz.",
+            "4": "Bir kadın kocası öldüyse tekrar evlenemez."
+          }
+        },
+        "253": {
+          "question": "Almanya'da taşındığınızda nereye kaydolmanız gerekir?",
+          "answers": {
+            "1": "Kayıt ofisine",
+            "2": "Nüfus müdürlüğüne",
+            "3": "Kamu düzen ofisine",
+            "4": "Ticaret ofisine"
+          }
+        },
+        "254": {
+          "question": "Almanya'da evli çiftler boşanabilir. Genellikle 'ayrılık yılı'na uymaları gerekir. Bu ne anlama gelir?",
+          "answers": {
+            "1": "Boşanma süreci bir yıl sürer.",
+            "2": "Erkek ve kadın bir yıl boyunca evlidir, ardından boşanma mümkündür.",
+            "3": "Çocukların ziyaret hakkı bir yıl boyunca sürer.",
+            "4": "Erkek ve kadın en az bir yıl ayrı yaşar. Bundan sonra boşanma mümkündür."
+          }
+        },
+        "255": {
+          "question": "Almanya'da ebeveynlik sorunları durumunda, ebeveynler...",
+          "answers": {
+            "1": "Kamu düzen ofisinden yardım alabilirler.",
+            "2": "Okul ofisinden yardım alabilirler.",
+            "3": "Gençlik refah ofisinden yardım alabilirler.",
+            "4": "Sağlık ofisinden yardım alabilirler."
+          }
+        },
+        "256": {
+          "question": "Almanya'da evli bir çift bir restoran açmak istiyor. Bunun için mutlaka neye ihtiyaçları var?",
+          "answers": {
+            "1": "Polisten izin almak",
+            "2": "Bir siyasi partinin onayını almak",
+            "3": "Kayıt ofisinden onay almak",
+            "4": "Ilgili makamdan restoran izni almak"
+          }
+        },
+        "257": {
+          "question": "Almanya'da bir yetişkin kadın Abitur (yüksek okul diploması) almak istiyor. Bunun için...",
+          "answers": {
+            "1": "Bir üniversiteye",
+            "2": "Akşam lisesine",
+            "3": "Bir ortaokula",
+            "4": "Bir özel üniversiteye"
+          }
+        },
+        "258": {
+          "question": "Almanya'da gençlik refah ofisi ne yapabilir?",
+          "answers": {
+            "1": "Çocuğun hangi okula gideceğine karar verir.",
+            "2": "Aile tarafından kötüye kullanılan veya aç olan bir çocuğu alabilir.",
+            "3": "Ebeveynlere çocuk yardımı öder.",
+            "4": "Çocuğun anaokuluna gitip gitmediğini kontrol eder."
+          }
+        },
+        "259": {
+          "question": "Almanya'da Federal İş Ajansı'ndaki Kariyer Bilgi Merkezi (BIZ) neyle ilgili yardım sağlar?",
+          "answers": {
+            "1": "Emeklilik hesaplaması",
+            "2": "İş arama",
+            "3": "Vergi beyannamesi",
+            "4": "Sağlık sigortası"
+          }
+        },
+        "260": {
+          "question": "Almanya'da okulda bir çocuğun hakkı olan şey nedir?",
+          "answers": {
+            "1": "Sınırsız boş zaman",
+            "2": "Tüm derslerde özgür seçim",
+            "3": "Okul ücreti talebi",
+            "4": "Zorunlu devam"
+          }
+        },
+        "261": {
+          "question": "Almanya'da bir adam 30 yaşında Abitur almak istiyor. Bunun için nereye gidebilir?...",
+          "answers": {
+            "1": "Bir üniversiteye",
+            "2": "Akşam lisesine",
+            "3": "Bir ortaokula",
+            "4": "Bir özel üniversiteye"
+          }
+        },
+        "262": {
+          "question": "Almanya'da eşit muamele ilkesi ne anlama gelir?",
+          "answers": {
+            "1": "Hiç kimse örneğin engellilik nedeniyle ayrımcılığa uğramamalıdır.",
+            "2": "Yeterli kişisel nedenler varsa diğerlerine ayrımcılık yapabilirsiniz.",
+            "3": "Hiç kimse ayrımcılığa uğramışsa bireylere dava açamaz.",
+            "4": "Herkesin yılda bir kez dezavantajlı gruplara para bağışlaması için bir yasadır."
+          }
+        },
+        "263": {
+          "question": "Almanya'da 14 yaş ve üzeri gençler cezai sorumludur. Bu, 14 yaş ve üzeri olan gençlerin suç işlemesi durumunda...",
+          "answers": {
+            "1": "Ceza alacakları",
+            "2": "Yetişkinler gibi muamele görecekleri",
+            "3": "Ceza paylaşacakları",
+            "4": "Ceza almayacakları anlamına gelir."
+          }
+        },
+        "264": {
+          "question": "Almanya'da insanlar renkli kostümler ve maskelerle hangi kutlamada bulunurlar?",
+          "answers": {
+            "1": "Gül Pazartesi günü",
+            "2": "1 Mayıs'ta",
+            "3": "Oktoberfest'te",
+            "4": "Pentikost'ta"
+          }
+        },
+        "265": {
+          "question": "Almanya'da evlenmek isteyen biri ilk önce nereye gitmelidir?",
+          "answers": {
+            "1": "Kayıt ofisine",
+            "2": "Kamu düzen ofisine",
+            "3": "İş ajansına",
+            "4": "Nüfus müdürlüğüne"
+          }
+        },
+        "266": {
+          "question": "Almanya'da yasal olarak zorunlu olan geceleyin dinlenme süresi ne zaman başlar?",
+          "answers": {
+            "1": "Güneş battığında",
+            "2": "Saat 22.00'de",
+            "3": "Komşular uyuduğunda",
+            "4": "Gece yarısında, 12.00'de"
+          }
+        },
+        "267": {
+          "question": "Almanya'da 22 yaşındaki genç bir kadın erkek arkadaşıyla yaşıyor. Kadının ebeveynleri beğenmedikleri için karşı çıkıyorlar. Ebeveynler ne yapabilir?",
+          "answers": {
+            "1": "Yetişkin kızlarının kararına saygı göstermelidirler.",
+            "2": "Kızlarını aile evine geri getirme hakları vardır.",
+            "3": "Polise gidip kızlarını bildirebilirler.",
+            "4": "Kızları için başka bir erkek aramalıdırlar."
+          }
+        },
+        "268": {
+          "question": "Almanya'da genç bir kadın sürücü belgesi almak istiyor. Dilinin Almanca olmaması nedeniyle sınavdan korkuyor. Doğru olan nedir?",
+          "answers": {
+            "1": "En az on yıl boyunca Almanya'da yaşamalıdır.",
+            "2": "Teorik sınavı kendi ana dilinde alabilir. Ondan daha fazla dil seçeneği vardır.",
+            "3": "Eğer Almanca bilmiyorsa, sürücü belgesine sahip olma hakkı yoktur.",
+            "4": "Sürücü belgesini kendi dilinin konuşulduğu ülkede almalıdır."
+          }
+        },
+        "269": {
+          "question": "Almanya'da üç yaşından başlayarak ilkokulun başlangıcına kadar olan çocuklar ne hakkına sahiptir?",
+          "answers": {
+            "1": "Aylık harçlık",
+            "2": "Bir anaokulu yerleşimi",
+            "3": "Bir spor kulübü yerleşimi",
+            "4": "Bir tatil kartı"
+          }
+        },
+        "270": {
+          "question": "Almanya'da Halk Eğitim Merkezi (Volkshochschule) bir kurumdur...",
+          "answers": {
+            "1": "Din eğitimi için.",
+            "2": "Sadece gençler içindir.",
+            "3": "Daha fazla eğitim için.",
+            "4": "Sadece emekliler içindir."
+          }
+        },
+        "271": {
+          "question": "Almanya'da bir Noel geleneği nedir?",
+          "answers": {
+            "1": "renkli yumurtaları gizleme",
+            "2": "bir Noel ağacını süsleme",
+            "3": "maskeler ve kostümlerle giyinme",
+            "4": "kapının dışına balkabağı koyma"
+          }
+        },
+        "272": {
+          "question": "Almanya'da hangi yaşam düzenine izin verilmez?",
+          "answers": {
+            "1": "Bir erkek ve bir kadın boşanmış ve yeni partnerleri ile yaşıyorlar.",
+            "2": "İki kadın birlikte yaşıyor.",
+            "3": "Bir bekar baba iki çocuğuyla yaşıyor.",
+            "4": "Bir erkek aynı anda iki kadınla evli."
+          }
+        },
+        "273": {
+          "question": "Almanya'da ebeveynlik sorunları durumunda nereye gitmelisiniz?",
+          "answers": {
+            "1": "doktora.",
+            "2": "sağlık ofisine.",
+            "3": "kayıt ofisine.",
+            "4": "gençlik refah ofisine."
+          }
+        },
+        "274": {
+          "question": "Almanya'da başka birine adreslenmiş bir mektubu kasıtlı olarak açtınız. Hangisini göz önünde bulundurmadınız?",
+          "answers": {
+            "1": "susma hakkı",
+            "2": "yazışmaların gizliliği",
+            "3": "mesleki gizlilik",
+            "4": "ifade özgürlüğü"
+          }
+        },
+        "275": {
+          "question": "Almanya'da boşanma için ne gerekir?",
+          "answers": {
+            "1": "ebeveyn onayı",
+            "2": "doktorun sertifikası",
+            "3": "çocukların onayı",
+            "4": "avukatın destek"
+          }
+        },
+        "276": {
+          "question": "Almanya'da bir yetkili kişi tarafından kötü muamele gördüyseniz ne yapmalısınız?",
+          "answers": {
+            "1": "Hiçbir şey yapamam.",
+            "2": "Bu muameleyi katlanmalıyım.",
+            "3": "Kişiyi tehdit etmeliyim.",
+            "4": "Yetkilinin üstüne şikayette bulunabilirim."
+          }
+        },
+        "277": {
+          "question": "Almanya'da bir kadın, 2 yaşındaki bir çocukla bir pozisyon için başvuruda bulunuyor. Aşağıdakilerden hangisi ayrımcılığın bir örneğidir? Sadece işe alınmıyor çünkü o...",
+          "answers": {
+            "1": "İngilizce konuşmuyor.",
+            "2": "Maaş beklentileri çok yüksek.",
+            "3": "Bu meslekte deneyimi yok.",
+            "4": "Bir annedir."
+          }
+        },
+        "278": {
+          "question": "Almanya'da tekerlekli sandalyede bir adam, muhasebeci olarak bir pozisyon için başvuruda bulunuyor. Aşağıdakilerden hangisi ayrımcılığın bir örneğidir? Sadece işe alınmıyor çünkü o...",
+          "answers": {
+            "1": "Tekerlekli sandalyede oturuyor.",
+            "2": "Deneyimi yok.",
+            "3": "Maaş beklentileri çok yüksek.",
+            "4": "İngilizce konuşmuyor."
+          }
+        },
+        "279": {
+          "question": "Almanya'daki çoğu apartman binasında 'ev kuralları' bulunmaktadır. Bu 'ev kuralları' neleri belirtir? Belirtilenler...",
+          "answers": {
+            "1": "toplum taşıma araçları kullanma kuralları.",
+            "2": "binadaki tüm kiracılar.",
+            "3": "tüm sakinlerin uyması gereken kurallar.",
+            "4": "en yakın kamu düzeni bürosunun adresi."
+          }
+        },
+        "280": {
+          "question": "Almanya'da yanlış vergi değerlendirmesine itiraz etmek istiyorsanız ne yapmalısınız?",
+          "answers": {
+            "1": "Hiçbir şey yapmamalısınız.",
+            "2": "Değerlendirmeyi reddetmelisiniz.",
+            "3": "itirazda bulunmalısınız.",
+            "4": "başka bir değerlendirme gelene kadar beklemelisiniz."
+          }
+        },
+        "281": {
+          "question": "İki arkadaş Almanya'da bir halk yüzme havuzuna gitmek istiyor. İkisi de koyu tenli ve bu nedenle içeri alınmıyorlar. Bu durumda hangi hakkın ihlal edildiği söz konusudur? ... hakkı.",
+          "answers": {
+            "1": "ifade özgürlüğü.",
+            "2": "eşit muamele.",
+            "3": "toplantı özgürlüğü.",
+            "4": "gezi özgürlüğü."
+          }
+        },
+        "282": {
+          "question": "Alman vatandaşlarının istenirse hangi fahri pozisyonu üstlenmeleri gerekir?",
+          "answers": {
+            "1": "klüp koçu",
+            "2": "kütüphane gözetmeni",
+            "3": "seçim yardımcısı",
+            "4": "öğretmen"
+          }
+        },
+        "283": {
+          "question": "Almanya'da bir otoriteden yanlış bir fatura aldıysanız ne yaparsınız?",
+          "answers": {
+            "1": "Faturayı bırakırım.",
+            "2": "Otoriteye şikayet ederim.",
+            "3": "Faturayı otoriteye geri gönderirim.",
+            "4": "Faturayı vergi dairesine götürürüm."
+          }
+        },
+        "284": {
+          "question": "Almanya'da iş becerileri açısından gelecekte ne hızla değişir? Bir kişi ne yapabilir?",
+          "answers": {
+            "1": "Öğrenilen şeyin bir önemi yok.",
+            "2": "Çocuklar okulda işleri için önemli her şeyi öğrenirler. Okuldan sonra başka bir şey öğrenmeye gerek yok.",
+            "3": "Yetişkinler eğitimlerini tamamladıktan sonra bile öğrenmeye devam etmelidir.",
+            "4": "Herkes daha erken çalışmayı bırakmalıdır."
+          }
+        },
+        "285": {
+          "question": "Almanya'daki bir restoranda tuvaleti kullanmanız gerekiyor. Host/hostes size ne vermelidir?",
+          "answers": {
+            "1": "bir içki için kupon [örneğin, McDonald's'ta kahve için].",
+            "2": "bir kahve kuponu [örneğin, McDonald's'ta kahve için]."
+          }
+        },
+        "286": {
+          "question": "Bir şirkette Almanya'da çalışanlara işverenleri ile ilgili sorunlarda yardımcı olan kuruluş hangisidir?",
+          "answers": {
+            "1": "şirket denetçisi",
+            "2": "şirket grubu",
+            "3": "şirket yönetimi",
+            "4": "işçi konseyi"
+          }
+        },
+        "287": {
+          "question": "Almanya'da işten ayrılmak istiyorsunuz. Ne dikkate almalısınız?",
+          "answers": {
+            "1": "maaş ödemeleri",
+            "2": "çalışma saatleri",
+            "3": "ihbar süresi",
+            "4": "sigorta yükümlülüğü"
+          }
+        },
+        "288": {
+          "question": "Almanya'da köpeğinizi genellikle nereye kaydettirmelisiniz?",
+          "answers": {
+            "1": "vergi dairesine",
+            "2": "kayıt ofisine",
+            "3": "belediyeye (şehir veya kasaba)",
+            "4": "sağlık ofisine"
+          }
+        },
+        "289": {
+          "question": "Almanya'da bir restoranda garson olarak başvuran bir adam koyu tenli. Ayrımcılığın bir örneği nedir? Sadece işe alınmıyor çünkü o...",
+          "answers": {
+            "1": "Almanca becerileri çok düşük.",
+            "2": "Maaş beklentileri çok yüksek.",
+            "3": "Koyu tenli.",
+            "4": "Bu meslekte deneyimi yok."
+          }
+        },
+        "290": {
+          "question": "Almanya'da bir televizyon satın aldınız. Onu evde açtığınızda çalışmıyor. Televizyon bozuk. Ne yapabilirsiniz?",
+          "answers": {
+            "1": "bir rapor yazın",
+            "2": "televizyonu şikayet edin",
+            "3": "izin istemeden cihazı değiştirin",
+            "4": "garantiyi uzatın"
+          }
+        },
+        "291": {
+          "question": "Almanya'nın vergi iadesinde kiliseye üye olup olmadığınızı neden belirtmeniz gerekiyor? Çünkü...",
+          "answers": {
+            "1": "Almanya'da istatistikler için önemlidir.",
+            "2": "gelir ve ücret vergisi ile bağlantılı bir kilise vergisi vardır.",
+            "3": "bir kiliseye üye değilseniz daha fazla vergi ödemeniz gerekiyor.",
+            "4": "kilise vergi iadesinden sorumludur."
+          }
+        },
+        "292": {
+          "question": "Almanya'daki insanlar dini hoşgörü ilkesine göre yaşarlar. Bu ne anlama gelir?",
+          "answers": {
+            "1": "Camiler inşa edilemez.",
+            "2": "Herkes Tanrı'ya inanır.",
+            "3": "Herkes istediğine inanabilir.",
+            "4": "Devlet insanların hangi Tanrı'ya inandığına karar verir."
+          }
+        },
+        "293": {
+          "question": "Almanya'da Paskalya'da bir gelenek nedir?",
+          "answers": {
+            "1": "kapının dışına balkabağı koymak",
+            "2": "bir Noel ağacı süslemek",
+            "3": "yumurtaları boyamak",
+            "4": "havaya roket fırlatmak"
+          }
+        },
+        "294": {
+          "question": "Pentikost bir...",
+          "answers": {
+            "1": "Hristiyan bayramıdır.",
+            "2": "Alman anma günüdür.",
+            "3": "uluslararası yas günüdür.",
+            "4": "Bavyera geleneğidir."
+          }
+        },
+        "295": {
+          "question": "Hangi din Avrupa ve Alman kültürünü etkilemiştir?",
+          "answers": {
+            "1": "Hintçilik",
+            "2": "Hristiyanlık",
+            "3": "Budizm",
+            "4": "İslam"
+          }
+        },
+        "296": {
+          "question": "Almanya'da Noel'den önceki son dört haftaya ne denir?",
+          "answers": {
+            "1": "Tövbe ve Dua Günü",
+            "2": "Hasat Şükran Günü",
+            "3": "Advent dönemi",
+            "4": "Tüm Azizler Günü"
+          }
+        },
+        "297": {
+          "question": "Almanya'ya en çok göç edenler nereden geldi?",
+          "answers": {
+            "1": "İtalya",
+            "2": "Polonya",
+            "3": "Fas",
+            "4": "Türkiye"
+          }
+        },
+        "298": {
+          "question": "DDR'de göçmenler çoğunlukla nereden geldi?",
+          "answers": {
+            "1": "Vietnam, Polonya, Mozambik.",
+            "2": "Fransa, Romanya, Somali.",
+            "3": "Şili, Macaristan, Zimbabve.",
+            "4": "Kuzey Kore, Meksika, Mısır."
+          }
+        },
+        "299": {
+          "question": "Batı Almanya tarafından 50'ler ve 60'larda işe alınan yabancı işçilere ne deniyordu?",
+          "answers": {
+            "1": "siyah işçiler.",
+            "2": "misafir işçiler.",
+            "3": "geçici işçiler.",
+            "4": "vardiya işçileri."
+          }
+        },
+        "300": {
+          "question": "Batı Almanya'ya gelen ilk misafir işçiler hangi ülkeden geldi?",
+          "answers": {
+            "1": "İtalya",
+            "2": "İspanya",
+            "3": "Portekiz",
+            "4": "Türkiye"
           }
         }
       }

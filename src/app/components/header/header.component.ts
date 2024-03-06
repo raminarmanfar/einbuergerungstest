@@ -10,6 +10,12 @@ import {ErrorMessages} from '../../utils/error-messages';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  languageList = [
+    {language: Language.DE, caption: 'Deutsch', country: Country.GERMANY},
+    {language: Language.EN, caption: 'English', country: Country.UK},
+    {language: Language.TR, caption: 'Türkce', country: Country.TURKEY},
+    {language: Language.FA, caption: 'فارسی', country: Country.IRAN},
+  ];
   activeLanguage = Language.DE;
   countryName = Country.GERMANY;
 

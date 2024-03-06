@@ -10,8 +10,7 @@ export class HomePageComponent {
   menuItems: MenuItemModel[] = [
     {label: 'review-deutschland-tests', icon: 'subject', route: '/review-deutschland-tests'},
     {label: 'review-states-tests', icon: 'location_city', route: '/review-states-tests'},
-    {label: 'all-tests-demo-exam', icon: 'book_2', route: 'all-tests-demo-exam'},
-    {label: 'take-demo-test', icon: 'add_task', route: 'take-demo-test'},
+    {label: 'demo-exams', icon: 'book_2', route: '/demo-exams'},
     {label: 'about-me', icon: 'info', route: 'about-me'}
   ];
 }
