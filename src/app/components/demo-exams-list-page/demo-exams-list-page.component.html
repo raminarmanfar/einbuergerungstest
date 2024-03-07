@@ -1,6 +1,21 @@
 <button mat-raised-button (click)="onNewDemoTestCreateClick()">Generate List</button>
 
-<div *ngIf="demoTestsList && demoTestsList.length > 0">
+<div class="container" *ngIf="demoTestsList && demoTestsList.length > 0">
+  <div class="options-box-container">
+    <mat-accordion>
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Options</mat-panel-title>
+          <mat-panel-description>
+            This is a summary of the content
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>This is the primary content of the panel.</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+
+  <div class="table-container">
   <table mat-table [dataSource]="demoTestsList" class="mat-elevation-z8">
 
     <!--- Note that these columns can be defined in any order.
@@ -14,19 +29,19 @@
 
     <!-- Name Column -->
     <ng-container matColumnDef="title">
-      <th mat-header-cell *matHeaderCellDef> title </th>
+      <th mat-header-cell *matHeaderCellDef> Title </th>
       <td mat-cell *matCellDef="let element"> {{element.title}} </td>
     </ng-container>
 
     <!-- Weight Column -->
     <ng-container matColumnDef="correctAnswered">
-      <th mat-header-cell *matHeaderCellDef> correctAnswered </th>
+      <th mat-header-cell *matHeaderCellDef> Correct Answers </th>
       <td mat-cell *matCellDef="let element"> {{element.correctAnswered}} </td>
     </ng-container>
 
     <!-- Weight Column -->
     <ng-container matColumnDef="incorrectAnswered">
-      <th mat-header-cell *matHeaderCellDef> incorrectAnswered </th>
+      <th mat-header-cell *matHeaderCellDef> Incorrect Answers </th>
       <td mat-cell *matCellDef="let element"> {{element.incorrectAnswered}} </td>
     </ng-container>
 
@@ -38,23 +53,50 @@
 
     <!-- Weight Column -->
     <ng-container matColumnDef="dateCreated">
-      <th mat-header-cell *matHeaderCellDef> dateCreated </th>
+      <th mat-header-cell *matHeaderCellDef> Created </th>
       <td mat-cell *matCellDef="let element"> {{element.dateCreated}} </td>
     </ng-container>
 
     <!-- Weight Column -->
     <ng-container matColumnDef="dateLastModified">
-      <th mat-header-cell *matHeaderCellDef> dateLastModified </th>
+      <th mat-header-cell *matHeaderCellDef> Modified </th>
       <td mat-cell *matCellDef="let element"> {{element.dateLastModified}} </td>
     </ng-container>
 
     <!-- Weight Column -->
     <ng-container matColumnDef="finished">
-      <th mat-header-cell *matHeaderCellDef> finished </th>
-      <td mat-cell *matCellDef="let element"> {{element.finished}} </td>
+      <th mat-header-cell *matHeaderCellDef> Done </th>
+      <td mat-cell *matCellDef="let element">
+        <mat-checkbox class="finished-checkbox" [checked]="element.finished" color="primary">
+        </mat-checkbox>
+      </td>
     </ng-container>
 
+    <!-- Weight Column -->
+    <ng-container matColumnDef="edit">
+      <th mat-header-cell *matHeaderCellDef> Edit </th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+          <mat-icon>edit</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="delete">
+      <th mat-header-cell *matHeaderCellDef> Delete </th>
+      <td mat-cell *matCellDef="let element">
+        <button mat-mini-fab color="warn" aria-label="Example icon button with a menu icon">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
+  </div>
 </div>
+
+<button mat-fab color="primary" class="add-button">
+  <mat-icon>add</mat-icon>
+</button>
