@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import {TestQuestionModel} from "./models/test-question.model";
-import {ConstantValues} from "./utils/constant-values";
-import {ErrorMessages} from "./utils/error-messages";
+import {TestQuestionModel} from "../models/test-question.model";
+import {ConstantValues} from "./constant-values";
+import {ErrorMessages} from "./error-messages";
 
 @Injectable({providedIn: 'root'})
 export class UtilService {
@@ -9,7 +9,7 @@ export class UtilService {
   constructor() { }
 
 
-  private generateRandomArray(length: number, maxNumber: number): number[] {
+  generateRandomQuestionsIds(length: number, maxNumber: number): number[] {
     if (length <= 0 || maxNumber <= 0) {
       throw new Error(ErrorMessages.NUMBER_IS_LESS_THAN_ZERO);
     }
@@ -29,7 +29,11 @@ export class UtilService {
   }
 
   getRandomDeutschlandDemoTestQuestions(): TestQuestionModel[] {
-    const randomQuestionsIds = this.generateRandomArray(27, ConstantValues.DEUTSCHLAND_QUESTIONS.length);
+    const randomQuestionsIds = this.generateRandomQuestionsIds(27, ConstantValues.DEUTSCHLAND_QUESTIONS.length);
     return this.getRandomQuestions(randomQuestionsIds, ConstantValues.DEUTSCHLAND_QUESTIONS);
+  }
+
+  getFilteredQuestionsListByIds(questionsIds: number[], questionsList: TestQuestionModel[]): TestQuestionModel[] {
+    return questionsList.filter(q => questionsIds.includes(q.id));
   }
 }

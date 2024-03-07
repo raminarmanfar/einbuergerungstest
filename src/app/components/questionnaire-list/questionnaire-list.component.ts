@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {MatPaginatorIntl, PageEvent} from '@angular/material/paginator';
-import {StateInfoModel} from '../../models/state-info.model';
 import {TranslateService} from '@ngx-translate/core';
+import {StateInfoModel} from '../../models/state-info.model';
 
 @Component({
   selector: 'app-questionnaire-list',
@@ -14,6 +14,7 @@ export class QuestionnaireListComponent {
   @Input() showAnswersKeys = true;
   @Input() trPrefix = '';
   @Input() paginatorData!: PageEvent | null;
+  @Input() showArrayIndexAsRow = false;
 
 
   @Output() expansionPanelOpen = new EventEmitter<number>();

@@ -8,13 +8,15 @@ import {
   ReviewStatesQuestionsPageComponent
 } from './components/review-states-questions-page/review-states-questions-page.component';
 import {DemoExamsListPageComponent} from './components/demo-exams-list-page/demo-exams-list-page.component';
+import {TakeDemoTestPageComponent} from './components/take-demo-test-page/take-demo-test-page.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomePageComponent},
   {path: 'review-deutschland-tests', component: ReviewDeutschlandQuestionsPageComponent},
   {path: 'review-states-tests', component: ReviewStatesQuestionsPageComponent},
-  {path: 'demo-exams', component: DemoExamsListPageComponent}
+  {path: 'demo-exams-list', component: DemoExamsListPageComponent},
+  {path: 'demo-exam', component: TakeDemoTestPageComponent}
 ];
 
 @NgModule({

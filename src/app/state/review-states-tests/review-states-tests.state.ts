@@ -17,7 +17,7 @@ export const stateDefaultValues: ReviewStatesTestsStateModel = {
   stateChangeExpansionPanelBehavior: StateChangeExpansionPanelBehaviorEnum.SHOW_CURRENT_QUESTION
 };
 
-@State<ReviewStatesTestsStateModel>({name: 'ReviewStatesTestsStateModel', defaults: stateDefaultValues})
+@State<ReviewStatesTestsStateModel>({name: 'ReviewStatesTestsState', defaults: stateDefaultValues})
 @Injectable()
 export class ReviewStatesTestsState {
 

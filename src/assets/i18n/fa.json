@@ -4269,5 +4269,27 @@
         }
       }
     }
+  },
+  "demo-exams-list": {
+    "options": {
+      "title": "گزینه‌ها",
+      "description": "برای نمایش/پنهان کردن گزینه‌ها اینجا کلیک کنید"
+    },
+    "table": {
+      "id": "شماره",
+      "title": "عنوان آزمون",
+      "created": "تاریخ ایجاد",
+      "modified": "تاریخ آخرین ویرایش",
+      "correct-answers": "پاسخ‌های صحیح",
+      "incorrect-answers": "پاسخ‌های اشتباه",
+      "score": "نمره",
+      "done": "انجام شده",
+      "edit": "ویرایش",
+      "delete": "حذف",
+      "goto-test": "رفتن به آزمون {{testId}}",
+      "edit-test": "ویرایش اطلاعات آزمون {{testId}}",
+      "delete-test": "حذف آزمون {{testId}}",
+      "add-test": "ایجاد آزمون جدید"
+    }
   }
 }

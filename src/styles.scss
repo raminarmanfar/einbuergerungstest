@@ -30,80 +30,113 @@ html, body {
   //--mat-paginator-container-text-weight: bold;
 }
 
-@media (min-width:10px) {
-  .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
+@media (min-width:0px) {
+  .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
     font-size: 7px;
     --mat-slide-toggle-label-text-size: 7px;
-    --mat-paginator-container-text-size: 7px
+    --mat-paginator-container-text-size: 7px;
+    --mat-expansion-header-text-size: 7px;
+    --mat-table-row-item-label-text-size: 7px;
+    --mat-table-header-headline-size: 7px;
   }
 }
 @media (min-width:150px) {
-  .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
+  .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
     font-size: 11px;
     --mat-slide-toggle-label-text-size: 11px;
-    --mat-paginator-container-text-size: 11px
+    --mat-paginator-container-text-size: 11px;
+    --mat-expansion-header-text-size: 11px;
+    --mat-table-row-item-label-text-size: 11px;
+    --mat-table-header-headline-size: 11px;
   }
 }
 @media (min-width:320px) {
-  .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
+  .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
     font-size: 12px;
     --mat-slide-toggle-label-text-size: 12px;
-    --mat-paginator-container-text-size: 12px
+    --mat-paginator-container-text-size: 12px;
+    --mat-expansion-header-text-size: 12px;
+    --mat-table-row-item-label-text-size: 12px;
+    --mat-table-header-headline-size: 12px;
   }
 }
 @media (min-width:544px) {
-  .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
+  .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
     font-size: 14px;
     --mat-slide-toggle-label-text-size: 14px;
-    --mat-paginator-container-text-size: 14px
+    --mat-paginator-container-text-size: 14px;
+    --mat-expansion-header-text-size: 14px;
+    --mat-table-row-item-label-text-size: 14px;
+    --mat-table-header-headline-size: 14px;
   }
 }
 @media (min-width:768px) {
-  .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
+  .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
     font-size: 15px;
     --mat-slide-toggle-label-text-size: 15px;
-    --mat-paginator-container-text-size: 15px
+    --mat-paginator-container-text-size: 15px;
+    --mat-expansion-header-text-size: 15px;
+    --mat-table-row-item-label-text-size: 15px;
+    --mat-table-header-headline-size: 15px;
   }
 }
 @media (min-width:1024px) {
-  .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
+  .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
     font-size: 16px;
     --mat-slide-toggle-label-text-size: 16px;
-    --mat-paginator-container-text-size: 16px
+    --mat-paginator-container-text-size: 16px;
+    --mat-expansion-header-text-size: 16px;
+    --mat-table-row-item-label-text-size: 16px;
+    --mat-table-header-headline-size: 16px;
   }
 }
 @media (min-width:1280px) {
-  .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
+  .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
     font-size: 17px;
     --mat-slide-toggle-label-text-size: 17px;
-    --mat-paginator-container-text-size: 17px
+    --mat-paginator-container-text-size: 17px;
+    --mat-expansion-header-text-size: 17px;
+    --mat-table-row-item-label-text-size: 17px;
+    --mat-table-header-headline-size: 17px;
   }
 }
 @media (min-width:1536px) {
-  .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
+  .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
     font-size: 18px;
     --mat-slide-toggle-label-text-size: 18px;
-    --mat-paginator-container-text-size: 18px
+    --mat-paginator-container-text-size: 18px;
+    --mat-expansion-header-text-size: 18px;
+    --mat-table-row-item-label-text-size: 18px;
+    --mat-table-header-headline-size: 18px;
   }
 }
 @media (min-width:1920px) {
-  .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
+  .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
     font-size: 19px;
     --mat-slide-toggle-label-text-size: 19px;
-    --mat-paginator-container-text-size: 19px
+    --mat-paginator-container-text-size: 19px;
+    --mat-expansion-header-text-size: 19px;
+    --mat-table-row-item-label-text-size: 19px;
+    --mat-table-header-headline-size: 19px;
   }
 }
 @media (min-width:2560px) {
-  .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
+  .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
     font-size: 20px;
     --mat-slide-toggle-label-text-size: 20px;
-    --mat-paginator-container-text-size: 20px
+    --mat-paginator-container-text-size: 20px;
+    --mat-expansion-header-text-size: 20px;
+    --mat-table-row-item-label-text-size: 20px;
+    --mat-table-header-headline-size: 20px;
   }
 }
 @media (min-width:6500px) {
-  .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
+  .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field>label {
     font-size: 24px;
     --mat-slide-toggle-label-text-size: 24px;
-    --mat-paginator-container-text-size: 24px
+    --mat-paginator-container-text-size: 24px;
+    --mat-expansion-header-text-size: 24px;
+    --mat-table-row-item-label-text-size: 24px;
+    --mat-table-header-headline-size: 24px;
   }
 }

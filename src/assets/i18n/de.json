@@ -4267,5 +4267,27 @@
         }
       }
     }
+  },
+  "demo-exams-list": {
+    "options": {
+      "title": "Optionen",
+      "description": "Hier klicken, um Optionen anzuzeigen/auszublenden"
+    },
+    "table": {
+      "id": "Nr.",
+      "title": "Testtitel",
+      "created": "Erstellungsdatum",
+      "modified": "Zuletzt bearbeitet am",
+      "correct-answers": "Richtige Antworten",
+      "incorrect-answers": "Falsche Antworten",
+      "score": "Punktzahl",
+      "done": "Erledigt",
+      "edit": "Bearbeiten",
+      "delete": "Löschen",
+      "goto-test": "Zum Test {{testId}} gehen",
+      "edit-test": "Testinformationen bearbeiten {{testId}}",
+      "delete-test": "Test {{testId}} löschen",
+      "add-test": "Neuen Test erstellen"
+    }
   }
 }

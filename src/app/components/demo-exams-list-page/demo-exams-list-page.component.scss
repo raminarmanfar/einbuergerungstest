@@ -14,8 +14,71 @@
   max-width: 100%;
 }
 
+.mat-column-id {
+  text-align: center;
+  padding: 5px;
+}
+@media (min-width: 0px) {
+  .mat-column-title {
+    text-align: center;
+    max-width: 120px;
+  }
+}
+@media (min-width: 768px) {
+  .mat-column-title {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+.mat-column-correctAnswered {
+  text-align: center;
+  max-width: 70px;
+}
+.mat-column-incorrectAnswered {
+  text-align: center;
+  max-width: 70px;
+}
+.mat-column-score {
+  text-align: center;
+}
+.mat-column-done {
+  text-align: center;
+  max-width: 55px;
+  padding: 0;
+}
+.mat-column-dateCreated {
+  text-align: center;
+  min-width: 80px;
+  max-width: 85px;
+}
+.mat-column-dateLastModified {
+  text-align: center;
+  min-width: 80px;
+  max-width: 85px;
+}
+.mat-column-edit {
+  text-align: center;
+  padding: 5px;
+}
+.mat-column-delete {
+  text-align: center;
+  padding: 5px;
+}
+
 .add-button {
   position: fixed;
   bottom: 70px;
   right: 10px;
+}
+
+.no-wrap {
+  white-space: nowrap;
+  text-align: left;
+}
+
+.table-row:hover {
+  background-color: lightyellow;
+  cursor: pointer;
+
 }

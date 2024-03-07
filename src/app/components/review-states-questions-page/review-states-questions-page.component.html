@@ -47,12 +47,13 @@
     </mat-card-content>
   </mat-card>
 
-  <app-questionnaire-list *ngIf="selectedStateInfo"
-                          [currentQuestionIndex]="(reviewStatesTestsStateService.currentQuestionIndex$ | async)"
-                          [stateInfo]="selectedStateInfo"
-                          [showAnswersKeys]="showAnswersKeys"
-                          [paginatorData]="paginatorData"
-                          [trPrefix]="trPrefix"
-                          (expansionPanelOpen)="reviewStatesTestsStateService.setCurrentQuestionIndex($event)">
+  <app-questionnaire-list
+    *ngIf="selectedStateInfo"
+    [currentQuestionIndex]="(reviewStatesTestsStateService.currentQuestionIndex$ | async)"
+    [stateInfo]="selectedStateInfo"
+    [showAnswersKeys]="showAnswersKeys"
+    [paginatorData]="paginatorData"
+    [trPrefix]="trPrefix"
+    (expansionPanelOpen)="reviewStatesTestsStateService.setCurrentQuestionIndex($event)">
   </app-questionnaire-list>
 </div>

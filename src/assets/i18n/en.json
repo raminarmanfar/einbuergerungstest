@@ -4269,5 +4269,27 @@
         }
       }
     }
+  },
+  "demo-exams-list": {
+    "options": {
+      "title": "Options",
+      "description": "Click here to show/hide options"
+    },
+    "table": {
+      "id": "No.",
+      "title": "Test Title",
+      "created": "Date Created",
+      "modified": "Last Date Modified",
+      "correct-answers": "Correct Answers",
+      "incorrect-answers": "Incorrect Answers",
+      "score": "Score",
+      "done": "Done",
+      "edit": "Edit",
+      "delete": "Delete",
+      "goto-test": "Goto test {{testId}}",
+      "edit-test": "Edit test {{testId}} info",
+      "delete-test": "Delete test {{testId}}",
+      "add-test": "Create a new test"
+    }
   }
 }

@@ -1,1 +1,19 @@
-<h1>test</h1>
+<div>
+  <app-questionnaire-list
+    *ngIf="selectedStateInfo"
+    [currentQuestionIndex]="testInfo.currentQuestionIndex"
+    [stateInfo]="selectedStateInfo"
+    [showAnswersKeys]="false"
+    [paginatorData]="demoTestsStateService.paginatorData$ | async"
+    [trPrefix]="'review-deutschland-tests.'"
+    [showArrayIndexAsRow]="true"
+    (expansionPanelOpen)="onCurrentQuestionChange($event)">
+  </app-questionnaire-list>
+</div>
+
+<button mat-fab extended color="warn" class="close-button"
+        matTooltipPosition="above" [matTooltip]="trPrefix + 'close-test' | translate"
+        (click)="onReturnClick()">
+  <mat-icon>close</mat-icon>
+  Close
+</button>

@@ -8,7 +8,7 @@
 
       <mat-expansion-panel-header>
         <mat-panel-title>
-          {{ test.id | persianNumber }}
+          {{ showArrayIndexAsRow ? (i + 1) : test.id | persianNumber }}
           - {{ getQuestionTrPrefix(stateInfo.name, test.id - 1) | translate | persianNumber }}
         </mat-panel-title>
       </mat-expansion-panel-header>

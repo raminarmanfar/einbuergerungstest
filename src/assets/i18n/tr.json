@@ -4268,5 +4268,27 @@
         }
       }
     }
+  },
+  "demo-exams-list": {
+    "options": {
+      "title": "Seçenekler",
+      "description": "Seçenekleri göstermek/gizlemek için buraya tıklayın"
+    },
+    "table": {
+      "id": "No.",
+      "title": "Test Başlığı",
+      "created": "Oluşturulma Tarihi",
+      "modified": "Son Değiştirilme Tarihi",
+      "correct-answers": "Doğru Cevaplar",
+      "incorrect-answers": "Yanlış Cevaplar",
+      "score": "Puan",
+      "done": "Tamamlandı",
+      "edit": "Düzenle",
+      "delete": "Sil",
+      "goto-test": "{{testId}} Teste Git",
+      "edit-test": "{{testId}} Test Bilgilerini Düzenle",
+      "delete-test": "{{testId}} Testi Sil",
+      "add-test": "Yeni Test Oluştur"
+    }
   }
 }
