@@ -9,7 +9,7 @@ export class UtilService {
   }
 
 
-  public static generateRandomQuestionsIds(length: number, maxNumber: number): number[] {
+  public static generateRandomQuestionsIds(length: number, maxNumber: number, sorted = false): number[] {
     if (length <= 0 || maxNumber <= 0) {
       throw new Error(ErrorMessages.NUMBER_IS_LESS_THAN_ZERO);
     }
@@ -21,7 +21,7 @@ export class UtilService {
     while (uniqueNumbersSet.size < length) {
       uniqueNumbersSet.add(Math.floor(Math.random() * maxNumber) + 1);
     }
-    return Array.from(uniqueNumbersSet).sort((a, b) => a - b);
+    return sorted ? Array.from(uniqueNumbersSet).sort((a, b) => a - b) : Array.from(uniqueNumbersSet);
   }
 
   public static getRandomQuestions(questionIds: number[], questions: TestQuestionModel[]): TestQuestionModel[] {
