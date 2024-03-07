@@ -2,9 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {DemoTestsStateService} from '../../state/demo-tests/demo-tests-state.service';
 import {DemoTestInfoModel} from '../../models/demo-test-info.model';
-import {ConstantValues} from '../../utils/constant-values';
-import {StateInfoModel} from '../../models/state-info.model';
-import {UtilService} from '../../utils/util.service';
+import {PageEvent} from '@angular/material/paginator';
 
 @Component({
   selector: 'app-take-demo-test-page',
@@ -14,12 +12,10 @@ import {UtilService} from '../../utils/util.service';
 export class TakeDemoTestPageComponent implements OnInit {
   testInfo!: DemoTestInfoModel;
   trPrefix = 'demo-test.';
-  protected readonly selectedStateInfo: StateInfoModel = {
-    ...ConstantValues.DEUTSCHLAND_STATES,
-    stateTests: []
-  };
+  protected readonly statePaginatorData: PageEvent = {pageSize: 3, pageIndex: 0, length: 3};
+  protected readonly deutschlandPaginatorData: PageEvent = {pageSize: 27, pageIndex: 0, length: 27};
 
-  constructor(public demoTestsStateService: DemoTestsStateService, private utilService: UtilService, private router: Router) {
+  constructor(public demoTestsStateService: DemoTestsStateService, private router: Router) {
   }
 
   onReturnClick(): void {
@@ -28,8 +24,8 @@ export class TakeDemoTestPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.demoTestsStateService.currentTest$.subscribe(currentTest => {
+      console.log('>>>>>>', currentTest);
       this.testInfo = currentTest;
-      this.selectedStateInfo.stateTests = this.utilService.getFilteredQuestionsListByIds(currentTest.questionsIdsList, ConstantValues.DEUTSCHLAND_QUESTIONS);
     });
   }
 

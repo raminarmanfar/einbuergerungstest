@@ -38,4 +38,11 @@ export class QuestionnaireListComponent {
   getAnswerTrPrefix(stateNameLabel: string, questionIndex: number, answerId: number): string {
     return this.getTestTrPrefix(stateNameLabel, questionIndex) + '.answers.' + answerId;
   }
+
+  getPaginatorPageSizeList(): number[] {
+    switch (this.paginatorData?.length) {
+
+    }
+    return [];
+  }
 }

@@ -15,7 +15,7 @@ export class DemoExamsListPageComponent implements OnInit {
   displayedColumns = ['id', 'title', 'correctAnswered', 'incorrectAnswered', 'score', 'done', 'dateCreated', 'dateLastModified', 'edit', 'delete'];
   trPrefixTable = 'demo-exams-list.table.';
 
-  constructor(private demoTestsStateService: DemoTestsStateService, private utilService: UtilService, private router: Router) {
+  constructor(private demoTestsStateService: DemoTestsStateService, private router: Router) {
   }
 
   ngOnInit(): void {
@@ -26,7 +26,7 @@ export class DemoExamsListPageComponent implements OnInit {
   }
 
   onCreateNewTest(): void {
-    const randomDeutschlandQuestionsIds = this.utilService.generateRandomQuestionsIds(27, ConstantValues.DEUTSCHLAND_QUESTIONS.length);
+    const randomDeutschlandQuestionsIds = UtilService.generateRandomQuestionsIds(27, ConstantValues.DEUTSCHLAND_QUESTIONS.length);
     console.log('>>>>', randomDeutschlandQuestionsIds);
   }
 

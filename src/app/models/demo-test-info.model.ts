@@ -1,3 +1,5 @@
+import {StateInfoModel} from './state-info.model';
+
 export interface DemoTestInfoModel {
   id: number;
   title: string;
@@ -7,6 +9,8 @@ export interface DemoTestInfoModel {
   incorrectAnswered: number;
   score: number;
   done: boolean;
-  questionsIdsList: number[],
-  currentQuestionIndex: number;
+  deutschlandState: StateInfoModel;
+  deutschlandCurrentQuestionIndex: number;
+  selectedState: StateInfoModel;
+  selectedStateCurrentQuestionIndex: number;
 }
