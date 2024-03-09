@@ -10,6 +10,8 @@ import {ExamFinishReasonEnum} from '../../models/enums/exam-finish-reason.enum';
 import {DialogYesNoComponent} from '../dialog-yes-no/dialog-yes-no.component';
 import {YesNoEnum} from '../../models/enums/yes-no.enum';
 import {ConstantValues} from '../../utils/constant-values';
+import {CountdownService} from "../../utils/countdown.service";
+import {TimeMode} from "../../models/time.mode";
 
 @Component({
   selector: 'app-take-demo-test-page',
@@ -18,21 +20,34 @@ import {ConstantValues} from '../../utils/constant-values';
 })
 export class TakeDemoTestPageComponent implements OnInit {
   testInfo!: DemoTestInfoModel;
+  examTime!: TimeMode;
   protected readonly QuestionSetTypeEnum = QuestionSetTypeEnum;
   protected readonly trPrefix = 'demo-test-exam.';
   protected readonly trPrefixStateName = 'review-states-tests.german-states.';
-  protected readonly statePaginatorData: PageEvent = {pageSize: ConstantValues.STATES_EXAM_QUESTIONS_COUNT, pageIndex: 0, length: ConstantValues.STATES_EXAM_QUESTIONS_COUNT};
-  protected readonly deutschlandPaginatorData: PageEvent = {pageSize: ConstantValues.DEUTSCHLAND_EXAM_QUESTIONS_COUNT, pageIndex: 0, length: ConstantValues.DEUTSCHLAND_EXAM_QUESTIONS_COUNT};
+  protected readonly statePaginatorData: PageEvent = {
+    pageSize: ConstantValues.STATES_EXAM_QUESTIONS_COUNT,
+    pageIndex: 0,
+    length: ConstantValues.STATES_EXAM_QUESTIONS_COUNT
+  };
+  protected readonly deutschlandPaginatorData: PageEvent = {
+    pageSize: ConstantValues.DEUTSCHLAND_EXAM_QUESTIONS_COUNT,
+    pageIndex: 0,
+    length: ConstantValues.DEUTSCHLAND_EXAM_QUESTIONS_COUNT
+  };
 
-  constructor(public demoTestsStateService: DemoTestsStateService, private router: Router, private dialog: MatDialog) {
-  }
-
-  onReturnClick(): void {
-    this.router.navigate(['/demo-exams-list']).then();
+  constructor(public demoTestsStateService: DemoTestsStateService,
+              public countdownService: CountdownService,
+              private router: Router, private dialog: MatDialog) {
   }
 
   ngOnInit(): void {
     this.demoTestsStateService.currentTest$.subscribe(currentTest => this.testInfo = currentTest);
+    this.countdownService.startCountdown({minutes: 60, seconds: 0});
+    this.countdownService.getTime().subscribe(time => this.examTime = time);
+  }
+
+  onReturnClick(): void {
+    this.router.navigate(['/demo-exams-list']).then();
   }
 
   onCurrentQuestionChange(selectedQuestionIndex: number, activeQuestionSet: QuestionSetTypeEnum): void {

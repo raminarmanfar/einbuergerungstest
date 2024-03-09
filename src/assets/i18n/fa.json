@@ -4293,6 +4293,7 @@
     }
   },
   "demo-test-exam": {
+    "time-left": "زمان باقی مانده",
     "state-question-title": "سوالات استان",
     "state-question-description": "برای نمایش/مخفی کردن سوالات استان کلیک کنید",
     "deutschland-question-title": "سوالات آلمان",

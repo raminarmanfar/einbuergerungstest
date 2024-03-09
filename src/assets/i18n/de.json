@@ -4291,6 +4291,7 @@
     }
   },
   "demo-test-exam": {
+    "time-left": "Verbleibende Zeit",
     "state-question-title": "Bundesfragen",
     "state-question-description": "Klicken Sie, um Bundesfragen anzuzeigen/auszublenden",
     "deutschland-question-title": "Deutschland-Fragen",

@@ -4292,6 +4292,7 @@
     }
   },
   "demo-test-exam": {
+    "time-left": "Kalan Zaman",
     "state-question-title": "Eyalet Soruları",
     "state-question-description": "Eyalet sorularını göster/gizle",
     "deutschland-question-title": "Almanya Soruları",

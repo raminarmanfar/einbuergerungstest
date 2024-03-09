@@ -45,7 +45,7 @@ export function createTranslateLoader(http: HttpClient) {
     QuestionnaireListComponent,
     TakeDemoTestPageComponent,
     DemoExamsListPageComponent,
-    DialogYesNoComponent
+    DialogYesNoComponent,
   ],
   imports: [
     BrowserModule,

@@ -4293,6 +4293,7 @@
     }
   },
   "demo-test-exam": {
+    "time-left": "Time Left",
     "state-question-title": "State Questions",
     "state-question-description": "Click to show/hide State questions",
     "deutschland-question-title": "Deutschland Questions",
