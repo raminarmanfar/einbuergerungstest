@@ -36,10 +36,10 @@ export class UtilService {
     if (!stateInfo) {
       throw new Error(ErrorMessages.STATE_NOT_FOUND);
     }
-    return UtilService.generateQuestionsByLength(3, stateInfo, sortByRandomList);
+    return UtilService.generateQuestionsByLength(ConstantValues.STATES_EXAM_QUESTIONS_COUNT, stateInfo, sortByRandomList);
   }
 
   public static getRandomDeutschlandDemoTestQuestions(sortByRandomList = true): TestQuestionModel[] {
-    return UtilService.generateQuestionsByLength(27, ConstantValues.DEUTSCHLAND_STATE, sortByRandomList);
+    return UtilService.generateQuestionsByLength(ConstantValues.DEUTSCHLAND_EXAM_QUESTIONS_COUNT, ConstantValues.DEUTSCHLAND_STATE, sortByRandomList);
   }
 }

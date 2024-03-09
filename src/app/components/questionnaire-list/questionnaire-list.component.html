@@ -8,8 +8,13 @@
 
       <mat-expansion-panel-header>
         <mat-panel-title>
-          {{ showArrayIndexAsRow ? (i + 1) : test.id | persianNumber }}
+          <p [ngClass]="{
+                 'show-title-as-wrong-result': showUserResults && test.correctAnswer !== test.userAnswer,
+                 'show-title-as-correct-result': showUserResults && test.correctAnswer === test.userAnswer
+                 }">
+            {{ showArrayIndexAsRow ? (i + 1) : test.id | persianNumber }}
           - {{ getQuestionTrPrefix(stateInfo.name, test.id - 1) | translate | persianNumber }}
+          </p>
         </mat-panel-title>
       </mat-expansion-panel-header>
 
@@ -26,7 +31,7 @@
             <div fxFlex="30px">
               <div *ngIf="showUserResults">
                 <mat-checkbox *ngIf="test.correctAnswer === answerId" fxLayout="column" [color]="'primary'"
-                              class="disable-clickable"
+                              class="disable-clickable correct-answer-checkbox"
                               [checked]="test.correctAnswer === answerId">
                 </mat-checkbox>
               </div>
@@ -34,7 +39,14 @@
             <mat-radio-button fxFlex [ngClass]="{'disable-clickable': !answersClickable || showUserResults}"
                               [value]="answerId"
                               [checked]="(showAnswersKeys && test.correctAnswer === answerId) || test.userAnswer === answerId">
-              {{ getAnswerTrPrefix(stateInfo.name, test.id - 1, answerId) | translate | persianNumber }}
+              <p class="item-text"
+                 [ngClass]="{
+                 'show-correct-answer': showUserResults && test.correctAnswer === answerId && test.correctAnswer !== test.userAnswer,
+                 'show-as-wrong-result': showUserResults && test.userAnswer === answerId && test.correctAnswer !== test.userAnswer,
+                 'show-as-correct-result': showUserResults && test.userAnswer === answerId && test.correctAnswer === test.userAnswer
+                 }">
+                {{ getAnswerTrPrefix(stateInfo.name, test.id - 1, answerId) | translate | persianNumber }}
+              </p>
             </mat-radio-button>
           </div>
         </mat-radio-group>

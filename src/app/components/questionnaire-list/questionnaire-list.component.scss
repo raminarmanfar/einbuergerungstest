@@ -6,3 +6,35 @@
 .disable-clickable {
   pointer-events: none;
 }
+
+.show-correct-answer {
+  color: white;
+  background-color: blue;
+}
+
+.show-as-correct-result {
+  color: white;
+  background-color: green;
+}
+
+.show-as-wrong-result {
+  color: white;
+  background-color: red;
+}
+
+.show-title-as-correct-result {
+  color: darkgreen;
+  font-weight: bold;
+}
+
+.show-title-as-wrong-result {
+  color: darkred;
+}
+
+.item-text {
+  margin-top: 15px;
+}
+
+.correct-answer-checkbox {
+  margin-top: 4px;
+}

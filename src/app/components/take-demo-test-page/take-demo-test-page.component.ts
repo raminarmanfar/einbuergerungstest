@@ -9,6 +9,7 @@ import {QuestionSetTypeEnum} from '../../models/enums/question-set-type.enum';
 import {ExamFinishReasonEnum} from '../../models/enums/exam-finish-reason.enum';
 import {DialogYesNoComponent} from '../dialog-yes-no/dialog-yes-no.component';
 import {YesNoEnum} from '../../models/enums/yes-no.enum';
+import {ConstantValues} from '../../utils/constant-values';
 
 @Component({
   selector: 'app-take-demo-test-page',
@@ -20,8 +21,8 @@ export class TakeDemoTestPageComponent implements OnInit {
   protected readonly QuestionSetTypeEnum = QuestionSetTypeEnum;
   protected readonly trPrefix = 'demo-test-exam.';
   protected readonly trPrefixStateName = 'review-states-tests.german-states.';
-  protected readonly statePaginatorData: PageEvent = {pageSize: 3, pageIndex: 0, length: 3};
-  protected readonly deutschlandPaginatorData: PageEvent = {pageSize: 27, pageIndex: 0, length: 27};
+  protected readonly statePaginatorData: PageEvent = {pageSize: ConstantValues.STATES_EXAM_QUESTIONS_COUNT, pageIndex: 0, length: ConstantValues.STATES_EXAM_QUESTIONS_COUNT};
+  protected readonly deutschlandPaginatorData: PageEvent = {pageSize: ConstantValues.DEUTSCHLAND_EXAM_QUESTIONS_COUNT, pageIndex: 0, length: ConstantValues.DEUTSCHLAND_EXAM_QUESTIONS_COUNT};
 
   constructor(public demoTestsStateService: DemoTestsStateService, private router: Router, private dialog: MatDialog) {
   }

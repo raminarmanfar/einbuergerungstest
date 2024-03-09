@@ -41,7 +41,7 @@ export const demoTestsStateModel: DemoTestsStateModel = {
         stateTestQuestions: UtilService.getRandomStateQuestions(GermanStatesEnum.BAVARIA)
       },
       selectedStateCurrentQuestionIndex: 0,
-      isExamFinished: false,
+      isExamFinished: false
     },
     {
       id: 2,
@@ -146,7 +146,13 @@ export class DemoTestsState {
           patch<DemoTestsStateModel>({
             demoTests: updateItem<DemoTestInfoModel>(
               t => t.id === currentState.currentTestId,
-              patch({isExamFinished: true, finishReason: payload})
+              patch({
+                isExamFinished: true,
+                finishReason: payload,
+                deutschlandCurrentQuestionIndex: 0,
+                selectedStateCurrentQuestionIndex: 0,
+                activeQuestionSet: QuestionSetTypeEnum.STATE
+              })
             )
           })
         )
