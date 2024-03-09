@@ -4283,13 +4283,28 @@
       "correct-answers": "Correct Answers",
       "incorrect-answers": "Incorrect Answers",
       "score": "Score",
-      "done": "Done",
+      "finished": "Done",
       "edit": "Edit",
       "delete": "Delete",
       "goto-test": "Goto test {{testId}}",
       "edit-test": "Edit test {{testId}} info",
       "delete-test": "Delete test {{testId}}",
       "add-test": "Create a new test"
+    }
+  },
+  "demo-test-exam": {
+    "state-question-title": "State Questions",
+    "state-question-description": "Click to show/hide State questions",
+    "deutschland-question-title": "Deutschland Questions",
+    "deutschland-question-description": "Click to show/hide Deutschland questions",
+    "finish-exam-btn": "Finish exam",
+    "return-to-list-btn": "Return to exams list",
+    "exam-result-details-btn": "Exam result details",
+    "finish-exam-dialog": {
+      "title": "Are you sure?",
+      "description": "The exam will finish and no longer be possible to continue again!",
+      "btnConfirm": "Yes finish it",
+      "btnReject": "Cancel"
     }
   }
 }

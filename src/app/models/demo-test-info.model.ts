@@ -1,4 +1,6 @@
 import {StateInfoModel} from './state-info.model';
+import {QuestionSetTypeEnum} from './enums/question-set-type.enum';
+import {ExamFinishReasonEnum} from './enums/exam-finish-reason.enum';
 
 export interface DemoTestInfoModel {
   id: number;
@@ -8,9 +10,11 @@ export interface DemoTestInfoModel {
   correctAnswered: number;
   incorrectAnswered: number;
   score: number;
-  done: boolean;
+  activeQuestionSet: QuestionSetTypeEnum;
   deutschlandState: StateInfoModel;
   deutschlandCurrentQuestionIndex: number;
   selectedState: StateInfoModel;
   selectedStateCurrentQuestionIndex: number;
+  isExamFinished: boolean;
+  finishReason?: ExamFinishReasonEnum;
 }

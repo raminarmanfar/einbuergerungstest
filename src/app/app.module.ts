@@ -9,6 +9,7 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {StateModule} from './state/state.module';
 import {AppRoutingModule} from './app-routing.module';
 import {AppMaterialsModule} from './app-materials.module';
+import {FlexLayoutModule} from "@angular/flex-layout";
 
 import {PersianNumberPipe} from './utils/persian-number.pipe';
 
@@ -23,9 +24,9 @@ import {
   ReviewStatesQuestionsPageComponent
 } from './components/review-states-questions-page/review-states-questions-page.component';
 import {QuestionnaireListComponent} from './components/questionnaire-list/questionnaire-list.component';
-import {FlexLayoutModule} from "@angular/flex-layout";
 import { TakeDemoTestPageComponent } from './components/take-demo-test-page/take-demo-test-page.component';
 import { DemoExamsListPageComponent } from './components/demo-exams-list-page/demo-exams-list-page.component';
+import { DialogYesNoComponent } from './components/dialog-yes-no/dialog-yes-no.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -43,7 +44,8 @@ export function createTranslateLoader(http: HttpClient) {
     ReviewDeutschlandQuestionsPageComponent,
     QuestionnaireListComponent,
     TakeDemoTestPageComponent,
-    DemoExamsListPageComponent
+    DemoExamsListPageComponent,
+    DialogYesNoComponent
   ],
   imports: [
     BrowserModule,

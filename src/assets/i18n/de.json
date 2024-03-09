@@ -4281,13 +4281,28 @@
       "correct-answers": "Richtige Antworten",
       "incorrect-answers": "Falsche Antworten",
       "score": "Punktzahl",
-      "done": "Erledigt",
+      "finished": "Erledigt",
       "edit": "Bearbeiten",
       "delete": "Löschen",
       "goto-test": "Zum Test {{testId}} gehen",
       "edit-test": "Testinformationen bearbeiten {{testId}}",
       "delete-test": "Test {{testId}} löschen",
       "add-test": "Neuen Test erstellen"
+    }
+  },
+  "demo-test-exam": {
+    "state-question-title": "Bundesfragen",
+    "state-question-description": "Klicken Sie, um Bundesfragen anzuzeigen/auszublenden",
+    "deutschland-question-title": "Deutschland-Fragen",
+    "deutschland-question-description": "Klicken Sie, um Deutschland-Fragen anzuzeigen/auszublenden",
+    "finish-exam-btn": "Prüfung beenden",
+    "return-to-list-btn": "Zurück zur Prüfungsliste",
+    "exam-result-details-btn": "Prüfungsergebnisdetails",
+    "finish-exam-dialog": {
+      "title": "Sind Sie sicher?",
+      "description": "Die Prüfung wird beendet und kann nicht mehr fortgesetzt werden!",
+      "btnConfirm": "Ja, beenden Sie es",
+      "btnReject": "Abbrechen"
     }
   }
 }

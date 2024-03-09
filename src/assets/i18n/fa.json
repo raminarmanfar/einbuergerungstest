@@ -4283,13 +4283,28 @@
       "correct-answers": "پاسخ‌های صحیح",
       "incorrect-answers": "پاسخ‌های اشتباه",
       "score": "نمره",
-      "done": "انجام شده",
+      "finished": "انجام شده",
       "edit": "ویرایش",
       "delete": "حذف",
       "goto-test": "رفتن به آزمون {{testId}}",
       "edit-test": "ویرایش اطلاعات آزمون {{testId}}",
       "delete-test": "حذف آزمون {{testId}}",
       "add-test": "ایجاد آزمون جدید"
+    }
+  },
+  "demo-test-exam": {
+    "state-question-title": "سوالات استان",
+    "state-question-description": "برای نمایش/مخفی کردن سوالات استان کلیک کنید",
+    "deutschland-question-title": "سوالات آلمان",
+    "deutschland-question-description": "برای نمایش/مخفی کردن سوالات آلمان کلیک کنید",
+    "finish-exam-btn": "اتمام آزمون",
+    "return-to-list-btn": "بازگشت به لیست آزمون‌ها",
+    "exam-result-details-btn": "جزئیات نتایج آزمون",
+    "finish-exam-dialog": {
+      "title": "آیا مطمئن هستید؟",
+      "description": "آزمون به اتمام خواهد رسید و دیگر امکان ادامه وجود ندارد!",
+      "btnConfirm": "بله، اتمام دهید",
+      "btnReject": "لغو"
     }
   }
 }

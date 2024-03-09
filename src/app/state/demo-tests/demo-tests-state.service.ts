@@ -3,8 +3,16 @@ import {Select, Store} from '@ngxs/store';
 import {Observable} from 'rxjs';
 import {DemoTestsState} from './demo-tests-state';
 import {DemoTestInfoModel} from '../../models/demo-test-info.model';
-import {SetCurrentTestId, UpdateTestQuestion} from './demo-tests.action';
-import {UpdateQuestionPayloadModel} from "../models/update-question-payload.model";
+import {
+  FinishExam,
+  SetActiveQuestionsSet,
+  SetCurrentQuestionIndex,
+  SetSelectedDemoTestId,
+  UpdateTestQuestion
+} from './demo-tests.action';
+import {CurrentQuestionIndexPayloadModel, UpdateQuestionPayloadModel} from '../models/payloads.model';
+import {QuestionSetTypeEnum} from '../../models/enums/question-set-type.enum';
+import {ExamFinishReasonEnum} from '../../models/enums/exam-finish-reason.enum';
 
 @Injectable({providedIn: 'root'})
 export class DemoTestsStateService {
@@ -15,8 +23,20 @@ export class DemoTestsStateService {
   constructor(private store: Store) {
   }
 
-  setCurrentTestId(currentTestId: number): void {
-    this.store.dispatch(new SetCurrentTestId(currentTestId));
+  setActiveQuestionsSet(activeQuestionSet: QuestionSetTypeEnum): void {
+    this.store.dispatch(new SetActiveQuestionsSet(activeQuestionSet));
+  }
+
+  finishExam(finishReason: ExamFinishReasonEnum): void {
+    this.store.dispatch(new FinishExam(finishReason));
+  }
+
+  setSelectedDemoTestId(demoTestId: number): void {
+    this.store.dispatch(new SetSelectedDemoTestId(demoTestId));
+  }
+
+  setCurrentQuestionIndex(currentQuestionIndexPayloadModel: CurrentQuestionIndexPayloadModel): void {
+    this.store.dispatch(new SetCurrentQuestionIndex(currentQuestionIndexPayloadModel));
   }
 
   updateTestQuestion(updateQuestionInfo: UpdateQuestionPayloadModel): void {

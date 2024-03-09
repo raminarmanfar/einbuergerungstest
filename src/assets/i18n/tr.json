@@ -4282,13 +4282,28 @@
       "correct-answers": "Doğru Cevaplar",
       "incorrect-answers": "Yanlış Cevaplar",
       "score": "Puan",
-      "done": "Tamamlandı",
+      "finished": "Tamamlandı",
       "edit": "Düzenle",
       "delete": "Sil",
       "goto-test": "{{testId}} Teste Git",
       "edit-test": "{{testId}} Test Bilgilerini Düzenle",
       "delete-test": "{{testId}} Testi Sil",
       "add-test": "Yeni Test Oluştur"
+    }
+  },
+  "demo-test-exam": {
+    "state-question-title": "Eyalet Soruları",
+    "state-question-description": "Eyalet sorularını göster/gizle",
+    "deutschland-question-title": "Almanya Soruları",
+    "deutschland-question-description": "Almanya sorularını göster/gizle",
+    "finish-exam-btn": "Sınavı Bitir",
+    "return-to-list-btn": "Sınav listesine dön",
+    "exam-result-details-btn": "Sınav sonuç detayları",
+    "finish-exam-dialog": {
+      "title": "Emin misiniz?",
+      "description": "Sınav sona erecek ve tekrar devam etmek mümkün olmayacak!",
+      "btnConfirm": "Evet, bitir",
+      "btnReject": "İptal"
     }
   }
 }

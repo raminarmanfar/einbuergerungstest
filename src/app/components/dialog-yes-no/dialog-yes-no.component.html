@@ -1,0 +1,17 @@
+<mat-card class="card-container">
+  <mat-card-header>
+    <mat-card-title>{{ data.trPrefix + 'title' | translate }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>{{ data.trPrefix + 'description' | translate }}</p>
+    <mat-divider></mat-divider>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button [color]="'accent'" class="btn" [mat-dialog-close]="YesNoEnum.NO">
+      {{ data.trPrefix + 'btnReject' | translate }}
+    </button>
+    <button mat-raised-button [color]="'primary'" class="btn" [mat-dialog-close]="YesNoEnum.YES">
+      {{ data.trPrefix + 'btnConfirm' | translate }}
+    </button>
+  </mat-card-actions>
+</mat-card>

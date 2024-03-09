@@ -1,9 +1,15 @@
 <div class="container">
   <mat-accordion>
-    <mat-expansion-panel hideToggle>
+    <mat-expansion-panel
+      class="expansion-panel"
+      [expanded]="testInfo.activeQuestionSet === QuestionSetTypeEnum.STATE"
+      (opened)="demoTestsStateService.setActiveQuestionsSet(QuestionSetTypeEnum.STATE)">
       <mat-expansion-panel-header>
-        <mat-panel-title>State Questions</mat-panel-title>
-        <mat-panel-description>Click to show/hide State questions</mat-panel-description>
+        <mat-panel-title class="demo-test-title">
+          {{ trPrefix + 'state-question-title' | translate }}
+          ({{ trPrefixStateName + testInfo.selectedState.name + '.state' | translate }})
+        </mat-panel-title>
+        <mat-panel-description>{{ trPrefix + 'state-question-description' | translate }}</mat-panel-description>
       </mat-expansion-panel-header>
 
       <app-questionnaire-list
@@ -15,16 +21,21 @@
         [showAnswersKeys]="false"
         [showArrayIndexAsRow]="true"
         [answersClickable]="true"
-        (expansionPanelOpen)="onCurrentQuestionChange($event)"
-        (answerChange)="onStateAnswerChange($event)">
+        [showUserResults]="testInfo.isExamFinished"
+        (expansionPanelOpen)="onCurrentQuestionChange($event, QuestionSetTypeEnum.STATE)"
+        (answerChange)="onStateAnswerChange($event, QuestionSetTypeEnum.STATE)">
       </app-questionnaire-list>
 
     </mat-expansion-panel>
 
-    <mat-expansion-panel hideToggle>
+    <mat-expansion-panel
+      class="expansion-panel"
+      [expanded]="testInfo.activeQuestionSet === QuestionSetTypeEnum.DEUTSCHLAND"
+      (opened)="demoTestsStateService.setActiveQuestionsSet(QuestionSetTypeEnum.DEUTSCHLAND)">
       <mat-expansion-panel-header>
-        <mat-panel-title>Deutschland Questions</mat-panel-title>
-        <mat-panel-description>Click to show/hide Deutschland questions</mat-panel-description>
+        <mat-panel-title class="demo-test-title">{{ trPrefix + 'deutschland-question-title' | translate }}
+        </mat-panel-title>
+        <mat-panel-description>{{ trPrefix + 'deutschland-question-description' | translate }}</mat-panel-description>
       </mat-expansion-panel-header>
 
       <app-questionnaire-list
@@ -36,20 +47,38 @@
         [showAnswersKeys]="false"
         [showArrayIndexAsRow]="true"
         [answersClickable]="true"
-        (expansionPanelOpen)="onCurrentQuestionChange($event)">
+        [showUserResults]="testInfo.isExamFinished"
+        (expansionPanelOpen)="onCurrentQuestionChange($event, QuestionSetTypeEnum.DEUTSCHLAND)"
+        (answerChange)="onStateAnswerChange($event, QuestionSetTypeEnum.DEUTSCHLAND)">
       </app-questionnaire-list>
     </mat-expansion-panel>
   </mat-accordion>
-
-
-  <div class="deutschland-questions-list-container">
-
-  </div>
 </div>
 
-<button mat-fab extended color="warn" class="close-button"
-        matTooltipPosition="above" [matTooltip]="trPrefix + 'close-test' | translate"
-        (click)="onReturnClick()">
-  <mat-icon>close</mat-icon>
-  Close
-</button>
+<div class="footer-container" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center">
+  <button *ngIf="!testInfo.isExamFinished else showExamResultDetails" fxFlex.sm="50%" fxFlex.md="30%" fxFlex.lg="25%"
+          fxFlex.xl="15%"
+          mat-fab extended color="warn" class="footer-button"
+          matTooltipPosition="above" [matTooltip]="trPrefix + 'finish-test' | translate"
+          (click)="onFinishExamClick('1200ms', '1000ms')">
+    <mat-icon>clear</mat-icon>
+    {{ trPrefix + 'finish-exam-btn' | translate }}
+  </button>
+  <ng-template #showExamResultDetails>
+    <button fxFlex.sm="50%" fxFlex.md="30%" fxFlex.lg="25%" fxFlex.xl="15%"
+            mat-fab extended color="accent" class="footer-button"
+            matTooltipPosition="above" [matTooltip]="trPrefix + 'finish-test' | translate"
+            (click)="onExamResultDetailClick()">
+      <mat-icon>list</mat-icon>
+      {{ trPrefix + 'exam-result-details-btn' | translate }}
+    </button>
+  </ng-template>
+  <button fxFlex.sm="50%" fxFlex.md="30%" fxFlex.lg="25%" fxFlex.xl="15%"
+          mat-fab extended color="primary"
+          class="footer-button"
+          matTooltipPosition="above" [matTooltip]="trPrefix + 'return-to-list' | translate"
+          (click)="onReturnClick()">
+    <mat-icon>keyboard_backspace</mat-icon>
+    {{ trPrefix + 'return-to-list-btn' | translate }}
+  </button>
+</div>

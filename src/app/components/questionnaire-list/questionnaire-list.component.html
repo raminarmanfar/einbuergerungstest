@@ -19,14 +19,26 @@
              [alt]="stateInfo.name + test.id">
       </div>
 
-      <mat-radio-group (change)="onAnswerChange(test, $event.value)">
-        <mat-radio-button class="radio-btn" [ngClass]="{'disable-clickable': !answersClickable}"
-                          *ngFor="let answerId of [1, 2, 3, 4]"
-                          [value]="answerId"
-                          [checked]="(showAnswersKeys && test.correctAnswer === answerId) || test.userAnswer === answerId">
-          {{ getAnswerTrPrefix(stateInfo.name, test.id - 1, answerId) | translate | persianNumber }}
-        </mat-radio-button>
-      </mat-radio-group>
+      <div fxLayout="row">
+        <mat-radio-group [color]="showUserResults ? 'accent' : 'primary'" fxLayout="column"
+                         (change)="onAnswerChange(test, $event.value)">
+          <div *ngFor="let answerId of [1, 2, 3, 4]">
+            <div fxFlex="30px">
+              <div *ngIf="showUserResults">
+                <mat-checkbox *ngIf="test.correctAnswer === answerId" fxLayout="column" [color]="'primary'"
+                              class="disable-clickable"
+                              [checked]="test.correctAnswer === answerId">
+                </mat-checkbox>
+              </div>
+            </div>
+            <mat-radio-button fxFlex [ngClass]="{'disable-clickable': !answersClickable || showUserResults}"
+                              [value]="answerId"
+                              [checked]="(showAnswersKeys && test.correctAnswer === answerId) || test.userAnswer === answerId">
+              {{ getAnswerTrPrefix(stateInfo.name, test.id - 1, answerId) | translate | persianNumber }}
+            </mat-radio-button>
+          </div>
+        </mat-radio-group>
+      </div>
 
       <mat-action-row>
         <button *ngIf="currentQuestionIndex > 0"
