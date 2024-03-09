@@ -308,12 +308,12 @@ export class ConstantValues {
     {id: 300, correctAnswer: 1}
   ];
 
-  public static readonly DEUTSCHLAND_STATES: StateInfoModel = {
+  public static readonly DEUTSCHLAND_STATE: StateInfoModel = {
     id: 0,
     name: GermanStatesEnum.DEUTSCHLAND,
     capital: GermanStatesCapitalCityEnum.BERLIN,
     population: 85000000,
-    stateTests: ConstantValues.DEUTSCHLAND_QUESTIONS
+    stateTestQuestions: ConstantValues.DEUTSCHLAND_QUESTIONS
   };
 
   public static readonly BADEN_WUERTTEMBERG_STATE_QUESTIONS: StateTestQuestionModel[] = [
@@ -515,112 +515,112 @@ export class ConstantValues {
       name: GermanStatesEnum.BADEN_WUERTTEMBERG,
       capital: GermanStatesCapitalCityEnum.STUTTGART,
       population: 0,
-      stateTests: ConstantValues.BADEN_WUERTTEMBERG_STATE_QUESTIONS
+      stateTestQuestions: ConstantValues.BADEN_WUERTTEMBERG_STATE_QUESTIONS
     },
     {
       id: 2,
       name: GermanStatesEnum.BAVARIA,
       capital: GermanStatesCapitalCityEnum.MUNICH,
       population: 0,
-      stateTests: ConstantValues.BAVARIA_STATE_QUESTIONS
+      stateTestQuestions: ConstantValues.BAVARIA_STATE_QUESTIONS
     },
     {
       id: 3,
       name: GermanStatesEnum.BERLIN,
       capital: GermanStatesCapitalCityEnum.BERLIN,
       population: 0,
-      stateTests: ConstantValues.BERLIN_STATE_QUESTIONS
+      stateTestQuestions: ConstantValues.BERLIN_STATE_QUESTIONS
     },
     {
       id: 4,
       name: GermanStatesEnum.BRANDENBURG,
       capital: GermanStatesCapitalCityEnum.POTSDAM,
       population: 0,
-      stateTests: ConstantValues.BRANDENBURG_STATE_QUESTIONS
+      stateTestQuestions: ConstantValues.BRANDENBURG_STATE_QUESTIONS
     },
     {
       id: 5,
       name: GermanStatesEnum.BREMEN,
       capital: GermanStatesCapitalCityEnum.BREMEN,
       population: 0,
-      stateTests: ConstantValues.BREMEN_STATE_QUESTIONS
+      stateTestQuestions: ConstantValues.BREMEN_STATE_QUESTIONS
     },
     {
       id: 6,
       name: GermanStatesEnum.HAMBURG,
       capital: GermanStatesCapitalCityEnum.HAMBURG,
       population: 0,
-      stateTests: ConstantValues.HAMBURG_STATE_QUESTIONS
+      stateTestQuestions: ConstantValues.HAMBURG_STATE_QUESTIONS
     },
     {
       id: 7,
       name: GermanStatesEnum.HESSEN,
       capital: GermanStatesCapitalCityEnum.WIESBADEN,
       population: 0,
-      stateTests: ConstantValues.HESSEN_STATE_QUESTIONS
+      stateTestQuestions: ConstantValues.HESSEN_STATE_QUESTIONS
     },
     {
       id: 8,
       name: GermanStatesEnum.MECKLENBURG_VORPOMMERN,
       capital: GermanStatesCapitalCityEnum.SCHWERIN,
       population: 0,
-      stateTests: ConstantValues.MECKLENBURG_VORPOMMERN_STATE_QUESTIONS
+      stateTestQuestions: ConstantValues.MECKLENBURG_VORPOMMERN_STATE_QUESTIONS
     },
     {
       id: 9,
       name: GermanStatesEnum.NIEDERSACHSEN,
       capital: GermanStatesCapitalCityEnum.HANOVER,
       population: 0,
-      stateTests: ConstantValues.NIEDERSACHSEN_VORPOMMERN_STATE_QUESTIONS
+      stateTestQuestions: ConstantValues.NIEDERSACHSEN_VORPOMMERN_STATE_QUESTIONS
     },
     {
       id: 10,
       name: GermanStatesEnum.NORTH_RHINE_WESTPHALIA,
       capital: GermanStatesCapitalCityEnum.DUESSELDORF,
       population: 0,
-      stateTests: ConstantValues.NORTH_RHINE_WESTPHALIA_VORPOMMERN_STATE_QUESTIONS
+      stateTestQuestions: ConstantValues.NORTH_RHINE_WESTPHALIA_VORPOMMERN_STATE_QUESTIONS
     },
     {
       id: 11,
       name: GermanStatesEnum.RHINELAND_PALATINATE,
       capital: GermanStatesCapitalCityEnum.MAINZ,
       population: 0,
-      stateTests: ConstantValues.RHINELAND_PALATINATE_STATE_QUESTIONS
+      stateTestQuestions: ConstantValues.RHINELAND_PALATINATE_STATE_QUESTIONS
     },
     {
       id: 12,
       name: GermanStatesEnum.SAARLAND,
       capital: GermanStatesCapitalCityEnum.SAARBRUECKEN,
       population: 0,
-      stateTests: ConstantValues.SAARLAND_STATE_QUESTIONS
+      stateTestQuestions: ConstantValues.SAARLAND_STATE_QUESTIONS
     },
     {
       id: 13,
       name: GermanStatesEnum.SAXONY,
       capital: GermanStatesCapitalCityEnum.SAARBRUECKEN,
       population: 0,
-      stateTests: ConstantValues.SAXONY_STATE_QUESTIONS
+      stateTestQuestions: ConstantValues.SAXONY_STATE_QUESTIONS
     },
     {
       id: 14,
       name: GermanStatesEnum.SAXONY_ANHALT,
       capital: GermanStatesCapitalCityEnum.MAGDEBURG,
       population: 0,
-      stateTests: ConstantValues.SAXONY_ANHALT_STATE_QUESTIONS
+      stateTestQuestions: ConstantValues.SAXONY_ANHALT_STATE_QUESTIONS
     },
     {
       id: 15,
       name: GermanStatesEnum.SCHLESWIG_HOLSTEIN,
       capital: GermanStatesCapitalCityEnum.KIEL,
       population: 0,
-      stateTests: ConstantValues.SCHLESWIG_HOLSTEIN_STATE_QUESTIONS
+      stateTestQuestions: ConstantValues.SCHLESWIG_HOLSTEIN_STATE_QUESTIONS
     },
     {
       id: 16,
       name: GermanStatesEnum.THURINGIA,
       capital: GermanStatesCapitalCityEnum.ERFURT,
       population: 0,
-      stateTests: ConstantValues.THURINGIA_STATE_QUESTIONS
+      stateTestQuestions: ConstantValues.THURINGIA_STATE_QUESTIONS
     }
   ];
 }

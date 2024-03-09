@@ -13,7 +13,7 @@ export const stateDefaultValues: ReviewDeutschlandQuestionsStateModel = {
   paginatorData: {
     pageSize: 30,
     pageIndex: 0,
-    length: ConstantValues.DEUTSCHLAND_STATES.stateTests.length
+    length: ConstantValues.DEUTSCHLAND_STATE.stateTestQuestions.length
   }
 };
 

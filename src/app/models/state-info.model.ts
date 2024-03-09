@@ -7,5 +7,5 @@ export interface StateInfoModel {
   name: GermanStatesEnum;
   capital: GermanStatesCapitalCityEnum;
   population: number;
-  stateTests: TestQuestionModel[];
+  stateTestQuestions: TestQuestionModel[];
 }

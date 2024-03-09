@@ -1,7 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {UtilService} from '../../utils/util.service';
 import {DemoTestInfoModel} from '../../models/demo-test-info.model';
-import {ConstantValues} from '../../utils/constant-values';
 import {Router} from '@angular/router';
 import {DemoTestsStateService} from '../../state/demo-tests/demo-tests-state.service';
 
@@ -26,8 +24,6 @@ export class DemoExamsListPageComponent implements OnInit {
   }
 
   onCreateNewTest(): void {
-    const randomDeutschlandQuestionsIds = UtilService.generateRandomQuestionsIds(27, ConstantValues.DEUTSCHLAND_QUESTIONS.length);
-    console.log('>>>>', randomDeutschlandQuestionsIds);
   }
 
   onSelectedTestClick(selectedTest: DemoTestInfoModel): void {

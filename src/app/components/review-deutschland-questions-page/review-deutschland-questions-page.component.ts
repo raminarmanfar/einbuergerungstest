@@ -10,7 +10,7 @@ import {ConstantValues} from '../../utils/constant-values';
   styleUrls: ['./review-deutschland-questions-page.component.scss']
 })
 export class ReviewDeutschlandQuestionsPageComponent implements OnInit {
-  protected readonly selectedStateInfo = ConstantValues.DEUTSCHLAND_STATES;
+  protected readonly selectedStateInfo = ConstantValues.DEUTSCHLAND_STATE;
   showAnswersKeys = true;
 
   constructor(public reviewDeutschlandQuestionsStateService: ReviewDeutschlandQuestionsStateService) {

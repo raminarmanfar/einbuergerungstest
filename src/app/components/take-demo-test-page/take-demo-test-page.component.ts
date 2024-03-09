@@ -3,6 +3,7 @@ import {Router} from '@angular/router';
 import {DemoTestsStateService} from '../../state/demo-tests/demo-tests-state.service';
 import {DemoTestInfoModel} from '../../models/demo-test-info.model';
 import {PageEvent} from '@angular/material/paginator';
+import {TestQuestionModel} from "../../models/test-question.model";
 
 @Component({
   selector: 'app-take-demo-test-page',
@@ -31,5 +32,9 @@ export class TakeDemoTestPageComponent implements OnInit {
 
   onCurrentQuestionChange(currentQuestionIndex: number): void {
     console.log('>>>>>>', currentQuestionIndex);
+  }
+
+  onStateAnswerChange(selectedQuestion: TestQuestionModel): void {
+    this.demoTestsStateService.updateTestQuestion({selectedQuestion, isDeutschlandQuestion: true});
   }
 }

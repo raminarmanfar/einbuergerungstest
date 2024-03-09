@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {MatPaginatorIntl, PageEvent} from '@angular/material/paginator';
 import {TranslateService} from '@ngx-translate/core';
 import {StateInfoModel} from '../../models/state-info.model';
+import {TestQuestionModel} from "../../models/test-question.model";
 
 @Component({
   selector: 'app-questionnaire-list',
@@ -15,12 +16,13 @@ export class QuestionnaireListComponent {
   @Input() trPrefix = '';
   @Input() paginatorData!: PageEvent | null;
   @Input() showArrayIndexAsRow = false;
-
+  @Input() answersClickable = false;
 
   @Output() expansionPanelOpen = new EventEmitter<number>();
   @Output() paginatorDataChange = new EventEmitter<PageEvent>();
+  @Output() answerChange = new EventEmitter<TestQuestionModel>();
 
-  constructor(private translate: TranslateService,private paginator: MatPaginatorIntl) {
+  constructor(private translate: TranslateService, private paginator: MatPaginatorIntl) {
     translate.onLangChange.subscribe(currentLang => {
       console.log('>>>>', currentLang);
       translate.get('general.ITEMS_PER_PAGE_LABEL').subscribe(res => paginator.itemsPerPageLabel = res);
@@ -39,10 +41,8 @@ export class QuestionnaireListComponent {
     return this.getTestTrPrefix(stateNameLabel, questionIndex) + '.answers.' + answerId;
   }
 
-  getPaginatorPageSizeList(): number[] {
-    switch (this.paginatorData?.length) {
-
-    }
-    return [];
+  onAnswerChange(selectedTest: TestQuestionModel, selectedAnswer: number) {
+    selectedTest.userAnswer = selectedAnswer;
+    this.answerChange.emit(selectedTest);
   }
 }

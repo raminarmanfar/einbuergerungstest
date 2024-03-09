@@ -10,11 +10,13 @@
         *ngIf="testInfo.selectedState"
         [currentQuestionIndex]="testInfo.selectedStateCurrentQuestionIndex"
         [stateInfo]="testInfo.selectedState"
-        [showAnswersKeys]="false"
         [paginatorData]="statePaginatorData"
         [trPrefix]="'review-states-tests.german-states.'"
-        [showArrayIndexAsRow]="false"
-        (expansionPanelOpen)="onCurrentQuestionChange($event)">
+        [showAnswersKeys]="false"
+        [showArrayIndexAsRow]="true"
+        [answersClickable]="true"
+        (expansionPanelOpen)="onCurrentQuestionChange($event)"
+        (answerChange)="onStateAnswerChange($event)">
       </app-questionnaire-list>
 
     </mat-expansion-panel>
@@ -29,10 +31,11 @@
         *ngIf="testInfo.deutschlandState"
         [currentQuestionIndex]="testInfo.deutschlandCurrentQuestionIndex"
         [stateInfo]="testInfo.deutschlandState"
-        [showAnswersKeys]="false"
         [paginatorData]="deutschlandPaginatorData"
         [trPrefix]="'review-deutschland-tests.'"
-        [showArrayIndexAsRow]="false"
+        [showAnswersKeys]="false"
+        [showArrayIndexAsRow]="true"
+        [answersClickable]="true"
         (expansionPanelOpen)="onCurrentQuestionChange($event)">
       </app-questionnaire-list>
     </mat-expansion-panel>
