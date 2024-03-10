@@ -1,6 +1,7 @@
 import {StateInfoModel} from './state-info.model';
 import {QuestionSetTypeEnum} from './enums/question-set-type.enum';
 import {ExamFinishReasonEnum} from './enums/exam-finish-reason.enum';
+import {TimeModel} from "./time.model";
 
 export interface DemoTestInfoModel {
   id: number;
@@ -17,4 +18,5 @@ export interface DemoTestInfoModel {
   selectedStateCurrentQuestionIndex: number;
   isExamFinished: boolean;
   finishReason?: ExamFinishReasonEnum;
+  examTime: TimeModel;
 }

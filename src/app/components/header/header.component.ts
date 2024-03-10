@@ -3,6 +3,7 @@ import {AppStateService} from '../../state/app-state.service';
 import {Language} from '../../models/enums/language';
 import {Country} from '../../models/enums/country';
 import {ErrorMessages} from '../../utils/error-messages';
+import {CountdownService} from "../../utils/countdown.service";
 
 @Component({
   selector: 'app-header',
@@ -19,7 +20,7 @@ export class HeaderComponent implements OnInit {
   activeLanguage = Language.DE;
   countryName = Country.GERMANY;
 
-  constructor(public appStateService: AppStateService) {
+  constructor(public appStateService: AppStateService, public countdownService: CountdownService) {
   }
 
   ngOnInit(): void {

@@ -41,7 +41,8 @@ export const demoTestsStateModel: DemoTestsStateModel = {
         stateTestQuestions: UtilService.getRandomStateQuestions(GermanStatesEnum.BAVARIA)
       },
       selectedStateCurrentQuestionIndex: 0,
-      isExamFinished: false
+      isExamFinished: false,
+      examTime: {minutes: 60, seconds: 0}
     },
     {
       id: 2,
@@ -62,7 +63,8 @@ export const demoTestsStateModel: DemoTestsStateModel = {
         stateTestQuestions: UtilService.getRandomStateQuestions(GermanStatesEnum.BAVARIA)
       },
       selectedStateCurrentQuestionIndex: -1,
-      isExamFinished: false
+      isExamFinished: false,
+      examTime: {minutes: 18, seconds: 28}
     },
     {
       id: 3,
@@ -84,7 +86,8 @@ export const demoTestsStateModel: DemoTestsStateModel = {
       },
       selectedStateCurrentQuestionIndex: 1,
       isExamFinished: true,
-      finishReason: ExamFinishReasonEnum.TIME_OVER
+      finishReason: ExamFinishReasonEnum.TIME_OVER,
+      examTime: {minutes: 0, seconds: 0}
     },
     {
       id: 4,
@@ -105,7 +108,8 @@ export const demoTestsStateModel: DemoTestsStateModel = {
         stateTestQuestions: UtilService.getRandomStateQuestions(GermanStatesEnum.NIEDERSACHSEN)
       },
       selectedStateCurrentQuestionIndex: 3,
-      isExamFinished: true
+      isExamFinished: false,
+      examTime: {minutes: 2, seconds: 5}
     }
   ]
 };

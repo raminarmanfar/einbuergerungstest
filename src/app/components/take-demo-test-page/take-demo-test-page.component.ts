@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {PageEvent} from '@angular/material/paginator';
 import {MatDialog} from '@angular/material/dialog';
@@ -11,16 +11,19 @@ import {DialogYesNoComponent} from '../dialog-yes-no/dialog-yes-no.component';
 import {YesNoEnum} from '../../models/enums/yes-no.enum';
 import {ConstantValues} from '../../utils/constant-values';
 import {CountdownService} from "../../utils/countdown.service";
-import {TimeMode} from "../../models/time.mode";
+import {TimeModel} from "../../models/time.model";
+import {Subscription} from "rxjs";
 
 @Component({
   selector: 'app-take-demo-test-page',
   templateUrl: './take-demo-test-page.component.html',
   styleUrls: ['./take-demo-test-page.component.scss']
 })
-export class TakeDemoTestPageComponent implements OnInit {
+export class TakeDemoTestPageComponent implements OnInit, OnDestroy {
   testInfo!: DemoTestInfoModel;
-  examTime!: TimeMode;
+  examTime!: TimeModel;
+  private testInfoSubscription!: Subscription;
+  private getTimeSubscription!: Subscription;
   protected readonly QuestionSetTypeEnum = QuestionSetTypeEnum;
   protected readonly trPrefix = 'demo-test-exam.';
   protected readonly trPrefixStateName = 'review-states-tests.german-states.';
@@ -41,12 +44,20 @@ export class TakeDemoTestPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.demoTestsStateService.currentTest$.subscribe(currentTest => this.testInfo = currentTest);
-    this.countdownService.startCountdown({minutes: 60, seconds: 0});
-    this.countdownService.getTime().subscribe(time => this.examTime = time);
+    this.testInfoSubscription = this.demoTestsStateService.currentTest$.subscribe(currentTest => {
+      this.testInfo = currentTest;
+      this.countdownService.startCountdown({minutes: currentTest.examTime.minutes, seconds: currentTest.examTime.seconds});
+    });
+    this.getTimeSubscription = this.countdownService.getTime().subscribe(time => this.examTime = time);
+  }
+
+  ngOnDestroy(): void {
+    this.testInfoSubscription.unsubscribe();
+    this.getTimeSubscription.unsubscribe();
   }
 
   onReturnClick(): void {
+    this.countdownService.stopCountdown();
     this.router.navigate(['/demo-exams-list']).then();
   }
 
