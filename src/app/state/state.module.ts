@@ -9,7 +9,6 @@ import {ReviewStatesTestsState} from './review-states-tests/review-states-tests.
 import {ReviewDeutschlandQuestionsState} from './review-deutschland-questions/review-deutschland-questions.state';
 import {DemoTestsState} from './demo-tests/demo-tests-state';
 
-
 @NgModule({
   declarations: [],
   imports: [
@@ -17,7 +16,7 @@ import {DemoTestsState} from './demo-tests/demo-tests-state';
     NgxsModule.forRoot([AppState, ReviewDeutschlandQuestionsState, ReviewStatesTestsState, DemoTestsState]),
     NgxsStoragePluginModule.forRoot({
       key: [AppState, ReviewDeutschlandQuestionsState, ReviewStatesTestsState, DemoTestsState],
-      storage: StorageOption.SessionStorage
+      storage: StorageOption.LocalStorage
     }),
     NgxsReduxDevtoolsPluginModule.forRoot(),
     NgxsLoggerPluginModule.forRoot()
