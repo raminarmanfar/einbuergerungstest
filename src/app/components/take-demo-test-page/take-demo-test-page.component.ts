@@ -53,6 +53,7 @@ export class TakeDemoTestPageComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.demoTestsStateService.setExamCountdownTimer(this.examTime);
+    this.countdownService.stopCountdown();
     this.testInfoSubscription.unsubscribe();
     this.getTimeSubscription.unsubscribe();
   }
