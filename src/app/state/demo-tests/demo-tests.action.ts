@@ -1,6 +1,7 @@
 import {CurrentQuestionIndexPayloadModel, UpdateQuestionPayloadModel} from '../models/payloads.model';
 import {QuestionSetTypeEnum} from '../../models/enums/question-set-type.enum';
 import {ExamFinishReasonEnum} from '../../models/enums/exam-finish-reason.enum';
+import {TimeModel} from "../../models/time.model";
 
 export class SetActiveQuestionsSet {
   public static type = '[DemoTestsState] Set Active Questions Set';
@@ -9,6 +10,12 @@ export class SetActiveQuestionsSet {
   }
 }
 
+export class SetExamCountdownTimer {
+  public static type = '[DemoTestsState] Set Exam Countdown Timer';
+
+  constructor(public payload: TimeModel) {
+  }
+}
 export class FinishExam {
   public static type = '[DemoTestsState] Finish The Exam';
 

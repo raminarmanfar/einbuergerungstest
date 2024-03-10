@@ -6,13 +6,14 @@ import {DemoTestInfoModel} from '../../models/demo-test-info.model';
 import {
   FinishExam,
   SetActiveQuestionsSet,
-  SetCurrentQuestionIndex,
+  SetCurrentQuestionIndex, SetExamCountdownTimer,
   SetSelectedDemoTestId,
   UpdateTestQuestion
 } from './demo-tests.action';
 import {CurrentQuestionIndexPayloadModel, UpdateQuestionPayloadModel} from '../models/payloads.model';
 import {QuestionSetTypeEnum} from '../../models/enums/question-set-type.enum';
 import {ExamFinishReasonEnum} from '../../models/enums/exam-finish-reason.enum';
+import {TimeModel} from "../../models/time.model";
 
 @Injectable({providedIn: 'root'})
 export class DemoTestsStateService {
@@ -25,6 +26,10 @@ export class DemoTestsStateService {
 
   setActiveQuestionsSet(activeQuestionSet: QuestionSetTypeEnum): void {
     this.store.dispatch(new SetActiveQuestionsSet(activeQuestionSet));
+  }
+
+  setExamCountdownTimer(countdownTimer: TimeModel): void {
+    this.store.dispatch(new SetExamCountdownTimer(countdownTimer));
   }
 
   finishExam(finishReason: ExamFinishReasonEnum): void {

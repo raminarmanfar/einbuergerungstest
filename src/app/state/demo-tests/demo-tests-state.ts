@@ -7,6 +7,7 @@ import {DemoTestInfoModel} from '../../models/demo-test-info.model';
 import {
   FinishExam,
   SetActiveQuestionsSet,
+  SetExamCountdownTimer,
   SetCurrentQuestionIndex,
   SetSelectedDemoTestId,
   UpdateTestQuestion
@@ -136,6 +137,20 @@ export class DemoTestsState {
           patch<DemoTestsStateModel>({
             demoTests: updateItem<DemoTestInfoModel>(
               t => t.id === currentState.currentTestId, patch({activeQuestionSet: payload}))
+          })
+        )
+      )
+    );
+  }
+
+  @Action(SetExamCountdownTimer)
+  setExamCountdownTimer(ctx: StateContext<DemoTestsStateModel>, {payload}: SetExamCountdownTimer): Observable<DemoTestsStateModel> {
+    return of(ctx.getState()).pipe(
+      map(currentState =>
+        ctx.setState(
+          patch<DemoTestsStateModel>({
+            demoTests: updateItem<DemoTestInfoModel>(
+              t => t.id === currentState.currentTestId, patch({examTime: payload}))
           })
         )
       )

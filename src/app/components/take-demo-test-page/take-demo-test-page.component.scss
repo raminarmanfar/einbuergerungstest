@@ -1,10 +1,18 @@
 .container {
-  margin: 15px;
-  overflow: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: hidden;
   height: 100%;
+  padding: 0;
 }
 
-.expansion-panel {
+.exam-body-container {
+  overflow-y: auto;
+  height: calc(100% - 58px);
+  padding: 0;
+}
+
+.expansion-panel-border {
   border: 2px gray solid;
 }
 
@@ -22,12 +30,45 @@
 }
 
 .timer-container {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
   font-size: 19px;
   font-weight: bold;
   padding: 15px;
-  margin: 10px;
+
+  margin: 10px auto;
   z-index: 9999;
   border-radius: 20px;
   border: 2px solid red;
   background-color: yellow;
+}
+
+@media (min-width: 300px) {
+  .timer-container {
+    top: 48px;
+    width: 80%;
+    font-size: 17px;
+  }
+}
+@media (min-width: 425px) {
+  .timer-container {
+    top: 48px;
+    width: 60%;
+    font-size: 19px;
+  }
+}
+@media (min-width: 600px) {
+  .timer-container {
+    top: 56px;
+    width: 60%;
+    font-size: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .timer-container {
+    width: 30%;
+    font-size: 26px;
+  }
 }

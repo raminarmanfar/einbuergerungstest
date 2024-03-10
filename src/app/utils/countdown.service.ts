@@ -4,9 +4,8 @@ import {TimeModel} from "../models/time.model";
 
 @Injectable({providedIn: 'root'})
 export class CountdownService {
-  private intervalId: any;
-  private time!: TimeModel;
-  private timeSubject = new BehaviorSubject<TimeModel>({minutes: 0, seconds: 0});
+  private intervalId!: number;
+  private timeSubject!: BehaviorSubject<TimeModel>;
 
   public getFormattedTime(time: TimeModel): string {
     const formattedMinutes = time.minutes.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping: false,});
@@ -20,14 +19,15 @@ export class CountdownService {
 
   public stopCountdown(): void {
     if (this.intervalId) {
-      this.time = {minutes: 0, seconds: 0};
       clearInterval(this.intervalId);
     }
   }
 
-  public startCountdown(time: TimeModel): void {
-    this.time = time;
-     this.intervalId = setInterval(() => {
+  public startCountdown(countdownTime: TimeModel): void {
+    const time: TimeModel = {...countdownTime};
+    this.timeSubject = new BehaviorSubject<TimeModel>(time);
+
+    this.intervalId = setInterval(() => {
       this.timeSubject.next(time);
       time.seconds--;
       if (time.minutes >= 0 && time.seconds < 0) {

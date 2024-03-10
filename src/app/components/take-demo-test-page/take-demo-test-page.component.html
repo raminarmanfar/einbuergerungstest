@@ -1,88 +1,93 @@
-<div class="timer-container" fxLayout="row" fxLayoutAlign="center center">
-  <div style="margin-left: 5px; margin-right: 5px">{{trPrefix + 'time-left' | translate}}: </div>
-  <div>{{countdownService.getFormattedTime(examTime) | persianNumber}}</div>
-</div>
 <div class="container">
-  <mat-accordion>
-    <mat-expansion-panel
-      class="expansion-panel"
-      [expanded]="testInfo.activeQuestionSet === QuestionSetTypeEnum.STATE"
-      (opened)="demoTestsStateService.setActiveQuestionsSet(QuestionSetTypeEnum.STATE)">
-      <mat-expansion-panel-header>
-        <mat-panel-title class="demo-test-title">
-          {{ trPrefix + 'state-question-title' | translate }}
-          ({{ trPrefixStateName + testInfo.selectedState.name + '.state' | translate }})
-        </mat-panel-title>
-        <mat-panel-description>{{ trPrefix + 'state-question-description' | translate }}</mat-panel-description>
-      </mat-expansion-panel-header>
+  <div class="timer-container" fxLayout="row" fxLayoutAlign="center center">
+    <div style="margin-left: 5px; margin-right: 5px">{{trPrefix + 'time-left' | translate}}:</div>
+    <div>{{countdownService.getFormattedTime(examTime) | persianNumber}}</div>
+  </div>
 
-      <app-questionnaire-list
-        *ngIf="testInfo.selectedState"
-        [currentQuestionIndex]="testInfo.selectedStateCurrentQuestionIndex"
-        [stateInfo]="testInfo.selectedState"
-        [paginatorData]="statePaginatorData"
-        [trPrefix]="'review-states-tests.german-states.'"
-        [showAnswersKeys]="false"
-        [showArrayIndexAsRow]="true"
-        [answersClickable]="true"
-        [showUserResults]="testInfo.isExamFinished"
-        (expansionPanelOpen)="onCurrentQuestionChange($event, QuestionSetTypeEnum.STATE)"
-        (answerChange)="onStateAnswerChange($event, QuestionSetTypeEnum.STATE)">
-      </app-questionnaire-list>
+  <div style="height: 58px;"></div>
+  <div class="exam-body-container">
+    <mat-accordion>
+      <mat-expansion-panel
+        class="expansion-panel-border"
+        [expanded]="testInfo.activeQuestionSet === QuestionSetTypeEnum.STATE"
+        (opened)="demoTestsStateService.setActiveQuestionsSet(QuestionSetTypeEnum.STATE)">
+        <mat-expansion-panel-header>
+          <mat-panel-title class="demo-test-title">
+            {{ trPrefix + 'state-question-title' | translate }}
+            ({{ trPrefixStateName + testInfo.selectedState.name + '.state' | translate }})
+          </mat-panel-title>
+          <mat-panel-description>{{ trPrefix + 'state-question-description' | translate }}</mat-panel-description>
+        </mat-expansion-panel-header>
 
-    </mat-expansion-panel>
+        <app-questionnaire-list
+          *ngIf="testInfo.selectedState"
+          [currentQuestionIndex]="testInfo.selectedStateCurrentQuestionIndex"
+          [stateInfo]="testInfo.selectedState"
+          [paginatorData]="statePaginatorData"
+          [trPrefix]="'review-states-tests.german-states.'"
+          [showAnswersKeys]="false"
+          [showArrayIndexAsRow]="true"
+          [answersClickable]="true"
+          [showUserResults]="testInfo.isExamFinished"
+          (expansionPanelOpen)="onCurrentQuestionChange($event, QuestionSetTypeEnum.STATE)"
+          (answerChange)="onStateAnswerChange($event, QuestionSetTypeEnum.STATE)">
+        </app-questionnaire-list>
 
-    <mat-expansion-panel
-      class="expansion-panel"
-      [expanded]="testInfo.activeQuestionSet === QuestionSetTypeEnum.DEUTSCHLAND"
-      (opened)="demoTestsStateService.setActiveQuestionsSet(QuestionSetTypeEnum.DEUTSCHLAND)">
-      <mat-expansion-panel-header>
-        <mat-panel-title class="demo-test-title">{{ trPrefix + 'deutschland-question-title' | translate }}
-        </mat-panel-title>
-        <mat-panel-description>{{ trPrefix + 'deutschland-question-description' | translate }}</mat-panel-description>
-      </mat-expansion-panel-header>
+      </mat-expansion-panel>
 
-      <app-questionnaire-list
-        *ngIf="testInfo.deutschlandState"
-        [currentQuestionIndex]="testInfo.deutschlandCurrentQuestionIndex"
-        [stateInfo]="testInfo.deutschlandState"
-        [paginatorData]="deutschlandPaginatorData"
-        [trPrefix]="'review-deutschland-tests.'"
-        [showAnswersKeys]="false"
-        [showArrayIndexAsRow]="true"
-        [answersClickable]="true"
-        [showUserResults]="testInfo.isExamFinished"
-        (expansionPanelOpen)="onCurrentQuestionChange($event, QuestionSetTypeEnum.DEUTSCHLAND)"
-        (answerChange)="onStateAnswerChange($event, QuestionSetTypeEnum.DEUTSCHLAND)">
-      </app-questionnaire-list>
-    </mat-expansion-panel>
-  </mat-accordion>
+      <mat-expansion-panel
+        class="expansion-panel-border"
+        [expanded]="testInfo.activeQuestionSet === QuestionSetTypeEnum.DEUTSCHLAND"
+        (opened)="demoTestsStateService.setActiveQuestionsSet(QuestionSetTypeEnum.DEUTSCHLAND)">
+        <mat-expansion-panel-header>
+          <mat-panel-title class="demo-test-title">{{ trPrefix + 'deutschland-question-title' | translate }}
+          </mat-panel-title>
+          <mat-panel-description>{{ trPrefix + 'deutschland-question-description' | translate }}</mat-panel-description>
+        </mat-expansion-panel-header>
 
-  <div class="footer-container" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center">
-    <button *ngIf="!testInfo.isExamFinished else showExamResultDetails" fxFlex.sm="50%" fxFlex.md="30%" fxFlex.lg="25%"
-            fxFlex.xl="15%"
-            mat-fab extended color="warn" class="footer-button"
-            matTooltipPosition="above" [matTooltip]="trPrefix + 'finish-test' | translate"
-            (click)="onFinishExamClick('1200ms', '1000ms')">
-      <mat-icon>clear</mat-icon>
-      {{ trPrefix + 'finish-exam-btn' | translate }}
-    </button>
-    <ng-template #showExamResultDetails>
-      <button fxFlex.sm="50%" fxFlex.md="30%" fxFlex.lg="25%" fxFlex.xl="15%"
-              mat-fab extended color="accent" class="footer-button"
+        <app-questionnaire-list
+          *ngIf="testInfo.deutschlandState"
+          [currentQuestionIndex]="testInfo.deutschlandCurrentQuestionIndex"
+          [stateInfo]="testInfo.deutschlandState"
+          [paginatorData]="deutschlandPaginatorData"
+          [trPrefix]="'review-deutschland-tests.'"
+          [showAnswersKeys]="false"
+          [showArrayIndexAsRow]="true"
+          [answersClickable]="true"
+          [showUserResults]="testInfo.isExamFinished"
+          (expansionPanelOpen)="onCurrentQuestionChange($event, QuestionSetTypeEnum.DEUTSCHLAND)"
+          (answerChange)="onStateAnswerChange($event, QuestionSetTypeEnum.DEUTSCHLAND)">
+        </app-questionnaire-list>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <div class="footer-container" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center">
+      <button *ngIf="!testInfo.isExamFinished else showExamResultDetails" fxFlex.sm="50%" fxFlex.md="30%"
+              fxFlex.lg="25%"
+              fxFlex.xl="15%"
+              mat-fab extended color="warn" class="footer-button"
               matTooltipPosition="above" [matTooltip]="trPrefix + 'finish-test' | translate"
-              (click)="onExamResultDetailClick()">
-        <mat-icon>list</mat-icon>
-        {{ trPrefix + 'exam-result-details-btn' | translate }}
+              (click)="onFinishExamClick('1200ms', '1000ms')">
+        <mat-icon>clear</mat-icon>
+        {{ trPrefix + 'finish-exam-btn' | translate }}
       </button>
-    </ng-template>
-    <button fxFlex.sm="50%" fxFlex.md="30%" fxFlex.lg="25%" fxFlex.xl="15%"
-            mat-fab extended color="primary"
-            class="footer-button"
-            matTooltipPosition="above" [matTooltip]="trPrefix + 'return-to-list' | translate"
-            (click)="onReturnClick()">
-      <mat-icon>keyboard_backspace</mat-icon>
-      {{ trPrefix + 'return-to-list-btn' | translate }}
-    </button>
+      <ng-template #showExamResultDetails>
+        <button fxFlex.sm="50%" fxFlex.md="30%" fxFlex.lg="25%" fxFlex.xl="15%"
+                mat-fab extended color="accent" class="footer-button"
+                matTooltipPosition="above" [matTooltip]="trPrefix + 'finish-test' | translate"
+                (click)="onExamResultDetailClick()">
+          <mat-icon>list</mat-icon>
+          {{ trPrefix + 'exam-result-details-btn' | translate }}
+        </button>
+      </ng-template>
+      <button fxFlex.sm="50%" fxFlex.md="30%" fxFlex.lg="25%" fxFlex.xl="15%"
+              mat-fab extended color="primary"
+              class="footer-button"
+              matTooltipPosition="above" [matTooltip]="trPrefix + 'return-to-list' | translate"
+              (click)="onReturnClick()">
+        <mat-icon>keyboard_backspace</mat-icon>
+        {{ trPrefix + 'return-to-list-btn' | translate }}
+      </button>
+    </div>
   </div>
 </div>
