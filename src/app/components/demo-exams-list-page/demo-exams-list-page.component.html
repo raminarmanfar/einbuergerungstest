@@ -20,7 +20,7 @@
         <button mat-mini-fab color="primary"
                 matTooltipPosition="above"
                 [matTooltip]="trPrefixTable + 'goto-test' | translate: {testId: element.id} | persianNumber"
-                (click)="onSelectedTestClick(element); $event.stopPropagation()">
+                (click)="onDemoTestDialogClick(element); $event.stopPropagation()">
           {{element.id | persianNumber}}
         </button>
       </td>

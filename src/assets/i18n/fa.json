@@ -4313,6 +4313,6 @@
     },
     "time-left": "زمان باقیمانده: {{remainingTime}}",
     "exam-finished": "آزمون به پایان رسید",
-    "finish-reason-label": "دلیل پایان: "
+    "finish-reason-label": "علت اتمام : "
   }
 }

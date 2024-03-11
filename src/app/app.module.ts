@@ -27,6 +27,7 @@ import {QuestionnaireListComponent} from './components/questionnaire-list/questi
 import { TakeDemoTestPageComponent } from './components/take-demo-test-page/take-demo-test-page.component';
 import { DemoExamsListPageComponent } from './components/demo-exams-list-page/demo-exams-list-page.component';
 import { DialogYesNoComponent } from './components/dialog-yes-no/dialog-yes-no.component';
+import { DemoTestDetailsComponent } from './components/demo-test-details/demo-test-details.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -46,6 +47,7 @@ export function createTranslateLoader(http: HttpClient) {
     TakeDemoTestPageComponent,
     DemoExamsListPageComponent,
     DialogYesNoComponent,
+    DemoTestDetailsComponent,
   ],
   imports: [
     BrowserModule,

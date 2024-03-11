@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="examTime">
   <mat-card class="info-card-container">
     <mat-card-content>
       <div class="info-card-title">Demo exam {{ testInfo.id }}: {{ testInfo.title }}</div>
@@ -80,7 +80,7 @@
               fxFlex.xl="15%"
               mat-fab extended color="warn" class="footer-button"
               matTooltipPosition="above" [matTooltip]="trPrefix + 'finish-test' | translate"
-              (click)="onFinishExamClick('1200ms', '1000ms')">
+              (click)="onFinishExamClick()">
         <mat-icon>clear</mat-icon>
         {{ trPrefix + 'finish-exam-btn' | translate }}
       </button>

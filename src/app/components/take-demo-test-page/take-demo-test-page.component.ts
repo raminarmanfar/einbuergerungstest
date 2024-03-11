@@ -1,7 +1,6 @@
 import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {PageEvent} from '@angular/material/paginator';
-import {MatDialog} from '@angular/material/dialog';
 import {concatMap, Subscription} from 'rxjs';
 
 import {DemoTestsStateService} from '../../state/demo-tests/demo-tests-state.service';
@@ -14,6 +13,7 @@ import {YesNoEnum} from '../../models/enums/yes-no.enum';
 import {ConstantValues} from '../../utils/constant-values';
 import {CountdownService} from '../../utils/countdown.service';
 import {TimeModel} from '../../models/time.model';
+import {UtilService} from '../../utils/util.service';
 
 @Component({
   selector: 'app-take-demo-test-page',
@@ -53,7 +53,7 @@ export class TakeDemoTestPageComponent implements OnInit, OnDestroy {
 
   constructor(public demoTestsStateService: DemoTestsStateService,
               public countdownService: CountdownService,
-              private router: Router, private dialog: MatDialog) {
+              private router: Router, private utilService: UtilService) {
   }
 
   ngOnInit(): void {
@@ -95,18 +95,10 @@ export class TakeDemoTestPageComponent implements OnInit, OnDestroy {
     this.demoTestsStateService.updateTestQuestion({selectedQuestion, activeQuestionSet});
   }
 
-  onFinishExamClick(enterAnimationDuration: string, exitAnimationDuration: string): void {
-    this.dialog.open(DialogYesNoComponent,
-      {
-        disableClose: true,
-        data: {
-          height: '400px',
-          width: '600px',
-          enterAnimationDuration,
-          exitAnimationDuration,
-          trPrefix: 'demo-test-exam.finish-exam-dialog.'
-        }
-      }).afterClosed().subscribe((result: YesNoEnum) => {
+  onFinishExamClick(): void {
+    this.utilService.openDialog(DialogYesNoComponent, 400, 400, {
+      trPrefix: 'demo-test-exam.finish-exam-dialog.'
+    }).subscribe((result: YesNoEnum) => {
       if (result === YesNoEnum.YES) {
         this.demoTestsStateService.finishExam(ExamFinishReasonEnum.USER_FINISHED);
       }
