@@ -4292,7 +4292,6 @@
     }
   },
   "demo-test-exam": {
-    "time-left": "Kalan Zaman",
     "state-question-title": "Eyalet Soruları",
     "state-question-description": "Eyalet sorularını göster/gizle",
     "deutschland-question-title": "Almanya Soruları",
@@ -4305,6 +4304,14 @@
       "description": "Sınav sona erecek ve tekrar devam etmek mümkün olmayacak!",
       "btnConfirm": "Evet, bitir",
       "btnReject": "İptal"
-    }
+    },
+    "finish-reason": {
+      "user-finished": "Kullanıcı sınavı tamamladı",
+      "time-over": "Süre Doldu",
+      "technical-issue": "Teknik Sorun"
+    },
+    "time-left": "Kalan süre: {{remainingTime}}",
+    "exam-finished": "Sınav Tamamlandı",
+    "finish-reason-label": "Bitirme nedeni: "
   }
 }

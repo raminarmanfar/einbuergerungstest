@@ -25,7 +25,7 @@ export const demoTestsStateModel: DemoTestsStateModel = {
   demoTests: [
     {
       id: 1,
-      title: 'Bayern test.',
+      title: 'Bayern test. This is my initial demo-exam. I am trying to take a demo test and train for the real exam.',
       dateCreated: '01.01.2024',
       dateLastModified: '04.01.2024',
       correctAnswered: 0,
@@ -65,7 +65,7 @@ export const demoTestsStateModel: DemoTestsStateModel = {
       },
       selectedStateCurrentQuestionIndex: -1,
       isExamFinished: false,
-      examTime: {minutes: 18, seconds: 28}
+      examTime: {minutes: 5, seconds: 8}
     },
     {
       id: 3,
@@ -103,14 +103,14 @@ export const demoTestsStateModel: DemoTestsStateModel = {
         ...ConstantValues.DEUTSCHLAND_STATE,
         stateTestQuestions: UtilService.getRandomDeutschlandDemoTestQuestions()
       },
-      deutschlandCurrentQuestionIndex: 33,
+      deutschlandCurrentQuestionIndex: 5,
       selectedState: {
         ...ConstantValues.GERMAN_STATES[8],
         stateTestQuestions: UtilService.getRandomStateQuestions(GermanStatesEnum.NIEDERSACHSEN)
       },
-      selectedStateCurrentQuestionIndex: 3,
+      selectedStateCurrentQuestionIndex: 1,
       isExamFinished: false,
-      examTime: {minutes: 2, seconds: 5}
+      examTime: {minutes: 0, seconds: 10}
     }
   ]
 };

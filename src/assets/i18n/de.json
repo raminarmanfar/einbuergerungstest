@@ -4291,7 +4291,6 @@
     }
   },
   "demo-test-exam": {
-    "time-left": "Verbleibende Zeit",
     "state-question-title": "Bundesfragen",
     "state-question-description": "Klicken Sie, um Bundesfragen anzuzeigen/auszublenden",
     "deutschland-question-title": "Deutschland-Fragen",
@@ -4304,6 +4303,14 @@
       "description": "Die Prüfung wird beendet und kann nicht mehr fortgesetzt werden!",
       "btnConfirm": "Ja, beenden Sie es",
       "btnReject": "Abbrechen"
-    }
+    },
+    "finish-reason": {
+      "user-finished": "Benutzer hat die Prüfung beendet",
+      "time-over": "Zeit abgelaufen",
+      "technical-issue": "Technisches Problem"
+    },
+    "time-left": "Verbleibende Zeit: {{remainingTime}}",
+    "exam-finished": "Prüfung beendet",
+    "finish-reason-label": "Grund für das Beenden: "
   }
 }

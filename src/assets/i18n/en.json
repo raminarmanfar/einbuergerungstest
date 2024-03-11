@@ -4293,7 +4293,6 @@
     }
   },
   "demo-test-exam": {
-    "time-left": "Time Left",
     "state-question-title": "State Questions",
     "state-question-description": "Click to show/hide State questions",
     "deutschland-question-title": "Deutschland Questions",
@@ -4306,6 +4305,14 @@
       "description": "The exam will finish and no longer be possible to continue again!",
       "btnConfirm": "Yes finish it",
       "btnReject": "Cancel"
-    }
+    },
+    "finish-reason": {
+      "user-finished": "User finished the exam",
+      "time-over": "Time Over",
+      "technical-issue": "Technical issue"
+    },
+    "time-left": "Remaining time: {{remainingTime}}",
+    "exam-finished": "Exam Finished",
+    "finish-reason-label": "Finish reason: "
   }
 }

@@ -1,7 +1,9 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {PageEvent} from '@angular/material/paginator';
 import {MatDialog} from '@angular/material/dialog';
+import {concatMap, Subscription} from 'rxjs';
+
 import {DemoTestsStateService} from '../../state/demo-tests/demo-tests-state.service';
 import {DemoTestInfoModel} from '../../models/demo-test-info.model';
 import {TestQuestionModel} from '../../models/test-question.model';
@@ -10,9 +12,8 @@ import {ExamFinishReasonEnum} from '../../models/enums/exam-finish-reason.enum';
 import {DialogYesNoComponent} from '../dialog-yes-no/dialog-yes-no.component';
 import {YesNoEnum} from '../../models/enums/yes-no.enum';
 import {ConstantValues} from '../../utils/constant-values';
-import {CountdownService} from "../../utils/countdown.service";
-import {TimeModel} from "../../models/time.model";
-import {Subscription} from "rxjs";
+import {CountdownService} from '../../utils/countdown.service';
+import {TimeModel} from '../../models/time.model';
 
 @Component({
   selector: 'app-take-demo-test-page',
@@ -20,6 +21,18 @@ import {Subscription} from "rxjs";
   styleUrls: ['./take-demo-test-page.component.scss']
 })
 export class TakeDemoTestPageComponent implements OnInit, OnDestroy {
+  @HostListener('window:unload', ['$event'])
+  unloadHandler(event: any): void {
+    console.log('>>>', event);
+  }
+
+  @HostListener('window:beforeunload', ['$event'])
+  beforeUnloadHandler(event: any): void {
+    console.log('>>>', event);
+    this.destroyAllAndSetCurrentTimer();
+    this.testInfoSubscription.unsubscribe();
+  }
+
   testInfo!: DemoTestInfoModel;
   examTime!: TimeModel;
   private testInfoSubscription!: Subscription;
@@ -44,22 +57,33 @@ export class TakeDemoTestPageComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.testInfoSubscription = this.demoTestsStateService.currentTest$.subscribe(currentTest => {
-      this.testInfo = currentTest;
-      this.countdownService.startCountdown({minutes: currentTest.examTime.minutes, seconds: currentTest.examTime.seconds});
+    this.testInfoSubscription = this.demoTestsStateService.currentTest$.subscribe(testInfo => this.testInfo = testInfo);
+    this.getTimeSubscription = this.demoTestsStateService.currentTest$.pipe(
+      concatMap(() => this.countdownService.startCountdown(this.testInfo.examTime))
+    ).subscribe(countdown => {
+      this.examTime = countdown;
+      if (countdown.minutes === 0 && countdown.seconds === 0) {
+        this.destroyAllAndSetCurrentTimer();
+        this.demoTestsStateService.finishExam(ExamFinishReasonEnum.TIME_OVER);
+        this.testInfoSubscription.unsubscribe();
+      }
     });
-    this.getTimeSubscription = this.countdownService.getTime().subscribe(time => this.examTime = time);
+  }
+
+  private destroyAllAndSetCurrentTimer(): void {
+    this.countdownService.stopCountdown();
+    this.getTimeSubscription.unsubscribe();
+    this.demoTestsStateService.setExamCountdownTimer(this.examTime);
   }
 
   ngOnDestroy(): void {
-    this.demoTestsStateService.setExamCountdownTimer(this.examTime);
-    this.countdownService.stopCountdown();
+    this.destroyAllAndSetCurrentTimer();
     this.testInfoSubscription.unsubscribe();
-    this.getTimeSubscription.unsubscribe();
   }
 
   onReturnClick(): void {
-    this.countdownService.stopCountdown();
+    this.destroyAllAndSetCurrentTimer();
+    this.testInfoSubscription.unsubscribe();
     this.router.navigate(['/demo-exams-list']).then();
   }
 

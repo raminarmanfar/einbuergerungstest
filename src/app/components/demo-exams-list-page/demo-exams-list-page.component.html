@@ -21,14 +21,16 @@
                 matTooltipPosition="above"
                 [matTooltip]="trPrefixTable + 'goto-test' | translate: {testId: element.id} | persianNumber"
                 (click)="onSelectedTestClick(element); $event.stopPropagation()">
-          {{element.id}}
+          {{element.id | persianNumber}}
         </button>
       </td>
     </ng-container>
 
     <ng-container matColumnDef="title">
       <th mat-header-cell *matHeaderCellDef>{{trPrefixTable + 'title' | translate}}</th>
-      <td mat-cell *matCellDef="let element" class="no-wrap" matTooltipPosition="above" [matTooltip]="element.title">{{element.title}}</td>
+      <td mat-cell *matCellDef="let element" class="no-wrap" matTooltipPosition="above" [matTooltip]="element.title">
+        {{element.title | persianNumber}}
+      </td>
     </ng-container>
 
     <ng-container matColumnDef="correctAnswered">

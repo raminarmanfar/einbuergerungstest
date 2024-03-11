@@ -1,14 +1,41 @@
 .container {
-  margin-left: 10px;
-  margin-right: 10px;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   height: 100%;
+  overflow: hidden;
   padding: 0;
+  margin: 0 10px 0 10px;
+}
+
+.info-card-container {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid gray;
+  background-color: lightyellow;
+}
+
+.info-card-timer {
+  margin-top: 15px;
+  font-weight: bold;
+  color: blue;
+}
+
+.info-card-title {
+  font-weight: bold;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.reason-text {
+  margin-top: 10px;
+  white-space: normal;
 }
 
 .exam-body-container {
+  flex-grow: 1;
   overflow-y: auto;
-  height: calc(100% - 58px);
   padding: 0;
 }
 
@@ -29,46 +56,20 @@
   font-weight: bold;
 }
 
-.timer-container {
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  font-size: 19px;
-  font-weight: bold;
-  padding: 15px;
-
-  margin: 10px auto;
-  z-index: 9999;
-  border-radius: 20px;
-  border: 2px solid red;
-  background-color: yellow;
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-@media (min-width: 300px) {
-  .timer-container {
-    top: 48px;
-    width: 80%;
-    font-size: 17px;
-  }
+.blinking-text {
+  color: darkred;
+  animation: blink 1s infinite;
 }
-@media (min-width: 425px) {
-  .timer-container {
-    top: 48px;
-    width: 60%;
-    font-size: 19px;
-  }
-}
-@media (min-width: 600px) {
-  .timer-container {
-    top: 56px;
-    width: 60%;
-    font-size: 24px;
-  }
-}
-@media (min-width: 1024px) {
-  .timer-container {
-    width: 30%;
-    font-size: 26px;
-  }
-}
+

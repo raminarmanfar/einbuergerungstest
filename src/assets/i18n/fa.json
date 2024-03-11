@@ -4293,7 +4293,6 @@
     }
   },
   "demo-test-exam": {
-    "time-left": "زمان باقی مانده",
     "state-question-title": "سوالات استان",
     "state-question-description": "برای نمایش/مخفی کردن سوالات استان کلیک کنید",
     "deutschland-question-title": "سوالات آلمان",
@@ -4306,6 +4305,14 @@
       "description": "آزمون به اتمام خواهد رسید و دیگر امکان ادامه وجود ندارد!",
       "btnConfirm": "بله، اتمام دهید",
       "btnReject": "لغو"
-    }
+    },
+    "finish-reason": {
+      "user-finished": "کاربر آزمون را به پایان رساند",
+      "time-over": "زمان تمام شد",
+      "technical-issue": "مشکل فنی"
+    },
+    "time-left": "زمان باقیمانده: {{remainingTime}}",
+    "exam-finished": "آزمون به پایان رسید",
+    "finish-reason-label": "دلیل پایان: "
   }
 }

@@ -31,6 +31,10 @@ export class UtilService {
     return sortByRandomList ? res.sort((a, b) => randomQuestionsIds.indexOf(a.id) - randomQuestionsIds.indexOf(b.id)) : res;
   }
 
+  public static cloneDeep<T>(object: T): T {
+    return object ? JSON.parse(JSON.stringify(object)) : { ...object };
+  }
+
   public static getRandomStateQuestions(stateName: GermanStatesEnum, sortByRandomList = true): TestQuestionModel[] {
     const stateInfo = ConstantValues.GERMAN_STATES.find(s => s.name === stateName);
     if (!stateInfo) {
