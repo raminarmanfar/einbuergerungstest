@@ -7,12 +7,18 @@
         {{ trPrefix + 'time-left' | translate: {remainingTime: countdownService.formatTime(examTime)} | persianNumber }}
       </div>
       <ng-template #examFinished>
-        <div class="info-card-timer blinking-text" *ngIf="testInfo.isExamFinished">
+        <div class="info-card-timer blinking-text">
           {{ trPrefix + 'exam-finished' | translate }}
         </div>
 
-        <div class="info-card-title reason-text blinking-text" *ngIf="testInfo.isExamFinished">
-          {{trPrefix + 'finish-reason-label' | translate}}{{ trPrefix + 'finish-reason.' + testInfo.finishReason | translate }}
+        <div class="info-card-title reason-text">
+          {{ trPrefix + 'finish-reason-label' | translate }}{{ trPrefix + 'finish-reason.' + testInfo.finishReason | translate }}
+        </div>
+        <div class="info-card-title result-text">
+          <p>{{ trPrefix + 'exam-result' | translate }}</p>:
+          <p [ngClass]="{'passed': correctAnswersCount >= 17, 'failed': correctAnswersCount < 17}">
+          {{ trPrefix + (correctAnswersCount >= 17 ? 'passed' : 'failed') | translate: {correctAnswers: correctAnswersCount} }}
+        </p>
         </div>
       </ng-template>
     </mat-card-content>
@@ -79,7 +85,7 @@
               fxFlex.lg="25%"
               fxFlex.xl="15%"
               mat-fab extended color="warn" class="footer-button"
-              matTooltipPosition="above" [matTooltip]="trPrefix + 'finish-test' | translate"
+              matTooltipPosition="above" [matTooltip]="trPrefix + 'finish-exam-btn' | translate"
               (click)="onFinishExamClick()">
         <mat-icon>clear</mat-icon>
         {{ trPrefix + 'finish-exam-btn' | translate }}
@@ -87,7 +93,7 @@
       <ng-template #showExamResultDetails>
         <button fxFlex.sm="50%" fxFlex.md="30%" fxFlex.lg="25%" fxFlex.xl="15%"
                 mat-fab extended color="accent" class="footer-button"
-                matTooltipPosition="above" [matTooltip]="trPrefix + 'finish-test' | translate"
+                matTooltipPosition="above" [matTooltip]="trPrefix + 'exam-result-details-btn' | translate"
                 (click)="onExamResultDetailClick()">
           <mat-icon>list</mat-icon>
           {{ trPrefix + 'exam-result-details-btn' | translate }}
@@ -96,7 +102,7 @@
       <button fxFlex.sm="50%" fxFlex.md="30%" fxFlex.lg="25%" fxFlex.xl="15%"
               mat-fab extended color="primary"
               class="footer-button"
-              matTooltipPosition="above" [matTooltip]="trPrefix + 'return-to-list' | translate"
+              matTooltipPosition="above" [matTooltip]="trPrefix + 'return-to-list-btn' | translate"
               (click)="onReturnClick()">
         <mat-icon>keyboard_backspace</mat-icon>
         {{ trPrefix + 'return-to-list-btn' | translate }}

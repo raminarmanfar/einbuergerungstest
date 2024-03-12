@@ -4290,7 +4290,10 @@
       "goto-test": "Goto test {{testId}}",
       "edit-test": "Edit test {{testId}} info",
       "delete-test": "Delete test {{testId}}",
-      "add-test": "Create a new test"
+      "add-test": "Create a new test",
+      "failed": "Failed (correct: {{correctAnswers}})",
+      "passed": "Passed (correct: {{correctAnswers}})",
+      "exam-not-finished-yet": "Exam is not finished yet!"
     }
   },
   "demo-test-exam": {
@@ -4314,6 +4317,9 @@
     },
     "time-left": "Remaining time: {{remainingTime}}",
     "exam-finished": "Exam Finished",
-    "finish-reason-label": "Finish reason: "
+    "finish-reason-label": "Finish reason: ",
+    "exam-result": "Exam result",
+    "failed": "Failed (correct Answers: {{correctAnswers}}/33)",
+    "passed": "Passed (correct Answers: {{correctAnswers}}/33)"
   }
 }

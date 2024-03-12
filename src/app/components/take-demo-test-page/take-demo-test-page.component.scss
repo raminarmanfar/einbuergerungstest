@@ -33,6 +33,16 @@
   white-space: normal;
 }
 
+.result-text {
+  white-space: normal;
+  margin-top: 10px;
+}
+
+.result-text p {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
 .exam-body-container {
   flex-grow: 1;
   overflow-y: auto;
@@ -73,3 +83,10 @@
   animation: blink 2s infinite;
 }
 
+.passed {
+  color: blue;
+}
+
+.failed {
+  color: red;
+}

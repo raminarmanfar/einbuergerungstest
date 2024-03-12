@@ -29,14 +29,20 @@ export class TakeDemoTestPageComponent implements OnInit, OnDestroy {
   @HostListener('window:beforeunload', ['$event'])
   beforeUnloadHandler(event: any): void {
     console.log('>>>', event);
+    this.demoTestsStateService.setExamLastChanges();
     this.destroyAllAndSetCurrentTimer();
     this.testInfoSubscription.unsubscribe();
+    if (this.correctAnswersCountSubscription) {
+      this.correctAnswersCountSubscription.unsubscribe();
+    }
   }
 
   testInfo!: DemoTestInfoModel;
   examTime!: TimeModel;
+  correctAnswersCount = 0;
   private testInfoSubscription!: Subscription;
   private getTimeSubscription!: Subscription;
+  private correctAnswersCountSubscription!: Subscription;
   protected readonly QuestionSetTypeEnum = QuestionSetTypeEnum;
   protected readonly trPrefix = 'demo-test-exam.';
   protected readonly trPrefixStateName = 'review-states-tests.german-states.';
@@ -57,6 +63,8 @@ export class TakeDemoTestPageComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
+    this.correctAnswersCountSubscription = this.demoTestsStateService.currentTestCorrectAnswersCount$
+      .subscribe(correctAnswersCount => this.correctAnswersCount = correctAnswersCount);
     this.testInfoSubscription = this.demoTestsStateService.currentTest$.subscribe(testInfo => this.testInfo = testInfo);
     this.getTimeSubscription = this.demoTestsStateService.currentTest$.pipe(
       concatMap(() => this.countdownService.startCountdown(this.testInfo.examTime))
@@ -74,6 +82,9 @@ export class TakeDemoTestPageComponent implements OnInit, OnDestroy {
     this.countdownService.stopCountdown();
     this.getTimeSubscription.unsubscribe();
     this.demoTestsStateService.setExamCountdownTimer(this.examTime);
+    if (this.correctAnswersCountSubscription) {
+      this.correctAnswersCountSubscription.unsubscribe();
+    }
   }
 
   ngOnDestroy(): void {
@@ -84,6 +95,7 @@ export class TakeDemoTestPageComponent implements OnInit, OnDestroy {
   onReturnClick(): void {
     this.destroyAllAndSetCurrentTimer();
     this.testInfoSubscription.unsubscribe();
+    this.demoTestsStateService.setExamLastChanges();
     this.router.navigate(['/demo-exams-list']).then();
   }
 

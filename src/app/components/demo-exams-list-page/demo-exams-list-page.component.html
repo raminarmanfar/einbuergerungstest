@@ -27,7 +27,8 @@
       </ng-container>
 
       <ng-container matColumnDef="title">
-        <th mat-header-cell *matHeaderCellDef matTooltipPosition="above" [matTooltip]="trPrefixTable + 'title' | translate">
+        <th mat-header-cell *matHeaderCellDef matTooltipPosition="above"
+            [matTooltip]="trPrefixTable + 'title' | translate">
           {{ trPrefixTable + 'title' | translate }}
         </th>
         <td mat-cell *matCellDef="let element" class="no-wrap" matTooltipPosition="above"
@@ -37,7 +38,8 @@
       </ng-container>
 
       <ng-container matColumnDef="examTime">
-        <th mat-header-cell class="table-title-row" *matHeaderCellDef matTooltipPosition="above" [matTooltip]="trPrefixTable + 'remaining-time' | translate">
+        <th mat-header-cell class="table-title-row" *matHeaderCellDef matTooltipPosition="above"
+            [matTooltip]="trPrefixTable + 'remaining-time' | translate">
           {{ trPrefixTable + 'remaining-time' | translate }}
         </th>
         <td mat-cell *matCellDef="let element" class="table-title-row">
@@ -46,44 +48,54 @@
       </ng-container>
 
       <ng-container matColumnDef="isExamFinished">
-        <th mat-header-cell *matHeaderCellDef class="table-title-row" matTooltipPosition="above" [matTooltip]="trPrefixTable + 'done' | translate">
+        <th mat-header-cell *matHeaderCellDef class="table-title-row" matTooltipPosition="above"
+            [matTooltip]="trPrefixTable + 'done' | translate">
           {{ trPrefixTable + 'done' | translate }}
         </th>
-        <td mat-cell *matCellDef="let element" class="table-title-row">
-          <mat-checkbox class="finished-checkbox" [checked]="element.isExamFinished" color="primary">
+        <td mat-cell *matCellDef="let element" class="table-title-row" matTooltipPosition="above"
+            [matTooltip]="element.isExamFinished ?
+            (trPrefixTable + (element.correctAnswered >= 17 ? 'passed' : 'failed') | translate: {correctAnswers: element.correctAnswered} | persianNumber) :
+            trPrefixTable + 'exam-not-finished-yet' | translate">
+          <mat-checkbox class="finished-checkbox"
+                        [checked]="element.isExamFinished"
+                        [color]="element.correctAnswered >= 17 ? 'primary' : 'warn'">
           </mat-checkbox>
         </td>
       </ng-container>
 
       <ng-container matColumnDef="correctAnswered">
-        <th mat-header-cell fxShow fxHide.lt-lg *matHeaderCellDef class="table-title-row-scores" matTooltipPosition="above" [matTooltip]="trPrefixTable + 'correct-answers' | translate">
+        <th mat-header-cell fxShow fxHide.lt-lg *matHeaderCellDef class="table-title-row-scores"
+            matTooltipPosition="above" [matTooltip]="trPrefixTable + 'correct-answers' | translate">
           {{ trPrefixTable + 'correct-answers' | translate }}
         </th>
         <td mat-cell fxShow fxHide.lt-lg *matCellDef="let element" class="table-title-row-scores">
-          {{ element.correctAnswered | persianNumber }}
+          {{ element.isExamFinished ? (element.correctAnswered | persianNumber) : '-' }}
         </td>
       </ng-container>
 
       <ng-container matColumnDef="incorrectAnswered">
-        <th mat-header-cell fxShow fxHide.lt-lg *matHeaderCellDef class="table-title-row-scores" matTooltipPosition="above" [matTooltip]="trPrefixTable + 'incorrect-answers' | translate">
+        <th mat-header-cell fxShow fxHide.lt-lg *matHeaderCellDef class="table-title-row-scores"
+            matTooltipPosition="above" [matTooltip]="trPrefixTable + 'incorrect-answers' | translate">
           {{ trPrefixTable + 'incorrect-answers' | translate }}
         </th>
         <td mat-cell fxShow fxHide.lt-lg *matCellDef="let element" class="table-title-row-scores">
-          {{ element.incorrectAnswered | persianNumber }}
+          {{ element.isExamFinished ? (element.incorrectAnswered | persianNumber) : '-' }}
         </td>
       </ng-container>
 
       <ng-container matColumnDef="score">
-        <th mat-header-cell fxShow fxHide.lt-sm *matHeaderCellDef class="table-title-score" matTooltipPosition="above" [matTooltip]="trPrefixTable + 'score' | translate">
+        <th mat-header-cell fxShow fxHide.lt-sm *matHeaderCellDef class="table-title-score" matTooltipPosition="above"
+            [matTooltip]="trPrefixTable + 'score' | translate">
           {{ trPrefixTable + 'score' | translate }}
         </th>
         <td mat-cell fxShow fxHide.lt-sm *matCellDef="let element" class="table-title-score">
-          {{ element.score | persianNumber }}
+          {{ element.isExamFinished ? (getScore(element.correctAnswered) | number: '2.0-2' | persianNumber) : '-' }}
         </td>
       </ng-container>
 
       <ng-container matColumnDef="dateCreated">
-        <th mat-header-cell fxShow fxHide.lt-sm fxHide.lt-lg *matHeaderCellDef class="table-title-row-dates" matTooltipPosition="above" [matTooltip]="trPrefixTable + 'created' | translate">
+        <th mat-header-cell fxShow fxHide.lt-sm fxHide.lt-lg *matHeaderCellDef class="table-title-row-dates"
+            matTooltipPosition="above" [matTooltip]="trPrefixTable + 'created' | translate">
           {{ trPrefixTable + 'created' | translate }}
         </th>
         <td mat-cell fxShow fxHide.lt-sm fxHide.lt-lg *matCellDef="let element" class="table-title-row-dates">
@@ -92,7 +104,8 @@
       </ng-container>
 
       <ng-container matColumnDef="dateLastModified">
-        <th mat-header-cell fxShow fxHide.lt-md *matHeaderCellDef class="table-title-row-dates" matTooltipPosition="above" [matTooltip]="trPrefixTable + 'modified' | translate">
+        <th mat-header-cell fxShow fxHide.lt-md *matHeaderCellDef class="table-title-row-dates"
+            matTooltipPosition="above" [matTooltip]="trPrefixTable + 'modified' | translate">
           {{ trPrefixTable + 'modified' | translate }}
         </th>
         <td mat-cell fxShow fxHide.lt-md *matCellDef="let element" class="table-title-row-dates">
@@ -101,7 +114,8 @@
       </ng-container>
 
       <ng-container matColumnDef="edit">
-        <th mat-header-cell *matHeaderCellDef class="table-title-row" matTooltipPosition="above" [matTooltip]="trPrefixTable + 'edit' | translate">
+        <th mat-header-cell *matHeaderCellDef class="table-title-row" matTooltipPosition="above"
+            [matTooltip]="trPrefixTable + 'edit' | translate">
           {{ trPrefixTable + 'edit' | translate }}
         </th>
         <td mat-cell *matCellDef="let element" class="table-title-row">
@@ -113,7 +127,8 @@
       </ng-container>
 
       <ng-container matColumnDef="delete">
-        <th mat-header-cell *matHeaderCellDef class="table-title-row" matTooltipPosition="above" [matTooltip]="trPrefixTable + 'delete' | translate">
+        <th mat-header-cell *matHeaderCellDef class="table-title-row" matTooltipPosition="above"
+            [matTooltip]="trPrefixTable + 'delete' | translate">
           {{ trPrefixTable + 'delete' | translate }}
         </th>
         <td mat-cell *matCellDef="let element" class="table-title-row">

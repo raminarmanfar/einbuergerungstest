@@ -4290,7 +4290,10 @@
       "goto-test": "رفتن به آزمون {{testId}}",
       "edit-test": "ویرایش اطلاعات آزمون {{testId}}",
       "delete-test": "حذف آزمون {{testId}}",
-      "add-test": "ایجاد آزمون جدید"
+      "add-test": "ایجاد آزمون جدید",
+      "failed": "ناموفق (صحیح: {{correctAnswers}})",
+      "passed": "موفق (صحیح: {{correctAnswers}})",
+      "exam-not-finished-yet": "آزمون هنوز به پایان نرسیده است!"
     }
   },
   "demo-test-exam": {
@@ -4314,6 +4317,9 @@
     },
     "time-left": "زمان باقیمانده: {{remainingTime}}",
     "exam-finished": "آزمون به پایان رسید",
-    "finish-reason-label": "علت اتمام : "
+    "finish-reason-label": "علت اتمام : ",
+    "exam-result": "نتیجه آزمون",
+    "failed": "ناموفق (پاسخهای صحیح: {{correctAnswers}}/33)",
+    "passed": "موفق (پاسخهای صحیح: {{correctAnswers}}/33)"
   }
 }

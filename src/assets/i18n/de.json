@@ -4288,7 +4288,10 @@
       "goto-test": "Zum Test {{testId}} gehen",
       "edit-test": "Testinformationen bearbeiten {{testId}}",
       "delete-test": "Test {{testId}} löschen",
-      "add-test": "Neuen Test erstellen"
+      "add-test": "Neuen Test erstellen",
+      "failed": "Nicht bestanden (richtige: {{correctAnswers}})",
+      "passed": "Bestanden (richtige: {{correctAnswers}})",
+      "exam-not-finished-yet": "Die Prüfung ist noch nicht zu Ende!"
     }
   },
   "demo-test-exam": {
@@ -4312,6 +4315,9 @@
     },
     "time-left": "Verbleibende Zeit: {{remainingTime}}",
     "exam-finished": "Prüfung beendet",
-    "finish-reason-label": "Grund für das Beenden: "
+    "finish-reason-label": "Grund für das Beenden: ",
+    "exam-result": "Prüfungsergebnis",
+    "failed": "Nicht bestanden (richtige Antworten: {{correctAnswers}}/33)",
+    "passed": "Bestanden (richtige Antworten: {{correctAnswers}}/33)"
   }
 }

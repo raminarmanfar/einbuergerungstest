@@ -10,7 +10,7 @@ export interface DemoTestInfoModel {
   dateLastModified: string;
   correctAnswered: number;
   incorrectAnswered: number;
-  score: number;
+  unAnswered: number;
   activeQuestionSet: QuestionSetTypeEnum;
   deutschlandState: StateInfoModel;
   deutschlandCurrentQuestionIndex: number;

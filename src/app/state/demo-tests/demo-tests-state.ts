@@ -7,8 +7,8 @@ import {DemoTestInfoModel} from '../../models/demo-test-info.model';
 import {
   FinishExam,
   SetActiveQuestionsSet,
-  SetExamCountdownTimer,
   SetCurrentQuestionIndex,
+  SetExamCountdownTimer, SetExamQuestionsCounts,
   SetSelectedDemoTestId,
   UpdateTestQuestion
 } from './demo-tests.action';
@@ -30,7 +30,7 @@ export const demoTestsStateModel: DemoTestsStateModel = {
       dateLastModified: '04.01.2024',
       correctAnswered: 0,
       incorrectAnswered: 0,
-      score: 0,
+      unAnswered: 0,
       activeQuestionSet: QuestionSetTypeEnum.STATE,
       deutschlandState: {
         ...ConstantValues.DEUTSCHLAND_STATE,
@@ -52,7 +52,7 @@ export const demoTestsStateModel: DemoTestsStateModel = {
       dateLastModified: '04.01.2024',
       correctAnswered: 3,
       incorrectAnswered: 7,
-      score: 33,
+      unAnswered: 0,
       activeQuestionSet: QuestionSetTypeEnum.DEUTSCHLAND,
       deutschlandState: {
         ...ConstantValues.DEUTSCHLAND_STATE,
@@ -74,7 +74,7 @@ export const demoTestsStateModel: DemoTestsStateModel = {
       dateLastModified: '22.02.2024',
       correctAnswered: 12,
       incorrectAnswered: 5,
-      score: 67,
+      unAnswered: 0,
       activeQuestionSet: QuestionSetTypeEnum.STATE,
       deutschlandState: {
         ...ConstantValues.DEUTSCHLAND_STATE,
@@ -92,12 +92,12 @@ export const demoTestsStateModel: DemoTestsStateModel = {
     },
     {
       id: 4,
-      title: 'Test 3',
+      title: 'Test 4. do it please',
       dateCreated: '11.02.2024',
       dateLastModified: '12.04.2024',
       correctAnswered: 19,
       incorrectAnswered: 14,
-      score: 98,
+      unAnswered: 0,
       activeQuestionSet: QuestionSetTypeEnum.STATE,
       deutschlandState: {
         ...ConstantValues.DEUTSCHLAND_STATE,
@@ -106,6 +106,27 @@ export const demoTestsStateModel: DemoTestsStateModel = {
       deutschlandCurrentQuestionIndex: 5,
       selectedState: {
         ...ConstantValues.GERMAN_STATES[8],
+        stateTestQuestions: UtilService.getRandomStateQuestions(GermanStatesEnum.NIEDERSACHSEN)
+      },
+      selectedStateCurrentQuestionIndex: 1,
+      isExamFinished: false,
+      examTime: {minutes: 0, seconds: 10}
+    }, {
+      id: 5,
+      title: 'Test 5 - passed sample',
+      dateCreated: '11.02.2024',
+      dateLastModified: '12.04.2024',
+      correctAnswered: 0,
+      incorrectAnswered: 0,
+      unAnswered: 0,
+      activeQuestionSet: QuestionSetTypeEnum.STATE,
+      deutschlandState: {
+        ...ConstantValues.DEUTSCHLAND_STATE,
+        stateTestQuestions: UtilService.getRandomDeutschlandDemoTestQuestions()
+      },
+      deutschlandCurrentQuestionIndex: 5,
+      selectedState: {
+        ...ConstantValues.GERMAN_STATES[1],
         stateTestQuestions: UtilService.getRandomStateQuestions(GermanStatesEnum.NIEDERSACHSEN)
       },
       selectedStateCurrentQuestionIndex: 1,
@@ -128,6 +149,29 @@ export class DemoTestsState {
   static getCurrentTest(state: DemoTestsStateModel): DemoTestInfoModel | undefined {
     return state.demoTests.find(test => test.id === state.currentTestId);
   }
+
+  @Selector()
+  static getCurrentTestCorrectAnswersCount(state: DemoTestsStateModel): number {
+    const currentTest = state.demoTests.find(test => test.id === state.currentTestId);
+    if (currentTest && currentTest.isExamFinished) {
+      const correctDeutschlandQuestions = currentTest.deutschlandState.stateTestQuestions.filter(q => q.correctAnswer === q.userAnswer).length;
+      const correctStateQuestions = currentTest.selectedState.stateTestQuestions.filter(q => q.correctAnswer === q.userAnswer).length;
+      return correctDeutschlandQuestions + correctStateQuestions;
+    }
+    return 0;
+  }
+
+  @Selector()
+  static getCurrentTestUnAnswersCount(state: DemoTestsStateModel): number {
+    const currentTest = state.demoTests.find(test => test.id === state.currentTestId);
+    if (currentTest) {
+      const anAnsweredDeutschlandQuestions = currentTest.deutschlandState.stateTestQuestions.filter(q => !q.userAnswer).length;
+      const unAnsweredStateQuestions = currentTest.selectedState.stateTestQuestions.filter(q => !q.userAnswer).length;
+      return anAnsweredDeutschlandQuestions + unAnsweredStateQuestions;
+    }
+    return 0;
+  }
+
 
   @Action(SetActiveQuestionsSet)
   setActiveQuestionsSet(ctx: StateContext<DemoTestsStateModel>, {payload}: SetActiveQuestionsSet): Observable<DemoTestsStateModel> {
@@ -157,25 +201,52 @@ export class DemoTestsState {
     );
   }
 
+  @Action(SetExamQuestionsCounts)
+  setExamLastChanges(ctx: StateContext<DemoTestsStateModel>): Observable<DemoTestsStateModel> {
+    return of(ctx.getState()).pipe(
+      map(currentState => {
+        const correctAnswered = DemoTestsState.getCurrentTestCorrectAnswersCount(ctx.getState());
+        const unAnswered = DemoTestsState.getCurrentTestUnAnswersCount(ctx.getState());
+        return ctx.setState(
+          patch<DemoTestsStateModel>({
+            demoTests: updateItem<DemoTestInfoModel>(
+              t => t.id === currentState.currentTestId,
+              patch({
+                correctAnswered,
+                incorrectAnswered: ConstantValues.TOTAL_EXAM_QUESTIONS - (correctAnswered + unAnswered),
+                unAnswered,
+              })
+            )
+          })
+        );
+      })
+    );
+  }
+
   @Action(FinishExam)
   finishExam(ctx: StateContext<DemoTestsStateModel>, {payload}: FinishExam): Observable<DemoTestsStateModel> {
     return of(ctx.getState()).pipe(
-      map(currentState =>
-        ctx.setState(
+      map(currentState => {
+        const correctAnswered = DemoTestsState.getCurrentTestCorrectAnswersCount(ctx.getState());
+        const unAnswered = DemoTestsState.getCurrentTestUnAnswersCount(ctx.getState());
+        return ctx.setState(
           patch<DemoTestsStateModel>({
             demoTests: updateItem<DemoTestInfoModel>(
               t => t.id === currentState.currentTestId,
               patch({
                 isExamFinished: true,
                 finishReason: payload,
+                correctAnswered,
+                incorrectAnswered: ConstantValues.TOTAL_EXAM_QUESTIONS - (correctAnswered + unAnswered),
+                unAnswered,
                 deutschlandCurrentQuestionIndex: 0,
                 selectedStateCurrentQuestionIndex: 0,
                 activeQuestionSet: QuestionSetTypeEnum.STATE
               })
             )
           })
-        )
-      )
+        );
+      })
     );
   }
 

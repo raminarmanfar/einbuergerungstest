@@ -6,7 +6,7 @@ import {DemoTestInfoModel} from '../../models/demo-test-info.model';
 import {
   FinishExam,
   SetActiveQuestionsSet,
-  SetCurrentQuestionIndex, SetExamCountdownTimer,
+  SetCurrentQuestionIndex, SetExamCountdownTimer, SetExamQuestionsCounts,
   SetSelectedDemoTestId,
   UpdateTestQuestion
 } from './demo-tests.action';
@@ -20,6 +20,7 @@ export class DemoTestsStateService {
 
   @Select(DemoTestsState.getAllDemoTests) allDemoTests$!: Observable<DemoTestInfoModel[]>;
   @Select(DemoTestsState.getCurrentTest) currentTest$!: Observable<DemoTestInfoModel>;
+  @Select(DemoTestsState.getCurrentTestCorrectAnswersCount) currentTestCorrectAnswersCount$!: Observable<number>;
 
   constructor(private store: Store) {
   }
@@ -30,6 +31,10 @@ export class DemoTestsStateService {
 
   setExamCountdownTimer(countdownTimer: TimeModel): void {
     this.store.dispatch(new SetExamCountdownTimer(countdownTimer));
+  }
+
+  setExamLastChanges(): void {
+    this.store.dispatch(new SetExamQuestionsCounts());
   }
 
   finishExam(finishReason: ExamFinishReasonEnum): void {

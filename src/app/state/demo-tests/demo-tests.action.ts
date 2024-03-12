@@ -16,6 +16,11 @@ export class SetExamCountdownTimer {
   constructor(public payload: TimeModel) {
   }
 }
+
+export class SetExamQuestionsCounts {
+  public static type = '[DemoTestsState] Set Exam Questions Counts';
+}
+
 export class FinishExam {
   public static type = '[DemoTestsState] Finish The Exam';
 

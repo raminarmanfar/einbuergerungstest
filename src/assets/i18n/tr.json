@@ -4289,7 +4289,10 @@
       "goto-test": "{{testId}} Teste Git",
       "edit-test": "{{testId}} Test Bilgilerini Düzenle",
       "delete-test": "{{testId}} Testi Sil",
-      "add-test": "Yeni Test Oluştur"
+      "add-test": "Yeni Test Oluştur",
+      "failed": "Başarısız (doğru: {{correctAnswers}})",
+      "passed": "Geçti (doğru: {{correctAnswers}})",
+      "exam-not-finished-yet": "Sınav henüz bitmedi!"
     }
   },
   "demo-test-exam": {
@@ -4313,6 +4316,9 @@
     },
     "time-left": "Kalan süre: {{remainingTime}}",
     "exam-finished": "Sınav Tamamlandı",
-    "finish-reason-label": "Bitirme nedeni: "
+    "finish-reason-label": "Bitirme nedeni: ",
+    "exam-result": "Sınav Sonucu",
+    "failed": "Başarısız (doğru cevaplar: {{correctAnswers}}/33)",
+    "passed": "Geçti (doğru cevaplar: {{correctAnswers}}/33)"
   }
 }
