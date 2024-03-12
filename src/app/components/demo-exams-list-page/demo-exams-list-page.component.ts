@@ -6,6 +6,7 @@ import {YesNoEnum} from '../../models/enums/yes-no.enum';
 import {ExamFinishReasonEnum} from '../../models/enums/exam-finish-reason.enum';
 import {DemoTestDetailsComponent} from '../demo-test-details/demo-test-details.component';
 import {UtilService} from '../../utils/util.service';
+import {CountdownService} from "../../utils/countdown.service";
 
 @Component({
   selector: 'app-demo-exams-list-page',
@@ -14,10 +15,11 @@ import {UtilService} from '../../utils/util.service';
 })
 export class DemoExamsListPageComponent implements OnInit {
   demoTestsList!: DemoTestInfoModel[];
-  displayedColumns = ['id', 'title', 'correctAnswered', 'incorrectAnswered', 'score', 'isExamFinished', 'dateCreated', 'dateLastModified', 'edit', 'delete'];
+  displayedColumns = ['id', 'title', 'correctAnswered', 'incorrectAnswered', 'score', 'examTime', 'dateCreated', 'dateLastModified', 'edit', 'delete'];
   trPrefixTable = 'demo-exams-list.table.';
 
-  constructor(private demoTestsStateService: DemoTestsStateService, private utilService: UtilService, private router: Router) {
+  constructor(private demoTestsStateService: DemoTestsStateService, public countdownService: CountdownService,
+              private utilService: UtilService, private router: Router) {
   }
 
   ngOnInit(): void {

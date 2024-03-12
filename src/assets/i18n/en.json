@@ -4283,7 +4283,7 @@
       "correct-answers": "Correct Answers",
       "incorrect-answers": "Incorrect Answers",
       "score": "Score",
-      "finished": "Done",
+      "time-left": "Remaining Time",
       "edit": "Edit",
       "delete": "Delete",
       "goto-test": "Goto test {{testId}}",

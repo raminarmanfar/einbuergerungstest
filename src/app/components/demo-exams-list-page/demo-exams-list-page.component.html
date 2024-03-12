@@ -28,7 +28,7 @@
 
     <ng-container matColumnDef="title">
       <th mat-header-cell *matHeaderCellDef>{{trPrefixTable + 'title' | translate}}</th>
-      <td mat-cell *matCellDef="let element" class="no-wrap" matTooltipPosition="above" [matTooltip]="element.title">
+      <td mat-cell *matCellDef="let element" ngClass.lt-lg="no-wrap" matTooltipPosition="above" [matTooltip]="element.title | persianNumber">
         {{element.title | persianNumber}}
       </td>
     </ng-container>
@@ -49,8 +49,8 @@
     </ng-container>
 
     <ng-container matColumnDef="dateCreated">
-      <th mat-header-cell fxShow fxHide.lt-sm fxHide.lt-md *matHeaderCellDef>{{trPrefixTable + 'created' | translate}}</th>
-      <td mat-cell fxShow fxHide.lt-sm fxHide.lt-md *matCellDef="let element"> {{element.dateCreated}} </td>
+      <th mat-header-cell fxShow fxHide.lt-sm fxHide.lt-lg *matHeaderCellDef>{{trPrefixTable + 'created' | translate}}</th>
+      <td mat-cell fxShow fxHide.lt-sm fxHide.lt-lg *matCellDef="let element"> {{element.dateCreated}} </td>
     </ng-container>
 
     <ng-container matColumnDef="dateLastModified">
@@ -58,11 +58,10 @@
       <td mat-cell fxShow fxHide.lt-md *matCellDef="let element"> {{element.dateLastModified}} </td>
     </ng-container>
 
-    <ng-container matColumnDef="isExamFinished">
-      <th mat-header-cell *matHeaderCellDef>{{trPrefixTable + 'finished' | translate}}</th>
+    <ng-container matColumnDef="examTime">
+      <th mat-header-cell *matHeaderCellDef>{{trPrefixTable + 'time-left' | translate}}</th>
       <td mat-cell *matCellDef="let element">
-        <mat-checkbox class="finished-checkbox" [checked]="element.isExamFinished" color="primary">
-        </mat-checkbox>
+        {{countdownService.formatTime(element.examTime)}}
       </td>
     </ng-container>
 

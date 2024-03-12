@@ -16,7 +16,7 @@ export interface DemoTestInfoModel {
   deutschlandCurrentQuestionIndex: number;
   selectedState: StateInfoModel;
   selectedStateCurrentQuestionIndex: number;
+  examTime: TimeModel;
   isExamFinished: boolean;
   finishReason?: ExamFinishReasonEnum;
-  examTime: TimeModel;
 }

@@ -4282,7 +4282,7 @@
       "correct-answers": "Doğru Cevaplar",
       "incorrect-answers": "Yanlış Cevaplar",
       "score": "Puan",
-      "finished": "Tamamlandı",
+      "time-left": "Kalan Süre",
       "edit": "Düzenle",
       "delete": "Sil",
       "goto-test": "{{testId}} Teste Git",

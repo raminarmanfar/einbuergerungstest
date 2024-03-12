@@ -4281,7 +4281,7 @@
       "correct-answers": "Richtige Antworten",
       "incorrect-answers": "Falsche Antworten",
       "score": "Punktzahl",
-      "finished": "Erledigt",
+      "time-left": "Verbleibende Zeit",
       "edit": "Bearbeiten",
       "delete": "Löschen",
       "goto-test": "Zum Test {{testId}} gehen",
