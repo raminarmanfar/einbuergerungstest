@@ -3,8 +3,8 @@
     <mat-accordion>
       <mat-expansion-panel>
         <mat-expansion-panel-header>
-          <mat-panel-title>{{'demo-exams-list.options.title' | translate}}</mat-panel-title>
-          <mat-panel-description>{{'demo-exams-list.options.description' | translate}}</mat-panel-description>
+          <mat-panel-title>{{ 'demo-exams-list.options.title' | translate }}</mat-panel-title>
+          <mat-panel-description>{{ 'demo-exams-list.options.description' | translate }}</mat-panel-description>
         </mat-expansion-panel-header>
 
       </mat-expansion-panel>
@@ -12,86 +12,127 @@
   </div>
 
   <div class="table-container">
-  <table mat-table [dataSource]="demoTestsList" class="mat-elevation-z8">
+    <table mat-table [dataSource]="demoTestsList" class="mat-elevation-z8">
 
-    <ng-container matColumnDef="id">
-      <th mat-header-cell *matHeaderCellDef>{{trPrefixTable + 'id' | translate}}</th>
-      <td mat-cell *matCellDef="let element">
-        <button mat-mini-fab color="primary"
-                matTooltipPosition="above"
-                [matTooltip]="trPrefixTable + 'goto-test' | translate: {testId: element.id} | persianNumber"
-                (click)="onDemoTestDialogClick(element); $event.stopPropagation()">
-          {{element.id | persianNumber}}
-        </button>
-      </td>
-    </ng-container>
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef class="table-title-row">{{ trPrefixTable + 'id' | translate }}</th>
+        <td mat-cell *matCellDef="let element" class="table-title-row">
+          <button mat-mini-fab color="primary"
+                  matTooltipPosition="above"
+                  [matTooltip]="trPrefixTable + 'goto-test' | translate: {testId: element.id} | persianNumber"
+                  (click)="onDemoTestDialogClick(element); $event.stopPropagation()">
+            {{ element.id | persianNumber }}
+          </button>
+        </td>
+      </ng-container>
 
-    <ng-container matColumnDef="title">
-      <th mat-header-cell *matHeaderCellDef>{{trPrefixTable + 'title' | translate}}</th>
-      <td mat-cell *matCellDef="let element" ngClass.lt-lg="no-wrap" matTooltipPosition="above" [matTooltip]="element.title | persianNumber">
-        {{element.title | persianNumber}}
-      </td>
-    </ng-container>
+      <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef matTooltipPosition="above" [matTooltip]="trPrefixTable + 'title' | translate">
+          {{ trPrefixTable + 'title' | translate }}
+        </th>
+        <td mat-cell *matCellDef="let element" class="no-wrap" matTooltipPosition="above"
+            [matTooltip]="element.title | persianNumber">
+          {{ element.title | persianNumber }}
+        </td>
+      </ng-container>
 
-    <ng-container matColumnDef="correctAnswered">
-      <th mat-header-cell fxShow fxHide.lt-md *matHeaderCellDef>{{trPrefixTable + 'correct-answers' | translate}}</th>
-      <td mat-cell fxShow fxHide.lt-md *matCellDef="let element"> {{element.correctAnswered | persianNumber}} </td>
-    </ng-container>
+      <ng-container matColumnDef="examTime">
+        <th mat-header-cell class="table-title-row" *matHeaderCellDef matTooltipPosition="above" [matTooltip]="trPrefixTable + 'remaining-time' | translate">
+          {{ trPrefixTable + 'remaining-time' | translate }}
+        </th>
+        <td mat-cell *matCellDef="let element" class="table-title-row">
+          {{ countdownService.formatTime(element.examTime) }}
+        </td>
+      </ng-container>
 
-    <ng-container matColumnDef="incorrectAnswered">
-      <th mat-header-cell fxShow fxHide.lt-md *matHeaderCellDef>{{trPrefixTable + 'incorrect-answers' | translate}}</th>
-      <td mat-cell fxShow fxHide.lt-md *matCellDef="let element"> {{element.incorrectAnswered | persianNumber}} </td>
-    </ng-container>
+      <ng-container matColumnDef="isExamFinished">
+        <th mat-header-cell *matHeaderCellDef class="table-title-row" matTooltipPosition="above" [matTooltip]="trPrefixTable + 'done' | translate">
+          {{ trPrefixTable + 'done' | translate }}
+        </th>
+        <td mat-cell *matCellDef="let element" class="table-title-row">
+          <mat-checkbox class="finished-checkbox" [checked]="element.isExamFinished" color="primary">
+          </mat-checkbox>
+        </td>
+      </ng-container>
 
-    <ng-container matColumnDef="score">
-      <th mat-header-cell fxShow fxHide.lt-sm *matHeaderCellDef>{{trPrefixTable + 'score' | translate}}</th>
-      <td mat-cell fxShow fxHide.lt-sm *matCellDef="let element"> {{element.score | persianNumber}} </td>
-    </ng-container>
+      <ng-container matColumnDef="correctAnswered">
+        <th mat-header-cell fxShow fxHide.lt-lg *matHeaderCellDef class="table-title-row-scores" matTooltipPosition="above" [matTooltip]="trPrefixTable + 'correct-answers' | translate">
+          {{ trPrefixTable + 'correct-answers' | translate }}
+        </th>
+        <td mat-cell fxShow fxHide.lt-lg *matCellDef="let element" class="table-title-row-scores">
+          {{ element.correctAnswered | persianNumber }}
+        </td>
+      </ng-container>
 
-    <ng-container matColumnDef="dateCreated">
-      <th mat-header-cell fxShow fxHide.lt-sm fxHide.lt-lg *matHeaderCellDef>{{trPrefixTable + 'created' | translate}}</th>
-      <td mat-cell fxShow fxHide.lt-sm fxHide.lt-lg *matCellDef="let element"> {{element.dateCreated}} </td>
-    </ng-container>
+      <ng-container matColumnDef="incorrectAnswered">
+        <th mat-header-cell fxShow fxHide.lt-lg *matHeaderCellDef class="table-title-row-scores" matTooltipPosition="above" [matTooltip]="trPrefixTable + 'incorrect-answers' | translate">
+          {{ trPrefixTable + 'incorrect-answers' | translate }}
+        </th>
+        <td mat-cell fxShow fxHide.lt-lg *matCellDef="let element" class="table-title-row-scores">
+          {{ element.incorrectAnswered | persianNumber }}
+        </td>
+      </ng-container>
 
-    <ng-container matColumnDef="dateLastModified">
-      <th mat-header-cell fxShow fxHide.lt-md *matHeaderCellDef>{{trPrefixTable + 'modified' | translate}}</th>
-      <td mat-cell fxShow fxHide.lt-md *matCellDef="let element"> {{element.dateLastModified}} </td>
-    </ng-container>
+      <ng-container matColumnDef="score">
+        <th mat-header-cell fxShow fxHide.lt-sm *matHeaderCellDef class="table-title-score" matTooltipPosition="above" [matTooltip]="trPrefixTable + 'score' | translate">
+          {{ trPrefixTable + 'score' | translate }}
+        </th>
+        <td mat-cell fxShow fxHide.lt-sm *matCellDef="let element" class="table-title-score">
+          {{ element.score | persianNumber }}
+        </td>
+      </ng-container>
 
-    <ng-container matColumnDef="examTime">
-      <th mat-header-cell *matHeaderCellDef>{{trPrefixTable + 'time-left' | translate}}</th>
-      <td mat-cell *matCellDef="let element">
-        {{countdownService.formatTime(element.examTime)}}
-      </td>
-    </ng-container>
+      <ng-container matColumnDef="dateCreated">
+        <th mat-header-cell fxShow fxHide.lt-sm fxHide.lt-lg *matHeaderCellDef class="table-title-row-dates" matTooltipPosition="above" [matTooltip]="trPrefixTable + 'created' | translate">
+          {{ trPrefixTable + 'created' | translate }}
+        </th>
+        <td mat-cell fxShow fxHide.lt-sm fxHide.lt-lg *matCellDef="let element" class="table-title-row-dates">
+          {{ element.dateCreated }}
+        </td>
+      </ng-container>
 
-    <ng-container matColumnDef="edit">
-      <th mat-header-cell *matHeaderCellDef>{{trPrefixTable + 'edit' | translate}}</th>
-      <td mat-cell *matCellDef="let element">
-        <button mat-mini-fab color="primary" matTooltipPosition="above" [matTooltip]="trPrefixTable + 'edit-test' | translate: {testId: element.id} | persianNumber">
-          <mat-icon>edit</mat-icon>
-        </button>
-      </td>
-    </ng-container>
+      <ng-container matColumnDef="dateLastModified">
+        <th mat-header-cell fxShow fxHide.lt-md *matHeaderCellDef class="table-title-row-dates" matTooltipPosition="above" [matTooltip]="trPrefixTable + 'modified' | translate">
+          {{ trPrefixTable + 'modified' | translate }}
+        </th>
+        <td mat-cell fxShow fxHide.lt-md *matCellDef="let element" class="table-title-row-dates">
+          {{ element.dateLastModified }}
+        </td>
+      </ng-container>
 
-    <ng-container matColumnDef="delete">
-      <th mat-header-cell *matHeaderCellDef>{{trPrefixTable + 'delete' | translate}}</th>
-      <td mat-cell *matCellDef="let element">
-        <button mat-mini-fab color="warn" matTooltipPosition="above" [matTooltip]="trPrefixTable + 'delete-test' | translate: {testId: element.id} | persianNumber">
-          <mat-icon>delete</mat-icon>
-        </button>
-      </td>
-    </ng-container>
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"
-        class="table-row" (click)="onSelectedTestClick(row)">
-    </tr>
-  </table>
+      <ng-container matColumnDef="edit">
+        <th mat-header-cell *matHeaderCellDef class="table-title-row" matTooltipPosition="above" [matTooltip]="trPrefixTable + 'edit' | translate">
+          {{ trPrefixTable + 'edit' | translate }}
+        </th>
+        <td mat-cell *matCellDef="let element" class="table-title-row">
+          <button mat-mini-fab color="primary" matTooltipPosition="above"
+                  [matTooltip]="trPrefixTable + 'edit-test' | translate: {testId: element.id} | persianNumber">
+            <mat-icon>edit</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="delete">
+        <th mat-header-cell *matHeaderCellDef class="table-title-row" matTooltipPosition="above" [matTooltip]="trPrefixTable + 'delete' | translate">
+          {{ trPrefixTable + 'delete' | translate }}
+        </th>
+        <td mat-cell *matCellDef="let element" class="table-title-row">
+          <button mat-mini-fab color="warn" matTooltipPosition="above"
+                  [matTooltip]="trPrefixTable + 'delete-test' | translate: {testId: element.id} | persianNumber">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="table-row" (click)="onSelectedTestClick(row)">
+      </tr>
+    </table>
   </div>
 </div>
 
 <button mat-fab extended color="primary" class="add-button"
         matTooltipPosition="above" [matTooltip]="trPrefixTable + 'add-test' | translate"
-(click)="onCreateNewTest()">
-  <mat-icon>add</mat-icon>{{trPrefixTable + 'add-test' | translate}}
+        (click)="onCreateNewTest()">
+  <mat-icon>add</mat-icon>
+  {{ trPrefixTable + 'add-test' | translate }}
 </button>

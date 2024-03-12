@@ -70,5 +70,27 @@
 .table-row:hover {
   background-color: lightyellow;
   cursor: pointer;
+}
 
+.table-title-score {
+  text-align: center;
+  width: 95px;
+  max-width: 95px;
+}
+
+.table-title-row {
+  text-align: center;
+  width: 60px;
+}
+
+.table-title-row-dates {
+  text-align: center;
+  width: 140px;
+  min-width: 140px;
+}
+
+.table-title-row-scores {
+  text-align: center;
+  width: 120px;
+  min-width: 120px;
 }

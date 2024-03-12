@@ -6,7 +6,7 @@ import {YesNoEnum} from '../../models/enums/yes-no.enum';
 import {ExamFinishReasonEnum} from '../../models/enums/exam-finish-reason.enum';
 import {DemoTestDetailsComponent} from '../demo-test-details/demo-test-details.component';
 import {UtilService} from '../../utils/util.service';
-import {CountdownService} from "../../utils/countdown.service";
+import {CountdownService} from '../../utils/countdown.service';
 
 @Component({
   selector: 'app-demo-exams-list-page',
@@ -15,7 +15,7 @@ import {CountdownService} from "../../utils/countdown.service";
 })
 export class DemoExamsListPageComponent implements OnInit {
   demoTestsList!: DemoTestInfoModel[];
-  displayedColumns = ['id', 'title', 'correctAnswered', 'incorrectAnswered', 'score', 'examTime', 'dateCreated', 'dateLastModified', 'edit', 'delete'];
+  displayedColumns = ['id', 'title', 'examTime', 'isExamFinished', 'correctAnswered', 'incorrectAnswered', 'score', 'dateCreated', 'dateLastModified', 'edit', 'delete'];
   trPrefixTable = 'demo-exams-list.table.';
 
   constructor(private demoTestsStateService: DemoTestsStateService, public countdownService: CountdownService,
@@ -38,7 +38,7 @@ export class DemoExamsListPageComponent implements OnInit {
     console.log('>>>>>>>', element);
     this.utilService.openDialog(DemoTestDetailsComponent, 400, 400, {
       trPrefix: 'demo-test-exam.finish-exam-dialog.'
-    },600, 800, false).subscribe((result: YesNoEnum) => {
+    }, 600, 800, false).subscribe((result: YesNoEnum) => {
       if (result === YesNoEnum.YES) {
         this.demoTestsStateService.finishExam(ExamFinishReasonEnum.USER_FINISHED);
       }
