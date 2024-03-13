@@ -62,9 +62,9 @@ export class UtilService {
     return `${formattedMinutes}:${formattedSeconds}`;
   }
 
-  public openDialog<T, K>(component: ComponentType<T>,
+  public openDialog<T, K>(component: ComponentType<T>, disableClose: boolean,
                           enterAnimationDuration: number, exitAnimationDuration: number,
-                          data: K, height?: number, width?: number, maxHeight?: number, maxWidth?: number, disableClose = true): Observable<any> {
+                          data: K, height?: number, width?: number, maxHeight?: number, maxWidth?: number): Observable<any> {
     return this.dialog.open(component,
       {
         disableClose,

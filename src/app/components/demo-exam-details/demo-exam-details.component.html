@@ -1,17 +1,21 @@
 <div class="container">
   <mat-card class="card-container">
     <mat-card-header>
-      <mat-card-title>{{ data.trPrefix + 'title' | translate: {examId: data.demoExamData.id} }}</mat-card-title>
+      <mat-card-title>
+        {{ data.trPrefix + (data.isNewExamCreate ? 'create-title' : 'edit-title') | translate }}
+        <span *ngIf="!data.isNewExamCreate">: {{data.demoExamData.id | persianNumber}}</span>
+      </mat-card-title>
     </mat-card-header>
     <mat-divider></mat-divider>
     <mat-card-content>
       <mat-form-field class="title-input">
         <mat-label>{{ data.trPrefix + 'enter-exam-title' | translate }}</mat-label>
         <textarea matInput [placeholder]="data.trPrefix + 'exam-title-label' | translate"
-                  [(ngModel)]="data.demoExamData.title"></textarea>
+                  [(ngModel)]="examTitle"></textarea>
       </mat-form-field>
 
-      <div class="info-body-container" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around">
+      <div *ngIf="!data.isNewExamCreate"
+           class="info-body-container" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around">
         <div fxFlex="50%" class="data-container exam-info-container">
           <p>{{ data.trPrefix + 'state-name' | translate }}
             : <span class="value-label">
@@ -84,10 +88,10 @@
       <button mat-button color="accent" [mat-dialog-close]="userAction.NO">
         {{ data.trPrefix + 'cancel-btn' | translate }}
       </button>
-      <button mat-button color="primary" (click)="onUpdateClick()">
-        {{ data.trPrefix + 'update-btn' | translate }}
+      <button mat-button color="primary" (click)="onCreateOrUpdateClick()">
+        {{ data.trPrefix + (data.isNewExamCreate ? 'create-btn' : 'update-btn') | translate }}
       </button>
-      <button mat-button color="warn" (click)="onResetExamClick()">
+      <button mat-button color="warn" (click)="onResetExamClick()" *ngIf="!data.isNewExamCreate">
         {{ data.trPrefix + 'reset-btn' | translate }}
       </button>
     </mat-card-actions>

@@ -2,6 +2,7 @@ import {CurrentQuestionIndexPayloadModel, UpdateQuestionPayloadModel} from '../m
 import {QuestionSetTypeEnum} from '../../models/enums/question-set-type.enum';
 import {ExamFinishReasonEnum} from '../../models/enums/exam-finish-reason.enum';
 import {TimeModel} from '../../models/time.model';
+import {GermanStatesEnum} from '../../models/enums/german-states.enum';
 
 export class SetActiveQuestionsSet {
   public static type = '[DemoTestsState] Set Active Questions Set';
@@ -67,5 +68,12 @@ export class ResetExam {
   public static type = '[DemoTestsState] Reset Exam';
 
   constructor(public payload: number) {
+  }
+}
+
+export class CreateNewExam {
+  public static type = '[DemoTestsState] Create New Exam';
+
+  constructor(public payload: {examTitle: string, selectedState: GermanStatesEnum}) {
   }
 }

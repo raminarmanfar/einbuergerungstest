@@ -9,6 +9,7 @@ import {DialogYesNoComponent} from '../dialog-yes-no/dialog-yes-no.component';
 import {UserActionEnum} from '../../models/enums/user-action.enum';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {TranslateService} from '@ngx-translate/core';
+import {GermanStatesEnum} from '../../models/enums/german-states.enum';
 
 @Component({
   selector: 'app-demo-exams-list-page',
@@ -30,9 +31,6 @@ export class DemoExamsListPageComponent implements OnInit {
     this.demoTestsStateService.allDemoTests$.subscribe(allDemoTests => this.demoTestsList = allDemoTests);
   }
 
-  onCreateNewTest(): void {
-  }
-
   onSelectedTestClick(selectedTest: DemoTestInfoModel): void {
     this.demoTestsStateService.setSelectedDemoTestId(selectedTest.id);
     this.router.navigate(['/demo-exam']).then();
@@ -49,36 +47,53 @@ export class DemoExamsListPageComponent implements OnInit {
     }
   }
 
+  onCreateExamClick(): void {
+    this.utilService.openDialog(DemoExamDetailsComponent, false, 400, 400, {
+      trPrefix: this.trPrefixTable + 'exam-details-dialog.',
+      isNewExamCreate: true,
+      demoExamData: undefined
+    }).subscribe((result: {userAction: UserActionEnum, title: string}) => {
+      this.demoTestsStateService.createNewExam(result.title, GermanStatesEnum.BAVARIA);
+      this.snackBar.open(
+        this.translate.instant(this.trPrefixTable + 'create-snackbar-message'),
+        'OK', {duration: ConstantValues.SNACKBAR_DURATION}
+      );
+  });
+  }
+
   onEditClick(selectedDemoExam: DemoTestInfoModel): void {
-    this.utilService.openDialog(DemoExamDetailsComponent, 400, 400, {
-      trPrefix: this.trPrefixTable + 'edit-exam-dialog.',
+    this.utilService.openDialog(DemoExamDetailsComponent, false, 400, 400, {
+      trPrefix: this.trPrefixTable + 'exam-details-dialog.',
+      isNewExamCreate: false,
       demoExamData: selectedDemoExam
-    }, undefined, undefined, undefined, undefined, false).subscribe((userAction: UserActionEnum) => {
-      switch (userAction) {
-        case UserActionEnum.RESET:
-          this.demoTestsStateService.resetExam(selectedDemoExam.id);
-          this.snackBar.open(
-            this.translate.instant(
-              this.trPrefixTable + 'reset-snackbar-message', {examId: selectedDemoExam.id}
-            ),
-            'OK', {duration: ConstantValues.SNACKBAR_DURATION}
-          );
-          break;
-        case UserActionEnum.UPDATE:
-          this.demoTestsStateService.updateExamTitle(selectedDemoExam.id, selectedDemoExam.title);
-          this.snackBar.open(
-            this.translate.instant(
-              this.trPrefixTable + 'update-snackbar-message', {examId: selectedDemoExam.id}
-            ),
-            'OK', {duration: ConstantValues.SNACKBAR_DURATION}
-          );
-          break
+    }).subscribe((result: {userAction: UserActionEnum, title: string}) => {
+      if (result) {
+        switch (result.userAction) {
+          case UserActionEnum.RESET:
+            this.demoTestsStateService.resetExam(selectedDemoExam.id);
+            this.snackBar.open(
+              this.translate.instant(
+                this.trPrefixTable + 'reset-snackbar-message', {examId: selectedDemoExam.id}
+              ),
+              'OK', {duration: ConstantValues.SNACKBAR_DURATION}
+            );
+            break;
+          case UserActionEnum.UPDATE:
+            this.demoTestsStateService.updateExamTitle(selectedDemoExam.id, result.title);
+            this.snackBar.open(
+              this.translate.instant(
+                this.trPrefixTable + 'update-snackbar-message', {examId: selectedDemoExam.id}
+              ),
+              'OK', {duration: ConstantValues.SNACKBAR_DURATION}
+            );
+            break;
+        }
       }
     });
   }
 
   onDeleteClick(examId: number): void {
-    this.utilService.openDialog(DialogYesNoComponent, 400, 400, {
+    this.utilService.openDialog(DialogYesNoComponent, true, 400, 400, {
       trPrefix: this.trPrefixTable + 'delete-exam-dialog.'
     }).subscribe((res: UserActionEnum) => {
       if (res === UserActionEnum.YES) {

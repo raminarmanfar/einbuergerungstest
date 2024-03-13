@@ -108,7 +108,7 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
   }
 
   onFinishExamClick(): void {
-    this.utilService.openDialog(DialogYesNoComponent, 400, 400, {
+    this.utilService.openDialog(DialogYesNoComponent, true, 400, 400, {
       trPrefix: 'demo-test-exam.finish-exam-dialog.'
     }).subscribe((result: UserActionEnum) => {
       if (result === UserActionEnum.YES) {

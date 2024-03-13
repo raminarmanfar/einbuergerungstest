@@ -4296,6 +4296,7 @@
       "exam-not-finished-yet": "Exam is not finished yet!",
       "reset-snackbar-message": "Exam {{examId}} reset successfully!",
       "update-snackbar-message": "Exam {{examId}} updated successfully!",
+      "create-snackbar-message": "New exam successfully created!",
       "delete-snackbar-message": "Exam {{examId}} deleted successfully!",
       "delete-exam-dialog": {
         "title": "Are you sure?",
@@ -4303,13 +4304,15 @@
         "btnConfirm": "Yes",
         "btnReject": "No"
       },
-      "edit-exam-dialog": {
-        "title": "Edit exam: {{examId}}",
+      "exam-details-dialog": {
+        "edit-title": "Edit exam",
+        "create-title": "Create new Exam",
         "state-name": "State name",
         "enter-exam-title": "Enter exam title",
         "exam-title-label": "Exam title",
         "cancel-btn": "Cancel",
         "update-btn": "Update",
+        "create-btn": "Create exam",
         "reset-btn": "Reset exam",
         "remaining-time": "Remaining time",
         "exam-status": "Exam status",

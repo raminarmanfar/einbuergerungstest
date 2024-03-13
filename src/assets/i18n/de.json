@@ -4294,6 +4294,7 @@
       "exam-not-finished-yet": "Die Prüfung ist noch nicht zu Ende!",
       "reset-snackbar-message": "Prüfung {{examId}} erfolgreich zurückgesetzt!",
       "update-snackbar-message": "Prüfung {{examId}} erfolgreich aktualisiert!",
+      "create-snackbar-message": "Neue Prüfung erfolgreich erstellt!",
       "delete-snackbar-message": "Prüfung {{examId}} erfolgreich gelöscht!",
       "delete-exam-dialog": {
         "title": "Bist du sicher?",
@@ -4301,13 +4302,15 @@
         "btnConfirm": "Ja",
         "btnReject": "Nein"
       },
-      "edit-exam-dialog": {
-        "title": "Prüfung bearbeiten: {{examId}}",
+      "exam-details-dialog": {
+        "edit-title": "Prüfung bearbeiten",
+        "create-title": "Neue Prüfung erstellen",
         "state-name": "Statusname",
         "enter-exam-title": "Prüfungstitel eingeben",
         "exam-title-label": "Prüfungstitel",
         "cancel-btn": "Abbrechen",
         "update-btn": "Aktualisieren",
+        "create-btn": "Prüfung erstellen",
         "reset-btn": "Prüfung zurücksetzen",
         "remaining-time": "Verbleibende Zeit",
         "exam-status": "Prüfungsstatus",

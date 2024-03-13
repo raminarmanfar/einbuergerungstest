@@ -4296,6 +4296,7 @@
       "exam-not-finished-yet": "آزمون هنوز به پایان نرسیده است!",
       "reset-snackbar-message": "آزمون {{examId}} با موفقیت بازنشانی شد!",
       "update-snackbar-message": "آزمون {{examId}} با موفقیت به‌روزرسانی شد!",
+      "create-snackbar-message": "آزمون جدید با موفقیت ایجاد شد!",
       "delete-snackbar-message": "آزمون {{examId}} با موفقیت حذف شد!",
       "delete-exam-dialog": {
         "title": "آیا اطمینان دارید؟",
@@ -4303,13 +4304,15 @@
         "btnConfirm": "بله",
         "btnReject": "خیر"
       },
-      "edit-exam-dialog": {
-        "title": "ویرایش آزمون: {{examId}}",
+      "exam-details-dialog": {
+        "edit-title": "ویرایش آزمون",
+        "create-title": "ایجاد آزمون جدید",
         "state-name": "نام وضعیت",
         "enter-exam-title": "عنوان آزمون را وارد کنید",
         "exam-title-label": "عنوان آزمون",
         "cancel-btn": "لغو",
         "update-btn": "به‌روزرسانی",
+        "create-btn": "ایجاد آزمون",
         "reset-btn": "بازنشانی آزمون",
         "remaining-time": "زمان باقی‌مانده",
         "exam-status": "وضعیت آزمون",

@@ -4,6 +4,7 @@ import {Observable} from 'rxjs';
 import {DemoTestsState} from './demo-tests-state';
 import {DemoTestInfoModel} from '../../models/demo-test-info.model';
 import {
+  CreateNewExam,
   DeleteAnExamFromList,
   FinishExam, ResetExam,
   SetActiveQuestionsSet,
@@ -15,6 +16,7 @@ import {CurrentQuestionIndexPayloadModel, UpdateQuestionPayloadModel} from '../m
 import {QuestionSetTypeEnum} from '../../models/enums/question-set-type.enum';
 import {ExamFinishReasonEnum} from '../../models/enums/exam-finish-reason.enum';
 import {TimeModel} from "../../models/time.model";
+import {GermanStatesEnum} from '../../models/enums/german-states.enum';
 
 @Injectable({providedIn: 'root'})
 export class DemoTestsStateService {
@@ -64,5 +66,9 @@ export class DemoTestsStateService {
 
   resetExam(examId: number): void {
     this.store.dispatch(new ResetExam(examId));
+  }
+
+  createNewExam(examTitle: string, selectedState: GermanStatesEnum): void {
+    this.store.dispatch(new CreateNewExam({examTitle, selectedState}));
   }
 }

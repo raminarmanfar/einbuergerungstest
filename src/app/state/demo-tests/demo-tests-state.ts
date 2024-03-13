@@ -1,10 +1,11 @@
 import {Injectable} from '@angular/core';
 import {Action, Selector, State, StateContext} from '@ngxs/store';
-import {patch, removeItem, updateItem} from '@ngxs/store/operators';
+import {insertItem, patch, removeItem, updateItem} from '@ngxs/store/operators';
 import {map, Observable, of} from 'rxjs';
 import {DemoTestsStateModel} from '../models/demo-tests-state.model';
 import {DemoTestInfoModel} from '../../models/demo-test-info.model';
 import {
+  CreateNewExam,
   DeleteAnExamFromList,
   FinishExam,
   ResetExam,
@@ -23,6 +24,7 @@ import {TestQuestionModel} from '../../models/test-question.model';
 import {StateInfoModel} from '../../models/state-info.model';
 import {QuestionSetTypeEnum} from '../../models/enums/question-set-type.enum';
 import {ExamFinishReasonEnum} from '../../models/enums/exam-finish-reason.enum';
+import {ErrorMessages} from '../../utils/error-messages';
 
 export const demoTestsStateModel: DemoTestsStateModel = {
   currentTestId: -1,
@@ -115,7 +117,8 @@ export const demoTestsStateModel: DemoTestsStateModel = {
       selectedStateCurrentQuestionIndex: 1,
       isExamFinished: false,
       examTime: {minutes: 0, seconds: 10}
-    }, {
+    },
+    {
       id: 5,
       title: 'Test 5 - passed sample',
       dateCreated: '11.02.2024',
@@ -342,13 +345,57 @@ export class DemoTestsState {
               activeQuestionSet: QuestionSetTypeEnum.STATE,
               correctAnswered: 0,
               incorrectAnswered: 0,
-              unAnswered: 0,
+              unAnswered: ConstantValues.TOTAL_EXAM_QUESTIONS,
               finishReason: undefined,
               dateLastModified: 'today'
             })
           )
         })
       )
+    );
+  }
+
+  @Action(CreateNewExam)
+  createNewExamTitle(ctx: StateContext<DemoTestsStateModel>, {payload}: CreateNewExam): Observable<DemoTestsStateModel> {
+    const selectedState = ConstantValues.GERMAN_STATES.find(s => s.name === payload.selectedState);
+    if (!selectedState) {
+      throw new Error(ErrorMessages.STATE_NOT_FOUND);
+    }
+
+    return of(ctx.getState().demoTests).pipe(
+      map(currentStateDemoTests => {
+        const maxId = currentStateDemoTests.length > 0 ?
+          currentStateDemoTests.reduce((maxObj, e) =>
+              e.id > maxObj.id ? e : maxObj, currentStateDemoTests[0]).id : 0;
+
+        return ctx.setState(
+          patch<DemoTestsStateModel>({
+            demoTests: insertItem<DemoTestInfoModel>({
+              id: maxId + 1,
+              title: payload.examTitle,
+              isExamFinished: false,
+              finishReason: undefined,
+              activeQuestionSet: QuestionSetTypeEnum.STATE,
+              examTime: {minutes: 60, seconds: 0},
+              correctAnswered: 0,
+              incorrectAnswered: 0,
+              unAnswered: ConstantValues.TOTAL_EXAM_QUESTIONS,
+              dateCreated: 'today',
+              dateLastModified: 'today',
+              selectedState: {
+                ...selectedState,
+                stateTestQuestions: UtilService.getRandomStateQuestions(payload.selectedState)
+              },
+              selectedStateCurrentQuestionIndex: 0,
+              deutschlandState: {
+                ...ConstantValues.DEUTSCHLAND_STATE,
+                stateTestQuestions: UtilService.getRandomStateQuestions(GermanStatesEnum.DEUTSCHLAND)
+              },
+              deutschlandCurrentQuestionIndex: 0
+            })
+          })
+        )
+      })
     );
   }
 }
