@@ -1,6 +1,8 @@
 import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {PageEvent} from '@angular/material/paginator';
+import {MatSnackBar} from "@angular/material/snack-bar";
+import {TranslateService} from "@ngx-translate/core";
 import {concatMap, Subscription} from 'rxjs';
 
 import {DemoTestsStateService} from '../../../state/demo-tests/demo-tests-state.service';
@@ -14,6 +16,7 @@ import {ConstantValues} from '../../../utils/constant-values';
 import {CountdownService} from '../../../utils/countdown.service';
 import {TimeModel} from '../../../models/time.model';
 import {UtilService} from '../../../utils/util.service';
+import {DemoExamDetailsComponent} from "../demo-exam-details/demo-exam-details.component";
 
 @Component({
   selector: 'app-take-demo-test-page',
@@ -44,6 +47,7 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
   private getTimeSubscription!: Subscription;
   private correctAnswersCountSubscription!: Subscription;
   protected readonly QuestionSetTypeEnum = QuestionSetTypeEnum;
+  protected readonly UtilService = UtilService;
   protected readonly trPrefix = 'demo-exam.';
   protected readonly trPrefixStateName = 'review-states-tests.german-states.';
   protected readonly statePaginatorData: PageEvent = {
@@ -59,6 +63,7 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
 
   constructor(public demoTestsStateService: DemoTestsStateService,
               public countdownService: CountdownService,
+              private snackBar: MatSnackBar, private translate: TranslateService,
               private router: Router, private utilService: UtilService) {
   }
 
@@ -117,9 +122,35 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
     });
   }
 
-  onExamResultDetailClick(): void {
-    console.log('>>>> complete it later');
-  }
-
-  protected readonly UtilService = UtilService;
+  onExamResultDetailClick(): void  {
+    const trPrefixTable = 'demo-exams-list.table.';
+    this.utilService.openDialog(DemoExamDetailsComponent, false, 400, 400, {
+        trPrefix: trPrefixTable + 'exam-details-dialog.',
+        isNewExamCreate: false,
+        demoExamData: this.testInfo
+      }).subscribe((result: {userAction: UserActionEnum, title: string}) => {
+        if (result) {
+          switch (result.userAction) {
+            case UserActionEnum.RESET:
+              this.demoTestsStateService.resetExam(this.testInfo.id);
+              this.snackBar.open(
+                this.translate.instant(
+                  trPrefixTable + 'reset-snackbar-message', {examId: this.testInfo.id}
+                ),
+                'OK', {duration: ConstantValues.SNACKBAR_DURATION}
+              );
+              break;
+            case UserActionEnum.UPDATE:
+              this.demoTestsStateService.updateExamTitle(this.testInfo.id, result.title);
+              this.snackBar.open(
+                this.translate.instant(
+                  trPrefixTable + 'update-snackbar-message', {examId: this.testInfo.id}
+                ),
+                'OK', {duration: ConstantValues.SNACKBAR_DURATION}
+              );
+              break;
+          }
+        }
+      });
+    }
 }

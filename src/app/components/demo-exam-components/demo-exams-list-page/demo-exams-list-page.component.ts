@@ -53,11 +53,13 @@ export class DemoExamsListPageComponent implements OnInit {
       isNewExamCreate: true,
       demoExamData: undefined
     }).subscribe((result: {userAction: UserActionEnum, title: string, selectedState: GermanStatesEnum}) => {
-      this.demoTestsStateService.createNewExam(result.title, result.selectedState);
-      this.snackBar.open(
-        this.translate.instant(this.trPrefixTable + 'create-snackbar-message'),
-        'OK', {duration: ConstantValues.SNACKBAR_DURATION}
-      );
+      if (result.userAction === UserActionEnum.CREATE) {
+        this.demoTestsStateService.createNewExam(result.title, result.selectedState);
+        this.snackBar.open(
+          this.translate.instant(this.trPrefixTable + 'create-snackbar-message'),
+          'OK', {duration: ConstantValues.SNACKBAR_DURATION}
+        );
+      }
   });
   }
 

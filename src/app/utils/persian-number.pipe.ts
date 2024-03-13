@@ -6,6 +6,7 @@ import {Language} from '../models/enums/language';
 export class PersianNumberPipe implements PipeTransform {
 
   private currentLanguage: string;
+
   constructor(private translateService: TranslateService, private cdr: ChangeDetectorRef) {
     this.currentLanguage = this.translateService.currentLang;
 
@@ -16,11 +17,14 @@ export class PersianNumberPipe implements PipeTransform {
   }
 
   transform(value: any): any {
-    if (value) {
+    if (value !== null && value !== undefined) {
       return this.currentLanguage === Language.FA ?
-        value.toString().replace(/\d/g, (digit: any) => String.fromCharCode(digit.charCodeAt(0) + 1728)) : value;
+        value.toString().replace(/\d/g, (digit: any) => {
+          // Replace digits 0-9 with Persian equivalents
+          if (digit === '0') return '۰';
+          return String.fromCharCode(digit.charCodeAt(0) + 1728);
+        }) : value;
     }
     return value;
   }
-
 }
