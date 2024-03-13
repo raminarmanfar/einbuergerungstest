@@ -48,3 +48,10 @@ export class UpdateTestQuestion {
   constructor(public payload: UpdateQuestionPayloadModel) {
   }
 }
+
+export class DeleteAnExamFromList {
+  public static type = '[DemoTestsState] Delete An Exam From List';
+
+  constructor(public payload: number) {
+  }
+}

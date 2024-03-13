@@ -1,0 +1,34 @@
+<div class="container">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{ data.trPrefix + 'title' | translate: {examId: data.demoExamData.id} }}</mat-card-title>
+      <mat-card-subtitle>{{ data.demoExamData.title }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-divider></mat-divider>
+
+    <mat-card-content>
+      <mat-form-field class="title-input">
+        <mat-label>{{ data.trPrefix + 'enter-exam-title' | translate }}</mat-label>
+        <textarea matInput [placeholder]="data.trPrefix + 'exam-title-label' | translate"
+                  [value]="data.demoExamData.title"></textarea>
+      </mat-form-field>
+
+      <div>
+        <p>{{ data.trPrefix + 'remaining-time' | translate: {remainingTime: UtilService.formatTime(data.demoExamData.examTime)} }}</p>
+        <p>{{ data.trPrefix + 'finish-reason-label' | translate }}: {{data.trPrefix + '.finish-reason.' + data.demoExamData.finishReason | translate}}</p>
+        <div>
+          <p></p>
+        </div>
+      </div>
+
+    </mat-card-content>
+
+    <mat-divider></mat-divider>
+
+    <mat-card-actions>
+      <button mat-button color="accent">{{ data.trPrefix + 'cancel-btn' | translate }}</button>
+      <button mat-button color="primary">{{ data.trPrefix + 'edit-btn' | translate }}</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

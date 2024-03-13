@@ -4293,7 +4293,29 @@
       "add-test": "Create a new test",
       "failed": "Failed (correct: {{correctAnswers}})",
       "passed": "Passed (correct: {{correctAnswers}})",
-      "exam-not-finished-yet": "Exam is not finished yet!"
+      "exam-not-finished-yet": "Exam is not finished yet!",
+      "delete-exam-dialog": {
+        "title": "Are you sure?",
+        "description": "The exam will be removed and no longer be accessible!",
+        "btnConfirm": "Yes",
+        "btnReject": "No",
+        "snackbar-message": "Exam {{examId}} has been deleted!"
+      },
+      "edit-exam-dialog" : {
+        "title": "Edit exam: {{examId}}",
+        "enter-exam-title": "Enter exam title",
+        "exam-title-label": "Exam title",
+        "cancel-btn": "Cancel",
+        "edit-btn": "Edit",
+        "remaining-time": "Remaining time: {{remainingTime}}",
+        "exam-status": "Exam Status:",
+        "finish-reason-label": "Finish reason: ",
+        "finish-reason": {
+          "user-finished": "User finished the exam",
+          "time-over": "Time Over",
+          "technical-issue": "Technical issue"
+        }
+      }
     }
   },
   "demo-test-exam": {

@@ -16,13 +16,9 @@
 
       <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef class="table-title-row">{{ trPrefixTable + 'id' | translate }}</th>
-        <td mat-cell *matCellDef="let element" class="table-title-row">
-          <button mat-mini-fab color="primary"
-                  matTooltipPosition="above"
-                  [matTooltip]="trPrefixTable + 'goto-test' | translate: {testId: element.id} | persianNumber"
-                  (click)="onDemoTestDialogClick(element); $event.stopPropagation()">
-            {{ element.id | persianNumber }}
-          </button>
+        <td mat-cell *matCellDef="let element" class="table-title-row"
+            [ngClass]="getTableCaptionStyle(element.isExamFinished, element.correctAnswered)">
+          {{ element.id | persianNumber }}
         </td>
       </ng-container>
 
@@ -31,19 +27,21 @@
             [matTooltip]="trPrefixTable + 'title' | translate">
           {{ trPrefixTable + 'title' | translate }}
         </th>
-        <td mat-cell *matCellDef="let element" class="no-wrap" matTooltipPosition="above"
-            [matTooltip]="element.title | persianNumber">
+        <td mat-cell *matCellDef="let element" class="no-wrap"
+            [ngClass]="getTableCaptionStyle(element.isExamFinished, element.correctAnswered)"
+            matTooltipPosition="above" [matTooltip]="element.title | persianNumber">
           {{ element.title | persianNumber }}
         </td>
       </ng-container>
 
       <ng-container matColumnDef="examTime">
-        <th mat-header-cell class="table-title-row" *matHeaderCellDef matTooltipPosition="above"
+        <th mat-header-cell fxShow fxHide.xs class="table-title-row" *matHeaderCellDef matTooltipPosition="above"
             [matTooltip]="trPrefixTable + 'remaining-time' | translate">
           {{ trPrefixTable + 'remaining-time' | translate }}
         </th>
-        <td mat-cell *matCellDef="let element" class="table-title-row">
-          {{ countdownService.formatTime(element.examTime) }}
+        <td mat-cell fxShow fxHide.xs *matCellDef="let element" class="table-title-row"
+            [ngClass]="getTableCaptionStyle(element.isExamFinished, element.correctAnswered)">
+          {{ UtilService.formatTime(element.examTime) }}
         </td>
       </ng-container>
 
@@ -68,7 +66,8 @@
             matTooltipPosition="above" [matTooltip]="trPrefixTable + 'correct-answers' | translate">
           {{ trPrefixTable + 'correct-answers' | translate }}
         </th>
-        <td mat-cell fxShow fxHide.lt-lg *matCellDef="let element" class="table-title-row-scores">
+        <td mat-cell fxShow fxHide.lt-lg *matCellDef="let element" class="table-title-row-scores"
+            [ngClass]="getTableCaptionStyle(element.isExamFinished, element.correctAnswered)">
           {{ element.isExamFinished ? (element.correctAnswered | persianNumber) : '-' }}
         </td>
       </ng-container>
@@ -78,7 +77,8 @@
             matTooltipPosition="above" [matTooltip]="trPrefixTable + 'incorrect-answers' | translate">
           {{ trPrefixTable + 'incorrect-answers' | translate }}
         </th>
-        <td mat-cell fxShow fxHide.lt-lg *matCellDef="let element" class="table-title-row-scores">
+        <td mat-cell fxShow fxHide.lt-lg *matCellDef="let element" class="table-title-row-scores"
+            [ngClass]="getTableCaptionStyle(element.isExamFinished, element.correctAnswered)">
           {{ element.isExamFinished ? (element.incorrectAnswered | persianNumber) : '-' }}
         </td>
       </ng-container>
@@ -88,7 +88,8 @@
             [matTooltip]="trPrefixTable + 'score' | translate">
           {{ trPrefixTable + 'score' | translate }}
         </th>
-        <td mat-cell fxShow fxHide.lt-sm *matCellDef="let element" class="table-title-score">
+        <td mat-cell fxShow fxHide.lt-sm *matCellDef="let element" class="table-title-score"
+            [ngClass]="getTableCaptionStyle(element.isExamFinished, element.correctAnswered)">
           {{ element.isExamFinished ? (getScore(element.correctAnswered) | number: '2.0-2' | persianNumber) : '-' }}
         </td>
       </ng-container>
@@ -98,7 +99,8 @@
             matTooltipPosition="above" [matTooltip]="trPrefixTable + 'created' | translate">
           {{ trPrefixTable + 'created' | translate }}
         </th>
-        <td mat-cell fxShow fxHide.lt-sm fxHide.lt-lg *matCellDef="let element" class="table-title-row-dates">
+        <td mat-cell fxShow fxHide.lt-sm fxHide.lt-lg *matCellDef="let element" class="table-title-row-dates"
+            [ngClass]="getTableCaptionStyle(element.isExamFinished, element.correctAnswered)">
           {{ element.dateCreated }}
         </td>
       </ng-container>
@@ -108,7 +110,8 @@
             matTooltipPosition="above" [matTooltip]="trPrefixTable + 'modified' | translate">
           {{ trPrefixTable + 'modified' | translate }}
         </th>
-        <td mat-cell fxShow fxHide.lt-md *matCellDef="let element" class="table-title-row-dates">
+        <td mat-cell fxShow fxHide.lt-md *matCellDef="let element" class="table-title-row-dates"
+            [ngClass]="getTableCaptionStyle(element.isExamFinished, element.correctAnswered)">
           {{ element.dateLastModified }}
         </td>
       </ng-container>
@@ -120,7 +123,8 @@
         </th>
         <td mat-cell *matCellDef="let element" class="table-title-row">
           <button mat-mini-fab color="primary" matTooltipPosition="above"
-                  [matTooltip]="trPrefixTable + 'edit-test' | translate: {testId: element.id} | persianNumber">
+                  [matTooltip]="trPrefixTable + 'edit-test' | translate: {testId: element.id} | persianNumber"
+          (click)="onEditClick(element); $event.stopPropagation()">
             <mat-icon>edit</mat-icon>
           </button>
         </td>
@@ -133,7 +137,8 @@
         </th>
         <td mat-cell *matCellDef="let element" class="table-title-row">
           <button mat-mini-fab color="warn" matTooltipPosition="above"
-                  [matTooltip]="trPrefixTable + 'delete-test' | translate: {testId: element.id} | persianNumber">
+                  [matTooltip]="trPrefixTable + 'delete-test' | translate: {testId: element.id} | persianNumber"
+          (click)="onDeleteClick(element.id); $event.stopPropagation()">
             <mat-icon>delete</mat-icon>
           </button>
         </td>

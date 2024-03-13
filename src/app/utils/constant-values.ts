@@ -5,6 +5,7 @@ import {StateTestQuestionModel} from '../models/state-test-question.model';
 import {TestQuestionModel} from '../models/test-question.model';
 
 export class ConstantValues {
+  public static readonly SNACKBAR_DURATION = 5 * 1000;
   public static readonly DEUTSCHLAND_EXAM_QUESTIONS_COUNT = 30;
   public static readonly STATES_EXAM_QUESTIONS_COUNT = 3;
   public static readonly TOTAL_EXAM_QUESTIONS = ConstantValues.DEUTSCHLAND_EXAM_QUESTIONS_COUNT + ConstantValues.STATES_EXAM_QUESTIONS_COUNT;

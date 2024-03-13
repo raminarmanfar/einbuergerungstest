@@ -7,6 +7,7 @@ import {MatDialog} from '@angular/material/dialog';
 import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 import {ComponentType} from '@angular/cdk/overlay';
+import {TimeModel} from '../models/time.model';
 
 @Injectable({providedIn: 'root'})
 export class UtilService {
@@ -54,12 +55,22 @@ export class UtilService {
     return UtilService.generateQuestionsByLength(ConstantValues.DEUTSCHLAND_EXAM_QUESTIONS_COUNT, ConstantValues.DEUTSCHLAND_STATE, sortByRandomList);
   }
 
-  public openDialog<T, K>(component: ComponentType<T>, enterAnimationDuration: number, exitAnimationDuration: number, data: K, height?: number, width?: number, disableClose = true): Observable<any> {
+  public static formatTime(time: TimeModel): string {
+    const formattedMinutes = String(time.minutes).padStart(2, '0');
+    const formattedSeconds = String(time.seconds).padStart(2, '0');
+    return `${formattedMinutes}:${formattedSeconds}`;
+  }
+
+  public openDialog<T, K>(component: ComponentType<T>,
+                          enterAnimationDuration: number, exitAnimationDuration: number,
+                          data: K, height?: number, width?: number, maxHeight?: number, maxWidth?: number, disableClose = true): Observable<any> {
     return this.dialog.open(component,
       {
         disableClose,
         height: height ? height + 'px' : undefined,
         width: width ? width + 'px' : undefined,
+        maxHeight: maxHeight ? maxHeight + 'px' : undefined,
+        maxWidth: maxWidth ? maxWidth + 'px' : undefined,
         enterAnimationDuration: exitAnimationDuration ? enterAnimationDuration + 'ms' : undefined,
         exitAnimationDuration: exitAnimationDuration ? exitAnimationDuration + 'ms' : undefined,
         data

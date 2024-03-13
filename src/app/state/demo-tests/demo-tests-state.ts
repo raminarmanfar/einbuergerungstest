@@ -1,14 +1,16 @@
 import {Injectable} from '@angular/core';
 import {Action, Selector, State, StateContext} from '@ngxs/store';
-import {patch, updateItem} from '@ngxs/store/operators';
+import {patch, removeItem, updateItem} from '@ngxs/store/operators';
 import {map, Observable, of} from 'rxjs';
 import {DemoTestsStateModel} from '../models/demo-tests-state.model';
 import {DemoTestInfoModel} from '../../models/demo-test-info.model';
 import {
+  DeleteAnExamFromList,
   FinishExam,
   SetActiveQuestionsSet,
   SetCurrentQuestionIndex,
-  SetExamCountdownTimer, SetExamQuestionsCounts,
+  SetExamCountdownTimer,
+  SetExamQuestionsCounts,
   SetSelectedDemoTestId,
   UpdateTestQuestion
 } from './demo-tests.action';
@@ -214,7 +216,7 @@ export class DemoTestsState {
               patch({
                 correctAnswered,
                 incorrectAnswered: ConstantValues.TOTAL_EXAM_QUESTIONS - (correctAnswered + unAnswered),
-                unAnswered,
+                unAnswered
               })
             )
           })
@@ -301,5 +303,14 @@ export class DemoTestsState {
         )
       )
     );
+  }
+
+  @Action(DeleteAnExamFromList)
+  deleteAnExamFromList(ctx: StateContext<DemoTestsStateModel>, {payload}: DeleteAnExamFromList): Observable<DemoTestsStateModel> {
+    return of(ctx.setState(
+      patch<DemoTestsStateModel>({
+        demoTests: removeItem<DemoTestInfoModel>(t => t.id === payload)
+      })
+    ));
   }
 }

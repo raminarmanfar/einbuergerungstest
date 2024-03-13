@@ -2,10 +2,14 @@ import {Component, OnInit} from '@angular/core';
 import {DemoTestInfoModel} from '../../models/demo-test-info.model';
 import {Router} from '@angular/router';
 import {DemoTestsStateService} from '../../state/demo-tests/demo-tests-state.service';
-import {DemoTestDetailsComponent} from '../demo-test-details/demo-test-details.component';
+import {DemoExamDetailsComponent} from '../demo-exam-details/demo-exam-details.component';
 import {UtilService} from '../../utils/util.service';
 import {CountdownService} from '../../utils/countdown.service';
 import {ConstantValues} from '../../utils/constant-values';
+import {DialogYesNoComponent} from '../dialog-yes-no/dialog-yes-no.component';
+import {YesNoEnum} from '../../models/enums/yes-no.enum';
+import {MatSnackBar} from '@angular/material/snack-bar';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-demo-exams-list-page',
@@ -18,7 +22,7 @@ export class DemoExamsListPageComponent implements OnInit {
   trPrefixTable = 'demo-exams-list.table.';
 
   constructor(private demoTestsStateService: DemoTestsStateService, public countdownService: CountdownService,
-              private utilService: UtilService, private router: Router) {
+              private utilService: UtilService, private router: Router, private _snackBar: MatSnackBar, private translate: TranslateService) {
   }
 
   ngOnInit(): void {
@@ -33,14 +37,37 @@ export class DemoExamsListPageComponent implements OnInit {
     this.router.navigate(['/demo-exam']).then();
   }
 
-  onDemoTestDialogClick(element: DemoTestInfoModel): void {
-    console.log('>>>>>>>', element);
-    this.utilService.openDialog(DemoTestDetailsComponent, 400, 400, {
-      trPrefix: 'demo-test-exam.finish-exam-dialog.'
-    }, 600, 800, false);
-  }
-
   getScore(correctAnswered: number): number {
     return correctAnswered * 100 / ConstantValues.TOTAL_EXAM_QUESTIONS;
   }
+
+  getTableCaptionStyle(isExamFinished: boolean, correctAnswered: number): any {
+    return {
+      'passed-caption': isExamFinished && correctAnswered >= 17,
+      'failed-caption': isExamFinished && correctAnswered < 17
+    }
+  }
+
+  onEditClick(selectedDemoExam: DemoTestInfoModel): void {
+    this.utilService.openDialog(DemoExamDetailsComponent, 400, 400, {
+      trPrefix: this.trPrefixTable + 'edit-exam-dialog.',
+      demoExamData: selectedDemoExam
+    }, undefined, 700, 450, 700, false);
+  }
+
+  onDeleteClick(examId: number): void {
+    this.utilService.openDialog(DialogYesNoComponent, 400, 400, {
+      trPrefix: this.trPrefixTable + 'delete-exam-dialog.'
+    }).subscribe((res: YesNoEnum) => {
+      if (res === YesNoEnum.YES) {
+        this.demoTestsStateService.deleteAnExamFromList(examId);
+        this._snackBar.open(
+          this.translate.instant(this.trPrefixTable + 'delete-exam-dialog.snackbar-message', {examId: examId}),
+          'OK', {duration: ConstantValues.SNACKBAR_DURATION}
+        );
+      }
+    });
+  }
+
+  protected readonly UtilService = UtilService;
 }

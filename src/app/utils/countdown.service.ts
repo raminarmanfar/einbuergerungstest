@@ -35,10 +35,4 @@ export class CountdownService {
       this.countdownSubject.complete();
     }
   }
-
-  public formatTime(time: TimeModel): string {
-    const formattedMinutes = String(time.minutes).padStart(2, '0');
-    const formattedSeconds = String(time.seconds).padStart(2, '0');
-    return `${formattedMinutes}:${formattedSeconds}`;
-  }
 }

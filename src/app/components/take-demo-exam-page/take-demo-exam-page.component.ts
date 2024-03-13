@@ -17,18 +17,18 @@ import {UtilService} from '../../utils/util.service';
 
 @Component({
   selector: 'app-take-demo-test-page',
-  templateUrl: './take-demo-test-page.component.html',
-  styleUrls: ['./take-demo-test-page.component.scss']
+  templateUrl: './take-demo-exam-page.component.html',
+  styleUrls: ['./take-demo-exam-page.component.scss']
 })
-export class TakeDemoTestPageComponent implements OnInit, OnDestroy {
+export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
   @HostListener('window:unload', ['$event'])
   unloadHandler(event: any): void {
-    console.log('>>>', event);
+    console.log('>>> event:', event);
   }
 
   @HostListener('window:beforeunload', ['$event'])
   beforeUnloadHandler(event: any): void {
-    console.log('>>>', event);
+    console.log('>>> event:', event);
     this.demoTestsStateService.setExamLastChanges();
     this.destroyAllAndSetCurrentTimer();
     this.testInfoSubscription.unsubscribe();
@@ -120,4 +120,6 @@ export class TakeDemoTestPageComponent implements OnInit, OnDestroy {
   onExamResultDetailClick(): void {
     console.log('>>>> complete it later');
   }
+
+  protected readonly UtilService = UtilService;
 }

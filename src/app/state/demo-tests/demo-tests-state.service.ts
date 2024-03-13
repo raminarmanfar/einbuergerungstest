@@ -4,6 +4,7 @@ import {Observable} from 'rxjs';
 import {DemoTestsState} from './demo-tests-state';
 import {DemoTestInfoModel} from '../../models/demo-test-info.model';
 import {
+  DeleteAnExamFromList,
   FinishExam,
   SetActiveQuestionsSet,
   SetCurrentQuestionIndex, SetExamCountdownTimer, SetExamQuestionsCounts,
@@ -51,5 +52,9 @@ export class DemoTestsStateService {
 
   updateTestQuestion(updateQuestionInfo: UpdateQuestionPayloadModel): void {
     this.store.dispatch(new UpdateTestQuestion(updateQuestionInfo));
+  }
+
+  deleteAnExamFromList(examId: number): void {
+    this.store.dispatch(new DeleteAnExamFromList(examId));
   }
 }
