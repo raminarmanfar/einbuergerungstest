@@ -21,6 +21,7 @@
     }
   },
   "review-deutschland-tests": {
+    "title": "Almanya testlerini gözden geçir",
     "deutschland": {
       "tests": {
         "1": {
@@ -2725,6 +2726,7 @@
     }
   },
   "review-states-tests": {
+    "title": "Devlet testlerini gözden geçir",
     "select-state": "Bir Eyalet Seçin",
     "expansion-panel-state-message": "What to do on state change?",
     "show-current-question": "Geçerli soruyu göster",
@@ -4270,6 +4272,7 @@
     }
   },
   "demo-exams-list": {
+    "title": "Demo sınavları listesi",
     "options": {
       "title": "Seçenekler",
       "description": "Seçenekleri göstermek/gizlemek için buraya tıklayın"
@@ -4341,7 +4344,8 @@
       }
     }
   },
-  "demo-test-exam": {
+  "demo-exam": {
+    "title": "Demo sınavı yap",
     "state-question-title": "Eyalet Soruları",
     "state-question-description": "Eyalet sorularını göster/gizle",
     "deutschland-question-title": "Almanya Soruları",

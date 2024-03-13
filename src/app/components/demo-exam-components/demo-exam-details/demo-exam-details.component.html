@@ -19,7 +19,7 @@
         <div fxFlex="50%" class="data-container exam-info-container">
           <p>{{ data.trPrefix + 'state-name' | translate }}
             : <span class="value-label">
-              {{ 'review-states-tests.german-states.' + data.demoExamData.selectedState.name + '.state' | translate }}
+              {{ trPrefixState + data.demoExamData.selectedState.name + '.state' | translate }}
             </span>
           <p>{{ data.trPrefix + 'remaining-time' | translate }}
             : <span class="value-label">{{ UtilService.formatTime(data.demoExamData.examTime) | persianNumber }}</span>
@@ -80,6 +80,19 @@
         </div>
       </div>
 
+      <div class="states-select-container" *ngIf="data.isNewExamCreate">
+        <mat-form-field class="select-form-field">
+          <mat-label>{{ 'review-states-tests.select-state' | translate }}</mat-label>
+          <mat-select
+            [matTooltip]="(selectedStateInfo ? trPrefixState + selectedStateInfo.name + '.state' : 'review-states-tests.select-state') | translate"
+            [(value)]="selectedStateInfo">
+            <mat-option>{{ 'review-states-tests.select-state' | translate }}</mat-option>
+            <mat-option *ngFor="let state of germanStates" [value]="state">
+              {{ trPrefixState + state.name + '.state' | translate }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
     </mat-card-content>
 
     <mat-divider></mat-divider>
@@ -88,7 +101,7 @@
       <button mat-button color="accent" [mat-dialog-close]="userAction.NO">
         {{ data.trPrefix + 'cancel-btn' | translate }}
       </button>
-      <button mat-button color="primary" (click)="onCreateOrUpdateClick()">
+      <button mat-button color="primary" (click)="onCreateOrUpdateClick()" [disabled]="(data.isNewExamCreate && !selectedStateInfo) || examTitle === ''">
         {{ data.trPrefix + (data.isNewExamCreate ? 'create-btn' : 'update-btn') | translate }}
       </button>
       <button mat-button color="warn" (click)="onResetExamClick()" *ngIf="!data.isNewExamCreate">

@@ -3,17 +3,17 @@ import {Router} from '@angular/router';
 import {PageEvent} from '@angular/material/paginator';
 import {concatMap, Subscription} from 'rxjs';
 
-import {DemoTestsStateService} from '../../state/demo-tests/demo-tests-state.service';
-import {DemoTestInfoModel} from '../../models/demo-test-info.model';
-import {TestQuestionModel} from '../../models/test-question.model';
-import {QuestionSetTypeEnum} from '../../models/enums/question-set-type.enum';
-import {ExamFinishReasonEnum} from '../../models/enums/exam-finish-reason.enum';
-import {DialogYesNoComponent} from '../dialog-yes-no/dialog-yes-no.component';
-import {UserActionEnum} from '../../models/enums/user-action.enum';
-import {ConstantValues} from '../../utils/constant-values';
-import {CountdownService} from '../../utils/countdown.service';
-import {TimeModel} from '../../models/time.model';
-import {UtilService} from '../../utils/util.service';
+import {DemoTestsStateService} from '../../../state/demo-tests/demo-tests-state.service';
+import {DemoTestInfoModel} from '../../../models/demo-test-info.model';
+import {TestQuestionModel} from '../../../models/test-question.model';
+import {QuestionSetTypeEnum} from '../../../models/enums/question-set-type.enum';
+import {ExamFinishReasonEnum} from '../../../models/enums/exam-finish-reason.enum';
+import {DialogYesNoComponent} from '../../dialog-yes-no/dialog-yes-no.component';
+import {UserActionEnum} from '../../../models/enums/user-action.enum';
+import {ConstantValues} from '../../../utils/constant-values';
+import {CountdownService} from '../../../utils/countdown.service';
+import {TimeModel} from '../../../models/time.model';
+import {UtilService} from '../../../utils/util.service';
 
 @Component({
   selector: 'app-take-demo-test-page',
@@ -44,7 +44,7 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
   private getTimeSubscription!: Subscription;
   private correctAnswersCountSubscription!: Subscription;
   protected readonly QuestionSetTypeEnum = QuestionSetTypeEnum;
-  protected readonly trPrefix = 'demo-test-exam.';
+  protected readonly trPrefix = 'demo-exam.';
   protected readonly trPrefixStateName = 'review-states-tests.german-states.';
   protected readonly statePaginatorData: PageEvent = {
     pageSize: ConstantValues.STATES_EXAM_QUESTIONS_COUNT,
@@ -109,7 +109,7 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
 
   onFinishExamClick(): void {
     this.utilService.openDialog(DialogYesNoComponent, true, 400, 400, {
-      trPrefix: 'demo-test-exam.finish-exam-dialog.'
+      trPrefix: 'demo-exam.finish-exam-dialog.'
     }).subscribe((result: UserActionEnum) => {
       if (result === UserActionEnum.YES) {
         this.demoTestsStateService.finishExam(ExamFinishReasonEnum.USER_FINISHED);

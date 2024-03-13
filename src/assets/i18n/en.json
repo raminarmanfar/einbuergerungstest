@@ -22,6 +22,7 @@
     }
   },
   "review-deutschland-tests": {
+    "title": "Review Deutschland tests",
     "deutschland": {
       "tests": {
         "1": {
@@ -2726,6 +2727,7 @@
     }
   },
   "review-states-tests": {
+    "title": "Review states tests",
     "select-state": "Select a state",
     "expansion-panel-state-message": "What to do on state change?",
     "show-current-question": "Show current question",
@@ -4271,6 +4273,7 @@
     }
   },
   "demo-exams-list": {
+    "title": "Demo exams list",
     "options": {
       "title": "Options",
       "description": "Click here to show/hide options"
@@ -4342,7 +4345,8 @@
       }
     }
   },
-  "demo-test-exam": {
+  "demo-exam": {
+    "title": "Take a demo test",
     "state-question-title": "State Questions",
     "state-question-description": "Click to show/hide State questions",
     "deutschland-question-title": "Deutschland Questions",

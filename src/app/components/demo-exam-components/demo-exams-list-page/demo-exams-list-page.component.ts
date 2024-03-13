@@ -1,15 +1,15 @@
 import {Component, OnInit} from '@angular/core';
-import {DemoTestInfoModel} from '../../models/demo-test-info.model';
+import {DemoTestInfoModel} from '../../../models/demo-test-info.model';
 import {Router} from '@angular/router';
-import {DemoTestsStateService} from '../../state/demo-tests/demo-tests-state.service';
-import {DemoExamDetailsComponent} from '../demo-exam-details/demo-exam-details.component';
-import {UtilService} from '../../utils/util.service';
-import {ConstantValues} from '../../utils/constant-values';
-import {DialogYesNoComponent} from '../dialog-yes-no/dialog-yes-no.component';
-import {UserActionEnum} from '../../models/enums/user-action.enum';
-import {MatSnackBar} from '@angular/material/snack-bar';
 import {TranslateService} from '@ngx-translate/core';
-import {GermanStatesEnum} from '../../models/enums/german-states.enum';
+import {DemoTestsStateService} from '../../../state/demo-tests/demo-tests-state.service';
+import {DemoExamDetailsComponent} from '../demo-exam-details/demo-exam-details.component';
+import {UtilService} from '../../../utils/util.service';
+import {ConstantValues} from '../../../utils/constant-values';
+import {DialogYesNoComponent} from '../../dialog-yes-no/dialog-yes-no.component';
+import {UserActionEnum} from '../../../models/enums/user-action.enum';
+import {MatSnackBar} from '@angular/material/snack-bar';
+import {GermanStatesEnum} from '../../../models/enums/german-states.enum';
 
 @Component({
   selector: 'app-demo-exams-list-page',
@@ -52,8 +52,8 @@ export class DemoExamsListPageComponent implements OnInit {
       trPrefix: this.trPrefixTable + 'exam-details-dialog.',
       isNewExamCreate: true,
       demoExamData: undefined
-    }).subscribe((result: {userAction: UserActionEnum, title: string}) => {
-      this.demoTestsStateService.createNewExam(result.title, GermanStatesEnum.BAVARIA);
+    }).subscribe((result: {userAction: UserActionEnum, title: string, selectedState: GermanStatesEnum}) => {
+      this.demoTestsStateService.createNewExam(result.title, result.selectedState);
       this.snackBar.open(
         this.translate.instant(this.trPrefixTable + 'create-snackbar-message'),
         'OK', {duration: ConstantValues.SNACKBAR_DURATION}

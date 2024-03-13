@@ -1,10 +1,12 @@
 import {Component, Inject, OnInit} from '@angular/core';
 import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
-import {DemoTestInfoModel} from '../../models/demo-test-info.model';
-import {UtilService} from '../../utils/util.service';
-import {UserActionEnum} from '../../models/enums/user-action.enum';
-import {ConstantValues} from '../../utils/constant-values';
-import {DialogYesNoComponent} from '../dialog-yes-no/dialog-yes-no.component';
+import {DemoTestInfoModel} from '../../../models/demo-test-info.model';
+import {UtilService} from '../../../utils/util.service';
+import {UserActionEnum} from '../../../models/enums/user-action.enum';
+import {ConstantValues} from '../../../utils/constant-values';
+import {DialogYesNoComponent} from '../../dialog-yes-no/dialog-yes-no.component';
+import {ReviewStatesTestsStateService} from "../../../state/review-states-tests/review-states-tests-state.service";
+import {StateInfoModel} from "../../../models/state-info.model";
 
 @Component({
   selector: 'app-demo-test-details',
@@ -15,9 +17,13 @@ export class DemoExamDetailsComponent implements OnInit {
   protected readonly UtilService = UtilService;
   protected readonly userAction = UserActionEnum;
   protected readonly ConstantValues = ConstantValues;
+  protected readonly trPrefixState = 'review-states-tests.german-states.';
+  protected readonly germanStates = ConstantValues.GERMAN_STATES;
+  selectedStateInfo: StateInfoModel | undefined = undefined;
   examTitle = '';
 
   constructor(private utilService: UtilService,
+              private reviewStatesTestsStateService: ReviewStatesTestsStateService,
               private dialogRef: MatDialogRef<DemoExamDetailsComponent>,
               @Inject(MAT_DIALOG_DATA) public data: {
                 trPrefix: string,
@@ -28,6 +34,10 @@ export class DemoExamDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.examTitle = this.data.isNewExamCreate ? '' : this.data.demoExamData.title;
+
+    this.reviewStatesTestsStateService.allSubState$.subscribe(allSubStateData =>
+      this.selectedStateInfo = allSubStateData.selectedStateIndex >= 0 ? this.germanStates[allSubStateData.selectedStateIndex] : undefined
+    );
   }
 
 
@@ -44,7 +54,9 @@ export class DemoExamDetailsComponent implements OnInit {
 
   onCreateOrUpdateClick() {
     this.dialogRef.close({
-      userAction: this.data.isNewExamCreate ? UserActionEnum.CREATE : UserActionEnum.UPDATE, title: this.examTitle
+      userAction: this.data.isNewExamCreate ? UserActionEnum.CREATE : UserActionEnum.UPDATE,
+      selectedState: this.selectedStateInfo?.name,
+      title: this.examTitle
     });
   }
 }

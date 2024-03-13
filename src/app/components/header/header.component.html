@@ -1,6 +1,6 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span>{{ 'title' | translate }}</span>
+    <span>{{ pageTitle }}</span>
     <span class="example-spacer"></span>
     <button mat-icon-button class="example-icon favorite-icon" routerLink="/home"
             (click)="countdownService.stopCountdown()"
@@ -17,7 +17,7 @@
                 [matTooltip]="item.caption"
                 matTooltipPosition="left">
           <span class="fi fi-{{item.country}} flag"></span>
-          <span class="menu-item-text">{{item.caption}}</span>
+          <span class="menu-item-text">{{ item.caption }}</span>
         </button>
       </mat-menu>
     </button>

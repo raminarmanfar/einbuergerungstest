@@ -20,6 +20,7 @@
     }
   },
   "review-deutschland-tests": {
+    "title": "Überprüfung Deutschland Tests",
     "deutschland": {
       "tests": {
         "1": {
@@ -2724,6 +2725,7 @@
     }
   },
   "review-states-tests": {
+    "title": "Überprüfung Länder Tests",
     "select-state": "Wähle einen Staat",
     "expansion-panel-state-message": "Was tun bei einem Regierungswechsel?",
     "show-current-question": "Aktuelle Frage anzeigen",
@@ -4269,6 +4271,7 @@
     }
   },
   "demo-exams-list": {
+    "title": "Liste der Demo-Prüfungen",
     "options": {
       "title": "Optionen",
       "description": "Hier klicken, um Optionen anzuzeigen/auszublenden"
@@ -4340,7 +4343,8 @@
       }
     }
   },
-  "demo-test-exam": {
+  "demo-exam": {
+    "title": "Nehmen Sie an einer Demo-Prüfung teil",
     "state-question-title": "Bundesfragen",
     "state-question-description": "Klicken Sie, um Bundesfragen anzuzeigen/auszublenden",
     "deutschland-question-title": "Deutschland-Fragen",

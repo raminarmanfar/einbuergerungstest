@@ -25,10 +25,10 @@ import {
   ReviewStatesQuestionsPageComponent
 } from './components/review-states-questions-page/review-states-questions-page.component';
 import {QuestionnaireListComponent} from './components/questionnaire-list/questionnaire-list.component';
-import { TakeDemoExamPageComponent } from './components/take-demo-exam-page/take-demo-exam-page.component';
-import { DemoExamsListPageComponent } from './components/demo-exams-list-page/demo-exams-list-page.component';
+import { TakeDemoExamPageComponent } from './components/demo-exam-components/take-demo-exam-page/take-demo-exam-page.component';
+import { DemoExamsListPageComponent } from './components/demo-exam-components/demo-exams-list-page/demo-exams-list-page.component';
 import { DialogYesNoComponent } from './components/dialog-yes-no/dialog-yes-no.component';
-import { DemoExamDetailsComponent } from './components/demo-exam-details/demo-exam-details.component';
+import { DemoExamDetailsComponent } from './components/demo-exam-components/demo-exam-details/demo-exam-details.component';
 import {MAT_DIALOG_DEFAULT_OPTIONS} from '@angular/material/dialog';
 
 export function createTranslateLoader(http: HttpClient) {

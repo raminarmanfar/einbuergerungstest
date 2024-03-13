@@ -21,6 +21,7 @@
     }
   },
   "review-deutschland-tests": {
+    "title": "بررسی سوالات آزمون‌های آلمان",
     "deutschland": {
       "tests": {
         "1": {
@@ -2726,6 +2727,7 @@
     }
   },
   "review-states-tests": {
+    "title": "بررسی سوالات آزمون‌های ایالتی",
     "select-state": "یک ایالت انتخاب کنید",
     "expansion-panel-state-message": "وقتی ایالت عوض شد فرم سوالات چه شود؟",
     "show-current-question": "نمایش سوال جاری",
@@ -4271,6 +4273,7 @@
     }
   },
   "demo-exams-list": {
+    "title": "لیست آزمون‌های آزمایشی",
     "options": {
       "title": "گزینه‌ها",
       "description": "برای نمایش/پنهان کردن گزینه‌ها اینجا کلیک کنید"
@@ -4342,7 +4345,8 @@
       }
     }
   },
-  "demo-test-exam": {
+  "demo-exam": {
+    "title": "شرکت در آزمون آزمایشی",
     "state-question-title": "سوالات استان",
     "state-question-description": "برای نمایش/مخفی کردن سوالات استان کلیک کنید",
     "deutschland-question-title": "سوالات آلمان",

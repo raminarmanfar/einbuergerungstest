@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Action, Selector, State, StateContext} from '@ngxs/store';
-import {insertItem, patch, removeItem, updateItem} from '@ngxs/store/operators';
+import {append, patch, removeItem, updateItem} from '@ngxs/store/operators';
 import {map, Observable, of} from 'rxjs';
 import {DemoTestsStateModel} from '../models/demo-tests-state.model';
 import {DemoTestInfoModel} from '../../models/demo-test-info.model';
@@ -256,7 +256,7 @@ export class DemoTestsState {
 
         return ctx.setState(
           patch<DemoTestsStateModel>({
-            demoTests: insertItem<DemoTestInfoModel>({
+            demoTests: append<DemoTestInfoModel>([{
               id: maxId + 1,
               title: payload.examTitle,
               isExamFinished: false,
@@ -278,7 +278,7 @@ export class DemoTestsState {
                 stateTestQuestions: UtilService.getRandomDeutschlandDemoTestQuestions()
               },
               deutschlandCurrentQuestionIndex: 0
-            })
+            }])
           })
         )
       })

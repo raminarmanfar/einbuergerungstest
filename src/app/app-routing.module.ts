@@ -7,8 +7,8 @@ import {
 import {
   ReviewStatesQuestionsPageComponent
 } from './components/review-states-questions-page/review-states-questions-page.component';
-import {DemoExamsListPageComponent} from './components/demo-exams-list-page/demo-exams-list-page.component';
-import {TakeDemoExamPageComponent} from './components/take-demo-exam-page/take-demo-exam-page.component';
+import {DemoExamsListPageComponent} from './components/demo-exam-components/demo-exams-list-page/demo-exams-list-page.component';
+import {TakeDemoExamPageComponent} from './components/demo-exam-components/take-demo-exam-page/take-demo-exam-page.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
