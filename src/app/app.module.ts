@@ -5,6 +5,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {FormsModule} from '@angular/forms';
 
 import {StateModule} from './state/state.module';
 import {AppRoutingModule} from './app-routing.module';
@@ -49,23 +50,24 @@ export function createTranslateLoader(http: HttpClient) {
     DialogYesNoComponent,
     DemoExamDetailsComponent,
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    StateModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: (createTranslateLoader),
-        deps: [HttpClient]
-      }
-    }),
-    AppRoutingModule,
-    AppMaterialsModule,
-    NgOptimizedImage,
-    FlexLayoutModule,
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        StateModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: (createTranslateLoader),
+                deps: [HttpClient]
+            }
+        }),
+        AppRoutingModule,
+        AppMaterialsModule,
+        NgOptimizedImage,
+        FlexLayoutModule,
+        FormsModule
+    ],
   providers: [
     // {
     //   provide: MatPaginatorIntl, deps: [TranslateService],

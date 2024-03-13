@@ -23,11 +23,11 @@
       </ng-container>
 
       <ng-container matColumnDef="title">
-        <th mat-header-cell *matHeaderCellDef matTooltipPosition="above"
+        <th mat-header-cell fxShow fxHide.xs *matHeaderCellDef matTooltipPosition="above"
             [matTooltip]="trPrefixTable + 'title' | translate">
           {{ trPrefixTable + 'title' | translate }}
         </th>
-        <td mat-cell *matCellDef="let element" class="no-wrap"
+        <td mat-cell fxShow fxHide.xs *matCellDef="let element" class="no-wrap"
             [ngClass]="getTableCaptionStyle(element.isExamFinished, element.correctAnswered)"
             matTooltipPosition="above" [matTooltip]="element.title | persianNumber">
           {{ element.title | persianNumber }}

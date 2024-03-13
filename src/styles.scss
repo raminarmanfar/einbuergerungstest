@@ -30,6 +30,9 @@ html, body {
 }
 
 @media (min-width: 100px) {
+  .dialog-responsive {
+    width: 90px;
+  }
   .info-card-title {
     font-size: 14px;
   }
@@ -50,6 +53,9 @@ html, body {
 }
 
 @media (min-width: 150px) {
+  .dialog-responsive {
+    width: 150px;
+  }
   .info-card-title {
     font-size: 15px;
   }
@@ -70,6 +76,9 @@ html, body {
 }
 
 @media (min-width: 320px) {
+  .dialog-responsive {
+    width: 310px;
+  }
   .info-card-title {
     font-size: 16px;
   }
@@ -88,8 +97,15 @@ html, body {
     --mat-table-header-headline-size: 12px;
   }
 }
-
+@media (min-width: 450px) {
+  .dialog-responsive {
+    width: 450px;
+  }
+}
 @media (min-width: 544px) {
+  .dialog-responsive {
+    width: 560px;
+  }
   .info-card-title {
     font-size: 17px;
   }
@@ -110,6 +126,9 @@ html, body {
 }
 
 @media (min-width: 768px) {
+  .dialog-responsive {
+    width: 750px;
+  }
   .info-card-title {
     font-size: 18px;
   }
@@ -131,6 +150,9 @@ html, body {
 }
 
 @media (min-width: 1024px) {
+  .dialog-responsive {
+    width: 800px;
+  }
   .info-card-title {
     font-size: 19px;
   }
@@ -152,6 +174,9 @@ html, body {
 }
 
 @media (min-width: 1280px) {
+  .dialog-responsive {
+    width: 850px;
+  }
   .info-card-title {
     font-size: 20px;
   }
@@ -172,6 +197,9 @@ html, body {
 }
 
 @media (min-width: 1536px) {
+  .dialog-responsive {
+    width: 850px;
+  }
   .info-card-title {
     font-size: 21px;
   }
@@ -192,6 +220,9 @@ html, body {
 }
 
 @media (min-width: 1920px) {
+  .dialog-responsive {
+    width: 900px;
+  }
   .info-card-title {
     font-size: 22px;
   }
@@ -212,6 +243,9 @@ html, body {
 }
 
 @media (min-width: 2560px) {
+  .dialog-responsive {
+    width: 900px;
+  }
   .info-card-title {
     font-size: 23px;
   }
@@ -232,6 +266,9 @@ html, body {
 }
 
 @media (min-width: 6500px) {
+  .dialog-responsive {
+    width: 900px;
+  }
   .info-card-title {
     font-size: 24px;
   }

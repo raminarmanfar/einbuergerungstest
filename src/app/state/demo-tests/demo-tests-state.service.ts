@@ -5,10 +5,10 @@ import {DemoTestsState} from './demo-tests-state';
 import {DemoTestInfoModel} from '../../models/demo-test-info.model';
 import {
   DeleteAnExamFromList,
-  FinishExam,
+  FinishExam, ResetExam,
   SetActiveQuestionsSet,
   SetCurrentQuestionIndex, SetExamCountdownTimer, SetExamQuestionsCounts,
-  SetSelectedDemoTestId,
+  SetSelectedDemoTestId, UpdateExamTitle,
   UpdateTestQuestion
 } from './demo-tests.action';
 import {CurrentQuestionIndexPayloadModel, UpdateQuestionPayloadModel} from '../models/payloads.model';
@@ -56,5 +56,13 @@ export class DemoTestsStateService {
 
   deleteAnExamFromList(examId: number): void {
     this.store.dispatch(new DeleteAnExamFromList(examId));
+  }
+
+  updateExamTitle(examId: number, title: string): void {
+    this.store.dispatch(new UpdateExamTitle({examId, title}));
+  }
+
+  resetExam(examId: number): void {
+    this.store.dispatch(new ResetExam(examId));
   }
 }

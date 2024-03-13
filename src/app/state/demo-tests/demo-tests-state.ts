@@ -7,11 +7,13 @@ import {DemoTestInfoModel} from '../../models/demo-test-info.model';
 import {
   DeleteAnExamFromList,
   FinishExam,
+  ResetExam,
   SetActiveQuestionsSet,
   SetCurrentQuestionIndex,
   SetExamCountdownTimer,
   SetExamQuestionsCounts,
   SetSelectedDemoTestId,
+  UpdateExamTitle,
   UpdateTestQuestion
 } from './demo-tests.action';
 import {ConstantValues} from '../../utils/constant-values';
@@ -312,5 +314,41 @@ export class DemoTestsState {
         demoTests: removeItem<DemoTestInfoModel>(t => t.id === payload)
       })
     ));
+  }
+
+  @Action(UpdateExamTitle)
+  updateExamTitle(ctx: StateContext<DemoTestsStateModel>, {payload}: UpdateExamTitle): Observable<DemoTestsStateModel> {
+    return of(ctx.setState(
+        patch<DemoTestsStateModel>({
+          demoTests: updateItem<DemoTestInfoModel>(
+            t => t.id === payload.examId,
+            patch({title: payload.title, dateLastModified: 'today'}))
+        })
+      )
+    );
+  }
+
+  @Action(ResetExam)
+  resetExam(ctx: StateContext<DemoTestsStateModel>, {payload}: ResetExam): Observable<DemoTestsStateModel> {
+    return of(ctx.setState(
+        patch<DemoTestsStateModel>({
+          demoTests: updateItem<DemoTestInfoModel>(
+            t => t.id === payload,
+            patch({
+              isExamFinished: false,
+              examTime: {minutes: 60, seconds: 0},
+              selectedStateCurrentQuestionIndex: 0,
+              deutschlandCurrentQuestionIndex: 0,
+              activeQuestionSet: QuestionSetTypeEnum.STATE,
+              correctAnswered: 0,
+              incorrectAnswered: 0,
+              unAnswered: 0,
+              finishReason: undefined,
+              dateLastModified: 'today'
+            })
+          )
+        })
+      )
+    );
   }
 }

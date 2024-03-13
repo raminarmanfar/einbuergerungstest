@@ -7,7 +7,7 @@ import {UtilService} from '../../utils/util.service';
 import {CountdownService} from '../../utils/countdown.service';
 import {ConstantValues} from '../../utils/constant-values';
 import {DialogYesNoComponent} from '../dialog-yes-no/dialog-yes-no.component';
-import {YesNoEnum} from '../../models/enums/yes-no.enum';
+import {UserActionEnum} from '../../models/enums/user-action.enum';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {TranslateService} from '@ngx-translate/core';
 
@@ -17,6 +17,7 @@ import {TranslateService} from '@ngx-translate/core';
   styleUrls: ['./demo-exams-list-page.component.scss']
 })
 export class DemoExamsListPageComponent implements OnInit {
+  protected readonly UtilService = UtilService;
   demoTestsList!: DemoTestInfoModel[];
   displayedColumns = ['id', 'title', 'examTime', 'isExamFinished', 'correctAnswered', 'incorrectAnswered', 'score', 'dateCreated', 'dateLastModified', 'edit', 'delete'];
   trPrefixTable = 'demo-exams-list.table.';
@@ -52,14 +53,23 @@ export class DemoExamsListPageComponent implements OnInit {
     this.utilService.openDialog(DemoExamDetailsComponent, 400, 400, {
       trPrefix: this.trPrefixTable + 'edit-exam-dialog.',
       demoExamData: selectedDemoExam
-    }, undefined, 700, 450, 700, false);
+    }, undefined, undefined, undefined, undefined, false).subscribe((userAction: UserActionEnum) => {
+      switch (userAction) {
+        case UserActionEnum.RESET:
+          this.demoTestsStateService.resetExam(selectedDemoExam.id);
+          break;
+        case UserActionEnum.UPDATE:
+          this.demoTestsStateService.updateExamTitle(selectedDemoExam.id, selectedDemoExam.title);
+          break
+      }
+    });
   }
 
   onDeleteClick(examId: number): void {
     this.utilService.openDialog(DialogYesNoComponent, 400, 400, {
       trPrefix: this.trPrefixTable + 'delete-exam-dialog.'
-    }).subscribe((res: YesNoEnum) => {
-      if (res === YesNoEnum.YES) {
+    }).subscribe((res: UserActionEnum) => {
+      if (res === UserActionEnum.YES) {
         this.demoTestsStateService.deleteAnExamFromList(examId);
         this._snackBar.open(
           this.translate.instant(this.trPrefixTable + 'delete-exam-dialog.snackbar-message', {examId: examId}),
@@ -68,6 +78,4 @@ export class DemoExamsListPageComponent implements OnInit {
       }
     });
   }
-
-  protected readonly UtilService = UtilService;
 }

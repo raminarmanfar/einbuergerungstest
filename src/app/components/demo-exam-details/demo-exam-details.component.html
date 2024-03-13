@@ -1,24 +1,58 @@
 <div class="container">
-  <mat-card class="example-card">
+  <mat-card class="card-container">
     <mat-card-header>
       <mat-card-title>{{ data.trPrefix + 'title' | translate: {examId: data.demoExamData.id} }}</mat-card-title>
-      <mat-card-subtitle>{{ data.demoExamData.title }}</mat-card-subtitle>
     </mat-card-header>
-
     <mat-divider></mat-divider>
-
     <mat-card-content>
       <mat-form-field class="title-input">
         <mat-label>{{ data.trPrefix + 'enter-exam-title' | translate }}</mat-label>
         <textarea matInput [placeholder]="data.trPrefix + 'exam-title-label' | translate"
-                  [value]="data.demoExamData.title"></textarea>
+                  [(ngModel)]="data.demoExamData.title"></textarea>
       </mat-form-field>
 
-      <div>
-        <p>{{ data.trPrefix + 'remaining-time' | translate: {remainingTime: UtilService.formatTime(data.demoExamData.examTime)} }}</p>
-        <p>{{ data.trPrefix + 'finish-reason-label' | translate }}: {{data.trPrefix + '.finish-reason.' + data.demoExamData.finishReason | translate}}</p>
-        <div>
-          <p></p>
+      <div class="info-body-container" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around">
+        <div fxFlex="50%" class="data-container exam-info-container">
+          <p>{{ data.trPrefix + 'state-name' | translate }}
+            : <span class="value-label">
+              {{ 'review-states-tests.german-states.' + data.demoExamData.selectedState.name + '.state' | translate }}
+            </span>
+          <p>{{ data.trPrefix + 'remaining-time' | translate }}
+            : <span class="value-label">{{ UtilService.formatTime(data.demoExamData.examTime) | persianNumber }}</span>
+          </p>
+          <p>{{ data.trPrefix + 'exam-status' | translate }}
+            : <span class="value-label">
+              {{ data.trPrefix + (data.demoExamData.isExamFinished ? 'exam-done' : 'exam-ongoing') | translate }}
+            </span>
+          </p>
+        </div>
+
+        <span fxShow style="margin: 3px"></span>
+        <div fxFlex="50%" class="data-container exam-result-container">
+          <p>{{ data.trPrefix + 'finish-reason-label' | translate }}
+            : <span class="value-label">
+              {{ data.demoExamData.isExamFinished ? (data.trPrefix + 'finish-reason.' + data.demoExamData.finishReason | translate) : '-' }}
+            </span>
+          </p>
+          <p>{{ data.trPrefix + 'correct-answered' | translate }}
+            : <span class="value-label">{{ data.demoExamData.correctAnswered | persianNumber }}</span>
+          </p>
+          <p>{{ data.trPrefix + 'incorrect-answered' | translate }}
+            : <span class="value-label">{{ data.demoExamData.incorrectAnswered | persianNumber }}</span>
+          </p>
+          <p>{{ data.trPrefix + 'unanswered' | translate }}
+            : <span class="value-label">{{ data.demoExamData.unAnswered | persianNumber }}</span>
+          </p>
+          <p>{{ data.trPrefix + 'score' | translate }}
+            : <span class="value-label">
+              {{ data.demoExamData.correctAnswered * 100 / ConstantValues.TOTAL_EXAM_QUESTIONS | number: '2.0-2' | persianNumber }}
+            </span>
+          </p>
+          <p>{{ data.trPrefix + 'result-label' | translate }}
+            : <span class="value-label">
+              {{ data.trPrefix + (data.demoExamData.correctAnswered >= 17 ? 'passed' : 'failed') | translate }}
+            </span>
+          </p>
         </div>
       </div>
 
@@ -27,8 +61,15 @@
     <mat-divider></mat-divider>
 
     <mat-card-actions>
-      <button mat-button color="accent">{{ data.trPrefix + 'cancel-btn' | translate }}</button>
-      <button mat-button color="primary">{{ data.trPrefix + 'edit-btn' | translate }}</button>
+      <button mat-button color="accent" [mat-dialog-close]="userAction.NO">
+        {{ data.trPrefix + 'cancel-btn' | translate }}
+      </button>
+      <button mat-button color="primary" (click)="onUpdateClick()">
+        {{ data.trPrefix + 'update-btn' | translate }}
+      </button>
+      <button mat-button color="warn" (click)="onResetExamClick()">
+        {{ data.trPrefix + 'reset-btn' | translate }}
+      </button>
     </mat-card-actions>
   </mat-card>
 </div>

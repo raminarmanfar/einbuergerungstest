@@ -67,6 +67,7 @@ export class UtilService {
     return this.dialog.open(component,
       {
         disableClose,
+        panelClass: 'dialog-responsive',
         height: height ? height + 'px' : undefined,
         width: width ? width + 'px' : undefined,
         maxHeight: maxHeight ? maxHeight + 'px' : undefined,

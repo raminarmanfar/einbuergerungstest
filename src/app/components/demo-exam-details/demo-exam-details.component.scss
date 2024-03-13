@@ -1,15 +1,32 @@
 mat-card-content {
-  padding: 10px;
+  padding: 5px;
+  p {
+    padding: 2px;
+    margin: 0;
+  }
 }
 
 mat-card-actions {
   button {
-    width: 120px;
     margin: 5px;
   }
 }
 
+.card-container {
+  padding: 10px;
+}
+
 .title-input {
   width: 100%;
-  max-height: 200px;
+}
+
+.data-container {
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid gray;
+  background-color: lightyellow;
+}
+
+.value-label {
+  font-weight: bold;
 }

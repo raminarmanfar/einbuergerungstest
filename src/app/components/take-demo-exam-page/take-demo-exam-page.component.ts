@@ -9,7 +9,7 @@ import {TestQuestionModel} from '../../models/test-question.model';
 import {QuestionSetTypeEnum} from '../../models/enums/question-set-type.enum';
 import {ExamFinishReasonEnum} from '../../models/enums/exam-finish-reason.enum';
 import {DialogYesNoComponent} from '../dialog-yes-no/dialog-yes-no.component';
-import {YesNoEnum} from '../../models/enums/yes-no.enum';
+import {UserActionEnum} from '../../models/enums/user-action.enum';
 import {ConstantValues} from '../../utils/constant-values';
 import {CountdownService} from '../../utils/countdown.service';
 import {TimeModel} from '../../models/time.model';
@@ -110,8 +110,8 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
   onFinishExamClick(): void {
     this.utilService.openDialog(DialogYesNoComponent, 400, 400, {
       trPrefix: 'demo-test-exam.finish-exam-dialog.'
-    }).subscribe((result: YesNoEnum) => {
-      if (result === YesNoEnum.YES) {
+    }).subscribe((result: UserActionEnum) => {
+      if (result === UserActionEnum.YES) {
         this.demoTestsStateService.finishExam(ExamFinishReasonEnum.USER_FINISHED);
       }
     });

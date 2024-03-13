@@ -4303,17 +4303,34 @@
       },
       "edit-exam-dialog" : {
         "title": "Edit exam: {{examId}}",
+        "state-name": "State name",
         "enter-exam-title": "Enter exam title",
         "exam-title-label": "Exam title",
         "cancel-btn": "Cancel",
-        "edit-btn": "Edit",
-        "remaining-time": "Remaining time: {{remainingTime}}",
-        "exam-status": "Exam Status:",
-        "finish-reason-label": "Finish reason: ",
+        "update-btn": "Update",
+        "reset-btn": "Reset Exam",
+        "remaining-time": "Remaining time",
+        "exam-status": "Exam Status",
+        "exam-done": "Done",
+        "exam-ongoing": "Ongoing",
+        "finish-reason-label": "Finish reason",
         "finish-reason": {
           "user-finished": "User finished the exam",
           "time-over": "Time Over",
           "technical-issue": "Technical issue"
+        },
+        "correct-answered": "Correct answers",
+        "incorrect-answered": "Incorrect answers",
+        "unanswered": "Unanswered",
+        "score": "Score",
+        "result-label": "Exam Result",
+        "failed": "Failed",
+        "passed": "Passed",
+        "reset-exam-dialog": {
+          "title": "Are you sure?",
+          "description": "The exam will be reset and started from beginning with the same questions!",
+          "btnConfirm": "Reset exam",
+          "btnReject": "Cancel"
         }
       }
     }
