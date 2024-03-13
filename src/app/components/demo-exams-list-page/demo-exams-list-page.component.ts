@@ -4,7 +4,6 @@ import {Router} from '@angular/router';
 import {DemoTestsStateService} from '../../state/demo-tests/demo-tests-state.service';
 import {DemoExamDetailsComponent} from '../demo-exam-details/demo-exam-details.component';
 import {UtilService} from '../../utils/util.service';
-import {CountdownService} from '../../utils/countdown.service';
 import {ConstantValues} from '../../utils/constant-values';
 import {DialogYesNoComponent} from '../dialog-yes-no/dialog-yes-no.component';
 import {UserActionEnum} from '../../models/enums/user-action.enum';
@@ -22,8 +21,9 @@ export class DemoExamsListPageComponent implements OnInit {
   displayedColumns = ['id', 'title', 'examTime', 'isExamFinished', 'correctAnswered', 'incorrectAnswered', 'score', 'dateCreated', 'dateLastModified', 'edit', 'delete'];
   trPrefixTable = 'demo-exams-list.table.';
 
-  constructor(private demoTestsStateService: DemoTestsStateService, public countdownService: CountdownService,
-              private utilService: UtilService, private router: Router, private _snackBar: MatSnackBar, private translate: TranslateService) {
+  constructor(private demoTestsStateService: DemoTestsStateService,
+              private utilService: UtilService, private router: Router,
+              private snackBar: MatSnackBar, private translate: TranslateService) {
   }
 
   ngOnInit(): void {
@@ -57,9 +57,21 @@ export class DemoExamsListPageComponent implements OnInit {
       switch (userAction) {
         case UserActionEnum.RESET:
           this.demoTestsStateService.resetExam(selectedDemoExam.id);
+          this.snackBar.open(
+            this.translate.instant(
+              this.trPrefixTable + 'reset-snackbar-message', {examId: selectedDemoExam.id}
+            ),
+            'OK', {duration: ConstantValues.SNACKBAR_DURATION}
+          );
           break;
         case UserActionEnum.UPDATE:
           this.demoTestsStateService.updateExamTitle(selectedDemoExam.id, selectedDemoExam.title);
+          this.snackBar.open(
+            this.translate.instant(
+              this.trPrefixTable + 'update-snackbar-message', {examId: selectedDemoExam.id}
+            ),
+            'OK', {duration: ConstantValues.SNACKBAR_DURATION}
+          );
           break
       }
     });
@@ -71,8 +83,10 @@ export class DemoExamsListPageComponent implements OnInit {
     }).subscribe((res: UserActionEnum) => {
       if (res === UserActionEnum.YES) {
         this.demoTestsStateService.deleteAnExamFromList(examId);
-        this._snackBar.open(
-          this.translate.instant(this.trPrefixTable + 'delete-exam-dialog.snackbar-message', {examId: examId}),
+        this.snackBar.open(
+          this.translate.instant(
+            this.trPrefixTable + 'delete-snackbar-message', {examId: examId}
+          ),
           'OK', {duration: ConstantValues.SNACKBAR_DURATION}
         );
       }

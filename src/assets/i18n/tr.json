@@ -4292,7 +4292,50 @@
       "add-test": "Yeni Test Oluştur",
       "failed": "Başarısız (doğru: {{correctAnswers}})",
       "passed": "Geçti (doğru: {{correctAnswers}})",
-      "exam-not-finished-yet": "Sınav henüz bitmedi!"
+      "exam-not-finished-yet": "Sınav henüz bitmedi!",
+      "reset-snackbar-message": "Sınav {{examId}} başarıyla sıfırlandı!",
+      "update-snackbar-message": "Sınav {{examId}} başarıyla güncellendi!",
+      "delete-snackbar-message": "Sınav {{examId}} başarıyla silindi!",
+      "delete-exam-dialog": {
+        "title": "Emin misiniz?",
+        "description": "Sınav silinecek ve artık erişilemez olacak!",
+        "btnConfirm": "Evet",
+        "btnReject": "Hayır"
+      },
+      "edit-exam-dialog" : {
+        "title": "Sınavı Düzenle: {{examId}}",
+        "state-name": "Durum adı",
+        "enter-exam-title": "Sınav başlığını girin",
+        "exam-title-label": "Sınav başlığı",
+        "cancel-btn": "İptal",
+        "update-btn": "Güncelle",
+        "reset-btn": "Sınavı Sıfırla",
+        "remaining-time": "Kalan süre",
+        "exam-status": "Sınav durumu",
+        "exam-done": "Tamamlandı",
+        "exam-ongoing": "Devam ediyor",
+        "finish-reason-label": "Bitirme nedeni",
+        "finish-reason": {
+          "user-finished": "Kullanıcı sınavı tamamladı",
+          "time-over": "Süre doldu",
+          "technical-issue": "Teknik sorun"
+        },
+        "correct-answered": "Doğru cevaplar",
+        "incorrect-answered": "Yanlış cevaplar",
+        "unanswered": "Cevapsız",
+        "score": "Puan",
+        "result-label": "Sınav sonucu",
+        "created-label": "Oluşturulma tarihi",
+        "modified-label": "Son değiştirme",
+        "failed": "Başarısız",
+        "passed": "Geçti",
+        "reset-exam-dialog": {
+          "title": "Emin misiniz?",
+          "description": "Sınav sıfırlanacak ve aynı sorularla baştan başlayacak!",
+          "btnConfirm": "Sınavı Sıfırla",
+          "btnReject": "İptal"
+        }
+      }
     }
   },
   "demo-test-exam": {

@@ -4294,23 +4294,25 @@
       "failed": "Failed (correct: {{correctAnswers}})",
       "passed": "Passed (correct: {{correctAnswers}})",
       "exam-not-finished-yet": "Exam is not finished yet!",
+      "reset-snackbar-message": "Exam {{examId}} reset successfully!",
+      "update-snackbar-message": "Exam {{examId}} updated successfully!",
+      "delete-snackbar-message": "Exam {{examId}} deleted successfully!",
       "delete-exam-dialog": {
         "title": "Are you sure?",
         "description": "The exam will be removed and no longer be accessible!",
         "btnConfirm": "Yes",
-        "btnReject": "No",
-        "snackbar-message": "Exam {{examId}} has been deleted!"
+        "btnReject": "No"
       },
-      "edit-exam-dialog" : {
+      "edit-exam-dialog": {
         "title": "Edit exam: {{examId}}",
         "state-name": "State name",
         "enter-exam-title": "Enter exam title",
         "exam-title-label": "Exam title",
         "cancel-btn": "Cancel",
         "update-btn": "Update",
-        "reset-btn": "Reset Exam",
+        "reset-btn": "Reset exam",
         "remaining-time": "Remaining time",
-        "exam-status": "Exam Status",
+        "exam-status": "Exam status",
         "exam-done": "Done",
         "exam-ongoing": "Ongoing",
         "finish-reason-label": "Finish reason",
@@ -4323,7 +4325,9 @@
         "incorrect-answered": "Incorrect answers",
         "unanswered": "Unanswered",
         "score": "Score",
-        "result-label": "Exam Result",
+        "result-label": "Exam result",
+        "created-label": "Creation data",
+        "modified-label": "Last modified",
         "failed": "Failed",
         "passed": "Passed",
         "reset-exam-dialog": {

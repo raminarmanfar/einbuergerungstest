@@ -11,7 +11,7 @@
                   [(ngModel)]="data.demoExamData.title"></textarea>
       </mat-form-field>
 
-      <div class="info-body-container" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around">
+      <div class="info-body-container" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around">
         <div fxFlex="50%" class="data-container exam-info-container">
           <p>{{ data.trPrefix + 'state-name' | translate }}
             : <span class="value-label">
@@ -25,6 +25,16 @@
               {{ data.trPrefix + (data.demoExamData.isExamFinished ? 'exam-done' : 'exam-ongoing') | translate }}
             </span>
           </p>
+          <p>{{ data.trPrefix + 'created-label' | translate }}
+            : <span class="value-label">
+              {{ data.demoExamData.dateCreated | persianNumber }}
+            </span>
+          </p>
+          <p>{{ data.trPrefix + 'modified-label' | translate }}
+            : <span class="value-label">
+              {{ data.demoExamData.dateLastModified | persianNumber }}
+            </span>
+          </p>
         </div>
 
         <span fxShow style="margin: 3px"></span>
@@ -35,22 +45,32 @@
             </span>
           </p>
           <p>{{ data.trPrefix + 'correct-answered' | translate }}
-            : <span class="value-label">{{ data.demoExamData.correctAnswered | persianNumber }}</span>
+            : <span class="value-label">
+              {{ data.demoExamData.isExamFinished ? (data.demoExamData.correctAnswered | persianNumber) : '-' }}
+            </span>
           </p>
           <p>{{ data.trPrefix + 'incorrect-answered' | translate }}
-            : <span class="value-label">{{ data.demoExamData.incorrectAnswered | persianNumber }}</span>
+            : <span class="value-label">
+              {{ data.demoExamData.isExamFinished ? (data.demoExamData.incorrectAnswered | persianNumber) : '-' }}
+            </span>
           </p>
           <p>{{ data.trPrefix + 'unanswered' | translate }}
-            : <span class="value-label">{{ data.demoExamData.unAnswered | persianNumber }}</span>
+            : <span class="value-label">
+              {{ data.demoExamData.isExamFinished ? (data.demoExamData.unAnswered | persianNumber) : '-' }}
+            </span>
           </p>
           <p>{{ data.trPrefix + 'score' | translate }}
             : <span class="value-label">
-              {{ data.demoExamData.correctAnswered * 100 / ConstantValues.TOTAL_EXAM_QUESTIONS | number: '2.0-2' | persianNumber }}
+              {{ data.demoExamData.isExamFinished ? (data.demoExamData.correctAnswered * 100 / ConstantValues.TOTAL_EXAM_QUESTIONS | number: '2.0-2' | persianNumber) : '-' }}
             </span>
           </p>
           <p>{{ data.trPrefix + 'result-label' | translate }}
-            : <span class="value-label">
-              {{ data.trPrefix + (data.demoExamData.correctAnswered >= 17 ? 'passed' : 'failed') | translate }}
+            : <span class="value-label"
+                    [ngClass]="{
+                    'passed': data.demoExamData.isExamFinished && data.demoExamData.correctAnswered >= 17,
+                    'failed': data.demoExamData.isExamFinished &&  data.demoExamData.correctAnswered < 17
+                    }">
+              {{ data.demoExamData.isExamFinished ? (data.trPrefix + (data.demoExamData.correctAnswered >= 17 ? 'passed' : 'failed') | translate) : '-' }}
             </span>
           </p>
         </div>

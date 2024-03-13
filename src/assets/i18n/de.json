@@ -4291,7 +4291,50 @@
       "add-test": "Neuen Test erstellen",
       "failed": "Nicht bestanden (richtige: {{correctAnswers}})",
       "passed": "Bestanden (richtige: {{correctAnswers}})",
-      "exam-not-finished-yet": "Die Prüfung ist noch nicht zu Ende!"
+      "exam-not-finished-yet": "Die Prüfung ist noch nicht zu Ende!",
+      "reset-snackbar-message": "Prüfung {{examId}} erfolgreich zurückgesetzt!",
+      "update-snackbar-message": "Prüfung {{examId}} erfolgreich aktualisiert!",
+      "delete-snackbar-message": "Prüfung {{examId}} erfolgreich gelöscht!",
+      "delete-exam-dialog": {
+        "title": "Bist du sicher?",
+        "description": "Die Prüfung wird gelöscht und ist nicht mehr zugänglich!",
+        "btnConfirm": "Ja",
+        "btnReject": "Nein"
+      },
+      "edit-exam-dialog": {
+        "title": "Prüfung bearbeiten: {{examId}}",
+        "state-name": "Statusname",
+        "enter-exam-title": "Prüfungstitel eingeben",
+        "exam-title-label": "Prüfungstitel",
+        "cancel-btn": "Abbrechen",
+        "update-btn": "Aktualisieren",
+        "reset-btn": "Prüfung zurücksetzen",
+        "remaining-time": "Verbleibende Zeit",
+        "exam-status": "Prüfungsstatus",
+        "exam-done": "Abgeschlossen",
+        "exam-ongoing": "Läuft",
+        "finish-reason-label": "Abschlussgrund",
+        "finish-reason": {
+          "user-finished": "Benutzer hat die Prüfung beendet",
+          "time-over": "Zeit abgelaufen",
+          "technical-issue": "Technisches Problem"
+        },
+        "correct-answered": "Richtige Antworten",
+        "incorrect-answered": "Falsche Antworten",
+        "unanswered": "Unbeantwortet",
+        "score": "Punktzahl",
+        "result-label": "Prüfungsergebnis",
+        "created-label": "Erstellungsdatum",
+        "modified-label": "Zuletzt geändert",
+        "failed": "Durchgefallen",
+        "passed": "Bestanden",
+        "reset-exam-dialog": {
+          "title": "Bist du sicher?",
+          "description": "Die Prüfung wird zurückgesetzt und beginnt von vorne mit denselben Fragen!",
+          "btnConfirm": "Prüfung zurücksetzen",
+          "btnReject": "Abbrechen"
+        }
+      }
     }
   },
   "demo-test-exam": {

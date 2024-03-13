@@ -29,6 +29,7 @@ import { TakeDemoExamPageComponent } from './components/take-demo-exam-page/take
 import { DemoExamsListPageComponent } from './components/demo-exams-list-page/demo-exams-list-page.component';
 import { DialogYesNoComponent } from './components/dialog-yes-no/dialog-yes-no.component';
 import { DemoExamDetailsComponent } from './components/demo-exam-details/demo-exam-details.component';
+import {MAT_DIALOG_DEFAULT_OPTIONS} from '@angular/material/dialog';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -69,6 +70,7 @@ export function createTranslateLoader(http: HttpClient) {
         FormsModule
     ],
   providers: [
+    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}
     // {
     //   provide: MatPaginatorIntl, deps: [TranslateService],
     //   useFactory: (translateService: TranslateService) => new PaginatorI18n(translateService).getPaginatorIntl()

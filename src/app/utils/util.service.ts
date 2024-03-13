@@ -8,10 +8,11 @@ import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 import {ComponentType} from '@angular/cdk/overlay';
 import {TimeModel} from '../models/time.model';
+import {TranslateService} from '@ngx-translate/core';
 
 @Injectable({providedIn: 'root'})
 export class UtilService {
-  constructor(private dialog: MatDialog) {
+  constructor(private dialog: MatDialog, private translate: TranslateService) {
   }
 
   private static generateRandomQuestionsIds(length: number, maxNumber: number, sorted = false): number[] {
@@ -67,6 +68,7 @@ export class UtilService {
     return this.dialog.open(component,
       {
         disableClose,
+        direction: this.translate.currentLang === 'fa' ? 'rtl' : 'ltr',
         panelClass: 'dialog-responsive',
         height: height ? height + 'px' : undefined,
         width: width ? width + 'px' : undefined,

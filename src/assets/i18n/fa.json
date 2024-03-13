@@ -4293,7 +4293,50 @@
       "add-test": "ایجاد آزمون جدید",
       "failed": "ناموفق (صحیح: {{correctAnswers}})",
       "passed": "موفق (صحیح: {{correctAnswers}})",
-      "exam-not-finished-yet": "آزمون هنوز به پایان نرسیده است!"
+      "exam-not-finished-yet": "آزمون هنوز به پایان نرسیده است!",
+      "reset-snackbar-message": "آزمون {{examId}} با موفقیت بازنشانی شد!",
+      "update-snackbar-message": "آزمون {{examId}} با موفقیت به‌روزرسانی شد!",
+      "delete-snackbar-message": "آزمون {{examId}} با موفقیت حذف شد!",
+      "delete-exam-dialog": {
+        "title": "آیا اطمینان دارید؟",
+        "description": "آزمون حذف خواهد شد و دیگر قابل دسترسی نخواهد بود!",
+        "btnConfirm": "بله",
+        "btnReject": "خیر"
+      },
+      "edit-exam-dialog": {
+        "title": "ویرایش آزمون: {{examId}}",
+        "state-name": "نام وضعیت",
+        "enter-exam-title": "عنوان آزمون را وارد کنید",
+        "exam-title-label": "عنوان آزمون",
+        "cancel-btn": "لغو",
+        "update-btn": "به‌روزرسانی",
+        "reset-btn": "بازنشانی آزمون",
+        "remaining-time": "زمان باقی‌مانده",
+        "exam-status": "وضعیت آزمون",
+        "exam-done": "اتمام شده",
+        "exam-ongoing": "در حال اجرا",
+        "finish-reason-label": "دلیل پایان",
+        "finish-reason": {
+          "user-finished": "کاربر آزمون را به پایان رساند",
+          "time-over": "زمان به پایان رسید",
+          "technical-issue": "مشکل فنی"
+        },
+        "correct-answered": "پاسخ‌های صحیح",
+        "incorrect-answered": "پاسخ‌های اشتباه",
+        "unanswered": "پاسخ نداده شده",
+        "score": "امتیاز",
+        "result-label": "نتیجه آزمون",
+        "created-label": "تاریخ ایجاد",
+        "modified-label": "آخرین ویرایش",
+        "failed": "ناکامی",
+        "passed": "موفق",
+        "reset-exam-dialog": {
+          "title": "آیا مطمئن هستید؟",
+          "description": "آزمون بازنشانی شده و با همان سوالات از ابتدا شروع می‌شود!",
+          "btnConfirm": "بازنشانی آزمون",
+          "btnReject": "لغو"
+        }
+      }
     }
   },
   "demo-test-exam": {

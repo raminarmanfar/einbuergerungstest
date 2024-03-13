@@ -18,7 +18,7 @@ export class DemoExamDetailsComponent {
 
   constructor(private utilService: UtilService,
               private dialogRef: MatDialogRef<DemoExamDetailsComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: { trPrefix: string, demoExamData: DemoTestInfoModel }) {
+              @Inject(MAT_DIALOG_DATA) public data: { trPrefix: string, demoExamData: DemoTestInfoModel }) {
   }
 
 
@@ -27,9 +27,9 @@ export class DemoExamDetailsComponent {
       .openDialog(DialogYesNoComponent, 400, 400, {
         trPrefix: this.data.trPrefix + 'reset-exam-dialog.'
       }).subscribe((res: UserActionEnum) => {
-        if (res === UserActionEnum.YES) {
-          this.dialogRef.close(UserActionEnum.RESET);
-        }
+      if (res === UserActionEnum.YES) {
+        this.dialogRef.close(UserActionEnum.RESET);
+      }
     });
   }
 
