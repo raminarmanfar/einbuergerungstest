@@ -18,129 +18,15 @@ import {
   UpdateTestQuestion
 } from './demo-tests.action';
 import {ConstantValues} from '../../utils/constant-values';
-import {GermanStatesEnum} from '../../models/enums/german-states.enum';
 import {UtilService} from '../../utils/util.service';
 import {TestQuestionModel} from '../../models/test-question.model';
 import {StateInfoModel} from '../../models/state-info.model';
 import {QuestionSetTypeEnum} from '../../models/enums/question-set-type.enum';
-import {ExamFinishReasonEnum} from '../../models/enums/exam-finish-reason.enum';
 import {ErrorMessages} from '../../utils/error-messages';
 
 export const demoTestsStateModel: DemoTestsStateModel = {
   currentTestId: -1,
-  demoTests: [
-    {
-      id: 1,
-      title: 'Bayern test. This is my initial demo-exam. I am trying to take a demo test and train for the real exam.',
-      dateCreated: '01.01.2024',
-      dateLastModified: '04.01.2024',
-      correctAnswered: 0,
-      incorrectAnswered: 0,
-      unAnswered: 0,
-      activeQuestionSet: QuestionSetTypeEnum.STATE,
-      deutschlandState: {
-        ...ConstantValues.DEUTSCHLAND_STATE,
-        stateTestQuestions: UtilService.getRandomDeutschlandDemoTestQuestions()
-      },
-      deutschlandCurrentQuestionIndex: 0,
-      selectedState: {
-        ...ConstantValues.GERMAN_STATES[1],
-        stateTestQuestions: UtilService.getRandomStateQuestions(GermanStatesEnum.BAVARIA)
-      },
-      selectedStateCurrentQuestionIndex: 0,
-      isExamFinished: false,
-      examTime: {minutes: 60, seconds: 0}
-    },
-    {
-      id: 2,
-      title: 'Test 2, this is my first test.',
-      dateCreated: '01.01.2024',
-      dateLastModified: '04.01.2024',
-      correctAnswered: 3,
-      incorrectAnswered: 7,
-      unAnswered: 0,
-      activeQuestionSet: QuestionSetTypeEnum.DEUTSCHLAND,
-      deutschlandState: {
-        ...ConstantValues.DEUTSCHLAND_STATE,
-        stateTestQuestions: UtilService.getRandomDeutschlandDemoTestQuestions()
-      },
-      deutschlandCurrentQuestionIndex: 11,
-      selectedState: {
-        ...ConstantValues.GERMAN_STATES[1],
-        stateTestQuestions: UtilService.getRandomStateQuestions(GermanStatesEnum.BAVARIA)
-      },
-      selectedStateCurrentQuestionIndex: -1,
-      isExamFinished: false,
-      examTime: {minutes: 5, seconds: 8}
-    },
-    {
-      id: 3,
-      title: 'Test 2',
-      dateCreated: '06.02.2024',
-      dateLastModified: '22.02.2024',
-      correctAnswered: 12,
-      incorrectAnswered: 5,
-      unAnswered: 0,
-      activeQuestionSet: QuestionSetTypeEnum.STATE,
-      deutschlandState: {
-        ...ConstantValues.DEUTSCHLAND_STATE,
-        stateTestQuestions: UtilService.getRandomDeutschlandDemoTestQuestions()
-      },
-      deutschlandCurrentQuestionIndex: 18,
-      selectedState: {
-        ...ConstantValues.GERMAN_STATES[9],
-        stateTestQuestions: UtilService.getRandomStateQuestions(GermanStatesEnum.NORTH_RHINE_WESTPHALIA)
-      },
-      selectedStateCurrentQuestionIndex: 1,
-      isExamFinished: true,
-      finishReason: ExamFinishReasonEnum.TIME_OVER,
-      examTime: {minutes: 0, seconds: 0}
-    },
-    {
-      id: 4,
-      title: 'Test 4. do it please',
-      dateCreated: '11.02.2024',
-      dateLastModified: '12.04.2024',
-      correctAnswered: 19,
-      incorrectAnswered: 14,
-      unAnswered: 0,
-      activeQuestionSet: QuestionSetTypeEnum.STATE,
-      deutschlandState: {
-        ...ConstantValues.DEUTSCHLAND_STATE,
-        stateTestQuestions: UtilService.getRandomDeutschlandDemoTestQuestions()
-      },
-      deutschlandCurrentQuestionIndex: 5,
-      selectedState: {
-        ...ConstantValues.GERMAN_STATES[8],
-        stateTestQuestions: UtilService.getRandomStateQuestions(GermanStatesEnum.NIEDERSACHSEN)
-      },
-      selectedStateCurrentQuestionIndex: 1,
-      isExamFinished: false,
-      examTime: {minutes: 0, seconds: 10}
-    },
-    {
-      id: 5,
-      title: 'Test 5 - passed sample',
-      dateCreated: '11.02.2024',
-      dateLastModified: '12.04.2024',
-      correctAnswered: 0,
-      incorrectAnswered: 0,
-      unAnswered: 0,
-      activeQuestionSet: QuestionSetTypeEnum.STATE,
-      deutschlandState: {
-        ...ConstantValues.DEUTSCHLAND_STATE,
-        stateTestQuestions: UtilService.getRandomDeutschlandDemoTestQuestions()
-      },
-      deutschlandCurrentQuestionIndex: 5,
-      selectedState: {
-        ...ConstantValues.GERMAN_STATES[1],
-        stateTestQuestions: UtilService.getRandomStateQuestions(GermanStatesEnum.NIEDERSACHSEN)
-      },
-      selectedStateCurrentQuestionIndex: 1,
-      isExamFinished: false,
-      examTime: {minutes: 0, seconds: 10}
-    }
-  ]
+  demoTests: []
 };
 
 @State<DemoTestsStateModel>({name: 'DemoTestsState', defaults: demoTestsStateModel})
@@ -366,7 +252,7 @@ export class DemoTestsState {
       map(currentStateDemoTests => {
         const maxId = currentStateDemoTests.length > 0 ?
           currentStateDemoTests.reduce((maxObj, e) =>
-              e.id > maxObj.id ? e : maxObj, currentStateDemoTests[0]).id : 0;
+            e.id > maxObj.id ? e : maxObj, currentStateDemoTests[0]).id : 0;
 
         return ctx.setState(
           patch<DemoTestsStateModel>({
@@ -389,7 +275,7 @@ export class DemoTestsState {
               selectedStateCurrentQuestionIndex: 0,
               deutschlandState: {
                 ...ConstantValues.DEUTSCHLAND_STATE,
-                stateTestQuestions: UtilService.getRandomStateQuestions(GermanStatesEnum.DEUTSCHLAND)
+                stateTestQuestions: UtilService.getRandomDeutschlandDemoTestQuestions()
               },
               deutschlandCurrentQuestionIndex: 0
             })
