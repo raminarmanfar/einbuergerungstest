@@ -5,8 +5,8 @@ import {UtilService} from '../../../utils/util.service';
 import {UserActionEnum} from '../../../models/enums/user-action.enum';
 import {ConstantValues} from '../../../utils/constant-values';
 import {DialogYesNoComponent} from '../../dialog-yes-no/dialog-yes-no.component';
-import {ReviewStatesTestsStateService} from "../../../state/review-states-tests/review-states-tests-state.service";
-import {StateInfoModel} from "../../../models/state-info.model";
+import {ReviewStatesTestsStateService} from '../../../state/review-states-tests/review-states-tests-state.service';
+import {StateInfoModel} from '../../../models/state-info.model';
 
 @Component({
   selector: 'app-demo-test-details',
@@ -42,12 +42,11 @@ export class DemoExamDetailsComponent implements OnInit {
 
 
   onResetExamClick(): void {
-    this.utilService
-      .openDialog(DialogYesNoComponent, true, 400, 400, {
-        trPrefix: this.data.trPrefix + 'reset-exam-dialog.'
-      }).subscribe((res: UserActionEnum) => {
+    this.utilService.openDialog(DialogYesNoComponent, true, 400, 400, {
+      trPrefix: this.data.trPrefix + 'reset-exam-dialog.'
+    }, 600).subscribe((res: UserActionEnum) => {
       if (res === UserActionEnum.YES) {
-        this.dialogRef.close({userAction: UserActionEnum.RESET});
+        this.dialogRef.close({userAction: UserActionEnum.RESET, title: this.examTitle});
       }
     });
   }

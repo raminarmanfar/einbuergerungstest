@@ -31,12 +31,12 @@
           </p>
           <p>{{ data.trPrefix + 'created-label' | translate }}
             : <span class="value-label">
-              {{ data.demoExamData.dateCreated | persianNumber }}
+              {{ data.demoExamData.dateCreated | dateFormat | persianNumber }}
             </span>
           </p>
           <p>{{ data.trPrefix + 'modified-label' | translate }}
             : <span class="value-label">
-              {{ data.demoExamData.dateLastModified | persianNumber }}
+              {{ data.demoExamData.dateLastModified | dateFormat | persianNumber }}
             </span>
           </p>
         </div>

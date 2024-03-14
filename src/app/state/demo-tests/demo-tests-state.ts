@@ -23,6 +23,7 @@ import {TestQuestionModel} from '../../models/test-question.model';
 import {StateInfoModel} from '../../models/state-info.model';
 import {QuestionSetTypeEnum} from '../../models/enums/question-set-type.enum';
 import {ErrorMessages} from '../../utils/error-messages';
+import {DatePipe} from '@angular/common';
 
 export const demoTestsStateModel: DemoTestsStateModel = {
   currentTestId: -1,
@@ -32,6 +33,13 @@ export const demoTestsStateModel: DemoTestsStateModel = {
 @State<DemoTestsStateModel>({name: 'DemoTestsState', defaults: demoTestsStateModel})
 @Injectable()
 export class DemoTestsState {
+
+  constructor(private datePipe: DatePipe) {
+  }
+
+  private getDateNow(): string {
+    return this.datePipe.transform(new Date(), 'medium') || ''
+  }
 
   @Selector()
   static getAllDemoTests(state: DemoTestsStateModel): DemoTestInfoModel[] {
@@ -87,7 +95,8 @@ export class DemoTestsState {
         ctx.setState(
           patch<DemoTestsStateModel>({
             demoTests: updateItem<DemoTestInfoModel>(
-              t => t.id === currentState.currentTestId, patch({examTime: payload}))
+              t => t.id === currentState.currentTestId,
+              patch({examTime: payload, dateLastModified: this.getDateNow()}))
           })
         )
       )
@@ -107,7 +116,8 @@ export class DemoTestsState {
               patch({
                 correctAnswered,
                 incorrectAnswered: ConstantValues.TOTAL_EXAM_QUESTIONS - (correctAnswered + unAnswered),
-                unAnswered
+                unAnswered,
+                dateLastModified: this.getDateNow()
               })
             )
           })
@@ -134,7 +144,8 @@ export class DemoTestsState {
                 unAnswered,
                 deutschlandCurrentQuestionIndex: 0,
                 selectedStateCurrentQuestionIndex: 0,
-                activeQuestionSet: QuestionSetTypeEnum.STATE
+                activeQuestionSet: QuestionSetTypeEnum.STATE,
+                dateLastModified: this.getDateNow()
               })
             )
           })
@@ -175,6 +186,7 @@ export class DemoTestsState {
             demoTests: updateItem<DemoTestInfoModel>(
               t => t.id === currentState.currentTestId,
               payload.activeQuestionSet ? patch<DemoTestInfoModel>({
+                dateLastModified: this.getDateNow(),
                 deutschlandState: patch<StateInfoModel>({
                   stateTestQuestions: updateItem<TestQuestionModel>(
                     q => q.id === payload.selectedQuestion.id,
@@ -211,7 +223,7 @@ export class DemoTestsState {
         patch<DemoTestsStateModel>({
           demoTests: updateItem<DemoTestInfoModel>(
             t => t.id === payload.examId,
-            patch({title: payload.title, dateLastModified: 'today'}))
+            patch({title: payload.title, dateLastModified: this.getDateNow()}))
         })
       )
     );
@@ -219,11 +231,13 @@ export class DemoTestsState {
 
   @Action(ResetExam)
   resetExam(ctx: StateContext<DemoTestsStateModel>, {payload}: ResetExam): Observable<DemoTestsStateModel> {
+
     return of(ctx.setState(
         patch<DemoTestsStateModel>({
           demoTests: updateItem<DemoTestInfoModel>(
-            t => t.id === payload,
+            t => t.id === payload.examId,
             patch({
+              title: payload.title ? payload.title : DemoTestsState.getCurrentTest(ctx.getState())?.title,
               isExamFinished: false,
               examTime: {minutes: 60, seconds: 0},
               selectedStateCurrentQuestionIndex: 0,
@@ -233,7 +247,7 @@ export class DemoTestsState {
               incorrectAnswered: 0,
               unAnswered: ConstantValues.TOTAL_EXAM_QUESTIONS,
               finishReason: undefined,
-              dateLastModified: 'today'
+              dateLastModified: this.getDateNow()
             })
           )
         })
@@ -266,8 +280,8 @@ export class DemoTestsState {
               correctAnswered: 0,
               incorrectAnswered: 0,
               unAnswered: ConstantValues.TOTAL_EXAM_QUESTIONS,
-              dateCreated: 'today',
-              dateLastModified: 'today',
+              dateCreated: this.getDateNow(),
+              dateLastModified: this.getDateNow(),
               selectedState: {
                 ...selectedState,
                 stateTestQuestions: UtilService.getRandomStateQuestions(payload.selectedState)
@@ -280,7 +294,7 @@ export class DemoTestsState {
               deutschlandCurrentQuestionIndex: 0
             }])
           })
-        )
+        );
       })
     );
   }

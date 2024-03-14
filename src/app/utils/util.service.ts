@@ -1,14 +1,14 @@
-import {TestQuestionModel} from '../models/test-question.model';
+import {MatDialog} from '@angular/material/dialog';
+import {ComponentType} from '@angular/cdk/overlay';
+import {Injectable} from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
+import {Observable} from 'rxjs';
+import {TimeModel} from '../models/time.model';
 import {ConstantValues} from './constant-values';
 import {ErrorMessages} from './error-messages';
 import {GermanStatesEnum} from '../models/enums/german-states.enum';
 import {StateInfoModel} from '../models/state-info.model';
-import {MatDialog} from '@angular/material/dialog';
-import {Injectable} from '@angular/core';
-import {Observable} from 'rxjs';
-import {ComponentType} from '@angular/cdk/overlay';
-import {TimeModel} from '../models/time.model';
-import {TranslateService} from '@ngx-translate/core';
+import {TestQuestionModel} from '../models/test-question.model';
 
 @Injectable({providedIn: 'root'})
 export class UtilService {
@@ -64,7 +64,7 @@ export class UtilService {
 
   public openDialog<T, K>(component: ComponentType<T>, disableClose: boolean,
                           enterAnimationDuration: number, exitAnimationDuration: number,
-                          data: K, height?: number, width?: number, maxHeight?: number, maxWidth?: number): Observable<any> {
+                          data: K, maxWidth?: number, maxHeight?: number, width?: number, height?: number): Observable<any> {
     return this.dialog.open(component,
       {
         disableClose,

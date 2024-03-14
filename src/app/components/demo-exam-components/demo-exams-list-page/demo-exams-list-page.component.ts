@@ -97,7 +97,7 @@ export class DemoExamsListPageComponent implements OnInit {
   onDeleteClick(examId: number): void {
     this.utilService.openDialog(DialogYesNoComponent, true, 400, 400, {
       trPrefix: this.trPrefixTable + 'delete-exam-dialog.'
-    }).subscribe((res: UserActionEnum) => {
+    }, 600).subscribe((res: UserActionEnum) => {
       if (res === UserActionEnum.YES) {
         this.demoTestsStateService.deleteAnExamFromList(examId);
         this.snackBar.open(

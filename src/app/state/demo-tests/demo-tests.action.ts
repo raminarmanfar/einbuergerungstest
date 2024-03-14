@@ -67,7 +67,7 @@ export class UpdateExamTitle {
 export class ResetExam {
   public static type = '[DemoTestsState] Reset Exam';
 
-  constructor(public payload: number) {
+  constructor(public payload: {examId: number, title?: string}) {
   }
 }
 

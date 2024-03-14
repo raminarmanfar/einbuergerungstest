@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {NgOptimizedImage} from '@angular/common';
+import {DatePipe, NgOptimizedImage} from '@angular/common';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
@@ -29,6 +29,7 @@ import { TakeDemoExamPageComponent } from './components/demo-exam-components/tak
 import { DemoExamsListPageComponent } from './components/demo-exam-components/demo-exams-list-page/demo-exams-list-page.component';
 import { DialogYesNoComponent } from './components/dialog-yes-no/dialog-yes-no.component';
 import { DemoExamDetailsComponent } from './components/demo-exam-components/demo-exam-details/demo-exam-details.component';
+import { DateFormatPipe } from './utils/date-format.pipe';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -49,6 +50,7 @@ export function createTranslateLoader(http: HttpClient) {
     DemoExamsListPageComponent,
     DialogYesNoComponent,
     DemoExamDetailsComponent,
+    DateFormatPipe,
   ],
     imports: [
         BrowserModule,
@@ -69,6 +71,7 @@ export function createTranslateLoader(http: HttpClient) {
         FormsModule
     ],
   providers: [
+    DatePipe
     // {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}
     // {
     //   provide: MatPaginatorIntl, deps: [TranslateService],

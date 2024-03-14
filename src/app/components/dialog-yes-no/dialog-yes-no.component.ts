@@ -1,5 +1,5 @@
 import {Component, Inject} from '@angular/core';
-import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material/dialog';
+import {MAT_DIALOG_DATA} from '@angular/material/dialog';
 import {UserActionEnum} from '../../models/enums/user-action.enum';
 
 @Component({
@@ -10,9 +10,6 @@ import {UserActionEnum} from '../../models/enums/user-action.enum';
 export class DialogYesNoComponent {
   protected readonly YesNoEnum = UserActionEnum;
 
-  constructor(
-    public dialogRef: MatDialogRef<DialogYesNoComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: { trPrefix: string }
-  ) {
+  constructor(@Inject(MAT_DIALOG_DATA) public data: { trPrefix: string }) {
   }
 }

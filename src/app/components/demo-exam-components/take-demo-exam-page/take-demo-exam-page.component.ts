@@ -67,7 +67,7 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
               private router: Router, private utilService: UtilService) {
   }
 
-  ngOnInit(): void {
+  private startSubscriptions(): void {
     this.correctAnswersCountSubscription = this.demoTestsStateService.currentTestCorrectAnswersCount$
       .subscribe(correctAnswersCount => this.correctAnswersCount = correctAnswersCount);
     this.testInfoSubscription = this.demoTestsStateService.currentTest$.subscribe(testInfo => this.testInfo = testInfo);
@@ -90,6 +90,10 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
     if (this.correctAnswersCountSubscription) {
       this.correctAnswersCountSubscription.unsubscribe();
     }
+  }
+
+  ngOnInit(): void {
+    this.startSubscriptions();
   }
 
   ngOnDestroy(): void {
@@ -115,9 +119,11 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
   onFinishExamClick(): void {
     this.utilService.openDialog(DialogYesNoComponent, true, 400, 400, {
       trPrefix: 'demo-exam.finish-exam-dialog.'
-    }).subscribe((result: UserActionEnum) => {
+    }, 600).subscribe((result: UserActionEnum) => {
       if (result === UserActionEnum.YES) {
+        this.destroyAllAndSetCurrentTimer();
         this.demoTestsStateService.finishExam(ExamFinishReasonEnum.USER_FINISHED);
+        this.testInfoSubscription.unsubscribe();
       }
     });
   }
@@ -132,7 +138,8 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
         if (result) {
           switch (result.userAction) {
             case UserActionEnum.RESET:
-              this.demoTestsStateService.resetExam(this.testInfo.id);
+              this.demoTestsStateService.resetExam(this.testInfo.id, result.title);
+              this.startSubscriptions();
               this.snackBar.open(
                 this.translate.instant(
                   trPrefixTable + 'reset-snackbar-message', {examId: this.testInfo.id}

@@ -106,24 +106,24 @@
       </ng-container>
 
       <ng-container matColumnDef="dateCreated">
-        <th mat-header-cell fxShow fxHide.lt-sm fxHide.lt-lg *matHeaderCellDef class="table-title-row-dates"
+        <th mat-header-cell fxShow fxHide.lt-lg fxHide.lg *matHeaderCellDef class="table-title-row-dates"
             matTooltipPosition="above" [matTooltip]="trPrefixTable + 'created' | translate">
           {{ trPrefixTable + 'created' | translate }}
         </th>
-        <td mat-cell fxShow fxHide.lt-sm fxHide.lt-lg *matCellDef="let element" class="table-title-row-dates"
+        <td mat-cell fxShow fxHide.lt-lg fxHide.lg *matCellDef="let element" class="table-title-row-dates"
             [ngClass]="getTableCaptionStyle(element.isExamFinished, element.correctAnswered)">
-          {{ element.dateCreated }}
+          {{ element.dateCreated | dateFormat }}
         </td>
       </ng-container>
 
       <ng-container matColumnDef="dateLastModified">
-        <th mat-header-cell fxShow fxHide.lt-md *matHeaderCellDef class="table-title-row-dates"
+        <th mat-header-cell fxShow fxHide.lt-lg *matHeaderCellDef class="table-title-row-dates"
             matTooltipPosition="above" [matTooltip]="trPrefixTable + 'modified' | translate">
           {{ trPrefixTable + 'modified' | translate }}
         </th>
-        <td mat-cell fxShow fxHide.lt-md *matCellDef="let element" class="table-title-row-dates"
+        <td mat-cell fxShow fxHide.lt-lg *matCellDef="let element" class="table-title-row-dates"
             [ngClass]="getTableCaptionStyle(element.isExamFinished, element.correctAnswered)">
-          {{ element.dateLastModified }}
+          {{ element.dateLastModified | dateFormat }}
         </td>
       </ng-container>
 
