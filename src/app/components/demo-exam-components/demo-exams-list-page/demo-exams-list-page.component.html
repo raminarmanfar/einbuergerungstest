@@ -34,12 +34,23 @@
         </td>
       </ng-container>
 
+      <ng-container matColumnDef="state">
+        <th mat-header-cell fxShow fxHide.lt-md *matHeaderCellDef matTooltipPosition="above"
+            class="table-title-row" [matTooltip]="trPrefixTable + 'selected-state' | translate">
+          {{ trPrefixTable + 'selected-state' | translate }}
+        </th>
+        <td mat-cell fxShow fxHide.lt-md *matCellDef="let element"
+            class="table-title-row" matTooltipPosition="above" [matTooltip]="element.state">
+          {{ 'review-states-tests.german-states.' + element.selectedState.name + '.state' | translate }}
+        </td>
+      </ng-container>
+
       <ng-container matColumnDef="examTime">
-        <th mat-header-cell fxShow fxHide.xs class="table-title-row" *matHeaderCellDef matTooltipPosition="above"
+        <th mat-header-cell fxShow fxHide.lt-sm class="table-title-row" *matHeaderCellDef matTooltipPosition="above"
             [matTooltip]="trPrefixTable + 'remaining-time' | translate">
           {{ trPrefixTable + 'remaining-time' | translate }}
         </th>
-        <td mat-cell fxShow fxHide.xs *matCellDef="let element" class="table-title-row"
+        <td mat-cell fxShow fxHide.lt-sm *matCellDef="let element" class="table-title-row"
             [ngClass]="getTableCaptionStyle(element.isExamFinished, element.correctAnswered)">
           {{ UtilService.formatTime(element.examTime) }}
         </td>

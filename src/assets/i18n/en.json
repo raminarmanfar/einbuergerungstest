@@ -4281,6 +4281,7 @@
     "table": {
       "id": "No.",
       "title": "Test Title",
+      "selected-state": "Selected state",
       "created": "Date Created",
       "modified": "Last Date Modified",
       "correct-answers": "Correct Answers",

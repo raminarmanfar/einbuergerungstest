@@ -4280,6 +4280,7 @@
     "table": {
       "id": "No.",
       "title": "Test Başlığı",
+      "selected-state": "Seçilmiş eyalet",
       "created": "Oluşturulma Tarihi",
       "modified": "Son Değiştirilme Tarihi",
       "correct-answers": "Doğru Cevaplar",

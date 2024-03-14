@@ -19,7 +19,7 @@ import {GermanStatesEnum} from '../../../models/enums/german-states.enum';
 export class DemoExamsListPageComponent implements OnInit {
   protected readonly UtilService = UtilService;
   demoTestsList!: DemoTestInfoModel[];
-  displayedColumns = ['id', 'title', 'examTime', 'isExamFinished', 'correctAnswered', 'incorrectAnswered', 'score', 'dateCreated', 'dateLastModified', 'edit', 'delete'];
+  displayedColumns = ['id', 'title', 'state', 'examTime', 'isExamFinished', 'correctAnswered', 'incorrectAnswered', 'score', 'dateCreated', 'dateLastModified', 'edit', 'delete'];
   trPrefixTable = 'demo-exams-list.table.';
 
   constructor(private demoTestsStateService: DemoTestsStateService,

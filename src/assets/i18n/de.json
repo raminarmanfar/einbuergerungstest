@@ -4279,6 +4279,7 @@
     "table": {
       "id": "Nr.",
       "title": "Testtitel",
+      "selected-state": "Ausgewählter Staat",
       "created": "Erstellungsdatum",
       "modified": "Zuletzt bearbeitet am",
       "correct-answers": "Richtige Antworten",
