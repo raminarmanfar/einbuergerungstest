@@ -5,6 +5,9 @@ import {Language} from '../models/enums/language';
 import {SetActiveLanguage} from './app.action';
 import {Observable, of} from 'rxjs';
 import {TranslateService} from '@ngx-translate/core';
+import {ReviewStatesTestsState} from "./review-states-tests/review-states-tests.state";
+import {DemoTestsState} from "./demo-tests/demo-tests-state";
+import {ReviewDeutschlandQuestionsState} from "./review-deutschland-questions/review-deutschland-questions.state";
 
 export const stateDefaultValues: AppStateModel = {
   activeLanguage: Language.DE
@@ -13,7 +16,7 @@ export const stateDefaultValues: AppStateModel = {
 @State<AppStateModel>({
   name: 'AppState',
   defaults: stateDefaultValues,
-  children: []
+  children: [ReviewDeutschlandQuestionsState, ReviewStatesTestsState, DemoTestsState]
 })
 @Injectable()
 export class AppState {

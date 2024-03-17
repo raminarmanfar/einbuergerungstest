@@ -15,7 +15,7 @@ import {DemoTestsState} from './demo-tests/demo-tests-state';
     CommonModule,
     NgxsModule.forRoot([AppState, ReviewDeutschlandQuestionsState, ReviewStatesTestsState, DemoTestsState]),
     NgxsStoragePluginModule.forRoot({
-      key: [AppState, ReviewDeutschlandQuestionsState, ReviewStatesTestsState, DemoTestsState],
+      key: [AppState],
       storage: StorageOption.LocalStorage
     }),
     NgxsReduxDevtoolsPluginModule.forRoot(),
