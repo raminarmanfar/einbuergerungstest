@@ -4346,7 +4346,7 @@
       }
     }
   },
-  "demo-exam": {
+  "take-demo-exam": {
     "title": "Demo sınavı yap",
     "state-question-title": "Eyalet Soruları",
     "state-question-description": "Eyalet sorularını göster/gizle",

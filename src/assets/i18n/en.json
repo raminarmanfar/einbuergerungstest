@@ -4347,7 +4347,7 @@
       }
     }
   },
-  "demo-exam": {
+  "take-demo-exam": {
     "title": "Take a demo test",
     "state-question-title": "State Questions",
     "state-question-description": "Click to show/hide State questions",

@@ -41,7 +41,7 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
   private getTimeSubscription!: Subscription;
   protected readonly QuestionSetTypeEnum = QuestionSetTypeEnum;
   protected readonly UtilService = UtilService;
-  protected readonly trPrefix = 'demo-exam.';
+  protected readonly trPrefix = 'take-demo-exam.';
   protected readonly trPrefixStateName = 'review-states-tests.german-states.';
   protected readonly statePaginatorData: PageEvent = {
     pageSize: ConstantValues.STATES_EXAM_QUESTIONS_COUNT,
@@ -114,7 +114,7 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
 
   onFinishExamClick(): void {
     this.utilService.openDialog(DialogYesNoComponent, true, 400, 400, {
-      trPrefix: 'demo-exam.finish-exam-dialog.'
+      trPrefix: 'take-demo-exam.finish-exam-dialog.'
     }, 600).subscribe((result: UserActionEnum) => {
       if (result === UserActionEnum.YES) {
         this.demoTestsStateService.finishExam(ExamFinishReasonEnum.USER_FINISHED, this.testInfo.examTime);

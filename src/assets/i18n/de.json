@@ -4345,7 +4345,7 @@
       }
     }
   },
-  "demo-exam": {
+  "take-demo-exam": {
     "title": "Nehmen Sie an einer Demo-Prüfung teil",
     "state-question-title": "Bundesfragen",
     "state-question-description": "Klicken Sie, um Bundesfragen anzuzeigen/auszublenden",
