@@ -21,6 +21,7 @@ export class AppComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.translate.addLangs([Language.EN, Language.DE, Language.TR, Language.FA]);
     this.translate.setDefaultLang(Language.DE);
+    this.translate.currentLang = '';
     this.appStateService.activeLanguage$.subscribe(activeLanguage => {
       this.translate.use(activeLanguage);
       this.dir = activeLanguage === Language.FA ? 'rtl' : 'ltr';
