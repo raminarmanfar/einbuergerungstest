@@ -1,5 +1,5 @@
-<div class="container" *ngIf="examTime">
-  <mat-card class="info-card-container">
+<div class="container">
+  <mat-card class="info-card-container" *ngIf="examTime">
     <mat-card-content>
       <div class="info-card-title">Demo exam {{ testInfo.id }}: {{ testInfo.title }}</div>
       <div *ngIf="!testInfo.isExamFinished else examFinished"
@@ -103,7 +103,7 @@
               mat-fab extended color="primary"
               class="footer-button"
               matTooltipPosition="above" [matTooltip]="trPrefix + 'return-to-list-btn' | translate"
-              (click)="onReturnClick()">
+              [routerLink]="'/demo-exams-list'">
         <mat-icon>keyboard_backspace</mat-icon>
         {{ trPrefix + 'return-to-list-btn' | translate }}
       </button>

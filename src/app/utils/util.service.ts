@@ -9,6 +9,8 @@ import {ErrorMessages} from './error-messages';
 import {GermanStatesEnum} from '../models/enums/german-states.enum';
 import {StateInfoModel} from '../models/state-info.model';
 import {TestQuestionModel} from '../models/test-question.model';
+import {AnswersCountModel} from '../models/answers-count.model';
+import {DemoTestInfoModel} from '../models/demo-test-info.model';
 
 @Injectable({providedIn: 'root'})
 export class UtilService {
@@ -60,6 +62,41 @@ export class UtilService {
     const formattedMinutes = String(time.minutes).padStart(2, '0');
     const formattedSeconds = String(time.seconds).padStart(2, '0');
     return `${formattedMinutes}:${formattedSeconds}`;
+  }
+
+  public static resetUserAnswersFromQuestions(questions: TestQuestionModel[]): TestQuestionModel[] {
+    return questions.map(({userAnswer, ...rest}) => rest);
+  }
+
+  public static getStateByName(stateName: GermanStatesEnum): StateInfoModel {
+    const selectedState = ConstantValues.GERMAN_STATES.find(s => s.name === stateName);
+    if (!selectedState) {
+      throw new Error(ErrorMessages.STATE_NOT_FOUND);
+    }
+    return selectedState;
+  }
+
+  public static getAnswersCounts(examData: DemoTestInfoModel): AnswersCountModel {
+    if (examData.isExamFinished) {
+      const correctDeutschlandQuestions = examData.selectedState.stateTestQuestions.filter(q => q.correctAnswer === q.userAnswer).length;
+      const correctStateQuestions = examData.deutschlandState.stateTestQuestions.filter(q => q.correctAnswer === q.userAnswer).length;
+      const correctAnswered = correctDeutschlandQuestions + correctStateQuestions;
+
+      const unAnsweredDeutschlandQuestions = examData.selectedState.stateTestQuestions.filter(q => !q.userAnswer).length;
+      const unAnsweredStateQuestions = examData.deutschlandState.stateTestQuestions.filter(q => !q.userAnswer).length;
+      const unAnswered = unAnsweredDeutschlandQuestions + unAnsweredStateQuestions;
+
+      return {
+        correctAnswered,
+        unAnswered,
+        incorrectAnswered: ConstantValues.TOTAL_EXAM_QUESTIONS - (correctAnswered + unAnswered)
+      };
+    }
+    return {
+      correctAnswered: 0,
+      incorrectAnswered: 0,
+      unAnswered: 0
+    }
   }
 
   public openDialog<T, K>(component: ComponentType<T>, disableClose: boolean,

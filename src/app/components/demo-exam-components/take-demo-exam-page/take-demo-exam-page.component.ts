@@ -1,8 +1,8 @@
 import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 import {PageEvent} from '@angular/material/paginator';
-import {MatSnackBar} from "@angular/material/snack-bar";
-import {TranslateService} from "@ngx-translate/core";
+import {MatSnackBar} from '@angular/material/snack-bar';
+import {TranslateService} from '@ngx-translate/core';
 import {concatMap, Subscription} from 'rxjs';
 
 import {DemoTestsStateService} from '../../../state/demo-tests/demo-tests-state.service';
@@ -16,7 +16,7 @@ import {ConstantValues} from '../../../utils/constant-values';
 import {CountdownService} from '../../../utils/countdown.service';
 import {TimeModel} from '../../../models/time.model';
 import {UtilService} from '../../../utils/util.service';
-import {DemoExamDetailsComponent} from "../demo-exam-details/demo-exam-details.component";
+import {DemoExamDetailsComponent} from '../demo-exam-details/demo-exam-details.component';
 
 @Component({
   selector: 'app-take-demo-test-page',
@@ -32,20 +32,16 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
   @HostListener('window:beforeunload', ['$event'])
   beforeUnloadHandler(event: any): void {
     console.log('>>> event:', event);
-    this.demoTestsStateService.setExamLastChanges();
-    this.destroyAllAndSetCurrentTimer();
-    this.testInfoSubscription.unsubscribe();
-    if (this.correctAnswersCountSubscription) {
-      this.correctAnswersCountSubscription.unsubscribe();
-    }
+    this.stopCountingDown();
+    this.currentTestSubscription.unsubscribe();
+    this.examPausedSubscription.unsubscribe();
   }
 
   testInfo!: DemoTestInfoModel;
   examTime!: TimeModel;
-  correctAnswersCount = 0;
-  private testInfoSubscription!: Subscription;
+  private currentTestSubscription!: Subscription;
+  private examPausedSubscription!: Subscription;
   private getTimeSubscription!: Subscription;
-  private correctAnswersCountSubscription!: Subscription;
   protected readonly QuestionSetTypeEnum = QuestionSetTypeEnum;
   protected readonly UtilService = UtilService;
   protected readonly trPrefix = 'demo-exam.';
@@ -60,6 +56,7 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
     pageIndex: 0,
     length: ConstantValues.DEUTSCHLAND_EXAM_QUESTIONS_COUNT
   };
+  correctAnswersCount!: number;
 
   constructor(public demoTestsStateService: DemoTestsStateService,
               public countdownService: CountdownService,
@@ -67,45 +64,50 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
               private router: Router, private utilService: UtilService) {
   }
 
-  private startSubscriptions(): void {
-    this.correctAnswersCountSubscription = this.demoTestsStateService.currentTestCorrectAnswersCount$
-      .subscribe(correctAnswersCount => this.correctAnswersCount = correctAnswersCount);
-    this.testInfoSubscription = this.demoTestsStateService.currentTest$.subscribe(testInfo => this.testInfo = testInfo);
-    this.getTimeSubscription = this.demoTestsStateService.currentTest$.pipe(
-      concatMap(() => this.countdownService.startCountdown(this.testInfo.examTime))
+  private startCountingDown(): void {
+    this.getTimeSubscription = this.demoTestsStateService.currentExamRemainingTime$.pipe(
+      concatMap(remainingTime => this.countdownService.startCountdown(remainingTime))
     ).subscribe(countdown => {
       this.examTime = countdown;
       if (countdown.minutes === 0 && countdown.seconds === 0) {
-        this.destroyAllAndSetCurrentTimer();
-        this.demoTestsStateService.finishExam(ExamFinishReasonEnum.TIME_OVER);
-        this.testInfoSubscription.unsubscribe();
+        this.countdownService.stopCountdown();
+        this.demoTestsStateService.finishExam(ExamFinishReasonEnum.TIME_OVER, this.examTime);
       }
     });
   }
 
-  private destroyAllAndSetCurrentTimer(): void {
+  private stopCountingDown(): void {
+    if (this.getTimeSubscription) {
+      this.getTimeSubscription.unsubscribe();
+    }
     this.countdownService.stopCountdown();
-    this.getTimeSubscription.unsubscribe();
-    this.demoTestsStateService.setExamCountdownTimer(this.examTime);
-    if (this.correctAnswersCountSubscription) {
-      this.correctAnswersCountSubscription.unsubscribe();
+    if (this.examTime) {
+      this.demoTestsStateService.setExamCountdownTimer(this.examTime);
     }
   }
 
   ngOnInit(): void {
-    this.startSubscriptions();
+    this.currentTestSubscription = this.demoTestsStateService.currentTest$.subscribe(currentTest => {
+      this.testInfo = currentTest;
+      this.demoTestsStateService.setCurrentExamPause(currentTest.isExamFinished);
+      if (!this.examTime) {
+        this.examTime = currentTest.examTime;
+      }
+    });
+    this.examPausedSubscription = this.demoTestsStateService.currentExamPaused$.subscribe(currentExamPaused => {
+      if (currentExamPaused) {
+        this.correctAnswersCount = UtilService.getAnswersCounts(this.testInfo).correctAnswered;
+        this.stopCountingDown();
+      } else {
+        this.startCountingDown();
+      }
+    });
   }
 
   ngOnDestroy(): void {
-    this.destroyAllAndSetCurrentTimer();
-    this.testInfoSubscription.unsubscribe();
-  }
-
-  onReturnClick(): void {
-    this.destroyAllAndSetCurrentTimer();
-    this.testInfoSubscription.unsubscribe();
-    this.demoTestsStateService.setExamLastChanges();
-    this.router.navigate(['/demo-exams-list']).then();
+    this.stopCountingDown();
+    this.currentTestSubscription.unsubscribe();
+    this.examPausedSubscription.unsubscribe();
   }
 
   onCurrentQuestionChange(selectedQuestionIndex: number, activeQuestionSet: QuestionSetTypeEnum): void {
@@ -121,43 +123,41 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
       trPrefix: 'demo-exam.finish-exam-dialog.'
     }, 600).subscribe((result: UserActionEnum) => {
       if (result === UserActionEnum.YES) {
-        this.destroyAllAndSetCurrentTimer();
-        this.demoTestsStateService.finishExam(ExamFinishReasonEnum.USER_FINISHED);
-        this.testInfoSubscription.unsubscribe();
+        this.demoTestsStateService.finishExam(ExamFinishReasonEnum.USER_FINISHED, this.examTime);
       }
     });
   }
 
-  onExamResultDetailClick(): void  {
+  onExamResultDetailClick(): void {
     const trPrefixTable = 'demo-exams-list.table.';
     this.utilService.openDialog(DemoExamDetailsComponent, false, 400, 400, {
-        trPrefix: trPrefixTable + 'exam-details-dialog.',
-        isNewExamCreate: false,
-        demoExamData: this.testInfo
-      }).subscribe((result: {userAction: UserActionEnum, title: string}) => {
-        if (result) {
-          switch (result.userAction) {
-            case UserActionEnum.RESET:
-              this.demoTestsStateService.resetExam(this.testInfo.id, result.title);
-              this.startSubscriptions();
-              this.snackBar.open(
-                this.translate.instant(
-                  trPrefixTable + 'reset-snackbar-message', {examId: this.testInfo.id}
-                ),
-                'OK', {duration: ConstantValues.SNACKBAR_DURATION}
-              );
-              break;
-            case UserActionEnum.UPDATE:
-              this.demoTestsStateService.updateExamTitle(this.testInfo.id, result.title);
-              this.snackBar.open(
-                this.translate.instant(
-                  trPrefixTable + 'update-snackbar-message', {examId: this.testInfo.id}
-                ),
-                'OK', {duration: ConstantValues.SNACKBAR_DURATION}
-              );
-              break;
-          }
+      trPrefix: trPrefixTable + 'exam-details-dialog.',
+      isNewExamCreate: false,
+      demoExamData: UtilService.cloneDeep(this.testInfo)
+    }).subscribe((result: { userAction: UserActionEnum, title: string }) => {
+      if (result) {
+        switch (result.userAction) {
+          case UserActionEnum.RESET:
+            // this.startCountingDown();
+            this.demoTestsStateService.resetExam(this.testInfo.id, result.title);
+            this.snackBar.open(
+              this.translate.instant(
+                trPrefixTable + 'reset-snackbar-message', {examId: this.testInfo.id}
+              ),
+              'OK', {duration: ConstantValues.SNACKBAR_DURATION}
+            );
+            break;
+          case UserActionEnum.UPDATE:
+            this.demoTestsStateService.updateExamTitle(this.testInfo.id, result.title);
+            this.snackBar.open(
+              this.translate.instant(
+                trPrefixTable + 'update-snackbar-message', {examId: this.testInfo.id}
+              ),
+              'OK', {duration: ConstantValues.SNACKBAR_DURATION}
+            );
+            break;
         }
-      });
-    }
+      }
+    });
+  }
 }

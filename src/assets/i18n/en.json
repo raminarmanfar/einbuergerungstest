@@ -4342,7 +4342,8 @@
           "description": "The exam will be reset and started from beginning with the same questions!",
           "btnConfirm": "Reset exam",
           "btnReject": "Cancel"
-        }
+        },
+        "keep-answers-on-reset": "Do you want to keep current answers when resetting?"
       }
     }
   },

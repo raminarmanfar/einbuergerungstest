@@ -4341,7 +4341,8 @@
           "description": "Sınav sıfırlanacak ve aynı sorularla baştan başlayacak!",
           "btnConfirm": "Sınavı Sıfırla",
           "btnReject": "İptal"
-        }
+        },
+        "keep-answers-on-reset": "Sıfırlama yapılırken mevcut cevapları korumak istiyor musunuz?"
       }
     }
   },

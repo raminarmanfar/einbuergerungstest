@@ -1,4 +1,5 @@
 import {Injectable} from '@angular/core';
+import {DatePipe} from '@angular/common';
 import {Action, Selector, State, StateContext} from '@ngxs/store';
 import {append, patch, removeItem, updateItem} from '@ngxs/store/operators';
 import {map, Observable, of} from 'rxjs';
@@ -9,10 +10,10 @@ import {
   DeleteAnExamFromList,
   FinishExam,
   ResetExam,
-  SetActiveQuestionsSet,
+  SetActiveQuestionsSet, SetCurrentExamPause,
   SetCurrentQuestionIndex,
   SetExamCountdownTimer,
-  SetExamQuestionsCounts,
+  SetKeepAnswersOnReset,
   SetSelectedDemoTestId,
   UpdateExamTitle,
   UpdateTestQuestion
@@ -23,10 +24,12 @@ import {TestQuestionModel} from '../../models/test-question.model';
 import {StateInfoModel} from '../../models/state-info.model';
 import {QuestionSetTypeEnum} from '../../models/enums/question-set-type.enum';
 import {ErrorMessages} from '../../utils/error-messages';
-import {DatePipe} from '@angular/common';
+import {TimeModel} from '../../models/time.model';
 
 export const demoTestsStateModel: DemoTestsStateModel = {
   currentTestId: -1,
+  keepAnswersOnReset: false,
+  currentExamPaused: true,
   demoTests: []
 };
 
@@ -52,27 +55,26 @@ export class DemoTestsState {
   }
 
   @Selector()
-  static getCurrentTestCorrectAnswersCount(state: DemoTestsStateModel): number {
-    const currentTest = state.demoTests.find(test => test.id === state.currentTestId);
-    if (currentTest && currentTest.isExamFinished) {
-      const correctDeutschlandQuestions = currentTest.deutschlandState.stateTestQuestions.filter(q => q.correctAnswer === q.userAnswer).length;
-      const correctStateQuestions = currentTest.selectedState.stateTestQuestions.filter(q => q.correctAnswer === q.userAnswer).length;
-      return correctDeutschlandQuestions + correctStateQuestions;
-    }
-    return 0;
+  static getCurrentExamPaused(state: DemoTestsStateModel): boolean {
+    return state.currentExamPaused;
   }
 
   @Selector()
-  static getCurrentTestUnAnswersCount(state: DemoTestsStateModel): number {
+  static getCurrentExamRemainingTime(state: DemoTestsStateModel): TimeModel | undefined {
     const currentTest = state.demoTests.find(test => test.id === state.currentTestId);
-    if (currentTest) {
-      const anAnsweredDeutschlandQuestions = currentTest.deutschlandState.stateTestQuestions.filter(q => !q.userAnswer).length;
-      const unAnsweredStateQuestions = currentTest.selectedState.stateTestQuestions.filter(q => !q.userAnswer).length;
-      return anAnsweredDeutschlandQuestions + unAnsweredStateQuestions;
-    }
-    return 0;
+    return currentTest ? currentTest.examTime : undefined;
   }
 
+  @Selector()
+  static getCurrentExamIsFinished(state: DemoTestsStateModel): boolean | undefined {
+    const currentTest = state.demoTests.find(test => test.id === state.currentTestId);
+    return currentTest ? currentTest.isExamFinished : undefined;
+  }
+
+  @Selector()
+  static getKeepAnswersOnReset(state: DemoTestsStateModel): boolean {
+    return state.keepAnswersOnReset;
+  }
 
   @Action(SetActiveQuestionsSet)
   setActiveQuestionsSet(ctx: StateContext<DemoTestsStateModel>, {payload}: SetActiveQuestionsSet): Observable<DemoTestsStateModel> {
@@ -103,45 +105,18 @@ export class DemoTestsState {
     );
   }
 
-  @Action(SetExamQuestionsCounts)
-  setExamLastChanges(ctx: StateContext<DemoTestsStateModel>): Observable<DemoTestsStateModel> {
-    return of(ctx.getState()).pipe(
-      map(currentState => {
-        const correctAnswered = DemoTestsState.getCurrentTestCorrectAnswersCount(ctx.getState());
-        const unAnswered = DemoTestsState.getCurrentTestUnAnswersCount(ctx.getState());
-        return ctx.setState(
-          patch<DemoTestsStateModel>({
-            demoTests: updateItem<DemoTestInfoModel>(
-              t => t.id === currentState.currentTestId,
-              patch({
-                correctAnswered,
-                incorrectAnswered: ConstantValues.TOTAL_EXAM_QUESTIONS - (correctAnswered + unAnswered),
-                unAnswered,
-                dateLastModified: this.getDateNow()
-              })
-            )
-          })
-        );
-      })
-    );
-  }
-
   @Action(FinishExam)
   finishExam(ctx: StateContext<DemoTestsStateModel>, {payload}: FinishExam): Observable<DemoTestsStateModel> {
     return of(ctx.getState()).pipe(
       map(currentState => {
-        const correctAnswered = DemoTestsState.getCurrentTestCorrectAnswersCount(ctx.getState());
-        const unAnswered = DemoTestsState.getCurrentTestUnAnswersCount(ctx.getState());
         return ctx.setState(
           patch<DemoTestsStateModel>({
             demoTests: updateItem<DemoTestInfoModel>(
               t => t.id === currentState.currentTestId,
               patch({
                 isExamFinished: true,
-                finishReason: payload,
-                correctAnswered,
-                incorrectAnswered: ConstantValues.TOTAL_EXAM_QUESTIONS - (correctAnswered + unAnswered),
-                unAnswered,
+                finishReason: payload.finishReason,
+                examTime: payload.examTime,
                 deutschlandCurrentQuestionIndex: 0,
                 selectedStateCurrentQuestionIndex: 0,
                 activeQuestionSet: QuestionSetTypeEnum.STATE,
@@ -231,37 +206,48 @@ export class DemoTestsState {
 
   @Action(ResetExam)
   resetExam(ctx: StateContext<DemoTestsStateModel>, {payload}: ResetExam): Observable<DemoTestsStateModel> {
+    return of(ctx.getState()).pipe(
+      map(currentState => {
+        const currentExam = DemoTestsState.getCurrentTest(currentState);
+        if (!currentExam) {
+          throw new Error(ErrorMessages.DEMO_TEST_NOT_FOUND);
+        }
 
-    return of(ctx.setState(
-        patch<DemoTestsStateModel>({
-          demoTests: updateItem<DemoTestInfoModel>(
-            t => t.id === payload.examId,
-            patch({
-              title: payload.title ? payload.title : DemoTestsState.getCurrentTest(ctx.getState())?.title,
-              isExamFinished: false,
-              examTime: {minutes: 60, seconds: 0},
-              selectedStateCurrentQuestionIndex: 0,
-              deutschlandCurrentQuestionIndex: 0,
-              activeQuestionSet: QuestionSetTypeEnum.STATE,
-              correctAnswered: 0,
-              incorrectAnswered: 0,
-              unAnswered: ConstantValues.TOTAL_EXAM_QUESTIONS,
-              finishReason: undefined,
-              dateLastModified: this.getDateNow()
-            })
-          )
-        })
-      )
+        return ctx.setState(
+          patch<DemoTestsStateModel>({
+            demoTests: updateItem<DemoTestInfoModel>(
+              t => t.id === payload.examId,
+              patch({
+                title: payload.title ? payload.title : DemoTestsState.getCurrentTest(ctx.getState())?.title,
+                isExamFinished: false,
+                examTime: {minutes: 60, seconds: 0},
+                selectedStateCurrentQuestionIndex: 0,
+                deutschlandCurrentQuestionIndex: 0,
+                activeQuestionSet: QuestionSetTypeEnum.STATE,
+                finishReason: undefined,
+                dateLastModified: this.getDateNow(),
+                selectedState: patch<StateInfoModel>({
+                  stateTestQuestions:
+                    currentState.keepAnswersOnReset ?
+                      currentExam.selectedState.stateTestQuestions :
+                      UtilService.resetUserAnswersFromQuestions(currentExam.selectedState.stateTestQuestions)
+                }),
+                deutschlandState: patch<StateInfoModel>({
+                  stateTestQuestions:
+                    currentState.keepAnswersOnReset ?
+                      currentExam.deutschlandState.stateTestQuestions :
+                      UtilService.resetUserAnswersFromQuestions(currentExam.deutschlandState.stateTestQuestions)
+                })
+              })
+            )
+          })
+        );
+      })
     );
   }
 
   @Action(CreateNewExam)
   createNewExamTitle(ctx: StateContext<DemoTestsStateModel>, {payload}: CreateNewExam): Observable<DemoTestsStateModel> {
-    const selectedState = ConstantValues.GERMAN_STATES.find(s => s.name === payload.selectedState);
-    if (!selectedState) {
-      throw new Error(ErrorMessages.STATE_NOT_FOUND);
-    }
-
     return of(ctx.getState().demoTests).pipe(
       map(currentStateDemoTests => {
         const maxId = currentStateDemoTests.length > 0 ?
@@ -277,19 +263,24 @@ export class DemoTestsState {
               finishReason: undefined,
               activeQuestionSet: QuestionSetTypeEnum.STATE,
               examTime: {minutes: 60, seconds: 0},
-              correctAnswered: 0,
-              incorrectAnswered: 0,
-              unAnswered: ConstantValues.TOTAL_EXAM_QUESTIONS,
               dateCreated: this.getDateNow(),
               dateLastModified: this.getDateNow(),
               selectedState: {
-                ...selectedState,
-                stateTestQuestions: UtilService.getRandomStateQuestions(payload.selectedState)
+                ...UtilService.getStateByName(payload.selectedState),
+                stateTestQuestions: UtilService.cloneDeep(
+                  UtilService.resetUserAnswersFromQuestions(
+                    UtilService.getRandomStateQuestions(payload.selectedState)
+                  )
+                )
               },
               selectedStateCurrentQuestionIndex: 0,
               deutschlandState: {
                 ...ConstantValues.DEUTSCHLAND_STATE,
-                stateTestQuestions: UtilService.getRandomDeutschlandDemoTestQuestions()
+                stateTestQuestions: UtilService.cloneDeep(
+                  UtilService.resetUserAnswersFromQuestions(
+                    UtilService.getRandomDeutschlandDemoTestQuestions()
+                  )
+                )
               },
               deutschlandCurrentQuestionIndex: 0
             }])
@@ -297,5 +288,15 @@ export class DemoTestsState {
         );
       })
     );
+  }
+
+  @Action(SetKeepAnswersOnReset)
+  setKeepAnswersOnReset(ctx: StateContext<DemoTestsStateModel>, {payload}: SetKeepAnswersOnReset): Observable<DemoTestsStateModel> {
+    return of(ctx.patchState({keepAnswersOnReset: payload}));
+  }
+
+  @Action(SetCurrentExamPause)
+  setCurrentExamPause(ctx: StateContext<DemoTestsStateModel>, {payload}: SetCurrentExamPause): Observable<DemoTestsStateModel> {
+    return of(ctx.patchState({currentExamPaused: payload}));
   }
 }

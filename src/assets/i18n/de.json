@@ -4340,7 +4340,8 @@
           "description": "Die Prüfung wird zurückgesetzt und beginnt von vorne mit denselben Fragen!",
           "btnConfirm": "Prüfung zurücksetzen",
           "btnReject": "Abbrechen"
-        }
+        },
+        "keep-answers-on-reset": "Möchten Sie die aktuellen Antworten beim Zurücksetzen behalten?"
       }
     }
   },

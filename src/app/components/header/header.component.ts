@@ -29,7 +29,25 @@ export class HeaderComponent implements OnInit {
               private router: Router) {
   }
 
+  private getPageTitle(): string {
+    const pageTitleKey = this.router.url.split('/').pop() || '';
+    if (pageTitleKey) {
+      console.log('>>>', pageTitleKey);
+      this.translate.get(pageTitleKey! + '.title').subscribe((pageTitle) => {
+        this.translate.get('title').subscribe((appTitle) => {
+          if (pageTitleKey === 'home') {
+            return this.pageTitle = `${appTitle}`;
+          } else {
+            return this.pageTitle = `${pageTitle} - ${appTitle}`;
+          }
+        });
+      });
+    }
+    return '';
+  }
+
   ngOnInit(): void {
+    this.translate.onLangChange.subscribe(() => this.getPageTitle());
     this.appStateService.activeLanguage$.subscribe(activeLanguage => {
       this.activeLanguage = activeLanguage;
       switch (activeLanguage) {
@@ -52,19 +70,7 @@ export class HeaderComponent implements OnInit {
 
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        const pageTitleKey = this.router.url.split('/').pop() || '';
-        if (pageTitleKey) {
-          console.log('>>>', pageTitleKey);
-          this.translate.get(pageTitleKey! + '.title').subscribe((pageTitle) => {
-            this.translate.get('title').subscribe((appTitle) => {
-              if (pageTitleKey === 'home') {
-                document.title = this.pageTitle = `${appTitle}`;
-              } else {
-                document.title = this.pageTitle = `${pageTitle} - ${appTitle}`;
-              }
-            });
-          });
-        }
+        document.title = this.getPageTitle();
       }
     });
   }

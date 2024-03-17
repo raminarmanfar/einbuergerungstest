@@ -7,6 +7,8 @@ import {ConstantValues} from '../../../utils/constant-values';
 import {DialogYesNoComponent} from '../../dialog-yes-no/dialog-yes-no.component';
 import {ReviewStatesTestsStateService} from '../../../state/review-states-tests/review-states-tests-state.service';
 import {StateInfoModel} from '../../../models/state-info.model';
+import {DemoTestsStateService} from '../../../state/demo-tests/demo-tests-state.service';
+import {AnswersCountModel} from '../../../models/answers-count.model';
 
 @Component({
   selector: 'app-demo-test-details',
@@ -21,8 +23,10 @@ export class DemoExamDetailsComponent implements OnInit {
   protected readonly germanStates = ConstantValues.GERMAN_STATES;
   selectedStateInfo: StateInfoModel | undefined = undefined;
   examTitle = '';
+  answersCounts!: AnswersCountModel;
 
-  constructor(private utilService: UtilService,
+  constructor(public demoTestsStateService: DemoTestsStateService,
+              private utilService: UtilService,
               private reviewStatesTestsStateService: ReviewStatesTestsStateService,
               private dialogRef: MatDialogRef<DemoExamDetailsComponent>,
               @Inject(MAT_DIALOG_DATA) public data: {
@@ -33,6 +37,7 @@ export class DemoExamDetailsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.answersCounts = UtilService.getAnswersCounts(this.data.demoExamData);
     this.examTitle = this.data.isNewExamCreate ? '' : this.data.demoExamData.title;
 
     this.reviewStatesTestsStateService.allSubState$.subscribe(allSubStateData =>

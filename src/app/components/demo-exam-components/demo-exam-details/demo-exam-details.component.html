@@ -3,7 +3,7 @@
     <mat-card-header>
       <mat-card-title>
         {{ data.trPrefix + (data.isNewExamCreate ? 'create-title' : 'edit-title') | translate }}
-        <span *ngIf="!data.isNewExamCreate">: {{data.demoExamData.id | persianNumber}}</span>
+        <span *ngIf="!data.isNewExamCreate">: {{ data.demoExamData.id | persianNumber }}</span>
       </mat-card-title>
     </mat-card-header>
     <mat-divider></mat-divider>
@@ -14,73 +14,80 @@
                   [(ngModel)]="examTitle"></textarea>
       </mat-form-field>
 
-      <div *ngIf="!data.isNewExamCreate"
-           class="info-body-container" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around">
-        <div fxFlex="50%" class="data-container exam-info-container">
-          <p>{{ data.trPrefix + 'state-name' | translate }}
-            : <span class="value-label">
+      <div *ngIf="!data.isNewExamCreate">
+        <div class="info-body-container" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around">
+          <div fxFlex="50%" class="data-container exam-info-container">
+            <p>{{ data.trPrefix + 'state-name' | translate }}
+              : <span class="value-label">
               {{ trPrefixState + data.demoExamData.selectedState.name + '.state' | translate }}
             </span>
-          <p>{{ data.trPrefix + 'remaining-time' | translate }}
-            : <span class="value-label">{{ UtilService.formatTime(data.demoExamData.examTime) | persianNumber }}</span>
-          </p>
-          <p>{{ data.trPrefix + 'exam-status' | translate }}
-            : <span class="value-label">
+            <p>{{ data.trPrefix + 'remaining-time' | translate }}
+              : <span
+                class="value-label">{{ UtilService.formatTime(data.demoExamData.examTime) | persianNumber }}</span>
+            </p>
+            <p>{{ data.trPrefix + 'exam-status' | translate }}
+              : <span class="value-label">
               {{ data.trPrefix + (data.demoExamData.isExamFinished ? 'exam-done' : 'exam-ongoing') | translate }}
             </span>
-          </p>
-          <p>{{ data.trPrefix + 'created-label' | translate }}
-            : <span class="value-label">
+            </p>
+            <p>{{ data.trPrefix + 'created-label' | translate }}
+              : <span class="value-label">
               {{ data.demoExamData.dateCreated | dateFormat | persianNumber }}
             </span>
-          </p>
-          <p>{{ data.trPrefix + 'modified-label' | translate }}
-            : <span class="value-label">
+            </p>
+            <p>{{ data.trPrefix + 'modified-label' | translate }}
+              : <span class="value-label">
               {{ data.demoExamData.dateLastModified | dateFormat | persianNumber }}
             </span>
-          </p>
-        </div>
-
-        <span fxShow style="margin: 3px"></span>
-        <div fxFlex="50%" class="data-container exam-result-container">
-          <p>{{ data.trPrefix + 'finish-reason-label' | translate }}
-            : <span class="value-label">
+            </p>
+          </div>
+          <span fxShow style="margin: 4px"></span>
+          <div fxFlex="50%" class="data-container exam-result-container">
+            <p>{{ data.trPrefix + 'finish-reason-label' | translate }}
+              : <span class="value-label">
               {{ data.demoExamData.isExamFinished ? (data.trPrefix + 'finish-reason.' + data.demoExamData.finishReason | translate) : '-' }}
             </span>
-          </p>
-          <p>{{ data.trPrefix + 'correct-answered' | translate }}
-            : <span class="value-label">
-              {{ data.demoExamData.isExamFinished ? (data.demoExamData.correctAnswered | persianNumber) : '-' }}
+            </p>
+            <p>{{ data.trPrefix + 'correct-answered' | translate }}
+              : <span class="value-label">
+              {{ data.demoExamData.isExamFinished ? (answersCounts.correctAnswered | persianNumber) : '-' }}
             </span>
-          </p>
-          <p>{{ data.trPrefix + 'incorrect-answered' | translate }}
-            : <span class="value-label">
-              {{ data.demoExamData.isExamFinished ? (data.demoExamData.incorrectAnswered | persianNumber) : '-' }}
+            </p>
+            <p>{{ data.trPrefix + 'incorrect-answered' | translate }}
+              : <span class="value-label">
+              {{ data.demoExamData.isExamFinished ? (answersCounts.incorrectAnswered | persianNumber) : '-' }}
             </span>
-          </p>
-          <p>{{ data.trPrefix + 'unanswered' | translate }}
-            : <span class="value-label">
-              {{ data.demoExamData.isExamFinished ? (data.demoExamData.unAnswered | persianNumber) : '-' }}
+            </p>
+            <p>{{ data.trPrefix + 'unanswered' | translate }}
+              : <span class="value-label">
+              {{ data.demoExamData.isExamFinished ? (answersCounts.unAnswered | persianNumber) : '-' }}
             </span>
-          </p>
-          <p>{{ data.trPrefix + 'score' | translate }}
-            : <span class="value-label">
-              {{ data.demoExamData.isExamFinished ? (data.demoExamData.correctAnswered * 100 / ConstantValues.TOTAL_EXAM_QUESTIONS | number: '2.0-2' | persianNumber) : '-' }}
+            </p>
+            <p>{{ data.trPrefix + 'score' | translate }}
+              : <span class="value-label">
+              {{ data.demoExamData.isExamFinished ? (answersCounts.correctAnswered * 100 / ConstantValues.TOTAL_EXAM_QUESTIONS | number: '2.0-2' | persianNumber) : '-' }}
             </span>
-          </p>
-          <p>{{ data.trPrefix + 'result-label' | translate }}
-            : <span class="value-label"
-                    [ngClass]="{
-                    'passed': data.demoExamData.isExamFinished && data.demoExamData.correctAnswered >= 17,
-                    'failed': data.demoExamData.isExamFinished &&  data.demoExamData.correctAnswered < 17
+            </p>
+            <p>{{ data.trPrefix + 'result-label' | translate }}
+              : <span class="value-label"
+                      [ngClass]="{
+                    'passed': data.demoExamData.isExamFinished && answersCounts.correctAnswered >= 17,
+                    'failed': data.demoExamData.isExamFinished &&  answersCounts.correctAnswered < 17
                     }">
-              {{ data.demoExamData.isExamFinished ? (data.trPrefix + (data.demoExamData.correctAnswered >= 17 ? 'passed' : 'failed') | translate) : '-' }}
+              {{ data.demoExamData.isExamFinished ? (data.trPrefix + (answersCounts.correctAnswered >= 17 ? 'passed' : 'failed') | translate) : '-' }}
             </span>
-          </p>
+            </p>
+          </div>
+        </div>
+        <div class="option-container">
+          <mat-slide-toggle [checked]="(demoTestsStateService.keepAnswersOnReset$ | async) || false"
+                            (change)="demoTestsStateService.setKeepAnswersOnReset($event.checked)">
+            {{ data.trPrefix + 'keep-answers-on-reset' | translate }}
+          </mat-slide-toggle>
         </div>
       </div>
 
-      <div class="states-select-container" *ngIf="data.isNewExamCreate">
+      <div *ngIf="data.isNewExamCreate" class="states-select-container">
         <mat-form-field class="select-form-field">
           <mat-label>{{ 'review-states-tests.select-state' | translate }}</mat-label>
           <mat-select
@@ -101,7 +108,8 @@
       <button mat-button color="accent" [mat-dialog-close]="userAction.NO">
         {{ data.trPrefix + 'cancel-btn' | translate }}
       </button>
-      <button mat-button color="primary" (click)="onCreateOrUpdateClick()" [disabled]="(data.isNewExamCreate && !selectedStateInfo) || examTitle === ''">
+      <button mat-button color="primary" (click)="onCreateOrUpdateClick()"
+              [disabled]="(data.isNewExamCreate && !selectedStateInfo) || examTitle === ''">
         {{ data.trPrefix + (data.isNewExamCreate ? 'create-btn' : 'update-btn') | translate }}
       </button>
       <button mat-button color="warn" (click)="onResetExamClick()" *ngIf="!data.isNewExamCreate">

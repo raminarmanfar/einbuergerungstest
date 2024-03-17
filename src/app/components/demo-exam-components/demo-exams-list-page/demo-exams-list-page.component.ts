@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {DemoTestInfoModel} from '../../../models/demo-test-info.model';
 import {Router} from '@angular/router';
 import {TranslateService} from '@ngx-translate/core';
@@ -10,15 +10,17 @@ import {DialogYesNoComponent} from '../../dialog-yes-no/dialog-yes-no.component'
 import {UserActionEnum} from '../../../models/enums/user-action.enum';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {GermanStatesEnum} from '../../../models/enums/german-states.enum';
+import {Subscription} from 'rxjs';
 
 @Component({
   selector: 'app-demo-exams-list-page',
   templateUrl: './demo-exams-list-page.component.html',
   styleUrls: ['./demo-exams-list-page.component.scss']
 })
-export class DemoExamsListPageComponent implements OnInit {
+export class DemoExamsListPageComponent implements OnInit, OnDestroy {
+  private allDemoTestsSubscription!: Subscription;
   protected readonly UtilService = UtilService;
-  demoTestsList!: DemoTestInfoModel[];
+  demoExamsList!: DemoTestInfoModel[];
   displayedColumns = ['id', 'title', 'state', 'examTime', 'isExamFinished', 'correctAnswered', 'incorrectAnswered', 'score', 'dateCreated', 'dateLastModified', 'edit', 'delete'];
   trPrefixTable = 'demo-exams-list.table.';
 
@@ -28,12 +30,16 @@ export class DemoExamsListPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.demoTestsStateService.allDemoTests$.subscribe(allDemoTests => this.demoTestsList = allDemoTests);
+    this.allDemoTestsSubscription = this.demoTestsStateService.allDemoTests$.subscribe(demoExamsList => this.demoExamsList = demoExamsList);
+  }
+
+  ngOnDestroy(): void {
+    this.allDemoTestsSubscription.unsubscribe();
   }
 
   onSelectedTestClick(selectedTest: DemoTestInfoModel): void {
     this.demoTestsStateService.setSelectedDemoTestId(selectedTest.id);
-    this.router.navigate(['/demo-exam']).then();
+    this.router.navigate(['/take-demo-exam']).then();
   }
 
   getScore(correctAnswered: number): number {
@@ -52,7 +58,7 @@ export class DemoExamsListPageComponent implements OnInit {
       trPrefix: this.trPrefixTable + 'exam-details-dialog.',
       isNewExamCreate: true,
       demoExamData: undefined
-    }).subscribe((result: {userAction: UserActionEnum, title: string, selectedState: GermanStatesEnum}) => {
+    }).subscribe((result: { userAction: UserActionEnum, title: string, selectedState: GermanStatesEnum }) => {
       if (result.userAction === UserActionEnum.CREATE) {
         this.demoTestsStateService.createNewExam(result.title, result.selectedState);
         this.snackBar.open(
@@ -60,15 +66,15 @@ export class DemoExamsListPageComponent implements OnInit {
           'OK', {duration: ConstantValues.SNACKBAR_DURATION}
         );
       }
-  });
+    });
   }
 
-  onEditClick(selectedDemoExam: DemoTestInfoModel): void {
+  onUpdateOrResetClick(selectedDemoExam: DemoTestInfoModel): void {
     this.utilService.openDialog(DemoExamDetailsComponent, false, 400, 400, {
       trPrefix: this.trPrefixTable + 'exam-details-dialog.',
       isNewExamCreate: false,
       demoExamData: selectedDemoExam
-    }).subscribe((result: {userAction: UserActionEnum, title: string}) => {
+    }).subscribe((result: { userAction: UserActionEnum, title: string }) => {
       if (result) {
         switch (result.userAction) {
           case UserActionEnum.RESET:

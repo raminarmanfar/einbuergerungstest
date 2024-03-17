@@ -29,7 +29,7 @@ html, body {
   //--mat-paginator-container-text-weight: bold;
 }
 
-@media (min-width: 100px) {
+@media (min-width: 10px) {
   .dialog-responsive {
     width: 90px;
   }
@@ -42,13 +42,14 @@ html, body {
   .mat-column-title {
     max-width: 40px;
   }
-  .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
+  .mat-toolbar, .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
     font-size: 7px;
     --mat-slide-toggle-label-text-size: 7px;
     --mat-paginator-container-text-size: 7px;
     --mat-expansion-header-text-size: 7px;
     --mat-table-row-item-label-text-size: 7px;
     --mat-table-header-headline-size: 7px;
+    --mat-toolbar-title-text-size: 14px;
   }
 }
 
@@ -65,13 +66,14 @@ html, body {
   .mat-column-title {
     max-width: 60px;
   }
-  .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
+  .mat-toolbar, .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
     font-size: 11px;
     --mat-slide-toggle-label-text-size: 11px;
     --mat-paginator-container-text-size: 11px;
     --mat-expansion-header-text-size: 11px;
     --mat-table-row-item-label-text-size: 11px;
     --mat-table-header-headline-size: 11px;
+    --mat-toolbar-title-text-size: 16px;
   }
 }
 
@@ -88,13 +90,14 @@ html, body {
   .mat-column-title {
     max-width: 90px;
   }
-  .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
+  .mat-toolbar, .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
     font-size: 12px;
     --mat-slide-toggle-label-text-size: 12px;
     --mat-paginator-container-text-size: 12px;
     --mat-expansion-header-text-size: 12px;
     --mat-table-row-item-label-text-size: 12px;
     --mat-table-header-headline-size: 12px;
+    --mat-toolbar-title-text-size: 18px;
   }
 }
 @media (min-width: 450px) {
@@ -115,13 +118,14 @@ html, body {
   .mat-column-title {
     max-width: 120px;
   }
-  .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
+  .mat-toolbar, .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
     font-size: 14px;
     --mat-slide-toggle-label-text-size: 14px;
     --mat-paginator-container-text-size: 14px;
     --mat-expansion-header-text-size: 14px;
     --mat-table-row-item-label-text-size: 14px;
     --mat-table-header-headline-size: 14px;
+    --mat-toolbar-title-text-size: 20px;
   }
 }
 
@@ -139,13 +143,14 @@ html, body {
     max-width: 150px;
     min-width: 150px;
   }
-  .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
+  .mat-toolbar, .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
     font-size: 15px;
     --mat-slide-toggle-label-text-size: 15px;
     --mat-paginator-container-text-size: 15px;
     --mat-expansion-header-text-size: 15px;
     --mat-table-row-item-label-text-size: 15px;
     --mat-table-header-headline-size: 15px;
+    --mat-toolbar-title-text-size: 22px;
   }
 }
 
@@ -163,13 +168,14 @@ html, body {
     max-width: 160px;
     min-width: 160px;
   }
-  .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
+  .mat-toolbar, .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
     font-size: 16px;
     --mat-slide-toggle-label-text-size: 16px;
     --mat-paginator-container-text-size: 16px;
     --mat-expansion-header-text-size: 16px;
     --mat-table-row-item-label-text-size: 16px;
     --mat-table-header-headline-size: 16px;
+    --mat-toolbar-title-text-size: 26px;
   }
 }
 
@@ -186,13 +192,14 @@ html, body {
   .mat-column-title {
     max-width: 190px;
   }
-  .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
+  .mat-toolbar, .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
     font-size: 17px;
     --mat-slide-toggle-label-text-size: 17px;
     --mat-paginator-container-text-size: 17px;
     --mat-expansion-header-text-size: 17px;
     --mat-table-row-item-label-text-size: 17px;
     --mat-table-header-headline-size: 17px;
+    --mat-toolbar-title-text-size: 28px;
   }
 }
 
@@ -209,13 +216,14 @@ html, body {
   .mat-column-title {
     max-width: 220px;
   }
-  .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
+  .mat-toolbar, .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
     font-size: 18px;
     --mat-slide-toggle-label-text-size: 18px;
     --mat-paginator-container-text-size: 18px;
     --mat-expansion-header-text-size: 18px;
     --mat-table-row-item-label-text-size: 18px;
     --mat-table-header-headline-size: 18px;
+    --mat-toolbar-title-text-size: 30px;
   }
 }
 
@@ -232,13 +240,14 @@ html, body {
   .mat-column-title {
     max-width: 300px;
   }
-  .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
+  .mat-toolbar, .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
     font-size: 19px;
     --mat-slide-toggle-label-text-size: 19px;
     --mat-paginator-container-text-size: 19px;
     --mat-expansion-header-text-size: 19px;
     --mat-table-row-item-label-text-size: 19px;
     --mat-table-header-headline-size: 19px;
+    --mat-toolbar-title-text-size: 32px;
   }
 }
 
@@ -255,13 +264,14 @@ html, body {
   .mat-column-title {
     max-width: 400px;
   }
-  .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
+  .mat-toolbar, .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
     font-size: 20px;
     --mat-slide-toggle-label-text-size: 20px;
     --mat-paginator-container-text-size: 20px;
     --mat-expansion-header-text-size: 20px;
     --mat-table-row-item-label-text-size: 20px;
     --mat-table-header-headline-size: 20px;
+    --mat-toolbar-title-text-size: 34px;
   }
 }
 
@@ -278,12 +288,13 @@ html, body {
   .mat-column-title {
     max-width: 500px;
   }
-  .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
+  .mat-toolbar, .timer-box-text .mat-mdc-card-content, .mat-expansion-panel-header, .mat-mdc-header-row, .mat-mdc-row, .mdc-data-table__content, .mat-mdc-paginator, .mdc-button .mdc-button__label, .mat-mdc-slide-toggle .mdc-label, mat-panel-title, .mdc-form-field > label {
     font-size: 24px;
     --mat-slide-toggle-label-text-size: 24px;
     --mat-paginator-container-text-size: 24px;
     --mat-expansion-header-text-size: 24px;
     --mat-table-row-item-label-text-size: 24px;
     --mat-table-header-headline-size: 24px;
+    --mat-toolbar-title-text-size: 36px;
   }
 }

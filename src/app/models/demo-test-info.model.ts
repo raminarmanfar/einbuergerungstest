@@ -8,9 +8,6 @@ export interface DemoTestInfoModel {
   title: string;
   dateCreated: string;
   dateLastModified: string;
-  correctAnswered: number;
-  incorrectAnswered: number;
-  unAnswered: number;
   activeQuestionSet: QuestionSetTypeEnum;
   deutschlandState: StateInfoModel;
   deutschlandCurrentQuestionIndex: number;

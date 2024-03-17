@@ -16,7 +16,7 @@ const routes: Routes = [
   {path: 'review-deutschland-tests', component: ReviewDeutschlandQuestionsPageComponent},
   {path: 'review-states-tests', component: ReviewStatesQuestionsPageComponent},
   {path: 'demo-exams-list', component: DemoExamsListPageComponent},
-  {path: 'demo-exam', component: TakeDemoExamPageComponent}
+  {path: 'take-demo-exam', component: TakeDemoExamPageComponent}
 ];
 
 @NgModule({

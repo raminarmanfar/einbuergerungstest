@@ -18,14 +18,10 @@ export class SetExamCountdownTimer {
   }
 }
 
-export class SetExamQuestionsCounts {
-  public static type = '[DemoTestsState] Set Exam Questions Counts';
-}
-
 export class FinishExam {
   public static type = '[DemoTestsState] Finish The Exam';
 
-  constructor(public payload: ExamFinishReasonEnum) {
+  constructor(public payload: {finishReason: ExamFinishReasonEnum, examTime: TimeModel}) {
   }
 }
 
@@ -75,5 +71,19 @@ export class CreateNewExam {
   public static type = '[DemoTestsState] Create New Exam';
 
   constructor(public payload: {examTitle: string, selectedState: GermanStatesEnum}) {
+  }
+}
+
+export class SetKeepAnswersOnReset {
+  public static type = '[DemoTestsState] Set Keep Answers On Reset';
+
+  constructor(public payload: boolean) {
+  }
+}
+
+export class SetCurrentExamPause {
+  public static type = '[DemoTestsState] Set Current Exam Pause';
+
+  constructor(public payload: boolean) {
   }
 }
