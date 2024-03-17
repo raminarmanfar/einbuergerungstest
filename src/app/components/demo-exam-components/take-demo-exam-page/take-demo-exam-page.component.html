@@ -1,10 +1,10 @@
 <div class="container">
-  <mat-card class="info-card-container" *ngIf="examTime">
+  <mat-card class="info-card-container">
     <mat-card-content>
       <div class="info-card-title">Demo exam {{ testInfo.id }}: {{ testInfo.title }}</div>
       <div *ngIf="!testInfo.isExamFinished else examFinished"
-           class="info-card-timer" [ngClass]="{'blinking-text': examTime.minutes < 5}">
-        {{ trPrefix + 'time-left' | translate: {remainingTime: UtilService.formatTime(examTime)} | persianNumber }}
+           class="info-card-timer" [ngClass]="{'blinking-text': testInfo.examTime.minutes < 5}">
+        {{ trPrefix + 'time-left' | translate: {remainingTime: UtilService.formatTime(testInfo.examTime)} | persianNumber }}
       </div>
       <ng-template #examFinished>
         <div class="info-card-timer blinking-text">

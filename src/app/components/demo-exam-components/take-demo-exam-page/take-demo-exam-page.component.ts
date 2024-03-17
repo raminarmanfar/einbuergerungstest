@@ -1,5 +1,4 @@
 import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
 import {PageEvent} from '@angular/material/paginator';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {TranslateService} from '@ngx-translate/core';
@@ -14,7 +13,6 @@ import {DialogYesNoComponent} from '../../dialog-yes-no/dialog-yes-no.component'
 import {UserActionEnum} from '../../../models/enums/user-action.enum';
 import {ConstantValues} from '../../../utils/constant-values';
 import {CountdownService} from '../../../utils/countdown.service';
-import {TimeModel} from '../../../models/time.model';
 import {UtilService} from '../../../utils/util.service';
 import {DemoExamDetailsComponent} from '../demo-exam-details/demo-exam-details.component';
 
@@ -38,7 +36,6 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
   }
 
   testInfo!: DemoTestInfoModel;
-  examTime!: TimeModel;
   private currentTestSubscription!: Subscription;
   private examPausedSubscription!: Subscription;
   private getTimeSubscription!: Subscription;
@@ -61,17 +58,17 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
   constructor(public demoTestsStateService: DemoTestsStateService,
               public countdownService: CountdownService,
               private snackBar: MatSnackBar, private translate: TranslateService,
-              private router: Router, private utilService: UtilService) {
+              private utilService: UtilService) {
   }
 
   private startCountingDown(): void {
     this.getTimeSubscription = this.demoTestsStateService.currentExamRemainingTime$.pipe(
       concatMap(remainingTime => this.countdownService.startCountdown(remainingTime))
     ).subscribe(countdown => {
-      this.examTime = countdown;
+      this.testInfo.examTime = countdown;
       if (countdown.minutes === 0 && countdown.seconds === 0) {
         this.countdownService.stopCountdown();
-        this.demoTestsStateService.finishExam(ExamFinishReasonEnum.TIME_OVER, this.examTime);
+        this.demoTestsStateService.finishExam(ExamFinishReasonEnum.TIME_OVER, countdown);
       }
     });
   }
@@ -81,8 +78,8 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
       this.getTimeSubscription.unsubscribe();
     }
     this.countdownService.stopCountdown();
-    if (this.examTime) {
-      this.demoTestsStateService.setExamCountdownTimer(this.examTime);
+    if (this.testInfo.examTime) {
+      this.demoTestsStateService.setExamCountdownTimer(this.testInfo.examTime);
     }
   }
 
@@ -90,9 +87,6 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
     this.currentTestSubscription = this.demoTestsStateService.currentTest$.subscribe(currentTest => {
       this.testInfo = currentTest;
       this.demoTestsStateService.setCurrentExamPause(currentTest.isExamFinished);
-      if (!this.examTime) {
-        this.examTime = currentTest.examTime;
-      }
     });
     this.examPausedSubscription = this.demoTestsStateService.currentExamPaused$.subscribe(currentExamPaused => {
       if (currentExamPaused) {
@@ -123,7 +117,7 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
       trPrefix: 'demo-exam.finish-exam-dialog.'
     }, 600).subscribe((result: UserActionEnum) => {
       if (result === UserActionEnum.YES) {
-        this.demoTestsStateService.finishExam(ExamFinishReasonEnum.USER_FINISHED, this.examTime);
+        this.demoTestsStateService.finishExam(ExamFinishReasonEnum.USER_FINISHED, this.testInfo.examTime);
       }
     });
   }
