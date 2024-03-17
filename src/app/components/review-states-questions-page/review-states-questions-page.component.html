@@ -50,7 +50,8 @@
   <app-questionnaire-list
     *ngIf="selectedStateInfo"
     [currentQuestionIndex]="(reviewStatesTestsStateService.currentQuestionIndex$ | async)"
-    [stateInfo]="selectedStateInfo"
+    [selectedStateName]="selectedStateInfo.name"
+    [questions]="selectedStateInfo.stateTestQuestions"
     [showAnswersKeys]="showAnswersKeys"
     [paginatorData]="paginatorData"
     [trPrefix]="trPrefix"

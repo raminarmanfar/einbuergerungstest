@@ -10,7 +10,7 @@ import {
   DeleteAnExamFromList,
   FinishExam,
   ResetExam,
-  SetActiveQuestionsSet, SetCurrentExamPause,
+  SetCurrentExamPause,
   SetCurrentQuestionIndex,
   SetExamCountdownTimer,
   SetKeepAnswersOnReset,
@@ -18,11 +18,8 @@ import {
   UpdateExamTitle,
   UpdateTestQuestion
 } from './demo-tests.action';
-import {ConstantValues} from '../../utils/constant-values';
 import {UtilService} from '../../utils/util.service';
 import {TestQuestionModel} from '../../models/test-question.model';
-import {StateInfoModel} from '../../models/state-info.model';
-import {QuestionSetTypeEnum} from '../../models/enums/question-set-type.enum';
 import {ErrorMessages} from '../../utils/error-messages';
 import {TimeModel} from '../../models/time.model';
 
@@ -76,20 +73,6 @@ export class DemoTestsState {
     return state.keepAnswersOnReset;
   }
 
-  @Action(SetActiveQuestionsSet)
-  setActiveQuestionsSet(ctx: StateContext<DemoTestsStateModel>, {payload}: SetActiveQuestionsSet): Observable<DemoTestsStateModel> {
-    return of(ctx.getState()).pipe(
-      map(currentState =>
-        ctx.setState(
-          patch<DemoTestsStateModel>({
-            demoTests: updateItem<DemoTestInfoModel>(
-              t => t.id === currentState.currentTestId, patch({activeQuestionSet: payload}))
-          })
-        )
-      )
-    );
-  }
-
   @Action(SetExamCountdownTimer)
   setExamCountdownTimer(ctx: StateContext<DemoTestsStateModel>, {payload}: SetExamCountdownTimer): Observable<DemoTestsStateModel> {
     return of(ctx.getState()).pipe(
@@ -117,9 +100,7 @@ export class DemoTestsState {
                 isExamFinished: true,
                 finishReason: payload.finishReason,
                 examTime: payload.examTime,
-                deutschlandCurrentQuestionIndex: 0,
-                selectedStateCurrentQuestionIndex: 0,
-                activeQuestionSet: QuestionSetTypeEnum.STATE,
+                currentQuestionIndex: 0,
                 dateLastModified: this.getDateNow()
               })
             )
@@ -140,11 +121,8 @@ export class DemoTestsState {
       map(currentState =>
         ctx.setState(
           patch<DemoTestsStateModel>({
-            demoTests: updateItem<DemoTestInfoModel>(
-              t => t.id === currentState.currentTestId,
-              payload.activeQuestionSet === QuestionSetTypeEnum.STATE ?
-                patch<DemoTestInfoModel>({selectedStateCurrentQuestionIndex: payload.selectedQuestionIndex}) :
-                patch<DemoTestInfoModel>({deutschlandCurrentQuestionIndex: payload.selectedQuestionIndex})
+            demoTests: updateItem<DemoTestInfoModel>(t => t.id === currentState.currentTestId,
+              patch<DemoTestInfoModel>({currentQuestionIndex: payload})
             )
           })
         )
@@ -160,21 +138,12 @@ export class DemoTestsState {
           patch<DemoTestsStateModel>({
             demoTests: updateItem<DemoTestInfoModel>(
               t => t.id === currentState.currentTestId,
-              payload.activeQuestionSet ? patch<DemoTestInfoModel>({
+              patch<DemoTestInfoModel>({
                 dateLastModified: this.getDateNow(),
-                deutschlandState: patch<StateInfoModel>({
-                  stateTestQuestions: updateItem<TestQuestionModel>(
-                    q => q.id === payload.selectedQuestion.id,
-                    patch<TestQuestionModel>({userAnswer: payload.selectedQuestion.userAnswer})
-                  )
-                })
-              }) : patch<DemoTestInfoModel>({
-                selectedState: patch<StateInfoModel>({
-                  stateTestQuestions: updateItem<TestQuestionModel>(
-                    q => q.id === payload.selectedQuestion.id,
-                    patch<TestQuestionModel>({userAnswer: payload.selectedQuestion.userAnswer})
-                  )
-                })
+                examQuestions: updateItem<TestQuestionModel>(
+                  q => q.id === payload.id,
+                  patch<TestQuestionModel>({userAnswer: payload.userAnswer})
+                )
               })
             )
           })
@@ -221,23 +190,12 @@ export class DemoTestsState {
                 title: payload.title ? payload.title : DemoTestsState.getCurrentTest(ctx.getState())?.title,
                 isExamFinished: false,
                 examTime: {minutes: 60, seconds: 0},
-                selectedStateCurrentQuestionIndex: 0,
-                deutschlandCurrentQuestionIndex: 0,
-                activeQuestionSet: QuestionSetTypeEnum.STATE,
+                currentQuestionIndex: 0,
                 finishReason: undefined,
                 dateLastModified: this.getDateNow(),
-                selectedState: patch<StateInfoModel>({
-                  stateTestQuestions:
-                    currentState.keepAnswersOnReset ?
-                      currentExam.selectedState.stateTestQuestions :
-                      UtilService.resetUserAnswersFromQuestions(currentExam.selectedState.stateTestQuestions)
-                }),
-                deutschlandState: patch<StateInfoModel>({
-                  stateTestQuestions:
-                    currentState.keepAnswersOnReset ?
-                      currentExam.deutschlandState.stateTestQuestions :
-                      UtilService.resetUserAnswersFromQuestions(currentExam.deutschlandState.stateTestQuestions)
-                })
+                examQuestions: currentState.keepAnswersOnReset ?
+                  currentExam.examQuestions : UtilService.resetUserAnswersFromQuestions(currentExam.examQuestions),
+
               })
             )
           })
@@ -261,28 +219,12 @@ export class DemoTestsState {
               title: payload.examTitle,
               isExamFinished: false,
               finishReason: undefined,
-              activeQuestionSet: QuestionSetTypeEnum.STATE,
               examTime: {minutes: 60, seconds: 0},
               dateCreated: this.getDateNow(),
               dateLastModified: this.getDateNow(),
-              selectedState: {
-                ...UtilService.getStateByName(payload.selectedState),
-                stateTestQuestions: UtilService.cloneDeep(
-                  UtilService.resetUserAnswersFromQuestions(
-                    UtilService.getRandomStateQuestions(payload.selectedState)
-                  )
-                )
-              },
-              selectedStateCurrentQuestionIndex: 0,
-              deutschlandState: {
-                ...ConstantValues.DEUTSCHLAND_STATE,
-                stateTestQuestions: UtilService.cloneDeep(
-                  UtilService.resetUserAnswersFromQuestions(
-                    UtilService.getRandomDeutschlandDemoTestQuestions()
-                  )
-                )
-              },
-              deutschlandCurrentQuestionIndex: 0
+              currentQuestionIndex: 0,
+              selectedState: payload.selectedState,
+              examQuestions: UtilService.getRandomExamQuestions(payload.selectedState)
             }])
           })
         );

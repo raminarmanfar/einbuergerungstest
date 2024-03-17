@@ -46,11 +46,11 @@ export class DemoExamsListPageComponent implements OnInit, OnDestroy {
     return correctAnswered * 100 / ConstantValues.TOTAL_EXAM_QUESTIONS;
   }
 
-  getTableCaptionStyle(isExamFinished: boolean, correctAnswered: number): any {
+  getTableCaptionStyle<T>(isExamFinished: boolean, correctAnswered: number): T {
     return {
       'passed-caption': isExamFinished && correctAnswered >= 17,
       'failed-caption': isExamFinished && correctAnswered < 17
-    }
+    } as T;
   }
 
   onCreateExamClick(): void {

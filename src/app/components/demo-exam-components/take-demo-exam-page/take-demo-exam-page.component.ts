@@ -44,9 +44,9 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
   protected readonly trPrefix = 'take-demo-exam.';
   protected readonly trPrefixStateName = 'review-states-tests.german-states.';
   protected readonly statePaginatorData: PageEvent = {
-    pageSize: ConstantValues.STATES_EXAM_QUESTIONS_COUNT,
+    pageSize: ConstantValues.TOTAL_EXAM_QUESTIONS,
     pageIndex: 0,
-    length: ConstantValues.STATES_EXAM_QUESTIONS_COUNT
+    length: ConstantValues.TOTAL_EXAM_QUESTIONS
   };
   protected readonly deutschlandPaginatorData: PageEvent = {
     pageSize: ConstantValues.DEUTSCHLAND_EXAM_QUESTIONS_COUNT,
@@ -104,12 +104,12 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
     this.examPausedSubscription.unsubscribe();
   }
 
-  onCurrentQuestionChange(selectedQuestionIndex: number, activeQuestionSet: QuestionSetTypeEnum): void {
-    this.demoTestsStateService.setCurrentQuestionIndex({selectedQuestionIndex, activeQuestionSet});
+  onCurrentQuestionChange(selectedQuestionIndex: number): void {
+    this.demoTestsStateService.setCurrentQuestionIndex(selectedQuestionIndex);
   }
 
-  onStateAnswerChange(selectedQuestion: TestQuestionModel, activeQuestionSet: QuestionSetTypeEnum): void {
-    this.demoTestsStateService.updateTestQuestion({selectedQuestion, activeQuestionSet});
+  onStateAnswerChange(selectedQuestion: TestQuestionModel): void {
+    this.demoTestsStateService.updateTestQuestion(selectedQuestion);
   }
 
   onFinishExamClick(): void {

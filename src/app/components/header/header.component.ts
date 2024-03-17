@@ -32,16 +32,17 @@ export class HeaderComponent implements OnInit {
   private getPageTitle(): string {
     const pageTitleKey = this.router.url.split('/').pop() || '';
     if (pageTitleKey) {
-      console.log('>>>', pageTitleKey);
-      this.translate.get(pageTitleKey! + '.title').subscribe((pageTitle) => {
-        this.translate.get('title').subscribe((appTitle) => {
-          if (pageTitleKey === 'home') {
-            return this.pageTitle = `${appTitle}`;
-          } else {
-            return this.pageTitle = `${pageTitle} - ${appTitle}`;
-          }
+      if (pageTitleKey) {
+        this.translate.get(pageTitleKey! + '.title').subscribe((pageTitle) => {
+          this.translate.get('title').subscribe((appTitle) => {
+            if (pageTitleKey === 'home') {
+              return this.pageTitle = `${appTitle}`;
+            } else {
+              return this.pageTitle = `${pageTitle} - ${appTitle}`;
+            }
+          });
         });
-      });
+      }
     }
     return '';
   }

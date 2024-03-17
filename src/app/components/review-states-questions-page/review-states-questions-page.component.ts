@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
+import {PageEvent} from '@angular/material/paginator';
 import {ConstantValues} from '../../utils/constant-values';
 import {StateInfoModel} from '../../models/state-info.model';
 import {StateChangeExpansionPanelBehaviorEnum} from '../../models/enums/state-change-expansion-panel-behavior.enum';
 import {ReviewStatesTestsStateService} from '../../state/review-states-tests/review-states-tests-state.service';
-import {PageEvent} from '@angular/material/paginator';
 
 @Component({
   selector: 'app-review-states-tests',

@@ -42,11 +42,11 @@ export class UtilService {
     return sortByRandomList ? res.sort((a, b) => randomQuestionsIds.indexOf(a.id) - randomQuestionsIds.indexOf(b.id)) : res;
   }
 
-  public static cloneDeep<T>(object: T): T {
-    return object ? JSON.parse(JSON.stringify(object)) : {...object};
+  private static getRandomDeutschlandDemoTestQuestions(sortByRandomList = true): TestQuestionModel[] {
+    return UtilService.generateQuestionsByLength(ConstantValues.DEUTSCHLAND_EXAM_QUESTIONS_COUNT, ConstantValues.DEUTSCHLAND_STATE, sortByRandomList);
   }
 
-  public static getRandomStateQuestions(stateName: GermanStatesEnum, sortByRandomList = true): TestQuestionModel[] {
+  private static getRandomStateQuestions(stateName: GermanStatesEnum, sortByRandomList = true): TestQuestionModel[] {
     const stateInfo = ConstantValues.GERMAN_STATES.find(s => s.name === stateName);
     if (!stateInfo) {
       throw new Error(ErrorMessages.STATE_NOT_FOUND);
@@ -54,8 +54,9 @@ export class UtilService {
     return UtilService.generateQuestionsByLength(ConstantValues.STATES_EXAM_QUESTIONS_COUNT, stateInfo, sortByRandomList);
   }
 
-  public static getRandomDeutschlandDemoTestQuestions(sortByRandomList = true): TestQuestionModel[] {
-    return UtilService.generateQuestionsByLength(ConstantValues.DEUTSCHLAND_EXAM_QUESTIONS_COUNT, ConstantValues.DEUTSCHLAND_STATE, sortByRandomList);
+  public static getRandomExamQuestions(stateName: GermanStatesEnum, sortByRandomList = true): TestQuestionModel[] {
+    return UtilService.getRandomStateQuestions(stateName, sortByRandomList)
+      .concat(UtilService.getRandomDeutschlandDemoTestQuestions(sortByRandomList));
   }
 
   public static formatTime(time: TimeModel): string {
@@ -68,23 +69,10 @@ export class UtilService {
     return questions.map(({userAnswer, ...rest}) => rest);
   }
 
-  public static getStateByName(stateName: GermanStatesEnum): StateInfoModel {
-    const selectedState = ConstantValues.GERMAN_STATES.find(s => s.name === stateName);
-    if (!selectedState) {
-      throw new Error(ErrorMessages.STATE_NOT_FOUND);
-    }
-    return selectedState;
-  }
-
   public static getAnswersCounts(examData: DemoTestInfoModel): AnswersCountModel {
     if (examData.isExamFinished) {
-      const correctDeutschlandQuestions = examData.selectedState.stateTestQuestions.filter(q => q.correctAnswer === q.userAnswer).length;
-      const correctStateQuestions = examData.deutschlandState.stateTestQuestions.filter(q => q.correctAnswer === q.userAnswer).length;
-      const correctAnswered = correctDeutschlandQuestions + correctStateQuestions;
-
-      const unAnsweredDeutschlandQuestions = examData.selectedState.stateTestQuestions.filter(q => !q.userAnswer).length;
-      const unAnsweredStateQuestions = examData.deutschlandState.stateTestQuestions.filter(q => !q.userAnswer).length;
-      const unAnswered = unAnsweredDeutschlandQuestions + unAnsweredStateQuestions;
+      const correctAnswered = examData.examQuestions.filter(q => q.correctAnswer === q.userAnswer).length;
+      const unAnswered = examData.examQuestions.filter(q => !q.userAnswer).length;
 
       return {
         correctAnswered,
@@ -115,5 +103,9 @@ export class UtilService {
         exitAnimationDuration: exitAnimationDuration ? exitAnimationDuration + 'ms' : undefined,
         data
       }).afterClosed();
+  }
+
+  public static cloneDeep<T>(object: T): T {
+    return object ? JSON.parse(JSON.stringify(object)) : {...object};
   }
 }

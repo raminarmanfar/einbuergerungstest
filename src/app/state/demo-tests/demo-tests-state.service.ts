@@ -8,7 +8,7 @@ import {
   DeleteAnExamFromList,
   FinishExam,
   ResetExam,
-  SetActiveQuestionsSet, SetCurrentExamPause,
+  SetCurrentExamPause,
   SetCurrentQuestionIndex,
   SetExamCountdownTimer,
   SetKeepAnswersOnReset,
@@ -16,11 +16,10 @@ import {
   UpdateExamTitle,
   UpdateTestQuestion
 } from './demo-tests.action';
-import {CurrentQuestionIndexPayloadModel, UpdateQuestionPayloadModel} from '../models/payloads.model';
-import {QuestionSetTypeEnum} from '../../models/enums/question-set-type.enum';
 import {ExamFinishReasonEnum} from '../../models/enums/exam-finish-reason.enum';
 import {TimeModel} from '../../models/time.model';
 import {GermanStatesEnum} from '../../models/enums/german-states.enum';
+import {TestQuestionModel} from "../../models/test-question.model";
 
 @Injectable({providedIn: 'root'})
 export class DemoTestsStateService {
@@ -35,10 +34,6 @@ export class DemoTestsStateService {
   constructor(private store: Store) {
   }
 
-  setActiveQuestionsSet(activeQuestionSet: QuestionSetTypeEnum): void {
-    this.store.dispatch(new SetActiveQuestionsSet(activeQuestionSet));
-  }
-
   setExamCountdownTimer(countdownTimer: TimeModel): void {
     this.store.dispatch(new SetExamCountdownTimer(countdownTimer));
   }
@@ -51,12 +46,12 @@ export class DemoTestsStateService {
     this.store.dispatch(new SetSelectedDemoTestId(demoTestId));
   }
 
-  setCurrentQuestionIndex(currentQuestionIndexPayloadModel: CurrentQuestionIndexPayloadModel): void {
-    this.store.dispatch(new SetCurrentQuestionIndex(currentQuestionIndexPayloadModel));
+  setCurrentQuestionIndex(currentQuestionIndex: number): void {
+    this.store.dispatch(new SetCurrentQuestionIndex(currentQuestionIndex));
   }
 
-  updateTestQuestion(updateQuestionInfo: UpdateQuestionPayloadModel): void {
-    this.store.dispatch(new UpdateTestQuestion(updateQuestionInfo));
+  updateTestQuestion(selectedQuestion: TestQuestionModel): void {
+    this.store.dispatch(new UpdateTestQuestion(selectedQuestion));
   }
 
   deleteAnExamFromList(examId: number): void {
