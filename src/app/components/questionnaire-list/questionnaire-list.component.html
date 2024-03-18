@@ -1,70 +1,71 @@
 <div *ngIf="paginatorData">
-  <mat-accordion *ngIf="currentQuestionIndex !== null">
-    <mat-expansion-panel *ngFor="let test of questions|slice:
+  <div class="accordion">
+    <mat-accordion *ngIf="currentQuestionIndex !== null">
+      <mat-expansion-panel *ngFor="let test of questions|slice:
              (paginator.pageIndex*paginator.pageSize):
              ((paginator.pageIndex+1)*paginator.pageSize); let i=index"
-                         [expanded]="currentQuestionIndex === i"
-                         (opened)="expansionPanelOpen.emit(i)">
+                           [expanded]="currentQuestionIndex === i"
+                           (opened)="expansionPanelOpen.emit(i)">
 
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          <p [ngClass]="{
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <p [ngClass]="{
                  'show-title-as-wrong-result': showUserResults && test.correctAnswer !== test.userAnswer,
                  'show-title-as-correct-result': showUserResults && test.correctAnswer === test.userAnswer
                  }">
-            {{ showArrayIndexAsRow ? (i + 1) : test.id | persianNumber }}
-          - {{ getQuestionTrPrefix(selectedStateName, i, test.id) | translate | persianNumber }}
-          </p>
-        </mat-panel-title>
-      </mat-expansion-panel-header>
+              {{ showArrayIndexAsRow ? (i + 1) : test.id | persianNumber }}
+              - {{ getQuestionTrPrefix(selectedStateName, i, test.id) | translate | persianNumber }}
+            </p>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
 
-      <div *ngIf="test.hasImage">
-        <img class="img"
-             [src]="'assets/images/states-tests/' + getImageUrl(selectedStateName, i) + test.id + '.png'"
-             [alt]="getImageUrl(selectedStateName, i) + test.id">
-      </div>
+        <div *ngIf="test.hasImage">
+          <img class="img"
+               [src]="'assets/images/states-tests/' + getImageUrl(selectedStateName, i) + test.id + '.png'"
+               [alt]="getImageUrl(selectedStateName, i) + test.id">
+        </div>
 
-      <div fxLayout="row">
-        <mat-radio-group [color]="showUserResults ? 'accent' : 'primary'" fxLayout="column"
-                         (change)="onAnswerChange(test, $event.value)">
-          <div *ngFor="let answerId of [1, 2, 3, 4]">
-            <div fxFlex="30px">
-              <div *ngIf="showUserResults">
-                <mat-checkbox *ngIf="test.correctAnswer === answerId" fxLayout="column" [color]="'primary'"
-                              class="disable-clickable correct-answer-checkbox"
-                              [checked]="test.correctAnswer === answerId">
-                </mat-checkbox>
+        <div fxLayout="row">
+          <mat-radio-group [color]="showUserResults ? 'accent' : 'primary'" fxLayout="column"
+                           (change)="onAnswerChange(test, $event.value)">
+            <div *ngFor="let answerId of [1, 2, 3, 4]">
+              <div fxFlex="30px">
+                <div *ngIf="showUserResults">
+                  <mat-checkbox *ngIf="test.correctAnswer === answerId" fxLayout="column" [color]="'primary'"
+                                class="disable-clickable correct-answer-checkbox"
+                                [checked]="test.correctAnswer === answerId">
+                  </mat-checkbox>
+                </div>
               </div>
-            </div>
-            <mat-radio-button fxFlex [ngClass]="{'disable-clickable': !answersClickable || showUserResults}"
-                              [value]="answerId"
-                              [checked]="(showAnswersKeys && test.correctAnswer === answerId) || test.userAnswer === answerId">
-              <p class="item-text"
-                 [ngClass]="{
+              <mat-radio-button fxFlex [ngClass]="{'disable-clickable': !answersClickable || showUserResults}"
+                                [value]="answerId"
+                                [checked]="(showAnswersKeys && test.correctAnswer === answerId) || test.userAnswer === answerId">
+                <p class="item-text"
+                   [ngClass]="{
                  'show-correct-answer': showUserResults && test.correctAnswer === answerId && test.correctAnswer !== test.userAnswer,
                  'show-as-wrong-result': showUserResults && test.userAnswer === answerId && test.correctAnswer !== test.userAnswer,
                  'show-as-correct-result': showUserResults && test.userAnswer === answerId && test.correctAnswer === test.userAnswer
                  }">
-                {{ getAnswerTrPrefix(selectedStateName, i, test.id, answerId) | translate | persianNumber }}
-              </p>
-            </mat-radio-button>
-          </div>
-        </mat-radio-group>
-      </div>
+                  {{ getAnswerTrPrefix(selectedStateName, i, test.id, answerId) | translate | persianNumber }}
+                </p>
+              </mat-radio-button>
+            </div>
+          </mat-radio-group>
+        </div>
 
-      <mat-action-row>
-        <button *ngIf="currentQuestionIndex > 0"
-                mat-button color="warn"
-                (click)="expansionPanelOpen.emit(currentQuestionIndex - 1)">{{ 'general.previous' | translate }}
-        </button>
-        <button *ngIf="currentQuestionIndex + 1 < questions.length"
-                mat-button color="primary"
-                (click)="expansionPanelOpen.emit(currentQuestionIndex + 1)">{{ 'general.next' | translate }}
-        </button>
-      </mat-action-row>
-    </mat-expansion-panel>
-  </mat-accordion>
-
+        <mat-action-row>
+          <button *ngIf="currentQuestionIndex > 0"
+                  mat-button color="warn"
+                  (click)="expansionPanelOpen.emit(currentQuestionIndex - 1)">{{ 'general.previous' | translate }}
+          </button>
+          <button *ngIf="currentQuestionIndex + 1 < questions.length"
+                  mat-button color="primary"
+                  (click)="expansionPanelOpen.emit(currentQuestionIndex + 1)">{{ 'general.next' | translate }}
+          </button>
+        </mat-action-row>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
   <mat-paginator #paginator
                  [length]="paginatorData.length"
                  [pageIndex]="paginatorData.pageIndex"

@@ -112,17 +112,18 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
     this.demoTestsStateService.updateTestQuestion(selectedQuestion);
   }
 
-  onFinishExamClick(): void {
+  onFinishExamClick(scrollableDiv: HTMLElement): void {
     this.utilService.openDialog(DialogYesNoComponent, true, 400, 400, {
       trPrefix: 'take-demo-exam.finish-exam-dialog.'
     }, 600).subscribe((result: UserActionEnum) => {
       if (result === UserActionEnum.YES) {
         this.demoTestsStateService.finishExam(ExamFinishReasonEnum.USER_FINISHED, this.testInfo.examTime);
+        scrollableDiv.scrollTop = 0;
       }
     });
   }
 
-  onExamResultDetailClick(): void {
+  onExamResultDetailClick(scrollableDiv: HTMLElement): void {
     const trPrefixTable = 'demo-exams-list.table.';
     this.utilService.openDialog(DemoExamDetailsComponent, false, 400, 400, {
       trPrefix: trPrefixTable + 'exam-details-dialog.',
@@ -140,6 +141,7 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
               ),
               'OK', {duration: ConstantValues.SNACKBAR_DURATION}
             );
+            scrollableDiv.scrollTop = 0;
             break;
           case UserActionEnum.UPDATE:
             this.demoTestsStateService.updateExamTitle(this.testInfo.id, result.title);
