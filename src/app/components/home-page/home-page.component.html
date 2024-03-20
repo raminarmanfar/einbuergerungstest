@@ -1,12 +1,12 @@
-<div class="container">
-  <div class="col-container" fxLayout.lt-md="column" fxLayoutAlign="center center" >
-    <app-menu-button *ngFor="let item of menuItems.slice(0, 2)"
+<div class="container" fxLayout.lt-sm="column" >
+  <div class="col-container" fxLayout.lt-sm="column" fxLayoutAlign="space-around center" >
+    <app-menu-button *ngFor="let item of menuItems.slice(0, 2)" class="btn"
                      [data]="item" (buttonClick)="router.navigate([item.route]).then()">
     </app-menu-button>
   </div>
 
   <div class="col-container" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">
-    <app-menu-button *ngFor="let item of menuItems.slice(2, 4)"
+    <app-menu-button *ngFor="let item of menuItems.slice(2, 4)" class="btn"
                      [data]="item" (buttonClick)="router.navigate([item.route]).then()">
     </app-menu-button>
   </div>
