@@ -13,6 +13,7 @@ import {
   SetCurrentExamPause,
   SetCurrentQuestionIndex,
   SetExamCountdownTimer,
+  SetIsAllPanelExpanded,
   SetKeepAnswersOnReset,
   SetSelectedDemoTestId,
   UpdateExamTitle,
@@ -58,14 +59,20 @@ export class DemoTestsState {
 
   @Selector()
   static getCurrentExamRemainingTime(state: DemoTestsStateModel): TimeModel | undefined {
-    const currentTest = state.demoTests.find(test => test.id === state.currentTestId);
+    const currentTest = DemoTestsState.getCurrentTest(state);
     return currentTest ? currentTest.examTime : undefined;
   }
 
   @Selector()
   static getCurrentExamIsFinished(state: DemoTestsStateModel): boolean | undefined {
-    const currentTest = state.demoTests.find(test => test.id === state.currentTestId);
+    const currentTest = DemoTestsState.getCurrentTest(state);
     return currentTest ? currentTest.isExamFinished : undefined;
+  }
+
+  @Selector()
+  static getCurrentExamAllPanelsExpanded(state: DemoTestsStateModel): boolean {
+    const currentTest = DemoTestsState.getCurrentTest(state);
+    return currentTest ? currentTest.isAllPanelsExpanded : false;
   }
 
   @Selector()
@@ -122,7 +129,24 @@ export class DemoTestsState {
         ctx.setState(
           patch<DemoTestsStateModel>({
             demoTests: updateItem<DemoTestInfoModel>(t => t.id === currentState.currentTestId,
-              patch<DemoTestInfoModel>({currentQuestionIndex: payload})
+              patch<DemoTestInfoModel>({
+                currentQuestionIndex: DemoTestsState.getCurrentTest(currentState)?.isAllPanelsExpanded ? -1 : payload
+              })
+            )
+          })
+        )
+      )
+    );
+  }
+
+  @Action(SetIsAllPanelExpanded)
+  setIsAllPanelExpanded(ctx: StateContext<DemoTestsStateModel>, {payload}: SetIsAllPanelExpanded): Observable<DemoTestsStateModel> {
+    return of(ctx.getState()).pipe(
+      map(currentState =>
+        ctx.setState(
+          patch<DemoTestsStateModel>({
+            demoTests: updateItem<DemoTestInfoModel>(t => t.id === currentState.currentTestId,
+              patch<DemoTestInfoModel>({isAllPanelsExpanded: payload, currentQuestionIndex: -1})
             )
           })
         )
@@ -192,9 +216,10 @@ export class DemoTestsState {
                 examTime: {minutes: 60, seconds: 0},
                 currentQuestionIndex: 0,
                 finishReason: undefined,
+                isAllPanelsExpanded: false,
                 dateLastModified: this.getDateNow(),
                 examQuestions: currentState.keepAnswersOnReset ?
-                  currentExam.examQuestions : UtilService.resetUserAnswersFromQuestions(currentExam.examQuestions),
+                  currentExam.examQuestions : UtilService.resetUserAnswersFromQuestions(currentExam.examQuestions)
 
               })
             )
@@ -223,6 +248,7 @@ export class DemoTestsState {
               dateCreated: this.getDateNow(),
               dateLastModified: this.getDateNow(),
               currentQuestionIndex: 0,
+              isAllPanelsExpanded: false,
               selectedState: payload.selectedState,
               examQuestions: UtilService.getRandomExamQuestions(payload.selectedState)
             }])

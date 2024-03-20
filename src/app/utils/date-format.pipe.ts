@@ -5,7 +5,7 @@ import {DatePipe} from '@angular/common';
 export class DateFormatPipe implements PipeTransform {
   constructor(private datePipe: DatePipe) {}
 
-  transform(value: any, format: string = 'dd.MM.yyyy - HH:mm'): string {
+  transform(value: Date | string | number, format: string = 'dd.MM.yyyy - HH:mm'): string {
     return this.datePipe.transform(value, format) || '';
   }
 

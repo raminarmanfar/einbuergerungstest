@@ -13,5 +13,6 @@ export interface DemoTestInfoModel {
   currentQuestionIndex: number;
   examTime: TimeModel;
   isExamFinished: boolean;
+  isAllPanelsExpanded: boolean;
   finishReason?: ExamFinishReasonEnum;
 }

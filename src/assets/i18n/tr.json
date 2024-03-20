@@ -5,12 +5,16 @@
     "go-home": "Ana Sayfa"
   },
   "general": {
-    "next": "İleri",
-    "previous": "Geri",
-    "show-answer-keys": "Cevapların anahtarlarını göster",
-    "ITEMS_PER_PAGE_LABEL": "Sayfa başına sorular",
-    "RANGE_PAGE_LABEL_1": "0 of {length}",
-    "RANGE_PAGE_LABEL_2": "{{startIndex}} - {{endIndex}} of {{length}}"
+    "next": "Sonraki",
+    "previous": "Önceki",
+    "show-answer-keys": "Cevap anahtarlarını göster",
+    "ITEMS_PER_PAGE_LABEL": "Sayfa başına soru",
+    "RANGE_PAGE_LABEL_1": "0 / {length}",
+    "RANGE_PAGE_LABEL_2": "{{startIndex}} - {{endIndex}} / {{length}}",
+    "btn-expand-all": "Tüm soruları genişlet",
+    "btn-collapse-all": "Tüm soruları daralt",
+    "btn-first-question": "İlk soruya git",
+    "btn-last-question": "Son soruya git"
   },
   "home": {
     "menu": {

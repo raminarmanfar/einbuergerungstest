@@ -31,6 +31,13 @@ export class SetCurrentQuestionIndex {
   }
 }
 
+export class SetIsAllPanelExpanded {
+  public static type = '[DemoTestsState] Set Is All Panel Expanded';
+
+  constructor(public payload: boolean) {
+  }
+}
+
 export class UpdateTestQuestion {
   public static type = '[DemoTestsState] Update Test Question';
 

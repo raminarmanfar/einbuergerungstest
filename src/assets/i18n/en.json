@@ -10,7 +10,11 @@
     "show-answer-keys": "Show answer keys",
     "ITEMS_PER_PAGE_LABEL": "Questions per page",
     "RANGE_PAGE_LABEL_1": "0 of {length}",
-    "RANGE_PAGE_LABEL_2": "{{startIndex}} - {{endIndex}} of {{length}}"
+    "RANGE_PAGE_LABEL_2": "{{startIndex}} - {{endIndex}} of {{length}}",
+    "btn-expand-all": "Expand all questions",
+    "btn-collapse-all": "Collapse all questions",
+    "btn-first-question": "Goto first question",
+    "btn-last-question": "Goto to last question"
   },
   "home": {
     "menu": {

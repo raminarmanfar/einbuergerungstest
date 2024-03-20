@@ -1,11 +1,11 @@
 import {Component, OnInit} from '@angular/core';
+import {NavigationEnd, Router} from '@angular/router';
+import {TranslateService} from '@ngx-translate/core';
 import {AppStateService} from '../../state/app-state.service';
 import {Language} from '../../models/enums/language';
 import {Country} from '../../models/enums/country';
 import {ErrorMessages} from '../../utils/error-messages';
-import {CountdownService} from "../../utils/countdown.service";
-import {NavigationEnd, Router} from "@angular/router";
-import {TranslateService} from "@ngx-translate/core";
+import {CountdownService} from '../../utils/countdown.service';
 
 @Component({
   selector: 'app-header',
@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
     {language: Language.DE, caption: 'Deutsch', country: Country.GERMANY},
     {language: Language.EN, caption: 'English', country: Country.UK},
     {language: Language.TR, caption: 'Türkce', country: Country.TURKEY},
-    {language: Language.FA, caption: 'فارسی', country: Country.IRAN},
+    {language: Language.FA, caption: 'فارسی', country: Country.IRAN}
   ];
   activeLanguage = Language.DE;
   countryName = Country.GERMANY;
@@ -32,17 +32,12 @@ export class HeaderComponent implements OnInit {
   private getPageTitle(): string {
     const pageTitleKey = this.router.url.split('/').pop() || '';
     if (pageTitleKey) {
-      if (pageTitleKey) {
-        this.translate.get(pageTitleKey! + '.title').subscribe((pageTitle) => {
-          this.translate.get('title').subscribe((appTitle) => {
-            if (pageTitleKey === 'home') {
-              return this.pageTitle = `${appTitle}`;
-            } else {
-              return this.pageTitle = `${pageTitle} - ${appTitle}`;
-            }
-          });
+      this.translate.get(pageTitleKey + '.title').subscribe((pageTitle) => {
+        this.translate.get('title').subscribe((appTitle) => {
+          document.title = `${appTitle}`;
+          return this.pageTitle = pageTitleKey === 'home' ? `${appTitle}` : `${pageTitle} - ${appTitle}`;
         });
-      }
+      });
     }
     return '';
   }
@@ -71,7 +66,7 @@ export class HeaderComponent implements OnInit {
 
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        document.title = this.getPageTitle();
+        this.getPageTitle();
       }
     });
   }
@@ -79,6 +74,4 @@ export class HeaderComponent implements OnInit {
   changeActiveLanguage(language: Language): void {
     this.appStateService.setActiveLanguage(language);
   }
-
-  protected readonly Language = Language;
 }

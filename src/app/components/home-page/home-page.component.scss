@@ -1,27 +1,9 @@
 .container {
-  overflow-y: auto;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  border: 2px solid blue;
 }
 
-.menu-container {
-  margin: auto;
-  width: fit-content;
-  max-width: 550px;
-}
-
-.btn-menu {
-  width: 100%;
-  height: 60px;
+.col-container {
+  border: 2px solid red;
   margin: 10px auto;
-  font-size: 20px;
 }
-
-.icon {
-  margin: 0 auto;
-  font-size: 50px;
-  height: auto;
-  width: 50px;
-}
-

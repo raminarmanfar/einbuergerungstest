@@ -1,10 +1,10 @@
-<div *ngIf="paginatorData">
-  <div class="accordion">
-    <mat-accordion *ngIf="currentQuestionIndex !== null">
+<div *ngIf="paginatorData" class="container">
+  <div class="exam-body-container">
+    <mat-accordion *ngIf="currentQuestionIndex !== null" multi>
       <mat-expansion-panel *ngFor="let test of questions|slice:
              (paginator.pageIndex*paginator.pageSize):
              ((paginator.pageIndex+1)*paginator.pageSize); let i=index"
-                           [expanded]="currentQuestionIndex === i"
+                           [expanded]="isAllPanelsExpanded || currentQuestionIndex === i"
                            (opened)="expansionPanelOpen.emit(i)">
 
         <mat-expansion-panel-header>
@@ -53,7 +53,7 @@
           </mat-radio-group>
         </div>
 
-        <mat-action-row>
+        <mat-action-row *ngIf="!isAllPanelsExpanded">
           <button *ngIf="currentQuestionIndex > 0"
                   mat-button color="warn"
                   (click)="expansionPanelOpen.emit(currentQuestionIndex - 1)">{{ 'general.previous' | translate }}
@@ -65,12 +65,36 @@
         </mat-action-row>
       </mat-expansion-panel>
     </mat-accordion>
+
+    <mat-paginator #paginator
+                   [length]="paginatorData.length"
+                   [pageIndex]="paginatorData.pageIndex"
+                   [pageSize]="paginatorData.pageSize"
+                   [pageSizeOptions]="paginatorData.length > 33 ? [10, 30, 60, 100, 150, 300] : [paginatorData.length]"
+                   (page)="paginatorDataChange.emit($event)">
+    </mat-paginator>
   </div>
-  <mat-paginator #paginator
-                 [length]="paginatorData.length"
-                 [pageIndex]="paginatorData.pageIndex"
-                 [pageSize]="paginatorData.pageSize"
-                 [pageSizeOptions]="paginatorData.length > 33 ? [10, 30, 60, 100, 150, 300] : [paginatorData.length]"
-                 (page)="paginatorDataChange.emit($event)">
-  </mat-paginator>
+</div>
+
+
+<div fxLayout="column" class="float-buttons"
+     [ngClass]="{'direction-right': translate.currentLang !== 'fa', 'direction-left': translate.currentLang === 'fa'}">
+  <button mat-mini-fab color="primary"
+          [matTooltipPosition]="translate.currentLang !== 'fa' ? 'left' : 'right'"
+          [matTooltip]="(isAllPanelsExpanded ? 'general.btn-collapse-all' : 'general.btn-expand-all') | translate"
+          (click)="accordionOpenCloseAll()">
+    <mat-icon>{{isAllPanelsExpanded ? 'unfold_less' : 'unfold_more' }}</mat-icon>
+  </button>
+  <span></span>
+  <button mat-mini-fab color="warn" (click)="expansionPanelOpen.emit(0)"
+          [matTooltipPosition]="translate.currentLang !== 'fa' ? 'left' : 'right'"
+          [matTooltip]="'general.btn-first-question' | translate">
+    <mat-icon>vertical_align_top</mat-icon>
+  </button>
+  <span></span>
+  <button mat-mini-fab color="warn" (click)="expansionPanelOpen.emit(32)"
+          [matTooltipPosition]="translate.currentLang !== 'fa' ? 'left' : 'right'"
+          [matTooltip]="'general.btn-last-question' | translate">
+    <mat-icon>vertical_align_bottom</mat-icon>
+  </button>
 </div>

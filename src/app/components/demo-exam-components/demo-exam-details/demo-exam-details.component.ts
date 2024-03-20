@@ -37,7 +37,9 @@ export class DemoExamDetailsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.answersCounts = UtilService.getAnswersCounts(this.data.demoExamData);
+    if (!this.data.isNewExamCreate) {
+      this.answersCounts = UtilService.getAnswersCounts(this.data.demoExamData);
+    }
     this.examTitle = this.data.isNewExamCreate ? '' : this.data.demoExamData.title;
 
     this.reviewStatesTestsStateService.allSubState$.subscribe(allSubStateData =>

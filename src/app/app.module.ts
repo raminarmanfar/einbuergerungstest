@@ -30,6 +30,7 @@ import { DemoExamsListPageComponent } from './components/demo-exam-components/de
 import { DialogYesNoComponent } from './components/dialog-yes-no/dialog-yes-no.component';
 import { DemoExamDetailsComponent } from './components/demo-exam-components/demo-exam-details/demo-exam-details.component';
 import { DateFormatPipe } from './utils/date-format.pipe';
+import { MenuButtonComponent } from './components/menu-button/menu-button.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -51,6 +52,7 @@ export function createTranslateLoader(http: HttpClient) {
     DialogYesNoComponent,
     DemoExamDetailsComponent,
     DateFormatPipe,
+    MenuButtonComponent,
   ],
     imports: [
         BrowserModule,

@@ -3,7 +3,7 @@
     <mat-card-content>
       <div class="info-card-title">Demo exam {{ testInfo.id }}: {{ testInfo.title }}</div>
       <div *ngIf="!testInfo.isExamFinished else examFinished"
-           class="info-card-timer" [ngClass]="{'blinking-text': testInfo.examTime.minutes < 5}">
+           class="info-card-timer" [ngClass]="{'blinking-text': testInfo.examTime.minutes < 10}">
         {{ trPrefix + 'time-left' | translate: {remainingTime: UtilService.formatTime(testInfo.examTime)} | persianNumber }}
       </div>
       <ng-template #examFinished>
@@ -13,7 +13,11 @@
 
         <div class="info-card-title reason-text">
           {{ trPrefix + 'finish-reason-label' | translate }}{{ trPrefix + 'finish-reason.' + testInfo.finishReason | translate }}
+          <span *ngIf="testInfo.finishReason === ExamFinishReasonEnum.USER_FINISHED" style="color: blue">
+            ({{ trPrefix + 'time-left' | translate: {remainingTime: UtilService.formatTime(testInfo.examTime)} | persianNumber }})
+          </span>
         </div>
+
         <div class="info-card-title result-text">
           <p>{{ trPrefix + 'exam-result' | translate }}</p>:
           <p [ngClass]="{'passed': correctAnswersCount >= 17, 'failed': correctAnswersCount < 17}">
@@ -24,7 +28,7 @@
     </mat-card-content>
   </mat-card>
 
-  <div class="exam-body-container" #scrollableDiv>
+  <div class="exam-body-container" #scrollableDiv [@smoothScroll]="{ value: 'scroll', params: { position: '500px' }}">
     <app-questionnaire-list
       [currentQuestionIndex]="testInfo.currentQuestionIndex"
       [selectedStateName]="testInfo.selectedState"
@@ -35,9 +39,11 @@
       [showArrayIndexAsRow]="true"
       [answersClickable]="true"
       [isDemoExam]="true"
+      [isAllPanelsExpanded]="(demoTestsStateService.allPanelsExpanded$ | async) || false"
       [showUserResults]="testInfo.isExamFinished"
       (expansionPanelOpen)="onCurrentQuestionChange($event)"
-      (answerChange)="onStateAnswerChange($event)">
+      (answerChange)="onStateAnswerChange($event)"
+      (allPanelsExpanded)="setExpandCollapseAll($event)">
     </app-questionnaire-list>
 
     <div class="footer-container" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center">

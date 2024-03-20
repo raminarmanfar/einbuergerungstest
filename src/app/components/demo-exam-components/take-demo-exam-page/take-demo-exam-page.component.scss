@@ -4,50 +4,58 @@
   height: 100%;
   overflow: hidden;
   padding: 0;
-  margin: 0 10px 0 10px;
+  margin-left: 7px;
+  margin-right: 7px;
 }
 
 .info-card-container {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 3px;
   border: 1px solid gray;
+  border-radius: 10px;
   background-color: lightyellow;
-}
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 
-.info-card-timer {
-  margin-top: 15px;
-  font-weight: bold;
-  color: blue;
-}
 
-.info-card-title {
-  font-weight: bold;
-  box-sizing: border-box;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
+  .info-card-timer {
+    margin-top: 15px;
+    font-weight: bold;
+    color: blue;
+  }
 
-.reason-text {
-  margin-top: 10px;
-  white-space: normal;
-}
+  .info-card-title {
+    font-weight: bold;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
 
-.result-text {
-  white-space: normal;
-  margin-top: 10px;
-}
+  .reason-text {
+    margin-top: 10px;
+    white-space: normal;
+  }
 
-.result-text p {
-  display: inline-block;
-  margin-bottom: 0;
+  .result-text {
+    white-space: normal;
+    margin-top: 10px;
+  }
+
+  .result-text p {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  .blinking-text {
+    color: darkred;
+    animation: blink 2s infinite;
+  }
 }
 
 .exam-body-container {
-  flex-grow: 1;
+  flex: 1;
   overflow-y: auto;
-  padding: 5px;
   margin: 0;
+  height: 100%;
 }
 
 .expansion-panel-border {
@@ -77,11 +85,6 @@
   100% {
     opacity: 1;
   }
-}
-
-.blinking-text {
-  color: darkred;
-  animation: blink 2s infinite;
 }
 
 .passed {

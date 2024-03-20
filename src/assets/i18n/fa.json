@@ -7,10 +7,14 @@
   "general": {
     "next": "بعدی",
     "previous": "قبلی",
-    "show-answer-keys": "نمایش کلید پاسخها",
+    "show-answer-keys": "نمایش کلیدهای پاسخ",
     "ITEMS_PER_PAGE_LABEL": "سوالات در هر صفحه",
-    "RANGE_PAGE_LABEL_1": "0 تا {length}",
-    "RANGE_PAGE_LABEL_2": "{{startIndex}} تا {{endIndex}} از {{length}}"
+    "RANGE_PAGE_LABEL_1": "0 از {length}",
+    "RANGE_PAGE_LABEL_2": "{{startIndex}} - {{endIndex}} از {{length}}",
+    "btn-expand-all": "نمایش همه سوالات",
+    "btn-collapse-all": "جمع کردن همه سوالات",
+    "btn-first-question": "رفتن به اولین سوال",
+    "btn-last-question": "رفتن به آخرین سوال"
   },
   "home": {
     "menu": {

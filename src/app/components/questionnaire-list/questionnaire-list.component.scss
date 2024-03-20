@@ -1,5 +1,16 @@
-.accordion {
+.container {
   border: 1px solid gray;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin: 5px 3px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+
+  .expansion-btn-container {
+  }
+
+  .exam-body-container {
+  }
 }
 
 .img {
@@ -41,3 +52,25 @@
 .correct-answer-checkbox {
   margin-top: 4px;
 }
+
+.direction-right {
+  right: 30px;
+}
+.direction-left {
+  left: 30px;
+}
+
+.float-buttons {
+  position: fixed;
+  bottom: 60px;
+  z-index: 10000;
+  span {
+    height: 2px;
+  }
+}
+@media (min-width: 600px) {
+  .float-buttons {
+    bottom: 70px;
+  }
+}
+

@@ -10,7 +10,7 @@ import {
   ResetExam,
   SetCurrentExamPause,
   SetCurrentQuestionIndex,
-  SetExamCountdownTimer,
+  SetExamCountdownTimer, SetIsAllPanelExpanded,
   SetKeepAnswersOnReset,
   SetSelectedDemoTestId,
   UpdateExamTitle,
@@ -30,6 +30,7 @@ export class DemoTestsStateService {
   @Select(DemoTestsState.getCurrentExamRemainingTime) currentExamRemainingTime$!: Observable<TimeModel>;
   @Select(DemoTestsState.getCurrentExamIsFinished) currentExamIsFinished$!: Observable<boolean>;
   @Select(DemoTestsState.getKeepAnswersOnReset) keepAnswersOnReset$!: Observable<boolean>;
+  @Select(DemoTestsState.getCurrentExamAllPanelsExpanded) allPanelsExpanded$!: Observable<boolean>;
 
   constructor(private store: Store) {
   }
@@ -48,6 +49,10 @@ export class DemoTestsStateService {
 
   setCurrentQuestionIndex(currentQuestionIndex: number): void {
     this.store.dispatch(new SetCurrentQuestionIndex(currentQuestionIndex));
+  }
+
+  setIsAllPanelExpanded(isAllPanelsExpanded: boolean): void{
+    this.store.dispatch(new SetIsAllPanelExpanded(isAllPanelsExpanded));
   }
 
   updateTestQuestion(selectedQuestion: TestQuestionModel): void {
