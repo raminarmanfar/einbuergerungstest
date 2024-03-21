@@ -4377,5 +4377,12 @@
     "exam-result": "Prüfungsergebnis",
     "failed": "Nicht bestanden (richtige Antworten: {{correctAnswers}}/33)",
     "passed": "Bestanden (richtige Antworten: {{correctAnswers}}/33)"
+  },
+  "about-me": {
+    "title": "Über mich",
+    "my-full-name": "Ramin Armanfar",
+    "my-job-title": "Senior Fullstack Software Entwickler",
+    "description": "Ich bin Ramin Armanfar, ein Senior Fullstack Software Entwickler, der ständig im weiten Ozean der Computersoftware-Entwicklung schwimmt und einen unersättlichen Wissensdurst hat. Ich habe eine tiefe Leidenschaft dafür, die Feinheiten von Computersoftwaresystemen zu entwirren. Die von mir entwickelte App soll Personen unterstützen, die sich auf die 'Leben in Deutschland'-Prüfung vorbereiten. Mein Wunsch ist es, dass dieses Tool für Sie von Nutzen ist, während Sie Ihre Reise antreten, und ich wünsche Ihnen viel Glück bei Ihrer Prüfung. Zögern Sie nicht, mich bei Fragen oder Anregungen zu kontaktieren.",
+    "return-btn": "Zurück"
   }
 }

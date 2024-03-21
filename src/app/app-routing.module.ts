@@ -9,6 +9,7 @@ import {
 } from './components/review-states-questions-page/review-states-questions-page.component';
 import {DemoExamsListPageComponent} from './components/demo-exam-components/demo-exams-list-page/demo-exams-list-page.component';
 import {TakeDemoExamPageComponent} from './components/demo-exam-components/take-demo-exam-page/take-demo-exam-page.component';
+import {AboutMeComponent} from './components/about-me/about-me.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'review-states-tests', component: ReviewStatesQuestionsPageComponent},
   {path: 'demo-exams-list', component: DemoExamsListPageComponent},
   {path: 'take-demo-exam', component: TakeDemoExamPageComponent},
+  {path: 'about-me', component: AboutMeComponent},
   {path: '**', redirectTo: 'home', pathMatch: 'full'}
 ];
 

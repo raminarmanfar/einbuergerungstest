@@ -1,13 +1,6 @@
-<div class="container" fxLayout.lt-sm="column" >
-  <div class="col-container" fxLayout.lt-sm="column" fxLayoutAlign="space-around center" >
-    <app-menu-button *ngFor="let item of menuItems.slice(0, 2)" class="btn"
-                     [data]="item" (buttonClick)="router.navigate([item.route]).then()">
-    </app-menu-button>
-  </div>
-
-  <div class="col-container" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">
-    <app-menu-button *ngFor="let item of menuItems.slice(2, 4)" class="btn"
-                     [data]="item" (buttonClick)="router.navigate([item.route]).then()">
-    </app-menu-button>
-  </div>
+<div fxLayout="column" fxLayoutAlign="space-evenly center" style="height: 100%">
+  <app-menu-button
+    *ngFor="let item of menuItems"
+    [data]="item" (buttonClick)="router.navigate([item.route]).then()">
+  </app-menu-button>
 </div>

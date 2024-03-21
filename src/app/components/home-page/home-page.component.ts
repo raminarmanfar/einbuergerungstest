@@ -9,10 +9,10 @@ import {Router} from '@angular/router';
 })
 export class HomePageComponent {
   protected readonly menuItems: MenuItemModel[] = [
-    {label: 'review-deutschland-tests', icon: 'subject', route: '/review-deutschland-tests'},
-    {label: 'review-states-tests', icon: 'location_city', route: '/review-states-tests'},
-    {label: 'demo-exams', icon: 'list', route: '/demo-exams-list'},
-    {label: 'about-me', icon: 'info', route: 'about-me'}
+    {label: 'review-deutschland-tests', icon: 'flag', route: '/review-deutschland-tests'},
+    {label: 'review-states-tests', icon: 'account_balance', route: '/review-states-tests'},
+    {label: 'demo-exams', icon: 'checklist', route: '/demo-exams-list'},
+    {label: 'about-me', icon: 'contact_mail', route: 'about-me'}
   ];
 
   constructor(public router: Router) {

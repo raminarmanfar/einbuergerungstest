@@ -1,9 +1,7 @@
-<div class="btn-container">
-  <button mat-fab extended color="primary" class="big-button"
-          (click)="buttonClick.emit(data)"
-          [matTooltip]="'home.menu.btn-' + data.label | translate"
-          [matTooltipPosition]="tooltipPosition">
-    <mat-icon class="icon">{{ data.icon }}</mat-icon>
-    <div class="btn-caption">{{ 'home.menu.btn-' + data.label | translate }}</div>
-  </button>
-</div>
+<button mat-fab extended color="primary" class="big-button"
+        (click)="buttonClick.emit(data)"
+        [matTooltip]="'home.menu.btn-' + data.label | translate"
+        [matTooltipPosition]="tooltipPosition">
+  <mat-icon class="icon">{{ data.icon }}</mat-icon>
+  <div class="btn-caption">{{ 'home.menu.btn-' + data.label | translate }}</div>
+</button>

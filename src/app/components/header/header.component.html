@@ -1,12 +1,12 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row class="container">
+    <button mat-icon-button class="icon-btn" routerLink="/home"
+            (click)="countdownService.stopCountdown()"
+            [matTooltip]="'header.go-home' | translate" matTooltipPosition="below">
+      <mat-icon class="icon">home</mat-icon>
+    </button>
       <div class="title">{{ pageTitle }}</div>
       <div class="btn-container">
-        <button mat-icon-button class="icon-btn" routerLink="/home"
-                (click)="countdownService.stopCountdown()"
-                [matTooltip]="'header.go-home' | translate" matTooltipPosition="below">
-          <mat-icon class="icon">home</mat-icon>
-        </button>
         <button mat-icon-button class="flag-icon-btn"
                 [matTooltip]="'header.active-language' | translate" [matMenuTriggerFor]="menu">
           <span [class]="'fi fi-' + countryName+ ' flag-icon'"></span>

@@ -4377,5 +4377,12 @@
     "exam-result": "Exam result",
     "failed": "Failed (correct Answers: {{correctAnswers}}/33)",
     "passed": "Passed (correct Answers: {{correctAnswers}}/33)"
+  },
+  "about-me": {
+    "title": "About me",
+    "my-full-name": "Ramin Armanfar",
+    "my-job-title": "Senior Fullstack Software Developer",
+    "description": "I am a small fish in the ocean of computer software development with great enthusiasm to learn more and more about computer software systems. The app is implemented to help those who want to take the 'living in Germany' exam. I hope this can be useful for you and good luck in your exam. Feel free to contact me with any questions or suggestions.",
+    "return-btn": "Return"
   }
 }

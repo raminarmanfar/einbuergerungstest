@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="sub-container">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <img mat-card-avatar src="/assets/images/germany_640.png" alt="header-image">
+        <mat-card-title>{{ 'about-me.my-full-name' | translate }}</mat-card-title>
+        <mat-card-subtitle>{{ 'about-me.my-job-title' | translate }}</mat-card-subtitle>
+        <mat-card-subtitle>
+          <a href="mailto:ramin.armanfar@gmail.com">ramin.armanfar@gmail.com</a>
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <p class="descriptions">{{'about-me.description' | translate}}</p>
+      </mat-card-content>
+      <mat-divider class="divider"></mat-divider>
+      <mat-card-actions>
+        <button mat-flat-button color="primary" class="btn" [routerLink]="['/home']">{{'about-me.return-btn' | translate}}</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

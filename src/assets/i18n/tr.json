@@ -4376,5 +4376,12 @@
     "exam-result": "Sınav Sonucu",
     "failed": "Başarısız (doğru cevaplar: {{correctAnswers}}/33)",
     "passed": "Geçti (doğru cevaplar: {{correctAnswers}}/33)"
+  },
+  "about-me": {
+    "title": "Hakkımda",
+    "my-full-name": "Ramin Armanfar",
+    "my-job-title": "Kıdemli Full Stack Yazılım Geliştirici",
+    "description": "Ben Ramin Armanfar, sürekli olarak bilgisayar yazılım geliştirme okyanusunda yüzen ve bilgiye doymak bilmeyen bir Kıdemli Full Stack Yazılım Geliştiriciyim. Bilgisayar yazılım sistemlerinin inceliklerini çözme konusunda derin bir tutkum var. Geliştirdiğim uygulama, 'Almanya'da yaşama' sınavına hazırlanan bireylere yardımcı olmak için tasarlanmıştır. Bu aracın sizin için faydalı olmasını umuyor ve sınavınızda size en iyi şansları diliyorum. Herhangi bir sorunuz veya öneriniz için benimle iletişime geçmekten çekinmeyin.",
+    "return-btn": "Geri Dön"
   }
 }
