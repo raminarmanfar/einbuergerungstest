@@ -1,26 +1,27 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row class="container">
-    <button mat-icon-button class="icon-btn" routerLink="/home"
-            (click)="countdownService.stopCountdown()"
-            [matTooltip]="'header.go-home' | translate" matTooltipPosition="below">
-      <mat-icon class="icon">home</mat-icon>
-    </button>
-      <div class="title">{{ pageTitle }}</div>
-      <div class="btn-container">
-        <button mat-icon-button class="flag-icon-btn"
-                [matTooltip]="'header.active-language' | translate" [matMenuTriggerFor]="menu">
-          <span [class]="'fi fi-' + countryName+ ' flag-icon'"></span>
-          <mat-menu #menu="matMenu">
-            <button mat-menu-item
-                    *ngFor="let item of languageList"
-                    (click)="changeActiveLanguage(item.language)"
-                    [matTooltip]="item.caption"
-                    matTooltipPosition="left">
-              <span class="fi fi-{{item.country}} flag"></span>
-              <span class="menu-item-text">{{ item.caption }}</span>
-            </button>
-          </mat-menu>
-        </button>
-      </div>
+    <div class="title">{{ pageTitle }}</div>
+    <div class="btn-container">
+      <button *ngIf="pageTitleKey !== 'home'"
+              mat-icon-button class="icon-btn" routerLink="/home"
+              (click)="countdownService.stopCountdown()"
+              [matTooltip]="'header.go-home' | translate" matTooltipPosition="below">
+        <mat-icon class="icon">home</mat-icon>
+      </button>
+      <button mat-icon-button class="flag-icon-btn" [ngStyle]="{'top': pageTitleKey === 'home' ? '0' : '-6px'}"
+              [matTooltip]="'header.active-language' | translate" [matMenuTriggerFor]="menu">
+        <span [class]="'fi fi-' + countryName+ ' flag-icon'"></span>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item
+                  *ngFor="let item of languageList"
+                  (click)="changeActiveLanguage(item.language)"
+                  [matTooltip]="item.caption"
+                  matTooltipPosition="left">
+            <span class="fi fi-{{item.country}} flag"></span>
+            <span class="menu-item-text">{{ item.caption }}</span>
+          </button>
+        </mat-menu>
+      </button>
+    </div>
   </mat-toolbar-row>
 </mat-toolbar>

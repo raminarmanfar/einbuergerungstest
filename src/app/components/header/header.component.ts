@@ -13,7 +13,8 @@ import {CountdownService} from '../../utils/countdown.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  languageList = [
+  pageTitleKey = '';
+  readonly languageList = [
     {language: Language.DE, caption: 'Deutsch', country: Country.GERMANY},
     {language: Language.EN, caption: 'English', country: Country.UK},
     {language: Language.TR, caption: 'Türkce', country: Country.TURKEY},
@@ -30,12 +31,12 @@ export class HeaderComponent implements OnInit {
   }
 
   private getPageTitle(): string {
-    const pageTitleKey = this.router.url.split('/').pop() || '';
-    if (pageTitleKey) {
-      this.translate.get(pageTitleKey + '.title').subscribe((pageTitle) => {
+    this.pageTitleKey = this.router.url.split('/').pop() || '';
+    if (this.pageTitleKey) {
+      this.translate.get(this.pageTitleKey + '.title').subscribe((pageTitle) => {
         this.translate.get('title').subscribe((appTitle) => {
           document.title = `${appTitle}`;
-          return this.pageTitle = pageTitleKey === 'home' ? `${appTitle}` : `${pageTitle} - ${appTitle}`;
+          return this.pageTitle = this.pageTitleKey === 'home' ? `${appTitle}` : `${pageTitle} - ${appTitle}`;
         });
       });
     }
