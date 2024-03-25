@@ -30,7 +30,6 @@ import { DemoExamsListPageComponent } from './components/demo-exam-components/de
 import { DialogYesNoComponent } from './components/dialog-yes-no/dialog-yes-no.component';
 import { DemoExamDetailsComponent } from './components/demo-exam-components/demo-exam-details/demo-exam-details.component';
 import { DateFormatPipe } from './utils/date-format.pipe';
-import { MenuButtonComponent } from './components/menu-button/menu-button.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 
 export function createTranslateLoader(http: HttpClient) {
@@ -53,7 +52,6 @@ export function createTranslateLoader(http: HttpClient) {
     DialogYesNoComponent,
     DemoExamDetailsComponent,
     DateFormatPipe,
-    MenuButtonComponent,
     AboutMeComponent,
   ],
     imports: [

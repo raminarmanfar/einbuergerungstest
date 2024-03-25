@@ -1,6 +1,16 @@
-<div fxLayout="column" fxLayoutAlign="space-evenly center" style="height: 100%">
-  <app-menu-button
-    *ngFor="let item of menuItems"
-    [data]="item" (buttonClick)="router.navigate([item.route]).then()">
-  </app-menu-button>
+<div fxLayout="row wrap" fxLayoutAlign="center center" class="container">
+  <div fxFlex="calc(50% - 40px)" fxFlex.lt-sm="calc(100% - 40px)" class="button-container" *ngFor="let button of menuItems">
+    <button mat-fab extended color="primary" [routerLink]="button.route" class="button"
+            fxFlex.md="95%" fxFlex.gt-md="85%" fxFlex.gt-lg="75%">
+      <mat-icon class="icon"
+                [ngStyle.lt-sm]="{'font-size': '90px'}"
+                [ngStyle.sm]="{'font-size': '80px'}"
+                [ngStyle.gt-sm]="{'font-size': '110px'}"
+                [ngStyle.gt-md]="{'font-size': '120px'}"
+                [ngStyle.gt-lg]="{'font-size': '130px'}">{{ button.icon }}</mat-icon>
+      <span [ngStyle.lt-sm]="{'font-size': '18px'}"
+            [ngStyle.sm]="{'font-size': '20px'}"
+            [ngStyle.gt-sm]="{'font-size': '25px'}">{{ 'home.menu.btn-' + button.label | translate }}</span>
+    </button>
+  </div>
 </div>
