@@ -1,11 +1,25 @@
 .container {
   display: flex;
-  height: 100%;
   flex-direction: column;
+  min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+  position: relative; /* Establish positioning context */
+}
+
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .router-container {
   flex: 1;
   overflow-y: auto;
 }
-
