@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {MenuItemModel} from '../../models/menu-item.model';
-import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -12,9 +11,6 @@ export class HomePageComponent {
     {label: 'review-deutschland-tests', icon: 'flag', route: '/review-deutschland-tests'},
     {label: 'review-states-tests', icon: 'account_balance', route: '/review-states-tests'},
     {label: 'demo-exams', icon: 'checklist', route: '/demo-exams-list'},
-    {label: 'about-me', icon: 'contact_mail', route: 'about-me'}
+    {label: 'about-me', icon: 'contact_mail', route: '/about-me'}
   ];
-
-  constructor(public router: Router) {
-  }
 }
