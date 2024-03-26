@@ -1,26 +1,32 @@
 <div class="container">
-  <mat-card class="card-container">
-    <mat-card-content>
-      <mat-list class="horizontal-list">
-        <mat-list-item>
-          <mat-slide-toggle class="mat-slide-toggle" [checked]="showAnswersKeys" [matTooltip]="'general.show-answer-keys' | translate"
-                            (change)="reviewDeutschlandQuestionsStateService.setShowAnswersKeys($event.checked)">
-            {{ 'general.show-answer-keys' | translate }}
-          </mat-slide-toggle>
-        </mat-list-item>
-      </mat-list>
-    </mat-card-content>
-  </mat-card>
+  <div class="options-box-container">
+    <mat-accordion>
+      <mat-expansion-panel [expanded]="true">
+        <mat-expansion-panel-header style="background-color: lightgoldenrodyellow;">
+          <mat-panel-title style="color:blue;">{{ 'general.options.title' | translate }}</mat-panel-title>
+          <mat-panel-description style="color: blue">{{ 'general.options.description' | translate }}</mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <mat-slide-toggle class="mat-slide-toggle" [checked]="showAnswersKeys"
+                          [matTooltip]="'general.show-answer-keys' | translate"
+                          (change)="reviewDeutschlandQuestionsStateService.setShowAnswersKeys($event.checked)">
+          {{ 'general.show-answer-keys' | translate }}
+        </mat-slide-toggle>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
 
   <app-questionnaire-list
     *ngIf="selectedStateInfo"
     [currentQuestionIndex]="reviewDeutschlandQuestionsStateService.currentQuestionIndex$ | async"
     [paginatorData]="reviewDeutschlandQuestionsStateService.paginatorData$ | async"
+    [isAllPanelsExpanded]="(reviewDeutschlandQuestionsStateService.isAllPanelsExpanded$ | async) || false"
     [selectedStateName]="selectedStateInfo.name"
     [questions]="selectedStateInfo.stateTestQuestions"
     [showAnswersKeys]="showAnswersKeys"
     [trPrefix]="'review-deutschland-tests.'"
     (expansionPanelOpen)="reviewDeutschlandQuestionsStateService.setCurrentQuestionIndex($event)"
-    (paginatorDataChange)="reviewDeutschlandQuestionsStateService.setPaginatorData($event)">
+    (paginatorDataChange)="reviewDeutschlandQuestionsStateService.setPaginatorData($event)"
+    (allPanelsExpanded)="reviewDeutschlandQuestionsStateService.setIsAllPanelExpanded($event)">
   </app-questionnaire-list>
 </div>

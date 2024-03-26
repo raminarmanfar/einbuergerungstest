@@ -1,5 +1,6 @@
 .container {
   border: 1px solid gray;
+  //width: 100%;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -54,10 +55,10 @@
 }
 
 .direction-right {
-  right: 30px;
+  right: 5px;
 }
 .direction-left {
-  left: 30px;
+  left: 5px;
 }
 
 .float-buttons {
@@ -71,6 +72,12 @@
 @media (min-width: 600px) {
   .float-buttons {
     bottom: 70px;
+  }
+  .direction-right {
+    right: 15px;
+  }
+  .direction-left {
+    left: 15px;
   }
 }
 

@@ -10,9 +10,10 @@ import {FormsModule} from '@angular/forms';
 import {StateModule} from './state/state.module';
 import {AppRoutingModule} from './app-routing.module';
 import {AppMaterialsModule} from './app-materials.module';
-import {FlexLayoutModule} from "@angular/flex-layout";
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 import {PersianNumberPipe} from './utils/persian-number.pipe';
+import {DateFormatPipe} from './utils/date-format.pipe';
 
 import {AppComponent} from './components/app/app.component';
 import {HeaderComponent} from './components/header/header.component';
@@ -25,12 +26,17 @@ import {
   ReviewStatesQuestionsPageComponent
 } from './components/review-states-questions-page/review-states-questions-page.component';
 import {QuestionnaireListComponent} from './components/questionnaire-list/questionnaire-list.component';
-import { TakeDemoExamPageComponent } from './components/demo-exam-components/take-demo-exam-page/take-demo-exam-page.component';
-import { DemoExamsListPageComponent } from './components/demo-exam-components/demo-exams-list-page/demo-exams-list-page.component';
-import { DialogYesNoComponent } from './components/dialog-yes-no/dialog-yes-no.component';
-import { DemoExamDetailsComponent } from './components/demo-exam-components/demo-exam-details/demo-exam-details.component';
-import { DateFormatPipe } from './utils/date-format.pipe';
-import { AboutMeComponent } from './components/about-me/about-me.component';
+import {
+  TakeDemoExamPageComponent
+} from './components/demo-exam-components/take-demo-exam-page/take-demo-exam-page.component';
+import {
+  DemoExamsListPageComponent
+} from './components/demo-exam-components/demo-exams-list-page/demo-exams-list-page.component';
+import {DialogYesNoComponent} from './components/dialog-yes-no/dialog-yes-no.component';
+import {
+  DemoExamDetailsComponent
+} from './components/demo-exam-components/demo-exam-details/demo-exam-details.component';
+import {AboutMeComponent} from './components/about-me/about-me.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -52,26 +58,26 @@ export function createTranslateLoader(http: HttpClient) {
     DialogYesNoComponent,
     DemoExamDetailsComponent,
     DateFormatPipe,
-    AboutMeComponent,
+    AboutMeComponent
   ],
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        HttpClientModule,
-        StateModule,
-        TranslateModule.forRoot({
-            loader: {
-                provide: TranslateLoader,
-                useFactory: (createTranslateLoader),
-                deps: [HttpClient]
-            }
-        }),
-        AppRoutingModule,
-        AppMaterialsModule,
-        NgOptimizedImage,
-        FlexLayoutModule,
-        FormsModule
-    ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    StateModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (createTranslateLoader),
+        deps: [HttpClient]
+      }
+    }),
+    AppRoutingModule,
+    AppMaterialsModule,
+    NgOptimizedImage,
+    FlexLayoutModule,
+    FormsModule
+  ],
   providers: [
     DatePipe
     // {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}

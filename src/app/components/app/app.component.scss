@@ -1,20 +1,32 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  //height: 100%;
 }
 
-.header-container {
-  flex: none;
-}
+//.header-container {
+//  position: fixed;
+//  top: 0;
+//  width: 100%;
+//  z-index: 10000;
+//}
 
 .router-container {
-  border: 4px solid red;
-  flex: 1;
-  height: auto;
+  width: 100%;
+  position: fixed;
+  top: 56px;
+  bottom: 56px;
   overflow-y: auto;
 }
 
+@media (min-width: 600px) {
+  .router-container {
+    top: 64px;
+    bottom: 64px;
+  }
+}
+
 .footer-container {
-  flex: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10000;
 }

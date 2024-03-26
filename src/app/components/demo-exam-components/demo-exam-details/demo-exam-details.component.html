@@ -10,7 +10,7 @@
     <mat-card-content>
       <mat-form-field class="title-input">
         <mat-label>{{ data.trPrefix + 'enter-exam-title' | translate }}</mat-label>
-        <textarea matInput [placeholder]="data.trPrefix + 'exam-title-label' | translate"
+        <textarea matInput rows="1" [placeholder]="data.trPrefix + 'exam-title-label' | translate"
                   [(ngModel)]="examTitle"></textarea>
       </mat-form-field>
 

@@ -20,3 +20,11 @@ export class SetShowAnswersKeys {
   constructor(public payload: boolean) {
   }
 }
+
+
+export class SetIsAllPanelExpanded {
+  public static type = '[ReviewDeutschlandQuestionsState] Set Is All Panel Expanded';
+
+  constructor(public payload: boolean) {
+  }
+}

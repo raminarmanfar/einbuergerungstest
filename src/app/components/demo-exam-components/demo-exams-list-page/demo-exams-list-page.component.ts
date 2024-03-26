@@ -26,7 +26,7 @@ export class DemoExamsListPageComponent implements OnInit, OnDestroy {
 
   constructor(private demoTestsStateService: DemoTestsStateService,
               private utilService: UtilService, private router: Router,
-              private snackBar: MatSnackBar, private translate: TranslateService) {
+              private snackBar: MatSnackBar, public translate: TranslateService) {
   }
 
   ngOnInit(): void {

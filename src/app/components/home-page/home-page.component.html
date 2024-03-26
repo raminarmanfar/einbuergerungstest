@@ -1,5 +1,7 @@
-<div fxLayout="row wrap" fxLayoutAlign="center center" class="container">
-  <div fxFlex="calc(50% - 40px)" fxFlex.lt-sm="calc(100% - 40px)" class="button-container" *ngFor="let button of menuItems">
+<div class="container">
+<div fxLayout="row wrap" fxLayoutAlign="center center">
+  <div fxFlex="calc(50% - 40px)" fxFlex.lt-sm="calc(100% - 40px)" class="button-container"
+       *ngFor="let button of menuItems">
     <button mat-fab extended color="primary" [routerLink]="button.route" class="button"
             fxFlex.md="95%" fxFlex.gt-md="85%" fxFlex.gt-lg="75%">
       <mat-icon class="icon"
@@ -13,4 +15,5 @@
             [ngStyle.gt-sm]="{'font-size': '25px'}">{{ 'home.menu.btn-' + button.label | translate }}</span>
     </button>
   </div>
+</div>
 </div>

@@ -14,7 +14,11 @@
     "btn-expand-all": "Expand all questions",
     "btn-collapse-all": "Collapse all questions",
     "btn-first-question": "Goto first question",
-    "btn-last-question": "Goto to last question"
+    "btn-last-question": "Goto to last question",
+    "options": {
+      "title": "Options",
+      "description": "Click here to show/hide options"
+    }
   },
   "home": {
     "menu": {
@@ -4278,10 +4282,6 @@
   },
   "demo-exams-list": {
     "title": "Demo exams list",
-    "options": {
-      "title": "Options",
-      "description": "Click here to show/hide options"
-    },
     "table": {
       "id": "No.",
       "title": "Test Title",
@@ -4382,7 +4382,8 @@
     "title": "About me",
     "my-full-name": "Ramin Armanfar",
     "my-job-title": "Senior Fullstack Software Developer",
-    "description": "I am a small fish in the ocean of computer software development with great enthusiasm to learn more and more about computer software systems. The app is implemented to help those who want to take the 'living in Germany' exam. I hope this can be useful for you and good luck in your exam. Feel free to contact me with any questions or suggestions.",
+    "version": "Version",
+    "description": "I'm a modest presence in the vast sea of software, designed to aid in your preparation for the Living in Germany exam. Your feedback and suggestions are invaluable to me; feel free to reach out with any advice or recommendations.",
     "return-btn": "Return"
   }
 }

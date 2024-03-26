@@ -14,7 +14,11 @@
     "btn-expand-all": "Alle Fragen erweitern",
     "btn-collapse-all": "Alle Fragen reduzieren",
     "btn-first-question": "Zur ersten Frage gehen",
-    "btn-last-question": "Zur letzten Frage gehen"
+    "btn-last-question": "Zur letzten Frage gehen",
+    "options": {
+      "title": "Optionen",
+      "description": "Hier klicken, um Optionen anzuzeigen/auszublenden"
+    }
   },
   "home": {
     "menu": {
@@ -4278,10 +4282,6 @@
   },
   "demo-exams-list": {
     "title": "Liste der Demo-Prüfungen",
-    "options": {
-      "title": "Optionen",
-      "description": "Hier klicken, um Optionen anzuzeigen/auszublenden"
-    },
     "table": {
       "id": "Nr.",
       "title": "Testtitel",
@@ -4382,7 +4382,8 @@
     "title": "Über mich",
     "my-full-name": "Ramin Armanfar",
     "my-job-title": "Senior Fullstack Software Entwickler",
-    "description": "Ich bin Ramin Armanfar, ein Senior Fullstack Software Entwickler, der ständig im weiten Ozean der Computersoftware-Entwicklung schwimmt und einen unersättlichen Wissensdurst hat. Ich habe eine tiefe Leidenschaft dafür, die Feinheiten von Computersoftwaresystemen zu entwirren. Die von mir entwickelte App soll Personen unterstützen, die sich auf die 'Leben in Deutschland'-Prüfung vorbereiten. Mein Wunsch ist es, dass dieses Tool für Sie von Nutzen ist, während Sie Ihre Reise antreten, und ich wünsche Ihnen viel Glück bei Ihrer Prüfung. Zögern Sie nicht, mich bei Fragen oder Anregungen zu kontaktieren.",
+    "version": "Version",
+    "description": "Ich bin ein bescheidener Teil des weiten Ozeans der Software, entwickelt, um Sie bei der Vorbereitung auf die Prüfung zum Leben in Deutschland zu unterstützen. Ihr Feedback und Ihre Vorschläge sind für mich von unschätzbarem Wert; zögern Sie nicht, sich mit Ratschlägen oder Empfehlungen an mich zu wenden.",
     "return-btn": "Zurück"
   }
 }

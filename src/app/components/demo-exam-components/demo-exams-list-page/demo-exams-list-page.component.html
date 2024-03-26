@@ -162,6 +162,7 @@
 </div>
 
 <button mat-fab extended color="primary" class="add-button"
+        [ngClass]="{'direction-right': translate.currentLang !== 'fa', 'direction-left': translate.currentLang === 'fa'}"
         matTooltipPosition="above" [matTooltip]="trPrefixTable + 'add-test' | translate"
         (click)="onCreateExamClick()">
   <mat-icon>add</mat-icon>

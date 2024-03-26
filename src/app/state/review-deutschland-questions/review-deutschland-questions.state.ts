@@ -1,15 +1,21 @@
 import {Injectable} from '@angular/core';
+import {PageEvent} from '@angular/material/paginator';
 import {Action, Selector, State, StateContext} from '@ngxs/store';
 import {Observable, of} from 'rxjs';
 import {ReviewDeutschlandQuestionsStateModel} from '../models/review-deutschland-questions-state.model';
-import {SetCurrentQuestionIndex, SetPaginatorData, SetShowAnswersKeys} from './review-deutschland-questions.action';
-import {PageEvent} from '@angular/material/paginator';
+import {
+  SetCurrentQuestionIndex,
+  SetIsAllPanelExpanded,
+  SetPaginatorData,
+  SetShowAnswersKeys
+} from './review-deutschland-questions.action';
 import {ConstantValues} from '../../utils/constant-values';
 
 
 export const stateDefaultValues: ReviewDeutschlandQuestionsStateModel = {
   currentQuestionIndex: -1,
   showAnswersKeys: true,
+  isAllPanelsExpanded: false,
   paginatorData: {
     pageSize: 30,
     pageIndex: 0,
@@ -36,6 +42,11 @@ export class ReviewDeutschlandQuestionsState {
     return state.showAnswersKeys;
   }
 
+  @Selector()
+  static getIsAllPanelsExpanded(state: ReviewDeutschlandQuestionsStateModel): boolean {
+    return state.isAllPanelsExpanded;
+  }
+
   @Action(SetCurrentQuestionIndex)
   setCurrentQuestionIndex(ctx: StateContext<ReviewDeutschlandQuestionsStateModel>, {payload}: SetCurrentQuestionIndex): Observable<ReviewDeutschlandQuestionsStateModel> {
     return of(ctx.patchState({currentQuestionIndex: payload}));
@@ -49,5 +60,10 @@ export class ReviewDeutschlandQuestionsState {
   @Action(SetPaginatorData)
   setPaginatorPageData(ctx: StateContext<ReviewDeutschlandQuestionsStateModel>, {payload}: SetPaginatorData): Observable<ReviewDeutschlandQuestionsStateModel> {
     return of(ctx.patchState({paginatorData: payload}));
+  }
+
+  @Action(SetIsAllPanelExpanded)
+  setIsAllPanelExpanded(ctx: StateContext<ReviewDeutschlandQuestionsStateModel>, {payload}: SetIsAllPanelExpanded): Observable<ReviewDeutschlandQuestionsStateModel> {
+    return of(ctx.patchState({isAllPanelsExpanded: payload}));
   }
 }
