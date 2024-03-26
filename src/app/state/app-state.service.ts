@@ -3,7 +3,7 @@ import {Select, Store} from '@ngxs/store';
 import {AppState} from './app.state';
 import {Observable} from 'rxjs';
 import {Language} from '../models/enums/language';
-import {SetActiveLanguage} from './app.action';
+import {ResetToInitialState, SetActiveLanguage} from './app.action';
 
 @Injectable({
   providedIn: 'root'
@@ -17,5 +17,9 @@ export class AppStateService {
 
   setActiveLanguage(activeLanguage: Language): void {
     this.store.dispatch(new SetActiveLanguage(activeLanguage));
+  }
+
+  resetToInitialState(): void {
+    this.store.dispatch(new ResetToInitialState());
   }
 }

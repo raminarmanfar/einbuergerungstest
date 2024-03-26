@@ -1,13 +1,18 @@
 import {Injectable} from '@angular/core';
-import {Action, Selector, State, StateContext} from '@ngxs/store';
+import {Action, Selector, State, StateContext, Store} from '@ngxs/store';
 import {AppStateModel} from './models/app-state.model';
 import {Language} from '../models/enums/language';
-import {SetActiveLanguage} from './app.action';
+import {ResetToInitialState, SetActiveLanguage} from './app.action';
 import {Observable, of} from 'rxjs';
 import {TranslateService} from '@ngx-translate/core';
-import {ReviewStatesTestsState} from "./review-states-tests/review-states-tests.state";
-import {DemoTestsState} from "./demo-tests/demo-tests-state";
+import {ReviewStatesQuestionsState} from "./review-states-questions/review-states-questions.state";
+import {DemoTestsState} from "./demo-tests/demo-tests.state";
 import {ReviewDeutschlandQuestionsState} from "./review-deutschland-questions/review-deutschland-questions.state";
+import {ResetDemoTestToInitialState} from './demo-tests/demo-tests.action';
+import {
+  ResetReviewDeutschlandQuestionsToInitialState
+} from './review-deutschland-questions/review-deutschland-questions.action';
+import {ResetReviewStatesQuestionsToInitialState} from './review-states-questions/review-states-questions.action';
 
 export const stateDefaultValues: AppStateModel = {
   activeLanguage: Language.DE
@@ -16,11 +21,11 @@ export const stateDefaultValues: AppStateModel = {
 @State<AppStateModel>({
   name: 'AppState',
   defaults: stateDefaultValues,
-  children: [ReviewDeutschlandQuestionsState, ReviewStatesTestsState, DemoTestsState]
+  children: [ReviewDeutschlandQuestionsState, ReviewStatesQuestionsState, DemoTestsState]
 })
 @Injectable()
 export class AppState {
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, private store: Store) {
   }
 
   @Selector()
@@ -32,5 +37,13 @@ export class AppState {
   setActiveLanguage(ctx: StateContext<AppStateModel>, {payload}: SetActiveLanguage): Observable<AppStateModel> {
     this.translate.use(payload);
     return of(ctx.patchState({activeLanguage: payload}));
+  }
+
+  @Action(ResetToInitialState)
+  resetToInitialState(ctx: StateContext<AppStateModel>): Observable<AppStateModel> {
+    this.store.dispatch(new ResetReviewDeutschlandQuestionsToInitialState());
+    this.store.dispatch(new ResetReviewStatesQuestionsToInitialState());
+    this.store.dispatch(new ResetDemoTestToInitialState());
+    return of(ctx.setState(stateDefaultValues));
   }
 }

@@ -4384,6 +4384,13 @@
     "my-job-title": "Senior Fullstack Software Developer",
     "version": "Version",
     "description": "I'm a modest presence in the vast sea of software, designed to aid in your preparation for the Living in Germany exam. Your feedback and suggestions are invaluable to me; feel free to reach out with any advice or recommendations.",
-    "return-btn": "Return"
+    "return-btn": "Return",
+    "reset-app-state-btn": "Reset all data",
+    "reset-app-data-dialog": {
+      "title": "Are you sure?",
+      "description": "All data will be removed and NOT possible to be retrieved.",
+      "btnReject": "No",
+      "btnConfirm": "Yes"
+    }
   }
 }

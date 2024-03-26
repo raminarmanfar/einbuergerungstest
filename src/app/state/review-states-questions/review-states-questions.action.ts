@@ -27,3 +27,7 @@ export class SetStateChangeExpansionPanelBehavior {
   constructor(public payload: StateChangeExpansionPanelBehaviorEnum) {
   }
 }
+
+export class ResetReviewStatesQuestionsToInitialState {
+  public static type = '[ReviewDeutschlandQuestionsState] Reset Review States Questions To Initial State';
+}

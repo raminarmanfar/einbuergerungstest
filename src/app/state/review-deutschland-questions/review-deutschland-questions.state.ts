@@ -4,6 +4,7 @@ import {Action, Selector, State, StateContext} from '@ngxs/store';
 import {Observable, of} from 'rxjs';
 import {ReviewDeutschlandQuestionsStateModel} from '../models/review-deutschland-questions-state.model';
 import {
+  ResetReviewDeutschlandQuestionsToInitialState,
   SetCurrentQuestionIndex,
   SetIsAllPanelExpanded,
   SetPaginatorData,
@@ -12,7 +13,7 @@ import {
 import {ConstantValues} from '../../utils/constant-values';
 
 
-export const stateDefaultValues: ReviewDeutschlandQuestionsStateModel = {
+export const reviewDeutschlandQuestionsInitialState: ReviewDeutschlandQuestionsStateModel = {
   currentQuestionIndex: -1,
   showAnswersKeys: true,
   isAllPanelsExpanded: false,
@@ -23,7 +24,10 @@ export const stateDefaultValues: ReviewDeutschlandQuestionsStateModel = {
   }
 };
 
-@State<ReviewDeutschlandQuestionsStateModel>({name: 'ReviewDeutschlandQuestionsState', defaults: stateDefaultValues})
+@State<ReviewDeutschlandQuestionsStateModel>({
+  name: 'ReviewDeutschlandQuestionsState',
+  defaults: reviewDeutschlandQuestionsInitialState
+})
 @Injectable()
 export class ReviewDeutschlandQuestionsState {
 
@@ -65,5 +69,10 @@ export class ReviewDeutschlandQuestionsState {
   @Action(SetIsAllPanelExpanded)
   setIsAllPanelExpanded(ctx: StateContext<ReviewDeutschlandQuestionsStateModel>, {payload}: SetIsAllPanelExpanded): Observable<ReviewDeutschlandQuestionsStateModel> {
     return of(ctx.patchState({isAllPanelsExpanded: payload}));
+  }
+
+  @Action(ResetReviewDeutschlandQuestionsToInitialState)
+  resetReviewDeutschlandQuestionsToInitialState(ctx: StateContext<ReviewDeutschlandQuestionsStateModel>): Observable<ReviewDeutschlandQuestionsStateModel> {
+    return of(ctx.setState(reviewDeutschlandQuestionsInitialState));
   }
 }

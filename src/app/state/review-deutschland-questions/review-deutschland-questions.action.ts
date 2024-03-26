@@ -28,3 +28,7 @@ export class SetIsAllPanelExpanded {
   constructor(public payload: boolean) {
   }
 }
+
+export class ResetReviewDeutschlandQuestionsToInitialState {
+  public static type = '[ReviewDeutschlandQuestionsState] Reset Review Deutschland Questions To Initial State';
+}

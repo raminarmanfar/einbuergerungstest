@@ -5,7 +5,7 @@ import {UtilService} from '../../../utils/util.service';
 import {UserActionEnum} from '../../../models/enums/user-action.enum';
 import {ConstantValues} from '../../../utils/constant-values';
 import {DialogYesNoComponent} from '../../dialog-yes-no/dialog-yes-no.component';
-import {ReviewStatesTestsStateService} from '../../../state/review-states-tests/review-states-tests-state.service';
+import {ReviewStatesQuestionsStateService} from '../../../state/review-states-questions/review-states-questions-state.service';
 import {StateInfoModel} from '../../../models/state-info.model';
 import {DemoTestsStateService} from '../../../state/demo-tests/demo-tests-state.service';
 import {AnswersCountModel} from '../../../models/answers-count.model';
@@ -27,7 +27,7 @@ export class DemoExamDetailsComponent implements OnInit {
 
   constructor(public demoTestsStateService: DemoTestsStateService,
               private utilService: UtilService,
-              private reviewStatesTestsStateService: ReviewStatesTestsStateService,
+              private reviewStatesTestsStateService: ReviewStatesQuestionsStateService,
               private dialogRef: MatDialogRef<DemoExamDetailsComponent>,
               @Inject(MAT_DIALOG_DATA) public data: {
                 trPrefix: string,

@@ -1,25 +1,25 @@
 import {Injectable} from '@angular/core';
 import {Select, Store} from '@ngxs/store';
 import {Observable} from 'rxjs';
-import {ReviewStatesTestsState} from './review-states-tests.state';
+import {ReviewStatesQuestionsState} from './review-states-questions.state';
 import {
   SetStateChangeExpansionPanelBehavior,
   SetCurrentQuestionIndex,
   SetShowAnswersKeys,
   SetStateIndex
-} from './review-states-tests.action';
-import {ReviewStatesTestsStateModel} from '../models/review-states-tests-state.model';
+} from './review-states-questions.action';
+import {ReviewStatesQuestionsStateModel} from '../models/review-states-questions-state.model';
 import {StateChangeExpansionPanelBehaviorEnum} from '../../models/enums/state-change-expansion-panel-behavior.enum';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ReviewStatesTestsStateService {
+export class ReviewStatesQuestionsStateService {
 
-  @Select(ReviewStatesTestsState.getAllSubState) allSubState$!: Observable<ReviewStatesTestsStateModel>;
-  @Select(ReviewStatesTestsState.getCurrentQuestionIndex) currentQuestionIndex$!: Observable<number>;
-  @Select(ReviewStatesTestsState.getSelectedStateIndex) selectedStateIndex$!: Observable<number>;
-  @Select(ReviewStatesTestsState.getShowAnswersKeys) showAnswersKeys$!: Observable<boolean>;
+  @Select(ReviewStatesQuestionsState.getAllSubState) allSubState$!: Observable<ReviewStatesQuestionsStateModel>;
+  @Select(ReviewStatesQuestionsState.getCurrentQuestionIndex) currentQuestionIndex$!: Observable<number>;
+  @Select(ReviewStatesQuestionsState.getSelectedStateIndex) selectedStateIndex$!: Observable<number>;
+  @Select(ReviewStatesQuestionsState.getShowAnswersKeys) showAnswersKeys$!: Observable<boolean>;
 
   constructor(private store: Store) {
   }

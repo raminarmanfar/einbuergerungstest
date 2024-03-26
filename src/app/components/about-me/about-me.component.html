@@ -16,6 +16,9 @@
       <mat-divider class="divider"></mat-divider>
       <mat-card-actions>
         <button mat-flat-button color="primary" class="btn" [routerLink]="['/home']">{{'about-me.return-btn' | translate}}</button>
+        <button mat-flat-button color="warn" class="btn" (click)="onAppStateResetClick()">
+          {{'about-me.reset-app-state-btn' | translate}}
+        </button>
       </mat-card-actions>
     </mat-card>
   </div>

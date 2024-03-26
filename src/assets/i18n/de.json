@@ -4384,6 +4384,13 @@
     "my-job-title": "Senior Fullstack Software Entwickler",
     "version": "Version",
     "description": "Ich bin ein bescheidener Teil des weiten Ozeans der Software, entwickelt, um Sie bei der Vorbereitung auf die Prüfung zum Leben in Deutschland zu unterstützen. Ihr Feedback und Ihre Vorschläge sind für mich von unschätzbarem Wert; zögern Sie nicht, sich mit Ratschlägen oder Empfehlungen an mich zu wenden.",
-    "return-btn": "Zurück"
+    "return-btn": "Zurück",
+    "reset-app-state-btn": "Alle Daten zurücksetzen",
+    "reset-app-data-dialog": {
+      "title": "Bist du sicher?",
+      "description": "Alle Daten werden entfernt und können NICHT wiederhergestellt werden.",
+      "btnReject": "Nein",
+      "btnConfirm": "Ja"
+    }
   }
 }

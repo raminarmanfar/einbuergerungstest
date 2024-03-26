@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Select, Store} from '@ngxs/store';
 import {Observable} from 'rxjs';
-import {DemoTestsState} from './demo-tests-state';
+import {DemoTestsState} from './demo-tests.state';
 import {DemoTestInfoModel} from '../../models/demo-test-info.model';
 import {
   CreateNewExam,

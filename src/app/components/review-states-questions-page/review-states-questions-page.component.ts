@@ -3,7 +3,7 @@ import {PageEvent} from '@angular/material/paginator';
 import {ConstantValues} from '../../utils/constant-values';
 import {StateInfoModel} from '../../models/state-info.model';
 import {StateChangeExpansionPanelBehaviorEnum} from '../../models/enums/state-change-expansion-panel-behavior.enum';
-import {ReviewStatesTestsStateService} from '../../state/review-states-tests/review-states-tests-state.service';
+import {ReviewStatesQuestionsStateService} from '../../state/review-states-questions/review-states-questions-state.service';
 
 @Component({
   selector: 'app-review-states-tests',
@@ -23,7 +23,7 @@ export class ReviewStatesQuestionsPageComponent implements OnInit {
     length: 10
   };
 
-  constructor(public reviewStatesTestsStateService: ReviewStatesTestsStateService) {
+  constructor(public reviewStatesTestsStateService: ReviewStatesQuestionsStateService) {
   }
 
   ngOnInit(): void {

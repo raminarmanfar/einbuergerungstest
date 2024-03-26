@@ -9,7 +9,7 @@ import {
   CreateNewExam,
   DeleteAnExamFromList,
   FinishExam,
-  ResetExam,
+  ResetExam, ResetDemoTestToInitialState,
   SetCurrentExamPause,
   SetCurrentQuestionIndex,
   SetExamCountdownTimer,
@@ -24,14 +24,14 @@ import {TestQuestionModel} from '../../models/test-question.model';
 import {ErrorMessages} from '../../utils/error-messages';
 import {TimeModel} from '../../models/time.model';
 
-export const demoTestsStateModel: DemoTestsStateModel = {
+export const demoTestsInitialState: DemoTestsStateModel = {
   currentTestId: -1,
   keepAnswersOnReset: false,
   currentExamPaused: true,
   demoTests: []
 };
 
-@State<DemoTestsStateModel>({name: 'DemoTestsState', defaults: demoTestsStateModel})
+@State<DemoTestsStateModel>({name: 'DemoTestsState', defaults: demoTestsInitialState})
 @Injectable()
 export class DemoTestsState {
 
@@ -266,5 +266,10 @@ export class DemoTestsState {
   @Action(SetCurrentExamPause)
   setCurrentExamPause(ctx: StateContext<DemoTestsStateModel>, {payload}: SetCurrentExamPause): Observable<DemoTestsStateModel> {
     return of(ctx.patchState({currentExamPaused: payload}));
+  }
+
+  @Action(ResetDemoTestToInitialState)
+  resetDemoTestToInitialState(ctx: StateContext<DemoTestsStateModel>): Observable<DemoTestsStateModel> {
+    return of(ctx.setState(demoTestsInitialState));
   }
 }

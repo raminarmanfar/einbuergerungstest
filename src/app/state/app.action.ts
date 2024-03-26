@@ -5,3 +5,7 @@ export class SetActiveLanguage {
   constructor(public payload: Language) {
   }
 }
+
+export class ResetToInitialState {
+  public static type = '[AppState] Reset To Initial State';
+}

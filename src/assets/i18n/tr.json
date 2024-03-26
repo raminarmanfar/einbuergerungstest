@@ -4383,6 +4383,13 @@
     "my-job-title": "Kıdemli Full Stack Yazılım Geliştirici",
     "version": "Version",
     "description": "Yazılım dünyasının geniş okyanusunda mütevazı bir balık olarak, Almanya'da yaşam sınavına hazırlanmanıza yardımcı olmak için tasarlandım. Geri bildiriminiz ve önerileriniz benim için çok değerlidir; herhangi bir tavsiye veya öneri için benimle iletişime geçmekten çekinmeyin.",
-    "return-btn": "Geri Dön"
+    "return-btn": "Geri Dön",
+    "reset-app-state-btn": "Tüm verileri sıfırla",
+    "reset-app-data-dialog": {
+      "title": "Emin misiniz?",
+      "description": "Tüm veriler silinecek ve GERİ alınamayacak.",
+      "btnReject": "Hayır",
+      "btnConfirm": "Evet"
+    }
   }
 }

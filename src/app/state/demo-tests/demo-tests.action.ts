@@ -86,3 +86,7 @@ export class SetCurrentExamPause {
   constructor(public payload: boolean) {
   }
 }
+
+export class ResetDemoTestToInitialState {
+  public static type = '[AppState] Reset Demo Test To Initial State';
+}
