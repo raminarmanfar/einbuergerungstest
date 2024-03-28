@@ -41,7 +41,7 @@
         </th>
         <td mat-cell fxShow fxHide.lt-md *matCellDef="let element"
             class="table-title-row" matTooltipPosition="above" [matTooltip]="element.state">
-          {{ 'review-states-tests.german-states.' + element.selectedState.name + '.state' | translate }}
+          {{ 'review-states-tests.german-states.' + element.selectedState + '.state' | translate }}
         </td>
       </ng-container>
 

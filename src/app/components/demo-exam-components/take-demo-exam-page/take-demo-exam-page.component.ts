@@ -23,7 +23,7 @@ import {DemoExamDetailsComponent} from '../demo-exam-details/demo-exam-details.c
   animations: [
     trigger('smoothScroll', [
       transition('* => scroll', [
-        animate('500ms', style({opacity: 1})) // Simple fade animation, adjust as needed
+        animate('500ms', style({opacity: 1}))
       ])
     ])
   ]
@@ -48,6 +48,7 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
   private currentTestSubscription!: Subscription;
   private examPausedSubscription!: Subscription;
   private getTimeSubscription!: Subscription;
+  protected readonly ExamFinishReasonEnum = ExamFinishReasonEnum;
   protected readonly UtilService = UtilService;
   protected readonly trPrefix = 'take-demo-exam.';
   protected readonly statePaginatorData: PageEvent = {
@@ -173,6 +174,4 @@ export class TakeDemoExamPageComponent implements OnInit, OnDestroy {
       }
     });
   }
-
-  protected readonly ExamFinishReasonEnum = ExamFinishReasonEnum;
 }

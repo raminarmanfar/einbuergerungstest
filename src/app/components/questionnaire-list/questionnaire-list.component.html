@@ -91,7 +91,7 @@
     <mat-icon>vertical_align_top</mat-icon>
   </button>
   <span></span>
-  <button mat-mini-fab color="warn" (click)="expansionPanelOpen.emit(32)"
+  <button mat-mini-fab color="warn" (click)="expansionPanelOpen.emit(questions.length - 1)"
           [matTooltipPosition]="translate.currentLang !== 'fa' ? 'left' : 'right'"
           [matTooltip]="'general.btn-last-question' | translate">
     <mat-icon>vertical_align_bottom</mat-icon>
