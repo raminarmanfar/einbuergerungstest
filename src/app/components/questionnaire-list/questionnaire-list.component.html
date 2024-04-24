@@ -75,25 +75,3 @@
     </mat-paginator>
   </div>
 </div>
-
-<div fxLayout="column" class="float-buttons"
-     [ngClass]="{'direction-right': translate.currentLang !== 'fa', 'direction-left': translate.currentLang === 'fa'}">
-  <button mat-mini-fab color="primary"
-          [matTooltipPosition]="translate.currentLang !== 'fa' ? 'left' : 'right'"
-          [matTooltip]="(isAllPanelsExpanded ? 'general.btn-collapse-all' : 'general.btn-expand-all') | translate"
-          (click)="accordionOpenCloseAll()">
-    <mat-icon>{{isAllPanelsExpanded ? 'unfold_less' : 'unfold_more' }}</mat-icon>
-  </button>
-  <span></span>
-  <button mat-mini-fab color="warn" (click)="expansionPanelOpen.emit(0)"
-          [matTooltipPosition]="translate.currentLang !== 'fa' ? 'left' : 'right'"
-          [matTooltip]="'general.btn-first-question' | translate">
-    <mat-icon>vertical_align_top</mat-icon>
-  </button>
-  <span></span>
-  <button mat-mini-fab color="warn" (click)="expansionPanelOpen.emit(questions.length - 1)"
-          [matTooltipPosition]="translate.currentLang !== 'fa' ? 'left' : 'right'"
-          [matTooltip]="'general.btn-last-question' | translate">
-    <mat-icon>vertical_align_bottom</mat-icon>
-  </button>
-</div>
