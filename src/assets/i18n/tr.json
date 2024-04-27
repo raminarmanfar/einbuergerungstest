@@ -22,8 +22,9 @@
   },
   "home": {
     "menu": {
-      "btn-review-deutschland-tests": "Almanya'nın Testlerini İncele",
-      "btn-review-states-tests": "Eyalet Sınavlarını İncele",
+      "btn-review-deutschland-questions": "Almanya'nın Sorularını İncele",
+      "btn-practice-deutschland-questions": "Almanya'nın Sorularını Pratik Yap",
+      "btn-review-states-questions": "Devletlerin Sorularını İncele",
       "btn-demo-exams": "Örnek Sınavlar Listesi",
       "btn-about-me": "Hakkımda"
     }

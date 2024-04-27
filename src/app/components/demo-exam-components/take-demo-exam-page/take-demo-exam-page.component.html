@@ -34,7 +34,7 @@
       [selectedStateName]="testInfo.selectedState"
       [questions]="testInfo.examQuestions"
       [paginatorData]="statePaginatorData"
-      [trPrefix]="'review-states-tests.german-states.'"
+      [trPrefix]="'review-states-questions.german-states.'"
       [showAnswersKeys]="false"
       [showArrayIndexAsRow]="true"
       [answersClickable]="true"
@@ -45,34 +45,34 @@
       (answerChange)="onStateAnswerChange($event)"
       (allPanelsExpanded)="setExpandCollapseAll($event)">
     </app-questionnaire-list>
+  </div>
 
-    <div class="footer-container" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center">
-      <button *ngIf="!testInfo.isExamFinished else showExamResultDetails" fxFlex.sm="50%" fxFlex.md="30%"
-              fxFlex.lg="25%"
-              fxFlex.xl="15%"
-              mat-fab extended color="warn" class="footer-button"
-              matTooltipPosition="above" [matTooltip]="trPrefix + 'finish-exam-btn' | translate"
-              (click)="onFinishExamClick(scrollableDiv)">
-        <mat-icon>clear</mat-icon>
-        {{ trPrefix + 'finish-exam-btn' | translate }}
-      </button>
-      <ng-template #showExamResultDetails>
-        <button fxFlex.sm="50%" fxFlex.md="30%" fxFlex.lg="25%" fxFlex.xl="15%"
-                mat-fab extended color="accent" class="footer-button"
-                matTooltipPosition="above" [matTooltip]="trPrefix + 'exam-result-details-btn' | translate"
-                (click)="onExamResultDetailClick(scrollableDiv)">
-          <mat-icon>list</mat-icon>
-          {{ trPrefix + 'exam-result-details-btn' | translate }}
-        </button>
-      </ng-template>
+  <div class="footer-container" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center">
+    <button *ngIf="!testInfo.isExamFinished else showExamResultDetails" fxFlex.sm="50%" fxFlex.md="30%"
+            fxFlex.lg="25%"
+            fxFlex.xl="15%"
+            mat-fab extended color="warn" class="footer-button"
+            matTooltipPosition="above" [matTooltip]="trPrefix + 'finish-exam-btn' | translate"
+            (click)="onFinishExamClick(scrollableDiv)">
+      <mat-icon>clear</mat-icon>
+      {{ trPrefix + 'finish-exam-btn' | translate }}
+    </button>
+    <ng-template #showExamResultDetails>
       <button fxFlex.sm="50%" fxFlex.md="30%" fxFlex.lg="25%" fxFlex.xl="15%"
-              mat-fab extended color="primary"
-              class="footer-button"
-              matTooltipPosition="above" [matTooltip]="trPrefix + 'return-to-list-btn' | translate"
-              [routerLink]="'/demo-exams-list'">
-        <mat-icon>keyboard_backspace</mat-icon>
-        {{ trPrefix + 'return-to-list-btn' | translate }}
+              mat-fab extended color="accent" class="footer-button"
+              matTooltipPosition="above" [matTooltip]="trPrefix + 'exam-result-details-btn' | translate"
+              (click)="onExamResultDetailClick(scrollableDiv)">
+        <mat-icon>list</mat-icon>
+        {{ trPrefix + 'exam-result-details-btn' | translate }}
       </button>
-    </div>
+    </ng-template>
+    <button fxFlex.sm="50%" fxFlex.md="30%" fxFlex.lg="25%" fxFlex.xl="15%"
+            mat-fab extended color="primary"
+            class="footer-button"
+            matTooltipPosition="above" [matTooltip]="trPrefix + 'return-to-list-btn' | translate"
+            [routerLink]="'/demo-exams-list'">
+      <mat-icon>keyboard_backspace</mat-icon>
+      {{ trPrefix + 'return-to-list-btn' | translate }}
+    </button>
   </div>
 </div>

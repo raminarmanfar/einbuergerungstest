@@ -19,7 +19,7 @@ export class DemoExamDetailsComponent implements OnInit {
   protected readonly UtilService = UtilService;
   protected readonly userAction = UserActionEnum;
   protected readonly ConstantValues = ConstantValues;
-  protected readonly trPrefixState = 'review-states-tests.german-states.';
+  protected readonly trPrefixState = 'review-states-questions.german-states.';
   protected readonly germanStates = ConstantValues.GERMAN_STATES;
   selectedStateInfo: StateInfoModel | undefined = undefined;
   examTitle = '';

@@ -22,14 +22,15 @@
   },
   "home": {
     "menu": {
-      "btn-review-deutschland-tests": "Review Germany's Tests",
-      "btn-review-states-tests": "Review State Tests",
+      "btn-review-deutschland-questions": "Review Germany's Questions",
+      "btn-practice-deutschland-questions": "Practice Germany's Questions",
+      "btn-review-states-questions": "Review State Questions",
       "btn-demo-exams": "Demo Exams",
       "btn-take-demo-test": "Take a Demo Test",
       "btn-about-me": "About Me"
     }
   },
-  "review-deutschland-tests": {
+  "review-deutschland-questions": {
     "title": "Review Deutschland tests",
     "deutschland": {
       "tests": {
@@ -2734,7 +2735,10 @@
       }
     }
   },
-  "review-states-tests": {
+  "practice-deutschland-questions": {
+    "title": "Practice German Questions"
+  },
+  "review-states-questions": {
     "title": "Review states tests",
     "select-state": "Select a state",
     "expansion-panel-state-message": "What to do on state change?",

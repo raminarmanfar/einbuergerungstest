@@ -89,11 +89,11 @@
 
       <div *ngIf="data.isNewExamCreate" class="states-select-container">
         <mat-form-field class="select-form-field">
-          <mat-label>{{ 'review-states-tests.select-state' | translate }}</mat-label>
+          <mat-label>{{ 'review-states-questions.select-state' | translate }}</mat-label>
           <mat-select
-            [matTooltip]="(selectedStateInfo ? trPrefixState + selectedStateInfo.name + '.state' : 'review-states-tests.select-state') | translate"
+            [matTooltip]="(selectedStateInfo ? trPrefixState + selectedStateInfo.name + '.state' : 'review-states-questions.select-state') | translate"
             [(value)]="selectedStateInfo">
-            <mat-option>{{ 'review-states-tests.select-state' | translate }}</mat-option>
+            <mat-option>{{ 'review-states-questions.select-state' | translate }}</mat-option>
             <mat-option *ngFor="let state of germanStates" [value]="state">
               {{ trPrefixState + state.name + '.state' | translate }}
             </mat-option>

@@ -120,7 +120,7 @@ export class ConstantValues {
     {id: 108, correctAnswer: 2},
     {id: 109, correctAnswer: 2},
     {id: 110, correctAnswer: 3},
-    {id: 111, correctAnswer: 1},
+    {id: 111, correctAnswer: 4},
     {id: 112, correctAnswer: 2},
     {id: 113, correctAnswer: 1},
     {id: 114, correctAnswer: 2},

@@ -22,14 +22,15 @@
   },
   "home": {
     "menu": {
-      "btn-review-deutschland-tests": "Überprüfen Sie Deutschlands Tests",
-      "btn-review-states-tests": "Überprüfen Sie die Tests der Staaten",
+      "btn-review-deutschland-questions": "Deutschlands Fragen überprüfen",
+      "btn-practice-deutschland-questions": "Deutschlands Fragen üben",
+      "btn-review-states-questions": "Fragen der Bundesstaaten überprüfen",
       "btn-demo-exams": "Demo-Prüfungen",
       "btn-take-demo-test": "Machen Sie einen Demotest",
       "btn-about-me": "Über mich"
     }
   },
-  "review-deutschland-tests": {
+  "review-deutschland-questions": {
     "title": "Überprüfung Deutschland Tests",
     "deutschland": {
       "tests": {
@@ -2734,7 +2735,10 @@
       }
     }
   },
-  "review-states-tests": {
+  "practice-deutschland-questions": {
+    "title": "Übe deutsche Fragen"
+  },
+  "review-states-questions": {
     "title": "Überprüfung Länder Tests",
     "select-state": "Wähle einen Staat",
     "expansion-panel-state-message": "Was tun bei einem Regierungswechsel?",

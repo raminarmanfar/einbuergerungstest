@@ -22,8 +22,9 @@
   },
   "home": {
     "menu": {
-      "btn-review-deutschland-tests": "مرور آزمون‌های آلمان",
-      "btn-review-states-tests": "مرور آزمون‌های ایالتی",
+      "btn-review-deutschland-questions": "مرور سوالات آلمان",
+      "btn-practice-deutschland-questions": "تمرین سوالات آلمان",
+      "btn-review-states-questions": "مرور سوالات ایالتی",
       "btn-demo-exams": "لیست نمونه آزمونها",
       "btn-about-me": "درباره من"
     }

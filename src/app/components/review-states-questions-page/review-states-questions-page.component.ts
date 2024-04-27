@@ -16,7 +16,7 @@ export class ReviewStatesQuestionsPageComponent implements OnInit {
   stateChangeExpansionPanelBehavior = StateChangeExpansionPanelBehaviorEnum.SHOW_CURRENT_QUESTION;
   protected readonly StateChangeExpansionPanelBehaviorEnum = StateChangeExpansionPanelBehaviorEnum;
   protected readonly germanStates = ConstantValues.GERMAN_STATES;
-  protected readonly trPrefix = 'review-states-tests.german-states.';
+  protected readonly trPrefix = 'review-states-questions.german-states.';
   protected readonly paginatorData: PageEvent = {
     pageSize: 10,
     pageIndex: 0,

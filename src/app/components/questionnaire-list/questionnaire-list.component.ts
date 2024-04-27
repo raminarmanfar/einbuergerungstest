@@ -47,7 +47,7 @@ export class QuestionnaireListComponent implements OnInit {
   }
 
   getTrStateName(stateName: GermanStatesEnum, questionIndex: number): string {
-    return this.isDemoExam && questionIndex > 2 ? 'review-deutschland-tests.' + GermanStatesEnum.DEUTSCHLAND : this.trPrefix + stateName;
+    return this.isDemoExam && questionIndex > 2 ? 'review-deutschland-questions.' + GermanStatesEnum.DEUTSCHLAND : this.trPrefix + stateName;
   }
 
   getImageUrl(stateName: GermanStatesEnum, questionIndex: number): string {

@@ -37,6 +37,7 @@ import {
   DemoExamDetailsComponent
 } from './components/demo-exam-components/demo-exam-details/demo-exam-details.component';
 import {AboutMeComponent} from './components/about-me/about-me.component';
+import { PracticeGermanQuestionsComponent } from './components/practice-german-questions/practice-german-questions.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -58,7 +59,8 @@ export function createTranslateLoader(http: HttpClient) {
     DialogYesNoComponent,
     DemoExamDetailsComponent,
     DateFormatPipe,
-    AboutMeComponent
+    AboutMeComponent,
+    PracticeGermanQuestionsComponent
   ],
   imports: [
     BrowserModule,
