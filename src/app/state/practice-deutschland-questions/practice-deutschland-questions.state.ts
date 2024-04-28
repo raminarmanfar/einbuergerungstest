@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {PageEvent} from '@angular/material/paginator';
 import {Action, Selector, State, StateContext} from '@ngxs/store';
+import {patch, updateItem} from '@ngxs/store/operators';
 import {map, Observable, of} from 'rxjs';
 import {
   ResetPractice,
@@ -13,7 +14,6 @@ import {
 } from './practice-deutschland-questions.action';
 import {ConstantValues} from '../../utils/constant-values';
 import {PracticeDeutschlandQuestionsStateModel} from '../models/practice-deutschland-questions-state.model';
-import {patch, updateItem} from '@ngxs/store/operators';
 import {TestQuestionModel} from '../../models/test-question.model';
 import {UtilService} from '../../utils/util.service';
 

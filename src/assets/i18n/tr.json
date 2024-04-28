@@ -29,7 +29,7 @@
       "btn-about-me": "Hakkımda"
     }
   },
-  "review-deutschland-tests": {
+  "review-deutschland-questions": {
     "title": "Almanya testlerini gözden geçir",
     "deutschland": {
       "tests": {
@@ -2740,7 +2740,7 @@
     "hide-results": "Sonuçları Gizle",
     "reset-answers": "Cevapları Sıfırla"
   },
-  "review-states-tests": {
+  "review-states-questions": {
     "title": "Devlet testlerini gözden geçir",
     "select-state": "Bir Eyalet Seçin",
     "expansion-panel-state-message": "What to do on state change?",

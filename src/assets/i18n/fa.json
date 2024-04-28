@@ -29,7 +29,7 @@
       "btn-about-me": "درباره من"
     }
   },
-  "review-deutschland-tests": {
+  "review-deutschland-questions": {
     "title": "بررسی سوالات آزمون‌های آلمان",
     "deutschland": {
       "tests": {
@@ -2741,7 +2741,7 @@
     "hide-results": "پنهان کردن نتایج",
     "reset-answers": "بازنشانی پاسخ‌ها"
   },
-  "review-states-tests": {
+  "review-states-questions": {
     "title": "بررسی سوالات آزمون‌های ایالتی",
     "select-state": "یک ایالت انتخاب کنید",
     "expansion-panel-state-message": "وقتی ایالت عوض شد فرم سوالات چه شود؟",
