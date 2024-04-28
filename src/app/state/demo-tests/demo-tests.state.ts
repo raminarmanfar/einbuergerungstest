@@ -157,13 +157,20 @@ export class DemoTestsState {
   @Action(UpdateTestQuestion)
   updateTestQuestion(ctx: StateContext<DemoTestsStateModel>, {payload}: UpdateTestQuestion): Observable<DemoTestsStateModel> {
     return of(ctx.getState()).pipe(
-      map(currentState =>
-        ctx.setState(
+      map(currentState => {
+        const currentTest = currentState.demoTests.find(t => t.id === currentState.currentTestId);
+        if (!currentTest) {
+          throw new Error(ErrorMessages.DEMO_TEST_NOT_FOUND);
+        }
+        const nextQuestionIndex = currentTest.currentQuestionIndex + 1;
+
+        return ctx.setState(
           patch<DemoTestsStateModel>({
             demoTests: updateItem<DemoTestInfoModel>(
               t => t.id === currentState.currentTestId,
               patch<DemoTestInfoModel>({
                 dateLastModified: this.getDateNow(),
+                currentQuestionIndex: nextQuestionIndex,
                 examQuestions: updateItem<TestQuestionModel>(
                   q => q.id === payload.id,
                   patch<TestQuestionModel>({userAnswer: payload.userAnswer})
@@ -171,8 +178,8 @@ export class DemoTestsState {
               })
             )
           })
-        )
-      )
+        );
+      })
     );
   }
 
