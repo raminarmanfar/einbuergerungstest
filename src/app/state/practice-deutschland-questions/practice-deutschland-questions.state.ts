@@ -15,13 +15,14 @@ import {ConstantValues} from '../../utils/constant-values';
 import {PracticeDeutschlandQuestionsStateModel} from '../models/practice-deutschland-questions-state.model';
 import {patch, updateItem} from '@ngxs/store/operators';
 import {TestQuestionModel} from '../../models/test-question.model';
+import {UtilService} from '../../utils/util.service';
 
 
 export const practiceDeutschlandQuestionsStateModel: PracticeDeutschlandQuestionsStateModel = {
   currentQuestionIndex: 0,
   showResults: false,
   isAllPanelsExpanded: false,
-  questions: ConstantValues.DEUTSCHLAND_QUESTIONS,
+  questions: UtilService.cloneDeep(ConstantValues.DEUTSCHLAND_QUESTIONS),
   paginatorData: {
     pageSize: 30,
     pageIndex: 0,
