@@ -27,8 +27,8 @@ export class SetIsAllPanelExpanded {
   }
 }
 
-export class ResetReviewDeutschlandQuestionsToInitialState {
-  public static type = '[PracticeDeutschlandQuestionsState] Reset Review Deutschland Questions To Initial State';
+export class ResetPracticeDeutschlandQuestionsToInitialState {
+  public static type = '[PracticeDeutschlandQuestionsState] Reset Practice Deutschland Questions To Initial State';
 }
 
 export class SetUserAnswer {

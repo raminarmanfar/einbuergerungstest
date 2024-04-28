@@ -4,7 +4,7 @@ import {Action, Selector, State, StateContext} from '@ngxs/store';
 import {map, Observable, of} from 'rxjs';
 import {
   ResetPractice,
-  ResetReviewDeutschlandQuestionsToInitialState,
+  ResetPracticeDeutschlandQuestionsToInitialState,
   SetCurrentQuestionIndex,
   SetIsAllPanelExpanded,
   SetPaginatorData,
@@ -81,8 +81,8 @@ export class PracticeDeutschlandQuestionsState {
     return of(ctx.patchState({isAllPanelsExpanded: payload}));
   }
 
-  @Action(ResetReviewDeutschlandQuestionsToInitialState)
-  resetReviewDeutschlandQuestionsToInitialState(ctx: StateContext<PracticeDeutschlandQuestionsStateModel>): Observable<PracticeDeutschlandQuestionsStateModel> {
+  @Action(ResetPracticeDeutschlandQuestionsToInitialState)
+  resetPracticeDeutschlandQuestionsToInitialState(ctx: StateContext<PracticeDeutschlandQuestionsStateModel>): Observable<PracticeDeutschlandQuestionsStateModel> {
     return of(ctx.setState(practiceDeutschlandQuestionsStateModel));
   }
 

@@ -5,15 +5,18 @@ import {Language} from '../models/enums/language';
 import {ResetToInitialState, SetActiveLanguage} from './app.action';
 import {Observable, of} from 'rxjs';
 import {TranslateService} from '@ngx-translate/core';
-import {ReviewStatesQuestionsState} from "./review-states-questions/review-states-questions.state";
-import {DemoTestsState} from "./demo-tests/demo-tests.state";
-import {ReviewDeutschlandQuestionsState} from "./review-deutschland-questions/review-deutschland-questions.state";
+import {ReviewStatesQuestionsState} from './review-states-questions/review-states-questions.state';
+import {DemoTestsState} from './demo-tests/demo-tests.state';
+import {ReviewDeutschlandQuestionsState} from './review-deutschland-questions/review-deutschland-questions.state';
 import {ResetDemoTestToInitialState} from './demo-tests/demo-tests.action';
 import {
   ResetReviewDeutschlandQuestionsToInitialState
 } from './review-deutschland-questions/review-deutschland-questions.action';
 import {ResetReviewStatesQuestionsToInitialState} from './review-states-questions/review-states-questions.action';
 import {PracticeDeutschlandQuestionsState} from './practice-deutschland-questions/practice-deutschland-questions.state';
+import {
+  ResetPracticeDeutschlandQuestionsToInitialState
+} from './practice-deutschland-questions/practice-deutschland-questions.action';
 
 export const stateDefaultValues: AppStateModel = {
   activeLanguage: Language.DE
@@ -30,7 +33,7 @@ export class AppState {
   }
 
   @Selector()
-  static getActiveLanguage(state: AppStateModel): Language{
+  static getActiveLanguage(state: AppStateModel): Language {
     return state.activeLanguage;
   }
 
@@ -43,6 +46,7 @@ export class AppState {
   @Action(ResetToInitialState)
   resetToInitialState(ctx: StateContext<AppStateModel>): Observable<AppStateModel> {
     this.store.dispatch(new ResetReviewDeutschlandQuestionsToInitialState());
+    this.store.dispatch(new ResetPracticeDeutschlandQuestionsToInitialState());
     this.store.dispatch(new ResetReviewStatesQuestionsToInitialState());
     this.store.dispatch(new ResetDemoTestToInitialState());
     return of(ctx.setState(stateDefaultValues));
