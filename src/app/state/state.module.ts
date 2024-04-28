@@ -8,12 +8,13 @@ import {AppState} from './app.state';
 import {ReviewStatesQuestionsState} from './review-states-questions/review-states-questions.state';
 import {ReviewDeutschlandQuestionsState} from './review-deutschland-questions/review-deutschland-questions.state';
 import {DemoTestsState} from './demo-tests/demo-tests.state';
+import {PracticeDeutschlandQuestionsState} from './practice-deutschland-questions/practice-deutschland-questions.state';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    NgxsModule.forRoot([AppState, ReviewDeutschlandQuestionsState, ReviewStatesQuestionsState, DemoTestsState]),
+    NgxsModule.forRoot([AppState, ReviewDeutschlandQuestionsState, PracticeDeutschlandQuestionsState, ReviewStatesQuestionsState, DemoTestsState]),
     NgxsStoragePluginModule.forRoot({
       key: [AppState],
       storage: StorageOption.LocalStorage

@@ -2736,7 +2736,10 @@
     }
   },
   "practice-deutschland-questions": {
-    "title": "Practice German Questions"
+    "title": "Practice Germany Questions",
+    "show-results": "Show Results",
+    "hide-results": "Hide Results",
+    "reset-answers": "Reset Answers"
   },
   "review-states-questions": {
     "title": "Review states tests",

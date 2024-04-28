@@ -13,6 +13,7 @@ import {
   ResetReviewDeutschlandQuestionsToInitialState
 } from './review-deutschland-questions/review-deutschland-questions.action';
 import {ResetReviewStatesQuestionsToInitialState} from './review-states-questions/review-states-questions.action';
+import {PracticeDeutschlandQuestionsState} from './practice-deutschland-questions/practice-deutschland-questions.state';
 
 export const stateDefaultValues: AppStateModel = {
   activeLanguage: Language.DE
@@ -21,7 +22,7 @@ export const stateDefaultValues: AppStateModel = {
 @State<AppStateModel>({
   name: 'AppState',
   defaults: stateDefaultValues,
-  children: [ReviewDeutschlandQuestionsState, ReviewStatesQuestionsState, DemoTestsState]
+  children: [ReviewDeutschlandQuestionsState, PracticeDeutschlandQuestionsState, ReviewStatesQuestionsState, DemoTestsState]
 })
 @Injectable()
 export class AppState {

@@ -2734,6 +2734,12 @@
       }
     }
   },
+  "practice-deutschland-questions": {
+    "title": "Almanya Soruları çalışma",
+    "show-results": "Sonuçları Göster",
+    "hide-results": "Sonuçları Gizle",
+    "reset-answers": "Cevapları Sıfırla"
+  },
   "review-states-tests": {
     "title": "Devlet testlerini gözden geçir",
     "select-state": "Bir Eyalet Seçin",

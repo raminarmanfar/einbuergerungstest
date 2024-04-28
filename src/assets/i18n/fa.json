@@ -2735,6 +2735,12 @@
       }
     }
   },
+  "practice-deutschland-questions": {
+    "title": "تمرین سوالات آلمانی",
+    "show-results": "نمایش نتایج",
+    "hide-results": "پنهان کردن نتایج",
+    "reset-answers": "بازنشانی پاسخ‌ها"
+  },
   "review-states-tests": {
     "title": "بررسی سوالات آزمون‌های ایالتی",
     "select-state": "یک ایالت انتخاب کنید",

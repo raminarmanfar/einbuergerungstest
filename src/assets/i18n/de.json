@@ -2736,7 +2736,10 @@
     }
   },
   "practice-deutschland-questions": {
-    "title": "Übe deutsche Fragen"
+    "title": "Übe deutsche Fragen",
+    "show-results": "Ergebnisse anzeigen",
+    "hide-results": "Ergebnisse ausblenden",
+    "reset-answers": "Antworten zurücksetzen"
   },
   "review-states-questions": {
     "title": "Überprüfung Länder Tests",

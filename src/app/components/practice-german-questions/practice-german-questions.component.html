@@ -1,1 +1,28 @@
-<p>practice-german-questions works!</p>
+<div class="container">
+  <app-questionnaire-list
+    *ngIf="questions"
+    [currentQuestionIndex]="practiceDeutschlandQuestionsStateService.currentQuestionIndex$ | async"
+    [paginatorData]="practiceDeutschlandQuestionsStateService.paginatorData$ | async"
+    [isAllPanelsExpanded]="(practiceDeutschlandQuestionsStateService.isAllPanelsExpanded$ | async) || false"
+    [selectedStateName]="GermanStatesEnum.DEUTSCHLAND"
+    [questions]="questions"
+    [showAnswersKeys]="false"
+    [answersClickable]="true"
+    [isDemoExam]="true"
+    [showUserResults]="showResults"
+    [trPrefix]="'review-deutschland-questions.'"
+    (answerChange)="practiceDeutschlandQuestionsStateService.setUserAnswer($event)"
+    (expansionPanelOpen)="practiceDeutschlandQuestionsStateService.setCurrentQuestionIndex($event)"
+    (paginatorDataChange)="practiceDeutschlandQuestionsStateService.setPaginatorData($event)"
+    (allPanelsExpanded)="practiceDeutschlandQuestionsStateService.setIsAllPanelExpanded($event)">
+  </app-questionnaire-list>
+
+  <div class="buttons-container">
+  <button mat-raised-button color="primary" (click)="practiceDeutschlandQuestionsStateService.switchShowHideResults()">
+    {{ trPrefix + (showResults ? 'hide' : 'show') + '-results' | translate }}
+  </button>
+  <button mat-raised-button color="warn" (click)="onPracticeReset()">
+    {{ trPrefix + 'reset-answers' | translate }}
+  </button>
+  </div>
+</div>
