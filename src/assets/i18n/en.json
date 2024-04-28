@@ -1243,10 +1243,10 @@
         "135": {
           "question": "Who do the trade unions represent in Germany?",
           "answers": {
-            "1": "The employers.",
-            "2": "The interests of employees.",
-            "3": "The interests of the unemployed.",
-            "4": "The interests of entrepreneurs."
+            "1": "large companies",
+            "2": "small businesses",
+            "3": "self-employed individuals",
+            "4": "employees"
           }
         },
         "136": {

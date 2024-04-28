@@ -1242,10 +1242,10 @@
         "135": {
           "question": "Almanya'da sendikalar kimleri temsil eder?",
           "answers": {
-            "1": "İşverenleri.",
-            "2": "Çalışanların çıkarlarını.",
-            "3": "İşsizlerin çıkarlarını.",
-            "4": "Girişimcilerin çıkarlarını."
+            "1": "büyük şirketler",
+            "2": "küçük işletmeler",
+            "3": "kendi işinde çalışanlar",
+            "4": "çalışanlar"
           }
         },
         "136": {

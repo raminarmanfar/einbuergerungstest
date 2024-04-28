@@ -1243,10 +1243,10 @@
         "135": {
           "question": "Wen vertreten die Gewerkschaften in Deutschland?",
           "answers": {
-            "1": "Die Arbeitgeber.",
-            "2": "Die Interessen der Arbeitnehmer und Arbeitnehmerinnen.",
-            "3": "Die Interessen von Arbeitslosen.",
-            "4": "Die Interessen der Unternehmer und Unternehmerinnen."
+            "1": "große Unternehmen",
+            "2": "kleine Unternehmen",
+            "3": "Selbständige",
+            "4": "Arbeitnehmer und Arbeitnehmerinnen"
           }
         },
         "136": {
