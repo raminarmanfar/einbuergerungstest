@@ -33,7 +33,7 @@ export class UtilService {
   }
 
   private static getRandomQuestions(questionIds: number[], questions: TestQuestionModel[]): TestQuestionModel[] {
-    return questions.filter(item => questionIds.includes(item.id));
+    return UtilService.cloneDeep(questions.filter(item => questionIds.includes(item.id)));
   }
 
   private static generateQuestionsByLength(lengthOfQuestions: number, stateInfo: StateInfoModel, sortByRandomList: boolean): TestQuestionModel[] {
@@ -47,7 +47,7 @@ export class UtilService {
   }
 
   private static getRandomStateQuestions(stateName: GermanStatesEnum, sortByRandomList = true): TestQuestionModel[] {
-    const stateInfo = ConstantValues.GERMAN_STATES.find(s => s.name === stateName);
+    const stateInfo = UtilService.cloneDeep(ConstantValues.GERMAN_STATES.find(s => s.name === stateName));
     if (!stateInfo) {
       throw new Error(ErrorMessages.STATE_NOT_FOUND);
     }
