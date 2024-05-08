@@ -2591,10 +2591,12 @@
           }
         },
         "285": {
-          "question": "You need to use the restroom in a restaurant in Germany. What must the host/hostess give you?",
+          "question": "Ms. Frost works as a permanently employed staff member in an office. What does she not have to pay from her salary?",
           "answers": {
-            "1": "a voucher for a drink [for example, for coffee at McDonald's].",
-            "2": "a coffee voucher [for example, for coffee at McDonald's]."
+            "1": "Value added tax",
+            "2": "Income tax",
+            "3": "Contributions to unemployment insurance",
+            "4": "Contributions to pension and health insurance"
           }
         },
         "286": {

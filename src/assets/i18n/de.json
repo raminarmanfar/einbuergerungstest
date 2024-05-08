@@ -2591,10 +2591,12 @@
           }
         },
         "285": {
-          "question": "Sie müssen in einer Gaststätte in Deutschland auf die Toilette. Was muss der Wirt / die Wirtin Ihnen geben?",
+          "question": "Frau Frost arbeitet als fest angestellte Mitarbeiterin in einem Büro. Was muss sie nicht von ihrem Gehalt bezahlen?",
           "answers": {
-            "1": "einen Gutschein für ein Getränk [zum Beispiel für Kaff bei McDonald Affee85 Hochstraße].",
-            "2": "einen Kafffeg [zum Beispiel für Kaff bei McDonald]."
+            "1": "Umsatzsteuer",
+            "2": "Lohnsteuer",
+            "3": "Beiträge zur Arbeitslosenversicherung",
+            "4": "Beiträge zur Renten- und Krankenversicherung"
           }
         },
         "286": {

@@ -2590,10 +2590,12 @@
           }
         },
         "285": {
-          "question": "Almanya'daki bir restoranda tuvaleti kullanmanız gerekiyor. Host/hostes size ne vermelidir?",
+          "question": "Bayan Frost bir ofiste sürekli bir çalışan olarak çalışıyor. Maaşından hangisini ödemez?",
           "answers": {
-            "1": "bir içki için kupon [örneğin, McDonald's'ta kahve için].",
-            "2": "bir kahve kuponu [örneğin, McDonald's'ta kahve için]."
+            "1": "Katma Değer Vergisi",
+            "2": "Gelir Vergisi",
+            "3": "İşsizlik Sigortası Katkıları",
+            "4": "Emeklilik ve Sağlık Sigortası Katkıları"
           }
         },
         "286": {
@@ -4318,7 +4320,7 @@
         "btnConfirm": "Evet",
         "btnReject": "Hayır"
       },
-      "exam-details-dialog" : {
+      "exam-details-dialog": {
         "edit-title": "Sınavı Düzenle",
         "create-title": "Yeni Sınav Oluştur",
         "state-name": "Durum adı",
